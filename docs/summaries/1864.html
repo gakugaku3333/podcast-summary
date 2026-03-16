@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ながらAIラジオ：Manusインスタ連携、Elevenlabs V3、確定申告でのClaude Code活用</h1>
+  <p>2026年3月12日収録。Meta傘下のManusによるInstagram連携や、音声生成AI Elevenlabsの最新モデルV3の衝撃、そして確定申告という実務におけるClaude Codeの具体的な活用事例について、AIコンサルタントのうすたく氏とメルカリAI推進担当の早川ごみ氏が語ります。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">Manus</span>
+    <span class="opt-a-tag">Instagram API</span>
+    <span class="opt-a-tag">Meta</span>
+    <span class="opt-a-tag">Moltbook</span>
+    <span class="opt-a-tag">OpenClow</span>
+    <span class="opt-a-tag">Claude Code</span>
+    <span class="opt-a-tag">Elevenlabs V3</span>
+    <span class="opt-a-tag">確定申告</span>
+    <span class="opt-a-tag">Progate</span>
+    <span class="opt-a-tag">Git/GitHub</span>
+    <span class="opt-a-tag">GPT-5.4 Thinking</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ManusとInstagramの連携：ストーリー投稿の自動化へ</h2>
+  <ul class="opt-a-list">
+    <li><strong>ManusがInstagramと連携</strong>：Metaが買収したAIエージェント「Manus」が、ついにInstagramでの操作に対応。</li>
+    <li><strong>ストーリーの下書き作成</strong>：API制限の厳しいInstagramにおいて、外部からストーリーの下書きを作成できるようになった。</li>
+    <li><strong>完全自動投稿の現状</strong>：現時点では「パブリッシュ（公開）」ボタンを手動で押す必要がある環境が多いが、定期タスク実行による予約投稿に近い運用が可能になりつつある。</li>
+    <li><strong>運用の変化</strong>：これまで手動での「ちまちました更新」が必要だったInstagram運用が、AIによって効率化される兆し。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Metaの買収戦略とAIエージェントの動向</h2>
+  <ul class="opt-a-list">
+    <li><strong>Moltbookの買収</strong>：AIエージェントが自律的に投稿・交流するSNS「Moltbook」をMetaが買収。</li>
+    <li><strong>人材・データ争奪戦</strong>：OpenAIに引き抜かれた優秀な人材（Peter等）に対抗するため、MetaはManusやMoltbookといったプレイヤーを次々と傘下に収めている。</li>
+    <li><strong>パーソナルアシスタントの未来</strong>：24時間稼働し、ユーザーの代わりにSNSを運用したり情報を整理したりする「エージェント版ソーシャルグラフ」の構築を狙っている可能性。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 AIリテラシー向上：プログラミング的思考の重要性</h2>
+  <ul class="opt-a-list">
+    <li><strong>Claude Code導入の壁</strong>：CLI（ターミナル）版の方がセットアップが意外と楽な場合もあるが、初心者には依然としてハードルが高い。</li>
+    <li><strong>学ぶべき概念</strong>：AIエージェントを使いこなすには、コードが書けなくても以下の概念を理解していると指示の精度が劇的に上がる。
+      <ul>
+        <li><strong>Git/GitHub</strong>：バージョン管理（セーブポイント）の概念。</li>
+        <li><strong>制御構文</strong>：IF（条件分岐）、FOR（繰り返し）などの論理構造。</li>
+        <li><strong>データ構造</strong>：JSON、YAML、Markdownなどの形式。</li>
+      </ul>
+    </li>
+    <li><strong>推奨学習ツール</strong>：
+      <ul>
+        <li><strong>Progate</strong>：基礎的な論理構造を学ぶのに最適。</li>
+        <li><strong>CS50（ハーバード大学）</strong>：YouTubeで無料公開されているコンピュータサイエンスの入門講義。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Elevenlabs V3：音声生成の新たな到達点</h2>
+  <p>音声クローニングとナレーションの質が大幅に向上。V2とV3の比較は以下の通り。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>モデル</th>
+        <th>特徴</th>
+        <th>評価</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>V2</strong></td>
+        <td>声の質（音色）は本人に非常に近い。</td>
+        <td>喋り方やイントネーションに不自然さが残る。</td>
+      </tr>
+      <tr>
+        <td><strong>V3</strong></td>
+        <td>イントネーション、発音、リズムが完璧に自然。</td>
+        <td>声の似具合よりも「人間としての自然さ」が圧倒的。</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="opt-a-list">
+    <li><strong>活用アイデア</strong>：英語学習コンテンツ（イケボでの聞き流し）、ASMR、教育系ナレーションなど、人間が介在しなくても高いクオリティで提供可能。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 実務活用：確定申告・決算業務でのClaude Code</h2>
+  <p>うすたく氏による、Claude Codeを用いた事務作業の自動化フロー。</p>
+  <svg width="100%" viewBox="0 0 600 200" style="background: #1a1a3e; border-radius: 8px; margin: 1em 0;">
+    <!-- Nodes -->
+    <rect x="20" y="70" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="35" y="105" font-size="14">領収書DL</text>
+    
+    <rect x="180" y="70" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="195" y="105" font-size="14">Claude Code</text>
+    
+    <rect x="360" y="70" width="220" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="375" y="105" font-size="14">ファイル名自動リネーム</text>
+    
+    <!-- Arrows -->
+    <path d="M 140 100 L 180 100" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+    <path d="M 320 100 L 360 100" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+    
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+        <path d="M0,0 L0,10 L9,5 Z" fill="#60a5fa" />
+      </marker>
+    </defs>
+  </svg>
+  <ul class="opt-a-list">
+    <li><strong>ファイル名の一括変更</strong>：バラバラな名称の領収書ファイルを「日付_項目名_金額」の形式に一瞬でリネーム。</li>
+    <li><strong>Gmailからの抽出</strong>：Google Workspace CLIと連携し、メール内の領収書とおぼしきデータを数百件単位で一括ダウンロード。</li>
+    <li><strong>教訓</strong>：エージェントを活用することで、年末に溜め込んだ作業も大幅に短縮可能だが、毎月の積み重ねが重要。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 その他のトピック</h2>
+  <ul class="opt-a-list">
+    <li><strong>GPT-5.4 Thinking</strong>：冗長な部分はあるが、特定の用途（推論が必要なタスク）では悪くないパフォーマンスを見せている。</li>
+    <li><strong>中国でのOpenClow流行</strong>：高齢者まで使いこなしているという噂があり、その適応能力の高さが話題に。</li>
+    <li><strong>ポッドキャストアワード</strong>：一次予選を突破。最終結果は来週発表予定。</li>
+  </ul>
+
+</body>
+</html>
