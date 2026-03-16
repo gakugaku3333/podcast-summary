@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+data/audio/*
+data/app.db*
+data/*.log
+backend/venv/
+com.podcast-summary.plist
+.env

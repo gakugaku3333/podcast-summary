@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="PodCast解説">
+    <meta name="theme-color" content="#0a0a1a">
+    <meta name="description" content="Podcastを自動で文字起こし・要約するアプリ">
+    <title>Podcast 自動解説</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎧</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="app-header">
+        <div class="header-content">
+            <h1 class="app-title">
+                <span class="title-icon">🎧</span>
+                Podcast 解説
+            </h1>
+            <div class="header-actions">
+                <!-- 監視モードボタン -->
+                <button id="btn-monitor" class="icon-btn tooltip" aria-label="監視開始">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span class="tooltip-text">2時間監視</span>
+                </button>
+                <!-- 既存のスキャンボタン -->
+                <button id="btn-scan" class="icon-btn tooltip" aria-label="手動スキャン">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                        <path d="M3 3v5h5"></path>
+                    </svg>
+                    <span class="tooltip-text">更新</span>
+                </button>
+                <div id="status-indicator" class="status-dot" title="待機中"></div>
+            </div>
+        </div>
+        <!-- ステータスバー -->
+        <div id="status-bar" class="status-bar hidden">
+            <span id="status-text"></span>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <!-- 統計カード -->
+        <section id="stats-section" class="stats-section">
+            <div class="stat-card stat-total">
+                <span class="stat-number" id="stat-total">-</span>
+                <span class="stat-label">合計</span>
+            </div>
+            <div class="stat-card stat-done">
+                <span class="stat-number" id="stat-done">-</span>
+                <span class="stat-label">完了</span>
+            </div>
+            <div class="stat-card stat-processing">
+                <span class="stat-number" id="stat-processing">-</span>
+                <span class="stat-label">処理中</span>
+            </div>
+        </section>
+
+        <!-- エピソード一覧 -->
+        <section class="episodes-section">
+            <div id="episodes-list" class="episodes-list">
+                <!-- 動的に挿入 -->
+            </div>
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <span>読み込み中...</span>
+            </div>
+            <div id="empty-state" class="empty-state hidden">
+                <span class="empty-icon">🎙️</span>
+                <p>まだエピソードがありません</p>
+                <p class="empty-hint">Apple Podcastsで何か聴いてみましょう</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- エピソード詳細モーダル -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+        <div class="modal">
+            <div class="modal-header">
+                <button id="btn-modal-close" class="modal-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5" />
+                        <polyline points="12 19 5 12 12 5" />
+                    </svg>
+                    <span>戻る</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta">
+                    <span id="modal-podcast" class="modal-podcast"></span>
+                    <span id="modal-date" class="modal-date"></span>
+                </div>
+                <h2 id="modal-title" class="modal-title"></h2>
+                <div id="modal-status" class="modal-status-badge"></div>
+
+                <!-- タブ -->
+                <div class="modal-tabs">
+                    <button class="tab-btn active" data-tab="summary">要約</button>
+                    <button class="tab-btn" data-tab="transcript">文字起こし</button>
+                </div>
+                <div id="tab-summary" class="tab-content active">
+                    <div id="modal-summary" class="markdown-content"></div>
+                </div>
+                <div id="tab-transcript" class="tab-content">
+                    <div id="modal-transcript" class="transcript-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
