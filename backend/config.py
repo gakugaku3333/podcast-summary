@@ -34,7 +34,7 @@ GEMINI_MODEL = "gemini-3-flash-preview"
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL", "")
 
 # --- サーバー設定 ---
-SERVER_HOST = "0.0.0.0"
+SERVER_HOST = "::"
 SERVER_PORT = 8000
 
 

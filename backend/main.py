@@ -357,14 +357,9 @@ async def get_status():
 
 
 # --- フロントエンド配信 ---
-@app.get("/")
-async def serve_index():
-    """メインページを配信"""
-    return FileResponse(FRONTEND_DIR / "index.html")
-
-
-# 静的ファイル配信（CSS, JS, manifest等）はindex.htmlの後にマウント
-app.mount("/", StaticFiles(directory=str(FRONTEND_DIR)), name="frontend")
+# html=True により、/ にアクセスすると自動的に index.html を探し、
+# それ以外のパス（/app.js, /style.css等）も正しく配信します。
+app.mount("/", StaticFiles(directory=str(FRONTEND_DIR), html=True), name="frontend")
 
 
 # --- エントリーポイント ---

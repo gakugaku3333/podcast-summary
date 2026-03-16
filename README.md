@@ -11,11 +11,12 @@ Apple Podcasts で再生したエピソードを**自動で文字起こし・要
 ## 🚀 使い方
 
 ### 1. iPhone からのトリガー
-- iPhone のショートカットで `POST /api/monitor` を実行（Podcasts アプリを開いたときなど）。
-- 2時間の自動監視が始まり、再生されたエピソードを順次処理します。
+- iPhone のショートカットで以下の URL を `POST` 実行（Podcasts アプリを開いたときなど）。
+- **推奨 URL**: `http://ooishiayuminoMac-mini.local:8000/api/monitor`
+- これにより 2時間の自動監視が始まり、再生されたエピソードを順次処理します。
 
 ### 2. 手動操作 (Web UI)
-- `http://<MacのIP>:8000` にアクセス。
+- Safari 等で `http://ooishiayuminoMac-mini.local:8000` にアクセス。
 - **「更新」ボタン**: Apple Podcasts DB を再スキャン。
 - **「2時間監視」ボタン**: 監視モードを強制起動。
 
