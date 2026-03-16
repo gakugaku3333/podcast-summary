@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-sub-list {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-sub-list li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【3月16日】トランプ氏、日本など5カ国にホルムズ海峡への艦艇派遣を要求</h1>
+  <p>アメリカのトランプ大統領が、ホルムズ海峡の安全確保を目的として日本を含む5カ国に艦艇派遣を要求しました。イランによる海峡封鎖の脅威が高まる中、日本のエネルギー安全保障と自衛隊派遣を巡る法的・政治的判断が焦点となっています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">ホルムズ海峡</span>
+    <span class="opt-a-tag">トランプ大統領</span>
+    <span class="opt-a-tag">高市首相</span>
+    <span class="opt-a-tag">イラン</span>
+    <span class="opt-a-tag">機雷掃海</span>
+    <span class="opt-a-tag">安保法制</span>
+    <span class="opt-a-tag">存立危機事態</span>
+    <span class="opt-a-tag">エネルギー安全保障</span>
+    <span class="opt-a-tag">窒素肥料</span>
+    <span class="opt-a-tag">AI音声</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ホルムズ海峡の緊迫した情勢</h2>
+  <ul class="opt-a-list">
+    <li><strong>トランプ大統領の要求</strong>：SNSを通じ、日本、中国、フランス、韓国、イギリスの5カ国に対し、自国の船を守るための艦艇派遣を要求。</li>
+    <li><strong>イラン側の動き</strong>：
+      <ul class="opt-a-sub-list">
+        <li>革命防衛隊が「通過する船には火を放つ」と声明を出し、事実上の封鎖を宣言。</li>
+        <li>新最高指導者<strong>モジタワ・ハメネイ氏</strong>が封鎖継続を明言。</li>
+        <li>海域には既に<strong>機雷</strong>が設置されたとの報道があり、ドローンによる脅威も継続。</li>
+      </ul>
+    </li>
+    <li><strong>被害状況</strong>：イギリス海上通商機関（UKMTO）の集計によると、海峡周辺で既に複数の船舶が攻撃を受けている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 日本への経済的影響</h2>
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 220">
+      <!-- Background nodes -->
+      <rect x="10" y="70" width="160" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="90" y="115" text-anchor="middle" font-weight="bold">ホルムズ海峡</text>
+      
+      <!-- Arrows -->
+      <path d="M 170 110 L 230 110" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      
+      <!-- Resource nodes -->
+      <rect x="240" y="10" width="340" height="40" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" />
+      <text x="255" y="35">原油：日本の輸入量の<strong>9割</strong>が通過</text>
+      
+      <rect x="240" y="65" width="340" height="40" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" />
+      <text x="255" y="90">LNG：日本の電力供給3割のうち1割強</text>
+      
+      <rect x="240" y="120" width="340" height="40" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" />
+      <text x="255" y="145">窒素肥料：湾岸諸国が世界的生産拠点</text>
+      
+      <rect x="240" y="175" width="340" height="40" rx="8" fill="rgba(245, 158, 11, 0.1)" stroke="#f59e0b" />
+      <text x="255" y="200">影響：食料生産コストの増大・電力不足</text>
+
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 海上自衛隊の「機雷掃海」能力</h2>
+  <ul class="opt-a-list">
+    <li><strong>世界トップクラスの実績</strong>：第二次世界大戦後、日本近海で約6万個の機雷を処理した膨大な実践経験。</li>
+    <li><strong>1991年ペルシャ湾派遣</strong>：精密な技術で世界を驚かせた実績がある。</li>
+    <li><strong>最新技術</strong>：
+      <ul class="opt-a-sub-list">
+        <li>磁気に反応しない<strong>プラスチック製船体</strong>。</li>
+        <li>高性能ソナーと機雷処分装置を用いた「掃討（一つずつ破壊）」。</li>
+        <li>磁気や音響で誘爆させる「掃海」。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 自衛隊派遣を巡る法的論点</h2>
+  <p>2015年成立の安全保障関連法に基づき、派遣の可否は以下の事態認定に左右されます。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>事態の区分</th>
+        <th>定義</th>
+        <th>機雷除去の可否</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>存立危機事態</strong></td>
+        <td>同盟国への攻撃で日本の存立が脅かされる状況</td>
+        <td><strong>可能</strong>（武力行使として）</td>
+      </tr>
+      <tr>
+        <td><strong>重要影響事態</strong></td>
+        <td>放置すれば日本の安全に重大な影響が及ぶ状況</td>
+        <td>不可（後方支援のみのため）</td>
+      </tr>
+      <tr>
+        <td><strong>国際平和共同対処事態</strong></td>
+        <td>国際社会の平和のための活動</td>
+        <td>不可（後方支援のみのため）</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="opt-a-list">
+    <li><strong>現状の判断</strong>：高市首相は現在、ホルムズ海峡の状況を「存立危機事態」とは判断していない。</li>
+    <li><strong>「遺棄機雷」としての解釈</strong>：戦闘が終了し、機雷が放置された危険物と見なされれば自衛隊法に基づき除去可能だが、現在はイランに攻撃の意思があるため法的根拠が欠如している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 今後の焦点と国際社会の反応</h2>
+  <ul class="opt-a-list">
+    <li><strong>日米首脳会談（3月19日予定）</strong>：高市首相の訪米において、トランプ大統領から直接「機雷除去」の要求が出る可能性が高い。</li>
+    <li><strong>欧州の対応の割れ</strong>：
+      <ul class="opt-a-sub-list">
+        <li><strong>ドイツ（メルツ首相）</strong>：支持を表明。</li>
+        <li><strong>フランス（マクロン大統領）</strong>：攻撃を国際法違反と指摘。</li>
+        <li><strong>イギリス</strong>：インド洋の基地使用を当初認めないなど、慎重な姿勢。</li>
+      </ul>
+    </li>
+    <li><strong>日本の課題</strong>：憲法・国内法との整合性、および米国の先制攻撃を支持することによる長期的リスクの検討。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 その他のトピック</h2>
+  <ul class="opt-a-list">
+    <li><strong>Japan Podcast Fest 2026</strong>：赤坂サカスで開催。ポッドキャスト熱の高まりを実感。</li>
+    <li><strong>衆議院でのAI音声導入</strong>：
+      <ul class="opt-a-sub-list">
+        <li>3月12日の本会議で、議員の名前を読み上げる「点呼」にAI音声を初導入。</li>
+        <li>事務局職員の負担軽減が目的。男性・女性の2種類の声を交互に使用。</li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+</html>
