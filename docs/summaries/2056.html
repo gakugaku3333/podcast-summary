@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">#2-02 「自分で決めること」は、幸福に直結する</h1>
+  <p>起業家・つまもと氏とライター・泉氏が、人生における「意思決定の裁量」と幸福度の深い関係について語ります。リスクを取ることの本質や、現代社会における思考停止の罠、そして自分の限界（キャップ）を外すための考え方を提示します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">意思決定の裁量</span>
+    <span class="opt-a-tag">リスクと責任</span>
+    <span class="opt-a-tag">思考停止</span>
+    <span class="opt-a-tag">社会の成熟</span>
+    <span class="opt-a-tag">正しい努力</span>
+    <span class="opt-a-tag">自己実現のキャップ</span>
+    <span class="opt-a-tag">淡々（たんたん）</span>
+    <span class="opt-a-tag">スーパースパイラル</span>
+    <span class="opt-a-tag">大谷翔平</span>
+    <span class="opt-a-tag">井上尚弥</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 リスクの本質は「意思決定の裁量」にある</h2>
+  <ul class="opt-a-list">
+    <li><strong>リスクと幸福の相関</strong>：起業などの「リスクが高い」とされる行為に幸福を見出すのは、それが「人生のあらゆるイベントの意思決定権を100%自分で持っている状態」だからである。</li>
+    <li><strong>責任の範囲</strong>：自分で決めることは、自分で責任を取る範囲が広がることを意味する。この「責任の重さ」こそがリスクの正体だが、その裁量の幅が広いほど幸福を感じるタイプの人もいる。</li>
+    <li><strong>成長フェーズによる変化</strong>：子供の頃は親や先生に委ねていた意思決定を、成長とともにどれだけ自分の手に取り戻していくかが人生のプロセスである。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 現代社会における「思考停止」の罠</h2>
+  <ul class="opt-a-list">
+    <li><strong>社会の成熟と副作用</strong>：日本は平和で安全なため、強烈な意思決定をしなくても「流れに沿って」生きていけてしまう。これが「思考停止」を招き、本質的な幸せから遠ざかる要因になっている。</li>
+    <li><strong>生存本能の減退</strong>：かつては「何を食べるか」「どこへ行くか」を決めなければ死に直結していたが、現代はその必要がなくなった。</li>
+    <li><strong>常識を疑うマインド</strong>：社会が成熟しているからこそ、意識的に「本当にこれは正しいのか？」と常識を疑い、自分で選択する姿勢を持たないと、人生の主導権を失ってしまう。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 自分の限界（キャップ）をどう捉えるか</h2>
+  <ul class="opt-a-list">
+    <li><strong>能力の開放</strong>：多くの人が「自分はこんなものか」と上限を決めてしまっているが、それは現在の能力に基づいた誤解である。</li>
+    <li><strong>時間軸による変化</strong>：
+      <ul>
+        <li><strong>1年</strong>：かなりのことができる。</li>
+        <li><strong>2年</strong>：人生が大きく変わっていく。</li>
+        <li><strong>10年</strong>：全く違う人生にすることができる。</li>
+      </ul>
+    </li>
+    <li><strong>正しい努力の重要性</strong>：方向性を見誤らなければ、人間は無限に成長できる。その「試行錯誤のプロセス」自体に幸福が宿る。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 400 200">
+      <!-- Background -->
+      <rect x="10" y="10" width="380" height="180" rx="12" fill="#1a1a3e" />
+      
+      <!-- Nodes -->
+      <rect x="40" y="40" width="120" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="100" y="65" text-anchor="middle" font-size="14">正しい努力</text>
+      
+      <rect x="240" y="40" width="120" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="65" text-anchor="middle" font-size="14">新しい景色</text>
+      
+      <rect x="140" y="130" width="120" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="200" y="155" text-anchor="middle" font-size="14">上限の更新</text>
+      
+      <!-- Arrows -->
+      <path d="M 160 60 L 230 60" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+      <path d="M 300 80 L 260 130" stroke="#60a5fa" stroke-width="2" fill="none" />
+      <path d="M 140 150 L 100 80" stroke="#60a5fa" stroke-width="2" fill="none" />
+      
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.8em; color: #a78bfa;">図：正しい努力が新しい景色を見せ、自己のキャップを更新し続けるサイクル</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 「淡々（たんたん）」と積み上げる強さ</h2>
+  <ul class="opt-a-list">
+    <li><strong>スーパースパイラルの到来</strong>：大谷翔平選手や井上尚弥選手のように、劇的な物語（逆境からの逆転など）よりも、圧倒的なルーティンを「淡々と」こなして偉大な記録を打ち立てるスタイルが現代の象徴。</li>
+    <li><strong>迷いのなさ</strong>：才能、やりたいこと、正しい練習方法が完全に合致した状態。外部からは淡々と見えるが、その内側では凄まじい集中力と努力が継続されている。</li>
+    <li><strong>競技レベルの向上</strong>：あらゆる分野で「正しい努力の方法」が一般化された結果、このスパイラルに入った者だけが圧倒的な高みに到達できる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 意思決定と「愚痴」の関係</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>状態</th>
+        <th>結果に対する反応</th>
+        <th>マインドセット</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>自分で決めた場合</strong></td>
+        <td>失敗しても「失敗談」になる</td>
+        <td>「次はこうしよう」という前向きな姿勢</td>
+      </tr>
+      <tr>
+        <td><strong>他人に決められた場合</strong></td>
+        <td>不満が「愚痴」になる</td>
+        <td>「あいつが決めたから」という責任転嫁</td>
+      </tr>
+    </tbody>
+  </table>
+  <blockquote>
+    「愚痴を言っているときは、自分で物事を決めていない証拠。自分で決めていれば、それは次への糧になる。」
+  </blockquote>
+
+</body>
+</html>
