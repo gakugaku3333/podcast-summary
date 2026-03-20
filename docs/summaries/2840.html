@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 20px 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【土曜版 #70】イラン危機・円安・AI競争。歴史から読み解く、日本の進むべき道</h1>
+  <p>ジャーナリストの船橋洋一氏をゲストに迎え、新著「戦後敗戦」を軸に、日本が直面するエネルギー危機、半導体・AI競争、そして国家としての再建策について深く掘り下げます。過去の成功と挫折から、現代の難局を乗り越えるための教訓を整理します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">船橋洋一</span>
+    <span class="opt-a-tag">戦後敗戦</span>
+    <span class="opt-a-tag">イラン情勢</span>
+    <span class="opt-a-tag">ホルムズ海峡</span>
+    <span class="opt-a-tag">プラザ合意</span>
+    <span class="opt-a-tag">半導体敗戦</span>
+    <span class="opt-a-tag">AI派遣闘争</span>
+    <span class="opt-a-tag">国民安全保障国家</span>
+    <span class="opt-a-tag">企業家国家</span>
+    <span class="opt-a-tag">アライド・スケール</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 概念：なぜ今「戦後敗戦」なのか</h2>
+  <ul class="opt-a-list">
+    <li><strong>「戦後敗戦」の定義：</strong> 第二次世界大戦後の80年を40年ずつに分けた際、後半の40年（平成以降）で日本が経験したじわじわとした衰退と挫折。</li>
+    <li><strong>象徴的な数字：</strong> 1988年にOECD諸国で<strong>2位</strong>だった一人当たりGDPが、2024年には<strong>24位</strong>まで転落。</li>
+    <li><strong>現状認識の必要性：</strong> 「茹でガエル」状態を脱するため、一度「負けた」と割り切り、覚悟を決めて出直すことが不可欠。</li>
+    <li><strong>日本人の特性：</strong> 「自利品（じりひん）」で耐えてしまう傾向があるが、このままでは「土下品（どげひん）」に陥る危惧がある。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 120">
+      <!-- Timeline Line -->
+      <line x1="50" y1="60" x2="550" y2="60" stroke="#60a5fa" stroke-width="2" />
+      <!-- Points -->
+      <circle cx="50" cy="60" r="6" fill="#8b5cf6" />
+      <circle cx="300" cy="60" r="6" fill="#f59e0b" />
+      <circle cx="550" cy="60" r="6" fill="#ef4444" />
+      <!-- Labels -->
+      <text x="30" y="40" font-size="14">1945年 終戦</text>
+      <text x="250" y="40" font-size="14">1980年代後半 絶頂期</text>
+      <text x="500" y="40" font-size="14">現在 「戦後敗戦」</text>
+      <text x="50" y="90" font-size="12" fill="#a78bfa">戦前敗戦からの復興</text>
+      <text x="300" y="90" font-size="12" fill="#a78bfa">成功体験の固定化</text>
+      <text x="500" y="90" font-size="12" fill="#a78bfa">構造的停滞</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 エネルギー危機：イラン情勢とホルムズ海峡の封鎖リスク</h2>
+  <ul class="opt-a-list">
+    <li><strong>事実上の封鎖：</strong> 物理的な封鎖がなくとも、リスクの高まりにより船主が航行を控えることで、経済的には封鎖と同じ状態に陥る。</li>
+    <li><strong>イランの体制：</strong> 革命防衛隊は単なる軍事組織ではなく、経済・生活に根ざした「生活共同体」であり、指導者の除去だけで崩壊するほど単純ではない。</li>
+    <li><strong>米国の変化：</strong> シェール革命によりエネルギー自給を達成した米国は、中東への関与を弱める（ピボット）動機がある。将来的に「シーレーン維持のコストをお前ら（日本等）が払え」と言い出すリスク。</li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>比較項目</th>
+        <th>1973年 石油危機</th>
+        <th>現代のイラン危機</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>日本の備蓄</strong></td>
+        <td>約60日分</td>
+        <td>約254日分（レジリアンスは向上）</td>
+      </tr>
+      <tr>
+        <td><strong>為替状況</strong></td>
+        <td>円高傾向（輸入に有利）</td>
+        <td><strong>構造的円安</strong>（輸入コスト増大）</td>
+      </tr>
+      <tr>
+        <td><strong>米国の立場</strong></td>
+        <td>中東依存が高い</td>
+        <td>エネルギー独立を達成、関与縮小の意向</td>
+      </tr>
+      <tr>
+        <td><strong>代替手段</strong></td>
+        <td>省エネ・原子力推進の開始</td>
+        <td>脱炭素への過渡期で石油投資が減少、供給ショックに脆弱</td>
+      </tr>
+    </tbody>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 半導体・ネット敗戦の教訓</h2>
+  <ul class="opt-a-list">
+    <li><strong>半導体：</strong> 1990年代初頭、日本はメモリで世界一だったが、米国の圧力（数量目標の受け入れ）と円高により価格決定権を喪失。</li>
+    <li><strong>構造的失敗：</strong> 垂直統合型の「総合電機メーカー」に固執し、ファブレス・ファウンドリの分業化やPC・スマホ向けロジック半導体の波に乗り遅れた。</li>
+    <li><strong>ネット・AI：</strong> 英語圏の「ハイパースケール（15億人の市場）」に対し、日本はスケールメリットで勝負できなかった。</li>
+    <li><strong>リバースエンジニアリングの必要性：</strong> 米国がイラン製ドローンを解析して自国生産するように、日本も「後発組」としての自覚を持ち、貪欲に学ぶ姿勢が必要。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 未来への提言：目指すべき2つの国家像</h2>
+
+  <h3>1. 国民安全保障国家</h3>
+  <ul class="opt-a-list">
+    <li><strong>有事への備え：</strong> 福島原発事故やコロナ禍で露呈した「脆さ」を克服する。</li>
+    <li><strong>新・社会契約：</strong> 有事における政府の権限と国民の義務を明確化する。空気や忖度で動くのではなく、法的根拠に基づいた対応が必要。</li>
+    <li><strong>サイバー・AI防衛：</strong> 個人のプライバシーや情報がリアルタイムで把握される時代、国民も当事者として守り・守られる関係を築く。</li>
+  </ul>
+
+  <h3>2. 企業家国家</h3>
+  <ul class="opt-a-list">
+    <li><strong>政府の役割：</strong> 「小さな政府」が最善というネオリベラル的発想を捨て、政府が戦略的に需要を創出し、技術の社会実装を後押しする。</li>
+    <li><strong>アライド・スケール（同盟国スケール）：</strong> 日本単独ではなく、米国や同志国と連携して中国の巨大スケールに対抗する。</li>
+    <li><strong>尖った人材の活用：</strong> 明治時代の「お雇い外国人」のように、閣僚より高い報酬を払ってでも外部の高度人材や多様な人材を登用する。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 結論：変革のトリガー</h2>
+  <ul class="opt-a-list">
+    <li><strong>政治のリーダーシップ：</strong> 縦割りや個別最適を打破し、全体のエゴ（ビジョン）を描ける政治家が必要。</li>
+    <li><strong>有権者の目：</strong> 単なる「分配」のおねだりではなく、新しい国の形をデザインする意志と野心を持った政治家を見極め、夢を託す。</li>
+    <li><strong>後発の自覚：</strong> かつての「経済大国」という幻想を捨て、明治維新や戦後直後のように「後発組」としてキャッチアップする覚悟を持つこと。</li>
+  </ul>
+
+  <blockquote style="margin-top: 30px;">
+    「ひっかり負けたと割り切った方がいい。そこからなぜこうなっているのかをとことん学び、出直す。明治維新や戦後のように、もう一度それをやればいい。」
+  </blockquote>
+
+</body>
+</html>
