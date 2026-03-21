@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+<h1 class="opt-a-header">News Connect：日米首脳会談と緊迫する国際情勢の整理</h1>
+<p>2026年3月22日配信のエピソード。高市首相とトランプ大統領による日米首脳会談の舞台裏、中東情勢の影響による米軍の東アジアからの転換、科学・テクノロジーの最新動向、そしてバンクシーの正体に迫るニュースを、塩野誠氏と共に深掘りします。</p>
+
+<div class="opt-a-tags">
+  <span class="opt-a-tag">高市早苗</span>
+  <span class="opt-a-tag">ドナルド・トランプ</span>
+  <span class="opt-a-tag">日米首脳会談</span>
+  <span class="opt-a-tag">ホルムズ海峡</span>
+  <span class="opt-a-tag">地経学</span>
+  <span class="opt-a-tag">はやぶさ2</span>
+  <span class="opt-a-tag">NVIDIA</span>
+  <span class="opt-a-tag">フィジカルAI</span>
+  <span class="opt-a-tag">バンクシー</span>
+</div>
+
+<h2 class="opt-a-section-title">📌 オープニング：パーソナリティの近況</h2>
+<ul class="opt-a-list">
+  <li><strong>野村氏のテレビ出演：</strong> ファッションデザイナー石川俊介氏に選んでもらった黒の衣装で出演。塩野氏からの「奇をてらわない」というアドバイスを実践。</li>
+  <li><strong>塩野氏の新著：</strong> <strong>「初めての地経学」</strong>（新書）を出版。国際文化会館 地経学研究所の総力を結集し、中立的な視点で国際情勢を解説。塩野氏はAIとパワー（軍事利用等）の章を担当。</li>
+</ul>
+
+<h2 class="opt-a-section-title">📌 月曜日：日米首脳会談とホルムズ海峡の緊張</h2>
+<ul class="opt-a-list">
+  <li><strong>トランプ氏の要求：</strong> 日本、中国、フランス、韓国、イギリスに対し、ホルムズ海峡の安全確保のための艦船派遣をSNSで要求。</li>
+  <li><strong>日米首脳会談のハイライト：</strong>
+    <ul>
+      <li>高市首相は「世界に平和と繁栄をもたらすのはドナルドだけだ」と呼びかけ、良好な関係を演出。</li>
+      <li>トランプ氏は「日本は責任を果たそうとしている」と評価しつつ、NATO諸国への失望を露わにした。</li>
+      <li><strong>「パールハーバー」発言：</strong> 記者から「なぜイラン攻撃を事前に日本に教えなかったのか」と問われたトランプ氏が「パールハーバーのことは教えなかっただろう」と返答。高市首相はこれに対し、媚びることなく<strong>毅然とした態度（無反応・冷静）</strong>を貫いた。</li>
+    </ul>
+  </li>
+  <li><strong>日本のエネルギー危機：</strong> 原油価格が上昇。イランと親しい国のタンカーは通行できているが、日本向けの輸入量は細くなる懸念。国内のガソリン供給やバス運行への影響が現実味を帯びている。</li>
+</ul>
+
+<h2 class="opt-a-section-title">📌 火曜日：米軍の配置転換と東アジアの空白</h2>
+<ul class="opt-a-list">
+  <li><strong>米軍の中東シフト：</strong>
+    <ul>
+      <li>韓国に配備されていた<strong>サード（高高度迎撃ミサイルシステム）</strong>の一部が中東へ移動。</li>
+      <li>沖縄を拠点とする<strong>第31海兵遠征部隊（約2200人）</strong>が中東へ移動。</li>
+    </ul>
+  </li>
+  <li><strong>北朝鮮の動向：</strong> 米軍のプレゼンス低下を突くように、平壌近郊から日本海へ向けて<strong>弾道ミサイル10発</strong>を発射。</li>
+  <li><strong>地政学的リスク：</strong> アメリカが「二正面・三正面作戦」を避ける中、東アジアが手薄になる懸念。日本も安全保障上の自立を考えるべき局面に来ている。</li>
+</ul>
+
+<svg width="100%" viewBox="0 0 600 200" style="background: #1a1a3e; border-radius: 8px; margin: 1em 0;">
+  <!-- Nodes -->
+  <rect x="50" y="70" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+  <text x="110" y="105" text-anchor="middle" font-size="14">東アジア</text>
+  <text x="110" y="125" text-anchor="middle" font-size="10" fill="#60a5fa">（沖縄・韓国）</text>
+
+  <rect x="430" y="70" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+  <text x="490" y="105" text-anchor="middle" font-size="14">中東情勢</text>
+  <text x="490" y="125" text-anchor="middle" font-size="10" fill="#f59e0b">（イラン緊張）</text>
+
+  <!-- Arrow -->
+  <path d="M 180 100 L 420 100" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+    </marker>
+  </defs>
+  <text x="300" y="90" text-anchor="middle" font-size="12">サード・海兵隊の移動</text>
+  <text x="300" y="140" text-anchor="middle" font-size="12" fill="#ef4444">⚠ 抑止力の低下・空白化</text>
+</svg>
+
+<h2 class="opt-a-section-title">📌 水曜日：はやぶさ2が持ち帰った「生命の鍵」</h2>
+<ul class="opt-a-list">
+  <li><strong>大発見：</strong> 小惑星リュウグーの砂から、DNAとRNAを構成する<strong>5種類すべての核酸塩基</strong>（アデニン、グアニン、シトシン、チミン、ウラシル）を発見。</li>
+  <li><strong>意義：</strong> 生命の起源が宇宙から飛来した可能性を裏付ける有力な手がかり。</li>
+  <li><strong>今後の計画：</strong> 日本は20年以上サンプルリターン技術を蓄積。2020年代後半には火星の衛星フォボスからのサンプル回収を目指す。</li>
+</ul>
+
+<h2 class="opt-a-section-title">📌 木曜日：NVIDIAの新チップと「フィジカルAI」の衝撃</h2>
+<ul class="opt-a-list">
+  <li><strong>新型AI半導体：</strong> 推論処理能力を高め、弱点だった電力効率を改善。スタートアップ「グロック」の技術を搭載。</li>
+  <li><strong>驚異的な業績：</strong> 2027年までの<strong>受注残が159兆円</strong>（日本の国家予算超え）。CEOのジェンスン・ファン氏はテック界のロックスター状態。</li>
+  <li><strong>フィジカルAIの課題：</strong>
+    <ul>
+      <li>物理世界で自律的に動くAI。日本は製造業・ロボットに強いが、AIモデルやデータ収集で遅れ。</li>
+      <li>日産などの日本メーカーも、自動運転アルゴリズムには英Wave社などの海外製を採用している現状。</li>
+      <li><strong>経済合理性の壁：</strong> 「人間を雇う方が安い」という現状を打破し、データ収集の泥臭いプロセスをやり切れるかが鍵。</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 class="opt-a-section-title">📌 金曜日：バンクシーの正体とアートの哲学</h2>
+<ul class="opt-a-list">
+  <li><strong>正体特定の報道：</strong> ロイター通信が、50代前半のイギリス人男性<strong>ロビン・ガニンガム氏</strong>であると報じた。過去の逮捕歴やウクライナ入国時のデータが一致。</li>
+  <li><strong>バンクシーのスタンス：</strong> 弁護士は否定も肯定もしないが、プライバシー侵害として反発。</li>
+  <li><strong>シュレッダー事件の裏側：</strong> 「赤い風船と少女」が落札直後に裁断された事件。YouTubeのドキュメンタリーでは、額縁にシュレッダーを仕込む本人のような姿も映っている。</li>
+  <li><strong>メッセージ性：</strong> 反戦、反権力、反資本主義。パレスチナの壁の前に「世界一眺めの悪いホテル」を作るなど、一連のプロセスすべてがアート。</li>
+</ul>
+
+<h2 class="opt-a-section-title">📌 今週のDJコーナー：内省と春の訪れ</h2>
+<table>
+  <thead>
+    <tr>
+      <th>アーティスト</th>
+      <th>楽曲名</th>
+      <th>選曲理由・エピソード</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Aron</strong></td>
+      <td>Wonderful Thing</td>
+      <td>22歳の新星。古き良きジャズ・ポップスを継承。恋に落ちる瞬間を歌った優しい曲。</td>
+    </tr>
+    <tr>
+      <td><strong>tonun</strong></td>
+      <td>青い春に</td>
+      <td>桜舞う季節の出会いと別れ。再会の約束を忘れてしまう切なさを描く。</td>
+    </tr>
+    <tr>
+      <td><strong>Radiohead</strong></td>
+      <td>High and Dry</td>
+      <td>外ではイケてる風を装いながら、内面は不安でいっぱいの心境。コーヒーを淹れる内省の時間に。</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  「コーヒーを淹れる時間は、自分を振り返るリフレクション（内省）の時間。手動でも電動でも、豆を挽き、お湯を注ぐひとときを大切にしたい。」
+</blockquote>
+
+</body>
+</html>
