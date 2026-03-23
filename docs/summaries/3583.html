@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "↳";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">メルカリのAIネイティブな組織への変革</h1>
+  <p>
+    株式会社メルカリが、2000人規模の組織をいかにして「AIネイティブ」へと作り替えているのか。
+    CTOの木村俊也氏とストラテジーチームのハヤカワ五味氏をゲストに迎え、全社的なタスクフォースの取り組み、エンジニアリングの変化、そしてマルチエージェントを活用した未来の意思決定について語ります。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">AIネイティブ</span>
+    <span class="opt-a-tag">メルカリ</span>
+    <span class="opt-a-tag">タスクフォース</span>
+    <span class="opt-a-tag">業務の棚卸し</span>
+    <span class="opt-a-tag">エージェント駆動開発</span>
+    <span class="opt-a-tag">Socrates</span>
+    <span class="opt-a-tag">マルチエージェント</span>
+    <span class="opt-a-tag">意思決定論</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 AI導入の全体戦略とタスクフォース</h2>
+  <ul class="opt-a-list">
+    <li><strong>100〜200名規模の巨大タスクフォース</strong>
+      <ul>
+        <li>2023年7月頃から本格始動。</li>
+        <li>エンジニアやPdMだけでなく、ファイナンス、経理、法務（リーガル）、カスタマーサポートなどのコーポレート領域も含む全社横断体制。</li>
+      </ul>
+    </li>
+    <li><strong>徹底した「業務の棚卸し」</strong>
+      <ul>
+        <li>全領域の仕事の工数とプロセスを洗い出し。膨大なデータ整理にはAIを活用。</li>
+        <li><strong>33の領域</strong>ごとに、AIを活用した1〜2年後の「ビジョン」と「ロードマップ」を策定。</li>
+      </ul>
+    </li>
+    <li><strong>経営層のコミットメント</strong>
+      <ul>
+        <li>代表の山田進太郎氏が「AIネイティブになる」と内外に宣言。</li>
+        <li><strong>「一時的なスピードダウンを許容する」</strong>というメッセージが、現場がAI導入に踏み込む大きな後押しとなった。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Nodes -->
+      <rect x="10" y="30" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="80" y="65" text-anchor="middle" font-size="14">業務の棚卸し</text>
+      
+      <path d="M150 60 H190" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+      
+      <rect x="200" y="30" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="270" y="65" text-anchor="middle" font-size="14">ビジョン策定</text>
+      
+      <path d="M340 60 H380" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+      
+      <rect x="390" y="30" width="180" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="480" y="65" text-anchor="middle" font-size="14">AIネイティブな実業務</text>
+
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+          <path d="M0,0 L10,5 L0,10 Z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.8em; color: #a78bfa; margin-top: 10px;">AI導入のプロセス：現状把握から未来の定義へ</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 組織文化とマインドセットの変革</h2>
+  <ul class="opt-a-list">
+    <li><strong>不安の解消は「解像度」から</strong>
+      <ul>
+        <li>AIに対する不安は「解像度が低い」ことに起因する。</li>
+        <li>理解が進むほど、AIは自分を助けるプラスの存在として認識されるようになる。</li>
+      </ul>
+    </li>
+    <li><strong>ボトムアップの活性化</strong>
+      <ul>
+        <li>ハッカソンや勉強会を頻繁に開催。</li>
+        <li>コーポレート部門とエンジニアが初めて一緒に働くことで、化学反応が発生（例：法務業務の90%削減など）。</li>
+      </ul>
+    </li>
+    <li><strong>個人の楽しみを優先</strong>
+      <ul>
+        <li>仕事だけでなく、レシピ作成や音楽生成など、個人の生活でAIを楽しむことを推奨。</li>
+        <li>「楽しんで使う」ことが、結果として仕事の習熟度を上げる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 エンジニアリングの進化：エージェント駆動開発</h2>
+  <ul class="opt-a-list">
+    <li><strong>ツールのデフォルト化</strong>
+      <ul>
+        <li>CursorやClaudeなどのAIコーディングツールの利用率がほぼ100%に。</li>
+        <li>当初は20〜30%のエンジニアが懐疑的だったが、実利を体感することで浸透。</li>
+      </ul>
+    </li>
+    <li><strong>開発手法の変化</strong>
+      <table>
+        <thead>
+          <tr>
+            <th>手法</th>
+            <th>特徴</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>バイブコーディング</strong></td>
+            <td>命令を少しずつ与え、対話しながら改善していくスタイル。</td>
+          </tr>
+          <tr>
+            <td><strong>エージェント駆動開発</strong></td>
+            <td>テスト駆動やスペック駆動に近い。正確なスペックを書くことで、AIエージェントが一気にコードを生成する。</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 具体的な活用事例：社内エージェント「Socrates」</h2>
+  <ul class="opt-a-list">
+    <li><strong>データ分析の民主化</strong>
+      <ul>
+        <li>BigQueryなどの社内データ基盤と接続。</li>
+        <li>SQLが書けない非エンジニアでも、自然言語でデータ抽出や分析、比較検討が可能。</li>
+      </ul>
+    </li>
+    <li><strong>意思決定のサポート</strong>
+      <ul>
+        <li>単なるデータ抽出に留まらず、意思決定に近いレベルの比較・提案まで行う。</li>
+        <li>これにより「AIエージェントが人間を代替・拡張する」イメージが全社に共有された。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 AI活用の本質：高周波数と低周波数</h2>
+  <blockquote style="font-style: normal;">
+    <strong>深津氏の理論：</strong> AIは「高周波数（細かいディテール、100%の精度）」の再現は苦手だが、「低周波数（全体の方向性、プランニング、構造）」の扱いは得意である。
+  </blockquote>
+  <ul class="opt-a-list">
+    <li><strong>ショットガン的な運用</strong>
+      <ul>
+        <li>一撃必中のスナイパーライフルではなく、面で攻めるショットガンや絨毯爆撃のような運用がAIには適している。</li>
+        <li>100発中数発外れても、全体として大きな成果が出る領域（アイデア出し、レビュー、プランニング）にAIを当てるべき。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 次なるステップ：マルチエージェントシステム</h2>
+  <ul class="opt-a-list">
+    <li><strong>シングルからマルチへ</strong>
+      <ul>
+        <li>単一のAIに答えを求めるのではなく、複数の役割（ロール）を持ったAI同士を議論させる。</li>
+        <li>これにより、比較検討の質やアイデアの洗練度が圧倒的に高まる。</li>
+      </ul>
+    </li>
+    <li><strong>組織論・行動経済学の応用</strong>
+      <ul>
+        <li>質の高い意思決定を行うための人間組織のノウハウ（ダニエル・カーネマンの理論など）が、そのままマルチエージェントの設計に転用できる。</li>
+        <li>例：独立した意思決定をさせてから統合する、特定のバイアス（ADHD的思考など）を再現したエージェントを混ぜる等。</li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+</html>
