@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+      background: rgba(255, 255, 255, 0.02);
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ながらAIラジオ：2026年3月23日号</h1>
+  <p>ポッドキャストアワードの振り返りから、Manusデスクトップ版の登場、GensparkのLINE対応、Notionの地味ながら重要なアップデート、そしてイーロン・マスクが提唱する「ユニバーサル・ハイ・インカム」まで、最新のAIニュースと実践的なツール活用術を整理します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">ポッドキャストアワード</span>
+    <span class="opt-a-tag">Manus Desktop</span>
+    <span class="opt-a-tag">Genspark</span>
+    <span class="opt-a-tag">Notion AI</span>
+    <span class="opt-a-tag">Claude Core Arc</span>
+    <span class="opt-a-tag">Claude Code</span>
+    <span class="opt-a-tag">Mac Studio</span>
+    <span class="opt-a-tag">Universal High Income</span>
+    <span class="opt-a-tag">MCP</span>
+    <span class="opt-a-tag">常時稼働PC</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ポッドキャストアワードの振り返りと今後の展望</h2>
+  <ul class="opt-a-list">
+    <li><strong>一般部門上位10作品に選出</strong>：開始1年目でTravis Japanなどと並びランクイン。
+      <ul>
+        <li>結果は入賞を逃し、優勝は「ゆる言語学ラジオ」。</li>
+        <li>専門性の高い番組よりも、雑談系・エンタメ系が強い傾向を再認識。</li>
+      </ul>
+    </li>
+    <li><strong>番組のクオリティ向上への決意</strong>：リスナーが人に勧めたくなるような内容を目指す。</li>
+    <li><strong>スポンサー募集のブレスト</strong>：
+      <ul>
+        <li>AI系（人材・転職）以外の、体験・教養・文化系のスポンサーを希望。</li>
+        <li>例：金沢21世紀美術館、科学系、レンタカーなど。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Manus Desktop版の登場とツール戦略</h2>
+  <ul class="opt-a-list">
+    <li><strong>デスクトップ版の特徴</strong>：
+      <ul>
+        <li>ブラウザ版と異なり、<strong>ローカルフォルダへのアクセス権限</strong>を付与可能。</li>
+        <li>領収書ファイルの整理やファイル名の自動変更などが容易に。</li>
+        <li>独自のデータベース機能やデプロイ機能（Manus.space）が強力。</li>
+      </ul>
+    </li>
+    <li><strong>ツールの使い分けに関する持論</strong>：
+      <ul>
+        <li>「どのツールが良いか」で悩む時間は無駄。</li>
+        <li><strong>1つのツールを極める</strong>ことが重要。明確にできないことが出てくるまで使い倒す。</li>
+        <li>うすたく氏はManus派、早川ごみ氏はClaude派と好みが分かれる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 常時稼働PCとハードウェアの重要性</h2>
+  <ul class="opt-a-list">
+    <li><strong>AIエージェントのための常時稼働</strong>：
+      <ul>
+        <li>寝ている間もAI（Claude CodeやCore Arc）を動かし続けるニーズが増加。</li>
+        <li>ノートPCを閉じた状態での稼働は<strong>排熱問題</strong>で画面が焼けるリスクがある（早川氏の体験談：修理費5万円）。</li>
+      </ul>
+    </li>
+    <li><strong>推奨ハードウェア</strong>：
+      <ul>
+        <li><strong>Mac miniやMac Studio</strong>が合理的。</li>
+        <li>ローカルLLMを快適に回すには、メモリ・GPUを積んだ高スペック機（80万円〜）が必要になることも。</li>
+      </ul>
+    </li>
+    <li><strong>税制への不満</strong>：100万円程度のPCも一括経費（減価償却ではなく）で落とせるようにしてほしいという主張。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 GensparkのLINE対応とインターフェース競争</h2>
+  <ul class="opt-a-list">
+    <li><strong>LINE連携の意義</strong>：
+      <ul>
+        <li>SlackやDiscordよりも、一般ユーザーにとって馴染みのあるLINEでAIを呼び出せる。</li>
+        <li>日本市場を意識した戦略的な動き。</li>
+      </ul>
+    </li>
+    <li><strong>「面（インターフェース）」の取り合い</strong>：
+      <ul>
+        <li>AIの性能差が縮まる中、どこで使えるか（PC、スマホ、LINE、Officeツール内）という接点の奪い合いが激化している。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 NotionとMicrosoft Copilotの現状</h2>
+  <ul class="opt-a-list">
+    <li><strong>Notionのアップデート</strong>：
+      <ul>
+        <li><strong>見出し4 (H4)</strong> が追加。地味だが構造化に便利。</li>
+        <li><strong>カスタムエージェント</strong>が2026年5月4日まで無料で試用可能。</li>
+        <li>組織でのナレッジ共有には、個別のAIツールよりNotion AIの方が引き継ぎや参照性が高い。</li>
+      </ul>
+    </li>
+    <li><strong>Microsoft Copilotへの不満</strong>：
+      <ul>
+        <li>ExcelのWeb版でしか動かない、挙動が不安定など、本家ツールとしての使い勝手に課題。</li>
+        <li>外部AI（Claude等）の方がOfficeファイルを扱いやすいという逆転現象。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Claude Core Arcによる「AIネイティブ」な働き方</h2>
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 200">
+      <!-- Nodes -->
+      <rect x="10" y="70" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="70" y="105" text-anchor="middle" font-size="14">雑多なメモ</text>
+      <text x="70" y="125" text-anchor="middle" font-size="12">(Notion等)</text>
+
+      <path d="M 130 100 L 190 100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+
+      <rect x="200" y="50" width="160" height="100" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="280" y="90" text-anchor="middle" font-size="14">Core Arc</text>
+      <text x="280" y="110" text-anchor="middle" font-size="12">(常時稼働エージェント)</text>
+      <text x="280" y="130" text-anchor="middle" font-size="12">定期的な整理・実行</text>
+
+      <path d="M 360 100 L 420 100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+
+      <rect x="430" y="70" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="500" y="105" text-anchor="middle" font-size="14">成果物</text>
+      <text x="500" y="125" text-anchor="middle" font-size="12">(整理済DB/資料)</text>
+
+      <!-- Arrow Marker -->
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+          <path d="M0,0 L0,10 L10,5 Z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+  <ul class="opt-a-list">
+    <li><strong>Core Arcの利点</strong>：
+      <ul>
+        <li>エンジニアでなくても使いやすいUI。</li>
+        <li><strong>Dispatch機能</strong>：外出先からスマホで、自宅のPCで動くCore Arcに指示が出せる。</li>
+      </ul>
+    </li>
+    <li><strong>AIに歩み寄るツール選び</strong>：
+      <ul>
+        <li>AIが操作しやすいツール（Notion, PowerPoint, Canva等）に業務を寄せる。</li>
+        <li>FigmaやGoogleスライドは、現状AIからの操作やAPI連携に制限が多い。</li>
+      </ul>
+    </li>
+    <li><strong>具体的な活用例</strong>：
+      <ul>
+        <li>Notionに放り込んだ雑多なメモを、Core Arcが毎日1回整理してアーカイブする。</li>
+        <li>確定申告用に、ドライブ内のカード明細を自動集計させる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 未来予測：ユニバーサル・ハイ・インカム (UHI)</h2>
+  <ul class="opt-a-list">
+    <li><strong>ベーシックインカムの先</strong>：
+      <ul>
+        <li>イーロン・マスク提唱。ロボットが全労働を代替し、人間が働かなくても「高い水準の生活」ができるお金が配られる世界。</li>
+      </ul>
+    </li>
+    <li><strong>「働く」ことの価値変容</strong>：
+      <ul>
+        <li>10年後には「昔の人はお金のために皿洗いや事務作業をしていたのか」と驚かれる可能性がある。</li>
+        <li>労働から解放された人間は、コミュニティ、教育、地産地消、趣味（クッキーを焼く等）に生きがいを見出すようになる。</li>
+      </ul>
+    </li>
+    <li><strong>生活の価値</strong>：
+      <ul>
+        <li>AI界隈のインフルエンサーこそ、効率化だけでなく「生活感（食事、料理、趣味）」を大切にすべき。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📊 ツール比較まとめ</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ツール名</th>
+        <th>主な特徴</th>
+        <th>ターゲット</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Manus Desktop</strong></td>
+        <td>ローカルフォルダ連携、独自DB、デプロイ機能</td>
+        <td>ファイル整理やWeb制作を自動化したい人</td>
+      </tr>
+      <tr>
+        <td><strong>Claude Code</strong></td>
+        <td>ターミナルベース、エンジニア向け</td>
+        <td>開発業務を爆速化したいエンジニア</td>
+      </tr>
+      <tr>
+        <td><strong>Claude Core Arc</strong></td>
+        <td>視覚的UI、スケジュール実行、スマホ指示(Dispatch)</td>
+        <td>非エンジニア、日常業務を自動化したい人</td>
+      </tr>
+      <tr>
+        <td><strong>Notion AI</strong></td>
+        <td>カスタムエージェント、H4見出し、組織共有</td>
+        <td>チームでのナレッジ管理・自動化をしたい人</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
