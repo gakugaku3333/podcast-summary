@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">令和ロマンのご様子 シーズン20-17「ごこにあり」</h1>
+  <p>
+    シーズン20の最終回。R-1グランプリ2024で優勝した<strong>今井らいぱち</strong>への祝辞と分析、冠番組の終了とYouTube移行の裏話、そしてサントリー「ザ・プレミアム・モルツ」とのコラボ企画「コンヨース」の完結編が語られます。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">今井らいぱち</span>
+    <span class="opt-a-tag">R-1グランプリ2024</span>
+    <span class="opt-a-tag">ザ・プレミアム・モルツ</span>
+    <span class="opt-a-tag">紺色（コン）</span>
+    <span class="opt-a-tag">キッズが見てるもしもタレントじゃなかったら</span>
+    <span class="opt-a-tag">安田善紀（おカド違い）</span>
+    <span class="opt-a-tag">広瀬すず</span>
+    <span class="opt-a-tag">Povo</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 コーナー：これってもの私だけですよ</h2>
+  <ul class="opt-a-list">
+    <li><strong>見た目だけで美味しいと確信する：</strong> くるまは「他人の気持ちに勝手に共感するな、俺に共感させろ」と投稿のルールにダメ出し。</li>
+    <li><strong>大工の授業が楽しい：</strong> くるま評「質が悪い」。日常あるあるを求めている。</li>
+    <li><strong>屋根付きバイク（デリバリー用）が最強：</strong> 二人とも大共感。「全部あれでいいじゃん」と絶賛。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 R-1グランプリ2024 優勝：今井らいぱち</h2>
+  <ul class="opt-a-list">
+    <li><strong>「ここにあり」優勝：</strong> くるまは「らいぱち界 東京支部 支部長」を自称。</li>
+    <li><strong>らいぱち界の構造：</strong> 
+      <div class="diagram-container">
+        <svg width="100%" height="120" viewBox="0 0 400 120">
+          <rect x="140" y="10" width="120" height="30" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+          <text x="200" y="30" text-anchor="middle" font-size="14">ゆずる界（親組織）</text>
+          <path d="M200 40 L200 70" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+          <rect x="140" y="75" width="120" height="30" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+          <text x="200" y="95" text-anchor="middle" font-size="14">らいぱち界</text>
+          <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+            </marker>
+          </defs>
+        </svg>
+      </div>
+    </li>
+    <li><strong>謎の記念写真：</strong> ツーリング写真の空に筆文字で「らいぱち界」と書かれた画像。くるまの家に実物がある。</li>
+    <li><strong>安田善紀（おカド違い）の分析：</strong> 
+      <ul>
+        <li>トップバッターとして期待されたが、2本目のらいぱちのネタ（遊び）と比較すると「ただの素人」に見えてしまった。</li>
+        <li>ラグビーのネタで緊張しすぎて声が出ていなかった。</li>
+        <li><strong>フリップのサイズ：</strong> 異常に小さく、審査員のバカリズムがとんでもない目で見ていた。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 番組終了とYouTube移行</h2>
+  <ul class="opt-a-list">
+    <li><strong>「キッズが見てるもしもタレントじゃなかったら」：</strong> MXの予算都合で地上波放送は終了。</li>
+    <li><strong>YouTubeチャンネル始動：</strong> 制作会社が継続を希望し、YouTubeへ移籍。</li>
+    <li><strong>子供たちへの配慮：</strong> 終了を伝えて号泣されるのを避けるため、「テレビはオワコンだからYouTubeで天下取ろうぜ」という建前でポジティブに伝えた。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 サントリー「プレモル」コラボ：コンヨース完結編</h2>
+  <p>新パッケージの<strong>「紺色（コン）」</strong>を浸透させるための3週連続企画。地上波CM（広瀬すず等出演）の開始に合わせ、令和ロマンは「おとり（陽動作戦）部隊」としての役割を終える。</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>投稿者</th>
+        <th>提案内容（コンの浸透案）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>田中からボタン持ち</td>
+        <td><strong>KPAK：</strong> コン・アッパク・エキコン。PPAPのパロディ。</td>
+      </tr>
+      <tr>
+        <td>ジョッペルペリホーム</td>
+        <td><strong>コンタロウ：</strong> プレモル缶を担いで「プレモル担いだコンタロウ」と歌う。</td>
+      </tr>
+      <tr>
+        <td>チャンジャーエターネル</td>
+        <td><strong>コンビーナ：</strong> 布袋寅泰「バンビーナ」の替え歌。</td>
+      </tr>
+      <tr>
+        <td>小さじ100</td>
+        <td><strong>コンピース：</strong> ONE PIECEの正体はプレモルであるという考察。</td>
+      </tr>
+      <tr>
+        <td>ポメラニアンの補給姿勢</td>
+        <td><strong>プレモルフォックス：</strong> 「コンコン」と鳴くキツネのキャラクター。</td>
+      </tr>
+      <tr>
+        <td>かぼすけ</td>
+        <td><strong>コンデン永年資材法：</strong> 紺色の田畑を開墾すると自分のものになる法律。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 その他のトピックス</h2>
+  <ul class="opt-a-list">
+    <li><strong>松井ケムリの出演情報：</strong> 「ライアーゲーム・ナイト」生配信、テレビ東京「ゴールデンストーンズ」など。</li>
+    <li><strong>高比良くるまのCM出演：</strong> <strong>Povo</strong>のCMに出演。佐藤健らが出席した記者会見には呼ばれなかったが、CM内では電話がかかってくる演出がある。</li>
+    <li><strong>ハッシュタグ：</strong> 最終回を盛り上げるため「#令和ロマンのご様子」「#コンヨース」「#プレモル」の併記を推奨。</li>
+  </ul>
+
+  <blockquote style="text-align: center; font-style: normal;">
+    <strong>「以上、令和ロマンの広瀬すず（くるま）と、広瀬アリス（ケムリ）でした」</strong>
+  </blockquote>
+
+</body>
+</html>
