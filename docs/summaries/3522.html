@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">アメリカの空港混乱と政治対立：予算失効による人手不足とICE派遣の背景</h1>
+  <p>アメリカ国内の空港で深刻化する人手不足と、それに伴うトランプ大統領によるICE（移民税関捜査局）職員の派遣表明について解説。背景には、国土安全保障省の予算をめぐる与野党の激しい対立と、歴史的なイラン情勢の緊迫があります。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">トランプ大統領</span>
+    <span class="opt-a-tag">ICE（移民税関捜査局）</span>
+    <span class="opt-a-tag">TSA（運輸保安局）</span>
+    <span class="opt-a-tag">国土安全保障省</span>
+    <span class="opt-a-tag">政府機関の一部閉鎖</span>
+    <span class="opt-a-tag">セーブアメリカ法</span>
+    <span class="opt-a-tag">イラン情勢</span>
+    <span class="opt-a-tag">モサデク首相</span>
+    <span class="opt-a-tag">イスラム革命</span>
+    <span class="opt-a-tag">JFK国際空港</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 アメリカとイラン：不仲の歴史的背景</h2>
+  <ul class="opt-a-list">
+    <li><strong>1953年：モサデク政権の打倒</strong>
+      <ul>
+        <li>モサデク首相が石油の国有化（イギリス資本BPの前身から奪還）を計画。</li>
+        <li>アメリカとイギリスが秘密裏にクーデターを画策し、政権を打倒。</li>
+        <li>その後、新米的なパフラビー国王による独裁体制が開始。</li>
+      </ul>
+    </li>
+    <li><strong>1979年：イスラム革命</strong>
+      <ul>
+        <li>国王政権が崩壊し、革命勢力がアメリカ大使館を占拠。</li>
+        <li>この出来事により、アメリカとイランの関係は決定的に悪化。</li>
+      </ul>
+    </li>
+    <li><strong>現在の動向（2026年3月時点）</strong>
+      <ul>
+        <li>トランプ大統領はSNSで「生産的な対話を行い、攻撃を5日間延期した」と投稿。</li>
+        <li>対してイラン国営メディアは「協議は存在しない」と否定し、情報が錯綜。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 空港の混乱：深刻な人手不足の実態</h2>
+  <ul class="opt-a-list">
+    <li><strong>予算失効による無給勤務</strong>
+      <ul>
+        <li>国土安全保障省の予算が通らず、職員への給与支払いが<strong>40日間停止</strong>。</li>
+        <li><strong>TSA（運輸保安局）</strong>の職員が大量に欠勤・退職。</li>
+      </ul>
+    </li>
+    <li><strong>主要空港の欠勤率</strong>
+      <ul>
+        <li><strong>JFK国際空港：</strong>全職員の<strong>33%（3人に1人）</strong>が欠勤。</li>
+        <li><strong>ラガーディア空港：</strong>17%が欠勤。</li>
+      </ul>
+    </li>
+    <li><strong>旅客への影響</strong>
+      <ul>
+        <li>待ち時間の計測が不可能となり、ウェブサイトでは「データなし」と表示。</li>
+        <li>出発の<strong>3時間以上前</strong>の到着が推奨されるが、列がターミナル外まで溢れる事態。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 180">
+      <!-- Nodes -->
+      <rect x="10" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="70" y="95" text-anchor="middle" font-size="14">予算失効</text>
+      
+      <rect x="160" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="220" y="95" text-anchor="middle" font-size="14">給与停止(40日)</text>
+      
+      <rect x="310" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="370" y="95" text-anchor="middle" font-size="14">TSA職員の欠勤</text>
+      
+      <rect x="460" y="60" width="130" height="60" rx="8" fill="rgba(239, 68, 68, 0.2)" stroke="#ef4444" />
+      <text x="525" y="95" text-anchor="middle" font-size="14">空港の機能不全</text>
+      
+      <!-- Arrows -->
+      <path d="M 130 90 L 160 90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+      <path d="M 280 90 L 310 90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+      <path d="M 430 90 L 460 90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+      
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 政治的対立：予算承認を阻む2つの争点</h2>
+  <p>国土安全保障省の予算が5回にわたり否決されている背景には、以下の対立があります。</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>勢力</th>
+        <th>主な主張・要求内容</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>民主党</strong></td>
+        <td>
+          <strong>ICEの改革・規制強化</strong><br>
+          ・捜査官の目出し帽着用禁止<br>
+          ・身分証の常時明示<br>
+          ・民間宅捜査時の裁判官令状の義務化
+        </td>
+      </tr>
+      <tr>
+        <td><strong>トランプ政権・共和党</strong></td>
+        <td>
+          <strong>セーブアメリカ法（Save America Act）の承認</strong><br>
+          ・不法移民の投票防止のため、有権者登録時の市民権証明を義務化。<br>
+          ・これを予算署名の「絶対条件」としている。
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 ICE職員の派遣とその懸念</h2>
+  <ul class="opt-a-list">
+    <li><strong>トランプ大統領の決定</strong>
+      <ul>
+        <li>人手不足を補うため、<strong>ICE（移民税関捜査局）</strong>の職員を空港へ派遣。</li>
+      </ul>
+    </li>
+    <li><strong>業務内容の限界</strong>
+      <ul>
+        <li>TSAの本来の業務（X線装置による爆発物探知など）には高度な習熟が必要。</li>
+        <li>ICE職員は「出口の監視」や「利用客の誘導」などの<strong>周辺業務</strong>のみを担当。</li>
+      </ul>
+    </li>
+    <li><strong>今後の焦点</strong>
+      <ul>
+        <li>3月末からの<strong>イースター休暇</strong>で移動需要が急増する。</li>
+        <li>保安業務の負担が増す中で、与野党がいつ妥協点を見いだせるかが鍵。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote>
+    「市民の足でもある空港の安全運営が、ワシントンの政治対立の影響を直接受けている。これもまた今のアメリカ社会の反映といえるかもしれない。」
+  </blockquote>
+
+</body>
+</html>
