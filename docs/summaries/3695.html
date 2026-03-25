@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">アメリカ・イラン間の緊迫と交渉の不透明性、および都心不動産市場の変調</h1>
+  <p>2026年3月25日放送。トランプ政権によるイランへの軍事攻撃延期と水面下の交渉疑惑、そして37ヶ月ぶりに下落に転じた東京都心の不動産価格動向について詳述されています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">トランプ大統領</span>
+    <span class="opt-a-tag">イラン情勢</span>
+    <span class="opt-a-tag">ホルムズ海峡</span>
+    <span class="opt-a-tag">ガリバフ議長</span>
+    <span class="opt-a-tag">ウラン濃縮</span>
+    <span class="opt-a-tag">原油価格</span>
+    <span class="opt-a-tag">都心中古マンション</span>
+    <span class="opt-a-tag">金利上昇</span>
+    <span class="opt-a-tag">棍棒外交</span>
+    <span class="opt-a-tag">エマソン大学調査</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 東京都心の中古マンション価格に変化の兆し</h2>
+  <p>長らく高騰を続けてきた都心の不動産市場において、一部で価格下落が確認されました。</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>対象エリア</th>
+        <th>最新の価格動向</th>
+        <th>平均価格（売り出し）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>東京23区全体</strong></td>
+        <td>前月比 <strong>1.9%上昇</strong></td>
+        <td>2025年に初めて1億円を突破</td>
+      </tr>
+      <tr>
+        <td><strong>都心6区</strong></td>
+        <td>前月比 <strong>0.2%下落</strong></td>
+        <td>1億8761万円</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul class="opt-a-list">
+    <li><strong>37ヶ月ぶりのマイナス</strong>：都心部での価格下落は極めて異例。</li>
+    <li><strong>下落の背景</strong>：
+      <ul>
+        <li>自治体による<strong>転売規制</strong>の方針。</li>
+        <li><strong>金利上昇</strong>に伴う投資効率の低下。</li>
+      </ul>
+    </li>
+    <li><strong>懸念点</strong>：高騰による居住者の流出が街の魅力を損ない、最終的に不動産価値を押し下げるリスク。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 アメリカによる対イラン軍事攻撃の延期</h2>
+  <p>トランプ大統領は、イラン国内のエネルギー施設に対する攻撃を<strong>5日間延期</strong>すると発表しました。</p>
+
+  <ul class="opt-a-list">
+    <li><strong>当初の通告</strong>：ホルムズ海峡の無条件解放を求める48時間の最終通告。</li>
+    <li><strong>延期の理由</strong>：イラン側と「非常に良好で生産的な対話」があり、複数の主要な合意点に達したため。</li>
+    <li><strong>包括的解決の目標</strong>：
+      <ul>
+        <li>ホルムズ海峡の通行再開。</li>
+        <li>イランの<strong>ウラン濃縮活動のゼロ化</strong>。</li>
+      </ul>
+    </li>
+    <li><strong>市場の反応</strong>：
+      <ul>
+        <li>1バレル112ドルまで高騰していた<strong>原油先物価格が急落</strong>。</li>
+        <li>アジアを含む世界の株式市場が反発。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 交渉の有無をめぐる真っ向からの対立</h2>
+  <p>アメリカとイランの間で、実際に交渉が行われているかについて主張が食い違っています。</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>主体</th>
+        <th>主張内容</th>
+        <th>詳細</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>アメリカ（トランプ氏）</strong></td>
+        <td><strong>交渉は進行中</strong></td>
+        <td>特使のスティーブ・ウィトコフ氏やジャレッド・クシュナー氏を通じた接触。</td>
+      </tr>
+      <tr>
+        <td><strong>イラン（外務省）</strong></td>
+        <td><strong>交渉は一切ない</strong></td>
+        <td>2月28日の攻撃開始以来、直接・間接問わず接触を否定。トランプ氏の発言は「市場操作のフェイクニュース」と断定。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 鍵を握る人物：モハンマド・バゲル・ガリバフ議長</h2>
+  <p>アメリカ側が実質的な交渉パートナーとして注目している有力政治家です。</p>
+
+  <ul class="opt-a-list">
+    <li><strong>経歴</strong>：革命防衛隊の元空軍司令官、テヘラン市長、警察庁長官を歴任。</li>
+    <li><strong>現在の立場</strong>：2020年からイラン国会議長。最高指導者<strong>モジタバ氏</strong>に近い。</li>
+    <li><strong>評価</strong>：保守派ながら実利を重んじる「実務家」としての側面。</li>
+    <li><strong>米側の狙い</strong>：交渉可能な相手、あるいは将来的な指導者候補として接触を試みている（ポリティコ報道）。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 軍事的圧力と「4月9日」の期限</h2>
+  <p>外交交渉の裏で、アメリカは2003年イラク侵攻以来の最大規模となる軍事力を展開しています。</p>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 200">
+      <!-- Background Nodes -->
+      <rect x="10" y="60" width="160" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="90" y="100" text-anchor="middle" font-size="14" font-weight="bold">大規模な軍事増強</text>
+      <text x="90" y="120" text-anchor="middle" font-size="12">空母・戦闘機・海兵隊</text>
+
+      <!-- Arrow -->
+      <line x1="170" y1="100" x2="230" y2="100" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrowhead)"/>
+      
+      <rect x="240" y="60" width="160" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="320" y="100" text-anchor="middle" font-size="14" font-weight="bold">交渉のテーブル</text>
+      <text x="320" y="120" text-anchor="middle" font-size="12">（強制的な対話）</text>
+
+      <!-- Arrow -->
+      <line x1="400" y1="100" x2="460" y2="100" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+      <rect x="470" y="60" width="120" height="80" rx="8" fill="rgba(245, 158, 11, 0.2)" stroke="#f59e0b" stroke-width="2"/>
+      <text x="530" y="90" text-anchor="middle" font-size="14" font-weight="bold">4月9日</text>
+      <text x="530" y="110" text-anchor="middle" font-size="12">終結の目安</text>
+      <text x="530" y="130" text-anchor="middle" font-size="12">（決断の時）</text>
+
+      <!-- Arrowhead definition -->
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>軍事展開</strong>：イスラエルやヨルダンの基地に最新鋭戦闘機を配置。数千人の海兵隊を追加派遣。</li>
+    <li><strong>攻撃対象案</strong>：イランの石油積み出しの要所である<strong>カーグ島</strong>など。</li>
+    <li><strong>戦争終結の目安</strong>：イスラエル紙によれば<strong>4月9日</strong>が一つの節目。残り2週間余りで「交渉成立」か「地上戦を含む本格戦」かの決断を迫られている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 アメリカ国内の世論と「棍棒外交」</h2>
+  <p>中間選挙を控え、トランプ政権は国内の遠征気分（戦争回避）と外交成果の板挟みにあります。</p>
+
+  <ul class="opt-a-list">
+    <li><strong>世論調査（エマソン大学）</strong>：
+      <ul>
+        <li>対イラン軍事行動への<strong>反対：47%</strong></li>
+        <li>対イラン軍事行動への支持：40%</li>
+      </ul>
+    </li>
+    <li><strong>政治的背景</strong>：中間選挙への影響を考慮し、泥沼の戦争は避けたいが、弱腰も見せられない状況。</li>
+    <li><strong>セオドア・ルーズベルトの教訓</strong>：
+      <blockquote>「大きな棍棒を持ちながら、穏やかに話せ（Speak softly and carry a big stick）」</blockquote>
+      <ul>
+        <li>圧倒的な軍事力を背景に、迅速な外交取引を目指す「棍棒外交」の現代版が試されている。</li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+</html>
