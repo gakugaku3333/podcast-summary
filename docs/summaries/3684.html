@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">西郷隆盛編 第2回：極貧の少年時代と薩摩のスパルタ教育</h1>
+  <p>西郷隆盛の誕生から、彼の人格形成に多大な影響を与えた薩摩独自の教育制度「郷中教育」、そして武士としての致命的な怪我による挫折と転換点について深掘りします。後の大物感とは裏腹に、当時は「愚鈍でややこしい男」と評されていた意外な一面が明かされます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">西郷隆盛（小吉・吉之助）</span>
+    <span class="opt-a-tag">大久保利通</span>
+    <span class="opt-a-tag">下加治屋町</span>
+    <span class="opt-a-tag">郷中教育（ごじゅうきょういく）</span>
+    <span class="opt-a-tag">島津斉彬</span>
+    <span class="opt-a-tag">島津久光</span>
+    <span class="opt-a-tag">お由羅騒動</span>
+    <span class="opt-a-tag">朱子学</span>
+    <span class="opt-a-tag">陽明学</span>
+    <span class="opt-a-tag">赤山靭負</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 誕生と「奇跡の町」下加治屋町</h2>
+  <ul class="opt-a-list">
+    <li><strong>1828年1月23日誕生</strong>：鹿児島城下の下加治屋町（現在の鹿児島中央駅付近）に生まれる。</li>
+    <li><strong>英雄を輩出した特異な地域</strong>：わずか70世帯ほどの小さな町から、西郷隆盛、大久保利通、大山巌、東郷平八郎など、明治維新と日露戦争の主役たちが続出した。</li>
+    <li><strong>大久保利通との関係</strong>：3歳年下。当時の厳格な上下関係の中では、生涯続く「先輩・後輩」の関係がここで築かれた。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 想像を絶する極貧生活</h2>
+  <ul class="opt-a-list">
+    <li><strong>16人の大所帯</strong>：両親、祖父母、兄弟7人（西郷は長男）を含む大家族。</li>
+    <li><strong>年収約300万円</strong>：下級武士（御小姓組）の家柄で、現代の価値観に換算すると16人を養うにはあまりに過酷な経済状況。</li>
+    <li><strong>自己犠牲のエピソード</strong>：布団が足りず、弟や妹に布団を譲り、自分は足だけ入れて寝るような生活を送っていた。</li>
+    <li><strong>父の副業</strong>：家計を支えるため、父・吉兵衛は内職や他家（赤山家）の手伝いなどのダブルワーク・トリプルワークに励んでいた。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 幼少期の評価：天才ではなく「愚鈍」</h2>
+  <ul class="opt-a-list">
+    <li><strong>周囲の目</strong>：子供の頃は「再起に溢れる」タイプではなく、むしろ<strong>「愚鈍（ぐどん）」</strong>、あるいは<strong>「ややこしい奴」</strong>と思われていた。</li>
+    <li><strong>頑固な性格</strong>：普段は無口だが、正義感や感情に触れる「譲れない一線」を越えられると、猛烈に反論し、絶対に後に引かない。</li>
+    <li><strong>地雷の正体</strong>：弱いものいじめや不誠実な態度に対して極端に厳しく、周囲からは「関わると面倒な男」という評価だった。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 薩摩のスパルタ教育「郷中（ごじゅう）教育」</h2>
+  <p>島津義弘の時代から続く、地域コミュニティによる徹底した指定教育制度。</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>区分</th>
+        <th>年齢</th>
+        <th>役割・特徴</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>小稚児（こちご）</strong></td>
+        <td>6〜10歳</td>
+        <td>教育を受ける最小単位。</td>
+      </tr>
+      <tr>
+        <td><strong>長稚児（おせちご）</strong></td>
+        <td>11〜12歳</td>
+        <td>小稚児の面倒を見る。</td>
+      </tr>
+      <tr>
+        <td><strong>二才（にせ）</strong></td>
+        <td>14〜23歳</td>
+        <td>稚児を統括し、武芸や議論を主導する。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul class="opt-a-list">
+    <li><strong>鉄の掟</strong>：
+      <ul>
+        <li>嘘をつかない、負けない、弱いものいじめをしない。</li>
+        <li><strong>23歳まで酒・タバコ禁止</strong>。</li>
+        <li><strong>女性との接触・噂話は厳禁</strong>。違反者は切腹を命じられることもあるほどのストイックさ。</li>
+      </ul>
+    </li>
+    <li><strong>実践重視</strong>：島津忠良の「いろは歌」をベースに、理屈よりも「行動」を重んじる。</li>
+    <li><strong>議論の奨励</strong>：上下関係はありつつも、集団での問答（ディベート）は公平な立場で行うことが推奨された。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 人生の転換点：刀を握れなくなった事件</h2>
+  <div class="diagram-container">
+    <svg width="100%" height="180" viewBox="0 0 600 180">
+      <!-- Node 1 -->
+      <rect x="20" y="50" width="160" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="100" y="85" text-anchor="middle" font-size="14" font-weight="bold">13歳：喧嘩事件</text>
+      <text x="100" y="110" text-anchor="middle" font-size="12">3歳上の少年に勝利</text>
+      
+      <!-- Arrow 1 -->
+      <line x1="180" y1="90" x2="220" y2="90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      
+      <!-- Node 2 -->
+      <rect x="220" y="50" width="160" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="300" y="85" text-anchor="middle" font-size="14" font-weight="bold">闇討ちによる負傷</text>
+      <text x="300" y="110" text-anchor="middle" font-size="12">右腕の神経を切断</text>
+      
+      <!-- Arrow 2 -->
+      <line x1="380" y1="90" x2="420" y2="90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      
+      <!-- Node 3 -->
+      <rect x="420" y="50" width="160" height="80" rx="8" fill="rgba(245, 158, 11, 0.2)" stroke="#f59e0b" stroke-width="2"/>
+      <text x="500" y="85" text-anchor="middle" font-size="14" font-weight="bold">文治ルートへ転換</text>
+      <text x="500" y="110" text-anchor="middle" font-size="12">読書・学問に没頭</text>
+
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+  <ul class="opt-a-list">
+    <li><strong>無敵才の再来</strong>：巨漢だった西郷は、最強の先祖「無敵才」の再来と期待されていた。</li>
+    <li><strong>遺恨と負傷</strong>：喧嘩で負けた相手（横堀）に逆恨みされ、刀で右腕を斬られる。</li>
+    <li><strong>武士としての挫折</strong>：刀が握れなくなり、武芸の道を断念。これがきっかけで<strong>「学問（朱子学・陽明学）」</strong>に全精力を注ぐようになり、後の深い教養と行政能力に繋がった。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 行政官としてのキャリア（18歳〜）</h2>
+  <ul class="opt-a-list">
+    <li><strong>郡方書役助（こおりかたかきやくすけ）</strong>：農政を担当する役所の末端役人として10年間勤務。</li>
+    <li><strong>現場主義</strong>：道路や橋の補修、年貢の計算など、泥臭い実務を通じて農民の苦境を目の当たりにする。</li>
+    <li><strong>慈愛の精神</strong>：上司の佐古田利左衛門（清貧な人格者）から強い影響を受け、「農民を搾取の対象ではなく、守るべき存在」と考えるようになる。</li>
+    <li><strong>不正への厳しさ</strong>：同僚の横領や不正を徹底的に追及したため、一部からは煙たがられていた。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 お由羅騒動と陰謀論</h2>
+  <ul class="opt-a-list">
+    <li><strong>後継者争い</strong>：開明派の<strong>島津斉彬</strong> vs 保守派が担ぐ<strong>島津久光</strong>。</li>
+    <li><strong>集団ヒステリー</strong>：久光の母・お由羅が斉彬の子を呪い殺しているという「陰謀論」が薩摩武士の間で爆発。</li>
+    <li><strong>西郷の過激行動</strong>：西郷もこの陰謀論を信じ込み、敵対勢力の暗殺計画に加担しようとして処罰寸前まで追い込まれる。</li>
+    <li><strong>久光への嫌悪感</strong>：この時の騒動と、尊敬する先輩・赤山靭負の切腹が、西郷の生涯続く「久光嫌い」の原点となった。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 第2回まとめ：うだつの上がらない20代前半</h2>
+  <blockquote>
+    24歳時点の西郷隆盛：
+    <ul>
+      <li>家計は火の車（超貧乏）</li>
+      <li>両親と祖父を相次いで亡くし、一家の主となる</li>
+      <li>刀は握れず、仕事では同僚に嫌われ気味</li>
+      <li>陰謀論にハマって過激な行動に走る</li>
+    </ul>
+    歴史に名を残す気配はまだ微塵もない、苦難の連続の中にいた。
+  </blockquote>
+
+</body>
+</html>
