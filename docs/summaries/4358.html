@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">#97 「亀の時間」という最適化されない時間：和尚の教えから、茶道と禅のリファクタリングを考える</h1>
+  <p>京都の老舗料亭「和久傳」のおかみ、桑村祐子氏をゲストに迎え、茶道、禅、そして現代のマネジメントや教育に通ずる「時間の捉え方」や「身体感覚」について深く掘り下げるエピソード。効率化やデジタル化が進む現代において、あえて「最適化されない時間」を持つ意味を問い直す。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">桑村祐子</span>
+    <span class="opt-a-tag">和久傳</span>
+    <span class="opt-a-tag">茶道</span>
+    <span class="opt-a-tag">禅</span>
+    <span class="opt-a-tag">大徳寺</span>
+    <span class="opt-a-tag">工事使い</span>
+    <span class="opt-a-tag">亀の時間</span>
+    <span class="opt-a-tag">身体感覚</span>
+    <span class="opt-a-tag">リファクタリング</span>
+    <span class="opt-a-tag">スモール・イズ・ビューティフル</span>
+    <span class="opt-a-tag">TEDトーク</span>
+    <span class="opt-a-tag">村田珠光</span>
+    <span class="opt-a-tag">武野紹鴎</span>
+    <span class="opt-a-tag">千利休</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 「亀の時間」と身体感覚の同調</h2>
+  <ul class="opt-a-list">
+    <li><strong>亀のエサやりを通じた学び</strong>
+      <ul>
+        <li>桑村氏が修行時代、和尚から「亀に6Pチーズを小さく切ってあげてきて」と頼まれたエピソード。</li>
+        <li>多忙な人間側の都合とは無関係に、亀はなかなか上がってこない。</li>
+        <li><strong>「自分の時間」を「亀の時間」に合わせる</strong>ことで、結果的にそれが一種の座禅のような、深い集中と静寂の時間になった。</li>
+      </ul>
+    </li>
+    <li><strong>「気」の流れと空間の質</strong>
+      <ul>
+        <li>目に見えない「気の流れ」を意識することで、掃除や人の笑顔、空間の淀みを敏感に察知できるようになる。</li>
+        <li>中央集権的・硬直的な組織ではなく、身体感覚に基づいた柔軟なチーム運営の重要性。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 組織運営と「本番」のあり方</h2>
+  <ul class="opt-a-list">
+    <li><strong>練習と本番の切り分け</strong>
+      <ul>
+        <li>本番直前に何かを指示しても、身体は反応できない。</li>
+        <li><strong>練習（トライアル）</strong>：徹底的に話し合い、細部まで詰め、修正を繰り返す。</li>
+        <li><strong>本番（エグゼキューション）</strong>：何も考えず、身体に任せて実行する。指揮者は本番では任せることが重要。</li>
+      </ul>
+    </li>
+    <li><strong>チームのモチベーション</strong>
+      <ul>
+        <li>スタッフや料理人に「自由に、好きにやってもらう」という信頼ベースの運営。</li>
+        <li>高い材料を使っても、気が高まりすぎたり段取りが悪かったりすると上手くいかない。コントロールできない部分を受け入れる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 200">
+      <!-- Rehearsal Box -->
+      <rect x="20" y="50" width="180" height="100" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="110" y="90" text-anchor="middle" font-weight="bold">練習・準備</text>
+      <text x="110" y="120" text-anchor="middle" font-size="12">徹底的な対話・修正</text>
+      
+      <!-- Arrow -->
+      <line x1="210" y1="100" x2="380" y2="100" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrowhead)"/>
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+      <text x="295" y="90" text-anchor="middle" font-size="12">信頼して任せる</text>
+
+      <!-- Execution Box -->
+      <rect x="400" y="50" width="180" height="100" rx="8" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="2"/>
+      <text x="490" y="90" text-anchor="middle" font-weight="bold">本番・実行</text>
+      <text x="490" y="120" text-anchor="middle" font-size="12">無心・身体的反応</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 大規模茶会「工事使い」の実践</h2>
+  <ul class="opt-a-list">
+    <li><strong>イベントの規模と構成</strong>
+      <ul>
+        <li><strong>50名のお客を11回</strong>迎えるという大規模な茶会。</li>
+        <li>ジョイ氏は「亭主」として、お点前よりも全体のストーリーテリングと進行（プロデューサー的役割）に集中。</li>
+        <li><strong>TEDトーク形式</strong>：ピンマイクとスピーカーを使用し、エンターテインメント性を高めた。</li>
+      </ul>
+    </li>
+    <li><strong>ロジスティクスの重要性</strong>
+      <ul>
+        <li>一つの扉からお点前をする人と、お菓子や茶碗を運ぶ人が出入りする「交通整理」が最大の課題。</li>
+        <li>3月の初回はパニック状態だったが、9月にはスムーズに。この「劇場型」の運営にスタッフもやりがいを感じた。</li>
+      </ul>
+    </li>
+    <li><strong>日常生活への影響</strong>
+      <ul>
+        <li>茶道の稽古を重ねることで、身の回りの乱れ（歯磨き粉の向き、打ち合わせ中の携帯の角度など）が気になるようになる。</li>
+        <li><strong>感覚の鋭敏化</strong>：今まで見えなかった美しさが見えるようになる一方で、他人の不備も目についてしまうというジレンマ。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 茶道と禅の「リファクタリング」</h2>
+  <ul class="opt-a-list">
+    <li><strong>茶道のビジネスモデルと本質</strong>
+      <ul>
+        <li>多くの人に理解してもらうための「ソーシャルクラブ化」や「サービス化」が進むことで、本来の「芯（禅の精神）」がズレてしまう懸念。</li>
+        <li>オーバーツーリズム下の京都における、本質を理解する客とそうでない客の乖離。</li>
+      </ul>
+    </li>
+    <li><strong>歴史的変遷と再構築の提案</strong>
+      <table>
+        <thead>
+          <tr>
+            <th>人物</th>
+            <th>役割・特徴</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>村田珠光・武野紹鴎</strong></td>
+            <td>侘び茶の創始。より精神的に「濃い」禅の要素。</td>
+          </tr>
+          <tr>
+            <td><strong>千利休</strong></td>
+            <td>デザインを施し、より多くの人に伝わるよう「かっこよく」パッケージ化。</td>
+          </tr>
+          <tr>
+            <td><strong>現代</strong></td>
+            <td>江戸時代以降の華やかさが定着。もう一度「リセット」が必要な時期。</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li><strong>禅の精神を取り戻す</strong>
+      <ul>
+        <li>お坊さんや禅を深く理解している人が、茶道を「リファクタリング（再構築）」してほしいというジョイ氏の願い。</li>
+        <li>桑村氏が出会った大徳寺の先生：道具の立派さではなく、その所作だけで同席者の呼吸が整うような、無心の美しさ。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 グローバルな視点での茶の湯</h2>
+  <ul class="opt-a-list">
+    <li><strong>スイスでの海外研修エピソード</strong>
+      <ul>
+        <li>西洋の芸術観（鑑賞者とアーティストの分離）に対し、茶室という狭い空間で<strong>全員で場を作り上げる「総合芸術」</strong>としての茶道が、海外の人々に高く評価された。</li>
+        <li>用意されたものを享受するだけでなく、その場に参画する楽しみ方の普及。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote>
+    「お茶の先生の所作を同じ狭い空間で見ているだけで、こちらの呼吸が整う。忘れていた息の仕方を思い出すような、見られている意識が全くなくなるような美しさ。」
+    <br>— 桑村祐子
+  </blockquote>
+
+</body>
+</html>
