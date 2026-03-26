@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">深井・けんすうのまぼろし会議 第30回：日常生活の困りごとと特性</h1>
+  <p>出張中にパソコンを紛失した深井氏と、けんすう氏が、自身の「生活能力の低さ」や「ADHD/ASD的特性」、それらを補うためのテクノロジー活用について語り合うエピソードです。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">紛失癖</span>
+    <span class="opt-a-tag">ADHD</span>
+    <span class="opt-a-tag">ASD</span>
+    <span class="opt-a-tag">Apple Watch</span>
+    <span class="opt-a-tag">Genspark</span>
+    <span class="opt-a-tag">AIエージェント</span>
+    <span class="opt-a-tag">Galaxy</span>
+    <span class="opt-a-tag">SHURE</span>
+    <span class="opt-a-tag">キヨーレオピン</span>
+    <span class="opt-a-tag">予定調整</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 深刻な「紛失癖」の実態</h2>
+  <ul class="opt-a-list">
+    <li><strong>深井氏の現状：</strong> 出張中にパソコンを紛失。前日の講演場所に置き忘れた可能性が高い。イヤホンの充電も切れるなど、極限状態で収録。</li>
+    <li><strong>AirPodsの紛失頻度：</strong> 深井氏は半年に1回は紛失し、何台も買い直している。けんすう氏はストラップをベルトにつけることで紛失を防止。</li>
+    <li><strong>財布とスマホ：</strong> 深井氏は財布も頻繁になくすため、持たないようにしている。スマホもよく置き忘れる。</li>
+    <li><strong>海外でのトラブル：</strong> 韓国のタクシー内にスマホを置き忘れた際、スマホに磁石でカードケース（マイナンバー、法人・個人カード入り）を貼っていたため、全財産と身分証を同時に紛失。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 紛失からのリカバリー・フロー（韓国での事例）</h2>
+  <svg width="100%" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+    <rect x="10" y="40" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+    <text x="25" y="75" font-size="14">タクシーに紛失</text>
+    
+    <path d="M 130 70 L 160 70" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <rect x="170" y="40" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+    <text x="180" y="75" font-size="14">Apple Watchで操作</text>
+    
+    <path d="M 310 70 L 340 70" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <rect x="350" y="40" width="230" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+    <text x="360" y="65" font-size="14">遠隔で音を鳴らす</text>
+    <text x="360" y="85" font-size="14">ロストモードで電話を待つ</text>
+
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+      </marker>
+    </defs>
+  </svg>
+
+  <h2 class="opt-a-section-title">📌 特性と向き合う（ADHD・ASD傾向）</h2>
+  <ul class="opt-a-list">
+    <li><strong>自己分析：</strong> 深井氏は診断は受けていないが、ADHDとASDの両方の特性を自覚している。</li>
+    <li><strong>ADHD的側面：</strong> 常に多動で落ち着きがない。薬を飲むと頭の回転が遅くなる（落ち着きすぎてしまう）懸念があるため、飲む気はない。</li>
+    <li><strong>ASD的側面：</strong> 同じ曲を聴き続ける、同じものを食べ続ける、ルーティンをやり続けるといった傾向がある。</li>
+    <li><strong>理想の解決策：</strong> 紛失を防ぐため、体を<strong>アンドロイド化</strong>してスマホやイヤホンを体内に埋め込みたいという願望がある。</li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>特性カテゴリ</th>
+        <th>具体的なエピソード・傾向</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>ADHD傾向</strong></td>
+        <td>パソコン・財布・スマホの頻繁な紛失、多動性、落ち着きのなさ。</td>
+      </tr>
+      <tr>
+        <td><strong>ASD傾向</strong></td>
+        <td>同じ曲のループ再生、食事の固定化、ルーティンの固執。</td>
+      </tr>
+      <tr>
+        <td><strong>生活の工夫</strong></td>
+        <td>Apple Watch（装着型なのでなくさない）、AirPodsのストラップ固定。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 コミュニケーションと予定調整の苦悩</h2>
+  <ul class="opt-a-list">
+    <li><strong>メール・メッセージ：</strong> 深井氏はメールの返信が非常に苦痛。タスクとして積み重なっていく感覚が耐えられない。</li>
+    <li><strong>予定調整：</strong> けんすう氏も予定調整が苦手で、自分でやるとダブルブッキングを頻発させる。</li>
+    <li><strong>理想の予約システム：</strong> けんすう氏は「当日予約制（その日の朝に予約開始）」を希望。優先順位を自分で付けられないため、先着順や相手の熱量で決まる方が楽だと考えている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 注目しているAIツール「Genspark」</h2>
+  <ul class="opt-a-list">
+    <li><strong>Genspark（ジェンスパーク）：</strong> AIエージェント系ツール。複数のAIを組み合わせて、資料作成などの精度を最大化する。</li>
+    <li><strong>Genspark Autopilot (Crow)：</strong> パソコン操作をAIに任せられる強力なツール。</li>
+    <li><strong>けんすう氏の活用法：</strong>
+      <ul>
+        <li>毎日ポッドキャストやメディアのニュースを収集・翻訳。</li>
+        <li>自身の過去のnote記事を学習させ、「けんすうが書くならこういう切り口になる」という下書き（3000文字程度を5本など）を自動生成させている。</li>
+        <li>LINEと連携させ、遠隔のパソコンを操作させている。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 本気で推奨するプロダクト</h2>
+  <ul class="opt-a-list">
+    <li><strong>Galaxy：</strong> けんすう氏が広告に出演。タレントとしてではなく、ガチのユーザーとして出演しており、撮影現場でも操作方法を教えるほど詳しい。</li>
+    <li><strong>SHURE（シュア）：</strong> 深井氏が熱烈に推奨するマイクブランド。
+      <ul>
+        <li>ミュージシャンにとっての「味噌汁とご飯」のような、好き嫌いを超越した前提的な存在。</li>
+        <li>深井氏はスマホに直接刺せる小型マイク（MV88等）や、MV7+を愛用。</li>
+        <li>「生声よりも聞きやすい」圧倒的な信頼感がある。</li>
+      </ul>
+    </li>
+    <li><strong>キヨーレオピン：</strong> 湧永製薬のニンニクエキス。深井氏が「これのおかげでギリギリ生きている」と語るほど信頼している滋養強壮剤。</li>
+  </ul>
+
+</body>
+</html>
