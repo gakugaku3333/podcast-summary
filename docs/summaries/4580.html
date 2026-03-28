@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">AI時代は「倫理」が不可欠。土地に根ざした学びをいま行う意味</h1>
+  <p>龍谷大学副学長の深尾昌峰氏をゲストに迎え、2027年に新設される「環境サスティナビリティ学部」と「情報学部」の狙い、そしてAIや資本主義の揺り戻しが起きている現代社会における「倫理」と「地域に根ざした教育」の重要性について深掘りします。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">龍谷大学</span>
+    <span class="opt-a-tag">深尾昌峰</span>
+    <span class="opt-a-tag">環境サスティナビリティ学部</span>
+    <span class="opt-a-tag">情報学部</span>
+    <span class="opt-a-tag">インパクト投資</span>
+    <span class="opt-a-tag">ネイチャーポジティブ経営</span>
+    <span class="opt-a-tag">環境DNA</span>
+    <span class="opt-a-tag">自省利他</span>
+    <span class="opt-a-tag">コレクティブインパクト</span>
+    <span class="opt-a-tag">ローカルGX</span>
+    <span class="opt-a-tag">ビワコオーツキャンパス</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ゲスト：深尾 昌峰（ふかお まさたか）氏の経歴</h2>
+  <ul class="opt-a-list">
+    <li><strong>社会起業家と研究者の両輪：</strong> 1998年に京都NPOセンター事務局長に就任。2012年には「プラスソーシャル」を起業。</li>
+    <li><strong>龍谷大学での歩み：</strong> 2010年に法学部准教授、その後教授を経て、2022年より副学長を務める。</li>
+    <li><strong>専門領域：</strong> インパクト投資のフレームワーク構築など、経済合理性と社会的価値を統合する活動に従事。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 現代社会の潮流：行き過ぎた資本主義の揺り戻し</h2>
+  <ul class="opt-a-list">
+    <li><strong>「揺らぎ」の時代：</strong> これまでの当たり前が崩れ、人間性の回復や持続可能な社会への問い直しが起きている。</li>
+    <li><strong>インパクト投資の普及：</strong> 投資家が「儲け」だけでなく、人権や環境を重視し始めた。経済合理性だけでは地球が持たないという危機感の表れ。</li>
+    <li><strong>ポスト・トランプ時代の日本：</strong> アメリカが環境政策から一歩引く可能性があっても、脱炭素の流れは科学的な規定路線。日本がこの分野でリードする大きなチャンスと捉えるべき。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 2027年新設：2つの学部の狙いと特徴</h2>
+  <p>龍谷大学創立400周年（2039年）に向けたビジョン「構想400」の一環として、滋賀県大津市の瀬田キャンパスに設置される。</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>学部名</th>
+        <th>主な学び・特徴</th>
+        <th>目指す人材像</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>環境サスティナビリティ学部</strong></td>
+        <td>環境DNA技術を用いた生態系保全、ネイチャーポジティブ経営、サステナブル経営。</td>
+        <td>自然科学と経営学の「通訳」ができる人材。ローカルGX（グリーン・トランスフォーメーション）の担い手。</td>
+      </tr>
+      <tr>
+        <td><strong>情報学部</strong></td>
+        <td>AI、データサイエンス、VR/XR、衛星データの活用。</td>
+        <td>テクノロジーを「人の幸せ」や「社会課題解決」のために使いこなせる人材（情報×スポーツ、情報×健康など）。</td>
+      </tr>
+    </tbody>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 学問の統合と「現場体験」の重要性</h2>
+  <ul class="opt-a-list">
+    <li><strong>縦割りからの脱却：</strong> 自然科学（環境）と社会科学（経営）を統合的に学ぶ。専門性を深めるだけでなく、領域を往復して価値を生む「イノベーションの通訳者」を育てる。</li>
+    <li><strong>身体性を伴う学び：</strong> 知識だけでなく、実際に森や琵琶湖などの現場に行き、五感で自然を感じる「原体験」を重視。これが行動変容の源泉となる。</li>
+    <li><strong>実務家教員の登用：</strong> 企業の第一線で悩む実務家を招き、建前ではない「現実の課題」を学生と共に考える場を作る。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" height="200" viewBox="0 0 500 200">
+      <!-- Nodes -->
+      <rect x="50" y="70" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" />
+      <text x="120" y="105" text-anchor="middle" font-size="14">環境科学</text>
+      
+      <rect x="310" y="70" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" />
+      <text x="380" y="105" text-anchor="middle" font-size="14">経営・経済</text>
+      
+      <!-- Arrows -->
+      <path d="M 190 100 L 310 100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      <path d="M 310 100 L 190 100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      
+      <!-- Center Label -->
+      <text x="250" y="90" text-anchor="middle" font-size="12" fill="#60a5fa">相互理解・通訳</text>
+      <text x="250" y="150" text-anchor="middle" font-size="15" font-weight="bold" fill="#10b981">価値創造 (Innovation)</text>
+      
+      <!-- Marker -->
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.85em; color: #a78bfa;">図：環境と経営のトレードオフを解消する統合的学びの構造</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 AI時代における「仏教・倫理」の役割</h2>
+  <ul class="opt-a-list">
+    <li><strong>「何でもできる」時代の羅針盤：</strong> テクノロジーが進歩し、物理的制約がなくなる中で、「何をすべきか」という倫理観（背骨）が問われている。</li>
+    <li><strong>自省利他（じせいりた）：</strong> 龍谷大学の見学の精神。自分を省み、他者の幸せを願う精神が、AIを「人を傷つける道具」ではなく「幸せにする道具」として使うための鍵となる。</li>
+    <li><strong>経営者の関心：</strong> 変化の激しい時代において、過去の成功体験が通用しない。そのため、判断の基盤となる哲学や仏教を学びたいと考える経営者が増えている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 キャンパスの再定義：ビワコオーツキャンパスへ</h2>
+  <ul class="opt-a-list">
+    <li><strong>コレクティブインパクト：</strong> 大学が閉じた存在ではなく、多様なセクター（企業・行政・市民）が混じり合い、社会変革を起こす拠点となる。</li>
+    <li><strong>偶発性の価値：</strong> オンラインで知識は得られるが、キャンパスでの「たまたまの出会い」や「ブレストでの化学反応」は代替できない。</li>
+    <li><strong>大学の「極寒の時代」への対抗：</strong> 18歳人口が激減する中、地域にとって「なくてはならない存在」になれるか。土地に根ざし、地域のニーズと研究をマッチングさせることが生き残りの道。</li>
+  </ul>
+
+  <blockquote>
+    「大学があることで、地域が良くなった、誰かが喜んでくれた。その小さな積み上げこそが、400周年を迎える大学の信頼の礎になる。」
+  </blockquote>
+
+</body>
+</html>
+```
