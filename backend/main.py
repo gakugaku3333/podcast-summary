@@ -228,6 +228,10 @@ def monitor_loop():
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """サーバー起動・終了時の処理"""
+    # 起動時: 古いデータのクリーンアップ
+    cleaned = database.cleanup_old_episode_data(days=30)
+    if cleaned:
+        logger.info("🗑️ %d 件の古いデータをクリーンアップしました（30日経過分）", cleaned)
     logger.info("🚀 サーバーが待機状態で起動しました（モニタリング停止中）")
     yield
     logger.info("👋 サーバー停止")

@@ -159,5 +159,57 @@ def get_episode_count() -> dict:
         conn.close()
 
 
+def cleanup_old_episode_data(days: int = 30) -> int:
+    """古いエピソードの文字起こし・要約データを削除（メタデータは保持）
+
+    Args:
+        days: この日数より古いデータを削除する（デフォルト30日）
+
+    Returns:
+        クリーンアップしたエピソード数
+    """
+    from config import SUMMARIES_DIR
+
+    conn = get_connection()
+    try:
+        # 対象エピソードのIDを取得（HTML要約ファイル削除用）
+        rows = conn.execute(
+            """
+            SELECT id FROM episodes
+            WHERE status = 'done'
+              AND (transcript IS NOT NULL OR summary IS NOT NULL)
+              AND created_at < datetime('now', 'localtime', ?)
+            """,
+            (f"-{days} days",),
+        ).fetchall()
+
+        if not rows:
+            return 0
+
+        ids = [row["id"] for row in rows]
+
+        # DB上の transcript と summary を NULL にする
+        conn.execute(
+            f"""
+            UPDATE episodes
+            SET transcript = NULL, summary = NULL,
+                updated_at = datetime('now', 'localtime')
+            WHERE id IN ({','.join('?' * len(ids))})
+            """,
+            ids,
+        )
+        conn.commit()
+
+        # 対応する HTML 要約ファイルを削除
+        for ep_id in ids:
+            html_file = SUMMARIES_DIR / f"{ep_id}.html"
+            if html_file.exists():
+                html_file.unlink()
+
+        return len(ids)
+    finally:
+        conn.close()
+
+
 # モジュール読み込み時にDB初期化
 init_db()
