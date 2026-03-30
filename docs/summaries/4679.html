@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ながらAIラジオ 内容整理（2026年3月30日号）</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ながらAIラジオ：2026年3月30日号 整理</h1>
+  <p>AIコンサルタントの<strong>うすたく</strong>氏と、メルカリAI推進担当の<strong>早川ゴミ</strong>氏による、最新AIニュースの振り返りエピソード。Claudeのデスクトップアプリ化や、各社AIの知識移植、AI力を測る検定の構想など、実務に直結する話題が中心となっています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">Claude Desktop App</span>
+    <span class="opt-a-tag">Computer Use</span>
+    <span class="opt-a-tag">Claude Code</span>
+    <span class="opt-a-tag">Claude Co-arc</span>
+    <span class="opt-a-tag">Gemini Live</span>
+    <span class="opt-a-tag">ChatGPT</span>
+    <span class="opt-a-tag">知識移植</span>
+    <span class="opt-a-tag">AI力検定</span>
+    <span class="opt-a-tag">3Dプリント</span>
+    <span class="opt-a-tag">Mac mini</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 Claude デスクトップアプリと「Computer Use」</h2>
+  <ul class="opt-a-list">
+    <li><strong>ネイティブアプリの操作が可能に</strong>
+      <ul>
+        <li>ブラウザ経由ではなく、PCにインストールされた<strong>CapCut</strong>などのネイティブアプリをClaudeが直接操作できるようになった。</li>
+        <li>「URL上で触れる」レベルから「PC全体の操作」へ幅が広がった。</li>
+      </ul>
+    </li>
+    <li><strong>セキュリティとリスク</strong>
+      <ul>
+        <li>情報漏洩のリスクは常に存在する。特に<strong>Claude Code</strong>や<strong>Co-arc</strong>では、意図しないデータ公開に注意が必要。</li>
+        <li>ただし、ブラウザ操作が許可されている現状と比べ、デスクトップアプリ化によるリスクの激増はないという見解。</li>
+      </ul>
+    </li>
+    <li><strong>ユースケースの具体化が課題</strong>
+      <ul>
+        <li>「何でもできる」がゆえに、具体的な使い道がイメージしづらい初期AIの状態に近い。</li>
+        <li><strong>早川ゴミ氏の提案</strong>：3Dプリントのセッティング自動化。深夜に印刷が終わった後の次工程のセットなどをAIに任せる可能性。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 AIによる業務自動化の具体例</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>担当者</th>
+        <th>活用ツール</th>
+        <th>自動化した内容・メリット</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>うすたく</strong></td>
+        <td>Claude Code (Playwright MCP)</td>
+        <td>勉強会準備の自動化。Zoom作成、Lumaでのイベントページ作成、サムネイル画像生成、告知文作成、LINE/Luma配信までを一気通貫で実行。</td>
+      </tr>
+      <tr>
+        <td><strong>早川ゴミ</strong></td>
+        <td>Claude Co-arc</td>
+        <td>登壇資料の自動作成。1ヶ月前のスライド提出要請に対し、最新情報を反映したスライドをAIとの対話で効率的に作成・送付する仕組み。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 Claudeの驚異的な開発スピード</h2>
+  <ul class="opt-a-list">
+    <li><strong>52日間で73個のアップデート</strong>を実行したというデータがある。</li>
+    <li><strong>UIを設計しない戦略</strong>：Claude CodeなどはCLI（コマンドライン）ベースのため、UI開発に時間を取られず、内部コードの改善のみで高速にリリースできる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ChatGPTからの「知識移植」トレンド</h2>
+  <ul class="opt-a-list">
+    <li><strong>「私について知っていることを全部教えて」プロンプト</strong>
+      <ul>
+        <li>ChatGPTに蓄積されたユーザーのコンテキスト（メモリ）を長文で書き出させ、それをClaudeやGeminiのカスタムインストラクションに移植する手法。</li>
+        <li>「ChatGPTにデータが溜まっているから乗り換えられない」というロックイン効果を打破する動き。</li>
+      </ul>
+    </li>
+    <li><strong>AIの「記憶」に関する課題</strong>
+      <ul>
+        <li>AIが何でも覚えすぎてしまい、関係ない文脈で過去の情報を出してくる（例：ロボット製作中に過去の長野旅行の話を混ぜる）。</li>
+        <li>人間のように<strong>「忘れること」</strong>や<strong>「情報の重み付け」</strong>を制御する機能が今後重要になる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 150">
+      <!-- Nodes -->
+      <rect x="20" y="40" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="90" y="75" text-anchor="middle" font-size="14">ChatGPT (蓄積)</text>
+      
+      <rect x="230" y="40" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="300" y="75" text-anchor="middle" font-size="14">全知識出力プロンプト</text>
+      
+      <rect x="440" y="40" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="510" y="75" text-anchor="middle" font-size="14">Claude / Gemini</text>
+      
+      <!-- Arrows -->
+      <line x1="160" y1="70" x2="230" y2="70" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <line x1="370" y1="70" x2="440" y2="70" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.8em; color: #a78bfa;">知識移植のフロー：ChatGPTから情報を抽出し、他AIへ再学習・設定させる</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 Gemini Live の高速化とエンタメ展開</h2>
+  <ul class="opt-a-list">
+    <li><strong>3.1 Flash対応による低遅延化</strong>
+      <ul>
+        <li>会話のレスポンスが大幅に向上。リアルタイムでの画面共有・解説がよりスムーズに。</li>
+      </ul>
+    </li>
+    <li><strong>ドラゴンクエストとのコラボ</strong>
+      <ul>
+        <li>ゲーム内にGeminiカラー（Googleカラー）のスライムが登場。</li>
+        <li>ドラクエは「ドラクエIV」の時代からAI搭載を売りにしており、AI活用に対するユーザーの心理的ハードルが比較的低いIPである。</li>
+      </ul>
+    </li>
+    <li><strong>クリエイティブ界隈のAIアレルギー</strong>
+      <ul>
+        <li>ミュージックビデオやプロ野球のカウントダウン画像でのAI使用が批判されるケースも多い。</li>
+        <li>「数年経てば当たり前になる」という過渡期の現象。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 「AI力検定」の構想（うすたく氏）</h2>
+  <ul class="opt-a-list">
+    <li><strong>知識問題ではなく「言語化力」を問う</strong>
+      <ul>
+        <li>既存の試験は「スマホ禁止の知識暗記」が多く、実務に即していない。</li>
+        <li><strong>「画面に映っているものを正確に言葉で説明できるか」</strong>といった、AIに指示を出すための基礎能力を測定すべき。</li>
+      </ul>
+    </li>
+    <li><strong>試験形式のアイデア</strong>
+      <ul>
+        <li>TinderのようなUIで、2秒以内に判断してスワイプする形式（AIを使う暇を与えない速度で基礎知識を問う）。</li>
+        <li>「SonnetとHaiku、どちらが速いか？」といった、実務者が体感で知っておくべき知識をフラッシュカード的に問う。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 パーソナル・テック・トピック</h2>
+  <ul class="opt-a-list">
+    <li><strong>Mac mini の導入（早川ゴミ氏）</strong>
+      <ul>
+        <li>Claude Co-arcを常時起動させるために中古で購入。</li>
+        <li><strong>Computer Use</strong>が現状macOS限定であることも理由の一つ。</li>
+      </ul>
+    </li>
+    <li><strong>3DプリントとAI（早川ゴミ氏）</strong>
+      <ul>
+        <li><strong>Meshy</strong>などの3D生成AIの精度が向上。</li>
+        <li>「寿司ロボット（エビがピチピチ動く）」を製作中。シャリのデータを生成した際、初期設定で<strong>高さ10メートル</strong>のシャリが出てくるなどのAIらしい失敗談も。</li>
+        <li>4月5日の「ロボホコテ（秋葉原）」で披露予定。</li>
+      </ul>
+    </li>
+    <li><strong>音声入力の活用</strong>
+      <ul>
+        <li><strong>AquaVoice</strong>, <strong>Typeless</strong>, <strong>VoiceOS</strong>などを併用。</li>
+        <li>「手で打つと怒りが湧くような質問回答も、音声入力なら丁寧に返せる」という心理的メリット。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 今後の予定</h2>
+  <ul class="opt-a-list">
+    <li><strong>うすたく氏：Claude Code講座</strong>
+      <ul>
+        <li>4月25日・26日の2日間開催。セットアップから最新活用法までを網羅。</li>
+      </ul>
+    </li>
+    <li><strong>早川ゴミ氏：Co-arc普及活動</strong>
+      <ul>
+        <li>マイナーだが強力な「Co-arc」のユースケース発信を強化予定。</li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+</html>
