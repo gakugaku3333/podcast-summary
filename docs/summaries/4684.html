@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">#2-04 何を残し、何を手放す？「捨てる力」で思考と人生を整える</h1>
+  <p>年度末の節目に合わせ、起業家・つま本氏とライター・泉氏が「捨てること」の重要性について対談。物理的なモノから人間関係、思考の整理に至るまで、幸福度を高めるための「手放し方」の最適解を深掘りします。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">捨てる力</span>
+    <span class="opt-a-tag">マインドシェア</span>
+    <span class="opt-a-tag">ゼロベース思考</span>
+    <span class="opt-a-tag">サンクコスト</span>
+    <span class="opt-a-tag">1年ルール</span>
+    <span class="opt-a-tag">人間関係のチューニング</span>
+    <span class="opt-a-tag">ミニマリズム</span>
+    <span class="opt-a-tag">気の流れ</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 なぜ「捨てる」ことが重要なのか</h2>
+  <ul class="opt-a-list">
+    <li><strong>新しいものを得るための前提条件</strong>
+      <ul>
+        <li>「捨てなければ得られない」という原理原則。</li>
+        <li>空きスペース（物理的・精神的）がないと、新しい発想やチャンスは入ってこない。</li>
+      </ul>
+    </li>
+    <li><strong>マインドシェアの解放</strong>
+      <ul>
+        <li>不要なモノや情報を抱え続けると、無意識に思考が奪われる。</li>
+        <li>思考のノイズを減らすことが、成功確率と幸福度の向上に直結する。</li>
+      </ul>
+    </li>
+    <li><strong>情報の遮断</strong>
+      <ul>
+        <li>目に入るものすべてが「情報」となり、集中力を削ぐ原因になる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 実践的な「捨て方」のメソッド</h2>
+  <ul class="opt-a-list">
+    <li><strong>ゼロベース思考の適用</strong>
+      <ul>
+        <li>「何を捨てるか」ではなく<strong>「一度すべて捨てた」</strong>という前提からスタートする。</li>
+        <li>「もし今これを持っていないとしたら、もう一度お金を払って買うか？」と自分に問いかける。</li>
+        <li>ほとんどの服やモノは、この問いに対して「買わない」という結論になる。</li>
+      </ul>
+    </li>
+    <li><strong>サンクコスト（埋没費用）を無視する</strong>
+      <ul>
+        <li>「5万円もしたから」「高かったから」という過去のコストに縛られない。</li>
+        <li>「捨ててから必要なものだけを拾い上げる」方が、精神的な幸福度は高い。</li>
+      </ul>
+    </li>
+    <li><strong>「1年ルール」による判断基準</strong>
+      <ul>
+        <li><strong>1年間一度も使わなかったもの</strong>は、今後も使うことはない。</li>
+        <li>2〜3年に一度しか使わないものは、その時にまた買えばよい（保管コストの方が高い）。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 160">
+      <!-- Node 1 -->
+      <rect x="10" y="50" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="90" y="85" text-anchor="middle" font-size="14">全廃棄を想定</text>
+      
+      <!-- Arrow 1 -->
+      <line x1="170" y1="80" x2="210" y2="80" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      
+      <!-- Node 2 -->
+      <rect x="220" y="50" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="85" text-anchor="middle" font-size="14">再購入の意思確認</text>
+      
+      <!-- Arrow 2 -->
+      <line x1="380" y1="80" x2="420" y2="80" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      
+      <!-- Node 3 -->
+      <rect x="430" y="50" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="510" y="85" text-anchor="middle" font-size="14">必要なモノのみ選抜</text>
+
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.85em; color: #a78bfa;">つま本流：ゼロベース選別フロー</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 人間関係の整理とチューニング</h2>
+  <ul class="opt-a-list">
+    <li><strong>「縁を切る」ではなく「時間の配分」を変える</strong>
+      <ul>
+        <li>365日の限られた時間を「誰と過ごすか」を最適化する。</li>
+        <li>誘いに対しては感謝しつつも、優先順位に基づいて時間の幅（1時間、30分など）を調整する。</li>
+      </ul>
+    </li>
+    <li><strong>「気の流れ」を重視する</strong>
+      <ul>
+        <li>運気があり、楽しそうな人と時間を過ごすことが重要。</li>
+        <li>下心がある人や、邪悪な兆候がある人からは、引っ張られないように距離を置く。</li>
+      </ul>
+    </li>
+    <li><strong>フェードアウトの技術</strong>
+      <ul>
+        <li>はっきり拒絶するのではなく、連絡頻度を落としたり、軽く返信したりすることで、空気感で察してもらい自然に距離を取る。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 つま本氏の極端なライフスタイル実態</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>カテゴリー</th>
+        <th>管理・所有の状態</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>家電</strong></td>
+        <td>掃除機、洗濯機、電子レンジ、炊飯器のみ。余計な「便利グッズ」は持たない。</td>
+      </tr>
+      <tr>
+        <td><strong>テレビ</strong></td>
+        <td>家にはあるが、自分の部屋にもリビングにも置いていない。</td>
+      </tr>
+      <tr>
+        <td><strong>服</strong></td>
+        <td>かつては年2回百貨店で半年分をまとめ買いしていたが、現在は揃いきったため、ほぼ買わない。</td>
+      </tr>
+      <tr>
+        <td><strong>本</strong></td>
+        <td>基本は紙派（読む・振り返るスピードが速いため）。厳選したものだけ残す。</td>
+      </tr>
+      <tr>
+        <td><strong>デジタル</strong></td>
+        <td>PCやスマホは効率化の源泉。AIやGoogle環境などは常に最新・最適化された状態を維持。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 思い出の品との向き合い方</h2>
+  <ul class="opt-a-list">
+    <li><strong>トロフィー・メダルの処分</strong>
+      <ul>
+        <li>過去の栄光（優勝トロフィー等）も、ある時「モノ自体に意味はない」と気づき処分した。</li>
+      </ul>
+    </li>
+    <li><strong>「捨てたら忘れる」は正解</strong>
+      <ul>
+        <li>捨てて忘れてしまう程度のことは、人生においてその程度の重要性だったということ。</li>
+        <li>本当に大切な記憶（恩師の教えなど）は、モノがなくても忘れない。</li>
+      </ul>
+    </li>
+    <li><strong>物理的な隔離</strong>
+      <ul>
+        <li>どうしても捨てにくいものは、生活圏内（部屋）には置かず、物置や実家に預けることで視界から消す。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote>
+    「捨てて忘れるのが怖いかもしれないが、捨てて忘れるくらいなら、それはもう捨てていいものなんです。」
+  </blockquote>
+
+</body>
+</html>
