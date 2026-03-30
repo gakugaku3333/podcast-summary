@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">アダム・スミス編 第4回：『国富論』が解き明かした豊かさの正体</h1>
+  <p>アダム・スミスの主著の一つ『国富論』をテーマに、経済学の基礎となった「分業」や「見えざる手」の真意を解説するエピソードです。一般的に誤解されがちな用語の定義を正しつつ、スミスが観察を通じて見出した人間社会の仕組みを紐解きます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">アダム・スミス</span>
+    <span class="opt-a-tag">国富論</span>
+    <span class="opt-a-tag">分業</span>
+    <span class="opt-a-tag">見えざる手</span>
+    <span class="opt-a-tag">交換性向</span>
+    <span class="opt-a-tag">自己愛</span>
+    <span class="opt-a-tag">重商主義</span>
+    <span class="opt-a-tag">植民地主義批判</span>
+    <span class="opt-a-tag">生産性</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 資本主義のエンジン「分業」の驚異</h2>
+  <ul class="opt-a-list">
+    <li><strong>観察の人、アダム・スミス</strong>：スミスはアリストテレスのように現実を鋭く観察する学者であり、近所の「ピン工場」の観察から『国富論』を書き始めた。</li>
+    <li><strong>生産性の爆発的向上</strong>：
+      <ul>
+        <li>1人の職人が全工程を行うと、1日に1本〜20本程度しか作れない。</li>
+        <li>工程を18に細分化（針金を切る、尖らせる、頭をつける等）し、12人で分業すると1日48,000本ものピンが製造可能になる。</li>
+        <li><strong>生産性は200倍〜4800倍</strong>に跳ね上がる。</li>
+      </ul>
+    </li>
+    <li><strong>分業の2つの側面</strong>：
+      <ul>
+        <li><strong>作業場内の分業</strong>：工場内での生産プロセスの細分化。</li>
+        <li><strong>社会的な分業</strong>：個々人が自分の得意なことや儲かることに特化し、社会全体で役割を分担すること。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" height="160" viewBox="0 0 600 160">
+      <!-- Node 1 -->
+      <rect x="20" y="50" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="90" y="85" text-anchor="middle" font-size="14">個人のスキル向上</text>
+      
+      <!-- Arrow -->
+      <line x1="160" y1="80" x2="210" y2="80" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      
+      <!-- Node 2 -->
+      <rect x="220" y="50" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="290" y="85" text-anchor="middle" font-size="14">移動・停滞の削減</text>
+      
+      <!-- Arrow -->
+      <line x1="360" y1="80" x2="410" y2="80" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      
+      <!-- Node 3 -->
+      <rect x="420" y="50" width="160" height="60" rx="8" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" />
+      <text x="500" y="85" text-anchor="middle" font-size="14" font-weight="bold">生産性の爆上がり</text>
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.8em; color: #a78bfa;">図：分業が生産性を高めるメカニズム</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 人間の本能「交換性向」</h2>
+  <ul class="opt-a-list">
+    <li><strong>人間特有の性質</strong>：他の動物（例えば犬）は、自分の利益のために骨を交換しようとはしない。人間だけが<strong>「自分の利益のために交換する」</strong>という本能（交換性向）を持つ。</li>
+    <li><strong>互恵性の発見</strong>：自分の利益を追求して交換することが、結果として相手の利益にもなる。これが社会的分業を成立させる基礎となっている。</li>
+    <li><strong>自己愛の肯定</strong>：
+      <blockquote>「私たちが食事ができるのは、肉屋や酒屋やパン屋の慈悲心によるのではなく、彼らが自分自身の利益を追求しているからである。」</blockquote>
+    </li>
+    <li><strong>キャリア論への繋がり</strong>：身分に縛られず、自分の得意や好きを活かして仕事を選べるのは、この社会的分業と交換の仕組みがあるからこそ。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 「見えざる手」の真実と誤解</h2>
+  <ul class="opt-a-list">
+    <li><strong>「神の」は付かない</strong>：一般的に「神の見えざる手」と言われるが、スミス自身は<strong>「見えざる手（an invisible hand）」</strong>としか書いていない。</li>
+    <li><strong>限定的な登場</strong>：膨大な『国富論』の中で、この言葉が登場するのはわずか1箇所のみ。</li>
+    <li><strong>本来の意味</strong>：
+      <ul>
+        <li>個々の投資家が、自分の資産の安全と利益を最大化しようとして「国内の産業」を支援する。</li>
+        <li>その意図はないものの、結果として社会全体の年間の収入（国富）を最大化することに繋がる。</li>
+        <li><strong>「個人の利益追求が、意図せず公共の利益を促進する」</strong>という市場の調整機能を指している。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 市場がもたらす「道徳的教育」</h2>
+  <ul class="opt-a-list">
+    <li><strong>信頼がビジネスの基盤</strong>：自由な市場で継続的に利益を上げるためには、他人から信頼されなければならない。</li>
+    <li><strong>道徳の陶冶（とうや）</strong>：
+      <ul>
+        <li>嘘をつく者や不誠実な者は市場から淘汰される。</li>
+        <li>特に中流以下の人々にとって、市場への参画は<strong>「わがままを抑え、道徳的に振る舞う」</strong>ための教育的な場として機能する。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 「富」の再定義と植民地主義への批判</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>概念</th>
+        <th>重商主義（当時の主流）</th>
+        <th>アダム・スミスの考え</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>富の定義</strong></td>
+        <td>国が保有する<strong>金・銀</strong>の量</td>
+        <td>国民が消費できる<strong>商品・サービス</strong>の豊かさ</td>
+      </tr>
+      <tr>
+        <td><strong>貿易の目的</strong></td>
+        <td>輸出を増やし、金銀を蓄積する（黒字至上主義）</td>
+        <td>交換によって生活を便利にし、消費を豊かにする</td>
+      </tr>
+      <tr>
+        <td><strong>植民地政策</strong></td>
+        <td>資源確保のために拡大すべき</td>
+        <td><strong>「愚行と不正」</strong>であり、維持コストが高い</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul class="opt-a-list">
+    <li><strong>植民地主義への厳しい批判</strong>：
+      <ul>
+        <li>金銀を求めて先住民の土地を奪う行為を<strong>「不正」</strong>と断じた。</li>
+        <li>アメリカの植民地支配についても、イギリスはコストをかけて維持するより、分離して自由な関係を築くべきだと主張した。</li>
+      </ul>
+    </li>
+    <li><strong>啓蒙時代の知識人</strong>：当時の政府批判に近い内容も、理性的・観察的な視点から堂々と記述していた。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 次回への展望</h2>
+  <ul class="opt-a-list">
+    <li>今回の『国富論』はあくまで前菜。アダム・スミスが本当に伝えたかった「人間の道徳」については、もう一つの主著<strong>『道徳感情論』</strong>で詳しく語られる。</li>
+    <li>「利益追求が正しい」と言ったスミスが、なぜ「道徳」を重視したのか、その矛盾に見える構造を解き明かしていく。</li>
+  </ul>
+
+</body>
+</html>
