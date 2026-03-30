@@ -3,7 +3,6 @@
 要約完了時にDiscord Webhookへ結果を送信する。
 """
 
-import json
 import logging
 
 import requests
@@ -31,7 +30,6 @@ def send_discord_notification(episode: dict, summary_text: str) -> bool:
     episode_title = episode.get("episode_title", "Unknown Episode")
     episode_id = episode.get("id")
 
-    # GitHub Pages の URL を構築
     summary_url = f"{GITHUB_PAGES_BASE_URL}/{episode_id}.html"
 
     payload = {
@@ -45,10 +43,7 @@ def send_discord_notification(episode: dict, summary_text: str) -> bool:
 
     try:
         response = requests.post(
-            DISCORD_WEBHOOK_URL,
-            data=json.dumps(payload),
-            headers={"Content-Type": "application/json"},
-            timeout=10,
+            DISCORD_WEBHOOK_URL, json=payload, timeout=10,
         )
         response.raise_for_status()
         logger.info("📣 Discordへリンク付き通知を送信しました: %s", episode_title)

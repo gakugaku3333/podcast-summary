@@ -1,17 +1,19 @@
 """Gemini API 要約モジュール
 
-Gemini 3.0 Flash を使用してPodcastの文字起こしテキストを要約する。
+Gemini Flash を使用してPodcastの文字起こしテキストを
+構造化されたHTML形式で整理する。
 """
 
 import logging
 
 from google import genai
 
-from config import GEMINI_API_KEY, GEMINI_MODEL, SUMMARY_SYSTEM_PROMPT
+from config import GEMINI_API_KEY, GEMINI_MODEL
+from prompt import SUMMARY_SYSTEM_PROMPT
 
 logger = logging.getLogger(__name__)
 
-# Gemini クライアント
+# Gemini クライアント（遅延初期化）
 _client = None
 
 
@@ -42,7 +44,7 @@ def summarize_transcript(
         episode_title: エピソードタイトル
 
     Returns:
-        要約テキスト（Markdown形式）、失敗時はNone
+        要約テキスト（HTML形式）、失敗時はNone
     """
     if not transcript or not transcript.strip():
         logger.warning("空のテキストが渡されました")
@@ -51,8 +53,6 @@ def summarize_transcript(
     try:
         client = _get_client()
 
-        # トランスクリプトが長すぎる場合は分割しない
-        # (Gemini 3.0 Flash は 1M トークン対応)
         user_prompt = f"""以下のPodcastエピソードの内容を要約してください。
 
 **Podcast名**: {podcast_title}
