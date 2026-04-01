@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【4月1日】キューバにロシアの原油タンカーが到着。アメリカ黙認の真意は</h1>
+  <p>アメリカの厳しい経済制裁下にあるキューバへ、ロシアから大量の原油が到着しました。本来であれば制裁対象となり得るこの動きを、トランプ政権が「人道的配慮」として黙認した背景と、複雑化する国際情勢を解説します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">キューバ</span>
+    <span class="opt-a-tag">ロシア</span>
+    <span class="opt-a-tag">アメリカ</span>
+    <span class="opt-a-tag">トランプ大統領</span>
+    <span class="opt-a-tag">マルコ・ルビオ</span>
+    <span class="opt-a-tag">イラン情勢</span>
+    <span class="opt-a-tag">経済制裁</span>
+    <span class="opt-a-tag">エネルギー危機</span>
+    <span class="opt-a-tag">中国</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ロシア製原油の到着とキューバの現状</h2>
+  <ul class="opt-a-list">
+    <li><strong>ロシアからの原油搬入：</strong> 3月30日、10万トンの原油を積んだロシアのタンカーがキューバ領海に到着。</li>
+    <li><strong>深刻なエネルギー不足：</strong> アメリカの制裁により、1月以降の石油輸入はほぼゼロの状態。
+      <ul>
+        <li><strong>ベネズエラルート：</strong> アメリカの軍事作戦により封鎖。</li>
+        <li><strong>メキシコルート：</strong> アメリカの制裁圧力を受け停止。</li>
+      </ul>
+    </li>
+    <li><strong>国内への影響：</strong> 全土で大規模な停電が発生し、医療現場などでの人道的な危機が深刻化している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 アメリカが「黙認」した背景</h2>
+  <ul class="opt-a-list">
+    <li><strong>トランプ大統領の発言：</strong> 29日、ロシアによるキューバへの石油輸出について「何も問題がない」と明言。</li>
+    <li><strong>政府の公式見解：</strong> 「人道的配慮」を理由として挙げている。</li>
+    <li><strong>戦略的リソースの分散回避：</strong> ニューヨーク・タイムズの指摘。
+      <ul>
+        <li>現在、アメリカは<strong>イラン情勢</strong>に多くの軍事・外交リソースを割いている。</li>
+        <li>この状況でロシア船舶を拿捕（だほ）すれば、対ロシアという新たなフロントでリソースが分散するリスクがある。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 250" preserveAspectRatio="xMidYMid meet">
+      <!-- Nodes -->
+      <rect x="220" y="20" width="160" height="50" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="52" text-anchor="middle" font-size="15" font-weight="bold">アメリカ (トランプ政権)</text>
+
+      <rect x="20" y="150" width="140" height="50" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="90" y="182" text-anchor="middle" font-size="14">イラン (最優先)</text>
+
+      <rect x="230" y="150" width="140" height="50" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="182" text-anchor="middle" font-size="14">キューバ (制裁継続)</text>
+
+      <rect x="440" y="150" width="140" height="50" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="510" y="182" text-anchor="middle" font-size="14">ロシア (タンカー派遣)</text>
+
+      <!-- Arrows -->
+      <path d="M250 70 L120 150" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+      <text x="130" y="110" font-size="12" fill="#60a5fa">リソース集中</text>
+
+      <path d="M300 70 L300 150" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+      <text x="310" y="110" font-size="12" fill="#60a5fa">人道的黙認</text>
+
+      <path d="M440 175 L370 175" stroke="#10b981" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+      <text x="380" y="165" font-size="12" fill="#10b981">原油供給</text>
+
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.85em; color: #a78bfa; margin-top: 10px;">アメリカの外交リソース配分とキューバ・ロシアの関係図</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 各国の反応と今後の展望</h2>
+  <ul class="opt-a-list">
+    <li><strong>中国の動向：</strong>
+      <ul>
+        <li>トランプ氏の「問題ない」発言を引用し、キューバ支援の可能性を示唆。</li>
+        <li>「各国の主権と領土保全の尊重」「外部の干渉に反対」という原則を強調。</li>
+      </ul>
+    </li>
+    <li><strong>マルコ・ルビオ国務長官の姿勢：</strong>
+      <ul>
+        <li>キューバにルーツを持つ人物。</li>
+        <li>「経済危機は制裁ではなく、<strong>社会主義体制の破綻</strong>が原因」と主張。</li>
+        <li>内側からの変化か、外側からの強い圧力がない限り改善はないとの認識。</li>
+      </ul>
+    </li>
+    <li><strong>トランプ流外交の性質：</strong>
+      <ul>
+        <li>「次はキューバだ」と圧力を示唆しつつ、人道支援はケースバイケースで認める。</li>
+        <li><strong>硬軟織り交ぜたディール（取引）</strong>が特徴。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 補足：キューバの現状比較</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>詳細・現状</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>今回の原油量</strong></td>
+        <td>10万トン（キューバ国内消費の10日から数週間分に相当）</td>
+      </tr>
+      <tr>
+        <td><strong>主な供給停止ルート</strong></td>
+        <td>ベネズエラ（米軍事作戦）、メキシコ（米制裁圧力）</td>
+      </tr>
+      <tr>
+        <td><strong>国内の生活状況</strong></td>
+        <td>大規模停電、物資不足、観光客用と現地人用の格差、コンビニの品薄</td>
+      </tr>
+      <tr>
+        <td><strong>アメリカの基本方針</strong></td>
+        <td>制裁圧力は維持しつつ、暫定的な衝突回避を選択</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <blockquote>
+    「経済制裁によって、弱い立場の人々が命の危険に晒されるのはあってはならない」
+    （パーソナリティ・野村氏の現地訪問経験に基づく所感）
+  </blockquote>
+
+</body>
+</html>
