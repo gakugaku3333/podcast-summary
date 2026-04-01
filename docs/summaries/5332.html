@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">SNS依存をめぐる裁判：メタとGoogleに初の損害賠償評決</h1>
+  <p>米国ロサンゼルス州裁判所にて、未成年のSNS依存に対するプラットフォーム企業の過失責任を認める画期的な評決が下されました。これまで法的責任を免れてきた巨大テック企業に対し、サービスの「設計」そのものが中毒性を生んでいるとして賠償を命じた、歴史的な転換点となるニュースです。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">SNS依存</span>
+    <span class="opt-a-tag">メタ (Meta)</span>
+    <span class="opt-a-tag">Google</span>
+    <span class="opt-a-tag">Instagram</span>
+    <span class="opt-a-tag">YouTube</span>
+    <span class="opt-a-tag">損害賠償</span>
+    <span class="opt-a-tag">通信品位法230条</span>
+    <span class="opt-a-tag">無限スクロール</span>
+    <span class="opt-a-tag">アルゴリズム</span>
+    <span class="opt-a-tag">オーストラリアSNS禁止法</span>
+    <span class="opt-a-tag">タバコ訴訟</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 オーストラリアにおけるSNS規制の現状</h2>
+  <ul class="opt-a-list">
+    <li><strong>16歳未満のSNS利用禁止法</strong>：2023年12月に施行されたが、実効性に課題。
+      <ul>
+        <li>施行後も多くの子どもがアカウントを持ち続けていることが調査で判明。</li>
+        <li>年齢確認の方法に「抜け穴」が存在している。</li>
+        <li>当局は運営会社の対応について調査を開始。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 米国での損害賠償評決の概要</h2>
+  <ul class="opt-a-list">
+    <li><strong>裁判の当事者</strong>：
+      <ul>
+        <li>原告：現在20歳の女性（6歳でYouTube、9歳でInstagramを開始）。</li>
+        <li>被告：メタ（Instagram運営）、グーグル（YouTube運営）。</li>
+      </ul>
+    </li>
+    <li><strong>被害の内容</strong>：SNSへの依存により、うつ病などの深刻なメンタルヘルスの不調を来した。</li>
+    <li><strong>賠償命令額</strong>：合計 <strong>600万ドル（約9億5,000万円）</strong>
+      <table>
+        <thead>
+          <tr>
+            <th>企業名</th>
+            <th>賠償額</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>メタ (Instagram)</td>
+            <td>420万ドル</td>
+          </tr>
+          <tr>
+            <td>グーグル (YouTube)</td>
+            <td>180万ドル</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 裁判の争点：コンテンツから「設計」へ</h2>
+  <p>今回の裁判が重要視されている最大の理由は、訴えの論点が「投稿内容」ではなく<strong>「アプリの仕組み（設計）」</strong>にある点です。</p>
+  
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+      <!-- 背景 -->
+      <rect x="10" y="10" width="260" height="180" rx="8" fill="rgba(245, 158, 11, 0.1)" stroke="#f59e0b" stroke-width="1"/>
+      <rect x="330" y="10" width="260" height="180" rx="8" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="1"/>
+      
+      <!-- 矢印 -->
+      <path d="M 280 100 L 320 100" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+
+      <!-- テキスト -->
+      <text x="140" y="40" text-anchor="middle" font-weight="bold" fill="#f59e0b">従来の法的解釈</text>
+      <text x="140" y="80" text-anchor="middle" font-size="13">通信品位法230条</text>
+      <text x="140" y="110" text-anchor="middle" font-size="13">「ユーザーの投稿内容」に</text>
+      <text x="140" y="130" text-anchor="middle" font-size="13">対する責任は負わない</text>
+      <text x="140" y="165" text-anchor="middle" font-weight="bold">【免責】</text>
+
+      <text x="460" y="40" text-anchor="middle" font-weight="bold" fill="#10b981">今回の評決の焦点</text>
+      <text x="460" y="80" text-anchor="middle" font-size="13">「サービスの設計・仕組み」</text>
+      <text x="460" y="110" text-anchor="middle" font-size="13">無限スクロール、</text>
+      <text x="460" y="130" text-anchor="middle" font-size="13">中毒性のあるアルゴリズム</text>
+      <text x="460" y="165" text-anchor="middle" font-weight="bold">【過失責任あり】</text>
+    </svg>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>中毒性の指摘</strong>：無限スクロールやおすすめ投稿のアルゴリズムが、タバコやギャンブルのような中毒性を意図的に持たせていると主張。</li>
+    <li><strong>警告の欠如</strong>：プラットフォーム側がその危険性についてユーザーに適切に警告していなかった点が過失とされた。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 今後の影響と歴史的背景</h2>
+  <ul class="opt-a-list">
+    <li><strong>数千件の先行事例</strong>：現在、米国では未成年の保護者らによる同様の訴訟が数千件以上あり、今回の評決がそれらの行方を左右する。</li>
+    <li><strong>「タバコ訴訟」との類似性</strong>：
+      <ul>
+        <li>1990年代、タバコ業界が中毒性を認識しながら安全対策を怠ったとして巨額の賠償を命じられた事例になぞらえられている。</li>
+        <li>将来的にSNSでも、広告規制やパッケージのような「警告表示」が義務付けられる可能性がある。</li>
+      </ul>
+    </li>
+    <li><strong>企業の対応</strong>：メタとグーグルは不服として上訴する方針。裁判は長期化が予想される。</li>
+    <li><strong>根本的な変更の可能性</strong>：消費者の声が高まれば、企業はサービス設計そのものの変更を避けられなくなる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 考察：音声メディアの役割</h2>
+  <ul class="opt-a-list">
+    <li><strong>スクリーンタイムの葛藤</strong>：教育的・便利な動画コンテンツは多いが、親世代には「これ以上画面を見せたくない」という強い抵抗感がある。</li>
+    <li><strong>音声媒体の優位性</strong>：耳だけで情報を伝える音声メディアは、視覚的な依存を避けつつ情報を届けられる「安心できる方法」として再評価されている。</li>
+  </ul>
+
+</body>
+</html>
