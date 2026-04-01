@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">パキスタンによる米イ協議の仲介と中東情勢の緊迫化</h1>
+  <p>2026年3月31日放送のエピソード。パキスタンがアメリカとイランの直接協議を主催する方針を固める一方で、レバノンやイエメンなど周辺地域での軍事衝突が拡大し、エネルギー供給網へのリスクが高まっている現状を解説します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">パキスタン</span>
+    <span class="opt-a-tag">アメリカ</span>
+    <span class="opt-a-tag">イラン</span>
+    <span class="opt-a-tag">ホルムズ海峡</span>
+    <span class="opt-a-tag">トランプ大統領</span>
+    <span class="opt-a-tag">フーシ派</span>
+    <span class="opt-a-tag">原油価格</span>
+    <span class="opt-a-tag">自転車青切符</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 国内ニュース：自転車の「青切符」制度導入</h2>
+  <ul class="opt-a-list">
+    <li><strong>4月1日からの新年度</strong>より、自転車の交通違反に<strong>青切符（反則金制度）</strong>が導入される。</li>
+    <li><strong>対象：</strong>16歳以上。</li>
+    <li><strong>主な対象違反：</strong>
+      <ul>
+        <li>信号無視、一時不停止</li>
+        <li>「ながらスマホ」、傘差し運転</li>
+        <li>通行区分違反など</li>
+      </ul>
+    </li>
+    <li><strong>自動車側のルール変更：</strong>自転車の横を通過する際、<strong>十分な間隔と徐行</strong>が求められるようになる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 外交：パキスタンによる仲介の動き</h2>
+  <ul class="opt-a-list">
+    <li><strong>4カ国外相会談：</strong>3月29日、パキスタンの首都イスラマバードで、<strong>パキスタン、エジプト、トルコ、サウジアラビア</strong>の外相が会談。停戦に向けた外交努力と対話の重視で合意。</li>
+    <li><strong>米イ協議の主催：</strong>パキスタン政府は、今後数日中に<strong>アメリカとイランの協議を主催・進行</strong>する用意があると発表。</li>
+    <li><strong>事前交渉：</strong>パキスタンの<strong>シャリフ首相</strong>は、イランの<strong>ペゼシキアン大統領</strong>と90分間の電話会談を実施済み。</li>
+    <li><strong>背景：</strong>アメリカとイランは国交を断絶しているため、パキスタンが伝統的な「パイプ役」として表面化したことは、事態が新たなフェーズに入ったことを示唆。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 200">
+      <!-- Nodes -->
+      <rect x="20" y="70" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="80" y="105" text-anchor="middle" font-size="15" font-weight="bold">アメリカ</text>
+      
+      <rect x="460" y="70" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="520" y="105" text-anchor="middle" font-size="15" font-weight="bold">イラン</text>
+      
+      <rect x="220" y="50" width="160" height="100" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" stroke-width="2"/>
+      <text x="300" y="85" text-anchor="middle" font-size="15" font-weight="bold">パキスタン (主催)</text>
+      <text x="300" y="110" text-anchor="middle" font-size="12">エジプト・トルコ</text>
+      <text x="300" y="130" text-anchor="middle" font-size="12">サウジアラビア協力</text>
+
+      <!-- Arrows -->
+      <path d="M 140 100 L 210 100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <path d="M 460 100 L 390 100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 軍事情勢：拡大する物理的衝突</h2>
+  <ul class="opt-a-list">
+    <li><strong>ホルムズ海峡：</strong>
+      <ul>
+        <li>トランプ大統領はイランが石油タンカー10隻の通過を認めたことを「敬意の現れ」と評価。</li>
+        <li>一方で、<strong>米海兵隊の追加部隊</strong>が中東に到着。地上作戦への警戒が強まる。</li>
+      </ul>
+    </li>
+    <li><strong>レバノン南部：</strong>
+      <ul>
+        <li>イスラエルのネタニヤフ首相が<strong>「干渉地帯の拡大」</strong>を軍に命令。爆撃を強化。</li>
+        <li>イスラエル北部の安全確保を名目に、物理的な距離を広げる作戦を展開。</li>
+      </ul>
+    </li>
+    <li><strong>イエメン（フーシ派）：</strong>
+      <ul>
+        <li>親イラン武装組織フーシ派がイスラエルへの攻撃を認める。</li>
+        <li><strong>スエズ運河・紅海</strong>への危機が波及し、エネルギー供給網の遮断リスクが増大。<strong>原油先物価格が上昇</strong>。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 交渉の論点とトランプ大統領の真意</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>当事者</th>
+        <th>主な要求・主張</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>イラン</strong></td>
+        <td>アメリカによる<strong>地上軍投入の回避</strong>を公式に警告・要求。</td>
+      </tr>
+      <tr>
+        <td><strong>アメリカ・イスラエル</strong></td>
+        <td><strong>核開発の停止</strong>、ミサイル制限、ヒズボラやフーシ派による攻撃停止。</td>
+      </tr>
+      <tr>
+        <td><strong>トランプ大統領</strong></td>
+        <td>イランが提示された15項目にほぼ同意していると主張。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <blockquote>
+    <strong>トランプ大統領の発言の矛盾：</strong><br>
+    融和的な姿勢を見せる一方で、フィナンシャル・タイムズのインタビューでは「正直に言うと、<strong>イランの石油を奪うことが一番の希望だ</strong>」とも述べており、軍事目的と経済的利害が混在している。
+  </blockquote>
+
+  <h2 class="opt-a-section-title">📌 今後の展望</h2>
+  <ul class="opt-a-list">
+    <li><strong>即時停戦のロードマップは未提示：</strong>外交協議のテーブルは用意されたが、具体的な合意案はまだ見えていない。</li>
+    <li><strong>地上戦の可否：</strong>アメリカが実際に地上部隊を投入するかどうかが、パキスタン仲介の協議における最大の焦点の一つ。</li>
+    <li><strong>エネルギー市場への影響：</strong>ホルムズ海峡と紅海の二正面で緊張が続く中、原油価格の動向が世界経済の懸念材料となっている。</li>
+  </ul>
+
+</body>
+</html>
