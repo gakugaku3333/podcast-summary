@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【64-5】おめえの出番だぞ 西郷！呼び戻された司令官 〜薩摩リカバリー作戦〜</h1>
+  <p>西郷隆盛が2度目の島流し（沖永良部島）に耐える中、本土では生麦事件から薩英戦争へと発展。激動する幕末の政局において、島津久光の構想が崩壊し、絶体絶命の薩摩藩が「最悪の相性」である西郷を呼び戻すまでのプロセスを解説するエピソードです。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">生麦事件</span>
+    <span class="opt-a-tag">薩英戦争</span>
+    <span class="opt-a-tag">徳川家茂</span>
+    <span class="opt-a-tag">参預会議</span>
+    <span class="opt-a-tag">公議政体論</span>
+    <span class="opt-a-tag">一会桑</span>
+    <span class="opt-a-tag">八月十八日の政変</span>
+    <span class="opt-a-tag">池田屋事件</span>
+    <span class="opt-a-tag">禁門の変</span>
+    <span class="opt-a-tag">島津久光</span>
+    <span class="opt-a-tag">一橋慶喜</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 薩英戦争：拳を交えて親友になる</h2>
+  <ul class="opt-a-list">
+    <li><strong>生麦事件の発生</strong>：江戸から戻る島津久光の行列をイギリス人商人が横切り、激昂した薩摩藩士が殺傷。</li>
+    <li><strong>薩英戦争（1863年）</strong>：イギリスの賠償要求を薩摩が拒否し開戦。
+      <ul>
+        <li>イギリス艦隊が鹿児島市街を焼け野原にする（民家350軒、藩士屋敷160軒が焼失）。</li>
+        <li>薩摩側も奮戦し、イギリス艦隊に大打撃を与える（大破1、中破2、死傷者63名）。</li>
+        <li>死者数はイギリス側の方が多いという異例の結果に。</li>
+      </ul>
+    </li>
+    <li><strong>戦後の急接近</strong>：互いの実力を認め合い、薩摩はイギリスから学ぶ姿勢へ転換。
+      <ul>
+        <li>幕府の鎖国政策を無視し、ロンドンへ<strong>留学生を派遣</strong>。</li>
+        <li>イギリス側も、頼りない幕府より薩摩をパートナーとして重視し始める。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>薩摩藩</th>
+        <th>イギリス艦隊</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>人的被害</td>
+        <td>死者4名、負傷6名</td>
+        <td>死傷者63名</td>
+      </tr>
+      <tr>
+        <td>物的被害</td>
+        <td>市街地・工場群が焼失</td>
+        <td>艦船3隻が大破・中破</td>
+      </tr>
+      <tr>
+        <td>戦後の動向</td>
+        <td>攘夷の不可能を悟り開国へ</td>
+        <td>薩摩の軍事力と覚悟を高く評価</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 幕府の権威失墜と「攘夷の締め切り」</h2>
+  <ul class="opt-a-list">
+    <li><strong>将軍家茂の上洛</strong>：朝廷の圧力により14代将軍・徳川家茂が京都へ。
+      <ul>
+        <li><strong>屈辱的な席次</strong>：二条城での儀式で、将軍は関白・左大臣・右大臣に次ぐ4番目の扱いに（幕府権威の低下を可視化）。</li>
+      </ul>
+    </li>
+    <li><strong>無理な約束</strong>：朝廷から「いつ攘夷（外国排除）をするのか」と迫られ、<strong>5月10日</strong>という期限を約束させられる。
+      <ul>
+        <li>幕府は「とりあえずハイと言って、なし崩しにしよう」と画策。</li>
+        <li>しかし、<strong>長州藩だけがこの約束を真に受け</strong>、期限当日に下関で外国船を砲撃。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 長州藩の暴走と「八月十八日の政変」</h2>
+  <ul class="opt-a-list">
+    <li><strong>天皇の嫌悪</strong>：長州藩と急進派公卿（三条実美ら）が孝明天皇を担ぎ出し、親征（天皇自ら出陣）を画策。
+      <ul>
+        <li>孝明天皇は「攘夷はしたいが、そんな過激なことは嫌だ」と激怒。</li>
+        <li><strong>八月十八日の政変</strong>：薩摩と会津が手を組み、長州勢力と7人の公卿を京都から追放（七卿落ち）。</li>
+      </ul>
+    </li>
+    <li><strong>一会桑（いちかいそう）の成立</strong>：
+      <ul>
+        <li><strong>一</strong>橋慶喜、<strong>会</strong>津藩（松平容保）、<strong>桑</strong>名藩（松平定敬）による京都支配体制。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 参預会議の挫折：島津久光 vs 一橋慶喜</h2>
+  <ul class="opt-a-list">
+    <li><strong>参預会議（公議政体論）</strong>：久光が提案した、有力大名による合議制。
+      <ul>
+        <li>メンバー：一橋慶喜、松平春嶽、松平容保、山内豊信、伊達宗成、島津久光。</li>
+      </ul>
+    </li>
+    <li><strong>空中分解</strong>：一橋慶喜が諸侯の台頭を嫌い、会議を妨害。
+      <ul>
+        <li>慶喜が酒に酔った勢いで久光らを<strong>「天下の奸物（悪者）」</strong>と罵倒。</li>
+        <li>わずか数ヶ月で会議は崩壊し、久光の構想は頓挫。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 西郷隆盛、奇跡のカムバック</h2>
+  <ul class="opt-a-list">
+    <li><strong>薩摩の危機</strong>：京都での主導権を一会桑に握られ、長州も逆襲を狙う中、薩摩には「実務と交渉を任せられる強烈なリーダー」が不在に。</li>
+    <li><strong>久光の葛藤と説得</strong>：西郷を嫌う久光に対し、側近の高崎正風が説得。
+      <blockquote>「斉彬公が選び抜いた西郷が不忠者だと言うなら、斉彬公の目が曇っていたということですか？」</blockquote>
+    </li>
+    <li><strong>西郷の変貌</strong>：2年弱の島流しから帰還した西郷は、足腰が立たないほど衰弱していたが、人格的に<strong>「丸く」</strong>なっていた。
+      <ul>
+        <li>久光に対し低姿勢を貫き、周囲を驚かせる。</li>
+        <li>復帰直後、いきなり薩摩藩の<strong>軍賦役（軍司令官）</strong>に抜擢。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <svg width="100%" viewBox="0 0 600 250">
+    <rect x="10" y="10" width="580" height="230" rx="8" fill="#1a1a3e" />
+    <!-- 西郷の状況 -->
+    <rect x="30" y="40" width="150" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="45" y="75" font-size="14">沖永良部島で</text>
+    <text x="45" y="95" font-size="14">衰弱・人格円熟</text>
+    
+    <!-- 矢印 -->
+    <line x1="180" y1="70" x2="230" y2="70" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+    
+    <!-- 藩の危機 -->
+    <rect x="240" y="40" width="150" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="255" y="75" font-size="14">京都での主導権</text>
+    <text x="255" y="95" font-size="14">喪失の危機</text>
+
+    <!-- 矢印 -->
+    <line x1="390" y1="70" x2="440" y2="70" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+
+    <!-- 復帰 -->
+    <rect x="450" y="40" width="120" height="60" rx="8" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" />
+    <text x="465" y="75" font-size="14">軍司令官として</text>
+    <text x="465" y="95" font-size="14">京都へ電撃復帰</text>
+
+    <text x="30" y="150" font-size="13" fill="#a78bfa">※久光の「嫌い」より「合理的判断」が優先された瞬間</text>
+    
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+      </marker>
+    </defs>
+  </svg>
+
+  <h2 class="opt-a-section-title">📌 禁門の変（蛤御門の変）：長州の自爆</h2>
+  <ul class="opt-a-list">
+    <li><strong>池田屋事件</strong>：新選組が潜伏中の長州藩士らを襲撃。これにより長州の怒りが爆発。</li>
+    <li><strong>長州軍の上洛</strong>：名誉挽回のため、軍勢を率いて京都へ進軍。
+      <ul>
+        <li>名目は「冤罪の訴え」だが、実質は武力による政権奪還。</li>
+      </ul>
+    </li>
+    <li><strong>激突</strong>：蛤御門付近で長州軍と、会津・薩摩連合軍が戦闘。
+      <ul>
+        <li>西郷は軍司令官として参戦。流れ弾を足に受けるも指揮を続行。</li>
+        <li>長州の久坂玄瑞、来島又兵衛ら有力者が次々と戦死・自害。</li>
+      </ul>
+    </li>
+    <li><strong>結果</strong>：長州軍が御所（天皇の住まい）に向けて発砲したため、孝明天皇から正式に<strong>「朝敵（国家の敵）」</strong>に指定される。
+      <ul>
+        <li>長州藩は絶体絶命の窮地に陥り、物語は次回の「長州征伐」へと続く。</li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+</html>
