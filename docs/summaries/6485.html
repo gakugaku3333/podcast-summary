@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">アダム・スミス編 第5話：道徳と秩序を支える「観察者」の発見</h1>
+  <p>
+    アダム・スミスの主著の一つであり、経済学・倫理学の「ブラインドスポット（盲点）」とも言える<strong>『道徳感情論』</strong>を深掘りする回です。
+    なぜ人間は法や宗教的な強制がなくても社会秩序を保てるのか、その根源にある「同感」と「観察者」のメカニズムを解説します。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">道徳感情論</span>
+    <span class="opt-a-tag">アダム・スミス</span>
+    <span class="opt-a-tag">同感（Sympathy）</span>
+    <span class="opt-a-tag">観察者</span>
+    <span class="opt-a-tag">社会秩序</span>
+    <span class="opt-a-tag">武士道</span>
+    <span class="opt-a-tag">新渡戸稲造</span>
+    <span class="opt-a-tag">適切性</span>
+    <span class="opt-a-tag">啓蒙主義</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 『道徳感情論』の位置づけと目的</h2>
+  <ul class="opt-a-list">
+    <li><strong>出版の時系列</strong>：有名な『国富論』の約15年前に出版されたスミスのデビュー作であり、当時大ヒットした。</li>
+    <li><strong>探求のテーマ</strong>：社会秩序はいかにして成り立つのか。
+      <ul>
+        <li>人間が平和に暮らせるのはなぜか？</li>
+        <li>人間に法を作らせ、それを守らせる「本性」とは何か？</li>
+      </ul>
+    </li>
+    <li><strong>神なき時代の倫理学</strong>：
+      <ul>
+        <li>かつて道徳は「神」によって説明されていた。</li>
+        <li>啓蒙の時代、神を持ち出さずに「人間の本質」から道徳を説明しようとした試み。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 比較：新渡戸稲造の『武士道』</h2>
+  <p>スミスの問いを理解するための補助線として、新渡戸稲造の『武士道』が引用されています。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>比較項目</th>
+        <th>西洋の視点（一神教）</th>
+        <th>日本の視点（新渡戸の回答）</th>
+        <th>アダム・スミスの視点</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>道徳の基盤</strong></td>
+        <td>キリスト教（神との約束）</td>
+        <td>武士道（日本の精神）</td>
+        <td><strong>同感（人間の普遍的な本性）</strong></td>
+      </tr>
+      <tr>
+        <td><strong>秩序の源泉</strong></td>
+        <td>宗教的な戒律</td>
+        <td>礼儀、和、調和</td>
+        <td>他者への関心と感情の共有</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 スミス哲学の出発点：「同感（Sympathy）」</h2>
+  <blockquote title="道徳感情論 冒頭の要約">
+    「人間がいかに利己的なものと想定されるにしても、他人の幸福や不幸に関心を持ち、他人の幸福を見る喜び以外に何も得られなくても、それを自分に必要だと感じる原理が本性の中にある。」
+  </blockquote>
+  <ul class="opt-a-list">
+    <li><strong>利己心以外の原理</strong>：人間は自分の利益（物理的メリット）がなくても、他人の感情に反応してしまう。</li>
+    <li><strong>同感の定義</strong>：他人の喜び、悲しみ、怒りなどの感情を、想像力を用いて自分の心に写し取ること。</li>
+    <li><strong>他者への強い関心</strong>：現代のSNSで他人の不倫や成功に過剰に反応してしまうのも、この「他人に強い関心を持つ」という本性の現れ。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 「観察者」による適切性の判断メカニズム</h2>
+  <p>スミスは、人間が他人の行動を「正しい（適切）」か「正しくない（不適切）」か判断するプロセスを構造化しました。</p>
+
+  <div class="diagram-container">
+    <svg width="100%" height="220" viewBox="0 0 600 220">
+      <!-- Nodes -->
+      <rect x="20" y="80" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="80" y="115" text-anchor="middle" font-size="15" font-weight="bold">出来事</text>
+
+      <rect x="240" y="80" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="300" y="115" text-anchor="middle" font-size="15" font-weight="bold">当事者</text>
+
+      <rect x="460" y="80" width="120" height="60" rx="8" fill="rgba(96, 165, 250, 0.2)" stroke="#60a5fa" stroke-width="2"/>
+      <text x="520" y="115" text-anchor="middle" font-size="15" font-weight="bold">観察者</text>
+
+      <!-- Arrows -->
+      <path d="M 140 110 L 230 110" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <path d="M 460 110 L 370 110" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <path d="M 520 80 Q 300 20 80 80" fill="none" stroke="#60a5fa" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+
+      <!-- Labels -->
+      <text x="185" y="100" text-anchor="middle" font-size="12">体験・反応</text>
+      <text x="415" y="100" text-anchor="middle" font-size="12">観察・比較</text>
+      <text x="300" y="40" text-anchor="middle" font-size="12">想像力で当事者の立場に立つ</text>
+
+      <!-- Arrowhead definition -->
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>ステップ1：想像</strong>
+      <ul>
+        <li>観察者は、自分が当事者の境遇に置かれたら「どんな感情を持ち、どう行動するか」を想像する。</li>
+      </ul>
+    </li>
+    <li><strong>ステップ2：比較</strong>
+      <ul>
+        <li>「自分の想像した感情・行動」と「実際の当事者の感情・行動」を照らし合わせる。</li>
+      </ul>
+    </li>
+    <li><strong>ステップ3：是認または否認</strong>
+      <ul>
+        <li><strong>一致する場合（是認）</strong>：その行動は「適切」であると判断し、同感する。</li>
+        <li><strong>一致しない場合（否認）</strong>：その行動は「不適切」であると判断し、不快感を覚える。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 具体例による理解</h2>
+  
+  <p><strong>例1：交通事故（猫を引いてしまった場合）</strong></p>
+  <ul class="opt-a-list">
+    <li><strong>当事者</strong>：自転車の運転手。</li>
+    <li><strong>観察者の想像</strong>：「自分だったら可哀想に思い、謝るだろう」。</li>
+    <li><strong>是認のケース</strong>：運転手が申し訳なさそうにしていれば、観察者は「大変でしたね」と共感する。</li>
+    <li><strong>否認のケース</strong>：運転手が笑っていたり開き直ったりすれば、観察者は「なんて奴だ」と激しい怒り（否認）を覚える。</li>
+  </ul>
+
+  <p><strong>例2：有名人の不倫騒動</strong></p>
+  <ul class="opt-a-list">
+    <li><strong>出来事</strong>：不倫が発覚し、社会に露呈する。</li>
+    <li><strong>観察者の期待</strong>：「普通は申し訳ないと思い、謝罪するはずだ」。</li>
+    <li><strong>炎上のメカニズム</strong>：当事者が白を切ったり開き直ったりすることで、観察者（世間）の想像する「適切な反応」と乖離が生じ、強い否認（バッシング）が起こる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 次回への展望：内なる観察者</h2>
+  <ul class="opt-a-list">
+    <li><strong>逆の視点</strong>：今回は「他人が当事者、自分が観察者」のケースを扱ったが、次回は「自分が当事者」の場合を考える。</li>
+    <li><strong>誰も見ていない時の行動</strong>：
+      <ul>
+        <li>実際の観察者がいなくても、私たちはなぜ秩序を守るのか？</li>
+        <li>神や「お天道様」とは異なる、スミス独自の<strong>「内なる観察者」</strong>という概念へ。</li>
+      </ul>
+    </li>
+    <li><strong>応用の可能性</strong>：この仕組みは、現代の企業のカルチャー形成や、ルールがない場所での倫理的判断にも深く関わっている。</li>
+  </ul>
+
+</body>
+</html>
+<!-- Markdown is NOT used in this output. All formatting is done via HTML tags. -->
