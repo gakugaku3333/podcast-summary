@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ながらAIラジオ：2026年4月 AIニュースと新生活の展望</h1>
+  <p>
+    2026年4月3日収録。新生活シーズンにおけるAI業界の激動（Gemma 4登場、OpenAIによるメディア買収、Grokの自動翻訳など）を、AIコンサルタントのうすたく氏とメルカリAI推進担当の早川ゴミ氏が解説します。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">Gemma 4</span>
+    <span class="opt-a-tag">Local LLM</span>
+    <span class="opt-a-tag">OpenAI</span>
+    <span class="opt-a-tag">TVPN</span>
+    <span class="opt-a-tag">Grok</span>
+    <span class="opt-a-tag">Manaus</span>
+    <span class="opt-a-tag">Google I/O</span>
+    <span class="opt-a-tag">Raspberry Pi 5</span>
+    <span class="opt-a-tag">Claude Computer Use</span>
+    <span class="opt-a-tag">Meta Ray-Ban</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 導入・ハードウェアと投資の考え方</h2>
+  <ul class="opt-a-list">
+    <li><strong>新生活とボーナスの使い道</strong>
+      <ul>
+        <li>うすたく氏はボーナスで<strong>MacBook Pro (M4 Max / 128GBメモリ / 8TBストレージ)</strong>を約100万円で購入。</li>
+        <li>早川ゴミ氏は<strong>Claude Computer Use</strong>をMacで先行利用するためにMac miniを中古で購入（直後にWindows対応が発表されたが、常時稼働用として活用）。</li>
+      </ul>
+    </li>
+    <li><strong>Raspberry Pi 5の大幅値上げ</strong>
+      <ul>
+        <li>16GBモデルが100ドル値上げ（2.5万円から4万円程度へ）。メモリやストレージの価格高騰が背景。</li>
+        <li>AI開発需要により、PCスペックの価格が今後さらに上昇する可能性を示唆。</li>
+      </ul>
+    </li>
+    <li><strong>2025-2026年の重要性</strong>
+      <ul>
+        <li>「数年後に決定版が出るまで待つ」のではなく、今このバブル期に時間を投下し、信頼と知識を蓄積することが将来の決定的な差になる。</li>
+        <li>早川ゴミ氏は<strong>「2026年は会社員として得たお金を使い切る」</strong>勢いでAI・ロボットへの自己投資を継続中。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Google「Gemma 4」とローカルLLMの台頭</h2>
+  <ul class="opt-a-list">
+    <li><strong>Gemma 4の登場</strong>
+      <ul>
+        <li>Googleのオープンモデル。ベンチマークで米国製LLMとして1位を獲得（中国勢のQwen等も強力）。</li>
+      </ul>
+    </li>
+    <li><strong>ローカルLLMのメリット</strong>
+      <ul>
+        <li><strong>オフライン動作:</strong> 電波のない環境（飛行機など）でも利用可能。</li>
+        <li><strong>プライバシー・コスト:</strong> 自分のPCで動かすためAPI料金がかからず、機密情報も扱いやすい。</li>
+        <li><strong>リスクヘッジ:</strong> 特定のプラットフォーム（Anthropic等）が停止しても業務を継続できる。</li>
+      </ul>
+    </li>
+    <li><strong>推奨ツールと環境</strong>
+      <ul>
+        <li><strong>PC用:</strong> LLM Studio, Ollama。</li>
+        <li><strong>スマホ用:</strong> Localy AI（iPhone 16 Pro Max等でQwenやGemmaが動作）。</li>
+        <li><strong>推奨スペック:</strong> メモリ64GB以上あると快適。うすたく氏の128GB環境ではサクサク動作。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 200">
+      <!-- Cloud LLM -->
+      <rect x="50" y="40" width="180" height="60" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="140" y="75" text-anchor="middle" font-weight="bold">Cloud LLM</text>
+      <text x="140" y="95" text-anchor="middle" font-size="12">(ChatGPT, Claude)</text>
+      
+      <!-- Local LLM -->
+      <rect x="370" y="40" width="180" height="60" rx="8" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="2"/>
+      <text x="460" y="75" text-anchor="middle" font-weight="bold">Local LLM</text>
+      <text x="460" y="95" text-anchor="middle" font-size="12">(Gemma 4, Qwen)</text>
+
+      <!-- Comparison -->
+      <path d="M230 70 L370 70" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <text x="300" y="60" text-anchor="middle" font-size="12">対比</text>
+      
+      <text x="140" y="140" text-anchor="middle" font-size="13">従量課金 / 高性能</text>
+      <text x="460" y="140" text-anchor="middle" font-size="13">無料(電気代のみ) / プライバシー</text>
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 OpenAIによるメディア「TVPN」買収</h2>
+  <ul class="opt-a-list">
+    <li><strong>買収の概要</strong>
+      <ul>
+        <li>シリコンバレーのニュースをスポーツ実況のように熱狂的に伝えるポッドキャストメディア<strong>TVPN</strong>をOpenAIが買収。</li>
+        <li>買収額は<strong>数億ドル（数百億円規模）</strong>と推定。</li>
+      </ul>
+    </li>
+    <li><strong>買収の背景と意義</strong>
+      <ul>
+        <li>AI時代において、AIで代替できない<strong>「人間の個性」「信頼」「ライブ感」</strong>に価値が置かれている。</li>
+        <li>創業1.5年、毎日3時間の生配信を継続した結果の評価。</li>
+        <li>「ながらAIラジオ」も生配信の導入や、属人的な信頼獲得の重要性を再認識。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 サービスアップデート：Manaus & Grok</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>サービス</th>
+        <th>アップデート内容</th>
+        <th>具体的なユースケース</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Manaus</strong></td>
+        <td>LINE連携に対応</td>
+        <td>毎朝のGoogleカレンダー/Notionの通知、Slackの未返信メンションの要約通知など。</td>
+      </tr>
+      <tr>
+        <td><strong>Grok (X)</strong></td>
+        <td>自動翻訳機能の実装</td>
+        <td>英語圏のポストが最初から日本語でタイムラインに流れる。言語の壁が消失。</td>
+      </tr>
+    </tbody>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 今後の展望：Google I/O 2026と海外渡航</h2>
+  <ul class="opt-a-list">
+    <li><strong>Google I/O への期待</strong>
+      <ul>
+        <li>5月にサンフランシスコで開催。現地から「ながらAI」を収録予定。</li>
+        <li><strong>Google HomeのAI化</strong>や、<strong>スマートグラス</strong>（ジェントルモンスター提携モデル等）の発表に注目。</li>
+      </ul>
+    </li>
+    <li><strong>ウェアラブルデバイスの現状</strong>
+      <ul>
+        <li><strong>Meta Ray-Ban:</strong> 4月15日から日本発売。デザイン性が高く実用的だが、ファッションの好みが分かれる。</li>
+        <li><strong>Even G2:</strong> 字幕表示機能などに期待。</li>
+      </ul>
+    </li>
+    <li><strong>パーソナルな活動</strong>
+      <ul>
+        <li>うすたく氏：LA、イスタンブールを経て<strong>ナイジェリア</strong>へ（寄付先の視察とアフリカ探訪）。</li>
+        <li>早川ゴミ氏：<strong>上海</strong>へ（TikTokトレンドの体験、中国メイク、現地のAI/ロボット状況の確認）。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote style="margin-top: 2em;">
+    「AI時代の読み書きは1〜2年で完全に自動化される。だからこそ、直接会って話すコミュニケーションや、属人的な信頼の構築がますます重要になる。」
+  </blockquote>
+
+</body>
+</html>
