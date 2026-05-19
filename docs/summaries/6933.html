@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">WHOによるエボラ出血熱の緊急事態宣言と国内外の感染症動向</h1>
+  <p>2026年5月19日放送のエピソード。コンゴ民主共和国およびウガンダでのエボラ出血熱流行に伴うWHOの緊急事態宣言を中心に、国内の麻疹（はしか）流行状況や、日本の新たな感染症危機管理体制について解説しています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">エボラ出血熱</span>
+    <span class="opt-a-tag">WHO</span>
+    <span class="opt-a-tag">緊急事態宣言 (PHEIC)</span>
+    <span class="opt-a-tag">麻疹（はしか）</span>
+    <span class="opt-a-tag">ハンタウイルス</span>
+    <span class="opt-a-tag">内閣感染症危機管理統括庁</span>
+    <span class="opt-a-tag">SCARDA</span>
+    <span class="opt-a-tag">新型コロナウイルス</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 国内の麻疹（はしか）流行状況</h2>
+  <ul class="opt-a-list">
+    <li><strong>東京都の現状</strong>：5月14日時点で今年の患者数が<strong>239人</strong>に達し、過去10年で最多を更新。</li>
+    <li><strong>行政の対応</strong>：5月18日より、患者と接触した人を対象に<strong>ワクチンの無料接種</strong>を開始。</li>
+    <li><strong>感染力の特徴</strong>：
+      <ul>
+        <li>インフルエンザの<strong>約6倍</strong>とされる極めて強い感染力。</li>
+        <li><strong>空気感染</strong>するため、手洗いやマスクだけでは予防が困難。ワクチン接種が唯一の確実な対策。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>生年月日区分</th>
+        <th>ワクチンの接種状況・リスク</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1972年9月30日以前</strong></td>
+        <td>ワクチンを一度も接種していない可能性が高い。</td>
+      </tr>
+      <tr>
+        <td><strong>1972年10月1日〜1990年4月1日</strong></td>
+        <td>定期接種が1回のみで、免疫が不十分な可能性がある。</td>
+      </tr>
+      <tr>
+        <td><strong>それ以降の生まれ</strong></td>
+        <td>母子手帳などで過去の接種歴を確認することを推奨。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 WHOによるエボラ出血熱の緊急事態宣言</h2>
+  <ul class="opt-a-list">
+    <li><strong>宣言の概要</strong>：5月11日、WHOがコンゴ民主共和国およびウガンダの流行に対し「<strong>国際的に懸念される公衆衛生上の緊急事態（PHEIC）</strong>」を宣言。</li>
+    <li><strong>被害状況</strong>：
+      <ul>
+        <li>死亡例：<strong>80人</strong>（関連が疑われるものを含む）。</li>
+        <li>感染確認：<strong>8人</strong>。</li>
+        <li>感染の疑い：<strong>246人</strong>。</li>
+      </ul>
+    </li>
+    <li><strong>宣言の意味</strong>：
+      <ul>
+        <li>パンデミックではないが、国際法に基づく<strong>最も重い緊急対応枠組み</strong>。</li>
+        <li>一国では対処不能で、国際的な強調対応が不可欠な場合に発令される。</li>
+        <li>発動により、医療物資・資金の提供などのグローバル支援が即座に開始される。</li>
+      </ul>
+    </li>
+    <li><strong>エボラ出血熱の特性</strong>：
+      <ul>
+        <li><strong>感染経路</strong>：野生動物（コウモリ等）から人へ、その後は血液や付着物への直接接触による<strong>接触感染</strong>。</li>
+        <li><strong>症状</strong>：発熱、倦怠感から始まり、進行すると体内外の出血や多臓器不全を引き起こす。致死率が極めて高い。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <svg width="100%" viewBox="0 0 600 180" style="background: #1a1a3e; border-radius: 8px; margin: 1em 0;">
+    <!-- Nodes -->
+    <rect x="20" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="80" y="95" text-anchor="middle" font-size="14">野生動物</text>
+    <text x="80" y="112" text-anchor="middle" font-size="11">(コウモリ等)</text>
+
+    <rect x="240" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="300" y="95" text-anchor="middle" font-size="14">ヒト(初発)</text>
+
+    <rect x="460" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="520" y="95" text-anchor="middle" font-size="14">ヒト(二次感染)</text>
+
+    <!-- Arrows -->
+    <path d="M 140 90 L 230 90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M 360 90 L 450 90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Labels -->
+    <text x="185" y="80" text-anchor="middle" font-size="12" fill="#60a5fa">種を超えた感染</text>
+    <text x="405" y="80" text-anchor="middle" font-size="12" fill="#60a5fa">接触感染</text>
+
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+      </marker>
+    </defs>
+  </svg>
+
+  <h2 class="opt-a-section-title">📌 新たな脅威：ハンタウイルス感染症</h2>
+  <ul class="opt-a-list">
+    <li><strong>発生場所</strong>：クルーズ船「MVホンデウス」で集団感染が発生。死者および新規陽性者が継続的に確認されている。</li>
+    <li><strong>媒介者</strong>：ネズミなどの<strong>げっ歯類</strong>。</li>
+    <li><strong>特徴</strong>：潜伏期間が<strong>2週間〜4週間</strong>と長い。今回報告された「アンデス型」は稀にヒトからヒトへ感染する。</li>
+    <li><strong>国際連携</strong>：WHOはエボラと並行して現状報告を実施。世界各地の異なるウイルス脅威をリアルタイムで一元集約し、各国とデータ交換を行う公衆衛生メカニズムが機能している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 日本の感染症危機管理システム</h2>
+  <p>コロナ禍の教訓を活かし、行政と研究開発の2つの司令塔が連携する仕組みが整備されています。</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>組織名</th>
+        <th>役割・機能</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>内閣感染症危機管理統括庁</strong></td>
+        <td><strong>行政の司令塔</strong>。各省庁の権限を一元化。有事の水際対策、医療提供体制の確保、訓練や計画策定を担う。</td>
+      </tr>
+      <tr>
+        <td><strong>SCARDA</strong><br>(先端的研究開発戦略センター)</td>
+        <td><strong>研究開発の司令塔</strong>。日本医療研究開発機構(AMED)内に設置。平時から戦略的資金を投入し、ワクチンや治療薬の国内開発基盤を維持する。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 感染症の継続的な脅威</h2>
+  <ul class="opt-a-list">
+    <li><strong>新型コロナの現状</strong>：昨年の日本人の死因<strong>第8位</strong>。年間<strong>2万人以上</strong>が亡くなっており、決して過去の病気ではない。</li>
+    <li><strong>歴史的視点</strong>：ペスト、コレラ、スペイン風邪など、感染症は常に人類の身の回りで発生し続けてきた。</li>
+    <li><strong>個人の対策</strong>：基本的な感染対策の継続と、常に新しい情報のアップデートを心がけることが重要。</li>
+  </ul>
+
+</body>
+</html>
