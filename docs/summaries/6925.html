@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; font-size: 13px; }
+    strong { color: #f472b6; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">第24回「耳で聴く後藤達也note」5月18日配信</h1>
+  <p>
+    経済ジャーナリストの後藤達也氏が、最近の激動する経済情勢と投資環境を整理。公開収録形式で、半導体セクターの驚異的な決算、K字型経済の深化、為替介入の限界など、足元の重要トピックを深掘りします。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">後藤達也note</span>
+    <span class="opt-a-tag">WBSキャスター就任</span>
+    <span class="opt-a-tag">半導体決算</span>
+    <span class="opt-a-tag">記憶シア（キオクシア）</span>
+    <span class="opt-a-tag">NVIDIA</span>
+    <span class="opt-a-tag">AIエージェント</span>
+    <span class="opt-a-tag">K字型経済</span>
+    <span class="opt-a-tag">為替介入</span>
+    <span class="opt-a-tag">実質賃金</span>
+    <span class="opt-a-tag">ハイパースケーラー</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 近況：活動の広がりとコミュニティ</h2>
+  <ul class="opt-a-list">
+    <li><strong>後藤達也note 4周年：</strong> 7月に4周年を迎える。大学卒業に匹敵する期間が経過。</li>
+    <li><strong>WBSキャスター就任：</strong> 4月からテレビ東京「WBS（ワールドビジネスサテライト）」の月・火キャスターに就任。
+      <ul>
+        <li>週の半分近くをテレビ局で過ごし、取材や企画にも注力する意向。</li>
+        <li>4〜5月は「失点を防ぐ（業務に慣れる）」ことに集中していた。</li>
+      </ul>
+    </li>
+    <li><strong>公開収録：</strong> 東京・麹町のnote本社にて約90名の会員を招いて実施。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 半導体・AIセクターの衝撃的な決算</h2>
+  <ul class="opt-a-list">
+    <li><strong>記憶シア（キオクシア）の驚異的数字：</strong>
+      <ul>
+        <li>2027年3月期の純利益見通しが<strong>3兆円規模</strong>（トヨタに匹敵・凌駕する可能性）と報じられる。</li>
+        <li>4〜6月期の営業利益見通しが市場予想を4〜5割上回る。</li>
+        <li><strong>営業利益率 約74%：</strong> 製造業としては異例の「NVIDIA級」の利益率。</li>
+      </ul>
+    </li>
+    <li><strong>利益急増の背景：</strong>
+      <ul>
+        <li>「数量」の増加よりも<strong>「単価」の急上昇</strong>が利益率を押し上げている。</li>
+        <li>AIエージェントやデータセンター向け「NAND型フラッシュメモリー」の需要が想定以上に強い。</li>
+      </ul>
+    </li>
+    <li><strong>市場の評価とリスク：</strong>
+      <ul>
+        <li>時価総額は20兆円台後半へ。PERで見ると9倍程度と、利益成長に対しては<strong>割安感</strong>もある。</li>
+        <li>一方で、過去のシリコンサイクル（PC・スマホ主導）とは異なる構造変化が起きており、先行きは予測困難。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <h3 style="color: #60a5fa; margin-top: 0;">AI投資の波及構造</h3>
+    <svg width="100%" viewBox="0 0 600 180">
+      <!-- Nodes -->
+      <rect x="10" y="50" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="80" y="85" text-anchor="middle">ハイパースケーラー</text>
+      <text x="80" y="100" text-anchor="middle" font-size="11">(Google, MS, Meta等)</text>
+
+      <rect x="230" y="50" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="85" text-anchor="middle">AI半導体・GPU</text>
+      <text x="300" y="100" text-anchor="middle" font-size="11">(NVIDIA等)</text>
+
+      <rect x="450" y="50" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="520" y="85" text-anchor="middle">メモリー・周辺機器</text>
+      <text x="520" y="100" text-anchor="middle" font-size="11">(キオクシア, 藤倉等)</text>
+
+      <!-- Arrows -->
+      <path d="M 150 80 L 220 80" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+      <path d="M 370 80 L 440 80" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+      
+      <text x="300" y="150" text-anchor="middle" fill="#a78bfa">年間100兆円超の設備投資がサプライチェーンを潤す</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 日本経済の現状：深まる「K字型」の乖離</h2>
+  <ul class="opt-a-list">
+    <li><strong>株価と実感の乖離：</strong> 日経平均は高水準を維持しているが、AI関連や海外マネーの寄与が大きく、国内の景気実感（GDP等）とは切り離されている。</li>
+    <li><strong>K字型経済：</strong>
+      <ul>
+        <li><strong>上向き：</strong> 資産保有者、AI関連企業、グローバル企業。</li>
+        <li><strong>下向き：</strong> 中間層・低所得層、コストプッシュ型インフレに苦しむ中小企業。</li>
+      </ul>
+    </li>
+    <li><strong>実質賃金の懸念：</strong>
+      <ul>
+        <li>円安と原油高のダブルパンチで、秋口（10月頃）に再び<strong>大幅な値上げラッシュ</strong>の可能性。</li>
+        <li>物価上昇に賃金が追いつかない「実質賃金マイナス」が定着するリスク。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 為替介入と金利の動向</h2>
+  <ul class="opt-a-list">
+    <li><strong>為替介入の限界：</strong>
+      <ul>
+        <li>5月のゴールデンウィーク前後に<strong>10兆円規模</strong>の介入を実施したと推計される。</li>
+        <li>しかし、足元では再び158〜159円台に戻っており、介入の効果が持続しにくい状況。</li>
+      </ul>
+    </li>
+    <li><strong>金利上昇の背景：</strong>
+      <ul>
+        <li>長期金利（10年債）が1%を伺う水準まで上昇。</li>
+        <li>日銀による6月の追加利上げ観測が強まっている。</li>
+      </ul>
+    </li>
+    <li><strong>構造的な円安要因：</strong>
+      <ul>
+        <li>デジタル赤字（米IT大手への支払い）や貿易赤字など、構造的に「円を売ってドルを買う」需要が強い。</li>
+        <li>インバウンド消費や、半導体輸出のような「日本の魅力あるモノ・サービス」の復活が円安阻止の鍵。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 今後の注目ポイント</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>内容・注目理由</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>NVIDIA決算</strong></td>
+        <td>AI投資の熱量が継続しているか、世界市場の羅針盤となる。</td>
+      </tr>
+      <tr>
+        <td><strong>中東情勢</strong></td>
+        <td>ホルムズ海峡の状況や原油価格への影響。物流コストに直結。</td>
+      </tr>
+      <tr>
+        <td><strong>記憶シア 8月決算</strong></td>
+        <td>4-6月期の強気見通しが達成されるか。次期（7-9月）の見通しに注目。</td>
+      </tr>
+      <tr>
+        <td><strong>フィジカルAI</strong></td>
+        <td>ロボットやエージェントなど、AIが実世界に広がる新キーワード。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <blockquote>
+    「AI時代だからこそ、人と人との接点やコミュニティに意味がある。皆さんの表情を見ながらお話しできる機会を大切にしていきたい」 —— 後藤達也
+  </blockquote>
+
+</body>
+</html>
