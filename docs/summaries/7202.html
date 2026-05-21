@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【5月21日】日韓首脳会談。アジアの「力の空白」を埋めるエネルギー安保戦略</h1>
+  <p>2026年5月19日に韓国・安東（アンドン）で開催された日韓首脳会談の詳報。ウクライナ戦争や中東情勢の影響でアジアにおけるアメリカのプレゼンスが低下する中、日韓がエネルギー安全保障と防衛協力でどのように連携を深めるか、具体的な枠組み「パワーアジア」を中心に解説します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">日韓首脳会談</span>
+    <span class="opt-a-tag">高市首相</span>
+    <span class="opt-a-tag">イ・ジェミョン大統領</span>
+    <span class="opt-a-tag">シャトル外交</span>
+    <span class="opt-a-tag">アジアの空白リスク</span>
+    <span class="opt-a-tag">パワーアジア</span>
+    <span class="opt-a-tag">ASEKプラス</span>
+    <span class="opt-a-tag">エネルギー安全保障</span>
+    <span class="opt-a-tag">防衛協力</span>
+    <span class="opt-a-tag">北朝鮮問題</span>
+    <span class="opt-a-tag">安東（アンドン）</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 首脳会談の概要と背景</h2>
+  <ul class="opt-a-list">
+    <li><strong>開催日時・場所：</strong>2026年5月19日、韓国・安東（イ・ジェミョン大統領の地元）。</li>
+    <li><strong>会談の頻度：</strong>高市首相就任（昨年10月）以来、わずか半年余りで<strong>3回目</strong>の会談。</li>
+    <li><strong>外交スタイル：</strong>首脳同士が互いの故郷を行き来する<strong>「シャトル外交」</strong>が定着。</li>
+    <li><strong>最大のテーマ：</strong>「アジアの空白リスク」への対応。
+      <ul>
+        <li>アメリカが中東情勢への対応に注力しているため、アジアにおけるプレゼンスが低下。</li>
+        <li>ウクライナ戦争や中東情勢の緊迫化に伴う地政学的リスクへの共同対処。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 エネルギー安全保障の新枠組み「パワーアジア」</h2>
+  <ul class="opt-a-list">
+    <li><strong>ASEK（アジアゼロエミッション協同体）の進化：</strong>
+      <ul>
+        <li>日本が提唱したASEAN諸国・豪州との脱炭素枠組みを拡張。</li>
+        <li>韓国などを加えた<strong>「ASEKプラス」</strong>として首脳会談を開催。</li>
+      </ul>
+    </li>
+    <li><strong>パワーアジア（Power Asia）構想：</strong>
+      <ul>
+        <li><strong>目的：</strong>アジア全体での協調したエネルギー（原油・LNG）確保。</li>
+        <li><strong>背景：</strong>韓国や東南アジアは日本に比べ石油備蓄量が少なく、価格高騰時の調達資金も不足しがち。</li>
+        <li><strong>支援内容：</strong>日本が<strong>約100億ドル規模の金融支援</strong>を実施。</li>
+        <li><strong>具体的施策：</strong>原油調達の円滑化、域内への備蓄タンク建設の後押し。</li>
+      </ul>
+    </li>
+    <li><strong>日本国内への影響：</strong>高市首相は「国内需要への悪影響はなく、あくまでアジア諸国との協調確保である」と強調。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 250" preserveAspectRatio="xMidYMid meet">
+      <!-- Nodes -->
+      <rect x="20" y="80" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="90" y="115" text-anchor="middle" font-weight="bold">日本</text>
+      
+      <rect x="440" y="80" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="510" y="115" text-anchor="middle" font-weight="bold">韓国・ASEAN</text>
+      
+      <!-- Arrow 1 -->
+      <path d="M160 100 L440 100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <text x="300" y="90" text-anchor="middle" font-size="13">100億ドルの金融支援</text>
+      
+      <!-- Arrow 2 -->
+      <path d="M440 120 L160 120" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <text x="300" y="145" text-anchor="middle" font-size="13">エネルギー供給の強靱化</text>
+
+      <text x="300" y="40" text-anchor="middle" font-size="16" font-weight="bold" fill="#a78bfa">パワーアジア構想の構造</text>
+      
+      <!-- Marker -->
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 防衛協力と地政学的対応</h2>
+  <ul class="opt-a-list">
+    <li><strong>北朝鮮・ロシアへの警戒：</strong>
+      <ul>
+        <li>ロシアと軍事協力を深める北朝鮮のミサイル能力向上への対処。</li>
+        <li>日韓、および日米韓の3カ国で緊密に連携することを確認。</li>
+      </ul>
+    </li>
+    <li><strong>現実路線の選択：</strong>
+      <ul>
+        <li>歴史的背景による摩擦はあるものの、目の前の脅威に対処するため<strong>「現実路線」</strong>での歩み寄りを優先。</li>
+      </ul>
+    </li>
+    <li><strong>ホルムズ海峡：</strong>事態沈静化に向けた相互努力の確認。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 外交の舞台裏：プレゼントと友好関係</h2>
+  <p>シビアな議題の一方で、首脳同士の個人的な信頼関係を深める演出も行われました。</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>贈り主</th>
+        <th>贈り物</th>
+        <th>背景・意味</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>高市首相</strong></td>
+        <td>鯖江市（福井県）製のメガネフレーム</td>
+        <td>日本の伝統的な職人技術の象徴。</td>
+      </tr>
+      <tr>
+        <td><strong>イ・ジェミョン大統領</strong></td>
+        <td>伝統的な木彫りの仮面</td>
+        <td>開催地・安東（アンドン）を象徴する伝統工芸。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul class="opt-a-list">
+    <li><strong>次回の会談：</strong>高市首相が「次は日本の温泉はいかがですか」と提案。シャトル外交の継続を強く示唆。</li>
+    <li><strong>過去の交流：</strong>前回は高市首相の故郷・奈良を大統領が訪れ、二人でドラム演奏を披露した。</li>
+  </ul>
+
+  <blockquote>
+    アメリカだけに頼っていられないという厳しい現実がある一方で、アジアの中でどう友好関係・協力関係を強化していくのか、非常に重要な局面に来ている。
+  </blockquote>
+
+</body>
+</html>
