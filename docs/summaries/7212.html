@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "○";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">深井・けんすうのまぼろし会議 35. これからの時代の価値観について</h1>
+  <p>近代の基盤であった「個人の能力」による評価システムが崩壊しつつある現状を受け、これからの時代に何が新たな価値の源泉となるのかを議論。技術革新がもたらす社会構造の変化と、それに対する個人の生存戦略について深掘りします。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">能力主義の終焉</span>
+    <span class="opt-a-tag">港区女子の変容</span>
+    <span class="opt-a-tag">ケアの価値</span>
+    <span class="opt-a-tag">マスメディアの死</span>
+    <span class="opt-a-tag">AIとボトルネック</span>
+    <span class="opt-a-tag">スモール・ストロング</span>
+    <span class="opt-a-tag">教育と倫理</span>
+    <span class="opt-a-tag">ホスト研究</span>
+    <span class="opt-a-tag">メタ認知</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 近代的な「能力ベース」の価値観の崩壊</h2>
+  <ul class="opt-a-list">
+    <li><strong>近代の物語の源泉：</strong> 努力、勉強、能力、成果、そしてその成果が個人のものになるという一連のサイクルがベースだった。</li>
+    <li><strong>崩壊の兆し：</strong> AIなどの技術革新により、個人の能力だけで成果を出すモデルが維持できなくなりつつある。</li>
+    <li><strong>新たな評価軸の仮説：</strong> 「能力」ではなく<strong>「何を支えているか（ケアしているか）」</strong>が評価の対象になるのではないか。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 価値観の転換事例：港区とグローバルリーダー</h2>
+  <ul class="opt-a-list">
+    <li><strong>港区界隈の変化：</strong> かつての「港区女子」的な属性よりも、現在は<strong>「子供の数」</strong>がステータスとして評価される傾向がある。
+      <ul>
+        <li>少子化の中で、子供を産み育てていること、あるいはそれを支えていることが「偉い」とされる価値観へのシフト。</li>
+      </ul>
+    </li>
+    <li><strong>富豪への視線の変化：</strong>
+      <ul>
+        <li><strong>ジェフ・ベゾス：</strong> 自分のためにお金を使っているように見え、冷ややかな目で見られがち。</li>
+        <li><strong>イーロン・マスク：</strong> 人類のために働いているという「大義」があるため、支持されやすい。</li>
+      </ul>
+    </li>
+    <li><strong>ケアの重要性：</strong> 自分のために稼ぐ人より、コミュニティや他者をケアする人の評価が高まる時代へ。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ユニバーサルな評価の消失と分断</h2>
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 250">
+      <!-- 背景 -->
+      <rect x="10" y="10" width="580" height="230" rx="12" fill="#1a1a3e" />
+      
+      <!-- 過去：ユニバーサル -->
+      <rect x="50" y="80" width="150" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="125" y="125" text-anchor="middle" font-size="14">マスメディア時代</text>
+      <text x="125" y="145" text-anchor="middle" font-size="12">単一の評価軸</text>
+      
+      <!-- 矢印 -->
+      <path d="M220 120 L280 120" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+      
+      <!-- 現在・未来：分断 -->
+      <circle cx="350" cy="60" r="35" fill="rgba(96, 165, 250, 0.2)" stroke="#60a5fa" />
+      <text x="350" y="65" text-anchor="middle" font-size="11">界隈A</text>
+      
+      <circle cx="450" cy="120" r="45" fill="rgba(96, 165, 250, 0.2)" stroke="#60a5fa" />
+      <text x="450" y="125" text-anchor="middle" font-size="11">界隈B</text>
+      
+      <circle cx="370" cy="180" r="40" fill="rgba(96, 165, 250, 0.2)" stroke="#60a5fa" />
+      <text x="370" y="185" text-anchor="middle" font-size="11">界隈C</text>
+      
+      <text x="400" y="220" text-anchor="middle" font-size="14" font-weight="bold">価値観の多極化・分断</text>
+    </svg>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>共通指標の消失：</strong> 全人類が共通して「これが偉い」と思うユニバーサルな指標がなくなる。</li>
+    <li><strong>エコーチャンバーの加速：</strong> インターネットにより、特定のコミュニティ内でのみ評価が高い状態が並列して存在するようになる。</li>
+    <li><strong>マスメディアの終焉：</strong> テレビに出るメリットが激減。
+      <ul>
+        <li>質の高い層はPodcastなどの深いメディアへ移動。</li>
+        <li>有名になることは「叩かれるリスク」を増やすだけで、構造的なインセンティブが消滅している。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 技術革新が変える組織とボトルネック</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>これまでの構造</th>
+        <th>これからの構造</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>組織の規模</strong></td>
+        <td>数百〜数千人の大企業が強い</td>
+        <td><strong>3人程度の少数精鋭</strong>がAIを駆使して巨大な力を保つ</td>
+      </tr>
+      <tr>
+        <td><strong>ボトルネック</strong></td>
+        <td>官僚的な事務作業、真面目な遂行</td>
+        <td><strong>ケア、意思決定、倫理的判断</strong></td>
+      </tr>
+      <tr>
+        <td><strong>資本の価値</strong></td>
+        <td>資金力があることが絶対的優位</td>
+        <td>限界費用がゼロに近づき、資本の価値が相対的に低下</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 予測不能な時代への生存戦略</h2>
+  <ul class="opt-a-list">
+    <li><strong>教育の重要性：</strong> 社会がどう変わっても、江戸後期の教育が明治維新を支えたように、<strong>「今できる最大の教育」</strong>を施しておくことが唯一の備えになる。</li>
+    <li><strong>倫理のプリセット：</strong> 技術で何でも可能になるからこそ、「人殺しはダメ」「戦争はダメ」といった<strong>動かしてはいけない倫理</strong>を教育でセットしておく必要がある。</li>
+    <li><strong>「長時間労働＝偉い」の消滅：</strong> 
+      <ul>
+        <li>長時間労働は生産性の低さと多様性の欠如を招く。</li>
+        <li>素晴らしい決断に時間は比例しない。むしろインプットを阻害する。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 深井氏の知的探求：未知の感覚を理解する</h2>
+  <ul class="opt-a-list">
+    <li><strong>研究対象：</strong> 自分がハマれないもの（ホスト、宗教、スポーツ、アイドル、お笑い）をあえて研究する。
+      <ul>
+        <li><strong>ホスト：</strong> 歌舞伎町を「呪われた地」としつつ、案内人（守護神）と共にメタ認知の視点で調査。</li>
+        <li><strong>スポーツ：</strong> 「負けて泣くなら最初からやらなければいいのに」という感覚の外側にある熱狂の構造を知りたい。</li>
+        <li><strong>海への恐怖：</strong> コントロールできない自然（海）が本能的に怖い。リゾートの海も「戦場」のように感じる。</li>
+      </ul>
+    </li>
+    <li><strong>目的：</strong> 「なぜマジョリティがそれに熱狂するのか」を構造的に理解し、説明できるようになること。</li>
+    <li><strong>メタ認知の限界：</strong> 自分の人生をメタ認知できていても、感情や行動を完全にコントロールできるわけではない（「自分もクソバカだな」と思って生きる）。</li>
+  </ul>
+
+  <blockquote>
+    「技術革新があれば、社会規範は必ず壊れてきた。30年前のインターネット、20年前のスマホを経て、国家や株式会社の仕組みまでが『どんがら合称』される可能性が高い。」
+  </blockquote>
+
+</body>
+</html>
