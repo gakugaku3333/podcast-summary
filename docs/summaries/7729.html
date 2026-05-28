@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ゆる哲学ラジオ #170：好きなお笑い全部語りたいっ！！！</h1>
+  <p>パーソナリティの<strong>平津さん</strong>と<strong>浦下さん</strong>が、自身のルーツとなったお笑い番組や、現在ハマっているYouTubeチャンネル、ラジオ番組について熱く語り合うエピソード。浦下さんのマニアックすぎるお笑い知識の源泉が明かされます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">とんねるず</span>
+    <span class="opt-a-tag">バナナマン</span>
+    <span class="opt-a-tag">おぎやはぎ</span>
+    <span class="opt-a-tag">くりぃむしちゅー</span>
+    <span class="opt-a-tag">オードリー</span>
+    <span class="opt-a-tag">さまぁ〜ず</span>
+    <span class="opt-a-tag">さらば青春の光</span>
+    <span class="opt-a-tag">ラランド</span>
+    <span class="opt-a-tag">霜降り明星</span>
+    <span class="opt-a-tag">春とヒコーキ</span>
+    <span class="opt-a-tag">バキ童チャンネル</span>
+    <span class="opt-a-tag">粗品</span>
+    <span class="opt-a-tag">GERA</span>
+    <span class="opt-a-tag">深夜ラジオ</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 お笑い遍歴とルーツの比較</h2>
+  <p>二人の「お笑い好き」になったきっかけや、影響を受けた芸人の違いを整理します。</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>浦下さん（現代・YouTube派）</th>
+        <th>平津さん（テレビ制限・ラジオ派）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>入り口</strong></td>
+        <td>バラエティ番組（2011年頃）</td>
+        <td>知識バラエティの「音声」のみ</td>
+      </tr>
+      <tr>
+        <td><strong>主な視聴環境</strong></td>
+        <td>テレビ（中1）→ YouTube（現在）</td>
+        <td>布団の中で隠れて聞くラジオ</td>
+      </tr>
+      <tr>
+        <td><strong>憧れの存在</strong></td>
+        <td>東京センス派コント師</td>
+        <td>くりぃむしちゅー上田晋也</td>
+      </tr>
+      <tr>
+        <td><strong>好きなジャンル</strong></td>
+        <td>長尺コント、設定の妙</td>
+        <td>芸人同士の掛け合い、メタ的な笑い</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 浦下さんの「お笑い英才教育」</h2>
+  <ul class="opt-a-list">
+    <li><strong>とんねるずのみなさんのおおかげでした</strong>
+      <ul>
+        <li>「全落・水落オープン」「男気じゃんけん」「2億4000万のものまねメドレー」「細かすぎて伝わらないモノマネ」などを中学生で視聴。</li>
+        <li>とんねるずの「大人な面白さ」に惹かれる。</li>
+      </ul>
+    </li>
+    <li><strong>人力舎系への傾倒</strong>
+      <ul>
+        <li><strong>おぎやはぎ</strong>：矢作さんの笑い声や、小木さんの「出力のなさ」に惹かれ、中学時代から深夜ラジオを聴く。</li>
+        <li><strong>バナナマン</strong>：コントの構成力に衝撃を受け、「コント師になりたい」とまで思う。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 珠玉のネタ・番組紹介</h2>
+  <ul class="opt-a-list">
+    <li><strong>バナナマンのコント</strong>
+      <ul>
+        <li><strong>「スキャリーストーリー」</strong>：設楽さんの「話が通じない狂人」の演技が絶妙。</li>
+        <li><strong>「フラウド・イン・プーケット」</strong>：約40分の長尺。1人2役を演じ分け、伏線回収や人情味もあるドラマチックな名作。</li>
+        <li><strong>「ルス電」</strong>：国民にランク付けがなされる不条理で怖い設定。ゆる学徒フェスでの一人コントの参考にした。</li>
+      </ul>
+    </li>
+    <li><strong>さまぁ〜ずのコント</strong>
+      <ul>
+        <li><strong>「美容室」</strong>：大竹さんのボケ（痛かったら「痛まにゃー」と言ってください）と、三村さんのツッコミ。</li>
+        <li><strong>「猛中」</strong>：入院中の三村（部長）と見舞いに来る大竹（課長）の構造的な面白さ。</li>
+      </ul>
+    </li>
+    <li><strong>平津さんお気に入りの番組</strong>
+      <ul>
+        <li><strong>「クイズ正解は一年後」</strong>：一年を通した壮大なクイズ企画。</li>
+        <li><strong>「スター名鑑」</strong>：おぎやはぎ、有吉、劇団ひとりのチーム席が最高。</li>
+        <li><strong>「検索ちゃん」</strong>：年末特番のネタ祭りが好き。小池栄子の立ち振る舞いも絶賛。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 現代の主戦場：YouTubeチャンネル</h2>
+  <p>浦下さんが日常的にチェックしている、情報密度の高いチャンネル群です。</p>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 300">
+      <!-- Nodes -->
+      <rect x="20" y="20" width="160" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="35" y="45" font-size="14">バキ童チャンネル</text>
+      
+      <rect x="220" y="20" width="160" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="235" y="45" font-size="14">さらば青春の光</text>
+      
+      <rect x="420" y="20" width="160" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="435" y="45" font-size="14">ラランド</text>
+
+      <rect x="20" y="120" width="160" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="35" y="145" font-size="14">粗品 Official</text>
+
+      <rect x="220" y="120" width="160" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="235" y="145" font-size="14">霜降り明星せいや</text>
+
+      <rect x="420" y="120" width="160" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="435" y="145" font-size="14">ママタルト</text>
+
+      <!-- Arrows/Lines -->
+      <path d="M100 60 L100 120" stroke="#60a5fa" stroke-width="2" fill="none" />
+      <path d="M300 60 L300 120" stroke="#60a5fa" stroke-width="2" fill="none" />
+      <path d="M500 60 L500 120" stroke="#60a5fa" stroke-width="2" fill="none" />
+      
+      <text x="20" y="200" font-size="13" fill="#a78bfa">【特におすすめの企画】</text>
+      <text x="20" y="225" font-size="13">・さらば：うまろう（人狼×競馬）</text>
+      <text x="20" y="245" font-size="13">・ラランド：電話対応できない西田</text>
+      <text x="20" y="265" font-size="13">・春とヒコーキ：エロゲショップ（コント）</text>
+      <text x="20" y="285" font-size="13">・粗品：チンチロ（粗品4兄弟）</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ラジオとプラットフォーム</h2>
+  <ul class="opt-a-list">
+    <li><strong>音声メディアの魅力</strong>
+      <ul>
+        <li><strong>深夜ラジオ</strong>：オードリー、有吉弘行などの「下ネタ」と「知らない日本語の組み合わせ」による衝撃。</li>
+        <li><strong>GERA（ゲラ）</strong>：芸人特化のラジオアプリ。浦下さんは「春とヒコーキ」の番組に課金サポーターとして参加。</li>
+        <li><strong>スポンサー制度</strong>：GERA独自の文化。スポンサー名の読み上げが「大喜利」化しており、リスナーのレベルが高い。</li>
+      </ul>
+    </li>
+    <li><strong>TBSラジオ「CITY CHILL CLUB」</strong>
+      <ul>
+        <li>浦下さんがかつて相方の吉信さんとパロディネタを作った元ネタ。</li>
+        <li>「男女の出会いから別れ」をチルい音楽に乗せて語るが、キーワードを散りばめる構成が秀逸。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 お知らせ：新友フィルハーモニー定期演奏会</h2>
+  <ul class="opt-a-list">
+    <li><strong>日時</strong>：2024年5月6日（月・祝）昼公演</li>
+    <li><strong>場所</strong>：神奈川県立音楽堂（桜木町）</li>
+    <li><strong>演目</strong>：ブラームス 交響曲第1番 ほか</li>
+    <li><strong>詳細</strong>：浦下さんが団長を務めるオーケストラの第3回定期演奏会。チケットは概要欄リンクより。</li>
+  </ul>
+
+</body>
+</html>
