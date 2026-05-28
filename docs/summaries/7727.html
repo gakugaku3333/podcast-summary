@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">感情を制する者が健康を制する【感情編01】</h1>
+  <p>公衆衛生学者・行動科学者のHana博士が、健康習慣の土台となる「感情」の重要性を全4回シリーズで解説します。第1回目は、なぜ感情が健康習慣において決定的な役割を果たすのか、最新の行動経済学や実験データをもとに紐解きます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">ハーバード大学</span>
+    <span class="opt-a-tag">行動科学</span>
+    <span class="opt-a-tag">行動経済学</span>
+    <span class="opt-a-tag">システム1とシステム2</span>
+    <span class="opt-a-tag">ダニエル・カーネマン</span>
+    <span class="opt-a-tag">リチャード・セイラー</span>
+    <span class="opt-a-tag">認知傾向フレームワーク</span>
+    <span class="opt-a-tag">ハイジャック</span>
+    <span class="opt-a-tag">健康習慣</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 感情が健康習慣の「土台」である理由</h2>
+  <ul class="opt-a-list">
+    <li><strong>行動の原動力は感情である</strong>
+      <ul>
+        <li>ジムに行けない理由は「知識不足」ではなく、「めんどくさい」「気まずい」といった<strong>心の反応（感情）</strong>にある。</li>
+        <li>頭で「健康に良い」と理解していても、感情が動かなければ行動は伴わない。</li>
+      </ul>
+    </li>
+    <li><strong>習慣化のプロセスにおける感情の役割</strong>
+      <div class="diagram-container">
+        <svg width="100%" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+          <!-- Nodes -->
+          <rect x="10" y="30" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+          <text x="70" y="65" text-anchor="middle" font-size="14">1. 決意</text>
+          
+          <rect x="160" y="30" width="120" height="60" rx="8" fill="rgba(255, 255, 255, 0.05)" stroke="#666" />
+          <text x="220" y="65" text-anchor="middle" font-size="14">2. 行動</text>
+          
+          <rect x="310" y="30" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+          <text x="370" y="65" text-anchor="middle" font-size="14">3. 反復</text>
+          
+          <rect x="460" y="30" width="120" height="60" rx="8" fill="rgba(255, 255, 255, 0.05)" stroke="#666" />
+          <text x="520" y="65" text-anchor="middle" font-size="14">4. 自動化</text>
+          
+          <!-- Arrows -->
+          <path d="M 130 60 L 160 60" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+          <path d="M 280 60 L 310 60" stroke="#60a5fa" stroke-width="2" fill="none" />
+          <path d="M 430 60 L 460 60" stroke="#60a5fa" stroke-width="2" fill="none" />
+          
+          <!-- Labels -->
+          <text x="70" y="110" text-anchor="middle" font-size="12" fill="#a78bfa">感情が重要</text>
+          <text x="370" y="110" text-anchor="middle" font-size="12" fill="#a78bfa">感情が重要</text>
+        </svg>
+      </div>
+      <ul>
+        <li><strong>決意の段階：</strong>「やってやるぞ！」というポジティブな高揚感がスタートを後押しする。</li>
+        <li><strong>反復（維持）の段階：</strong>日々の気分の変化（悲しみ、疲れ、イライラ）が継続を阻害する。ここで感情をどう扱うかが鍵となる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 人間は感情に「ハイジャック」される生き物</h2>
+  <ul class="opt-a-list">
+    <li><strong>理性が感情に負ける実証実験（カリフォルニア大学）</strong>
+      <ul>
+        <li><strong>対象：</strong>男子学生35名。</li>
+        <li><strong>内容：</strong>「通常時」と「性的興奮状態（ヒート・オブ・ザ・モーメント）」で、意思決定がどう変わるかを調査。</li>
+      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>質問内容</th>
+            <th>通常時の肯定率</th>
+            <th>興奮時の肯定率</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>すごく嫌いな人とでもセックスできるか</td>
+            <td>53%</td>
+            <td><strong>77%</strong></td>
+          </tr>
+          <tr>
+            <td>チャンスを増やすために「愛してる」と言うか</td>
+            <td>30%</td>
+            <td><strong>50%</strong></td>
+          </tr>
+          <tr>
+            <td>相手の経歴を知らなくてもコンドームを使うか</td>
+            <td>88% (使う)</td>
+            <td><strong>69% (低下)</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li><strong>実験の結論：</strong>
+      <ul>
+        <li>感情が高ぶると、<strong>モラル、知識、理性、意志の力</strong>が機能しなくなり、その場限りの自滅的な行動を取りやすくなる。</li>
+        <li>これは性的な場面だけでなく、タバコ、アルコール、食生活などあらゆる健康習慣に共通する。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 行動経済学が解明した「2つのシステム」</h2>
+  <p>ダニエル・カーネマン教授（ノーベル経済学賞受賞者）が提唱した、人間の意思決定を司る2つの思考モード。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>特徴</th>
+        <th>システム1（感情・直感）</th>
+        <th>システム2（理性・論理）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>速度</strong></td>
+        <td>非常に速い（自動的）</td>
+        <td>遅い（意識的）</td>
+      </tr>
+      <tr>
+        <td><strong>労力</strong></td>
+        <td>少ない</td>
+        <td>多い（疲れる）</td>
+      </tr>
+      <tr>
+        <td><strong>具体例</strong></td>
+        <td>コンビニでポテチを衝動買いする</td>
+        <td>マンション購入をじっくり検討する</td>
+      </tr>
+      <tr>
+        <td><strong>健康習慣</strong></td>
+        <td>「疲れたからビール！」と動く</td>
+        <td>「健康のために野菜を食べよう」と考える</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="opt-a-list">
+    <li><strong>パラダイムシフト：</strong>かつての公衆衛生や経済学は「人間は理性（システム2）で動く」と想定していたが、現在は<strong>「人間は感情（システム1）に支配される」</strong>という前提で対策を考えるようになっている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 感情マネジメントの新しい視点</h2>
+  <ul class="opt-a-list">
+    <li><strong>ポジティブ・ネガティブの二分法を超えて</strong>
+      <ul>
+        <li>ハーバード大学のジェニファー・ラーナ教授が提唱する<strong>「認知傾向フレームワーク」</strong>。</li>
+        <li>「怒り（ネガティブ）」と「幸せ（ポジティブ）」は、実は健康習慣への影響メカニズムにおいて似た傾向を持つことがある。</li>
+        <li>単に「良い・悪い」ではなく、個別の感情が行動にどのような傾向を与えるかを理解することが重要。</li>
+      </ul>
+    </li>
+    <li><strong>広告業界の知恵を健康に活かす</strong>
+      <ul>
+        <li>ファストフードや炭酸飲料のCMは、成分（理性）ではなく「美味しそう」「楽しそう」という<strong>感情（システム1）</strong>に訴えかけている。</li>
+        <li>健康習慣も「正しいからやる」のではなく、「楽しい」「心地よい」「あの人に会える」といった<strong>感情的な報酬</strong>をセットにすることが成功の秘訣。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 次回へのステップ：感情のモニタリング</h2>
+  <p>感情をコントロールするための第一歩として、Hana博士は以下の<strong>「感情の観察」</strong>を推奨しています。</p>
+  <ul class="opt-a-list">
+    <li>1週間のうち、自分の感情の割合を意識してみる（例：不安・イライラが7割、平穏が3割など）。</li>
+    <li>「健康に良くない行動」をしてしまった時の、直前の感情の動きを振り返る。</li>
+    <li>自分が何に「ハイジャック」されやすいのかをメタ認知する。</li>
+  </ul>
+
+  <blockquote>
+    「人間は感情的な生き物であることを、まずは受け入れることが大事です。理性で自分を責めるのではなく、感情の特性を理解して味方につけましょう。」
+  </blockquote>
+
+</body>
+</html>
