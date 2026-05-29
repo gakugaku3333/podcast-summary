@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【高橋祥子】善人だけが集まってもいい社会はできない『社会はどう進化するのか』</h1>
+  <p>生命科学研究者の高橋祥子氏をゲストに迎え、進化生物学者デイビッド・スローン・ウィルソンによる著書『社会はどう進化するのか』を紐解くエピソード。個人の善意や能力ではなく、集団の「設計」がいかに社会の成否を決めるのか、進化論の視点から解説します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">高橋祥子</span>
+    <span class="opt-a-tag">LAS</span>
+    <span class="opt-a-tag">老化</span>
+    <span class="opt-a-tag">XPRIZE Healthspan</span>
+    <span class="opt-a-tag">デイビッド・スローン・ウィルソン</span>
+    <span class="opt-a-tag">進化生物学</span>
+    <span class="opt-a-tag">多レベル淘汰</span>
+    <span class="opt-a-tag">協力の進化</span>
+    <span class="opt-a-tag">個別最適と全体最適</span>
+    <span class="opt-a-tag">社会設計</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ゲスト・高橋祥子氏の現在の活動</h2>
+  <ul class="opt-a-list">
+    <li><strong>新会社「LAS」の設立</strong>：2023年にジーンクエストの社長を退任し、老化・長寿（ロンジェビティ）を研究するバイオテック企業を立ち上げ。</li>
+    <li><strong>老化の定義</strong>：見た目の問題ではなく、科学的には<strong>「病気になりやすい状態」</strong>を指す。老化を予防することで、健康なまま生涯を終える人を増やす社会実装を目指す。</li>
+    <li><strong>XPRIZE Healthspanへの挑戦</strong>：
+      <ul>
+        <li>米国のエクスプライズ財団が主催する、健康寿命を10年若返らせることを目指す賞金<strong>150億円</strong>のサイエンスコンペ。</li>
+        <li>世界600チーム以上の中から、現在<strong>セミファイナルの100チーム</strong>に選出されている（日本からは10チーム未満）。</li>
+        <li>2030年のファイナルに向けて研究を継続中。目的は優勝だけでなく、研究コミュニティの活性化にある。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 紹介書籍：『社会はどう進化するのか』</h2>
+  <ul class="opt-a-list">
+    <li><strong>著者</strong>：デイビッド・スローン・ウィルソン（進化生物学者）。</li>
+    <li><strong>テーマ</strong>：社会全体の設計論を進化生物学の視点から論じた本。</li>
+    <li><strong>核心的な主張</strong>：社会がうまくいかないのは「人間が愚かだから」ではなく、<strong>「集団のルールや構造が協力を維持できる設計になっていないから」</strong>である。</li>
+    <li><strong>表紙の意図</strong>：蜂の巣と無数の蜂が描かれている。蜂の社会がなぜ高度な協力を維持できているのかという事例が、人間社会への示唆として重要。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 進化から見る「良い集団」の条件</h2>
+  <ul class="opt-a-list">
+    <li><strong>個別最適 vs 全体最適</strong>：
+      <ul>
+        <li><strong>癌細胞の例</strong>：細胞個体として「増殖したい」という欲求（個別最適）に従うと、最終的に個体（全体）を殺し、自分たちも死滅する。</li>
+        <li>個人が自分の生存可能性を上げる行動を無条件に取っても、自然に良い社会ができることはあり得ない。</li>
+      </ul>
+    </li>
+    <li><strong>進化は「競争」ではなく「協力」を生む</strong>：
+      <ul>
+        <li>一般的な進化論のイメージ（弱肉強食・個体間の競争）とは異なり、実際には<strong>「協力できる集団同士の競争」</strong>が起きている。</li>
+        <li>内部で足を引っ張り合う集団は淘汰され、うまく協力できる集団が生き残る。これが「進化」の本質。</li>
+      </ul>
+    </li>
+    <li><strong>成功するコミュニティの共通点</strong>：
+      <ul>
+        <li><strong>目的が明確</strong>であること。</li>
+        <li><strong>アイデンティティ（境界線）</strong>が強いこと。</li>
+        <li><strong>裏切り（フリーライダー）を排除・抑制できる仕組み</strong>があること。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <svg width="100%" viewBox="0 0 600 250" style="background: #1a1a3e; border-radius: 12px; margin: 20px 0;">
+    <!-- Individual Level -->
+    <rect x="50" y="50" width="200" height="60" rx="8" fill="rgba(245, 158, 11, 0.15)" stroke="#f59e0b" stroke-width="2" />
+    <text x="150" y="85" text-anchor="middle" font-size="14" font-weight="bold">個別最適（本能・感情）</text>
+    <text x="150" y="105" text-anchor="middle" font-size="12">自己利益の追求・増殖</text>
+
+    <!-- Group Level -->
+    <rect x="350" y="50" width="200" height="60" rx="8" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="2" />
+    <text x="450" y="85" text-anchor="middle" font-size="14" font-weight="bold">全体最適（社会設計）</text>
+    <text x="450" y="105" text-anchor="middle" font-size="12">協力を維持するルール</text>
+
+    <!-- Arrow -->
+    <path d="M 250 80 L 340 80" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+      </marker>
+    </defs>
+    <text x="300" y="65" text-anchor="middle" font-size="12" fill="#60a5fa">自然には繋がらない</text>
+
+    <!-- Result -->
+    <text x="300" y="180" text-anchor="middle" font-size="15" fill="#e8e8f0">
+      <tspan x="300" dy="1.2em">「設計」がなければ、個別最適が集団を破壊する</tspan>
+      <tspan x="300" dy="1.5em">（例：癌細胞、フリーライダーの蔓延）</tspan>
+    </text>
+  </svg>
+
+  <h2 class="opt-a-section-title">📌 前回の話題（ジョナサン・ハイト）との共通点</h2>
+  <ul class="opt-a-list">
+    <li><strong>感情と理性の役割</strong>：
+      <ul>
+        <li>前回の本（『社会はなぜ左と右にわかれるのか』）では「感情が先にあり、理性が後付けされる」と説かれた。</li>
+        <li>人間の感情は、個体や家族などの小さな集団を生き残らせるためには有利に働く。</li>
+        <li>しかし、その感情だけでは、国家や現代社会のような巨大な集合体において「全体最適」を実現することはできない。</li>
+      </ul>
+    </li>
+    <li><strong>結論の合致</strong>：どちらの本も<strong>「放っておいても良い社会はできない」</strong>という点で一致している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 進化論を社会に応用する意義</h2>
+  <ul class="opt-a-list">
+    <li><strong>適応と進歩の違い</strong>：進化は単なる「環境への適応」であり、必ずしも「進歩」ではない。</li>
+    <li><strong>現代の課題</strong>：人間が生物として進化の過程で獲得した機能が、必ずしも現代や未来の複雑な社会に適応可能であるとは限らない。</li>
+    <li><strong>設計の重要性</strong>：人類がいまだに戦争を繰り返すのは、知能の問題ではなく、集団としての進化・設計が追いついていない側面がある。</li>
+  </ul>
+
+  <table style="margin-top: 30px;">
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>個別レベルの進化</th>
+        <th>集団レベルの進化</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>主な動機</strong></td>
+        <td>自己利益、生存、増殖</td>
+        <td>協力、共通目的の達成</td>
+      </tr>
+      <tr>
+        <td><strong>リスク</strong></td>
+        <td>他者の足を引っ張る、裏切り</td>
+        <td>フリーライダーによる崩壊</td>
+      </tr>
+      <tr>
+        <td><strong>成功の鍵</strong></td>
+        <td>競争力、適応力</td>
+        <td><strong>ルール設計、裏切りの排除</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
