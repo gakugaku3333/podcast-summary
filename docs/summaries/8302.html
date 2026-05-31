@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+      background: rgba(255, 255, 255, 0.02);
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">心穏やかに暮らすための感情メンテナンス</h1>
+  <p>公衆衛生学者・行動科学者のHana博士が、エビデンスに基づいた「感情を整える技術」を解説するエピソード。感情は受動的なものではなく、自ら選択し、呼吸や言語化を通じてマネジメントできるものであることを説いています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">感情の選択</span>
+    <span class="opt-a-tag">I choose to be happy</span>
+    <span class="opt-a-tag">腹式呼吸</span>
+    <span class="opt-a-tag">マインドフルネス</span>
+    <span class="opt-a-tag">ジャーナリング</span>
+    <span class="opt-a-tag">感謝の記録</span>
+    <span class="opt-a-tag">セルフコンパッション</span>
+    <span class="opt-a-tag">心理的安全性</span>
+    <span class="opt-a-tag">ハーバード講衆衛生大学院</span>
+    <span class="opt-a-tag">ティーク・ナット・ハン</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 1. 感情は「選べる」というマインドセット</h2>
+  <ul class="opt-a-list">
+    <li><strong>感情は自発的に生み出せる</strong>：感情を「出来事の結果」として受け入れるだけでなく、自分がどうありたいかを先に決めることができる。</li>
+    <li><strong>「I choose to be happy」の精神</strong>：
+      <ul>
+        <li>Hana博士の元上司（外資系広告会社の会長）の言葉。</li>
+        <li>殺伐としたビジネス環境でも常に穏やかでいる秘訣は、<strong>「幸せであることを自分で選んでいる」</strong>という意志。</li>
+      </ul>
+    </li>
+    <li><strong>自分の機嫌は自分で取る</strong>：周囲の状況はコントロールできないが、自分の感情は整えることができる数少ない要素の一つ。</li>
+    <li><strong>怒りのループを断つ</strong>：原因を他人に転嫁すると怒りのループに陥り、最終的に自分が損をする。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 2. ご自愛の出発点は「呼吸」から</h2>
+  <ul class="opt-a-list">
+    <li><strong>感情と呼吸の密接な関係</strong>：
+      <ul>
+        <li>不安・怒り：猫背になり、呼吸が浅く激しくなる。</li>
+        <li>幸せ・充足：姿勢が伸び、呼吸が深く落ち着く。</li>
+      </ul>
+    </li>
+    <li><strong>逆のアプローチ</strong>：感情が呼吸を変えるように、<strong>呼吸を変えることで感情を整える</strong>ことが可能。</li>
+    <li><strong>科学的エビデンス</strong>：
+      <ul>
+        <li>15分間の深い呼吸を実践すると、ポジティブな感情を保ちやすくなり、ネガティブな情報に振り回されにくくなる。</li>
+        <li>ハーバード大学系列の病院（MGH）や講衆衛生大学院でもマインドフルネスの研究が盛んに行われている。</li>
+        <li>2023年、ハーバードに「ティーク・ナット・ハン・センター（マインドフルネス研究機関）」が設立された。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 400 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="60" width="100" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="60" y="95" text-anchor="middle" font-size="14">感情</text>
+      
+      <path d="M120 80 Q200 40 280 80" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+      <path d="M280 100 Q200 140 120 100" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+      
+      <rect x="290" y="60" width="100" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="340" y="95" text-anchor="middle" font-size="14">呼吸・姿勢</text>
+      
+      <text x="200" y="45" text-anchor="middle" font-size="12" fill="#60a5fa">相互に作用</text>
+      
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+          <path d="M0,0 L10,5 L0,10 Z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.85em; color: #a78bfa;">図：感情と身体（呼吸・姿勢）のフィードバック構造</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 3. 実践：心を整える呼吸法</h2>
+  <ul class="opt-a-list">
+    <li><strong>基本の姿勢</strong>：椅子に深く腰掛けるか、あぐらで座る。背筋をまっすぐ伸ばし、頭のてっぺんを吊られているイメージ。</li>
+    <li><strong>手順</strong>：
+      <ol>
+        <li>鼻から深く吸う。</li>
+        <li>口からゆっくり吐き出す。</li>
+        <li><strong>ポイント</strong>：吸いにくい時は、まず<strong>「全部吐き切る」</strong>ことから始める。</li>
+      </ol>
+    </li>
+    <li><strong>効果</strong>：3回〜10回繰り返すことで、心拍数や血圧が安定し、心が落ち着いてくる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 4. ペンの力で感情を整える（言語化）</h2>
+  <ul class="opt-a-list">
+    <li><strong>感謝の記録（ジャーナリング）</strong>：
+      <ul>
+        <li>マイアミ大学の研究：毎週5つの「ありがたいこと」を書くグループは、不満を書くグループより楽観的になり、運動量が増え、通院回数が減った。</li>
+        <li><strong>「ある」ものに目を向ける</strong>：日本語の「有り難い（あることが難しい）」の通り、希少な存在に意識を向けることで充足感が高まる。</li>
+      </ul>
+    </li>
+    <li><strong>手紙を書く（お礼状）</strong>：
+      <ul>
+        <li>感謝を言語化するだけで、ポジティブな感情が約1ヶ月持続するという研究もある。</li>
+        <li>実際に出さなくても、書くプロセス自体に効果がある。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>手法</th>
+        <th>具体的なアクション</th>
+        <th>期待される効果</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>感謝日記</strong></td>
+        <td>1日に数回、感謝したことをメモする</td>
+        <td>楽観性の向上、身体的健康の改善</td>
+      </tr>
+      <tr>
+        <td><strong>お礼状</strong></td>
+        <td>恩人に感謝の手紙を書く（音読も有効）</td>
+        <td>幸福感の持続、人間関係の再認識</td>
+      </tr>
+      <tr>
+        <td><strong>自分への手紙</strong></td>
+        <td>辛い時に自分を励ます内容を書く</td>
+        <td>不安・うつの軽減（セルフコンパッション）</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 5. セルフコンパッション（自分への思いやり）</h2>
+  <ul class="opt-a-list">
+    <li><strong>第三者視点で自分を見る</strong>：失敗した時、自分を責めるのではなく「大切な友人が同じ状況ならどう声をかけるか」を考える。</li>
+    <li><strong>感情を否定しない</strong>：情けない、悲しいといった感情を事実として認めつつ、「よく頑張った」「仕方ないよ」と労いの言葉をかける。</li>
+    <li><strong>ヘルシーな正域（聖域）を持つ</strong>：
+      <ul>
+        <li>自分をいたわる習慣（ストレッチ、入浴、サウナ、良質な食事）。</li>
+        <li><strong>注意</strong>：ドカ食いなどの不健康な行為を「自分へのご褒美」にしない。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 6. 組織・コミュニティの力</h2>
+  <ul class="opt-a-list">
+    <li><strong>心理的安全性</strong>：本来の自分でいられる、感情を受け止めてもらえるコミュニティに属することが重要。</li>
+    <li><strong>感情の伝播</strong>：周囲が優しい環境（例：アムステルダムの留学体験）では、自分も自然と他者に優しくなれる。</li>
+    <li><strong>振り返りの共有</strong>：ヨガコミュニティのように、自分の状態を他者と共有する場を持つことで、一人では続かないメンテナンスが継続しやすくなる。</li>
+  </ul>
+
+  <blockquote style="margin-top: 2em;">
+    「感情はコントロールできない結果ではなく、自分で整え、選ぶことができるもの。まずは姿勢を正し、一息つくことから始めてみてください。」
+  </blockquote>
+
+</body>
+</html>
