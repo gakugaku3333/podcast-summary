@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【6月1日】ソフトバンクGが仏データセンターに14兆円、その背景とは？</h1>
+  <p>ソフトバンクグループ（SBG）によるフランスへの巨額投資計画と、激化する世界のAIインフラ・スタートアップ競争の現状を解説するエピソードです。マクロン政権の戦略や、OpenAIとアンソロピックの勢力図の変化に焦点を当てています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">ソフトバンクグループ</span>
+    <span class="opt-a-tag">孫正義</span>
+    <span class="opt-a-tag">フランス</span>
+    <span class="opt-a-tag">マクロン大統領</span>
+    <span class="opt-a-tag">AIデータセンター</span>
+    <span class="opt-a-tag">OpenAI</span>
+    <span class="opt-a-tag">アンソロピック</span>
+    <span class="opt-a-tag">クロード3</span>
+    <span class="opt-a-tag">原子力発電</span>
+    <span class="opt-a-tag">Choose France</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ソフトバンクグループのフランス投資計画</h2>
+  <ul class="opt-a-list">
+    <li><strong>投資規模：</strong>最大<strong>14兆円</strong>を投じ、ヨーロッパ最大規模のAIデータセンターを建設。</li>
+    <li><strong>発表の場：</strong>フランス政府主催の投資促進イベント「<strong>チューズ・フランス（Choose France）</strong>」にて孫正義会長兼社長が表明。</li>
+    <li><strong>戦略的意図：</strong>
+      <ul>
+        <li>AIインフラへの投資加速。</li>
+        <li>アメリカに事業が集中する<strong>リスクの分散</strong>。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 なぜフランスが選ばれたのか？</h2>
+  <svg width="100%" viewBox="0 0 600 220" style="background: #1a1a3e; border-radius: 8px; margin: 1em 0;">
+    <!-- Node 1: Power -->
+    <rect x="20" y="50" width="160" height="100" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="100" y="90" text-anchor="middle" font-weight="bold">安定した電力</text>
+    <text x="100" y="115" text-anchor="middle" font-size="12">原発大国としての</text>
+    <text x="100" y="135" text-anchor="middle" font-size="12">エネルギー供給力</text>
+
+    <!-- Arrow -->
+    <path d="M 180 100 L 210 100" stroke="#60a5fa" stroke-width="2" fill="none" />
+    <polygon points="210,100 200,95 200,105" fill="#60a5fa" />
+
+    <!-- Node 2: Policy -->
+    <rect x="220" y="50" width="160" height="100" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="300" y="90" text-anchor="middle" font-weight="bold">国家戦略</text>
+    <text x="300" y="115" text-anchor="middle" font-size="12">AI第三極の構築</text>
+    <text x="300" y="135" text-anchor="middle" font-size="12">1000億ユーロ超の投資</text>
+
+    <!-- Arrow -->
+    <path d="M 380 100 L 410 100" stroke="#60a5fa" stroke-width="2" fill="none" />
+    <polygon points="410,100 400,95 400,105" fill="#60a5fa" />
+
+    <!-- Node 3: Support -->
+    <rect x="420" y="50" width="160" height="100" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="500" y="90" text-anchor="middle" font-weight="bold">強力な支援</text>
+    <text x="500" y="115" text-anchor="middle" font-size="12">税制優遇・人材育成</text>
+    <text x="500" y="135" text-anchor="middle" font-size="12">トップセールス</text>
+  </svg>
+
+  <ul class="opt-a-list">
+    <li><strong>エネルギー供給：</strong>データセンターに不可欠な大量の電力を、<strong>原子力発電</strong>によって確保可能。</li>
+    <li><strong>マクロン政権の後押し：</strong>
+      <ul>
+        <li>「<strong>AI国家戦略</strong>」により、数年間で1000億ユーロ超の投資をAI分野に投入。</li>
+        <li>米中とは異なる「<strong>AIの第三極</strong>」を目指す動き。</li>
+        <li>大統領自らのトップセールス、税制優遇、人材育成支援の提供。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 AIスタートアップの勢力図と市場のボラティリティ</h2>
+  <ul class="opt-a-list">
+    <li><strong>SBGの株価状況：</strong>AI半導体関連株のブームを受け、実質的な<strong>上場来高値圏</strong>で推移。背景には出資先（約11%）である<strong>OpenAI</strong>のIPOへの期待。</li>
+    <li><strong>アンソロピック（Anthropic）の猛追：</strong>
+      <ul>
+        <li>企業価値評価額が<strong>9,650億ドル</strong>（※放送内容に基づく）に達したと発表。</li>
+        <li>未上場AIスタートアップ時価総額1位の座をOpenAIから奪う。</li>
+        <li>高性能モデル「<strong>クロード3 オパス（Claude 3 Opus）</strong>」の一般解放が決定打。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>企業名</th>
+        <th>主なトピック</th>
+        <th>現状の立ち位置</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>OpenAI</strong></td>
+        <td>SBGが約11%出資、IPOへの強い期待感。</td>
+        <td>長らく1位だったが、評価額で逆転を許す。</td>
+      </tr>
+      <tr>
+        <td><strong>アンソロピック</strong></td>
+        <td>「クロード3」シリーズの展開。</td>
+        <td>時価総額1位へ浮上（※放送時点）。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 AI業界の現状：資本とインフラの総力戦</h2>
+  <ul class="opt-a-list">
+    <li><strong>技術のいたちごっこ：</strong>昨日までの世界一が数ヶ月で交代する、絶対応者のいない「<strong>戦国時代</strong>」。</li>
+    <li><strong>総力戦の様相：</strong>単なるソフトウェア開発ではなく、以下の要素を巻き込んだ物理的インフラと資本の戦い。
+      <ul>
+        <li>多額の投資資金</li>
+        <li>データセンター</li>
+        <li>半導体</li>
+        <li>国家レベルの電力網</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote>
+    「熱狂とリスクが隣り合わせのAI市場から、今後も目が離せません。」
+  </blockquote>
+
+</body>
+</html>
