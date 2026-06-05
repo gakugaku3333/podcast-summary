@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "○";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">日本一たのしい哲学ラジオ #155：タッシーがマジでキレる場面を深堀りしたら、人間性の本質が見えてきた</h1>
+  <p>普段は温厚で「仏」のような印象を与えるパーソナリティのタッシーが、珍しく本気で怒りを感じる瞬間を告白。その怒りのトリガーを哲学的に分析することで、個人の価値観や「人間性の本質」を浮き彫りにする雑談回です。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">怒りのトリガー</span>
+    <span class="opt-a-tag">誠実さ</span>
+    <span class="opt-a-tag">ロジックの悪用</span>
+    <span class="opt-a-tag">対等な対話</span>
+    <span class="opt-a-tag">自己防衛</span>
+    <span class="opt-a-tag">価値観の境界線</span>
+    <span class="opt-a-tag">言葉の定義</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 タッシーの「怒り」の正体</h2>
+  <ul class="opt-a-list">
+    <li><strong>「正論」を武器にする不誠実さ</strong>：単に論理的に正しいかどうかではなく、そのロジックを使って「相手をコントロールしようとする意図」や「自分の非を認めない態度」に激しい怒りを感じる。</li>
+    <li><strong>言葉の定義への逃げ</strong>：議論が核心に触れそうになった際、「そもそも〇〇の定義は何ですか？」といったメタ議論に持ち込み、対話を煙に巻く行為。
+      <ul>
+        <li>これは「誠実に向き合うこと」からの逃避であると指摘。</li>
+      </ul>
+    </li>
+    <li><strong>相手を「下」に見る態度</strong>：知識や論理構成力を使い、相手を言い負かすこと自体を目的化している状態。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 怒りのメカニズム：なぜ「キレる」のか</h2>
+  <div class="diagram-container">
+    <svg width="100%" height="180" viewBox="0 0 500 180">
+      <!-- Stimulus -->
+      <rect x="10" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="70" y="95" text-anchor="middle" font-size="14">外部の刺激</text>
+      <text x="70" y="112" text-anchor="middle" font-size="11">(不誠実な言動)</text>
+      
+      <!-- Arrow 1 -->
+      <line x1="130" y1="90" x2="180" y2="90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      
+      <!-- Filter -->
+      <rect x="190" y="40" width="120" height="100" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="250" y="85" text-anchor="middle" font-size="14">価値観の壁</text>
+      <text x="250" y="105" text-anchor="middle" font-size="12">誠実さ・対等性</text>
+      
+      <!-- Arrow 2 -->
+      <line x1="310" y1="90" x2="360" y2="90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      
+      <!-- Reaction -->
+      <rect x="370" y="60" width="120" height="60" rx="8" fill="rgba(239, 68, 68, 0.2)" stroke="#ef4444" />
+      <text x="430" y="95" text-anchor="middle" font-size="14" fill="#ef4444">怒りの発動</text>
+      <text x="430" y="112" text-anchor="middle" font-size="11" fill="#ef4444">(境界線の防衛)</text>
+
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 議論における「誠実さ」の対比</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>タッシーが許容できる議論</th>
+        <th>タッシーがキレる議論</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>目的</strong></td>
+        <td>相互理解・問題解決</td>
+        <td>自己正当化・相手の論破</td>
+      </tr>
+      <tr>
+        <td><strong>ロジックの使い方</strong></td>
+        <td>共通認識を作るための道具</td>
+        <td>責任を回避するための盾</td>
+      </tr>
+      <tr>
+        <td><strong>相手への視線</strong></td>
+        <td>対等なパートナー</td>
+        <td>操作・屈服させる対象</td>
+      </tr>
+      <tr>
+        <td><strong>言葉の定義</strong></td>
+        <td>ズレを直すために確認する</td>
+        <td>議論を停滞させるために持ち出す</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 怒りから見える「人間性の本質」</h2>
+  <ul class="opt-a-list">
+    <li><strong>怒りは「聖域」の裏返し</strong>：何に怒るかを知ることは、その人が何を最も大切にしているか（聖域）を知ることと同義である。</li>
+    <li><strong>タッシーの聖域は「対話の誠実さ」</strong>：
+      <ul>
+        <li>たとえ意見が違っても、同じ土俵で向き合おうとする姿勢があれば怒らない。</li>
+        <li>「賢さ」を「不誠実さ」の隠れ蓑にすることに、強い倫理的嫌悪感を抱く。</li>
+      </ul>
+    </li>
+    <li><strong>「怒り」の効用</strong>：
+      <ul>
+        <li>自分が何者であるかを再認識させる。</li>
+        <li>他者との境界線を明確にし、自分自身の尊厳を守るための防衛反応。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 考察：知性と誠実さのバランス</h2>
+  <ul class="opt-a-list">
+    <li><strong>知性は凶器になり得る</strong>：論理的思考能力が高い人ほど、無意識に（あるいは意図的に）相手を追い詰める「言葉の暴力」を振るってしまうリスクがある。</li>
+    <li><strong>「わからない」と言える強さ</strong>：定義に逃げず、自分の非や混乱をそのままさらけ出すことこそが、真に知的な態度であり、誠実な対話の出発点である。</li>
+    <li><strong>感情の言語化</strong>：ただキレるのではなく、「なぜ自分は今、不快なのか」をロジカルに分析することで、感情を哲学的な学びに昇華させることができる。</li>
+  </ul>
+
+  <blockquote>
+    「怒りとは、自分が大切にしている価値観が踏みにじられた時に鳴るアラームのようなもの。そのアラームの音色を聴くことで、自分の魂の形が見えてくる。」
+  </blockquote>
+
+</body>
+</html>
