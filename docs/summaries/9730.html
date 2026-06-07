@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">News Connect #218：アジア安全保障会議とASEANの地政学的変化</h1>
+  <p>アジア安全保障会議（シャングリラダイアログ）での議論を中心に、ASEAN諸国の対米・対中感情の変化、ソフトバンクの巨額投資、中東情勢、気候変動、そしてサムスンの社内格差まで、多岐にわたる国際ニュースを構造化して整理します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">シャングリラダイアログ</span>
+    <span class="opt-a-tag">ASEAN</span>
+    <span class="opt-a-tag">ソフトバンクグループ</span>
+    <span class="opt-a-tag">フランスAI戦略</span>
+    <span class="opt-a-tag">ヒズボラ</span>
+    <span class="opt-a-tag">エルニーニョ現象</span>
+    <span class="opt-a-tag">サムスン電子</span>
+    <span class="opt-a-tag">AI格差</span>
+    <span class="opt-a-tag">小泉進次郎</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ソフトバンクグループ：フランスへの14兆円投資とAIインフラ戦略</h2>
+  <ul class="opt-a-list">
+    <li><strong>フランスへの巨額投資</strong>：最大14兆円を投じ、ヨーロッパ最大規模のAIデータセンターを建設。</li>
+    <li><strong>フランスが選ばれた理由</strong>：
+      <ul>
+        <li><strong>原発大国</strong>：データセンターに不可欠な大量かつ安定した電力を確保可能。</li>
+        <li><strong>AI国家戦略</strong>：マクロン政権が数年間で1000億ユーロ超の投資を掲げ、税制優遇や人材支援を強化。</li>
+        <li><strong>第三極の構築</strong>：米中以外の選択肢として、欧州に拠点を置く戦略的意義。</li>
+      </ul>
+    </li>
+    <li><strong>AIのボトルネック</strong>：AI競争の勝敗は「電力」「計算資源（チップ）」「エンジニア」の確保にかかっている。</li>
+    <li><strong>計算資源の融通</strong>：アンソロピックが競合のXAI（イーロン・マスク氏）から月額2000億円規模で計算資源を借りるなど、資源確保が最優先事項となっている。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 120">
+      <rect x="10" y="30" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="70" y="65" text-anchor="middle" font-size="14">安定電力</text>
+      
+      <line x1="130" y1="60" x2="160" y2="60" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+      
+      <rect x="170" y="30" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="230" y="65" text-anchor="middle" font-size="14">計算資源(GPU)</text>
+      
+      <line x1="290" y1="60" x2="320" y2="60" stroke="#60a5fa" stroke-width="2" />
+      
+      <rect x="330" y="30" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="390" y="65" text-anchor="middle" font-size="14">AIモデル開発</text>
+      
+      <line x1="450" y1="60" x2="480" y2="60" stroke="#60a5fa" stroke-width="2" />
+      
+      <rect x="490" y="30" width="100" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="540" y="65" text-anchor="middle" font-size="14">サービス提供</text>
+      
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.8em; color: #a78bfa; margin-top: 10px;">AIインフラのバリューチェーン：ボトルネックは「電力」と「計算資源」に移行</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 アジア安全保障会議（シャングリラダイアログ）とASEANの意識調査</h2>
+  <ul class="opt-a-list">
+    <li><strong>米国の姿勢変化</strong>：ヘグセス国防長官が「米国が助ける時代は終わった。求めているのはパートナーだ」と述べ、同盟国の自立を促した。</li>
+    <li><strong>日本の発信</strong>：小泉進次郎防衛大臣が出席。中国の「新型軍国主義」というレッテルに対し、地域の安定への寄与を強調。</li>
+    <li><strong>ASEANの「米国離れ」</strong>：シンガポールのシンクタンクによる調査で、米中どちらかを選ぶなら「中国」とする回答が急増。</li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>国名</th>
+        <th>中国を同盟国に選ぶ割合</th>
+        <th>背景・要因</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>インドネシア</strong></td>
+        <td>80%以上</td>
+        <td>経済的な結びつきの深化</td>
+      </tr>
+      <tr>
+        <td><strong>マレーシア</strong></td>
+        <td>68%</td>
+        <td>米国の関与低下への懸念</td>
+      </tr>
+      <tr>
+        <td><strong>シンガポール</strong></td>
+        <td>66%</td>
+        <td>華人社会の背景と現実的なバランス</td>
+      </tr>
+    </tbody>
+  </table>
+  <blockquote>
+    <strong>注記：</strong>一方で、アジアで「最も信頼できる国」としては<strong>日本が8年連続1位</strong>を維持しており、ソフトパワー面での信頼は依然として高い。
+  </blockquote>
+
+  <h2 class="opt-a-section-title">📌 中東情勢：レバノンとヒズボラの複雑な構造</h2>
+  <ul class="opt-a-list">
+    <li><strong>停戦合意の難航</strong>：トランプ氏の仲介による合意案が出たものの、ヒズボラ側が「屈辱的な条件」として拒否。</li>
+    <li><strong>レバノンの特殊性</strong>：
+      <ul>
+        <li><strong>国家内国家</strong>：ヒズボラは単なる武装組織ではなく、レバノン国内に深く根を張った強力な勢力。</li>
+        <li><strong>18の公認宗派</strong>：大統領、首相、国会議長などのポストが宗派ごとに割り振られており、現在の人口動態と乖離していることが混乱の要因。</li>
+        <li><strong>歴史的背景</strong>：サイクス・ピコ協定によるフランスの委任統治を経て、複雑な宗教・政治バランスが形成された。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 気候変動：エルニーニョ現象と経済リスク</h2>
+  <ul class="opt-a-list">
+    <li><strong>発生確率</strong>：WMO（世界気象機関）は、6月〜8月に<strong>80%の確率</strong>でエルニーニョ現象が発生すると予測。</li>
+    <li><strong>2027年の予測</strong>：観測史上、最も暑い年になる可能性が高い。</li>
+    <li><strong>経済への波及</strong>：
+      <ul>
+        <li><strong>食料問題</strong>：干ばつによる収穫減、肥料不足（地政学リスク連動）による物価高騰。</li>
+        <li><strong>エネルギー問題</strong>：冷房需要の急増による電力需給の逼迫。</li>
+        <li><strong>命の危険</strong>：経済的に脆弱な国々では、食料と暑さが直接的な生存リスクとなる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 サムスン電子：AIが生んだ「100倍」の社内格差</h2>
+  <ul class="opt-a-list">
+    <li><strong>ボーナス格差の衝撃</strong>：
+      <ul>
+        <li><strong>半導体部門（AI関連）</strong>：約6,400万円（NVIDIA向け供給が好調なため）。</li>
+        <li><strong>スマホ・家電部門</strong>：約64万円。</li>
+      </ul>
+    </li>
+    <li><strong>社内の分断</strong>：同じ会社でありながら「AI貴族」と「AI貧民」に分かれるような極端な格差に対し、数千人の従業員が反発。</li>
+    <li><strong>韓国社会の縮図</strong>：トップ企業（サムスン等）に入れるかどうかが人生を左右する「宝くじ」のような社会構造が、社内でも再現されている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">🎵 DJコーナー：今週のセレクト</h2>
+  <ul class="opt-a-list">
+    <li><strong>サカナクション「夜の踊り子」</strong>：インドネシアのボートレースで踊る少年のネットミームが日本で話題になったことから着想。</li>
+    <li><strong>宇多田ヒカル「パッパラパラダイス」</strong>：ちびまる子ちゃんの新テーマ。人気者ゆえの孤独や苦労を込めた歌詞に注目。</li>
+    <li><strong>嵐「Happiness」</strong>：40代になってもアイドルとしてのビジュアルを仕上げて再集結した彼らへの敬意を込めて。</li>
+  </ul>
+
+</body>
+</html>
+```
