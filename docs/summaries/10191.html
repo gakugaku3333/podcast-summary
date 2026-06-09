@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list li ul {
+      list-style: none;
+      padding-left: 10px;
+      margin-top: 8px;
+    }
+    .opt-a-list li ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">子育てのラジオ「Teacher Teacher」：料理×人生相談</h1>
+  <p>
+    パーソナリティの二人が、リスナーから寄せられた人生相談に答えながら、限られた素材で複数の作り置き料理を完成させる新企画。
+    「地元の友達との価値観のズレ」という深い悩みに対し、料理の手を動かしながら独自の視点で切り込みます。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">人生相談</span>
+    <span class="opt-a-tag">料理企画</span>
+    <span class="opt-a-tag">資本主義の物差し</span>
+    <span class="opt-a-tag">存在価値と機能価値</span>
+    <span class="opt-a-tag">作り置きレシピ</span>
+    <span class="opt-a-tag">サルシッチャ</span>
+    <span class="opt-a-tag">コンプリメント</span>
+    <span class="opt-a-tag">越境体験</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 人生相談：20年間フリーターの友人とどう付き合うか</h2>
+  
+  <ul class="opt-a-list">
+    <li><strong>相談者（コウタロウさん・36歳）の悩み</strong>
+      <ul>
+        <li>高校時代からの友人が16歳から20年間、同じバイト先でフリーターを続けている。</li>
+        <li>正社員への誘いも「きつそう」「転勤があるかも」と断り、常に金欠状態。</li>
+        <li>飲食店に行っても「お腹いっぱいだから」「水でいい」と何も注文せず、一緒に遊びづらい。</li>
+        <li>友人に自信を持って何かにチャレンジしてほしいが、どう声をかければよいか。</li>
+      </ul>
+    </li>
+    <li><strong>「資本主義の物差し」からの脱却</strong>
+      <ul>
+        <li><strong>成功の定義：</strong> 昇進や年収といった「資本主義のゲーム」の物差しで見ると友人が劣っているように見えるが、高校時代はそんな物差しはなかったはず。</li>
+        <li><strong>成熟の捉え方：</strong> 執着から解き放たれているという意味では、友人のほうが「悟り」に近い可能性もある。</li>
+        <li><strong>学びの機会：</strong> あえて自分も「水を頼む」など、友人のルール（資本主義外のルール）に合わせてみることで、当たり前の幸せを再発見できるかもしれない。</li>
+      </ul>
+    </li>
+    <li><strong>存在価値（Being）と機能価値（Doing）</strong>
+      <ul>
+        <li><strong>機能価値：</strong> 「頭がいい」「仕事ができる」といった能力への称賛。こればかりを求めると、できない時にしんどくなる。</li>
+        <li><strong>存在価値：</strong> 「一緒にいて楽しい」「いてくれるだけで嬉しい」という全肯定。36歳で月1回会える友人は非常に貴重であり、まずはその存在自体への感謝を伝えるべき。</li>
+      </ul>
+    </li>
+    <li><strong>具体的なアプローチ案</strong>
+      <ul>
+        <li><strong>お金のかからない遊び：</strong> 将棋、ボードゲーム、散歩など、金銭的格差が気にならない活動を提案する。</li>
+        <li><strong>間接的な刺激：</strong> 本人へ直接「頑張れ」と言うと反発を招くため、モチベーションが上がる映画（ハイキュー!!、ビリギャル等）や講演会（植松努氏、成澤俊介氏等）に誘い、感想を共有する。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 200">
+      <!-- Node 1 -->
+      <rect x="20" y="70" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="100" y="105" text-anchor="middle" font-size="14" font-weight="bold">資本主義の物差し</text>
+      <text x="100" y="125" text-anchor="middle" font-size="12">年収・役職・効率</text>
+      
+      <!-- Arrow -->
+      <line x1="180" y1="100" x2="240" y2="100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      
+      <!-- Node 2 -->
+      <rect x="250" y="70" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="330" y="105" text-anchor="middle" font-size="14" font-weight="bold">存在価値の物差し</text>
+      <text x="330" y="125" text-anchor="middle" font-size="12">楽しさ・友情・Being</text>
+
+      <!-- Arrow -->
+      <line x1="410" y1="100" x2="470" y2="100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+      <!-- Node 3 -->
+      <rect x="480" y="70" width="100" height="60" rx="8" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="2"/>
+      <text x="530" y="105" text-anchor="middle" font-size="14" font-weight="bold">関係の再構築</text>
+      
+      <!-- Arrowhead definition -->
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.85em; color: #a78bfa; margin-top: 10px;">視点を変えることで「どうにかしたい対象」から「大切な友人」へ戻るプロセス</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 料理企画：3つの素材で6品作る</h2>
+  
+  <p><strong>基本素材：</strong> 豚ひき肉（600g）、卵（12個）、ブロッコリー</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>料理名</th>
+        <th>主な材料・ポイント</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1. 味玉</strong></td>
+        <td>ゆで卵を特製タレ（砂糖1:醤油4:水3:みりん2の比率）に漬け込む。</td>
+      </tr>
+      <tr>
+        <td><strong>2. 卵と豚のそぼろ</strong></td>
+        <td>豚ひき肉と卵をそれぞれ炒めて合わせる。お弁当の定番。</td>
+      </tr>
+      <tr>
+        <td><strong>3. 肉味噌</strong></td>
+        <td>ひき肉、味噌、にんにく、生姜、酒、みりん、醤油で味付け。万能おかず。</td>
+      </tr>
+      <tr>
+        <td><strong>4. サルシッチャ</strong></td>
+        <td>ひき肉にスパイス（クミン、コリアンダー等）を混ぜ、ラップで成形して茹でる。</td>
+      </tr>
+      <tr>
+        <td><strong>5. ブロッコリーと卵のマヨ和え</strong></td>
+        <td>茹でたブロッコリーとゆで卵をマヨネーズ、塩、ブラックペッパーで和える。</td>
+      </tr>
+      <tr>
+        <td><strong>6. ブロッコリーのナムル</strong></td>
+        <td>ブロッコリーをごま油、醤油、砂糖、すりごまで味付け。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 料理の知恵・テクニック</h2>
+  
+  <ul class="opt-a-list">
+    <li><strong>味玉の黄金比：</strong> 砂糖1、醤油4、水3、みりん2（卵の個数に合わせて調整）。</li>
+    <li><strong>ジップロックの空気抜き：</strong> ボウルに溜めた水の中に、食材を入れた袋を沈めていくことで、水圧を利用して空気を完璧に抜くことができる。</li>
+    <li><strong>サルシッチャの簡略化：</strong> カルディの「イタリアンソーセージの素」などを使うと、ひき肉に混ぜるだけで本格的な味になる。</li>
+    <li><strong>料理のマインドフルネス：</strong> 仕事のことを忘れ、目の前の工程（卵を剥く、切るなど）に集中することで、忙しい日々の中でもリフレッシュできる。</li>
+    <li><strong>スキルの習得：</strong> 「魚を捌けるようになる」「ソーセージを作れるようになる」といった新しい経験は、人生の質を一段階引き上げる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 登場した固有名詞・リソース</h2>
+  
+  <ul class="opt-a-list">
+    <li><strong>成澤俊介氏：</strong> 「ご機嫌よく生きていく」をテーマに活動する社会起業家。</li>
+    <li><strong>植松努氏：</strong> 北海道でロケット開発を行う「植松電機」代表。「どうせ無理」をなくす活動で知られる。</li>
+    <li><strong>蔵の音（クラノート）：</strong> 山梨県の日本ワイン。香りが良く飲みやすい。</li>
+    <li><strong>糸島の醤油：</strong> 福岡県糸島市の非常に美味しい醤油（具体的な銘柄は不明だが、パーソナリティの愛用品）。</li>
+  </ul>
+
+  <blockquote style="margin-top: 30px;">
+    「友達って、機能価値を発揮しなくても一緒にいられる存在。それを機能価値の物差しで見ちゃうのはもったいない気がする。」
+  </blockquote>
+
+</body>
+</html>
