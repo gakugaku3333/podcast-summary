@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">アメリカ中間選挙とトランプ政権の国内事情：前嶋和弘教授に聞く</h1>
+  <p>
+    上智大学の前嶋和弘教授をゲストに迎え、アメリカの対中政策の決定プロセス、第2次トランプ政権の特異な権力構造、そして中間選挙がもたらす政治的停滞（レームダック化）について深掘りします。国家間の外交の裏にある「国内政治の論理」を解き明かします。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">トランプ大統領</span>
+    <span class="opt-a-tag">対中政策</span>
+    <span class="opt-a-tag">中間選挙</span>
+    <span class="opt-a-tag">デカップリング</span>
+    <span class="opt-a-tag">経済安全保障</span>
+    <span class="opt-a-tag">フィルターバブル</span>
+    <span class="opt-a-tag">エルブリッジ・コルビー</span>
+    <span class="opt-a-tag">J.D.バンス</span>
+    <span class="opt-a-tag">メディアの分断</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 アメリカの対中政策：誰が、どう決めているのか</h2>
+  <ul class="opt-a-list">
+    <li><strong>世論の対中感情は過去最悪レベル</strong>
+      <ul>
+        <li>コロナ禍の発生源への疑念や、アメリカ本土を横断した<strong>中国の気球問題</strong>が決定打となった。</li>
+        <li>「自分の家から中国の気球が見える」という体験が、一般市民の恐怖と反発を煽った。</li>
+      </ul>
+    </li>
+    <li><strong>「デカップリング」から「ディール（取引）」への変遷</strong>
+      <ul>
+        <li>第1次政権当初は経済的な縁切り（デカップリング）を掲げたが、現実には<strong>相互依存</strong>が強すぎて困難だと判明。</li>
+        <li><strong>アップル</strong>の中国生産、アメリカ産<strong>大豆</strong>の中国輸出（50%以上）、最先端兵器に必要な<strong>レアアース</strong>の中国依存など、貿易戦争の出血はアメリカ側も大きい。</li>
+      </ul>
+    </li>
+    <li><strong>最終決定権はトランプ氏の「顔色」にある</strong>
+      <ul>
+        <li>国防戦略文書などは中国に厳しい内容だが、トランプ氏本人は経済的メリットがあれば柔軟に動く。</li>
+        <li>閣僚や官僚は、トランプ氏の意向を伺いながら政策を調整する「イエスマン」化が進んでいる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" height="200" viewBox="0 0 600 200">
+      <!-- Nodes -->
+      <rect x="225" y="20" width="150" height="50" rx="8" fill="rgba(139, 92, 246, 0.3)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="300" y="52" text-anchor="middle" font-weight="bold">トランプ大統領</text>
+      
+      <rect x="50" y="130" width="140" height="40" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" stroke-width="1"/>
+      <text x="120" y="155" text-anchor="middle" font-size="13">世論 (対中強硬)</text>
+      
+      <rect x="230" y="130" width="140" height="40" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" stroke-width="1"/>
+      <text x="300" y="155" text-anchor="middle" font-size="13">閣僚 (忠誠心重視)</text>
+      
+      <rect x="410" y="130" width="140" height="40" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" stroke-width="1"/>
+      <text x="480" y="155" text-anchor="middle" font-size="13">経済実利 (ディール)</text>
+      
+      <!-- Arrows -->
+      <path d="M120 130 L225 60" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <path d="M300 130 L300 70" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <path d="M480 130 L375 60" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.85em; color: #a78bfa; margin-top: 10px;">第2次トランプ政権の意思決定構造：すべての道はトランプに通ず</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 第2次政権の顔ぶれと「止める人」の不在</h2>
+  <ul class="opt-a-list">
+    <li><strong>第1次政権の反省：</strong> トランプ氏は「自分に反対する者を周りに置いたのが失敗だった」と公言。かつてのマティス国防長官のように、大統領の暴走を止める存在は排除された。</li>
+    <li><strong>主要ポストの現状：</strong>
+      <ul>
+        <li><strong>J.D.バンス（副大統領）：</strong> トランプ氏の正当な後継者としての地位を狙う。</li>
+        <li><strong>マルコ・ルビオ（国務長官）：</strong> かつては批判的だったが、現在はトランプ氏に同調。</li>
+        <li><strong>ピート・ヘグセス（国防長官）：</strong> テレビキャスター出身。専門性よりも忠誠心と「見栄え」で選ばれた側面。</li>
+      </ul>
+    </li>
+    <li><strong>専門家の軽視：</strong> エルブリッジ・コルビーのような対中強硬派の論客もいるが、その声がトランプ氏の最終判断に反映されるかは不透明。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 中間選挙の展望：最初から「レームダック」</h2>
+  <ul class="opt-a-list">
+    <li><strong>中間選挙の構造的特徴：</strong>
+      <ul>
+        <li>大統領選挙（投票率60%超）に比べ、中間選挙は40%台に落ちる。</li>
+        <li><strong>「大統領の応援団」が投票に行かない</strong>ため、現職大統領の党は歴史的に大敗する傾向がある（下院平均-26議席）。</li>
+      </ul>
+    </li>
+    <li><strong>議会の現状と停滞：</strong>
+      <ul>
+        <li>共和党と民主党の議席差が極めてわずか（下院5議席差、上院6議席差）。</li>
+        <li>上院には<strong>フィリバスター（議事妨害）</strong>があり、60票確保できない限り法案は通らない。</li>
+        <li>結果として、政権発足時から議会が機能しない<strong>「レームダック」状態</strong>にある。</li>
+      </ul>
+    </li>
+    <li><strong>トランプ氏の対抗策：</strong>
+      <ul>
+        <li>議会を通さず、<strong>大統領令</strong>を乱発して統治する手法。</li>
+        <li>1798年の「敵対外国人法」など、極めて古い法律を強引に解釈して適用する「ゾンビ法の復活」が懸念される。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 メディアの分断と「真実」の消失</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>保守層（共和党支持者）</th>
+        <th>リベラル層（民主党支持者）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>主な情報源</strong></td>
+        <td>Fox News, Truth Social, Newsmax</td>
+        <td>CNN, MSNBC, NY Times</td>
+      </tr>
+      <tr>
+        <td><strong>メディア信頼度</strong></td>
+        <td>極めて低い（約1割）</td>
+        <td>比較的高い（6〜7割）</td>
+      </tr>
+      <tr>
+        <td><strong>1月6日議会襲撃</strong></td>
+        <td>「愛国者による行動」と見る層も</td>
+        <td>「民主主義へのテロ」と断定</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul class="opt-a-list">
+    <li><strong>フィルターバブルの深化：</strong> AIやSNSの普及により、人々は見たい情報だけを見るようになり、共通の「事実」が成立しなくなっている。</li>
+    <li><strong>日本の現状への警鐘：</strong> 日本はOECD諸国で最も分断が少ない国だが、SNSやショート動画による「アメリカ型選挙産業」の流入により、同様の分断が始まる兆候がある。</li>
+    <li><strong>情報の精査：</strong> 「オールドメディア」という言葉で切り捨てず、複数のソースから裏を取り、真実を追求する姿勢がかつてなく重要になっている。</li>
+  </ul>
+
+  <blockquote>
+    「アメリカはかつてジャーナリズムの教科書だったが、今は分断の悪い例になってしまった。日本はその轍を踏んではいけない。」
+  </blockquote>
+
+</body>
+</html>
