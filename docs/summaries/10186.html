@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">英仏独とウクライナが首脳協議：和平交渉の新たな出発点とドローン戦術の進化</h1>
+  <p>2026年6月9日放送のエピソード。ロシアによるウクライナ侵攻が4年以上続く中、ウクライナが提唱した「現在の前線を交渉の出発点とする」という外交方針の転換と、それを支える最新のドローン戦術、および米国との技術協力の可能性について解説します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">ウクライナ情勢</span>
+    <span class="opt-a-tag">ゼレンスキー大統領</span>
+    <span class="opt-a-tag">プーチン大統領</span>
+    <span class="opt-a-tag">和平交渉</span>
+    <span class="opt-a-tag">ドローン戦術</span>
+    <span class="opt-a-tag">サンクトペテルブルク</span>
+    <span class="opt-a-tag">ISW（戦争研究所）</span>
+    <span class="opt-a-tag">避難民</span>
+    <span class="opt-a-tag">フィリピン地震</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 冒頭：フィリピンでの大規模地震と津波の注意喚起</h2>
+  <ul class="opt-a-list">
+    <li><strong>マグニチュード7.8の地震</strong>がフィリピンで発生。日本を含む各国で津波が観測された。</li>
+    <li><strong>津波の性質：</strong>通常の波（波浪）が海面付近の動きであるのに対し、津波は<strong>海底から海面までの水全体</strong>が押し寄せる。エネルギー量が桁違いに大きい。</li>
+    <li><strong>避難の重要性：</strong>津波は非常に速く、目撃してからでは逃げ切れない。情報の高さだけで判断せず、早めの行動を推奨。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 外交の動き：和平に向けた「5つの条件」</h2>
+  <p>ゼレンスキー大統領によるプーチン大統領への直接会談要請（6月4日）が拒否されたことを受け、英仏独の首脳とウクライナによる協議が行われました。</p>
+  
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 320">
+      <rect x="10" y="10" width="580" height="300" rx="12" fill="rgba(139, 92, 246, 0.05)" stroke="#8b5cf6" stroke-width="1"/>
+      <text x="300" y="40" text-anchor="middle" font-weight="bold" font-size="18">公平かつ永続的な和平のための5条件</text>
+      
+      <rect x="40" y="70" width="250" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="50" y="95" font-size="14">1. 現在の前線を</text>
+      <text x="50" y="115" font-size="14">　 交渉の出発点とする</text>
+
+      <rect x="310" y="70" width="250" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="320" y="95" font-size="14">2. 武力による国境変更を</text>
+      <text x="320" y="115" font-size="14">　 法的に認めない</text>
+
+      <rect x="40" y="150" width="250" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="50" y="175" font-size="14">3. 法的交渉力のある</text>
+      <text x="50" y="195" font-size="14">　 強固な安全保障の提供</text>
+
+      <rect x="310" y="150" width="250" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="320" y="175" font-size="14">4. ロシアの凍結資産による</text>
+      <text x="320" y="195" font-size="14">　 損害賠償の確保</text>
+
+      <rect x="175" y="230" width="250" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="185" y="255" font-size="14">5. ウクライナの主権と</text>
+      <text x="185" y="275" font-size="14">　 将来的な自由の尊重</text>
+    </svg>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>大きな方針転換：</strong>これまで「全領土の回復・ロシア軍の完全撤退」を絶対条件としていたが、<strong>「現在の前線をベースに交渉を開始する」</strong>ことに同意した。</li>
+    <li><strong>背景：</strong>米国のトランプ大統領も主張してきた考え方に歩み寄った形。ただし、武力による現状変更を認めるわけではなく、あくまで「出発点」としての位置づけ。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 軍事・技術：ドローン戦術の劇的な進化</h2>
+  <ul class="opt-a-list">
+    <li><strong>サンクトペテルブルクへの攻撃：</strong>プーチン氏が出席する国際経済フォーラムのタイミングに合わせ、数百機規模のドローンでロシア第2の都市を攻撃。</li>
+    <li><strong>攻撃時間の短縮：</strong>ウォール・ストリート・ジャーナルの分析によると、前線の兵士の端末に<strong>衛星画像が直接送信</strong>される仕組みを導入。攻撃までの時間が<strong>最大90%短縮</strong>された。</li>
+    <li><strong>補給ルートの遮断：</strong>ISW（戦争研究所）のレポートでは、ウクライナ軍がロシア側の補給ルートを標的にする戦術が有効に機能しており、ロシア軍の作戦継続能力を削いでいると分析。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 米国との関係：ウクライナ製ドローンの輸出検討</h2>
+  <ul class="opt-a-list">
+    <li><strong>軍事試験用の輸出：</strong>米ウ両政府が、ウクライナ製ドローンを米国での試験用に輸出することを認める準備を進めている（フィナンシャル・タイムズ報道）。</li>
+    <li><strong>米国の関心事：</strong>
+      <ul>
+        <li>限られた予算内での技術進化。</li>
+        <li>自国でのサプライチェーン構築ノウハウ。</li>
+        <li>4年間の実戦で蓄積された<strong>世界最先端のドローン実戦データ</strong>。</li>
+      </ul>
+    </li>
+    <li><strong>政治的背景：</strong>トランプ氏は「ドローンは米国が世界一」と主張しているが、現実に米国はイラン製ドローンへの対応に苦慮しており、ウクライナの技術が外交上の強力な<strong>「ディールの材料」</strong>になる可能性がある。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 人道的な影響：膨大な避難民の現実</h2>
+  <ul class="opt-a-list">
+    <li><strong>避難民の数：</strong>2014年のクリミア併合以降、<strong>850万人以上</strong>のウクライナ人が国外へ避難（キーウ・ポストによる）。</li>
+    <li><strong>日本の関与：</strong>避難民の受け入れや人道支援を通じて、日本もこの情勢に継続的に関与している。</li>
+    <li><strong>メッセージ：</strong>兵器や戦術の進化が注目されがちだが、故国を追われた人々の多さがこの戦争の深刻さを示している。</li>
+  </ul>
+
+</body>
+</html>
