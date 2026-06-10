@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+      background: rgba(255, 255, 255, 0.02);
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ヒューマノイド最前線 #009：2024年6月号 最新ニュースまとめ</h1>
+  <p>
+    本エピソードでは、2024年5月から6月にかけて発表されたヒューマノイドロボットに関する世界的な最新動向を解説しています。
+    Figure AIによる自律的な複数体連携、ボストン・ダイナミクスの実用化への進展、そして日本のファナックとGoogle/NVIDIAの提携など、技術革新が加速する現状が語られています。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">Sony AI</span>
+    <span class="opt-a-tag">Project Ace</span>
+    <span class="opt-a-tag">Figure AI</span>
+    <span class="opt-a-tag">Boston Dynamics</span>
+    <span class="opt-a-tag">Atlas</span>
+    <span class="opt-a-tag">FANUC</span>
+    <span class="opt-a-tag">Google</span>
+    <span class="opt-a-tag">NVIDIA</span>
+    <span class="opt-a-tag">中国国家電網</span>
+    <span class="opt-a-tag">自律稼働</span>
+    <span class="opt-a-tag">3交替制</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 コミュニティ動向：LINEオープンチャットの盛り上がり</h2>
+  <ul class="opt-a-list">
+    <li><strong>番組略称の投票結果：</strong>
+      <ul>
+        <li>第1位：<strong>Humanoid</strong>（8票）</li>
+        <li>第2位：<strong>Huma線</strong>（6票）</li>
+        <li>その他、CEO高地氏推しの「休祭（きゅうさい）」は共感を得られず。</li>
+      </ul>
+    </li>
+    <li><strong>情報のハブ化：</strong> 横山氏による実験動画の公開や、リスナーからの「日本の勝ち筋」に関する情報共有が活発化している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Sony AI：卓球ロボット「Project Ace」がNature誌の表紙に</h2>
+  <ul class="opt-a-list">
+    <li><strong>エリート選手に勝利：</strong> 2024年4月23日発表。卓球連盟の公式ルールに基づき、審判付きでエリート選手5名と対戦。<strong>3勝2敗で勝ち越し</strong>を記録。</li>
+    <li><strong>圧倒的な認識スピード：</strong>
+      <ul>
+        <li>ロボットの遅延：<strong>10〜20ミリ秒</strong></li>
+        <li>人間のトップ選手：<strong>230ミリ秒</strong></li>
+        <li>人間と比較して<strong>20倍以上の認識・対応スピード</strong>を実現している。</li>
+      </ul>
+    </li>
+    <li><strong>技術の集大成：</strong> 卓球は限定的な範囲で高速なレスポンスが求められるため、認識能力の速さを証明するのに最適な題材となっている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Figure AI：複数体連携による「阿吽の呼吸」</h2>
+  <ul class="opt-a-list">
+    <li><strong>協調作業のデモ：</strong> 2体のロボットが協力してベッドメイキングを行う動画を公開。</li>
+    <li><strong>非言語コミュニケーション：</strong> アイコンタクトや頷きを使い、相手の意図を認識しながらリアルタイムで動作を調整。</li>
+    <li><strong>技術的ブレークスルー：</strong> 1つのAIモデルで2つの体を動かす、あるいは独立した個体が互いを認識して役割分担する技術が進化している。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 160">
+      <!-- Robot A -->
+      <rect x="50" y="40" width="120" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="110" y="85" text-anchor="middle" font-size="14">Figure 01 (A)</text>
+      
+      <!-- Interaction -->
+      <path d="M 180 70 L 420 70" stroke="#60a5fa" stroke-width="2" stroke-dasharray="5,5"/>
+      <path d="M 180 90 L 420 90" stroke="#60a5fa" stroke-width="2" stroke-dasharray="5,5"/>
+      <text x="300" y="60" text-anchor="middle" font-size="12" fill="#60a5fa">アイコンタクト・意図共有</text>
+      <text x="300" y="110" text-anchor="middle" font-size="12" fill="#60a5fa">リアルタイム協調</text>
+
+      <!-- Robot B -->
+      <rect x="430" y="40" width="120" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="490" y="85" text-anchor="middle" font-size="14">Figure 01 (B)</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 Boston Dynamics：新型Atlasの実用化への歩み</h2>
+  <ul class="opt-a-list">
+    <li><strong>全身協調制御：</strong> 23kgの冷蔵庫を指先ではなく、体全体で抱え込んで運ぶ動画を公開。足元で重心を調整する動きは「人間そのもの」。</li>
+    <li><strong>驚異の汎用性：</strong> 23kgの物体で訓練したモデルが、<strong>追加学習なしで45kgの物体を運搬</strong>することに成功。シミュレーションでの学習が実世界に高度に転用されている。</li>
+    <li><strong>量産計画：</strong> <strong>2028年までに3万台</strong>のアトラスを生産する計画がスタートしており、研究段階から販売・実用段階へ移行している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Figure AI：3交替制の自律フル稼働と人間との対決</h2>
+  <ul class="opt-a-list">
+    <li><strong>自律的な運用管理：</strong> 3体のロボットが8時間連続で稼働。
+      <ul>
+        <li><strong>自己診断：</strong> バッテリー残量やエラー状況を自分で判断。</li>
+        <li><strong>タスクの引き継ぎ：</strong> 「充電が必要だから代わって」といった通信を行い、仲間と交代しながら24時間稼働を目指す。</li>
+      </ul>
+    </li>
+    <li><strong>人間 vs ロボット 10時間対決：</strong> インターン生とロボットが同じ作業（ベルトコンベアの仕分け等）を10時間継続。</li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>対象</th>
+        <th>処理数（10時間）</th>
+        <th>条件</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>人間（インターン生）</strong></td>
+        <td>12,924個</td>
+        <td>食事・小休憩あり</td>
+      </tr>
+      <tr>
+        <td><strong>ロボット（Figure）</strong></td>
+        <td>12,732個</td>
+        <td>休憩なし（3体連携）</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <blockquote>
+    <strong>CEOアドコック氏のコメント：</strong>「これが人間が勝つ最後の機会だろう」
+  </blockquote>
+
+  <h2 class="opt-a-section-title">📌 日本の勝ち筋：FANUCの巨大提携（Google & NVIDIA）</h2>
+  <ul class="opt-a-list">
+    <li><strong>Googleとの協業（5月13日）：</strong> フィジカルAI分野での提携。
+      <ul>
+        <li><strong>言語指示による動作：</strong> 「赤いボルトを取って」といった口頭指示や手書きメモを認識し、プログラミング（ティーチング）なしでロボットが動く。</li>
+      </ul>
+    </li>
+    <li><strong>NVIDIAとの連携（5月15日）：</strong>
+      <ul>
+        <li><strong>シミュレーション統合：</strong> NVIDIAの「Isaac Sim」とファナックの「ROBOGUIDE」を統合。</li>
+        <li><strong>性能向上：</strong> AI演算性能が<strong>7.5倍</strong>に向上。仮想空間での高速学習が可能に。</li>
+      </ul>
+    </li>
+    <li><strong>戦略的意義：</strong> 日本が持つ「精密なハードウェア（体）」と、米国の「強力なAI・シミュレーション（脳）」が融合。日本の精密技術（0.01mm単位の動作）は依然として世界トップクラスの資産である。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 中国：1,000億円規模の社会実装</h2>
+  <ul class="opt-a-list">
+    <li><strong>中国国家電網の導入：</strong> 約<strong>1,020億円</strong>を投じ、AI搭載ロボット<strong>8,500台</strong>を調達。</li>
+    <li><strong>ヒューマノイドである必然性：</strong>
+      <ul>
+        <li><strong>高圧電線のメンテナンス：</strong> 電流を流したままの危険な作業（3K：危険・汚い・きつい）を代替。</li>
+        <li><strong>既存インフラへの適応：</strong> 人間用に設計されたハシゴや施設、工具をそのまま使う必要があるため、人型であることが必須条件となる。</li>
+      </ul>
+    </li>
+    <li><strong>人命保護：</strong> 感電死のリスクがある特殊訓練作業員の代替として、最も現実的なユースケースの一つとなっている。</li>
+  </ul>
+
+</body>
+</html>
