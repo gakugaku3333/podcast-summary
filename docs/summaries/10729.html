@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">油を変えれば寿命が伸びる？【食事編03 / あぶら】</h1>
+  <p>
+    「油＝体に悪い」という一括りのイメージを払拭し、脂質の種類（飽和・不飽和・トランス脂肪酸）ごとの健康への影響を解説。エビデンスに基づき、どの油を控え、どの油に置き換えるべきかという具体的な実践方法を提示するエピソード。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">脂質</span>
+    <span class="opt-a-tag">飽和脂肪酸</span>
+    <span class="opt-a-tag">不飽和脂肪酸</span>
+    <span class="opt-a-tag">トランス脂肪酸</span>
+    <span class="opt-a-tag">コレステロール</span>
+    <span class="opt-a-tag">ココナッツオイル</span>
+    <span class="opt-a-tag">スーパーフード</span>
+    <span class="opt-a-tag">心血管疾患</span>
+    <span class="opt-a-tag">オリーブオイル</span>
+    <span class="opt-a-tag">ごま油</span>
+    <span class="opt-a-tag">植物性油脂</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 脂質の全体像と分類</h2>
+  <p>脂質は三大栄養素の一つであり、大きく分けて以下の3つの性質に分類される。</p>
+  
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 250" preserveAspectRatio="xMidYMid meet">
+      <!-- Nodes -->
+      <rect x="240" y="10" width="120" height="40" rx="8" fill="rgba(139, 92, 246, 0.3)" stroke="#8b5cf6" />
+      <text x="300" y="35" text-anchor="middle" font-weight="bold">脂質</text>
+
+      <line x1="300" y1="50" x2="100" y2="100" stroke="#60a5fa" stroke-width="2" />
+      <line x1="300" y1="50" x2="300" y2="100" stroke="#60a5fa" stroke-width="2" />
+      <line x1="300" y1="50" x2="500" y2="100" stroke="#60a5fa" stroke-width="2" />
+
+      <rect x="20" y="100" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="100" y="125" text-anchor="middle">飽和脂肪酸</text>
+      <text x="100" y="145" text-anchor="middle" font-size="12" fill="#a78bfa">肉・乳製品・パーム油</text>
+
+      <rect x="220" y="100" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="125" text-anchor="middle">不飽和脂肪酸</text>
+      <text x="300" y="145" text-anchor="middle" font-size="12" fill="#a78bfa">魚・植物油（オリーブ等）</text>
+
+      <rect x="420" y="100" width="160" height="60" rx="8" fill="rgba(245, 158, 11, 0.2)" stroke="#f59e0b" />
+      <text x="500" y="125" text-anchor="middle">トランス脂肪酸</text>
+      <text x="500" y="145" text-anchor="middle" font-size="12" fill="#f59e0b">菓子・パン・加工油脂</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 飽和脂肪酸：摂りすぎ注意だが「適量」が鍵</h2>
+  <ul class="opt-a-list">
+    <li><strong>主な供給源（日本人の摂取源ランキング）</strong>
+      <table>
+        <thead>
+          <tr>
+            <th>順位</th>
+            <th>食品カテゴリ</th>
+            <th>割合</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1位</td><td>肉類</td><td>27%</td></tr>
+          <tr><td>2位</td><td>乳類（乳製品）</td><td>25%</td></tr>
+          <tr><td>3位</td><td>油脂類</td><td>9%</td></tr>
+          <tr><td>4位</td><td>穀類</td><td>9%</td></tr>
+          <tr><td>5位</td><td>卵類</td><td>8%</td></tr>
+        </tbody>
+      </table>
+    </li>
+    <li><strong>健康への影響</strong>
+      <ul>
+        <li><strong>過剰摂取：</strong>心筋梗塞のリスクが上昇する。</li>
+        <li><strong>不足：</strong>日本の研究では、少なすぎると脳卒中のリスクが高まる可能性が示唆されている。</li>
+        <li><strong>目安：</strong>国立がん研究センターのデータでは、1日<strong>20g前後</strong>の摂取が心筋梗塞リスクを低く抑えられる。</li>
+      </ul>
+    </li>
+    <li><strong>ココナッツオイルの落とし穴</strong>
+      <ul>
+        <li>「スーパーフード」として流行したが、科学的な厳密な定義はない（マーケティング用語の側面が強い）。</li>
+        <li>実際は<strong>飽和脂肪酸</strong>が多く、LDLコレステロール値を上げるため、心臓協会が注意喚起を行うほど。</li>
+        <li>「体に良いと思って積極的に摂るべき油」ではない。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 不飽和脂肪酸：積極的に選びたい「良い油」</h2>
+  <ul class="opt-a-list">
+    <li><strong>主な種類：</strong>オリーブオイル、ごま油、キャノーラ油（菜種油）、米油。</li>
+    <li><strong>メリット：</strong>
+      <ul>
+        <li>多く摂取している人ほど、動脈硬化や血栓の予防、慢性疾患のリスクが低い傾向にある。</li>
+        <li>「油＝悪」ではなく、健康に良い影響を与える油として積極的に活用すべき。</li>
+      </ul>
+    </li>
+    <li><strong>注意点：</strong>
+      <ul>
+        <li><strong>高カロリー：</strong>1gあたり<strong>9kcal</strong>あるため、健康に良いからといって飲み過ぎれば肥満や生活習慣病を招く。</li>
+        <li>「これさえ摂れば健康」という過信は禁物。全体のバランスが重要。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 トランス脂肪酸：見えないリスクと食品表示</h2>
+  <ul class="opt-a-list">
+    <li><strong>特徴：</strong>不飽和脂肪酸を工業的に加工したもの。安価で保存性が高く、サクサクした食感を生む。</li>
+    <li><strong>日本人の主な摂取源：</strong>
+      <ul>
+        <li><strong>お菓子類（18%）</strong></li>
+        <li><strong>パン類（18%）</strong>：特に菓子パンなどは砂糖だけでなくトランス脂肪酸も多い。</li>
+      </ul>
+    </li>
+    <li><strong>健康リスク：</strong>動脈硬化、心筋梗塞などの冠動脈疾患リスクを上昇させる。</li>
+    <li><strong>日本の規制と表示の現状：</strong>
+      <ul>
+        <li>平均摂取量が諸外国より少ないため、政府による義務化された規制はない。</li>
+        <li><strong>「植物性油脂」「植物性食用油」</strong>という表記に注意。これらが含まれる加工食品はトランス脂肪酸を含有している可能性が高い。</li>
+        <li>自主的に「トランス脂肪酸ゼロ」「フリー」と表示している製品を選ぶのが賢明。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 実践的な「油の習慣」改善策</h2>
+  <ul class="opt-a-list">
+    <li><strong>「置き換え」の徹底</strong>
+      <ul>
+        <li>肉（飽和脂肪酸）を減らし、魚（不飽和脂肪酸）を増やす。</li>
+        <li>バターの代わりにオリーブオイルを使う。</li>
+      </ul>
+    </li>
+    <li><strong>「デフォルト設定」を決める</strong>
+      <ul>
+        <li>洋風料理 → オリーブオイル、菜種油</li>
+        <li>和風・中華 → ごま油</li>
+        <li>揚げ物・汎用 → 米油</li>
+        <li>家庭に置く油をこれらに固定することで、無意識に健康的な選択ができる。</li>
+      </ul>
+    </li>
+    <li><strong>環境設計（物理的距離）</strong>
+      <ul>
+        <li>お菓子や菓子パンを<strong>買いだめしない</strong>。</li>
+        <li>誘惑のある場所（コンビニやパン屋）を避けるルートで帰宅する。</li>
+      </ul>
+    </li>
+    <li><strong>ラーメンとの付き合い方</strong>
+      <ul>
+        <li>スープを飲み干さない（油の摂取量を物理的に減らす）。</li>
+        <li>ラーメンを食べた週は、他の食事で肉を避け魚中心にするなど、週単位で調整する。</li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+</html>
