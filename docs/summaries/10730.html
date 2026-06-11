@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">習慣が人生を支配する【習慣編01】</h1>
+  <p>公衆衛生学者・行動科学者のHana博士が、習慣が人生や健康に与える絶大な影響について解説するエピソード。習慣を単なる個人の意志の問題ではなく、科学的・社会的な視点から紐解きます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">行動科学</span>
+    <span class="opt-a-tag">行動経済学</span>
+    <span class="opt-a-tag">ナッジ (Nudge)</span>
+    <span class="opt-a-tag">心理学</span>
+    <span class="opt-a-tag">40%の法則</span>
+    <span class="opt-a-tag">生活習慣病</span>
+    <span class="opt-a-tag">慢性疾患</span>
+    <span class="opt-a-tag">社会経済状況</span>
+    <span class="opt-a-tag">教育年数</span>
+    <span class="opt-a-tag">がん予防5+1</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 習慣を支える科学的アプローチ</h2>
+  <ul class="opt-a-list">
+    <li><strong>行動科学 (Behavioral Science)</strong>：人はどうやって行動を変えるのか、行動変容のメカニズムを科学的に追求する学問。</li>
+    <li><strong>行動経済学</strong>：リチャード・セイラー氏（ノーベル経済学賞受賞）らが提唱する、人の意思決定の癖を利用した学問。
+      <ul>
+        <li><strong>ナッジ (Nudge)</strong>：肘でチョンチョンとつつくように、強制せずにより良い選択へと促す手法。</li>
+      </ul>
+    </li>
+    <li><strong>心理学</strong>：行動科学のベースとなる、習慣形成に欠かせない知見。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 習慣の驚くべき影響力</h2>
+  <ul class="opt-a-list">
+    <li><strong>40%の法則</strong>：日々の行動の<strong>約40%</strong>は、無意識に行われている習慣である。
+      <ul>
+        <li>鍵を置く場所、バッグを置く位置、通勤経路、職場でのルーティンなどは、脳が「やるぞ」と決断せずに行っている。</li>
+      </ul>
+    </li>
+    <li><strong>習慣化のメリット</strong>：無意識の領域まで落とし込めば、努力感なしに継続できるため、実は<strong>「習慣にするのが一番楽」</strong>である。</li>
+    <li><strong>負のスパイラル</strong>：一つの悪習慣（例：寝る前のTikTok）が睡眠不足を招き、集中力や判断力を低下させ、さらなる悪習慣を呼び寄せる。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Nodes -->
+      <rect x="10" y="60" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="80" y="95" text-anchor="middle" font-size="14" font-weight="bold">悪習慣の発生</text>
+      <text x="80" y="112" text-anchor="middle" font-size="11">(例:夜更かし)</text>
+
+      <rect x="230" y="60" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="300" y="95" text-anchor="middle" font-size="14" font-weight="bold">リソース低下</text>
+      <text x="300" y="112" text-anchor="middle" font-size="11">(睡眠不足・集中力減)</text>
+
+      <rect x="450" y="60" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="520" y="95" text-anchor="middle" font-size="14" font-weight="bold">意思決定の質の低下</text>
+      <text x="520" y="112" text-anchor="middle" font-size="11">(さらなる悪習慣へ)</text>
+
+      <!-- Arrows -->
+      <path d="M150 90 H230" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <path d="M370 90 H450" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="text-align: center; font-size: 0.85em; color: #a78bfa; margin-top: 10px;">図：悪習慣が引き起こす負のスパイラル</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 健康と習慣：死因の半分以上を占める要因</h2>
+  <ul class="opt-a-list">
+    <li><strong>3大生活習慣病</strong>：日本人の死因の半数以上を占める。
+      <ul>
+        <li>がん、脳血管疾患、心疾患。</li>
+      </ul>
+    </li>
+    <li><strong>がん予防の「5+1」</strong>（国立がん研究センターのガイドライン）：
+      <ul>
+        <li><strong>5つの要因</strong>：タバコ、お酒、食生活、身体活動、体重管理（BMI）。</li>
+        <li><strong>+1の要因</strong>：感染症（ピロリ菌、肝炎ウイルス、HPVなど）。</li>
+      </ul>
+    </li>
+    <li><strong>主要な死因リスク</strong>：タバコ、高血圧、運動不足、高血糖、塩分過多、アルコール。これらはすべて<strong>「習慣」</strong>に集約される。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 「生活習慣病」から「慢性疾患」へ</h2>
+  <p>Hana博士は、あえて<strong>「慢性疾患」</strong>という言葉を使うことを提唱しています。その理由は、言葉が持つ偏見を避けるためです。</p>
+  <ul class="opt-a-list">
+    <li><strong>言葉の落とし穴</strong>：「生活習慣病」という言葉は、「本人の意志が弱い」「自業自得」という偏見や差別を助長する恐れがある。</li>
+    <li><strong>環境の力</strong>：個人の決断の裏には、本人の力ではどうにもならない<strong>「社会経済状況」</strong>が深く関わっている。</li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>要因</th>
+        <th>習慣への影響の具体例</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>教育年数</strong></td>
+        <td>教育年数が短いほど喫煙率が高いという明確な反比例のデータがある。</td>
+      </tr>
+      <tr>
+        <td><strong>経済状況</strong></td>
+        <td>収入や雇用の不安定さがストレスを生み、不健康な行動（飲酒・喫煙等）を誘発する。</td>
+      </tr>
+      <tr>
+        <td><strong>家庭環境</strong></td>
+        <td>親の喫煙習慣や食の嗜好（例：家に菓子パンが常備されている等）が子供の将来の習慣を規定する。</td>
+      </tr>
+      <tr>
+        <td><strong>居住地域</strong></td>
+        <td>住んでいる場所によって、運動のしやすさや健康的な食品へのアクセスが変わる。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 まとめと次回予告</h2>
+  <ul class="opt-a-list">
+    <li>健康習慣の基本は<strong>「タバコを吸わない」「定期的な運動」「栄養バランスの良い食事」「睡眠」「ストレス管理」</strong>というシンプルなもの。</li>
+    <li>しかし、多くの人が「わかっているのにできない」のは、個人の意志のせいだけではなく、人間の特性や環境が影響している。</li>
+    <li><strong>次回予告</strong>：なぜ私たちは健康的な習慣を維持できないのか？「人間の特性」について深掘りし、具体的なステップを解説。</li>
+  </ul>
+
+</body>
+</html>
