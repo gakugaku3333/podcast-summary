@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 20px 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ポッドキャストは授業になるのか？ TeacherTeacherと考えるラーニングデザイン</h1>
+  <p>大阪の追手門学院高校「創造コース」で実施予定の、ポッドキャスト制作を通じた4日間の集中プロジェクトの設計会議を公開。ポッドキャストのメディア特性を活かし、生徒たちの相互理解や自己探究を深めるための「型」と「コンセプト」を議論します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">追手門学院高校</span>
+    <span class="opt-a-tag">創造コース</span>
+    <span class="opt-a-tag">TeacherTeacher</span>
+    <span class="opt-a-tag">タクトピア</span>
+    <span class="opt-a-tag">B面</span>
+    <span class="opt-a-tag">善悪</span>
+    <span class="opt-a-tag">プロセス</span>
+    <span class="opt-a-tag">卒業文集</span>
+    <span class="opt-a-tag">キャリア教育</span>
+    <span class="opt-a-tag">メタ認知</span>
+    <span class="opt-a-tag">NotebookLM</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 プロジェクトの背景と基本条件</h2>
+  <ul class="opt-a-list">
+    <li><strong>対象:</strong> 追手門学院高校 創造コース 2年生（27名）。</li>
+    <li><strong>期間:</strong> 4日間の集中プロジェクト。</li>
+    <li><strong>きっかけ:</strong> 修学旅行の検討中に「福岡がポッドキャストの聖地である」という話題から、表現を重視する創造コースのプロジェクトとして採用。</li>
+    <li><strong>学校側の要望:</strong> 「善悪（良い・悪い）」という大きなテーマを扱い、人それぞれの基準や背景に気づく機会にしたい。</li>
+    <li><strong>最終ゴール:</strong> 卒業時に「音声版の卒業文集」として残るような、クラスのメディア資産の構築。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ポッドキャストのメディア特性と価値</h2>
+  <ul class="opt-a-list">
+    <li><strong>収録ハードルの低さ:</strong> 動画やテキストに比べ、日常の延長で記録しやすい。</li>
+    <li><strong>プロセスの可視化:</strong> きれいにまとまった「議事録」では伝わらない、試行錯誤の過程や熱量をそのまま残せる。</li>
+    <li><strong>身体レベルの伝達:</strong> ロジックだけでなく、声のトーンや間から伝わる非言語情報に価値がある。</li>
+    <li><strong>非同期の交流:</strong> 教室で直接話さなくても、配信を通じて他者の考えを知り、後からコメントで繋がれる。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 250">
+      <!-- A-Side -->
+      <rect x="50" y="50" width="220" height="150" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" stroke-width="2" />
+      <text x="160" y="40" text-anchor="middle" font-weight="bold" fill="#60a5fa">A面（表の顔）</text>
+      <text x="70" y="90" font-size="14">・結論 / 成果物</text>
+      <text x="70" y="120" font-size="14">・公式な意見</text>
+      <text x="70" y="150" font-size="14">・論理的な説明</text>
+      <text x="70" y="180" font-size="14">・プレゼンテーション</text>
+
+      <!-- Arrow -->
+      <path d="M 280 125 L 320 125" stroke="#8b5cf6" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#8b5cf6" />
+        </marker>
+      </defs>
+
+      <!-- B-Side -->
+      <rect x="330" y="50" width="220" height="150" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" stroke-width="2" />
+      <text x="440" y="40" text-anchor="middle" font-weight="bold" fill="#a78bfa">B面（ポッドキャスト）</text>
+      <text x="350" y="90" font-size="14">・過程 / 試行錯誤</text>
+      <text x="350" y="120" font-size="14">・本音 / 葛藤</text>
+      <text x="350" y="150" font-size="14">・感情的な熱量</text>
+      <text x="350" y="180" font-size="14">・日常の雑談</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 コンセプト案：「クラスのB面」</h2>
+  <ul class="opt-a-list">
+    <li><strong>定義:</strong> 普段の授業やプロジェクトで見せる「A面（成果・結論）」に対し、その裏側にある「B面（悩み・本音・プロセス）」を収集する。</li>
+    <li><strong>目的:</strong> 
+      <ul>
+        <li>「あいつ、あんなこと考えてたんだ」という深い相互理解。</li>
+        <li>正解のない問い（善悪など）に対して、納得いくまで喋り倒す場の提供。</li>
+      </ul>
+    </li>
+    <li><strong>仕掛け:</strong> 
+      <ul>
+        <li>「ポッドキャストを配信しよう」と言うと身構えるため、「声を残そう」「B面を記録しよう」というニュアンスでハードルを下げる。</li>
+        <li>「究極の二択（例：カレー味の…）」のようなワークから始め、その後の「なぜ迷ったか」という感想ラウンド（B面）こそが本番であると体感させる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 4日間のプロジェクト構成（想定）</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>フェーズ</th>
+        <th>主な活動内容</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Day 1: 導入・体感</strong></td>
+        <td>ポッドキャストの特性理解。ワークを通じて「素で喋る（B面）」の楽しさを体感する。</td>
+      </tr>
+      <tr>
+        <td><strong>Day 2: 企画・設計</strong></td>
+        <td>チーム（3〜4名）ごとに番組コンセプトを決定。何を「B面」として残すか話し合う。</td>
+      </tr>
+      <tr>
+        <td><strong>Day 3: 制作・実践</strong></td>
+        <td>実際に収録・配信を試行。クラス内でのフィードバックやコメント交換の形を作る。</td>
+      </tr>
+      <tr>
+        <td><strong>Day 4: 運用開始</strong></td>
+        <td>コアメンバーの選出。夏休みや今後のプロジェクトでの継続的な運用ルールを決定。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 継続とモチベーション維持の仕組み</h2>
+  <ul class="opt-a-list">
+    <li><strong>コアメンバーの設置:</strong> 6名程度の有志を募り、番組の盛り上げや運用を主導してもらう。</li>
+    <li><strong>表彰制度:</strong> 「今月の〜賞」を設置。評価指標は「一番ポピュラーだったもの」だけでなく「いいモヤモヤをありがとう賞」など多様な軸を用意する。</li>
+    <li><strong>授業への組み込み:</strong> 文化祭やプロジェクトの後の「振り返り」をポッドキャストで行うよう、先生に授業設計へ組み込んでもらう。</li>
+    <li><strong>AIによる資産化:</strong> 蓄積された音源を<strong>NotebookLM</strong>等で解析し、自分の考えの変遷をまとめたり、自己分析（キャリア教育）に活用したりする。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 教育的価値と将来展望</h2>
+  <ul class="opt-a-list">
+    <li><strong>最強のキャリア教育:</strong> 高校時代の思考ログが残ることで、大学入試や就職活動時の自己分析に圧倒的な厚みが出る。</li>
+    <li><strong>メタ認知の促進:</strong> 自分の過去の声を聴き直すことで、価値観の変化や成長を客観的に捉えられる。</li>
+    <li><strong>学校運営のログ:</strong> 成果物だけでなく「プロセス」が残ることは、学校側にとっても教育効果を可視化する重要なドキュメントになる。</li>
+    <li><strong>他校への展開:</strong> 音楽系高校など、設備が整っている他校へのモデルケースとしての展開可能性。</li>
+  </ul>
+
+  <blockquote>
+    「ポッドキャストは、まとまった議事録よりも熱量が伝わる。このプロセス自体を作品にしていく感覚が、生徒たちの大きな資産になるはず。」
+  </blockquote>
+
+</body>
+</html>
