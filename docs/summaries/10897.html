@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">北中米ワールドカップ開幕：エンタメの超高価格化と開催国の冷ややかな視線</h1>
+  <p>
+    日本時間12日に開幕した北中米ワールドカップ（アメリカ・カナダ・メキシコ共催）をテーマに、30年前の大会と比較したチケット価格の異常な高騰、アメリカ国内での関心の低さ、そして日本市場における関連銘柄の動きについて解説しています。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">北中米ワールドカップ</span>
+    <span class="opt-a-tag">FIFA</span>
+    <span class="opt-a-tag">インファンティーノ会長</span>
+    <span class="opt-a-tag">チケット高騰</span>
+    <span class="opt-a-tag">160万円</span>
+    <span class="opt-a-tag">メッシ</span>
+    <span class="opt-a-tag">サイバーエージェント</span>
+    <span class="opt-a-tag">電通グループ</span>
+    <span class="opt-a-tag">ハブ</span>
+    <span class="opt-a-tag">キリンHD</span>
+    <span class="opt-a-tag">スーパーボウル化</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 大会規模と「超高価格化」の実態</h2>
+  <ul class="opt-a-list">
+    <li><strong>史上最大規模の開催</strong>：アメリカ、カナダ、メキシコの3カ国共催。16都市で全104試合が行われる。</li>
+    <li><strong>決勝チケットの異常なプレミアム化</strong>：
+      <ul>
+        <li>ニューヨーク郊外（ニュージャージー州）で開催予定の決勝戦チケットは、転売市場を含め<strong>1枚1万ドル（約160万円）</strong>を超える価格で取引されている。</li>
+        <li>ロサンゼルス市長は「世界のエリート層・超富裕層のためだけの大会になってしまっている」と批判。</li>
+      </ul>
+    </li>
+    <li><strong>32年前（1994年アメリカ大会）との比較</strong>：
+      <ul>
+        <li>1994年当時の決勝戦最高額は475ドル（現在の価値に換算しても約1,000ドル）。</li>
+        <li>今回の価格は、当時の<strong>10倍以上</strong>に跳ね上がっている。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 200">
+      <!-- 1994年 -->
+      <rect x="50" y="100" width="150" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" />
+      <text x="125" y="135" text-anchor="middle" font-weight="bold">1994年大会</text>
+      <text x="125" y="185" text-anchor="middle" font-size="12">約1,000ドル (現在価値)</text>
+      
+      <!-- 矢印 -->
+      <path d="M 220 130 L 330 130" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+      <text x="275" y="115" text-anchor="middle" fill="#60a5fa" font-weight="bold">10倍以上の高騰</text>
+
+      <!-- 2026年 -->
+      <rect x="350" y="50" width="200" height="110" rx="8" fill="rgba(139, 92, 246, 0.4)" stroke="#8b5cf6" stroke-width="2" />
+      <text x="450" y="85" text-anchor="middle" font-weight="bold">2026年大会</text>
+      <text x="450" y="115" text-anchor="middle" font-size="18" fill="#f59e0b" font-weight="bold">10,000ドル〜</text>
+      <text x="450" y="140" text-anchor="middle" font-size="14">(約160万円)</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 開催国アメリカの冷ややかな世論</h2>
+  <ul class="opt-a-list">
+    <li><strong>視聴意向の低さ</strong>：ブルームバーグの調査によると、アメリカ成人の<strong>過半数が「1試合も視聴しない可能性が高い」</strong>と回答。「確実に見る」はわずか13%。</li>
+    <li><strong>世代間の温度差</strong>：
+      <ul>
+        <li><strong>ベビーブーマー世代（60-70代）</strong>：75%が「サッカーファンではない」と回答。約半数がスーパースターの<strong>メッシの名前すら知らない</strong>。</li>
+        <li><strong>若年層（Z世代など）</strong>：サッカーは浸透しつつあるが、依然としてアメフト（NFL）やバスケ（NBA）の壁は厚い。</li>
+      </ul>
+    </li>
+    <li><strong>反発の要因</strong>：
+      <ul>
+        <li><strong>チケット価格への不満</strong>：連邦議会議員70人が価格引き下げを求める署名活動を展開。</li>
+        <li><strong>政治的アレルギー</strong>：FIFAがトランプ大統領（当時）に「FIFA平和賞」を授与したことへの反発。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 日本市場の反応と「W杯関連銘柄」</h2>
+  <p>アメリカの一般消費者が冷めている一方で、日本の株式市場では投資チャンスとして注目が集まっている。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>企業・銘柄</th>
+        <th>注目される理由・背景</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>サイバーエージェント</strong></td>
+        <td>「ABEMA」での配信によるアクセス爆発への期待（前回大会の実績）。</td>
+      </tr>
+      <tr>
+        <td><strong>電通グループ</strong></td>
+        <td>国内放映権を約350億円で取得したとされる。広告収入への影響。</td>
+      </tr>
+      <tr>
+        <td><strong>ハブ (HUB)</strong></td>
+        <td>英国風パブでの観戦需要、店舗売上の増加期待。</td>
+      </tr>
+      <tr>
+        <td><strong>キリンホールディングス</strong></td>
+        <td>日本代表のオフィシャルパートナー。飲料消費の押し上げ。</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="opt-a-list">
+    <li><strong>経済的インパクトの評価</strong>：大和証券のエコノミストは、日本経済全体を底上げするような構造的インパクトは<strong>限定的</strong>と分析。</li>
+    <li><strong>投資家の関心の移り変わり</strong>：現在の主力マネーは半導体、AI、スペースXのIPOといった巨大テクノロジー分野に集中している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 変貌するワールドカップの性質</h2>
+  <ul class="opt-a-list">
+    <li><strong>「大衆のスポーツ」から「ウォール街的ビジネス」へ</strong>：
+      <ul>
+        <li>1994年：紙のチケットを銀行の金庫に保管し、郵送でやり取りしていた時代。誰もがアクセスできるスポーツだった。</li>
+        <li>2026年：ハーフタイムショーに<strong>マドンナやBTS</strong>を動員する計画。アメフトの「スーパーボウル」のような、巨額のマネーが動くエンタメショーへと変貌。</li>
+      </ul>
+    </li>
+    <li><strong>日本代表の動向</strong>：
+      <ul>
+        <li>アジア勢トップランキングとして注目。</li>
+        <li>14日にテキサス州ダラスでオランダとの初戦を迎える（※エピソード内の言及に基づく）。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote>
+    かつてカウボーイが投げ縄でサッカーボールを捕まえる広告を出して認知度を上げようとしていたアメリカ。30年を経て、一般ファンを締め出すほどの「超インフレ・エンタメビジネス」へと姿を変えた。
+  </blockquote>
+
+</body>
+</html>
