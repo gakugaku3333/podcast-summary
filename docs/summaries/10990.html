@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">悪習慣の断ち切り方：意志力に頼らない行動変容の戦略</h1>
+  <p>
+    公衆衛生学者・行動科学者のHana博士が、ついついやってしまう「悪習慣」をどう辞めるかについて解説するエピソードです。気合いや意志力に頼るのではなく、環境の調整や「原因の原因」を遡る科学的なアプローチを提案しています。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">意志力</span>
+    <span class="opt-a-tag">環境要因</span>
+    <span class="opt-a-tag">誘惑</span>
+    <span class="opt-a-tag">五感</span>
+    <span class="opt-a-tag">メタ認知</span>
+    <span class="opt-a-tag">パブリックヘルス</span>
+    <span class="opt-a-tag">原因の原因</span>
+    <span class="opt-a-tag">If-Thenルール</span>
+    <span class="opt-a-tag">置き換え</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 なぜ「意志力」では辞められないのか</h2>
+  <ul class="opt-a-list">
+    <li><strong>意志力の限界</strong>：気合いで辞めようとするのは「一番ダメなパターン」。行動変容は意志力だけで何とかなるほど甘くない。</li>
+    <li><strong>環境の力</strong>：習慣は個人の意志よりも、置かれている<strong>環境</strong>に強く紐づいている。</li>
+    <li><strong>脳の特性</strong>：何かを「辞めよう」と強く思うほど、その対象に執着してしまい、余計に考え続けてしまう（シロクマ効果のような現象）。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 「悪習慣」と「誘惑」の正体</h2>
+  <p>辞めたい行動には2つのタイプがあり、それぞれ対策が異なる。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>タイプ</th>
+        <th>特徴</th>
+        <th>具体例</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>悪習慣</strong></td>
+        <td>特定の「場面」や「環境」に紐づいている</td>
+        <td>仕事が終わったらコンビニに寄る、風呂上がりにアイスを食べる</td>
+      </tr>
+      <tr>
+        <td><strong>誘惑</strong></td>
+        <td>外部からの「刺激」によって引き起こされる</td>
+        <td>ホットスナックの匂い、他人がタバコを吸っている煙、レジ横の陳列</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="opt-a-list">
+    <li><strong>コンビネーション</strong>：多くの場合は両方が組み合わさっている（例：コンビニに寄る習慣 ＋ 唐揚げの匂いという誘惑）。</li>
+    <li><strong>企業の戦略</strong>：マーケティングは人間の<strong>五感（視覚・嗅覚・聴覚など）</strong>を刺激して「お腹が空いていなくても欲しくなる」ように設計されている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 科学的アプローチ1：メタ認知</h2>
+  <ul class="opt-a-list">
+    <li><strong>戦略を客観視する</strong>：「あ、今自分はマーケティング戦略にハマっているな」「釣り堀の魚のように餌に食いつこうとしているな」と自分を<strong>メタ認知（客観視）</strong>する。</li>
+    <li><strong>効果</strong>：すぐに辞められなくても、認知することで「引っかかろうとしている自分」を一歩引いて見ることができ、行動を抑制するきっかけになる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 科学的アプローチ2：原因の原因を遡る（上流分析）</h2>
+  <p>パブリックヘルスの視点では、表面的な行動ではなく、その「さらに奥にある原因」を突き止めることが重要。</p>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 320" preserveAspectRatio="xMidYMid meet">
+      <!-- Nodes -->
+      <rect x="200" y="10" width="200" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="35" text-anchor="middle" font-size="14">【結果】悪習慣を行う</text>
+      
+      <rect x="200" y="80" width="200" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="105" text-anchor="middle" font-size="14">誘惑に負ける環境にある</text>
+      
+      <rect x="200" y="150" width="200" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="175" text-anchor="middle" font-size="14">準備（弁当等）ができない</text>
+      
+      <rect x="200" y="220" width="200" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="245" text-anchor="middle" font-size="14">残業・睡眠不足</text>
+      
+      <rect x="200" y="280" width="200" height="40" rx="8" fill="rgba(245, 158, 11, 0.3)" stroke="#f59e0b" />
+      <text x="300" y="305" text-anchor="middle" font-size="14" font-weight="bold">【根本原因】会議が多すぎる</text>
+
+      <!-- Arrows -->
+      <path d="M300 80 L300 50" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+      <path d="M300 150 L300 120" stroke="#60a5fa" stroke-width="2" fill="none" />
+      <path d="M300 220 L300 190" stroke="#60a5fa" stroke-width="2" fill="none" />
+      <path d="M300 280 L300 260" stroke="#60a5fa" stroke-width="2" fill="none" />
+      
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.8em; color: #a78bfa; margin-top: 10px;">Hana博士のシェイクシャック事例：会議を減らすことでポテトの食べ過ぎを防いだ</p>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>川の上流をたどる</strong>：
+      <ul>
+        <li>例：コンビニでホットスナックを買ってしまうのは、朝食を抜いて小腹が空いているからではないか？</li>
+        <li>例：朝食を抜くのは、前日の夜更かしのせいではないか？</li>
+      </ul>
+    </li>
+    <li><strong>対策のポイント</strong>：上流にある原因（例：会議の時間、前日の買い出し）をコントロールすることで、下流の悪習慣が自然と減る。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 科学的アプローチ3：置き換えとIf-Thenルール</h2>
+  <ul class="opt-a-list">
+    <li><strong>「辞める」より「始める」</strong>：人間にとって何かを禁止するのは難しいため、別の行動に<strong>置き換える</strong>方が成功率が高い。</li>
+    <li><strong>If-Thenルール（もし〜なら、〜する）</strong>：
+      <ul>
+        <li>意志力が正常な時にあらかじめ決めておく。</li>
+        <li>例：「タバコを吸いたくなったら、ガムを噛む（またはじゃがりこを食べる）」。</li>
+        <li>例：「コンビニに寄りそうになったら、違う道を通る」。</li>
+      </ul>
+    </li>
+    <li><strong>環境を物理的に避ける</strong>：
+      <ul>
+        <li>誘惑の看板が見えない出口から帰る。</li>
+        <li>コンビニに寄らなくて済むように、前日にスーパーで必要なものを買っておく。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 まとめ：悪習慣を断つためのステップ</h2>
+  <ul class="opt-a-list">
+    <li><strong>ステップ1</strong>：自分の行動が「習慣（場面）」なのか「誘惑（刺激）」なのか分析する。</li>
+    <li><strong>ステップ2</strong>：その行動が起こる「上流の原因」を突き止める。</li>
+    <li><strong>ステップ3</strong>：意志力を信じず、物理的に環境を変えるか、代替行動（If-Thenルール）を用意する。</li>
+    <li><strong>ステップ4</strong>：失敗しても自分を責めず、戦略を修正する（Hana博士でも失敗することはある）。</li>
+  </ul>
+
+  <blockquote>
+    「意志力は信頼してはならない。やめたいと思ったら、すぐに次の代替案を用意すること。」
+  </blockquote>
+
+</body>
+</html>
