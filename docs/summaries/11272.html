@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">聞く健康習慣 Hana博士の体調最高ラジオ：良い習慣の作り方</h1>
+  <p>公衆衛生学者・行動科学者のHana博士が、エビデンスに基づいた「習慣作りのステップ」を解説するエピソードです。なかなか習慣が続かない悩みに対し、精神論ではなく科学的なプロセスと具体的なテクニックを提示しています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">習慣化</span>
+    <span class="opt-a-tag">行動科学</span>
+    <span class="opt-a-tag">エビデンス</span>
+    <span class="opt-a-tag">21日の神話</span>
+    <span class="opt-a-tag">自動化</span>
+    <span class="opt-a-tag">セルフモニタリング</span>
+    <span class="opt-a-tag">ピアチューター</span>
+    <span class="opt-a-tag">意志力</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 習慣化に関する「期待値」の修正</h2>
+  <ul class="opt-a-list">
+    <li><strong>習慣化には時間がかかる</strong>
+      <ul>
+        <li>平均して<strong>2ヶ月（約66日）以上</strong>かかるのが一般的。</li>
+        <li>人によって差が激しく、身につくまでに<strong>18日から254日</strong>かかることもある。</li>
+        <li>一朝一夕で身につくものではないと理解し、最初から期待値を下げておくことが重要。</li>
+      </ul>
+    </li>
+    <li><strong>「21日の神話」の正体</strong>
+      <ul>
+        <li>「21日で習慣が変わる」という説は、アメリカの整形外科医が書いた自己啓発本が由来。</li>
+        <li>「整形手術をした患者が自分の新しい顔に慣れるまで21日かかった」という話が、いつの間にか習慣化の話にすり替わって広まった都市伝説である。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 習慣化の4つのプロセス</h2>
+  <p>習慣が形成されるまでには、以下の4つの段階を順に経る必要があります。</p>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+      <!-- Nodes -->
+      <rect x="10" y="30" width="120" height="50" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="70" y="60" text-anchor="middle" font-size="14">1. 決意</text>
+      
+      <rect x="160" y="30" width="120" height="50" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="220" y="60" text-anchor="middle" font-size="14">2. 行動</text>
+      
+      <rect x="310" y="30" width="120" height="50" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="370" y="60" text-anchor="middle" font-size="14">3. 反復</text>
+      
+      <rect x="460" y="30" width="120" height="50" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="520" y="60" text-anchor="middle" font-size="14">4. 自動化</text>
+      
+      <!-- Arrows -->
+      <path d="M 130 55 L 155 55" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+      <path d="M 280 55 L 305 55" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+      <path d="M 430 55 L 455 55" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+      
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+          <path d="M0,0 L0,10 L9,5 Z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>1. 決意：</strong>明確な意図を持ち、やろうと決める段階。</li>
+    <li><strong>2. 行動：</strong>実際に実行に移す段階。ここで約半数の人が脱落する。</li>
+    <li><strong>3. 反復：</strong>特定の状況下で繰り返し行う段階。ここが最も難しく、多くの人が「三日坊主」で終わるポイント。</li>
+    <li><strong>4. 自動化：</strong>意識しなくても体が動くようになり、習慣が形成された状態。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 反復を成功させる4つのポイント</h2>
+  <ul class="opt-a-list">
+    <li><strong>1. やることを具体的にする</strong>
+      <ul>
+        <li>「毎日運動する」は不十分。<strong>「いつ、どこで、どのように、誰と」</strong>まで言語化する。</li>
+        <li>例：「仕事から帰宅して荷物を置いた直後、15分間近所を早歩きする」。</li>
+      </ul>
+    </li>
+    <li><strong>2. 安定した習慣にくっつける</strong>
+      <ul>
+        <li>「朝起きる」「帰宅する」「歯を磨く」など、毎日必ず行う既存のルーティンの直後に新しい行動を組み込む。</li>
+        <li>一連の流れ（フロー）の中に組み込むことで、脳の抵抗を減らす。</li>
+      </ul>
+    </li>
+    <li><strong>3. 下準備をしておく（環境構築）</strong>
+      <ul>
+        <li>意志力が強い時（前日や朝など）に、行動のハードルを下げる準備を済ませておく。</li>
+        <li>例：帰宅してすぐジムに行けるよう、玄関にウェアと靴をセットしておく。</li>
+        <li>疲労やストレスがある時は「言い訳」を探しやすいため、<strong>言い訳できない環境</strong>を先に作る。</li>
+      </ul>
+    </li>
+    <li><strong>4. 最初が肝心（開始数週間のギア入れ）</strong>
+      <ul>
+        <li>最初の2〜3週間は、意識的に頻度を高める（週4〜5回など）。</li>
+        <li>間隔が空きすぎると（例：週1回）、脳が「たまのイベント（レジャー）」と認識してしまい、自動化が進まない。</li>
+        <li><strong>心の余裕がある時期に始める</strong>ことも重要。多忙すぎる時期は避ける。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 成功率をさらに高める3つのTips</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>手法</th>
+        <th>内容と効果</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>リマインダー</strong></td>
+        <td>アラームや張り紙で「きっかけ」を与える。短期的には非常に有効だが、慣れすぎると無視してしまう点に注意。</td>
+      </tr>
+      <tr>
+        <td><strong>記録（セルフモニタリング）</strong></td>
+        <td>やったことを可視化する。アプリや紙に記録するだけで、記録しないグループよりも行動変容の効果が高いことが証明されている。</td>
+      </tr>
+      <tr>
+        <td><strong>仲間を作る（ピアチューター）</strong></td>
+        <td>同じ目標を持つ仲間や、すでに実践している人からフィードバックをもらう。ポジティブな感情が生まれ、意志力が弱い時の支えになる。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 まとめ：習慣化の極意</h2>
+  <ul class="opt-a-list">
+    <li>自分の意志力が弱いからできないのではなく、<strong>「環境の整え方」と「プロセスの知識」</strong>が不足しているだけ。</li>
+    <li>「やらないと気持ち悪い」と感じる自動化の状態まで、最初の数週間を環境構築と少しの努力で乗り切る。</li>
+    <li>失敗しても自分を責めず、余裕がある時に再チャレンジすればよい。</li>
+  </ul>
+
+</body>
+</html>
