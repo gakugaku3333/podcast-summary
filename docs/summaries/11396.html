@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">News Connect：巨大AI企業のIPOラッシュと世界情勢の転換点</h1>
+  <p>2026年6月14日配信のエピソード。イラン・ウクライナ情勢の長期化、東アジアの陣営化、そしてOpenAIやSpaceXといった巨大テック企業のIPOが市場に与える影響について、経営競争基盤（IGPI）の塩野誠氏と共に解説します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">OpenAI</span>
+    <span class="opt-a-tag">SpaceX</span>
+    <span class="opt-a-tag">Anthropic</span>
+    <span class="opt-a-tag">IPO</span>
+    <span class="opt-a-tag">イラン情勢</span>
+    <span class="opt-a-tag">ウクライナ情勢</span>
+    <span class="opt-a-tag">習近平</span>
+    <span class="opt-a-tag">北朝鮮</span>
+    <span class="opt-a-tag">ワールドカップ</span>
+    <span class="opt-a-tag">オルカン</span>
+    <span class="opt-a-tag">宇宙データセンター</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 イラン情勢：開戦100日と「不思議な」市場の活況</h2>
+  <ul class="opt-a-list">
+    <li><strong>実体経済への影響：</strong>
+      <ul>
+        <li>原油価格は開戦前に比べ<strong>北海ブレント36%増、WTI50%増</strong>と高止まり。</li>
+        <li>米国の4月消費者物価指数（CPI）は<strong>3.8%上昇</strong>し、3年ぶりの高水準。</li>
+        <li>日本の長期金利も<strong>2.8%</strong>と30年ぶりの高水準を記録。</li>
+      </ul>
+    </li>
+    <li><strong>株式市場の逆説的な上昇：</strong>
+      <ul>
+        <li>当初のスタグフレーション懸念に反し、市場の関心は<strong>AIによる成長力</strong>へシフト。</li>
+        <li>日経平均株価は史上初めて<strong>6万円台</strong>に乗せ、過去最高値を更新。</li>
+        <li>「株を持っている人と持っていない人」の間で資産格差が急拡大している。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ウクライナ情勢：現実的な和平への模索とロシア内部の変容</h2>
+  <ul class="opt-a-list">
+    <li><strong>ウクライナの方針転換：</strong>
+      <ul>
+        <li>ゼレンスキー大統領が欧州三首脳（英仏独）と協議し、<strong>現在の前線を交渉の出発点とする</strong>5つの条件で合意。</li>
+        <li>「全領土の回復」という当初の目標から、主権と独立を守るための現実的な路線へ。</li>
+      </ul>
+    </li>
+    <li><strong>ロシア国内の状況：</strong>
+      <ul>
+        <li>サンクトペテルブルクなど大都市へのドローン攻撃により、市民が「戦争」を身近に感じ始めている。</li>
+        <li>ただし、強力な独裁体制下では世論が政権を動かすまでには至っていない。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 東アジア：深まる「陣営化」の構図</h2>
+  <ul class="opt-a-list">
+    <li><strong>中朝関係の強化：</strong>
+      <ul>
+        <li>習近平国家主席が7年ぶりに北朝鮮を訪問。軍事・科学技術分野での協力を確認。</li>
+        <li>北朝鮮はロシアやイランへの武器提供などを通じ、経済的に「好調」な側面を見せている。</li>
+      </ul>
+    </li>
+    <li><strong>日韓の連携：</strong>
+      <ul>
+        <li>海上自衛隊と韓国海軍が9年ぶりに共同訓練を実施。</li>
+        <li>東アジアが「中・露・朝」対「日・米・韓」の<strong>2つの陣営</strong>に明確に分かれつつある。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 テック企業IPO：100兆円超えの衝撃と「全宇宙」投資</h2>
+  <p>生成AIと宇宙開発の巨大企業が相次いでIPO（新規株式公開）を申請・実施し、市場の資金を吸い上げています。</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>企業名</th>
+        <th>評価額 / 特徴</th>
+        <th>主な動向・構想</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>OpenAI</strong></td>
+        <td>約136兆円（8,520億ドル）</td>
+        <td>非公開でIPO申請。計算資源への巨額投資を継続。</td>
+      </tr>
+      <tr>
+        <td><strong>Anthropic</strong></td>
+        <td>競合AI企業</td>
+        <td>OpenAIに続く形でIPO申請を発表。</td>
+      </tr>
+      <tr>
+        <td><strong>SpaceX</strong></td>
+        <td>NASDAQ上場</td>
+        <td>スターリンク（通信）、宇宙事業、AIの3本柱。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul class="opt-a-list">
+    <li><strong>宇宙データセンター構想：</strong>
+      <ul>
+        <li>宇宙空間にデータセンターを配置し、太陽光エネルギーでGPUを回す未来。</li>
+        <li>イーロン・マスク氏の時給が約6億円という驚異的な数字も話題に。</li>
+      </ul>
+    </li>
+    <li><strong>インデックス採用の影響：</strong>
+      <ul>
+        <li>SpaceXが主要指数に採用されると、オルカン（全世界株式）などの投資信託を通じて、一般投資家も「宇宙」に投資することになる。</li>
+        <li>「全世界投資（All Country）」が<strong>「全宇宙投資（All Space）」</strong>へ進化する可能性。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" height="180" viewBox="0 0 500 180">
+      <!-- Nodes -->
+      <rect x="20" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="80" y="95" text-anchor="middle" font-size="14">巨大IPO</text>
+      
+      <rect x="190" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="250" y="95" text-anchor="middle" font-size="14">長者の誕生</text>
+      
+      <rect x="360" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="420" y="95" text-anchor="middle" font-size="14">不動産・再投資</text>
+      
+      <!-- Arrows -->
+      <line x1="140" y1="90" x2="190" y2="90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+      <line x1="310" y1="90" x2="360" y2="90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+      
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+      <text x="250" y="150" text-anchor="middle" font-size="12" fill="#a78bfa">シリコンバレー等のエコシステム循環</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ワールドカップ：経済効果とチケット高騰</h2>
+  <ul class="opt-a-list">
+    <li><strong>異常なチケット価格：</strong>
+      <ul>
+        <li>決勝戦のチケットが<strong>1万ドル（約160万円）</strong>を超える価格で販売。</li>
+        <li>1994年大会（最大475ドル）と比較して爆発的に上昇。</li>
+      </ul>
+    </li>
+    <li><strong>米国のサッカー文化：</strong>
+      <ul>
+        <li>子供の頃は男女混合で盛んにプレーされるが、成長と共にNFLやNBAに人材と人気が流出する構造。</li>
+        <li>今大会を機に、米国でサッカーが「一大ビジネス」として定着するかが注目される。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 DJコーナー：今週の選曲</h2>
+  <p>雨上がりや夜の静寂を感じさせる、引っかかりのある3曲を紹介。</p>
+  <ul class="opt-a-list">
+    <li><strong>キノコ帝国「雨上がり」</strong>：別れと自由、雨上がりの情景。</li>
+    <li><strong>クレナズム「夜に溺れて」</strong>：ドリームポップ調。取り残された感情のコントラスト。</li>
+    <li><strong>ROTH BART BARON「Good Night」</strong>：声に特徴のあるインディーな一曲。</li>
+  </ul>
+
+</body>
+</html>
