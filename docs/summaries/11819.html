@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【6月15日】トランプ氏「明日、署名」と投稿。イラン停戦の行方は</h1>
+  <p>2026年6月15日放送。トランプ大統領がSNSでアメリカとイランの戦闘終結合意が間近であると投稿したニュースを中心に、合意の具体的な内容や両国の温度差、市場への影響を解説します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">トランプ大統領</span>
+    <span class="opt-a-tag">イラン</span>
+    <span class="opt-a-tag">ホルムズ海峡</span>
+    <span class="opt-a-tag">イスラマ・バード合意</span>
+    <span class="opt-a-tag">電子署名</span>
+    <span class="opt-a-tag">カタール</span>
+    <span class="opt-a-tag">パキスタン</span>
+    <span class="opt-a-tag">原油先物</span>
+    <span class="opt-a-tag">バンス副大統領</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 トランプ大統領による電撃発表</h2>
+  <ul class="opt-a-list">
+    <li><strong>SNS「トルース・ソーシャル」への投稿（6月13日）</strong>
+      <ul>
+        <li>アメリカとイランの戦闘終結に向けた合意が<strong>翌14日に署名される予定</strong>であると言及。</li>
+        <li>署名直後、<strong>ホルムズ海峡がすべての船に開放される</strong>と主張。</li>
+      </ul>
+    </li>
+    <li><strong>署名の形式：電子署名を採用</strong>
+      <ul>
+        <li>当初はスイスのジュネーブでバンス副大統領が出席する署名式を想定。</li>
+        <li>トランプ大統領のG7サミット出発と重なり、安全上の理由（大統領と副大統領が同時に外遊しない）から対面式を断念。</li>
+        <li>代わりに電子署名で合意を確定させる案が示された。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 イラン側の慎重・否定的な姿勢</h2>
+  <ul class="opt-a-list">
+    <li><strong>国営メディアによる否定</strong>
+      <ul>
+        <li>国営ファルス通信：「日曜日に署名が間近という主張は<strong>全くの虚偽</strong>」と報道。</li>
+        <li>イラン外務省報道官：「交渉団はどこへも渡航する予定はない」と明言。</li>
+      </ul>
+    </li>
+    <li><strong>現状の確認</strong>
+      <ul>
+        <li>日本時間日曜深夜時点では、実際に署名されたという一報は入っていない。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 合意までのタイムライン（6月10日〜13日）</h2>
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 220">
+      <!-- Timeline Line -->
+      <line x1="50" y1="110" x2="550" y2="110" stroke="#60a5fa" stroke-width="2" />
+      
+      <!-- June 10 -->
+      <circle cx="80" cy="110" r="6" fill="#8b5cf6" />
+      <text x="50" y="90" font-size="13">6/10 (水)</text>
+      <text x="50" y="140" font-size="12">カタール仲介で</text>
+      <text x="50" y="155" font-size="12">暫定合意に到達</text>
+
+      <!-- June 11 -->
+      <circle cx="230" cy="110" r="6" fill="#8b5cf6" />
+      <text x="200" y="90" font-size="13">6/11 (木)</text>
+      <text x="200" y="140" font-size="12">トランプ氏</text>
+      <text x="200" y="155" font-size="12">攻撃見送りを表明</text>
+
+      <!-- June 13 -->
+      <circle cx="380" cy="110" r="6" fill="#8b5cf6" />
+      <text x="350" y="90" font-size="13">6/13 (土)</text>
+      <text x="350" y="140" font-size="12">パキスタン首相</text>
+      <text x="350" y="155" font-size="12">「24時間以内に成立」</text>
+
+      <!-- June 14 -->
+      <circle cx="530" cy="110" r="6" fill="#8b5cf6" />
+      <text x="500" y="90" font-size="13">6/14 (日)</text>
+      <text x="500" y="140" font-size="12">トランプ氏主張の</text>
+      <text x="500" y="155" font-size="12">署名予定日</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 「イスラマ・バード合意」の構造</h2>
+  <p>カタールとパキスタンが共同仲介。2段階のプロセスで構成されている。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>フェーズ</th>
+        <th>主な内容</th>
+        <th>イランへの見返り</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>第1段階</strong></td>
+        <td>
+          ・ホルムズ海峡の即時開放（通行料なし）<br>
+          ・アメリカによる海上封鎖の解除<br>
+          ・停戦の60日間延長
+        </td>
+        <td>石油輸出のための<br>一時的な制裁緩和</td>
+      </tr>
+      <tr>
+        <td><strong>第2段階</strong></td>
+        <td>
+          ・<strong>核問題</strong>に関する議論<br>
+          ・60日間の停戦期間中に交渉を実施
+        </td>
+        <td>（今後の交渉次第）</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 市場の反応と今後の懸念</h2>
+  <ul class="opt-a-list">
+    <li><strong>原油価格の下落</strong>
+      <ul>
+        <li>6月12日（金）：北海ブレント・WTI先物ともに<strong>約3%下落</strong>。</li>
+        <li>約3ヶ月ぶりの安値を記録し、市場は停戦合意を織り込み始めている。</li>
+      </ul>
+    </li>
+    <li><strong>実効性への疑問</strong>
+      <ul>
+        <li>過去2ヶ月間、ホワイトハウスは何度も「合意間近」と発表しながら決裂してきた経緯がある。</li>
+        <li>今回は米軍の輸送機（C17）4機が欧州へ出発するなど、<strong>「実際にモノが動いている」</strong>点が過去と異なる。</li>
+      </ul>
+    </li>
+    <li><strong>CNNによる冷静な分析</strong>
+      <ul>
+        <li>イラン側は署名を確約しておらず、合意内容の説明にも双方で食い違いがある。</li>
+        <li>本丸である「核問題」は第2段階に先送りされており、楽観視はできない。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 パーソナリティの視点：酷暑と生活様式の変化</h2>
+  <ul class="opt-a-list">
+    <li><strong>水泳の習慣化</strong>：屋内のため暑さに左右されず、都内には公営プールも多いため継続しやすい。</li>
+    <li><strong>社会の変化</strong>：日本の夏が暑すぎるため、東南アジアのように<strong>「室内を主軸にした動き方」</strong>へのシフトが必要になるのではないかという考察。</li>
+  </ul>
+
+</body>
+</html>
