@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">アメリカとイランの電撃合意：原油急落と日本株の歴史的高騰</h1>
+  <p>
+    アメリカとイランが戦闘終結に向けた覚書に合意したという速報を受け、世界のマーケットが激変したニュースを解説しています。ホルムズ海峡の封鎖解除による原油価格の下落と、それに伴うインフレ懸念の交代が、日本市場に過去最大級の株価上昇をもたらした背景を整理します。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">アメリカ</span>
+    <span class="opt-a-tag">イラン</span>
+    <span class="opt-a-tag">ホルムズ海峡</span>
+    <span class="opt-a-tag">トランプ大統領</span>
+    <span class="opt-a-tag">パキスタン</span>
+    <span class="opt-a-tag">原油先物（WTI）</span>
+    <span class="opt-a-tag">日経平均株価</span>
+    <span class="opt-a-tag">ECB（欧州中央銀行）</span>
+    <span class="opt-a-tag">地政学リスク</span>
+    <span class="opt-a-tag">中銀ウィーク</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 合意に至るまでの外交プロセス</h2>
+  <ul class="opt-a-list">
+    <li><strong>パキスタンの仲介：</strong>シャリフ首相が水面下で外交交渉を仲介。SNSで「24時間以内の合意」と「電子署名の準備」を事前に発表した。</li>
+    <li><strong>トランプ氏の投稿：</strong>自身のSNS「TRUTH SOCIAL」にて、ホルムズ海峡の通行料なしの解放と、アメリカ海軍による封鎖の即時解除を承認。</li>
+    <li><strong>イラン側の対応：</strong>イスラエルによるレバノン空爆への反発から決裂も危惧されたが、最高安全保障委員会が合意に踏み切った。</li>
+    <li><strong>正式調印の予定：</strong>今月19日にスイスのジュネーブで正式な文書締結が行われる見通し。</li>
+  </ul>
+
+  <svg width="100%" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+    <rect x="10" y="40" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="70" y="75" text-anchor="middle" font-size="14">パキスタン仲介</text>
+    
+    <line x1="130" y1="70" x2="170" y2="70" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+    
+    <rect x="180" y="10" width="150" height="120" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="255" y="55" text-anchor="middle" font-size="14">米・イラン合意</text>
+    <text x="255" y="80" text-anchor="middle" font-size="12" fill="#60a5fa">ホルムズ海峡解放</text>
+    <text x="255" y="105" text-anchor="middle" font-size="12" fill="#60a5fa">戦闘終結の覚書</text>
+
+    <line x1="330" y1="70" x2="370" y2="70" stroke="#60a5fa" stroke-width="2" />
+
+    <rect x="380" y="40" width="180" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="470" y="75" text-anchor="middle" font-size="14">6/19 ジュネーブ調印</text>
+
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+      </marker>
+    </defs>
+  </svg>
+
+  <h2 class="opt-a-section-title">📌 市場へのインパクトと経済指標</h2>
+  <ul class="opt-a-list">
+    <li><strong>原油市場の急落：</strong>供給リスクの緩和により、WTI原油先物が一時<strong>1バレル79ドル</strong>を記録。3月上旬以来、約3ヶ月ぶりの安値水準となった。</li>
+    <li><strong>日経平均の歴史的高騰：</strong>
+      <ul>
+        <li>上げ幅は先週末比で<strong>3,297円高</strong>。これは日本株史上、過去2番目の大きさ。</li>
+        <li>終値ベースでの<strong>史上最高値を更新</strong>。</li>
+        <li>市場では「日経平均7万円」を射程圏内に捉えるとの見方も浮上。</li>
+      </ul>
+    </li>
+    <li><strong>中央銀行の反応：</strong>
+      <ul>
+        <li><strong>ECB（欧州中央銀行）：</strong>地政学リスクの低下と原油安を「物価安定に極めてポジティブ」と歓迎。</li>
+        <li><strong>中銀ウィーク：</strong>今週は日米欧の主要中央銀行が会合を開くタイミングであり、今回の合意が各国の金融政策に影響を与える可能性がある。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>指標</th>
+        <th>変動・数値</th>
+        <th>背景・影響</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>WTI原油先物</strong></td>
+        <td>一時 79ドル</td>
+        <td>ホルムズ海峡解放による供給リスク緩和</td>
+      </tr>
+      <tr>
+        <td><strong>日経平均株価</strong></td>
+        <td>+3,297円（史上2位の上げ幅）</td>
+        <td>インフレ懸念交代によるリスクオンの買い</td>
+      </tr>
+      <tr>
+        <td><strong>日経平均終値</strong></td>
+        <td>史上最高値更新</td>
+        <td>7万円台を視野に入れた急上昇</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 今後の課題と懸念点</h2>
+  <ul class="opt-a-list">
+    <li><strong>暫定的な合意：</strong>今回の合意はあくまで<strong>60日間の停戦</strong>を前提とした「スタートラインの覚え書き」に過ぎない。</li>
+    <li><strong>実務協議の不透明性：</strong>今後行われる本格的な実務協議において、双方が納得できる着地点を見出せるかは未知数。</li>
+    <li><strong>トランプ・リスク：</strong>過去に何度も合意を覆してきたトランプ氏の予測不能な動向が最大の懸念材料。</li>
+  </ul>
+
+  <blockquote>
+    サッカーの試合がホイッスルが鳴るまで分からないように、今回のディールもまた最後の1秒まで目が離せない展開となりそうです。
+  </blockquote>
+
+</body>
+</html>
