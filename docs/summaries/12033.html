@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">G7サミット開幕：米イラン情勢と日本の橋渡し役としての展望</h1>
+  <p>フランスのエビアンで開催されたG7サミットを軸に、アメリカとイランの戦闘終結に向けた「覚書き」の背景、エネルギー安全保障、重要鉱物を巡る国際的な主導権争い、そしてG7という枠組み自体の変容と将来像について解説しています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">G7サミット</span>
+    <span class="opt-a-tag">エビアン</span>
+    <span class="opt-a-tag">覚書き（メモランダム）</span>
+    <span class="opt-a-tag">ホルムズ海峡</span>
+    <span class="opt-a-tag">エネルギー安全保障</span>
+    <span class="opt-a-tag">高市首相</span>
+    <span class="opt-a-tag">重要鉱物（クリティカルミネラル）</span>
+    <span class="opt-a-tag">CSIS</span>
+    <span class="opt-a-tag">G9拡大構想</span>
+    <span class="opt-a-tag">トランプ大統領</span>
+    <span class="opt-a-tag">マクロン大統領</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 「覚書き（メモランダム）」の言葉の背景</h2>
+  <ul class="opt-a-list">
+    <li><strong>和語としての由来</strong>：外交用語の多くが漢語由来である中、「覚書き」は江戸時代から続く日本古来の和語。</li>
+    <li><strong>概念の継承</strong>：明治時代に西洋から「備忘録」「共通の取決め」という概念が入ってきた際、新造語を作らずに既存の「覚書き」を当てはめた。</li>
+    <li><strong>現代の意義</strong>：21世紀の国家間の約束事を表す言葉として、江戸時代からの言葉が生き続けている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 米イラン戦闘終結とG7の対応</h2>
+  <ul class="opt-a-list">
+    <li><strong>事前通告の欠如</strong>：アメリカとイスラエルによるイラン攻撃は、イギリス以外のG7諸国に事前通告がなかった。
+      <ul>
+        <li>イギリスは基地使用を打診されたが拒否。</li>
+        <li>G7内でアメリカと他国の立場の違いが表面化している。</li>
+      </ul>
+    </li>
+    <li><strong>戦闘終結に向けた覚書き</strong>：
+      <ul>
+        <li>署名者：アメリカ側は<strong>トランプ大統領</strong>と<strong>バンス副大統領</strong>、イラン側は<strong>ガリバフ国会議長</strong>。</li>
+        <li>署名方式：デジタル署名が完了しており、6月19日にスイスで正式署名予定。</li>
+        <li>主な内容：<strong>ホルムズ海峡の全面開放</strong>（19日〜）、制裁緩和の枠組み。</li>
+      </ul>
+    </li>
+    <li><strong>サミットの論点</strong>：軍事的対立から外交的解決へ舵を切る中、中東の今後やエネルギー安全保障の再構築が議論される。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 日本が提案する「エネルギー安全保障3原則」</h2>
+  <p>高市首相がサミットで提案する、日本の主導権確保を狙った共通認識の形成案。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>原則</th>
+        <th>内容の詳細</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1. 安定供給の確保</strong></td>
+        <td>エネルギー資源の途絶を防ぐための国際的な協力体制。</td>
+      </tr>
+      <tr>
+        <td><strong>2. サプライチェーンの強靭化</strong></td>
+        <td>特定の供給源に依存しない多様なルートの構築。</td>
+      </tr>
+      <tr>
+        <td><strong>3. 移行期の安全性担保</strong></td>
+        <td>クリーンエネルギーへの移行過程におけるエネルギー不足やリスクの回避。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 経済安全保障：重要鉱物を巡る対立と日本の役割</h2>
+  <ul class="opt-a-list">
+    <li><strong>アメリカの独自計画</strong>：
+      <ul>
+        <li><strong>重要鉱物（クリティカルミネラル）</strong>の価格設定を、国防総省のAIモデルに基づき決定するシステムを提唱。</li>
+        <li>目的は中国を睨んだ価格統制と維持。</li>
+      </ul>
+    </li>
+    <li><strong>各国の反応</strong>：
+      <ul>
+        <li>G7他国は懐疑的。特にヨーロッパ諸国はアメリカへの権力集中を警戒。</li>
+        <li>アメリカ国内の産業界でも賛否が分かれている。</li>
+      </ul>
+    </li>
+    <li><strong>日本の橋渡し役</strong>：
+      <ul>
+        <li>G7各国での<strong>鉱物資源の共同備蓄制度</strong>の立ち上げを支援・提案。</li>
+        <li>アメリカの強硬姿勢とヨーロッパの警戒感の間を繋ぐ存在として注目されている。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 G7の変容と「G9」への拡大構想</h2>
+  <p>シンクタンクCSISの分析に基づく、G7の実効性と枠組みの見直し議論。</p>
+
+  <div class="diagram-container">
+    <svg width="100%" height="180" viewBox="0 0 600 180">
+      <!-- G7 Circle -->
+      <rect x="50" y="40" width="180" height="100" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" />
+      <text x="140" y="75" text-anchor="middle" font-weight="bold" font-size="18">G7</text>
+      <text x="140" y="100" text-anchor="middle" font-size="12">GDPシェア: 44%</text>
+      <text x="140" y="120" text-anchor="middle" font-size="12">人口シェア: 10%以下</text>
+
+      <!-- Arrow -->
+      <path d="M250 90 L330 90" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+      <text x="290" y="80" text-anchor="middle" font-size="12" fill="#60a5fa">拡大提言</text>
+
+      <!-- G9 Circle -->
+      <rect x="350" y="40" width="200" height="100" rx="8" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="2" />
+      <text x="450" y="75" text-anchor="middle" font-weight="bold" font-size="18">G9 構想</text>
+      <text x="450" y="105" text-anchor="middle" font-size="14">+ オーストラリア</text>
+      <text x="450" y="125" text-anchor="middle" font-size="14">+ 韓国</text>
+    </svg>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>影響力の低下</strong>：1980年には世界GDPの60%を占めていたが、現在は44%まで減少。人口比も10%を割り込んでいる。</li>
+    <li><strong>課題の広域化</strong>：AI、気候変動、食料安全保障、対中国など、扱うテーマは拡大し続けている。</li>
+    <li><strong>新メンバーの台頭</strong>：
+      <ul>
+        <li><strong>韓国</strong>：デジタル科学技術分野でアメリカに次ぐ世界2位の評価。</li>
+        <li><strong>オーストラリア</strong>：多くの指標でG7諸国に匹敵する成績。</li>
+      </ul>
+    </li>
+    <li><strong>実効性の向上</strong>：CSISは、多極化する世界に対応するため、韓国・オーストラリアを加えた<strong>G9への拡大</strong>と制度の見直しを提言している。</li>
+  </ul>
+
+  <blockquote>
+    世界のリーダーが集まり議論すること自体の重要性は揺るがないが、形骸化を防ぎ、具体的なルール形成ができる場へとアップデートできるかが問われている。
+  </blockquote>
+
+</body>
+</html>
