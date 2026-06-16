@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "○";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">子育てのラジオ「Teacher Teacher」：新刊出版と5つのお知らせ</h1>
+  <p>パーソナリティのはるか氏とひとし氏が、福岡・天神を歩きながら最新の活動報告を行うエピソード。新しい書籍の出版決定を中心に、豪華ゲストとのコラボ、新番組の開始、法人向け福利厚生サービスの構想など、番組の活動が多角的に広がっている様子が語られます。後半では、共著者であるソーシャルワーカーのクミ氏を迎え、本に込めた「孤独にさせない子育て」への熱い想いが深掘りされます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">応用行動分析学（ABA）</span>
+    <span class="opt-a-tag">子育てフレームワーク大全</span>
+    <span class="opt-a-tag">産業編集センター</span>
+    <span class="opt-a-tag">渡辺道治</span>
+    <span class="opt-a-tag">杉部さん</span>
+    <span class="opt-a-tag">福利厚生</span>
+    <span class="opt-a-tag">フリースクール「コンコン」</span>
+    <span class="opt-a-tag">ソーシャルワーカー</span>
+    <span class="opt-a-tag">ヤングケアラー</span>
+    <span class="opt-a-tag">バイブス</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 お知らせ1：新刊『子育てフレームワーク大全』の出版</h2>
+  <ul class="opt-a-list">
+    <li><strong>書籍タイトル：</strong>『子供の行動が変わった 子育てフレームワーク大全』</li>
+    <li><strong>出版社：</strong>産業編集センター</li>
+    <li><strong>発売予定日：</strong>2024年7月15日（予約受付中）</li>
+    <li><strong>主な内容と特徴：</strong>
+      <ul>
+        <li><strong>応用行動分析学（ABA）</strong>をベースに、子育ての悩みを冷静に解決するための「型」を体系化した本。</li>
+        <li>ビジネス思考を持つ人にも読みやすいフレームワーク形式を採用。</li>
+        <li>ソーシャルワーカーのクミ氏が1対1で行っている伴走支援プログラム「日々」のノウハウを凝縮。</li>
+        <li>客観的に状況を書き出す<strong>ワークシート</strong>が付属しており、読者が自ら取り組める構成。</li>
+        <li>はるか氏、ひとし氏も解説役として登場し、4人（＋パートナーがいれば5人）で子供を育てる感覚を届ける。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 お知らせ2：教育界のレジェンド・渡辺道治氏とのコラボ</h2>
+  <ul class="opt-a-list">
+    <li><strong>ゲスト：</strong>渡辺道治（わたなべ みちはる）氏。教員界で非常に著名な人物。</li>
+    <li><strong>放送予定：</strong>来週放送。</li>
+    <li><strong>内容：</strong>Teacher Teacherでも紹介した「なしなしルール」や、心を育てる「語り」についての深いトーク。</li>
+    <li><strong>事前準備：</strong>渡辺氏のVoicyを聴いておくと、より内容がスムーズに理解できる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 お知らせ3：杉部さんとの新番組スタート</h2>
+  <ul class="opt-a-list">
+    <li><strong>共演者：</strong>杉部氏（「ママが自分を取り戻すラジオ」パーソナリティ）。</li>
+    <li><strong>番組の性質：</strong>教育や子育てをテーマに含みつつ、より深い雑談を行う番組。</li>
+    <li><strong>背景：</strong>Teacher Teacherが世に広まるきっかけを作ってくれた恩人である杉部氏との待望のコラボ。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 お知らせ4：法人向け福利厚生・スポンサー募集</h2>
+  <ul class="opt-a-list">
+    <li><strong>発案者：</strong>株式会社「今（イム）」代表の海野氏。</li>
+    <li><strong>ビジネスモデルの構想：</strong>
+      <ul>
+        <li>企業がTeacher Teacherのスポンサーになる。</li>
+        <li>社員向けの<strong>福利厚生</strong>として、子育てセミナーや個別相談を提供。</li>
+        <li>その収益を、Teacher Teacherが運営する<strong>無料フリースクール「コンコン」</strong>の運営費に充てる。</li>
+      </ul>
+    </li>
+    <li><strong>募集：</strong>研修費の活用や、子育て支援を導入したい企業の担当者からの連絡を募集中。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+      <!-- Nodes -->
+      <rect x="10" y="70" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="80" y="105" text-anchor="middle" font-size="14" font-weight="bold">企業 (スポンサー)</text>
+      
+      <rect x="230" y="70" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="300" y="105" text-anchor="middle" font-size="14" font-weight="bold">Teacher Teacher</text>
+      
+      <rect x="450" y="70" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="520" y="105" text-anchor="middle" font-size="14" font-weight="bold">フリースクール</text>
+
+      <!-- Arrows -->
+      <path d="M 150 90 L 220 90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+      <text x="185" y="80" text-anchor="middle" font-size="11">資金提供</text>
+      
+      <path d="M 220 110 L 150 110" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+      <text x="185" y="130" text-anchor="middle" font-size="11">セミナー・相談</text>
+
+      <path d="M 370 100 L 440 100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+      <text x="405" y="90" text-anchor="middle" font-size="11">運営費</text>
+
+      <!-- Arrowhead definition -->
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+          <path d="M0,0 L10,5 L0,10 Z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="text-align: center; font-size: 0.85em; color: #a78bfa; margin-top: 10px;">三方良しの福利厚生・支援サイクル</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 お知らせ5：料理回のアフターケア（サルシッチャ）</h2>
+  <ul class="opt-a-list">
+    <li><strong>課題：</strong>サルシッチャを焼く際の激しい油跳ね。</li>
+    <li><strong>解決策：</strong>焼く前に<strong>「蒸し焼き」</strong>にする、または<strong>「電子レンジでチン」</strong>してから表面を焼く。</li>
+    <li><strong>結果：</strong>油跳ねが劇的に少なくなり、調理が容易になる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 クミ氏の哲学：孤独にさせない子育て</h2>
+  <ul class="opt-a-list">
+    <li><strong>ABA（応用行動分析学）へのスタンス：</strong>
+      <ul>
+        <li>子供をコントロールしたり、お利口さんにしたりするための道具ではない。</li>
+        <li>暴力や癇癪などの「困った行動」を減らし、<strong>笑顔の時間を増やす</strong>ための手段。</li>
+        <li>行動のレパートリー（引き出し）を増やすことで、親子の心の余裕を作る。</li>
+      </ul>
+    </li>
+    <li><strong>ソーシャルワーカーを志した原体験：</strong>
+      <ul>
+        <li>中学生時代、不登校の友人がいた。その友人は多子世帯の長子（ヤングケアラー）で、家庭の事情で学校に来られなかった。</li>
+        <li>カウンセラーや教師だけでは介入できない「家庭の孤立」を目の当たりにし、そこを支援できる<strong>スクールソーシャルワーカー</strong>の存在を知った。</li>
+      </ul>
+    </li>
+    <li><strong>活動の核心：</strong>
+      <ul>
+        <li>「孤独さえなければ、子育ての課題の多くは課題ではなくなる」という信念。</li>
+        <li>答えを教えることよりも、<strong>「一緒に考える仲間がいる」</strong>という感覚を提供することを重視。</li>
+      </ul>
+    </li>
+    <li><strong>バイブスの伝播：</strong>
+      <ul>
+        <li>はるか氏が提唱する「バイブス（心の震え）」の重要性。</li>
+        <li>クミ氏の熱意がはるか氏に伝わり、それが番組を通じてリスナーに伝わり、新たな居場所作りや活動に繋がっていく連鎖。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 その他・視聴案内</h2>
+  <ul class="opt-a-list">
+    <li><strong>ビデオポッドキャスト：</strong>Spotifyでは映像付きで視聴可能。音声だけでは伝わりにくいシーンも確認できる。</li>
+    <li><strong>お便り募集：</strong>書籍の感想や、福利厚生導入の相談などは番組のお便りフォームまで。</li>
+  </ul>
+
+</body>
+</html>
