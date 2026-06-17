@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">日銀の利上げ決定と長期金利上昇のメカニズム</h1>
+  <p>
+    本エピソードでは、東短リサーチのチーフエコノミスト加藤出氏をゲストに迎え、日銀が決定した利上げの背景、長期金利が上昇する理由、そして米国の新体制下でのFOMCの注目点について、専門的な視点から詳しく解説しています。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">日本銀行</span>
+    <span class="opt-a-tag">利上げ</span>
+    <span class="opt-a-tag">長期金利</span>
+    <span class="opt-a-tag">10年物国債</span>
+    <span class="opt-a-tag">実質金利</span>
+    <span class="opt-a-tag">インフレ目標2%</span>
+    <span class="opt-a-tag">円安</span>
+    <span class="opt-a-tag">FOMC</span>
+    <span class="opt-a-tag">ケビン・ウォーシュ</span>
+    <span class="opt-a-tag">アーサーバーンズ</span>
+    <span class="opt-a-tag">財政規律</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 日銀の利上げ決定とその背景</h2>
+  <ul class="opt-a-list">
+    <li><strong>6月の会合での利上げ決定:</strong> 政策金利を<strong>1%</strong>に引き上げ。市場の予想通りではあったが、本来は4月に実施したかった可能性が高い。</li>
+    <li><strong>政治的背景:</strong> 石破政権（※音声内では高市政権と言及されているが文脈上、現政権への配慮を示唆）との調整。当初は金利を上げたくないスタンスだったが、米国の<strong>ベッセント財務長官</strong>による「円安阻止のために金利を上げるべき」という強い口調の要請が影響した可能性。</li>
+    <li><strong>実質金利の低さ:</strong> インフレ率を差し引いた実質金利が依然として極めて低く、放置すると1970年代のような激しいインフレを招く恐れがあるため、低すぎる金利を是正する動機があった。</li>
+    <li><strong>生活への影響:</strong> 1%程度の金利では経済への悪影響は限定的。むしろ利上げをしないことで<strong>円安</strong>が進み、輸入物価上昇による生活コスト増大の方がリスクとして大きい。</li>
+    <li><strong>市場の懸念:</strong> 日銀の利上げペース（半年に0.25%程度）では遅すぎると市場は見ている。欧州（ECB）や米国（FRB）の動きに対し、金利差が縮まらないことへの不安が円安継続の一因。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 金利の基礎知識と長期金利の決まり方</h2>
+  <ul class="opt-a-list">
+    <li><strong>短期金利と長期金利の区分:</strong> 一般的に1年までが短期、1年超が長期。5年程度を中期、10年前後を長期、20〜30年を<strong>超長期</strong>と呼ぶ。</li>
+    <li><strong>10年物国債の重要性:</strong> 発行額が多く、市場で最も代表的な長期金利の指標とされる。</li>
+    <li><strong>長期金利を動かす3つの要素:</strong>
+      <ul>
+        <li><strong>日銀の政策期待:</strong> 今後10年間の短期金利（1日の金利の積み重ね）がどう推移するかという市場の予想。</li>
+        <li><strong>経済・インフレ見通し:</strong> 景気が良くなるか、物価が上がるかという予測。</li>
+        <li><strong>リスクプレミアム（財政の信用）:</strong> 10年後に日本政府がきちんとお金を返せるかという信用度。</li>
+      </ul>
+    </li>
+    <li><strong>価格と利回りの逆相関:</strong> 国債の価格が上がれば金利（利回り）は下がり、価格が下がれば金利は上がるという関係性。</li>
+  </ul>
+
+  <svg width="100%" viewBox="0 0 600 200" style="background: #1a1a3e; border-radius: 8px; margin: 1em 0;">
+    <rect x="50" y="50" width="200" height="100" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" />
+    <text x="150" y="105" text-anchor="middle" font-size="16" font-weight="bold">国債価格が下落</text>
+    
+    <path d="M 280 100 L 320 100" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+      </marker>
+    </defs>
+
+    <rect x="350" y="50" width="200" height="100" rx="8" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="2" />
+    <text x="450" y="105" text-anchor="middle" font-size="16" font-weight="bold">長期金利が上昇</text>
+    
+    <text x="300" y="160" text-anchor="middle" font-size="14" fill="#d4d4e8">（逆相関の関係）</text>
+  </svg>
+
+  <h2 class="opt-a-section-title">📌 インフレ目標2%と日本の現状</h2>
+  <ul class="opt-a-list">
+    <li><strong>2%目標の理由:</strong> 不景気時にデフレ（マイナスインフレ）に陥らないための「クッション（バッファー）」として、平時から少し高めのインフレを目指す世界的な潮流。</li>
+    <li><strong>物価の基調:</strong> 表面的な数字は弱く見えるが、政府の補助金（ガソリン等）を除いた「元の部分」では、すでに<strong>2%をしっかり超えている</strong>。</li>
+    <li><strong>日銀のジレンマ:</strong> 「物価の基調はまだ2%に届いていない」という建前で利上げを遅らせると、市場で円安が進み、結果として輸入物価が上がり生活が苦しくなるという歪みが生じている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 国際比較と日本の財政リスク</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>国名</th>
+        <th>長期金利（10年）の上昇幅（昨年9月末比）</th>
+        <th>特徴・背景</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>日本</strong></td>
+        <td><strong>+1.07%</strong></td>
+        <td>主要国で突出して上昇。財政政策への市場の警告。</td>
+      </tr>
+      <tr>
+        <td>米国</td>
+        <td>+0.43%</td>
+        <td>上昇しているが日本の半分以下。</td>
+      </tr>
+      <tr>
+        <td>ドイツ</td>
+        <td>+0.34%</td>
+        <td>比較的安定。</td>
+      </tr>
+      <tr>
+        <td>スイス</td>
+        <td>0.00%</td>
+        <td>横ばい。インフレが低いため安定。</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="opt-a-list">
+    <li><strong>超長期金利の逆転:</strong> 日本の政策金利は世界最低水準だが、<strong>30年物金利</strong>はスイスなどより高く、先進国の中でも高い部類に入り始めている。</li>
+    <li><strong>市場の視線:</strong> 「税収が増えているのに借金を減らさず、補助金などで国民に還元する姿勢」が、海外投資家からは<strong>財政規律の欠如</strong>と見なされ、将来のインフレリスクとして長期金利を押し上げている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 米国FOMCの注目点と新議長ケビン・ウォーシュ</h2>
+  <ul class="opt-a-list">
+    <li><strong>ケビン・ウォーシュ新議長のデビュー戦:</strong> 6月のFOMCが初仕事。直ちに利上げ・利下げはないと見られるが、声明文の変化が焦点。</li>
+    <li><strong>パウエル前議長の置き土産:</strong> 「インフレが下がれば利下げ」というフレーズをあえて残して退任。これを新議長がどう扱うか。</li>
+    <li><strong>ウォーシュ氏の人物像:</strong>
+      <ul>
+        <li>元々は<strong>タカ派</strong>（緩和に批判的）。</li>
+        <li>トランプ氏に近いとされるが、本人は政治的独立性を重視。</li>
+        <li><strong>アーサーバーンズの再来</strong>（政治に屈して大インフレを招いた70年代の議長）になることを極端に嫌っている。</li>
+      </ul>
+    </li>
+    <li><strong>今後の注目指標:</strong> 雇用統計の強さ、そして何より<strong>国民のインフレ予想</strong>（特に5〜10年の長期予想）。これが上がるとFRBは利上げを急ぐ可能性がある。</li>
+  </ul>
+
+  <blockquote>
+    金利は、経済、物価、さらには政治の状況までをすべて織り込んで決まる「世界の鏡」のようなものである。金利を読み解くことは、日本と世界の未来を読み解くことに直結する。
+  </blockquote>
+
+</body>
+</html>
