@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">#010 Unitree Robotics徹底解説。なぜ世界シェアNo.1を握れたのか</h1>
+  <p>
+    中国のロボットメーカー<strong>Unitree Robotics（ユニツリー）</strong>が、なぜ四足歩行ロボットで世界シェアの6〜7割を握り、ヒューマノイド開発でも最前線を走れるのかを深掘りします。創業者の狂気的な開発背景から、圧倒的な低価格を実現する戦略までを解説します。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">Unitree Robotics</span>
+    <span class="opt-a-tag">王興興 (Wang Xingxing)</span>
+    <span class="opt-a-tag">四足歩行ロボット</span>
+    <span class="opt-a-tag">ヒューマノイド</span>
+    <span class="opt-a-tag">G1</span>
+    <span class="opt-a-tag">H1</span>
+    <span class="opt-a-tag">低価格戦略</span>
+    <span class="opt-a-tag">ロコモーション派</span>
+    <span class="opt-a-tag">Play Robotics</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 創業者の人物像：王興興（ワン・シンシン）</h2>
+  <ul class="opt-a-list">
+    <li><strong>1990年生まれの若き天才</strong>：現在34歳。石膏省出身の普通の家庭で育つ。</li>
+    <li><strong>叩き上げのハードウェアオタク</strong>：
+      <ul>
+        <li>中学生の頃からジェットエンジンを自作。</li>
+        <li>手には工作ナイフの切り傷や、爆発による負傷の跡が絶えない。</li>
+        <li>大学時代、修士論文のテーマで作った四足歩行ロボットの動画がネットで話題になり、創業のきっかけとなる。</li>
+      </ul>
+    </li>
+    <li><strong>圧倒的な「作る力」</strong>：お金がない学生時代、廃材やドローン部品を組み合わせて35万円ほどで四足歩行ロボットを完成させた。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Unitreeが世界を席巻した「安さ」の秘密</h2>
+  <ul class="opt-a-list">
+    <li><strong>競合比30倍の価格破壊</strong>：
+      <ul>
+        <li>ボストン・ダイナミクス社が約1,100万円で販売していた時代に、<strong>約40万円</strong>の「Go1」を投入。</li>
+        <li>これにより、世界中の研究機関や大学がこぞって購入し、シェア60〜70%を独占。</li>
+      </ul>
+    </li>
+    <li><strong>コア部品の内製化</strong>：
+      <ul>
+        <li>ロボットのコストの40〜60%を占める<strong>サーボモーター、減速機、コントローラー</strong>を自社開発。</li>
+        <li>ドローン市場で培われた中国のサプライチェーンを活用し、安価なパーツを転用・改良。</li>
+      </ul>
+    </li>
+    <li><strong>「100点じゃなくても動く」哲学</strong>：
+      <ul>
+        <li>完璧を求めすぎず、まずは動くものを作る。</li>
+        <li>ハードウェアの安定性に特化し、脳（AI・ソフトウェア）の部分はオープンソース化して世界中の研究者に任せる戦略。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 主要プロダクトと価格帯</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>モデル名</th>
+        <th>タイプ</th>
+        <th>特徴・価格感</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Go1 / Go2</strong></td>
+        <td>四足歩行（犬型）</td>
+        <td>世界シェアNo.1。約40万円〜。</td>
+      </tr>
+      <tr>
+        <td><strong>H1</strong></td>
+        <td>ヒューマノイド</td>
+        <td>身長180cm。約1,300万円。大型で制御が高度。</td>
+      </tr>
+      <tr>
+        <td><strong>G1</strong></td>
+        <td>ヒューマノイド</td>
+        <td><strong>約200万円台〜</strong>。業界最安値クラス。カンフーやダンスが可能。</td>
+      </tr>
+      <tr>
+        <td><strong>R1</strong></td>
+        <td>ヒューマノイド</td>
+        <td>教育・研究用。<strong>約60万円〜</strong>（中国現地価格）。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 技術的アプローチ：ロコモーション派 vs マニプレーション派</h2>
+  <p>ヒューマノイド開発には大きく分けて2つの派閥があり、Unitreeは「移動の安定性」を最優先しています。</p>
+
+  <svg width="100%" viewBox="0 0 600 250" style="background: #1a1a3e; border-radius: 8px; margin: 1em 0;">
+    <!-- Locomotion Box -->
+    <rect x="50" y="50" width="220" height="120" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" />
+    <text x="160" y="85" font-size="16" font-weight="bold" text-anchor="middle">ロコモーション派</text>
+    <text x="160" y="115" font-size="13" text-anchor="middle">（Unitreeなど）</text>
+    <text x="160" y="145" font-size="13" text-anchor="middle">歩く・走る・蹴られても耐える</text>
+    
+    <!-- Arrow -->
+    <path d="M 280 110 L 320 110" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+    
+    <!-- Manipulation Box -->
+    <rect x="330" y="50" width="220" height="120" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" />
+    <text x="440" y="85" font-size="16" font-weight="bold" text-anchor="middle">マニプレーション派</text>
+    <text x="440" y="115" font-size="13" text-anchor="middle">（Figure / Agibotなど）</text>
+    <text x="440" y="145" font-size="13" text-anchor="middle">掴む・精密作業・工場実務</text>
+
+    <text x="300" y="210" font-size="14" text-anchor="middle" fill="#a78bfa">最終的には両方の統合が必要</text>
+    
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+      </marker>
+    </defs>
+  </svg>
+
+  <blockquote>
+    <strong>王CEOの主張：</strong>「手でものが掴めても、足元が不安定なら何もできない。まずは殴られても倒れない安定性が不可欠だ。」
+  </blockquote>
+
+  <h2 class="opt-a-section-title">📌 Play Roboticsの最新動向</h2>
+  <ul class="opt-a-list">
+    <li><strong>中国ロボット工場見学ツアー</strong>：
+      <ul>
+        <li>3泊4日で主要なヒューマノイドスタートアップを巡るプログラムを準備中。</li>
+        <li>一般の人も参加可能で、200社あると言われる中国のロボット企業をカスタムして見学。</li>
+      </ul>
+    </li>
+    <li><strong>ヒューマノイド比較アプリ</strong>：
+      <ul>
+        <li>世界中の約150体のヒューマノイドをパラメータ（可動域、体重、機能）で比較できるアプリを開発中。</li>
+      </ul>
+    </li>
+    <li><strong>国内導入支援</strong>：
+      <ul>
+        <li>すでに1社導入が決定。中国製ロボットを日本仕様にカスタムし、安全対策を含めた導入マニュアルを作成中。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 今後の展望とコミュニティ企画</h2>
+  <ul class="opt-a-list">
+    <li><strong>市場の成熟度</strong>：現在は「10歳児」レベル。本格的な実用化にはあと3〜5年かかる見込み。</li>
+    <li><strong>リスナー参加型プロジェクト</strong>：
+      <ul>
+        <li>1人1万円ずつ出し合って200万円の「G1」を購入し、みんなで育てる（教え込む）企画を検討中。</li>
+        <li>「将棋を指させたい」「カタン（ボードゲーム）をさせたい」「お姫様抱っこで運んでほしい」などのアイデアを募集中。</li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+</html>
