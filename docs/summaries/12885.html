@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">米国による対イラン海上封鎖の全面解除と暫定和平合意の内幕</h1>
+  <p>アメリカ政府がイランに対する海上封鎖を全面的に解除したことを発表しました。トランプ大統領による電撃的な暫定和平合意の署名と、その背景にある米国内の政治的・経済的事情、そして今後の原油市場や核問題への影響について整理します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">海上封鎖解除</span>
+    <span class="opt-a-tag">暫定和平合意</span>
+    <span class="opt-a-tag">トランプ大統領</span>
+    <span class="opt-a-tag">G7サミット</span>
+    <span class="opt-a-tag">カタール</span>
+    <span class="opt-a-tag">ホルムズ海峡</span>
+    <span class="opt-a-tag">インフレ対策</span>
+    <span class="opt-a-tag">中間選挙</span>
+    <span class="opt-a-tag">原油供給過剰</span>
+    <span class="opt-a-tag">核開発制限</span>
+    <span class="opt-a-tag">IAEA</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 電撃的な合意と海上封鎖の解除</h2>
+  <ul class="opt-a-list">
+    <li><strong>海上封鎖の全面解除:</strong> 日本時間6月19日午前2時過ぎ、アメリカ中央軍が公式SNSでイランの公安および沿岸海域に対する封鎖をすべて解除したと発表。</li>
+    <li><strong>暫定和平合意の署名:</strong> 現地時間17日夜、フランス・エビアンでのG7サミット中にトランプ大統領が署名。4ヶ月に及んだ対イラン紛争が停戦へ。</li>
+    <li><strong>中継ぎ役の存在:</strong> カタールの中介団による<strong>4週間の極秘シャトル外交</strong>が合意の舞台裏で機能。</li>
+    <li><strong>トランプ氏の反応:</strong> 自身のSNSで「石油を流そう」と投稿し、勝利を宣言。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+      <!-- Nodes -->
+      <rect x="10" y="50" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="80" y="85" text-anchor="middle" font-size="14">対イラン紛争<br/>(4ヶ月間)</text>
+      
+      <rect x="230" y="50" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="85" text-anchor="middle" font-size="14">暫定和平合意<br/>(G7サミット)</text>
+      
+      <rect x="450" y="50" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="520" y="85" text-anchor="middle" font-size="14">海上封鎖解除<br/>(6月19日)</text>
+      
+      <!-- Arrows -->
+      <path d="M 150 80 L 220 80" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+      <text x="185" y="70" text-anchor="middle" font-size="12" fill="#60a5fa">カタールの仲介</text>
+      
+      <path d="M 370 80 L 440 80" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+      <text x="405" y="70" text-anchor="middle" font-size="12" fill="#60a5fa">公式発表</text>
+
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 合意の条件と原油市場への影響</h2>
+  <ul class="opt-a-list">
+    <li><strong>ホルムズ海峡の通行無料化:</strong> イランは今後<strong>60日間に限り</strong>、世界の船舶からの通行料を無料化することを約束。</li>
+    <li><strong>運行体制の整備:</strong> 30日以内に完全な運行状態へ整備することを約束。</li>
+    <li><strong>待機中の原油量:</strong> ペルシャ湾には<strong>31隻の超大型タンカー</strong>が足止めされており、およそ<strong>6200万バレル</strong>の原油が積載されている。</li>
+    <li><strong>供給過剰のリスク:</strong> 深刻な供給不足から一転、数週間後にはアジアの声優所などが供給過剰の波に飲み込まれるリスクが浮上。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 トランプ政権の政治的背景と譲歩</h2>
+  <ul class="opt-a-list">
+    <li><strong>国内事情による焦り:</strong> 深刻な物価高（インフレ）とガソリン代の高騰が、11月の<strong>中間選挙</strong>に悪影響を及ぼすことを危惧。</li>
+    <li><strong>大幅な譲歩:</strong> アメリカ国内の強硬派やイスラエルの猛反対を押し切り、イラン側に有利な条件を提示。
+      <ul>
+        <li>海上封鎖の全面解除。</li>
+        <li><strong>48兆円規模</strong>の復興資金という、イラン体制への最大級の経済支援。</li>
+      </ul>
+    </li>
+    <li><strong>見返りの少なさ:</strong> これら巨額支援の見返りは、わずか<strong>60日間という短期間の停戦約束</strong>に留まっている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 先送りされた課題：核問題</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>現状・課題</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>核施設の状態</strong></td>
+        <td>トランプ氏は「全滅した」と主張するが、IAEA（国際原子力機関）の査察が入るまで実態は不明。</td>
+      </tr>
+      <tr>
+        <td><strong>濃縮ウラン</strong></td>
+        <td>イランは依然として<strong>核爆弾12個分</strong>に相当する濃縮ウランを保有したまま。</td>
+      </tr>
+      <tr>
+        <td><strong>今後の交渉</strong></td>
+        <td>バンス副大統領とガリバフ国会議長がスイスで会談し、<strong>60日間の期限付き交渉</strong>がスタート。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 今後の注目点</h2>
+  <ul class="opt-a-list">
+    <li><strong>60日間の交渉の行方:</strong> 短期間の停戦中に、核開発制限をめぐる実効性のある合意ができるか。</li>
+    <li><strong>イスラエルの動向:</strong> アメリカの独断とも言える譲歩に対し、イスラエルがどのような反発・行動を見せるか。</li>
+    <li><strong>市場の反応:</strong> 6200万バレルの原油が一斉に市場に流れ出すことによる、世界的な原油価格の変動。</li>
+  </ul>
+
+  <blockquote>
+    今回の和平劇はトランプ氏の完全勝利ではなく、中間選挙を控えた国内政治の焦りから生まれた「極めて政治的なディール」という側面が強い。
+  </blockquote>
+
+</body>
+</html>
