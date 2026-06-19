@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list li ul {
+      list-style: none;
+      padding-left: 10px;
+      margin-top: 8px;
+    }
+    .opt-a-list li ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【土曜版 #83】深井龍之介さんと語る、資本主義と人文知、そして最近の日々</h1>
+  <p>株式会社コテン代表の深井龍之介氏をゲストに迎え、新刊『人文知は武器になる』を切り口に、現代資本主義が抱える構造的欠陥と、それに向き合う経営者の苦悩、そして深井氏自身の極めて個人的な心境の変化を深く掘り下げた対談エピソードです。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">人文知</span>
+    <span class="opt-a-tag">資本主義の批判的考察</span>
+    <span class="opt-a-tag">中長期合理性</span>
+    <span class="opt-a-tag">国家の弱体化</span>
+    <span class="opt-a-tag">株式会社の巨大化</span>
+    <span class="opt-a-tag">燃え尽き症候群</span>
+    <span class="opt-a-tag">内受容感覚</span>
+    <span class="opt-a-tag">自己開示</span>
+    <span class="opt-a-tag">知的好奇心</span>
+    <span class="opt-a-tag">ルールチェンジ</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 新刊『人文知は武器になる』の背景と反響</h2>
+  <ul class="opt-a-list">
+    <li><strong>執筆の動機</strong>：当初は本業への時間投資効率から執筆に消極的だったが、山口周氏との対談を機に、動画やポッドキャストでは届かない層へメッセージを届ける必要性を感じて出版を決意。</li>
+    <li><strong>驚異的な反響</strong>：発売2ヶ月で約6.7万部のベストセラー。本という媒体の「アーカイブ性」と「論理の精緻さ」を再認識。</li>
+    <li><strong>人文知への需要急増</strong>：ここ半年でビジネス界の人文知に対する関心が爆発。特にイスラエル・パレスチナ情勢などの地政学リスクが、既存のビジネスルールの限界を突きつけている。</li>
+    <li><strong>企業のインテリジェンス部門</strong>：30年〜100年単位の社会情勢を分析し経営に提言する部署の設置相談が急増（3年前の2社から現在は10社近くへ）。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 資本主義の「中心問題」と国家・企業の逆転構造</h2>
+  <ul class="opt-a-list">
+    <li><strong>国家の「老人化」と企業の「青年化」</strong>：
+      <ul>
+        <li><strong>国家</strong>：インフラ整備、教育、社会福祉などの公的機能を維持できなくなり、尊重はされるが力のない「老人」のような存在へ。</li>
+        <li><strong>巨大企業</strong>：国家レベルの資金、技術、人材を保有。生成AIや量子コンピュータ、軍事技術の主導権も民間が握る。</li>
+      </ul>
+    </li>
+    <li><strong>資本主義の定義と特徴</strong>：深井氏は資本主義を否定せず、その特徴（利益へのインセンティブ、期待値の定量化など）を冷静に分析。</li>
+    <li><strong>最大の問題点「中長期合理性への合意不能」</strong>：
+      <ul>
+        <li>資本主義社会では、短期的な利益（四半期決算など）には合意しやすいが、<strong>中長期的に合理的であっても、短期的に非合理なもの（環境問題、戦争抑止など）にリソースを割く合意が極めて困難</strong>。</li>
+        <li>「寄付」や「ソーシャルインパクト投資」は、短期利益を上げた後の「間接的な投資」であり、効率が悪すぎる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 250">
+      <!-- 背景 -->
+      <rect x="10" y="10" width="580" height="230" rx="12" fill="rgba(139, 92, 246, 0.05)" stroke="#8b5cf6" stroke-dasharray="4"/>
+      
+      <!-- 国家 -->
+      <rect x="50" y="60" width="180" height="100" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="140" y="100" text-anchor="middle" font-weight="bold" font-size="16">国家 (State)</text>
+      <text x="140" y="130" text-anchor="middle" font-size="13">「老人」の立場</text>
+      <text x="140" y="150" text-anchor="middle" font-size="11">公的機能の低下・資金不足</text>
+
+      <!-- 矢印 -->
+      <path d="M 250 110 L 330 110" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrowhead)"/>
+      <text x="290" y="95" text-anchor="middle" font-size="12" fill="#60a5fa">権力・リソースの移転</text>
+
+      <!-- 企業 -->
+      <rect x="350" y="60" width="200" height="100" rx="8" fill="rgba(96, 165, 250, 0.2)" stroke="#60a5fa"/>
+      <text x="450" y="100" text-anchor="middle" font-weight="bold" font-size="16">巨大企業 (Corp)</text>
+      <text x="450" y="130" text-anchor="middle" font-size="13">「青年」の立場</text>
+      <text x="450" y="150" text-anchor="middle" font-size="11">圧倒的技術・資金・社会的責任</text>
+
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.85em; color: #a78bfa; margin-top: 10px;">図：社会構造におけるパワーバランスの変化</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 経営者・深井龍之介の「現在地」と苦悩</h2>
+  <ul class="opt-a-list">
+    <li><strong>深刻な過労状態</strong>：身体的余裕がゼロ。朝起きた瞬間の第一声が「疲れた」。出張や講演の連続で心身ともに摩耗している。</li>
+    <li><strong>「はめ技」のダブルバインド</strong>：
+      <ul>
+        <li>やりたいことを進めたいが、進められないのもストレス。</li>
+        <li>休まなければならないが、休んでいる間も仕事が進まないことがストレス。</li>
+        <li>この「どちらを選んでもストレス」という状況から抜け出せない。</li>
+      </ul>
+    </li>
+    <li><strong>内受容感覚の低さ</strong>：自分の体の限界を察知する能力が低く、完全にダウンするまで「やりすぎ」に気づけない。</li>
+    <li><strong>「有名」であることへの嫌悪</strong>：本質的に有名になりたくない。期待値が上がりすぎることを恐れ、最近はあえて「性格の悪さ」や「不完全さ」を出すようにしている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 価値観とパーソナリティの深層</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>深井氏の視点・感覚</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>幸福の源泉</strong></td>
+        <td>知的好奇心の充足。自分の案を凌駕する「完璧な代案」を出された時が最もハッピー。</td>
+      </tr>
+      <tr>
+        <td><strong>行動原理</strong></td>
+        <td>「愛情」よりも「非合理性への憤り（行き通りエンジン）」。なぜ戦争のメカニズムすら解明されていないのか、という問い。</td>
+      </tr>
+      <tr>
+        <td><strong>生存欲求</strong></td>
+        <td>長生きしたい欲求はほぼゼロ。後悔せずにスパッと死ぬのが理想。</td>
+      </tr>
+      <tr>
+        <td><strong>公共性</strong></td>
+        <td>元々は公共性が著しく低い「クズ」だと自認。だからこそ、他者のことを考える一般人の行動が純粋に不思議に見える。</td>
+      </tr>
+      <tr>
+        <td><strong>自由意志</strong></td>
+        <td>自分に自由意志はないと感じる。やらざるを得ない（埋め込まれた）使命感に従っている感覚。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 社会への提言と今後の展望</h2>
+  <ul class="opt-a-list">
+    <li><strong>ルールチェンジの必要性</strong>：生成AIの登場や世界情勢の激変を受け、今この瞬間に株式会社のあり方を変えなければ、次世代に問題を先送りすることになる。</li>
+    <li><strong>「代案」の募集</strong>：単なる批判や否定ではなく、資本主義の中心問題を解決するための「建設的な代案」を求めている。</li>
+    <li><strong>実像の提示</strong>：マスメディア的な「清廉潔白なリーダー像」ではなく、不完全で性格の悪い部分も含めた「実像」を伝えることで、複雑な人間性を包摂できる社会を目指す。</li>
+    <li><strong>組織の代替不可能性</strong>：コテンという会社が深井氏個人の才能に依存しすぎている現状を課題視しつつ、それをどう組織化・代替していくかを模索中。</li>
+  </ul>
+
+  <blockquote style="margin-top: 2em;">
+    「中長期合理性に集中しないという選択をしているビジネスパーソンに問いたい。自分の子供の未来が安泰だと思っている人は少ないはずなのに、なぜ今、ルールを変えようとしないのか。僕は理想主義者ではなく、極めて冷徹に合理性の話をしている。」
+  </blockquote>
+
+</body>
+</html>
