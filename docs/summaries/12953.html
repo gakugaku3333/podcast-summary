@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .svg-container {
+      background: #1a1a3e;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 1em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【荒木博行】疑いつつ、世界を編集せよ『擬（もどき）』#59</h1>
+  <p>
+    株式会社学びデザイン代表の<strong>荒木博行</strong>氏をゲストに迎え、編集工学の創始者・<strong>松岡正剛</strong>氏の著書<strong>『擬（もどき）』</strong>を紐解くエピソード。
+    「世界はありのままではない」という前提に立ち、編集という手法を通じていかに世界を面白く捉え直すか、その哲学と実践について語られています。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">松岡正剛</span>
+    <span class="opt-a-tag">編集工学</span>
+    <span class="opt-a-tag">ミネルバ式リーダーシップ</span>
+    <span class="opt-a-tag">アクティブラーニング</span>
+    <span class="opt-a-tag">3A（アナロジー・アフォーダンス・アブダクション）</span>
+    <span class="opt-a-tag">グレゴリー・ベイトソン</span>
+    <span class="opt-a-tag">二重記述</span>
+    <span class="opt-a-tag">坂本龍一</span>
+    <span class="opt-a-tag">コピーレフト</span>
+    <span class="opt-a-tag">別用の可能性</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 導入：ミネルバ式学習と「名前をつける」重要性</h2>
+  <ul class="opt-a-list">
+    <li><strong>ミネルバ式リーダーシッププログラム</strong>：荒木氏とホストの岩崎氏が同期の講師として就任。</li>
+    <li><strong>オンライン学習の課題</strong>：集中力の維持が難しく、内職や離脱が起きやすい環境。</li>
+    <li><strong>エンゲージメントの設計</strong>：受講生を前のめりにさせるための緻密な仕組み（アクティブラーニング）がミネルバの魅力。</li>
+    <li><strong>言語化の力</strong>：無意識に行っていた教育手法に「学習の科学」として名前がつくことで、意識的に実践できるようになる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 書籍『擬（もどき）』の世界観</h2>
+  <ul class="opt-a-list">
+    <li><strong>松岡正剛との関わり</strong>：荒木氏は松岡氏が主催する塾「ハイパープラットフォームIDA」に通い、この本と格闘した。</li>
+    <li><strong>世界の捉え方</strong>：世界は一つではなく、見えている通りにはなっていない。すべては<strong>「もどき（擬）」</strong>であるという認識。</li>
+    <li><strong>編集の可能性</strong>：世界が確定したものではないからこそ、どうにでも編集可能であり、遊びの対象となる。</li>
+    <li><strong>仏教的感覚との共通点</strong>：見えているものは「空」であり、変化し続けるという「色即是空」的な概念に近い。</li>
+  </ul>
+
+  <div class="svg-container">
+    <svg width="100%" height="180" viewBox="0 0 500 180">
+      <!-- Background Nodes -->
+      <rect x="50" y="40" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" />
+      <text x="110" y="75" text-anchor="middle" font-size="18" font-weight="bold">疑</text>
+      <text x="110" y="125" text-anchor="middle" font-size="12">（疑う・シニカル）</text>
+
+      <text x="250" y="75" text-anchor="middle" font-size="24" fill="#60a5fa">+</text>
+
+      <rect x="330" y="40" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" />
+      <text x="390" y="75" text-anchor="middle" font-size="18" font-weight="bold">扌（てへん）</text>
+      <text x="390" y="125" text-anchor="middle" font-size="12">（編集の知恵・実践）</text>
+
+      <path d="M250 140 L250 160" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      <text x="250" y="175" text-anchor="middle" font-size="20" font-weight="bold" fill="#a78bfa">擬（もどき）＝ 遊び・編集</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 編集工学の核となる「3つのA」</h2>
+  <p>世の中を面白く、別の角度から見るための具体的な手法として紹介されています。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>手法</th>
+        <th>内容</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Analogy（アナロジー）</strong></td>
+        <td>類推。あるものを別のものに見立てて考える。</td>
+      </tr>
+      <tr>
+        <td><strong>Affordance（アフォーダンス）</strong></td>
+        <td>環境が動物に与える意味や価値。モノの側からの誘い。</td>
+      </tr>
+      <tr>
+        <td><strong>Abduction（アブダクション）</strong></td>
+        <td>仮説的推論。断片的な情報から「もしかしたらこうかも」と推論する。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 「借り物」としての人間と知恵</h2>
+  <ul class="opt-a-list">
+    <li><strong>すべては借り物</strong>：地球、自然、DNA、そして思想さえも先人からの借り物である。</li>
+    <li><strong>出典を明記しない理由</strong>：松岡氏はあえて詳細な出典を書かないことがある。それは特定の誰かに帰属させるのではなく、あらゆる知恵がミックスされた結果であるというリスペクトの裏返し。</li>
+    <li><strong>坂本龍一氏との共鳴</strong>：坂本氏も「自分のオリジナリティがどこまであるか分からない、過去の音楽の影響の混ざり合いだ」としてコピーレフト的な立場をとっていた。</li>
+    <li><strong>編集者のスタンス</strong>：自分がゼロから生み出すのではなく、既存のナレッジや人を組み合わせて光を当てることで、新しい価値（別用の可能性）を提示する。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 結論：世界を楽しむための「二重記述」</h2>
+  <ul class="opt-a-list">
+    <li><strong>片目で見ない</strong>：ベイトソンの「二重記述（ダブル・ディスクリプション）」のように、複数の視点を重ねることで世界に奥行きが生まれる。</li>
+    <li><strong>ストイックさと遊び</strong>：松岡氏の文章はソリッドで無駄がない一方で、内容は常に「こう見えたら面白くない？」という遊び心に満ちている。</li>
+    <li><strong>別用の可能性</strong>：既存の規範や「こうあるべき」という圧力を「もどき（嘘っぱち）」と捉えることで、自分たちでカウンター（新しい見方）を作ることができる。</li>
+  </ul>
+
+  <blockquote>
+    「単に疑うだけだとシニカルなおじさんになってしまうが、そこに『てへん（編集の知恵）』を加えることで、世界は遊びの場に変わる。」
+  </blockquote>
+
+</body>
+</html>
