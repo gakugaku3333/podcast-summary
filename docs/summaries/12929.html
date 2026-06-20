@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">令和ロマンのご様子 シーズン21-12「ごクポ」</h1>
+  <p>
+    M-1王者・令和ロマンによるポッドキャスト。納豆の食べ方やゆずの歌詞解釈といった日常の疑問から、サッカー日本代表戦（対オランダ戦？）への熱狂、サントリーとのコラボコーナーまで、くるまのハイテンションなトークとけむりの冷静なツッコミが交差するエピソード。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">納豆</span>
+    <span class="opt-a-tag">ゆず「夏色」</span>
+    <span class="opt-a-tag">サッカー日本代表</span>
+    <span class="opt-a-tag">ガクポ</span>
+    <span class="opt-a-tag">サントリー</span>
+    <span class="opt-a-tag">甘くないイタリアーノ</span>
+    <span class="opt-a-tag">ABCお笑いグランプリ</span>
+    <span class="opt-a-tag">コマ犬</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 これってもーの私だけ（日常の疑問）</h2>
+  <ul class="opt-a-list">
+    <li><strong>夜食べる納豆の美味しさ</strong>
+      <ul>
+        <li>朝よりも夜の方が味が濃く感じられ、複雑な味わいを楽しめる。</li>
+        <li>夕食の中に冷たい食べ物（納豆）があるワクワク感。</li>
+        <li><strong>くるま流「最強納豆スペシャル」のレシピ：</strong>
+          <ul>
+            <li>白米の上に、電子レンジで温めた豆腐、キムチ、納豆、卵黄を乗せる。</li>
+            <li>卵の白身だけを焼いて「カリカリ」にしたものをまぶす。</li>
+            <li>仕上げにゴマ、ごま油、味の素をかける。</li>
+          </ul>
+        </li>
+        <li>くるまは納豆を米に乗せず、単品で食べることもある（タレと辛子は全量入れる）。</li>
+      </ul>
+    </li>
+    <li><strong>ゆず「夏色」の歌詞の危機管理</strong>
+      <ul>
+        <li>歌詞「ブレーキいっぱい握りしめて」について、最大まで握っているのに止まらない状況は<strong>整備不良か大ピンチ</strong>ではないかという指摘。</li>
+        <li>くるまの幼少期の解釈：下り坂でブレーキをギュッと握り、少し緩めて加速する遊びの音だと思っていた。</li>
+        <li>二人乗りで後ろに女の子を乗せている状況での「ブレーキいっぱい」の異常性について議論。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 400 180">
+      <!-- 納豆スペシャルの構造図 -->
+      <rect x="100" y="130" width="200" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="200" y="155" text-anchor="middle" font-size="14">ベース：白米</text>
+      
+      <rect x="50" y="80" width="80" height="30" rx="5" fill="rgba(96, 165, 250, 0.2)" stroke="#60a5fa" />
+      <text x="90" y="100" text-anchor="middle" font-size="12">温め豆腐</text>
+      
+      <rect x="140" y="80" width="60" height="30" rx="5" fill="rgba(96, 165, 250, 0.2)" stroke="#60a5fa" />
+      <text x="170" y="100" text-anchor="middle" font-size="12">キムチ</text>
+      
+      <rect x="210" y="80" width="60" height="30" rx="5" fill="rgba(96, 165, 250, 0.2)" stroke="#60a5fa" />
+      <text x="240" y="100" text-anchor="middle" font-size="12">納豆</text>
+      
+      <rect x="280" y="80" width="70" height="30" rx="5" fill="rgba(96, 165, 250, 0.2)" stroke="#60a5fa" />
+      <text x="315" y="100" text-anchor="middle" font-size="12">卵黄</text>
+      
+      <path d="M 200 70 L 200 40" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+      <text x="200" y="30" text-anchor="middle" font-size="13" font-weight="bold">トッピング：白身カリカリ・ごま油・味の素</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 サッカー北中米W杯（アジア最終予選）談義</h2>
+  <p>くるまが朝5時キックオフの日本対オランダ戦（※くるまのボケや妄想が混じっている可能性あり）について熱弁するが、けむりは全く見ておらず温度差が激しい。</p>
+  <ul class="opt-a-list">
+    <li><strong>くるまの注目ポイント：</strong>
+      <ul>
+        <li><strong>ガクポ（オランダ代表）：</strong> 左ウィンガー。195cm近い巨体でエグい動きをする。</li>
+        <li><strong>ポイチ（森保監督）：</strong> ネットでの愛称「ポイチ」を連呼。</li>
+        <li><strong>鈴木彩艶（ザイオン）：</strong> パルマでの守備練習のような獅子奮迅の活躍。</li>
+        <li><strong>本田圭佑の解説：</strong> 失点しても円陣を組んで前向きな今の代表チームを、自身の現役時代と比較して羨ましそうに（寂しそうに）見ていた。</li>
+      </ul>
+    </li>
+    <li><strong>けむりの反応：</strong>
+      <ul>
+        <li>「ジョン・F・カミラ」などのくるまのボケに困惑。</li>
+        <li>スポーツ全般に興味がなく、2022年カタールW杯の「三笘の1ミリ」の時も寝ていた。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 サントリーコラボ「甘くないぞ」</h2>
+  <p>「BOSS 甘くないイタリアーノ」とのコラボ企画。世の中の「甘くない（厳しい・騙されない）」事実を紹介する。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>投稿テーマ</th>
+        <th>内容（甘くない事実）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>害虫対策</strong></td>
+        <td>ワンプッシュで24時間蚊が出ないスプレー。本当に効くのか疑いながらもドアと窓の両方にやってしまう。</td>
+      </tr>
+      <tr>
+        <td><strong>法律・サービス</strong></td>
+        <td>「過払い金が戻る可能性」や「サービス向上のための録音」。証拠を握られているようで甘くない。</td>
+      </tr>
+      <tr>
+        <td><strong>エンタメ・楽曲</strong></td>
+        <td>SASUKEのファーストステージは誰が見ても甘くない。AKB48「恋するフォーチュンクッキー」の歌詞「未来はそんな甘くないぞ」の意外な厳しさ。</td>
+      </tr>
+      <tr>
+        <td><strong>WEB操作</strong></td>
+        <td>マルチタスク中にサイトを離れると入力内容がすべて消えるアンケート。ブラウザの戻るボタンの絶望感。</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="opt-a-list">
+    <li><strong>身内ネタ：</strong> 前任の宣伝担当・山前さんが「身体を張る」と宣言して、本当に「体（タイ）」になってしまったという謎のいじり。サントリー社内でも「甘くないぞ」という言葉が流行っているらしい。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 エンディング・近況報告</h2>
+  <ul class="opt-a-list">
+    <li><strong>ABCお笑いグランプリ2024：</strong> くるまが以前から注目していた<strong>「コマ犬」</strong>が準決勝に進出。</li>
+    <li><strong>ミュージックアワードジャパン：</strong> くるまがレッドカーペットの中継MCを担当。西澤代官山らと共演したが、授賞式が40分押し、予想トークのほとんどがカットされた。</li>
+    <li><strong>ふかわりょうトークライブ：</strong> くるまがライブ「ボヤージュ」を観覧。</li>
+    <li><strong>グッズ在庫状況：</strong> けむりの禁煙記念「ハイザラホワイト」の在庫が残り<strong>751個</strong>。愛知県のバー「マホロマン」が常連客のためにセットで購入してくれた。</li>
+  </ul>
+
+</body>
+</html>
