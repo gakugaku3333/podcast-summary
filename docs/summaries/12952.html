@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .svg-container {
+      background: #1a1a3e;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 1em 0;
+      overflow-x: auto;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【ニュース小話 #220】アメリカとイラン、ついに合意。経済と政治の先行きを読む</h1>
+  <p>2026年6月21日配信。アメリカとイランの停戦合意（イスラマバード覚書）という歴史的転換点と、それに伴う原油安・株高、そして日銀の歴史的な利上げ局面における日本市場の特異な動きを解説します。また、フランスで開催されたG7サミットでのAIやミドルパワーの台頭についても触れています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">イスラマバード覚書</span>
+    <span class="opt-a-tag">トランプ大統領</span>
+    <span class="opt-a-tag">ホルムズ海峡</span>
+    <span class="opt-a-tag">日銀利上げ</span>
+    <span class="opt-a-tag">日経平均7万円</span>
+    <span class="opt-a-tag">G7エビアン・サミット</span>
+    <span class="opt-a-tag">高市首相</span>
+    <span class="opt-a-tag">アンソロピック</span>
+    <span class="opt-a-tag">核開発交渉</span>
+    <span class="opt-a-tag">3000億ドル復興支援</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 アメリカ・イラン停戦合意（イスラマバード覚書）の経緯</h2>
+  <ul class="opt-a-list">
+    <li><strong>6月13日：</strong>トランプ大統領がSNSで戦闘終結に向けた「イスラマバード覚書」の存在を投稿。</li>
+    <li><strong>6月14日：</strong>合意が正式発表。ホルムズ海峡の全船舶への開放が盛り込まれる。</li>
+    <li><strong>6月17日：</strong>フランス・エビアン（G7会場）のベルサイユ宮殿にて、トランプ氏が正式署名。</li>
+    <li><strong>6月19日：</strong>米軍による海上封鎖が全面的に解除。</li>
+  </ul>
+
+  <div class="svg-container">
+    <svg width="100%" viewBox="0 0 600 180">
+      <!-- Timeline Line -->
+      <line x1="50" y1="100" x2="550" y2="100" stroke="#60a5fa" stroke-width="2" />
+      <!-- Points -->
+      <circle cx="50" cy="100" r="6" fill="#8b5cf6" />
+      <circle cx="216" cy="100" r="6" fill="#8b5cf6" />
+      <circle cx="382" cy="100" r="6" fill="#8b5cf6" />
+      <circle cx="550" cy="100" r="6" fill="#8b5cf6" />
+      <!-- Labels -->
+      <text x="50" y="80" text-anchor="middle" font-size="12">6/13 SNS投稿</text>
+      <text x="216" y="80" text-anchor="middle" font-size="12">6/14 合意発表</text>
+      <text x="382" y="80" text-anchor="middle" font-size="12">6/17 正式署名</text>
+      <text x="550" y="80" text-anchor="middle" font-size="12">6/19 封鎖解除</text>
+      <text x="300" y="140" text-anchor="middle" font-size="14" font-weight="bold">イスラマバード覚書（MOU）の進展</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 覚書（MOU）の具体的内容と専門家の懸念</h2>
+  <ul class="opt-a-list">
+    <li><strong>海上封鎖の解除：</strong>米軍は署名後直ちに着手し、30日以内に完了させる。</li>
+    <li><strong>航行の自由：</strong>イランは民間船舶の航行を認め、60日間は通行料を無料とする。嫌い除去も実施。</li>
+    <li><strong>復興支援：</strong>アメリカがイランの復興に対し<strong>3000億ドル（約50兆円）</strong>規模の計画を策定。
+      <ul>
+        <li>塩野氏の指摘：爆撃した相手国に巨額の資金を払うことへの米国民の反発リスク。</li>
+      </ul>
+    </li>
+    <li><strong>核開発問題：</strong>今回は合意見送り。60日間の期限付き交渉がスイスでスタート。
+      <ul>
+        <li>高濃縮ウランの「希釈（薄めること）」のみの約束に留まっており、実効性に疑問。</li>
+      </ul>
+    </li>
+    <li><strong>地政学的リスク：</strong>レバノンのヒズボラへの対応が明記されておらず、イスラエルが再び軍事行動を起こす火種が残っている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 マーケットの激動：日経平均7万円時代へ</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>指標</th>
+        <th>動向・数値</th>
+        <th>背景・影響</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>原油価格（WTI）</strong></td>
+        <td>大幅下落（3ヶ月ぶり安値）</td>
+        <td>供給リスク緩和によるインフレ懸念の交代。</td>
+      </tr>
+      <tr>
+        <td><strong>日経平均株価</strong></td>
+        <td><strong>70,000円突破</strong></td>
+        <td>6/15に過去2番目の上昇幅（+3297円）。史上最速のペース。</td>
+      </tr>
+      <tr>
+        <td><strong>日銀政策金利</strong></td>
+        <td><strong>1.0%</strong>に引き上げ</td>
+        <td>1995年以来31年ぶりの水準。経済の過熱抑制が目的。</td>
+      </tr>
+      <tr>
+        <td><strong>為替（ドル円）</strong></td>
+        <td><strong>1ドル＝161円台</strong></td>
+        <td>利上げにもかかわらず円安が進行。欧米との金利差が依然大きい。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul class="opt-a-list">
+    <li><strong>FOMO（乗り遅れる恐怖）：</strong>実体経済との乖離を感じつつも、投資家が市場に資金を投じ続ける状況。</li>
+    <li><strong>ゴールドラッシュのジーンズ：</strong>AIモデルへの投資、電力・計算資源の争奪戦において、武器（半導体等）を提供する日本企業が買われている。</li>
+    <li><strong>政府の利払い負担：</strong>金利1%到達により、中期的に国の利払い負担増が懸念される。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 G7エビアン・サミットの成果</h2>
+  <ul class="opt-a-list">
+    <li><strong>結束の演出：</strong>トランプ氏と他国首脳の対立が和らぎ、互いの立場を尊重する「大人の対応」が目立った。</li>
+    <li><strong>ビッグテックの参画：</strong>OpenAIやAnthropic（アンソロピック）のCEOがワーキングランチに参加。AIが国家間の重要論点に。
+      <ul>
+        <li>マクロン大統領は、米国がAIのスイッチを一晩で切れる現状の危うさを指摘。</li>
+      </ul>
+    </li>
+    <li><strong>日本の存在感：</strong>高市首相が石油備蓄や重要鉱物の協力枠組みを提案し、全て共同声明に盛り込まれた。
+      <ul>
+        <li>中国を名指しし、サプライチェーンへの影響を懸念する強い姿勢を示した。</li>
+      </ul>
+    </li>
+    <li><strong>ミドルパワーの結束：</strong>大国（米国）に対し、フランスや日本などのミドルパワーが結束して意見を伝える重要性が再確認された。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 DJコーナー：今週の選曲（メロウ＆最新）</h2>
+  <p>塩野氏が空港ラウンジやカフェで人間観察をする際に聴いている、2026年6月時点の最新・都会的プレイリスト。</p>
+  <ul class="opt-a-list">
+    <li><strong>Blue / SIRUP, Chih Siou, Ichika Nito</strong>
+      <ul>
+        <li>台湾のシンガーと、超絶技巧ギタリストIchika Nitoによるコラボ。変態的かつ心地よいタッピングが特徴。</li>
+      </ul>
+    </li>
+    <li><strong>Knitted / Ovall</strong>
+      <ul>
+        <li>Shingo Suzuki, mabanua, Shingo Sekiguchiによるプロジェクト。ソウル・ヒップホップを感じさせるトラック。</li>
+      </ul>
+    </li>
+    <li><strong>Stillness / Jeremy Quartus</strong>
+      <ul>
+        <li>NulbarichのJQによるソロプロジェクト。「静寂の中にある熱」をテーマにした都会的な楽曲。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote style="margin-top: 2em;">
+    「15年前の駆け出し編集者だった自分に伝えたい。日経平均が本当に5万円、10万円を目指す世界が来ている。AIという巨大な変革が、かつてのファンタジーを現実に変えてしまった。」
+  </blockquote>
+
+</body>
+</html>
