@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "○";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">睡眠のすべて【睡眠編01】</h1>
+  <p>公衆衛生学者・行動科学者のHana博士による、エビデンスに基づいた睡眠の重要性と改善アプローチの解説。単なる「努力」ではなく「環境デザイン」の視点から睡眠を捉え直します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">睡眠不足</span>
+    <span class="opt-a-tag">死亡リスク</span>
+    <span class="opt-a-tag">マイクロスリープ</span>
+    <span class="opt-a-tag">クロノタイプ</span>
+    <span class="opt-a-tag">環境デザイン</span>
+    <span class="opt-a-tag">公衆衛生</span>
+    <span class="opt-a-tag">エビデンス</span>
+    <span class="opt-a-tag">即歳（Sokusai）</span>
+    <span class="opt-a-tag">シンカンパニー</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 番組のスタンスとスポンサーシップ</h2>
+  <ul class="opt-a-list">
+    <li><strong>スポンサー「即歳（Sokusai）」の紹介</strong>
+      <ul>
+        <li>「無病即災」に由来し、テクノロジーでQOLに貢献する企業。</li>
+        <li>ロゴのひょうたんは無病即災のシンボル。</li>
+      </ul>
+    </li>
+    <li><strong>スポンサー選定の3つのガイドライン</strong>
+      <ul>
+        <li><strong>ビジョンへの共感：</strong>エビデンスに基づいた情報発信への理解。</li>
+        <li><strong>不健康なプロダクトを扱わない：</strong>「シンカンパニー（罪深き会社）」であるタバコ、アルコール、不健康なファストフード関連企業とは組まない。</li>
+        <li><strong>忖度しない：</strong>スポンサーであってもエビデンスのないことは言わず、編集権限も与えない。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 睡眠不足がもたらす甚大なダメージ</h2>
+  <ul class="opt-a-list">
+    <li><strong>身体への影響</strong>
+      <ul>
+        <li><strong>疾患リスク：</strong>肥満、高血圧、糖尿病、心臓病、脳卒中、認知症の発症リスク上昇。</li>
+        <li><strong>免疫機能：</strong>低下により感染症にかかりやすくなる。</li>
+        <li><strong>死亡率：</strong>6時間未満の睡眠で死亡リスクが増加。特に40〜64歳で顕著。</li>
+        <li><strong>心疾患：</strong>6時間未満の日本人男性労働者は、心筋梗塞等のリスクが<strong>約5倍</strong>に。</li>
+      </ul>
+    </li>
+    <li><strong>心（脳・感情）への影響</strong>
+      <ul>
+        <li><strong>ネガティブバイアス：</strong>睡眠不足だと、他人の無表情が自分への攻撃的な感情に見えやすくなる。</li>
+        <li><strong>精神疾患：</strong>うつ病、不安障害、アルコール依存のリスク上昇。</li>
+        <li><strong>感情制御：</strong>ストレス耐性の劣化、イライラ、余裕の喪失。</li>
+      </ul>
+    </li>
+    <li><strong>生産性への影響</strong>
+      <ul>
+        <li><strong>マイクロスリープ：</strong>起きているつもりでも脳が瞬間的に眠ってしまう現象が発生。</li>
+        <li><strong>判断力の低下：</strong>「意志の力」が弱まり、ジムをサボる、タバコを吸うなど不健康な習慣に流れやすくなる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <h3 style="margin-top:0; font-size: 1em; color: #60a5fa;">⚠️ 覚醒時間とパフォーマンスの低下（飲酒との比較）</h3>
+    <svg width="100%" viewBox="0 0 600 200">
+      <!-- Background -->
+      <rect x="10" y="10" width="580" height="180" rx="8" fill="rgba(139, 92, 246, 0.05)" stroke="#8b5cf6" stroke-dasharray="4"/>
+      
+      <!-- 17 Hours -->
+      <rect x="40" y="50" width="240" height="40" rx="5" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="50" y="75" font-size="14">17時間以上の連続覚醒</text>
+      <text x="300" y="75" font-size="20" fill="#60a5fa">＝</text>
+      <rect x="330" y="50" width="230" height="40" rx="5" fill="rgba(245, 158, 11, 0.2)" stroke="#f59e0b"/>
+      <text x="340" y="75" font-size="14">血中アルコール濃度 0.05%</text>
+      
+      <!-- 19 Hours -->
+      <rect x="40" y="110" width="240" height="40" rx="5" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="50" y="135" font-size="14">19時間以上の連続覚醒</text>
+      <text x="300" y="135" font-size="20" fill="#60a5fa">＝</text>
+      <rect x="330" y="110" width="230" height="40" rx="5" fill="rgba(239, 68, 68, 0.2)" stroke="#ef4444"/>
+      <text x="340" y="135" font-size="14">酒気帯び運転と同等の状態</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 睡眠の基本ガイドライン（厚労省 2023年ガイド）</h2>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>対象</th>
+        <th>推奨睡眠時間</th>
+        <th>備考</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>成人</strong></td>
+        <td>6時間以上（理想は6〜8時間）</td>
+        <td>6時間未満は疾患リスク増</td>
+      </tr>
+      <tr>
+        <td><strong>高齢者</strong></td>
+        <td>8時間未満</td>
+        <td>寝すぎも良くない</td>
+      </tr>
+      <tr>
+        <td><strong>中高生</strong></td>
+        <td>8〜10時間</td>
+        <td>成長と学習に不可欠</td>
+      </tr>
+      <tr>
+        <td><strong>小学生</strong></td>
+        <td>9〜12時間</td>
+        <td>十分な休息が必要</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul class="opt-a-list">
+    <li><strong>生活習慣のポイント</strong>
+      <ul>
+        <li><strong>光：</strong>朝起きたら太陽の光を浴びて体内時計をリセットする。</li>
+        <li><strong>食事：</strong>朝食を摂る（体内時計の調整）。寝る直前の夜食は避ける。</li>
+        <li><strong>入浴：</strong>就寝の<strong>1〜2時間前</strong>。深部体温が下がるタイミングで入眠が促進される。</li>
+        <li><strong>嗜好品：</strong>カフェイン（コーヒー、茶、ジュース）とアルコールは睡眠の質を著しく下げる。</li>
+        <li><strong>運動：</strong>日中の運動は有効だが、寝る直前（2〜4時間以内）は脳が覚醒するため避ける。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 個人の努力より「環境デザイン」</h2>
+  <ul class="opt-a-list">
+    <li><strong>パブリックヘルスの視点</strong>
+      <ul>
+        <li>睡眠不足は個人の根性や努力不足だけが原因ではない。</li>
+        <li>意志の力に頼らず、自動的に眠れる仕組み（環境）を作ることが重要。</li>
+      </ul>
+    </li>
+    <li><strong>2つの環境</strong>
+      <ul>
+        <li><strong>ハードな環境：</strong>寝室の設備、光、音、温度、建物の状況。</li>
+        <li><strong>ソフトな環境：</strong>人間関係、家族構成、仕事と家庭のバランス。</li>
+      </ul>
+    </li>
+    <li><strong>ハーバード流「寝室の鉄則」</strong>
+      <blockquote>「寝室は、睡眠とセックスのためだけの場所にする」</blockquote>
+      <ul>
+        <li>テレビ、本、スマホ、お酒などを持ち込まない。</li>
+        <li>脳に「この場所は寝る場所だ」と条件付けを行う。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <h3 style="margin-top:0; font-size: 1em; color: #60a5fa;">🏠 環境デザインの構造</h3>
+    <svg width="100%" viewBox="0 0 600 180">
+      <!-- Hard Environment -->
+      <rect x="50" y="40" width="220" height="100" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6"/>
+      <text x="105" y="65" font-weight="bold">ハード環境</text>
+      <text x="70" y="90" font-size="13">・寝室からスマホを出す</text>
+      <text x="70" y="115" font-size="13">・遮光、温度、静寂</text>
+      
+      <!-- Soft Environment -->
+      <rect x="330" y="40" width="220" height="100" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa"/>
+      <text x="385" y="65" font-weight="bold">ソフト環境</text>
+      <text x="350" y="90" font-size="13">・家族との関係性</text>
+      <text x="350" y="115" font-size="13">・仕事のタスク管理</text>
+      
+      <path d="M 270 90 L 330 90" stroke="#e8e8f0" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </svg>
+  </div>
+
+  <p style="text-align: center; color: #a78bfa; margin-top: 2em;">
+    <strong>次回予告：具体的な寝室環境の整え方を深掘りします。</strong>
+  </p>
+
+</body>
+</html>
