@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ながらAIラジオ：2026年6月22日号</h1>
+  <p>AIコンサルタントのウスタクト氏とメルカリAI推進担当の早川ゴミ氏による、最新AIニュースの整理。今週はMidjourneyの医療進出、SpaceXによる巨額買収、Google Homeの新型デバイスなど、ハードウェアとAIの融合が目立つ週となりました。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">Midjourney</span>
+    <span class="opt-a-tag">Ultrasonic CT</span>
+    <span class="opt-a-tag">SpaceX</span>
+    <span class="opt-a-tag">Cursor</span>
+    <span class="opt-a-tag">xAI</span>
+    <span class="opt-a-tag">Glock</span>
+    <span class="opt-a-tag">Google Home</span>
+    <span class="opt-a-tag">Gemini</span>
+    <span class="opt-a-tag">Silicon Valley</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 Midjourneyが医療分野へ：「Ultrasonic CT」の衝撃</h2>
+  <ul class="opt-a-list">
+    <li><strong>画像生成AIの先駆者Midjourney</strong>が、医療用ハードウェア「ウルトラソニックCT」を発表。</li>
+    <li><strong>60秒でスキャン完了</strong>：従来のMRI等と比較して圧倒的に早く、安価に提供できる可能性。</li>
+    <li><strong>音と水によるスキャン</strong>：強力な磁力を使わないため、タトゥーがある人や閉所恐怖症の人でも利用可能。</li>
+    <li><strong>データ収集の新しい形</strong>：スパ施設などに設置し、リラックスしている間に健康診断を行うことで、病気になる前のデータを大量に集める狙い。</li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>特徴</th>
+        <th>従来のMRI / CT</th>
+        <th>Midjourney Ultrasonic CT</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>スキャン時間</td>
+        <td>数十分〜</td>
+        <td><strong>約60秒</strong></td>
+      </tr>
+      <tr>
+        <td>物理的制約</td>
+        <td>狭いトンネル・騒音</td>
+        <td><strong>音と水（プールのような環境）</strong></td>
+      </tr>
+      <tr>
+        <td>利用制限</td>
+        <td>金属・タトゥー不可（MRI）</td>
+        <td><strong>制限なし</strong></td>
+      </tr>
+      <tr>
+        <td>目的</td>
+        <td>疾患の特定</td>
+        <td><strong>日常的な健康チェック・データ収集</strong></td>
+      </tr>
+    </tbody>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 SpaceXによるCursor買収と「AI版AWS」構想</h2>
+  <ul class="opt-a-list">
+    <li><strong>買収額9.6兆円</strong>：SpaceXがAIコードエディタの<strong>Cursor（カーサ）</strong>を買収。</li>
+    <li><strong>25歳のファウンダー</strong>：MIT出身の若手チーム4名が創業。今回のディールで1人あたり約4000億円を手に。</li>
+    <li><strong>xAIとのシナジー</strong>：SpaceX傘下のxAIが持つ巨大GPUクラスター「コロッサス」と、Cursorのエンジニア・コードデータを統合。</li>
+    <li><strong>AI版AWSの実現</strong>：自社用の余剰GPU資源を、Cursorというインターフェースを通じて他社へ提供するインフラビジネスを狙う。</li>
+  </ul>
+
+  <svg width="100%" viewBox="0 0 600 250">
+    <rect x="10" y="10" width="580" height="230" rx="8" fill="#1a1a3e" stroke="#8b5cf6" />
+    <!-- SpaceX/xAI -->
+    <rect x="40" y="40" width="180" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="65" y="75" font-size="15">SpaceX / xAI</text>
+    <text x="50" y="120" font-size="12" fill="#60a5fa">巨大GPUインフラ(Colossus)</text>
+    
+    <!-- Arrow -->
+    <path d="M 220 70 L 360 70" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+    
+    <!-- Cursor -->
+    <rect x="380" y="40" width="180" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="435" y="75" font-size="15">Cursor</text>
+    <text x="390" y="120" font-size="12" fill="#60a5fa">開発者接点・コードデータ</text>
+    
+    <!-- Result -->
+    <rect x="210" y="160" width="180" height="60" rx="8" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" />
+    <text x="245" y="195" font-size="16" font-weight="bold">AI版 AWS</text>
+    
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+      </marker>
+    </defs>
+  </svg>
+
+  <h2 class="opt-a-section-title">📌 Google Homeの進化：Gemini搭載の新型デバイス</h2>
+  <ul class="opt-a-list">
+    <li><strong>6年ぶりの刷新</strong>：Geminiを標準搭載した新型Google Homeスピーカーが登場。</li>
+    <li><strong>Gemini Live対応</strong>：リアルタイムでAIと自然な会話が可能に。</li>
+    <li><strong>マルチタスク実行</strong>：一度の命令で「電気を消して音楽をかける」といった複数処理が可能。</li>
+    <li><strong>サブスクリプションモデル</strong>：
+      <ul>
+        <li>Google Home Premium Standard：月額約1,000円</li>
+        <li>Google Home Premium Advanced：月額約2,000円</li>
+      </ul>
+    </li>
+    <li><strong>カメラ連携の可能性</strong>：家の中の様子をAIが把握し、1日のまとめを作成したり、家族の見守りを行ったりする機能を強化。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 西海岸のスタートアップ・エコシステム</h2>
+  <ul class="opt-a-list">
+    <li><strong>若手起業家の台頭</strong>：サンフランシスコでは21〜25歳の起業家への投資が活発。27歳は「ベテラン」扱いされる文化。</li>
+    <li><strong>発信スタイルの違い</strong>：スタンフォード大学等の学生が、自身の研究や制作過程をクリエイティブな動画で発信する文化が定着している。</li>
+    <li><strong>日本の現状への懸念</strong>：国内では起業家の高齢化や、増税等の影響で「ぶち上げる」スタートアップが減っているのではないかという議論。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 その他・雑談</h2>
+  <ul class="opt-a-list">
+    <li><strong>Claude Fableの衝撃と消失</strong>：先週話題になったFableが公開3日で提供中止に。あまりの優秀さに「前の彼氏」のように比較してしまうロス状態。</li>
+    <li><strong>飲みながらAIイベント</strong>：180席のチケットが1ヶ月前にほぼ完売。</li>
+    <li><strong>注目のツール</strong>：Perplexity（検索）、Fear（EC比較AI）など、現地で使われているツールの紹介。</li>
+  </ul>
+
+  <blockquote>
+    「AIが家の中をカメラで見て、夫婦の空気を読んでディフューザーを焚いたり、適切なアドバイスをくれたりする未来が来るかもしれない。」
+  </blockquote>
+
+</body>
+</html>
