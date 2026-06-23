@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">問題が起きたら「課題をテーブルの上に置く」〜子どもと敵対しない、構造の作り方〜</h1>
+  <p>子育てにおいて問題が発生した際、子供を責めるのではなく「課題」と「人」を切り離して考えるための思考法を解説。心理的安全性を保ちながら、親子で協力して解決に向かうための具体的なイメージと声掛けのコツを共有しています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">アサーティブコミュニケーション</span>
+    <span class="opt-a-tag">森田汐生</span>
+    <span class="opt-a-tag">心理的安全性</span>
+    <span class="opt-a-tag">課題の分離</span>
+    <span class="opt-a-tag">対人関係</span>
+    <span class="opt-a-tag">子育て理論</span>
+    <span class="opt-a-tag">ABA（応用行動分析学）</span>
+    <span class="opt-a-tag">ビジネスコミュニケーション</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 核心となるコンセプト：課題をテーブルの上に置く</h2>
+  <ul class="opt-a-list">
+    <li><strong>出典：</strong>森田汐生 著「自分も相手も尊重し心理的安全性を高めるアサーティブコミュニケーション」</li>
+    <li><strong>アサーティブとは：</strong>相手の思いを尊重しながら、自分の思いも誠実に伝えること。</li>
+    <li><strong>基本イメージ：</strong>
+      <ul>
+        <li>問題が起きたとき、それを相手の<strong>人格や責任</strong>と結びつけない。</li>
+        <li>問題を自分と相手の間の<strong>「テーブルの上」</strong>にポンと置く。</li>
+        <li>親子（または上司部下）が同じ側に座り、一緒にその課題を眺める。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+      <!-- Background -->
+      <rect width="400" height="200" fill="#1a1a3e" rx="12"/>
+      
+      <!-- Traditional: Confrontation -->
+      <circle cx="60" cy="60" r="20" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="60" y="65" text-anchor="middle" font-size="12">親</text>
+      <circle cx="140" cy="60" r="20" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="140" y="65" text-anchor="middle" font-size="12">子</text>
+      <path d="M85 60 L115 60" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+      <text x="100" y="45" text-anchor="middle" font-size="10" fill="#ef4444">攻撃・非難</text>
+      <defs>
+        <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" />
+        </marker>
+      </defs>
+
+      <!-- Proposed: Table Image -->
+      <rect x="260" y="100" width="80" height="10" fill="#60a5fa" rx="2"/>
+      <rect x="270" y="110" width="5" height="20" fill="#60a5fa"/>
+      <rect x="325" y="110" width="5" height="20" fill="#60a5fa"/>
+      
+      <circle cx="250" cy="140" r="15" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="250" y="145" text-anchor="middle" font-size="11">親</text>
+      <circle cx="350" cy="140" r="15" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="350" y="145" text-anchor="middle" font-size="11">子</text>
+      
+      <rect x="285" y="80" width="30" height="15" fill="#f59e0b" rx="4"/>
+      <text x="300" y="92" text-anchor="middle" font-size="10" fill="#000">課題</text>
+      
+      <path d="M260 125 Q300 100 295 95" stroke="#10b981" stroke-width="1.5" fill="none" marker-end="url(#arrowhead-green)"/>
+      <path d="M340 125 Q300 100 305 95" stroke="#10b981" stroke-width="1.5" fill="none" marker-end="url(#arrowhead-green)"/>
+      <defs>
+        <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#10b981" />
+        </marker>
+      </defs>
+      <text x="300" y="160" text-anchor="middle" font-size="12">一緒に課題を見る</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 なぜ「人を責める」のが逆効果なのか</h2>
+  <ul class="opt-a-list">
+    <li><strong>本能的な反応：</strong>人は問題が起きた際、責任の所在を誰かに押し付けることで安心しようとする傾向がある。</li>
+    <li><strong>敵対構造の発生：</strong>「なんでできないの？」「何回言ったらわかるの？」という言葉は、矢印が<strong>相手自身（人格）</strong>に向いている。</li>
+    <li><strong>相手の反応：</strong>
+      <ul>
+        <li>自分を責められていると感じ、心を閉ざす。</li>
+        <li>自己防衛のために言い訳をする、反発する。</li>
+        <li>ミスを隠そうとする（心理的安全性の欠如）。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 具体的な声掛けの変換例</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>状況</th>
+        <th>従来の関わり（人を責める）</th>
+        <th>テーブルに置く関わり（課題を見る）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>宿題が進まない</td>
+        <td>「なんでやらないの！」「早くしなさい！」</td>
+        <td>「宿題が進まない状況だね。<strong>どこに難しさを感じてる？</strong>」</td>
+      </tr>
+      <tr>
+        <td>部下のミス</td>
+        <td>「なんでこんなミスをしたんだ？」</td>
+        <td>「今回の業務、<strong>どの部分が難しかった？</strong>」</td>
+      </tr>
+      <tr>
+        <td>準備が遅い</td>
+        <td>「いつも遅いんだから！」</td>
+        <td>「準備が間に合わないね。何がボトルネックかな？」</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 課題を切り離すことで得られるメリット</h2>
+  <ul class="opt-a-list">
+    <li><strong>本音の引き出し：</strong>「自分が悪い」と責められない安心感から、「実はここが分からなくて」「お腹が空いていて」といった<strong>真の理由</strong>を話しやすくなる。</li>
+    <li><strong>解決へのシフト：</strong>「誰が悪いか」という過去の追求から、「どうすれば解決できるか」という未来の相談へスムーズに移行できる。</li>
+    <li><strong>信頼関係の構築：</strong>困ったときに事前に相談してくれる関係性が育つ（職場や夫婦間でも有効）。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 実践のためのアドバイス</h2>
+  <ul class="opt-a-list">
+    <li><strong>一呼吸置く：</strong>イライラした瞬間、「今からこの課題をテーブルの上に置くぞ」と頭の中でイメージする。</li>
+    <li><strong>魔法のフレーズ：</strong>「どこに難しさを感じている？」という問いかけをストックしておく。</li>
+    <li><strong>全方位に応用：</strong>子育てだけでなく、パートナーシップや職場の人間関係でも全く同じ構造で活用可能。</li>
+  </ul>
+
+  <blockquote style="margin-top: 2em;">
+    「あなたが悪いんじゃなくて、これが課題なんだね」と子供と課題を切り離してみる。そうすることで、子育ての景色は変わっていきます。
+  </blockquote>
+
+</body>
+</html>
