@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">エリザベス・ブラックウェルの大学生活と歴史的卒業</h1>
+  <p>
+    ジュネーヴ医科大学に入学したエリザベス・ブラックウェルが、周囲の偏見を乗り越えて「エリ姉」と慕われる存在になり、過酷な実習を経てアメリカ初の女性医師として卒業するまでの軌跡を辿ります。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">エリザベス・ブラックウェル</span>
+    <span class="opt-a-tag">ジュネーヴ医科大学</span>
+    <span class="opt-a-tag">ジェームズ・ウェブスター</span>
+    <span class="opt-a-tag">小太りの妖精</span>
+    <span class="opt-a-tag">ファーストペンギン</span>
+    <span class="opt-a-tag">ブロックリー給品院</span>
+    <span class="opt-a-tag">1849年1月23日</span>
+    <span class="opt-a-tag">ハリエット・ハント</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 キャンパスライフの変容：孤立から信頼へ</h2>
+  <ul class="opt-a-list">
+    <li><strong>針のむしろからのスタート</strong>：当初は好奇の目や軽蔑に晒され、鎧で身を固めるような緊張感で授業に臨んでいた。</li>
+    <li><strong>男子学生への感化</strong>：
+      <ul>
+        <li>当時の男子学生の多くは「他にやることがないから」という消極的な理由で在籍していた。</li>
+        <li>エリザベスの<strong>圧倒的な学習意欲と威厳あるオーラ</strong>に男子学生たちが圧倒され、次第に「エリ姉」と慕うようになる。</li>
+      </ul>
+    </li>
+    <li><strong>ファーストペンギンの運</strong>：
+      <ul>
+        <li>彼女が「最初の一人」だったため、周囲は制度的な脅威ではなく「偶発的なバグ（例外）」として受け入れる余地があった。</li>
+        <li>後に続こうとした女性（ハリエット・ハントなど）は、現状変更への警戒心からハーバード大学などで拒絶されており、エリザベスの事例がいかに特殊だったかがわかる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 解剖学教授「小太りの妖精」ウェブスターとの交流</h2>
+  <ul class="opt-a-list">
+    <li><strong>強力な支援者</strong>：解剖学の<strong>ジェームズ・ウェブスター教授</strong>は、彼女の入学を心から喜び、あらゆる便宜を図った。</li>
+    <li><strong>ポジティブな展望</strong>：ウェブスターは「女性医師がいれば、女性患者が口に出せない悩みを相談できる。彼女は必ず成功し、大学の名声も高まる」と確信していた。</li>
+    <li><strong>愛称</strong>：エリザベスは手紙の中で、親しみを込めて彼を<strong>「小太りの妖精」</strong>と呼んでいた。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 男性器講義のエピソード：学生としての主張</h2>
+  <p>ウェブスター教授は、内容が「はしたない」とされる男性器の講義の日、エリザベスに欠席を提案したが、彼女は手紙で毅然と反論した。</p>
+  
+  <svg width="100%" viewBox="0 0 600 220" style="background: #1a1a3e; border-radius: 8px; margin: 1em 0;">
+    <!-- ノード 1 -->
+    <rect x="20" y="20" width="220" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="30" y="45" font-size="14">教授の提案</text>
+    <text x="30" y="65" font-size="12" fill="#d4d4e8">「刺激が強いので休んでは？」</text>
+    
+    <!-- 矢印 -->
+    <line x1="240" y1="50" x2="280" y2="50" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+    
+    <!-- ノード 2 -->
+    <rect x="290" y="20" width="280" height="180" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="300" y="45" font-size="14" font-weight="bold">エリザベスの反論（手紙）</text>
+    <text x="305" y="75" font-size="13">・私は真剣な目的を持った学生である</text>
+    <text x="305" y="100" font-size="13">・解剖学は神聖な学問である</text>
+    <text x="305" y="125" font-size="13">・不純さは学ぶ側の心の問題である</text>
+    <text x="305" y="150" font-size="13">・真の医学者は道から外れない</text>
+    <text x="305" y="175" font-size="13">・拒否されるなら最後列でも構わない</text>
+
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+      </marker>
+    </defs>
+  </svg>
+
+  <ul class="opt-a-list">
+    <li><strong>結果</strong>：教授は自分の非を認め、出席を許可。</li>
+    <li><strong>講義当日</strong>：教室内は緊張の極みに達し、顔を赤らめる男子学生もいたが、エリザベスは<strong>自分の手をつねって血が滲むほど耐え</strong>、祈りながら受講した。</li>
+    <li><strong>和解</strong>：講義後、教授が彼女の手紙を読み上げると、男子学生たちから<strong>拍手喝采</strong>が沸き起こり、正式に仲間として認められた。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ブロックリー給品院での過酷な実習</h2>
+  <ul class="opt-a-list">
+    <li><strong>潜り込みの戦略</strong>：理事会の派閥争いを利用し、各リーダーに根回しをして実習の許可を得た（単なる熱血漢ではなく冷静な戦略家）。</li>
+    <li><strong>最悪の衛生環境</strong>：
+      <ul>
+        <li>2000人が収容される施設。暖房はなく冬は水が凍る。</li>
+        <li>都会の排水が流れる汚れた川の水を医療や飲料に使用。</li>
+        <li><strong>細菌の概念がなく</strong>、医師は手を洗わず、エプロンも替えない。コレラや産褥熱が蔓延。</li>
+      </ul>
+    </li>
+    <li><strong>非人道的な精神病棟</strong>：患者が鎖で繋がれ、一般人がそれを見て楽しむような地獄絵図。</li>
+    <li><strong>性感染症病棟での衝撃</strong>：レイプされ性病にかかった貧しい女性たちの姿を見て、後の<strong>社会浄化活動（売春反対運動）</strong>への決意を固める。</li>
+    <li><strong>医師たちからのいじめ</strong>：男性医師からは無視され、カルテも見せてもらえない「シカト」状態。彼女は彼らを避け、夜中や早朝に一人で看護師に質問したり、患者を診察したりして独学で学びを深めた。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 栄光の卒業：1849年1月23日</h2>
+  <ul class="opt-a-list">
+    <li><strong>圧倒的な成績</strong>：最終試験は<strong>クラストップ（主席）</strong>。本人は「試験は簡単だった」と振り返る。</li>
+    <li><strong>男子学生の祝福</strong>：試験会場から出てきた彼女を、男子学生たちが「うちのエリヴ（愛称）は絶好調だ」と喜び、拍手で迎えた。</li>
+    <li><strong>卒業式</strong>：
+      <ul>
+        <li>学長から証書を受け取る際、会場は静まり返った。</li>
+        <li>エリザベスは<strong>「この学位に名誉をもたらすことを生涯の務めとする」</strong>と宣言。</li>
+        <li>会場は熱狂的な拍手に包まれ、クラスメートたちは彼女のために最前列の席を空けて道を作った。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>ジュネーヴ医科大学（学内）</th>
+        <th>ブロックリー給品院（実習先）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>周囲の反応</strong></td>
+        <td>当初は冷ややかだが、後に「エリ姉」と慕われる</td>
+        <td>軽蔑と不安の目。組織的な無視（いじめ）</td>
+      </tr>
+      <tr>
+        <td><strong>支援者</strong></td>
+        <td>ウェブスター教授（小太りの妖精）</td>
+        <td>ほぼ皆無。一部の医師のみ</td>
+      </tr>
+      <tr>
+        <td><strong>学習スタイル</strong></td>
+        <td>講義、夜中の独り解剖（超集中）</td>
+        <td>男性医師を避けた隠密的な実習・独学</td>
+      </tr>
+      <tr>
+        <td><strong>主な経験</strong></td>
+        <td>学問的探求、学生との融和</td>
+        <td>劣悪な衛生環境、社会の不条理の目撃</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <blockquote style="margin-top: 2em;">
+    「彼女の性格を一言で言えば『ド根性』。頑張らない奴はクソだというほどの突破力があったからこそ、この厚い壁を打ち破れた。」
+  </blockquote>
+
+</body>
+</html>
