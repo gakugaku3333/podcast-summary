@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">米イラン暫定合意の現状と「核合意」に向けた60日間の攻防</h1>
+  <p>アメリカとイランの間で結ばれた暫定和平合意から1週間が経過し、ホルムズ海峡の封鎖解除など一定の進展が見られる一方、核心となる核開発問題をめぐる深刻な意見対立が浮き彫りになっています。本エピソードでは、60日後の最終合意に向けた焦点と、両国の思惑の違いを整理しています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">アメリカ</span>
+    <span class="opt-a-tag">イラン</span>
+    <span class="opt-a-tag">核合意</span>
+    <span class="opt-a-tag">ホルムズ海峡</span>
+    <span class="opt-a-tag">IAEA</span>
+    <span class="opt-a-tag">経済制裁</span>
+    <span class="opt-a-tag">バンス副大統領</span>
+    <span class="opt-a-tag">トランプ大統領</span>
+    <span class="opt-a-tag">ビザ手数料値上げ</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 冒頭ニュース：日本の外国人向けビザ手数料の大幅値上げ</h2>
+  <ul class="opt-a-list">
+    <li><strong>来月から実施される手数料改定</strong>
+      <ul>
+        <li>対象：就労、留学、移住などの<strong>長期滞在目的</strong>のビザ申請。</li>
+        <li>短期滞在（旅行等）：ビザ免除国以外の国からの申請は、発行手数料が<strong>5倍</strong>に跳ね上がる。</li>
+      </ul>
+    </li>
+    <li><strong>地域別の影響</strong>
+      <ul>
+        <li><strong>香港：</strong>条件付きで免除対象のため、今回の値上げの影響は受けない。</li>
+        <li><strong>中国本土：</strong>値上げの対象となる。夏休みの旅行計画に影響する可能性があるため、今月中の手続きが推奨される。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 米イラン暫定合意の進捗状況（署名から1週間）</h2>
+  <ul class="opt-a-list">
+    <li><strong>軍事・物流面の変化</strong>
+      <ul>
+        <li><strong>停戦の履行：</strong>現時点では維持されている。</li>
+        <li><strong>海上封鎖の解除：</strong>アメリカ軍によるホルムズ海峡の封鎖が全面的に解除。低調ながらも原油タンカーの往来が再開。</li>
+      </ul>
+    </li>
+    <li><strong>アメリカによる限定的な制裁解除（向こう60日間）</strong>
+      <ul>
+        <li><strong>イラン産原油の販売許可：</strong>期間限定で容認。</li>
+        <li><strong>凍結資金の解除：</strong>一部の資金凍結を解除。</li>
+        <li><strong>復興支援：</strong><strong>48兆円規模</strong>のイラン復興開発計画に関する覚え書きを締結。</li>
+      </ul>
+    </li>
+    <li><strong>批判の声：</strong>アメリカ側がイランに対して「譲歩しすぎではないか」との指摘も出ている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 核心的対立点：核開発とIAEA査察</h2>
+  <p>暫定合意で先送りされた「核問題」について、60日間の期限付き交渉が開始されましたが、スタート直後から主張が真っ向から対立しています。</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>アメリカ側の主張（バンス副大統領）</th>
+        <th>イラン側の主張</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>IAEA査察の受け入れ</strong></td>
+        <td>イランは査察を受け入れた</td>
+        <td>査察を行う計画はない</td>
+      </tr>
+      <tr>
+        <td><strong>ウラン濃縮</strong></td>
+        <td>活動のさらなる制限を要求</td>
+        <td>備蓄処分方法は今後の協議事項</td>
+      </tr>
+      <tr>
+        <td><strong>ミサイル開発</strong></td>
+        <td>核弾頭搭載可能なミサイル制限を狙う</td>
+        <td>暫定合意文書には言及なし</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 過去の合意との比較と両国の狙い</h2>
+  <ul class="opt-a-list">
+    <li><strong>オバマ政権下の「イラン核合意」(2015年)</strong>
+      <ul>
+        <li>構造：イランの核開発制限 ↔ 国際社会による経済制裁解除。</li>
+        <li>経緯：トランプ政権が一方的に破棄したことで現在の危機に至る。</li>
+      </ul>
+    </li>
+    <li><strong>トランプ政権が目指す「ベターな合意」</strong>
+      <ul>
+        <li><strong>ウラン濃縮の厳格な制限：</strong>過去の基準よりも厳しい枠組み。</li>
+        <li><strong>ミサイル開発の抑制：</strong>過去の合意に含まれなかった核弾頭搭載ミサイルも対象に含めたい。</li>
+      </ul>
+    </li>
+    <li><strong>イランが求める「経済的保障」</strong>
+      <ul>
+        <li><strong>インフレ対策：</strong>長期的な経済制裁による国内の不満を解消したい。</li>
+        <li><strong>投資の確約：</strong>単なる一時的な制裁解除ではなく、民間企業が投資できる環境と、復興計画の確実な履行を求めている。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 今後のリスクと注目点</h2>
+  <div class="diagram-container">
+    <svg width="100%" height="180" viewBox="0 0 600 180">
+      <!-- Timeline Line -->
+      <line x1="50" y1="100" x2="550" y2="100" stroke="#60a5fa" stroke-width="2" />
+      
+      <!-- Nodes -->
+      <rect x="30" y="60" width="120" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="90" y="105" text-anchor="middle" font-size="14">暫定合意署名</text>
+      <text x="90" y="125" text-anchor="middle" font-size="12" fill="#a78bfa">（1週間前）</text>
+
+      <rect x="240" y="60" width="120" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="105" text-anchor="middle" font-size="14">核問題交渉</text>
+      <text x="300" y="125" text-anchor="middle" font-size="12" fill="#a78bfa">（現在進行中）</text>
+
+      <rect x="450" y="60" width="120" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="510" y="105" text-anchor="middle" font-size="14">最終合意期限</text>
+      <text x="510" y="125" text-anchor="middle" font-size="12" fill="#a78bfa">（約50日後）</text>
+
+      <!-- Arrows -->
+      <path d="M 150 100 L 230 100" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+      <path d="M 360 100 L 440 100" stroke="#60a5fa" stroke-width="2" fill="none" />
+      
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>ホルムズ海峡の「通行料」問題</strong>
+      <ul>
+        <li>イランが新たな切り札として、海峡通過サービスへの<strong>料金徴収</strong>を画策している（BBC報道）。</li>
+        <li>国際法上は認められていないが、実施されれば<strong>事実上の海峡封鎖</strong>が再発する恐れがある。</li>
+      </ul>
+    </li>
+    <li><strong>検証の不在</strong>
+      <ul>
+        <li>IAEAの査察が合意されない限り、アメリカが制裁解除を先行させても、イランが実際に核開発を停止しているかを確認する手段がない。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote>
+    「落としどころはどこになるのか。この先2ヶ月間の交渉の中身が、世界のエネルギー情勢と経済に大きな影響を与えることになります。」
+  </blockquote>
+
+</body>
+</html>
