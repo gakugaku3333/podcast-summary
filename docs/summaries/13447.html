@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【6月24日】ウクライナ、クリミアを大規模攻撃。エネルギー供給に影響も</h1>
+  <p>2026年6月24日放送。ウクライナ軍によるクリミア半島およびロシア国内のエネルギーインフラへの大規模攻撃と、その戦略的狙い、歴史的背景、そしてプーチン政権への政治的影響について解説しています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">クリミア半島</span>
+    <span class="opt-a-tag">ウクライナ戦争</span>
+    <span class="opt-a-tag">エネルギーインフラ攻撃</span>
+    <span class="opt-a-tag">クリミア大橋</span>
+    <span class="opt-a-tag">プーチン大統領</span>
+    <span class="opt-a-tag">1954年クリミア移管</span>
+    <span class="opt-a-tag">2014年併合</span>
+    <span class="opt-a-tag">黒海艦隊</span>
+    <span class="opt-a-tag">フローレンス・ナイチンゲール</span>
+    <span class="opt-a-tag">戦時下の社会契約</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ウクライナによる大規模攻撃の現状</h2>
+  <ul class="opt-a-list">
+    <li><strong>クリミア半島への攻撃:</strong> 21日の攻撃により4人が死亡。現地ではガソリンの販売が停止され、散発的な停電やガスの供給不足が発生している。</li>
+    <li><strong>ロシア国内への越境攻撃:</strong> ドローンやミサイルを用い、ロシア西部のボロネジ州にあるミサイル用電子機器工場を攻撃。</li>
+    <li><strong>石油関連施設への打撃:</strong> 首都モスクワ周辺や黒海沿岸の石油施設を爆撃。産油国であるロシア国内でガソリン供給不安を引き起こしている。</li>
+    <li><strong>補給路の遮断:</strong> クリミア大橋のロシア側にある原油輸送基地と、クリミア側にある原油貯蔵施設を攻撃し損傷させた。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 攻撃の戦略的フロー</h2>
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
+      <!-- Nodes -->
+      <rect x="10" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="70" y="95" text-anchor="middle" font-size="14">インフラ攻撃</text>
+      
+      <line x1="130" y1="90" x2="160" y2="90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+      
+      <rect x="160" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="220" y="95" text-anchor="middle" font-size="14">燃料・物資不足</text>
+      
+      <line x1="280" y1="90" x2="310" y2="90" stroke="#60a5fa" stroke-width="2" />
+      
+      <rect x="310" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="370" y="95" text-anchor="middle" font-size="14">軍事補給の困難</text>
+      
+      <line x1="430" y1="90" x2="460" y2="90" stroke="#60a5fa" stroke-width="2" />
+      
+      <rect x="460" y="60" width="130" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="525" y="95" text-anchor="middle" font-size="14">政権への不信感</text>
+
+      <!-- Arrow Marker -->
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 クリミア半島の歴史的背景と重要性</h2>
+  <ul class="opt-a-list">
+    <li><strong>支配者の変遷:</strong> ローマ帝国、モンゴル帝国、オスマントルコ、ロシアなど、歴史的に多くの大国が支配してきた。</li>
+    <li><strong>1954年の移管:</strong> 当時のソ連が、経済的・地理的な結びつきの強さを理由に、ロシア共和国からウクライナ共和国へ行政区画を変更。「友好の証」とされた。</li>
+    <li><strong>2014年の併合:</strong> ロシアが軍事力を背景に一方的に併合。国際社会の多くはこれを認めておらず、現在の戦争の大きな転換点となった。</li>
+    <li><strong>軍事的価値:</strong> 黒海艦隊の母港があり、中東や地中海への影響力を行使するための戦略的拠点。</li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>年代</th>
+        <th>出来事</th>
+        <th>背景・詳細</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1954年</td>
+        <td>ウクライナへの移管</td>
+        <td>ソ連内の行政区画変更。インフラ面での合理性を優先。</td>
+      </tr>
+      <tr>
+        <td>1989年</td>
+        <td>ソ連崩壊</td>
+        <td>ロシア国内に「クリミアは本来自国領」という意識が残る。</td>
+      </tr>
+      <tr>
+        <td>2014年</td>
+        <td>ロシアによる併合</td>
+        <td>武装集団を投入し軍事的に制圧。国際的な非難を浴びる。</td>
+      </tr>
+      <tr>
+        <td>現在</td>
+        <td>ウクライナの反転攻勢</td>
+        <td>ロシアの補給路と軍事インフラを標的に攻撃が激化。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 ロシア国内への政治的影響</h2>
+  <ul class="opt-a-list">
+    <li><strong>「戦時下の社会契約」の崩壊:</strong> ロシア政府はこれまで、大都市（モスクワ、サンクトペテルブルク等）の市民に戦争の影響を感じさせない政策をとってきた。</li>
+    <li><strong>市民の動揺:</strong> 繰り返されるドローン攻撃やガソリン不足により、市民が「戦争の現実」を無視できない状況に陥っている。</li>
+    <li><strong>プーチン体制への疑念:</strong> 「安全で強力な国家」というプーチン大統領の約束と矛盾が生じ、政治的基盤を揺るがす可能性が指摘されている（カナダのポリシーマガジン等の分析）。</li>
+    <li><strong>歴史の書き換え:</strong> ロシア占領下のクリミアでは、ロシア側に都合の良い歴史書の出版など、文化的・心理的な同化政策が進められている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 歴史の教訓：クリミア戦争とナイチンゲール</h2>
+  <ul class="opt-a-list">
+    <li><strong>19世紀のクリミア戦争:</strong> ロシアと英仏連合軍が衝突した悲惨な戦争。</li>
+    <li><strong>ナイチンゲールの功績:</strong> 野戦病院で活動し、兵士の死因が戦闘ではなく劣悪な環境による感染症であると突き止めた。</li>
+    <li><strong>現代への遺産:</strong> 換気や消毒の徹底により死亡率を劇的に下げ、現代の<strong>公衆衛生の基礎</strong>を確立した。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 冒頭トピック：スポーツを通じた平和のメッセージ</h2>
+  <ul class="opt-a-list">
+    <li><strong>FIFAワールドカップ:</strong> 日本代表がスウェーデンとの大事な一戦を控える中、アジア勢のイラン代表の行動が注目された。</li>
+    <li><strong>イラン代表のメッセージ:</strong> ベルギー戦後、ロッカールームに「平和と友情が広がることを願う」という手書きの感謝と平和を訴えるメッセージを残した。</li>
+    <li><strong>意義:</strong> アメリカとイランの緊張関係が続く中、スポーツを通じた対話と尊重の精神を示した。</li>
+  </ul>
+
+</body>
+</html>
