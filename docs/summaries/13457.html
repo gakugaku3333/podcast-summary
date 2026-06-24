@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .container { max-width: 800px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="opt-a-header">いけとも尾原DeepなAIニュース：最新AIツールの利用動向</h1>
+    <p>
+      池戸も氏と尾原氏が、ここ3ヶ月でのAIツールの活用方法の劇的な変化について語るエピソード。
+      単なるツールの紹介に留まらず、<strong>「自分をいかに動機づけるか」「知識をどうエージェント化するか」</strong>といった、AI時代の本質的なワークスタイルとマインドセットが深掘りされています。
+    </p>
+
+    <div class="opt-a-tags">
+      <span class="opt-a-tag">Claude Design (Artifacts)</span>
+      <span class="opt-a-tag">Supabase</span>
+      <span class="opt-a-tag">Live Dashboard</span>
+      <span class="opt-a-tag">Vibe Coding</span>
+      <span class="opt-a-tag">Local LLM</span>
+      <span class="opt-a-tag">Gemma 2</span>
+      <span class="opt-a-tag">Prompt to Pipeline</span>
+      <span class="opt-a-tag">Meta-skill</span>
+      <span class="opt-a-tag">CRM</span>
+      <span class="opt-a-tag">GitHub</span>
+    </div>
+
+    <h2 class="opt-a-section-title">📌 二人の現在のAI活用比較</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>項目</th>
+          <th>池戸も氏（いけとも）</th>
+          <th>尾原氏（おばら）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>主要な基盤</strong></td>
+          <td>Supabase（142テーブルの膨大なデータ蓄積）</td>
+          <td>GitHub（クライアント共有の知識・エージェント管理）</td>
+        </tr>
+        <tr>
+          <td><strong>注力アウトプット</strong></td>
+          <td>Vision KPI ダッシュボード（累積的な価値可視化）</td>
+          <td>Live Dashboard（会議中に作り変える意思決定基盤）</td>
+        </tr>
+        <tr>
+          <td><strong>技術的アプローチ</strong></td>
+          <td>Local LLM（Gemma 2）によるプライバシー保護処理</td>
+          <td>スキルの構造化（Claude.md / Skill.md）による共有</td>
+        </tr>
+        <tr>
+          <td><strong>モチベーションの源泉</strong></td>
+          <td>累積（ストック）が増えていく実感</td>
+          <td>レバー（最重要KPI）の特定とゲーム化</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="opt-a-section-title">📌 いけとも氏：Vision KPI ダッシュボードとLocal LLM</h2>
+    <ul class="opt-a-list">
+      <li><strong>「勝てるゲーム」の設計</strong>：
+        <ul>
+          <li>売上や再生回数といった他人の軸ではなく、自分がテンションの上がる<strong>「累積（ストック）」</strong>を指標にする。</li>
+          <li>イベントアンケート、本のレビュー、YouTubeコメントなど、あらゆる「価値創出の事例」をデータベース化。</li>
+        </ul>
+      </li>
+      <li><strong>Claude Designによる模索</strong>：
+        <ul>
+          <li>「どういう見せ方なら自分のテンションが上がるか」をClaude Designでプロトタイピングし、ダッシュボードのUIを決定。</li>
+        </ul>
+      </li>
+      <li><strong>Local LLM（Gemma 2）の活用</strong>：
+        <ul>
+          <li>メールアドレスを含む個人情報や、深い関与データ（Xの発信内容など）を処理するため、Mac上のローカル環境でLLMを回す。</li>
+          <li>外部APIコストを気にせず、24時間体制で「この人は今何を求めているか」を分析・レベル定義する体制を構築。</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2 class="opt-a-section-title">📌 尾原氏：Live Dashboardとスキルのエージェント化</h2>
+    <ul class="opt-a-list">
+      <li><strong>Live Dashboard（ライブダッシュボード）</strong>：
+        <ul>
+          <li>「会議のための資料」を廃止し、日常的に使うダッシュボードをそのまま議論のベースにする。</li>
+          <li><strong>Vibe Coding</strong>により、会議中のイシューに合わせてその場でダッシュボードを書き換える。</li>
+        </ul>
+      </li>
+      <li><strong>スキルの構造化と共有</strong>：
+        <ul>
+          <li>単なるテキスト（Markdown）の共有から、<strong>Claude.md</strong>や<strong>Skill.md</strong>といった「エージェント定義ファイル」の共有へ進化。</li>
+          <li>他人の優れたスキル（例：オンボーディングのスキル）をリバースエンジニアリングし、自分のプロジェクトに移植する「技マシン」的な運用。</li>
+        </ul>
+      </li>
+      <li><strong>ハイパー・パーソナライゼーション</strong>：
+        <ul>
+          <li>AIにより、既存顧客一人ひとりの成長度合いに合わせたCRM（顧客関係管理）がようやく実装可能になった。</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2 class="opt-a-section-title">📌 概念図：Prompt to Pipeline（プロンプトからパイプラインへ）</h2>
+    <svg width="100%" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="600" height="200" fill="#1a1a3e" rx="8"/>
+      
+      <!-- Nodes -->
+      <rect x="20" y="70" width="120" height="60" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" rx="8"/>
+      <text x="80" y="105" text-anchor="middle" font-size="14">データ蓄積</text>
+      <text x="80" y="122" text-anchor="middle" font-size="10">(Supabase等)</text>
+
+      <rect x="180" y="70" width="120" height="60" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" rx="8"/>
+      <text x="240" y="105" text-anchor="middle" font-size="14">AI処理</text>
+      <text x="240" y="122" text-anchor="middle" font-size="10">(Local/Cloud)</text>
+
+      <rect x="340" y="70" width="120" height="60" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" rx="8"/>
+      <text x="400" y="105" text-anchor="middle" font-size="14">可視化</text>
+      <text x="400" y="122" text-anchor="middle" font-size="10">(Live Dashboard)</text>
+
+      <rect x="500" y="70" width="80" height="60" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="2" rx="8"/>
+      <text x="540" y="105" text-anchor="middle" font-size="14">価値創出</text>
+      <text x="540" y="122" text-anchor="middle" font-size="10">(CRM/成長支援)</text>
+
+      <!-- Arrows -->
+      <path d="M 140 100 L 180 100" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+      <path d="M 300 100 L 340 100" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+      <path d="M 460 100 L 500 100" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+          <path d="M0,0 L0,10 L10,5 Z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+
+    <h2 class="opt-a-section-title">📌 AI時代の本質的な変化</h2>
+    <ul class="opt-a-list">
+      <li><strong>「燃え尽き」への対策</strong>：
+        <ul>
+          <li>AIの進化が速すぎて人間が置いていかれる感覚（他人事化）を防ぐため、いかに「自分を生き生きとさせ続けるか」というパーソナライゼーションが重要。</li>
+        </ul>
+      </li>
+      <li><strong>ステップバックの自動化</strong>：
+        <ul>
+          <li>人間は目の前の業務に埋没しがちだが、AIに「一歩引いた視点（スコープの拡大）」や「構造化」を壁打ちさせることで、持続的な競争優位性を保つ。</li>
+        </ul>
+      </li>
+      <li><strong>ホスピタリティのブランド化</strong>：
+        <ul>
+          <li>深いデータ分析に基づく支援が「気持ち悪いストーカー」ではなく「リッツカールトンのようなホスピタリティ」として受け取られる信頼関係（オーセンティシティ）の構築。</li>
+        </ul>
+      </li>
+    </ul>
+
+    <blockquote>
+      「単なるツールとしての深掘りではなく、ツールが進化したからこそ、もともとやりたかったことがどう実現できるのかを考えるのが楽しい。」
+    </blockquote>
+  </div>
+</body>
+</html>
