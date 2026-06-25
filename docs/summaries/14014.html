@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【65-9】過酷すぎた医者修行 〜隻眼の新米女医が掴むプロフェッショナリズム〜</h1>
+  <p>医学部を卒業したエリザベス・ブラックウェルが、プロの医師として歩み出す過程で直面した世間の猛烈な批判、パリでの過酷な修行、そして彼女の医師人生を大きく変えることになった「左目の失明」という悲劇について語られます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">エリザベス・ブラックウェル</span>
+    <span class="opt-a-tag">道徳と医学</span>
+    <span class="opt-a-tag">ジェネバ医科大学</span>
+    <span class="opt-a-tag">ラ・マテルニテ産科病院</span>
+    <span class="opt-a-tag">化膿性眼炎</span>
+    <span class="opt-a-tag">失明</span>
+    <span class="opt-a-tag">フローレンス・ナイチンゲール</span>
+    <span class="opt-a-tag">正当派医学</span>
+    <span class="opt-a-tag">予防医学</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 卒業後の世間の反応と医学哲学</h2>
+  <ul class="opt-a-list">
+    <li><strong>卒論の評価：</strong>発疹チフスに関する卒論が学術雑誌（ジャーナル）の冒頭に掲載された。大学側は「女性医師を輩出した先進的な大学」としての宣伝材料にする意図もあった。</li>
+    <li><strong>独自の医学観：</strong>「道徳と健康」を不可分なものとして捉えていた。
+      <ul>
+        <li><strong>道徳的な生き方：</strong>新鮮な空気、冷たい水、軽い運動、栄養のある食事を実践すること。</li>
+        <li><strong>三位一体の構造：</strong>「肉体・精神・道徳」は繋がっており、不摂生は肉体を蝕み、精神を荒らし、道徳の崩壊を招くと考えた。</li>
+        <li><strong>医師の役割：</strong>単に病を治すだけでなく、社会全体の道徳を改善し、人類を癒す存在。</li>
+      </ul>
+    </li>
+    <li><strong>既存医学への疑念：</strong>当時の正当派医学（大量の薬、瀉血、手術）に対し、「本当にこれで治るのか？」という違和感を抱き始めていた。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" height="180" viewBox="0 0 500 180">
+      <!-- Nodes -->
+      <rect x="190" y="10" width="120" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="250" y="35" text-anchor="middle" font-size="14">道徳的生活</text>
+      
+      <rect x="40" y="110" width="120" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="100" y="135" text-anchor="middle" font-size="14">肉体の健康</text>
+      
+      <rect x="340" y="110" width="120" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="400" y="135" text-anchor="middle" font-size="14">精神の健康</text>
+
+      <!-- Arrows -->
+      <path d="M190 30 L100 110" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+      <path d="M160 130 L340 130" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+      <path d="M400 110 L310 30" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+      
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.85em; color: #a78bfa; margin-top: 10px;">エリザベスが考える「健康と道徳の循環構造」</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 医学界からの猛烈なバッシング</h2>
+  <ul class="opt-a-list">
+    <li><strong>男性医師たちの批判：</strong>「女性が医療に従事することは口頭無稽」「自然の秩序と神の定めた法を歪める行為」として、人格や能力に関わらず「女性であること」自体を否定された。</li>
+    <li><strong>卑俗な揶揄：</strong>「男性の性器を解剖する女性」という姿を、女性の領域から最も遠いものとして嘲笑の対象にされた。</li>
+    <li><strong>母校への飛び火：</strong>ジェネバ医科大学に対し「無責任」「男女の区別の崩壊を招く」との批判が殺到。
+      <ul>
+        <li>結果として、同大学はその後、女性の入学を一切拒否するようになった。</li>
+        <li>支持者だったチャールズ・リー学部長も批判に耐えきれず、「彼女はあくまで例外であり、前例にしてはならない」と釈明。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 パリでの修行と「左目の失明」</h2>
+  <ul class="opt-a-list">
+    <li><strong>フランス・パリへ：</strong>医学の先進地であるパリへ渡るが、医師としての地位は認められず、<strong>ラ・マテルニテ産科病院</strong>に「学生」として入学。</li>
+    <li><strong>過酷な現場環境：</strong>
+      <ul>
+        <li>劣悪な衛生状態：手洗いなしの処置、ネズミの発生、悪臭を放つマットレス。</li>
+        <li>ハードスケジュール：朝5時起床、夜通しの当職、毎日1時間の口頭試験。</li>
+        <li>収穫：数千件の出産に立ち会い、生きた患者を診るという、アメリカの大学では得られなかった圧倒的な臨床経験を積む。</li>
+      </ul>
+    </li>
+    <li><strong>悲劇の発生：</strong>新生児の<strong>化膿性眼炎</strong>（淋菌性結膜炎）を処置中、洗浄液がエリザベスの顔に飛散。
+      <ul>
+        <li>当時の治療（瞼を焼く、ヒルに血を吸わせる、水銀やアヘンの投与）は効果がなく、<strong>左目を失明</strong>。</li>
+        <li>外科医（執刀医）になるという夢が、物理的に不可能となり絶望の淵に立たされる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ロンドンでの再起とナイチンゲールとの出会い</h2>
+  <ul class="opt-a-list">
+    <li><strong>セントバーソロミュウ病院：</strong>ロンドン最古の病院でインターンとして勤務。有名人であったため、教授陣からは好意的に受け入れられた。</li>
+    <li><strong>フローレンス・ナイチンゲールとの対立：</strong>
+      <table>
+        <tr>
+          <th>人物</th>
+          <th>医療における女性の役割の考え方</th>
+        </tr>
+        <tr>
+          <td><strong>ナイチンゲール</strong></td>
+          <td><strong>リアリスト：</strong>まずは看護婦の地位をプロとして確立すべき。リソースの乏しい女性が医師を目指すのは非効率。</td>
+        </tr>
+        <tr>
+          <td><strong>ブラックウェル</strong></td>
+          <td><strong>ビジョナリー：</strong>女性が「医師」という最高権威の職に就くべき。理想の医療を実践するための独立を目指す。</td>
+        </tr>
+      </table>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 独立への戦略的決断</h2>
+  <ul class="opt-a-list">
+    <li><strong>二重の課題：</strong>「ジェンダーギャップの解消」と「医学のアップデート（予防医学への転換）」を同時に行う必要があった。</li>
+    <li><strong>権威の利用：</strong>既存の正当派医学（瀉血や水銀療法など）には疑問を持っていたが、社会的な信用を得るためには、その<strong>「正当派の権威」</strong>を捨ててはいけないと判断。</li>
+    <li><strong>結論：</strong>「女性医師」という存在が社会に認められるまでは、既存の医学の枠組みの中で戦い、その上で自分の理想を試せる「自分の病院」を作ることを決意。</li>
+    <li><strong>再渡米：</strong>イギリス、フランスでの修行を終え、再びアメリカへ戻り独立開業を目指す。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" height="120" viewBox="0 0 500 120">
+      <rect x="20" y="40" width="140" height="40" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" />
+      <text x="90" y="65" text-anchor="middle" font-size="13">正当派医学の権威</text>
+      
+      <path d="M160 60 L200 60" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+      
+      <rect x="200" y="40" width="140" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="270" y="65" text-anchor="middle" font-size="13">女性医師の社会的信用</text>
+      
+      <path d="M340 60 L380 60" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+      
+      <rect x="380" y="40" width="100" height="40" rx="8" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" />
+      <text x="430" y="65" text-anchor="middle" font-size="13">独自の病院</text>
+    </svg>
+    <p style="font-size: 0.85em; color: #a78bfa; margin-top: 10px;">エリザベスの独立戦略：権威を「踏み台」にする</p>
+  </div>
+
+  <blockquote>
+    「このトラウマを過去の出来事にするには、前に進み続けるしかない」
+  </blockquote>
+
+</body>
+</html>
