@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">News Connect：日印関係とアメリカ離れ、世界情勢の振り返り</h1>
+  <p>2026年7月5日配信のエピソード。高市首相のインド訪問を軸とした日印関係の深化や、ヨーロッパの記録的熱波、中国の新法、自動運転の上場動向、アメリカ最高裁判決など、多岐にわたる1週間の重要ニュースを専門家が解説します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">ミッドライフクライシス</span>
+    <span class="opt-a-tag">欧州熱波</span>
+    <span class="opt-a-tag">民族団結進歩促進法</span>
+    <span class="opt-a-tag">域外適用</span>
+    <span class="opt-a-tag">レアアース禁輸</span>
+    <span class="opt-a-tag">ティアフォー(TIER IV)</span>
+    <span class="opt-a-tag">自動運転レベル4</span>
+    <span class="opt-a-tag">ロボタクシー</span>
+    <span class="opt-a-tag">米国最高裁</span>
+    <span class="opt-a-tag">出生地主義</span>
+    <span class="opt-a-tag">高市首相</span>
+    <span class="opt-a-tag">日印直接決済</span>
+    <span class="opt-a-tag">クワッド(QUAD)</span>
+    <span class="opt-a-tag">ボサノバ</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 冒頭雑談：ミッドライフクライシスと「鈍感力」</h2>
+  <ul class="opt-a-list">
+    <li><strong>ミッドライフクライシス（中年の危機）</strong>：45歳〜50歳頃に幸福度が低下する現象。
+      <ul>
+        <li>要因：体調変化（更年期障害）、責任の増大、褒められる機会の減少、介護や育児の重なり。</li>
+        <li>心理的特徴：「もっとやれたのではないか」という葛藤、二度目の思春期のような不安定さ。</li>
+      </ul>
+    </li>
+    <li><strong>塩野氏の対処法</strong>：
+      <ul>
+        <li><strong>DKR（鈍感力）</strong>：人のことを気にしすぎない。</li>
+        <li><strong>レジリエンス</strong>：落ち込んでも2秒で戻る。</li>
+        <li><strong>小さな幸せの発見</strong>：庭のハーブや、通りに生えている山桃を食べるなど、日常の些細な喜びに目を向ける。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 月曜：ヨーロッパを襲う記録的熱波</h2>
+  <ul class="opt-a-list">
+    <li><strong>各地の最高気温</strong>：
+      <ul>
+        <li>ドイツ：ザクセン・アンハルト州で<strong>41.5度</strong>（観測史上最高）。</li>
+        <li>チェコ：40度超え。</li>
+        <li>フランス：パリで直近20時間に暑さ原因の死者が<strong>109名</strong>。</li>
+      </ul>
+    </li>
+    <li><strong>構造的課題</strong>：
+      <ul>
+        <li>エアコン普及率の低さ：フランスでは2025年時点で<strong>24%</strong>程度。</li>
+        <li>建築構造：石造りなど熱がこもりやすい設計。</li>
+      </ul>
+    </li>
+    <li><strong>電力の奪い合い</strong>：温暖化対策（エアコン）とAI（計算資源）による電力需要の激増が人類の制約条件になりつつある。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 火曜：中国の新法「民族団結進歩促進法」と禁輸措置</h2>
+  <ul class="opt-a-list">
+    <li><strong>民族団結進歩促進法</strong>：
+      <ul>
+        <li>内容：多様な民族を「単一の中華民族」として規定。中国標準語の学習を義務化。</li>
+        <li><strong>域外適用</strong>：海外の組織や個人が中国の民族団結を妨げた場合、法的責任を追及できる。</li>
+        <li>懸念：台湾人や香港人の訴追に利用される可能性。</li>
+      </ul>
+    </li>
+    <li><strong>対日禁輸リストの拡大</strong>：
+      <ul>
+        <li>レアアースなど軍民両用物資の日本向け輸出を制限。</li>
+        <li>三菱電機の関連会社や防衛省研究所など<strong>20の団体・企業</strong>を追加。</li>
+      </ul>
+    </li>
+    <li><strong>統治の論理</strong>：14億人を統治するために「党の指導」をすべてに優先させる中国側の論理と、個人の自由を重視する西側諸国の対立。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 水曜：自動運転の商用化と「ティアフォー」上場</h2>
+  <ul class="opt-a-list">
+    <li><strong>ティアフォー(TIER IV)の上場</strong>：
+      <ul>
+        <li>国内初の自動運転専業企業として東証グロース市場へ上場（時価総額1,000億円規模）。</li>
+      </ul>
+    </li>
+    <li><strong>グローバル競争の現状</strong>：
+      <ul>
+        <li>米国：<strong>Waymo（ウェイモ）</strong>が数千台規模で先行。</li>
+        <li>中国：<strong>Baidu（アポロ・ゴー）</strong>が利用件数でWaymoを上回る勢い。</li>
+      </ul>
+    </li>
+    <li><strong>ビジネス上の懸念</strong>：
+      <ul>
+        <li><strong>コモディティ化</strong>：自動運転ソフトが標準装備（インフラ化）されると、差別化が難しくなり収益化期間が短くなる。</li>
+        <li><strong>社会的受容性</strong>：AIによる事故を社会がどこまで許容できるかという倫理的・法的課題。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 木曜：米国最高裁の「リーガル・ハック」判決</h2>
+  <ul class="opt-a-list">
+    <li><strong>選挙資金の制限撤廃</strong>：
+      <ul>
+        <li>政党と候補者の協調支出制限を違憲と判断。大口献金者に強い<strong>共和党に有利</strong>に働く可能性。</li>
+      </ul>
+    </li>
+    <li><strong>出生地主義の見直し</strong>：
+      <ul>
+        <li>トランプ氏が掲げた「不法移民の子への市民権剥奪」に対し、最高裁は違憲判決。</li>
+        <li>トランプ側は議会を通じた立法措置での対抗を示唆。</li>
+      </ul>
+    </li>
+    <li><strong>トランプ氏の動向</strong>：
+      <ul>
+        <li>資産開示により、暗号通貨で<strong>2,000億円</strong>を稼いだことが判明。</li>
+        <li>既存の法律をハッキングするように利用する「リーガル・アビトラージ」的な手法が目立つ。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 金曜：日印関係の深化と「アメリカ離れ」の思惑</h2>
+  <ul class="opt-a-list">
+    <li><strong>高市首相のインド訪問</strong>：
+      <ul>
+        <li>エネルギー安全保障：中東依存脱却のため、石油備蓄システムやバイオガス分野で協力。</li>
+        <li><strong>直接決済の導入</strong>：円とルピーによる直接取引を検討。ドル変動リスクの回避とコスト削減。</li>
+      </ul>
+    </li>
+    <li><strong>金融機関の動向（対照的な動き）</strong>：
+      <table>
+        <thead>
+          <tr>
+            <th>勢力</th>
+            <th>主な動き</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>日本勢（メガバンク）</strong></td>
+            <td>SMFGがイエス銀行に出資(20%)、MUFGがノンバンク買収(6780億円)など攻勢。</td>
+          </tr>
+          <tr>
+            <td><strong>欧米勢（シティ等）</strong></td>
+            <td>規制の多さや利益率の低さを理由にリテール事業から撤退。</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li><strong>地政学的背景</strong>：米印関係の冷え込みにより<strong>QUAD（クワッド）</strong>が機能不全に陥る中、日本がインドとの二国間関係を再起動させる重要性が増している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 週末の選曲：ブラジル・ボサノバ特集</h2>
+  <p>サッカー・ワールドカップのブラジル戦（敗退）にちなみ、湿度が高い日に合うボサノバをセレクト。</p>
+  <ul class="opt-a-list">
+    <li><strong>Bebel Gilberto「So Nice (Summer Samba)」</strong>：ボサノバの巨匠ジョアン・ジルベルトの娘によるスタンダード・ナンバー。</li>
+    <li><strong>LARA LUIS「Quiet Nights of Quiet Stars」</strong>：オランダ人シンガーによる、甘い声のボサノバ・ジャズ・カバー。</li>
+    <li><strong>鈴木真美子「雨と」</strong>：サンバやボッサの要素を取り入れた、アニメ主題歌にもなっている楽曲。</li>
+  </ul>
+
+  <svg width="100%" viewBox="0 0 600 250" style="background: #1a1a3e; border-radius: 8px; margin: 20px 0;">
+    <!-- Nodes -->
+    <rect x="50" y="80" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="110" y="115" text-anchor="middle" font-size="14">日本</text>
+    
+    <rect x="430" y="80" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="490" y="115" text-anchor="middle" font-size="14">インド</text>
+
+    <rect x="240" y="20" width="120" height="40" rx="8" fill="rgba(245, 158, 11, 0.1)" stroke="#f59e0b" />
+    <text x="300" y="45" text-anchor="middle" font-size="12">エネルギー備蓄協力</text>
+
+    <rect x="240" y="160" width="120" height="40" rx="8" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" />
+    <text x="300" y="185" text-anchor="middle" font-size="12">円・ルピー直接決済</text>
+
+    <!-- Arrows -->
+    <path d="M 170 110 L 430 110" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+    <path d="M 430 110 L 170 110" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+    
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+      </marker>
+    </defs>
+    
+    <text x="300" y="135" text-anchor="middle" font-size="12" fill="#a78bfa">脱ドル・脱中東依存</text>
+  </svg>
+
+</body>
+</html>
