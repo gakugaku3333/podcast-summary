@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list li ul {
+      list-style: none;
+      padding-left: 10px;
+      margin-top: 8px;
+    }
+    .opt-a-list li ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">#2-18 「人生の残り時間」から考える、幸せなお金の使い方</h1>
+  <p>
+    起業家のつま本正人氏とライターの泉秀一氏が、Forbesの記事をきっかけに「品格あるお金の使い方」と「人生の残り時間の価値」について語ります。単なる蓄財ではなく、社会的リターンや時間価値の数値化を通じて、後悔しない人生の送り方を考察するエピソードです。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">経済的リターン</span>
+    <span class="opt-a-tag">社会的リターン</span>
+    <span class="opt-a-tag">キャピタルゲイン</span>
+    <span class="opt-a-tag">インカムゲイン</span>
+    <span class="opt-a-tag">Die With Zero</span>
+    <span class="opt-a-tag">時間価値</span>
+    <span class="opt-a-tag">品格</span>
+    <span class="opt-a-tag">感謝</span>
+    <span class="opt-a-tag">金融教育</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 お金の使い方の2つの分類</h2>
+  <ul class="opt-a-list">
+    <li><strong>経済的リターンを求める使い方</strong>
+      <ul>
+        <li><strong>キャピタルゲイン</strong>：資産価値の上昇による売却益を狙う（ホームラン狙い）。</li>
+        <li><strong>インカムゲイン</strong>：利息や配当など、継続的なキャッシュフローを得る。</li>
+        <li>これらだけを追い求めると、終わりのない「お金を稼ぐゲーム」に陥り、幸福が損なわれる可能性がある。</li>
+      </ul>
+    </li>
+    <li><strong>社会的リターンを求める使い方</strong>
+      <ul>
+        <li>自分にとって意義のあることや、社会を良くすることにお金を使う。</li>
+        <li>金銭的な見返りはなくても、<strong>心の充足感</strong>や「人生一回だしやってよかった」という感覚を得られる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 幸福度を高めるお金のフロー</h2>
+  <p>理想的なお金の使い方の順序と構造を整理します。</p>
+  
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 180">
+      <!-- Nodes -->
+      <rect x="10" y="60" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="90" y="95" text-anchor="middle" font-size="14">自己の充足</text>
+      
+      <rect x="220" y="60" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="95" text-anchor="middle" font-size="14">インカムゲインの確立</text>
+      
+      <rect x="430" y="60" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="510" y="95" text-anchor="middle" font-size="14">社会的リターンへ投資</text>
+      
+      <!-- Arrows -->
+      <path d="M 170 90 L 210 90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      <path d="M 380 90 L 420 90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>順序の重要性</strong>：まずは自分が満たされていることが大前提。ピンチの状態で人を助けるのは難しい。</li>
+    <li><strong>無理のない還元</strong>：キャピタルゲインをインカムゲイン（安定資産）に換え、そこから生まれる余裕分を社会的リターンに回すのが、精神的にも最も安定する。</li>
+    <li><strong>幸福な人の共通点</strong>：お金の多寡に関わらず、仲間、後輩、親などに対して感謝の気持ちを込めてお金を使っている人は幸せそうに見える。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 お金を持つことで失うリスクと「品格」</h2>
+  <ul class="opt-a-list">
+    <li><strong>生き方の丁寧さの喪失</strong>：「何でもお金で解決できる」と思い始めると、謙虚さや丁寧さが失われ、品格がなくなる。</li>
+    <li><strong>感謝の忘却</strong>：小さなことへの感謝を忘れないよう、常に意識的に自分を律する必要がある。</li>
+    <li><strong>ダサいお金持ちの回避</strong>：ブランド品や高級車で着飾ることよりも、仲間と居酒屋でビールを飲むような、本質的な幸せを忘れないことが重要。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 人生の残り時間を「数値化」するメソッド</h2>
+  <p>つま本氏がバリ島で考案した、人生の残り時間を意識するための計算考え方です。</p>
+
+  <ul class="opt-a-list">
+    <li><strong>人生を40歳で区切る</strong>：40歳までを前半戦（資産形成・仕事）、80歳までを後半戦とする。</li>
+    <li><strong>1年間の価値の算出</strong>：
+      <ul>
+        <li>残りの40年間の価値を合計100%とする。</li>
+        <li>若い時ほど価値が高い（または特定の年齢をピークにする）と仮定し、各年齢に%を割り振る。</li>
+        <li>例：40歳の1年間は<strong>約5%</strong>の価値がある。これを365日で割ると、1日の価値が明確になる。</li>
+      </ul>
+    </li>
+    <li><strong>時間価値のピーク設定</strong>：
+      <ul>
+        <li>フィジカルと経験が交差する<strong>50代をアウトプットの最大値（ピーク）</strong>に設定し、そこに向けてギアを上げていく考え方。</li>
+      </ul>
+    </li>
+    <li><strong>14,000日の重み</strong>：80歳まで生きるとしても、残りは約14,000日程度。すべての食事、すべての出会いに無駄な時間はない。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 200">
+      <!-- Axes -->
+      <line x1="50" y1="160" x2="550" y2="160" stroke="#e8e8f0" stroke-width="2" />
+      <line x1="50" y1="160" x2="50" y2="20" stroke="#e8e8f0" stroke-width="2" />
+      <text x="550" y="180" text-anchor="end" font-size="12">年齢</text>
+      <text x="40" y="20" text-anchor="end" font-size="12">1年の価値(%)</text>
+      
+      <!-- Curve (Peak at 50) -->
+      <path d="M 50 140 Q 300 20 550 140" fill="none" stroke="#8b5cf6" stroke-width="3" />
+      
+      <!-- Labels -->
+      <text x="50" y="175" text-anchor="middle" font-size="12">20歳</text>
+      <text x="175" y="175" text-anchor="middle" font-size="12">40歳</text>
+      <text x="300" y="175" text-anchor="middle" font-size="12">50歳(Peak)</text>
+      <text x="550" y="175" text-anchor="middle" font-size="12">80歳</text>
+      
+      <circle cx="300" cy="45" r="5" fill="#f59e0b" />
+      <text x="310" y="40" font-size="12" fill="#f59e0b">アウトプット最大化</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 結論としてのメッセージ</h2>
+  <ul class="opt-a-list">
+    <li><strong>貪欲に稼ぎ、賢く使う</strong>：お金で実現できる幅は広がるため、若いうちはしっかり稼ぐべき。ただし、その目的（何のために使うか）を常に問い続ける。</li>
+    <li><strong>「スカさない」生き方</strong>：ワールドカップの応援のように、斜に構えず、全力で熱狂し、全力で取り組むことが人生の密度を上げる。</li>
+    <li><strong>今すぐギアを変える</strong>：半年間で人生の2.5%を消費しているという自覚を持ち、無駄なことに時間を使わず、感謝を持って生きる。</li>
+  </ul>
+
+  <blockquote>
+    「1日の重要性は半端ない。すべての夜の食事を誰かとするとしても、あと14,000回しか食事がない。無駄なことをしている時間はない。」
+  </blockquote>
+
+</body>
+</html>
