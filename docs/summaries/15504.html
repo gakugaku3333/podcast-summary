@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ながらAIラジオ：2026年7月6日号 情報整理</h1>
+  <p>AIコンサルタントのうすたく氏とメルカリAI推進担当の早川ゴミ氏が、2026年7月初旬の激動のAIニュースを解説。最強モデルClaude Fable 5の期間限定復活や、新しいハードウェア、プラットフォームの機能アップデートについて深く掘り下げます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">Claude Fable 5</span>
+    <span class="opt-a-tag">Claude Mythos</span>
+    <span class="opt-a-tag">Anthropic</span>
+    <span class="opt-a-tag">OASIS</span>
+    <span class="opt-a-tag">Smart Ring</span>
+    <span class="opt-a-tag">Gemini 3.5 Thinking</span>
+    <span class="opt-a-tag">Notion HTML埋め込み</span>
+    <span class="opt-a-tag">Obsidian</span>
+    <span class="opt-a-tag">Notta</span>
+    <span class="opt-a-tag">エージェンティック活用</span>
+    <span class="opt-a-tag">超ときめき♡宣伝部</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 Claude Fable 5 の電撃復活と活用戦略</h2>
+  <ul class="opt-a-list">
+    <li><strong>復活の背景：</strong> かつて「賢すぎて危険」とされ軍事パートナー限定だった<strong>Claude Mythos</strong>に近い能力を持つ個人向けモデル<strong>Fable</strong>が、2026年7月2日に期間限定で復活。</li>
+    <li><strong>利用可能期間：</strong> 日本時間で<strong>7月8日ごろまで</strong>。この期間内は月額3,000円のサブスクリプション枠内で利用可能。それ以降は重量課金制（API等）へ移行。</li>
+    <li><strong>Fableの強み：</strong>
+      <ul>
+        <li><strong>認知能力（Vision）：</strong> 画面上の配置認識やデザイン、3Dコネクタの接続など、視覚的な理解が極めて高い。</li>
+        <li><strong>複雑な思考：</strong> 哲学的な問い、AI時代の選曲、ベーシックインカムのシミュレーションなど、計算を伴う高度な推論に長けている。</li>
+        <li><strong>日本語能力：</strong> 既存モデルよりも明らかに高く、本の原稿へのメタ的なフィードバックなどにも適している。</li>
+      </ul>
+    </li>
+    <li><strong>ビジネスパーソンへのアドバイス：</strong>
+      <ul>
+        <li>重量課金に移行する前に、この5日間で<strong>ROI（投資対効果）が見合うユースケース</strong>を特定すること。</li>
+        <li><strong>Opusとの明確な差分</strong>を示す実例を作り、来期の予算取りの根拠にすること。</li>
+        <li>役員など予算決定権を持つ人に、この期間中に触ってもらうことが重要。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 120">
+      <!-- Timeline Line -->
+      <line x1="50" y1="60" x2="550" y2="60" stroke="#60a5fa" stroke-width="2" />
+      <!-- Points -->
+      <circle cx="100" cy="60" r="6" fill="#8b5cf6" />
+      <text x="70" y="40" font-size="12">7/2 復活</text>
+      <rect x="100" y="55" width="300" height="10" fill="rgba(139, 92, 246, 0.3)" />
+      <text x="180" y="85" font-size="14" fill="#a78bfa">サブスクで使い放題期間</text>
+      
+      <circle cx="400" cy="60" r="6" fill="#f59e0b" />
+      <text x="370" y="40" font-size="12">7/8 終了予定</text>
+      <text x="410" y="85" font-size="14" fill="#f59e0b">→ 重量課金へ</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 音声入力スマートリング「OASIS」とデバイスの多様性</h2>
+  <ul class="opt-a-list">
+    <li><strong>OASISの概要：</strong> 音声入力に特化したリング型デバイス。価格は約<strong>290ドル（約4.5万〜5万円）</strong>。</li>
+    <li><strong>主な機能：</strong> 口元に近づけての音声入力、親指によるスクロール操作など。</li>
+    <li><strong>ハードウェアの課題（サイズ問題）：</strong>
+      <ul>
+        <li>女性や指の細いユーザーにとって、既存のスマートリング（EVEN G2等）は最小サイズでも大きい場合がある。</li>
+        <li><strong>「マーケットがないから作られない」</strong>という現状があり、多様な人種・性別に合うサイズ展開が不足している。</li>
+        <li>Oura Ringが<strong>40%小型化・軽量化</strong>した新モデルを発表しており、今後の改善に期待。</li>
+      </ul>
+    </li>
+    <li><strong>音声入力の物理的距離：</strong> スマートスピーカー（Google Home等）は換気扇の音などで声が届かないことがあるため、口元に近いウェアラブルデバイスの優位性が再認識されている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Gemini 3.5 Thinking と「命名」の課題</h2>
+  <ul class="opt-a-list">
+    <li><strong>新モデル：</strong> <strong>Gemini 3.5 Thinking（試行モード）</strong>が登場。画像生成能力も強化。</li>
+    <li><strong>画像生成：</strong> Imagen 2.0と比較しても遜色ないクオリティ。プロンプトを中間モデルが適切に解釈することで質が向上している。</li>
+    <li><strong>UX/命名の混乱：</strong>
+      <ul>
+        <li>「Flash」「Thinking（試行モード）」「Pro」の順序や役割が一般ユーザーには分かりにくい。</li>
+        <li><strong>「ラーメン屋のメニュー（特製、味玉、スラーメン）」</strong>のように、何が載っていて何に最適なのか直感的な命名が必要。</li>
+        <li>「最高」「プロ」といった抽象的な言葉ではなく、<strong>「爆速」「熟考」</strong>などベネフィットに基づいた名称が望ましい。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Notion HTML埋め込み機能とAI時代のツール論</h2>
+  <ul class="opt-a-list">
+    <li><strong>新機能：</strong> Notion内でHTMLを直接実行可能に。タイピングゲームの作成や、ページ内容を即座にスライド化して動かすことが可能。</li>
+    <li><strong>AI向け進化：</strong> Notionは機能が増えすぎて人間には複雑になりつつあるが、それは<strong>AIが操作するための「手足」が増えている</strong>ことを意味する。</li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ツール</th>
+        <th>最適化の方向性</th>
+        <th>主なユースケース</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Notion</strong></td>
+        <td>人間とAIの共同作業</td>
+        <td>ドキュメント管理、スライド生成、タスク起票</td>
+      </tr>
+      <tr>
+        <td><strong>Obsidian</strong></td>
+        <td>AIによる全自動化</td>
+        <td>ローカル保存、CLI連携、自動フォルダ振り分け</td>
+      </tr>
+      <tr>
+        <td><strong>iPhoneメモ/Keep</strong></td>
+        <td>最速のインプット</td>
+        <td>移動中のメモ、音声入力の一次受け</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 実践的なAIワークフローとマネジメント</h2>
+  <ul class="opt-a-list">
+    <li><strong>エージェンティック活用：</strong> 単なるチャットボットとしての利用から、AIに自律的に動いてもらう段階へ。</li>
+    <li><strong>マネジメントスキルの転用：</strong>
+      <ul>
+        <li>AIへの指示出しは、<strong>インターンや業界経験の少ない部下へのオンボーディング</strong>に酷似している。</li>
+        <li>「何を渡すべきか」「どう動いてもらうか」というマネジメント経験がある人ほど、AIを使いこなせる。</li>
+        <li>AIはメンタルが安定しており、体調不良もないため、人間よりマネジメントの難易度が低い。</li>
+      </ul>
+    </li>
+    <li><strong>うすたく氏のメモ術：</strong>
+      <ul>
+        <li>iPhoneのショートカットで<strong>Obsidianの「今日のメモ」</strong>をワンクリック起動。</li>
+        <li>夜にClaude等のAIを使って、その日のメモを適切なフォルダへ自動的に振り分ける。</li>
+        <li>「管理のための管理」自体を楽しむ姿勢が重要。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 その他のトピック・ツール</h2>
+  <ul class="opt-a-list">
+    <li><strong>Notta：</strong> サンフランシスコ滞在中に活用。iPhoneのアクションボタンに設定し、リアルタイム翻訳・文字起こしとして利用。会話の急展開をキャッチするのに有効。</li>
+    <li><strong>Claude Slack連携：</strong> 4人で数回ラリーしただけで<strong>40ドル</strong>かかるなど、現状ではコストパフォーマンスに課題あり。</li>
+    <li><strong>超ときめき♡宣伝部の解散：</strong> 早川ゴミ氏の推しグループが解散発表。「推しは推せるときに推せ」という教訓。</li>
+  </ul>
+
+  <blockquote style="margin-top: 2em;">
+    「AIのモデル名に悩むより、使うことの方が重要。人生を豊かにするためにAIをどう組み込むかを考えよう。」
+  </blockquote>
+
+</body>
+</html>
