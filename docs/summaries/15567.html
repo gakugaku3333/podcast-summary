@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">はやぶさ2の新たな挑戦：小惑星「鳥船」への接近と未来の火星探査</h1>
+  <p>
+    2026年7月7日の七夕に合わせ、JAXAの探査機「はやぶさ2」が小惑星「鳥船（トリフネ）」へのフライバイ（接近観測）に成功したニュースを中心に、日本の宇宙探査の現在地と、次なる火星衛星探査計画（MMX）について解説しています。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">はやぶさ2</span>
+    <span class="opt-a-tag">JAXA</span>
+    <span class="opt-a-tag">鳥船 (2001 CC21)</span>
+    <span class="opt-a-tag">フライバイ</span>
+    <span class="opt-a-tag">地球防衛 (プラネタリー・ディフェンス)</span>
+    <span class="opt-a-tag">MMX</span>
+    <span class="opt-a-tag">火星衛星探査</span>
+    <span class="opt-a-tag">サンプルリターン</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 はやぶさ2：小惑星「鳥船」へのフライバイ成功</h2>
+  <ul class="opt-a-list">
+    <li><strong>ミッションの概要</strong>：地球から約1億km離れた小惑星「鳥船（トリフネ）」に接近しながら観測する「フライバイ」に成功。</li>
+    <li><strong>ターゲット「鳥船」</strong>：
+      <ul>
+        <li>正式名称は<strong>2001 CC21</strong>。</li>
+        <li>日本神話に登場する神の乗り物にちなみ、公募によって命名された。</li>
+        <li>直径わずか<strong>約500メートル</strong>の極めて小さな天体。</li>
+      </ul>
+    </li>
+    <li><strong>はやぶさ2の現状</strong>：2020年に小惑星リュウグウのサンプルリターンを終えた後、機体は健全な状態を保ち、拡張ミッションとして旅を継続中。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 驚異的な技術難易度：「北海道から沖縄の1円玉を射抜く」</h2>
+  <p>今回のミッションは、あらかじめ「極めて困難」とされていました。その理由は以下の通りです。</p>
+  <ul class="opt-a-list">
+    <li><strong>超高速での通過</strong>：はやぶさ2は<strong>時速約18,000km</strong>という猛スピードで移動している。</li>
+    <li><strong>カメラの制約</strong>：カメラが固定されているため、接近の瞬間にレンズが正確に鳥船を向くよう、事前に軌道と姿勢を完璧に計算する必要があった。</li>
+    <li><strong>自律判断の必要性</strong>：距離が遠すぎて地球からのリアルタイム通信が間に合わないため、探査機自身が自律的に判断して行動しなければならない。</li>
+    <li><strong>比喩表現</strong>：JAXAはこの難易度を<strong>「北海道にある1円玉を、沖縄から弓矢で射抜くようなもの」</strong>と表現している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 地球防衛（プラネタリー・ディフェンス）への貢献</h2>
+  <ul class="opt-a-list">
+    <li><strong>技術実証の意義</strong>：地球に衝突する恐れのある小惑星を調査し、その軌道を変えるための基礎データを得る「地球防衛」の側面を持つ。</li>
+    <li><strong>世界第2位の快挙</strong>：小惑星の軌道変更に関する技術実証を行ったのは、アメリカのNASAに続き、日本が<strong>世界で2番目</strong>となる。</li>
+    <li><strong>信頼性の証明</strong>：2014年の打ち上げから長期間、大きな故障なく運用され続けていることは、日本の探査機技術の極めて高い信頼性を裏付けている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 今後のタイムライン：はやぶさ2とMMX</h2>
+  
+  <svg width="100%" viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="250" fill="#1a1a3e" rx="8"/>
+    
+    <!-- タイムラインの軸 -->
+    <line x1="50" y1="150" x2="750" y2="150" stroke="#60a5fa" stroke-width="2"/>
+    
+    <!-- イベント点 -->
+    <circle cx="100" cy="150" r="6" fill="#8b5cf6"/>
+    <circle cx="250" cy="150" r="6" fill="#8b5cf6"/>
+    <circle cx="450" cy="150" r="6" fill="#10b981"/>
+    <circle cx="700" cy="150" r="6" fill="#10b981"/>
+    
+    <!-- ラベル -->
+    <text x="100" y="130" text-anchor="middle" font-size="14" font-weight="bold">2026年7月</text>
+    <text x="100" y="180" text-anchor="middle" font-size="13">鳥船フライバイ成功</text>
+    
+    <text x="250" y="130" text-anchor="middle" font-size="14" font-weight="bold">2026年秋</text>
+    <text x="250" y="180" text-anchor="middle" font-size="13">MMX打ち上げ予定</text>
+    
+    <text x="450" y="130" text-anchor="middle" font-size="14" font-weight="bold">2027年〜2030年</text>
+    <text x="450" y="180" text-anchor="middle" font-size="13">火星衛星ホボス探査</text>
+    
+    <text x="700" y="130" text-anchor="middle" font-size="14" font-weight="bold">2031年7月</text>
+    <text x="700" y="180" text-anchor="middle" font-size="13">はやぶさ2 最終目的地到着</text>
+    <text x="700" y="200" text-anchor="middle" font-size="12">(1998 KY-26)</text>
+  </svg>
+
+  <h2 class="opt-a-section-title">📌 次なる主役：火星衛星探査計画「MMX」</h2>
+  <p>はやぶさ2の技術を継承し、いよいよ火星圏への挑戦が始まります。</p>
+  <ul class="opt-a-list">
+    <li><strong>MMX (Martian Moons eXploration)</strong>：火星の衛星「ホボス」に着陸し、サンプルを持ち帰る計画。</li>
+    <li><strong>世界初の挑戦</strong>：火星圏への探査は過去に事例があるが、すべて片道。<strong>「火星圏からの帰還（サンプルリターン）」</strong>に成功すれば世界初の快挙となる。</li>
+    <li><strong>3つの大きな研究テーマ</strong>：
+      <ul>
+        <li><strong>形成の謎</strong>：火星とその衛星がどのようにして生まれたのか。</li>
+        <li><strong>生命の可能性</strong>：かつての火星環境における生命誕生の可能性の探求。</li>
+        <li><strong>人類の居住</strong>：将来的な人類の火星居住に向けた基礎データの収集。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 補足：七夕の豆知識</h2>
+  <ul class="opt-a-list">
+    <li><strong>時期のズレ</strong>：本来の七夕は現在の8月頃（旧暦）に行われていたが、明治時代の改暦により梅雨時期の7月にずれてしまった。そのため雨が降ることが多い。</li>
+    <li><strong>短冊の意味</strong>：願いを文字に書くことで、その願いが意識化され、行動に影響を与えることで実現に近づくという側面がある。</li>
+  </ul>
+
+  <blockquote>
+    「北海道の一円玉を沖縄から射抜く」ほどの精密な技術が、今や地球を守り、火星という新たなフロンティアを切り拓こうとしています。
+  </blockquote>
+
+</body>
+</html>
