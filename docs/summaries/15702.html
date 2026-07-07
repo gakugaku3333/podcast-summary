@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">超相対性理論 #260 自分の肩書き、どう使ってますか？／ゲスト：室越龍之介さん（その1）</h1>
+  <p>文化人類学のバックグラウンドを持つ室越龍之介さんをゲストに迎え、「肩書き」と「アイデンティティ」の関係性について深く掘り下げる回です。専門領域への帰属意識や、社会的な承認と自己認識のズレについて、三者三様の視点から議論が展開されます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">文化人類学</span>
+    <span class="opt-a-tag">肩書き</span>
+    <span class="opt-a-tag">アイデンティティ</span>
+    <span class="opt-a-tag">帰属意識</span>
+    <span class="opt-a-tag">Podcast Expo</span>
+    <span class="opt-a-tag">Clubhouse</span>
+    <span class="opt-a-tag">コンテクストデザイナー</span>
+    <span class="opt-a-tag">中二病</span>
+    <span class="opt-a-tag">承認</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 イントロダクション：近況とゲスト紹介</h2>
+  <ul class="opt-a-list">
+    <li><strong>恒例の海外旅行計画：</strong> 渡辺・荒木・深井の3名で毎年恒例の旅行。次は12月に<strong>北欧（ノルウェー、スウェーデン、デンマーク）</strong>を予定。</li>
+    <li><strong>ゲスト：室越龍之介さん（はるとの）：</strong> 
+      <ul>
+        <li>文化人類学の知見を企業向けに活かす仕事に従事。</li>
+        <li>渡辺氏とは<strong>Podcast Expo</strong>（旧池尻中学校で開催）での対談が縁で今回の出演に至る。</li>
+        <li>荒木氏とはかつて<strong>Clubhouse</strong>の「コテンラジオ」リスナーコミュニティで交流があった。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 室越氏の問い：肩書きと帰属意識</h2>
+  <ul class="opt-a-list">
+    <li><strong>問いの背景：</strong> 室越氏は博士課程まで文化人類学を修めたが、博士論文を書いていないため、自分を「文化人類学者」と名乗ることに強い抵抗感（いずらさ）を感じている。</li>
+    <li><strong>謝罪行脚：</strong> 年始に恩師たちを訪ね、「文化人類学者と名乗らせていただいておりますが、すみません」と謝って回ったというエピソード。</li>
+    <li><strong>肩書きの定義：</strong> 具体的な「個」を、社会的な「集団」の一員として<strong>抽象化・タグ付け</strong>するもの。
+      <ul>
+        <li>例：「弁護士の室越」と名乗ることで、社会は「弁護士集団の一員」として了解する。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 渡辺幸太郎による「肩書きの4分類」</h2>
+  <p>肩書きが「誰に承認され、何を表現しているか」によって、以下の4つのパターンに整理されました。</p>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
+      <!-- Background Nodes -->
+      <rect x="10" y="10" width="270" height="130" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" stroke-width="1"/>
+      <rect x="310" y="10" width="270" height="130" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" stroke-width="1"/>
+      <rect x="10" y="170" width="270" height="130" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" stroke-width="1"/>
+      <rect x="310" y="170" width="270" height="130" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" stroke-width="1"/>
+      
+      <!-- Text Content -->
+      <text x="25" y="40" font-weight="bold" fill="#a78bfa">1. 資格 (制度による承認)</text>
+      <text x="40" y="70" font-size="13">例：弁護士、公認会計士、看護師</text>
+      <text x="40" y="95" font-size="13" fill="#60a5fa">承認者：国家、専門職団体</text>
+
+      <text x="325" y="40" font-weight="bold" fill="#a78bfa">2. スキル (市場による承認)</text>
+      <text x="340" y="70" font-size="13">例：エンジニア、デザイナー</text>
+      <text x="340" y="95" font-size="13" fill="#60a5fa">承認者：マーケット、雇用主</text>
+
+      <text x="25" y="200" font-weight="bold" fill="#a78bfa">3. 分野 (知のギルドによる承認)</text>
+      <text x="40" y="230" font-size="13">例：人類学者、粘菌学者</text>
+      <text x="40" y="255" font-size="13" fill="#60a5fa">承認者：学会、学閥、師匠</text>
+
+      <text x="325" y="200" font-weight="bold" fill="#a78bfa">4. アウトプット (受け手による承認)</text>
+      <text x="340" y="230" font-size="13">例：彫刻家、建築家</text>
+      <text x="340" y="255" font-size="13" fill="#60a5fa">承認者：鑑賞者、社会、歴史</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 各者の「肩書き」に対するスタンス</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>人物</th>
+        <th>スタンス・考え方</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>荒木博行</strong></td>
+        <td><strong>定義したくない派。</strong> 文脈に応じて役割を見出したい。肩書きを名乗ることで自分の認知が縛られるのが嫌。大企業（住友商事など）時代は名刺がアイデンティティを規定していたため悩まなかった。</td>
+      </tr>
+      <tr>
+        <td><strong>渡辺幸太郎</strong></td>
+        <td><strong>「コンテクストデザイナー」という怪しい響き。</strong> 専門教育による権威付けがないため、常に頼りなさを感じている。タグが多すぎて、自分が何者か一言で説明しづらい。</td>
+      </tr>
+      <tr>
+        <td><strong>室越龍之介</strong></td>
+        <td><strong>「人類学者の成り損ね」という自覚。</strong> 師匠との関係性（知のギルド）において筋を通せていない感覚が、肩書きを名乗る際のブレーキになっている。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 社会的機能としての肩書き</h2>
+  <ul class="opt-a-list">
+    <li><strong>「妖怪」にならないための装置：</strong> タグがない「不可解な他者」は周囲に不安を与える。肩書きは、相手に安心感を与え、理解の端緒（フック）を渡すための<strong>社会的マナー</strong>としての側面がある。</li>
+    <li><strong>中二病的な悩み：</strong> 荒木氏の指摘。「マーケットからは人類学者だと思われているのだから、そう名乗ればコストが低い」という合理性を、<strong>自意識が邪魔をして受け入れられない状態</strong>を指す。</li>
+    <li><strong>仮面（ペルソナ）：</strong> マルセル・モースの概念を引き合いに、個人というものは最初からあるのではなく、社会的な役割（仮面）をまとうことで生まれるという視点。</li>
+  </ul>
+
+  <blockquote style="margin-top: 2em;">
+    「マーケットのことや分かりやすさじゃなくて、自分のどこかがそれを止めるんですっていうのは、やっぱり中二的な悩みなんだと思うんだよね」 —— 荒木博行
+  </blockquote>
+
+</body>
+</html>
