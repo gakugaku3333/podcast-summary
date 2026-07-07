@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.5em; margin-bottom: 0.5em; border-bottom: 1px solid rgba(167, 139, 250, 0.3); padding-bottom: 10px; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.1em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 2em 0 0.8em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; margin: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-sub-list {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+      border-left: 1px solid rgba(255,255,255,0.1);
+    }
+    .opt-a-sub-list li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5em 0;
+      font-size: 0.9em;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1.5em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【番外編】バングラデシュの教育現場より：エクマットラ代表・渡辺大樹氏</h1>
+  <p>バングラデシュで20年以上にわたりストリートチルドレンの支援と教育に携わる渡辺大樹氏をゲストに迎え、現地の過酷な路上生活のリアルと、子供たちの可能性を信じて設立された「エクマットラアカデミー」の活動について深掘りするエピソードです。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">バングラデシュ</span>
+    <span class="opt-a-tag">エクマットラ</span>
+    <span class="opt-a-tag">ストリートチルドレン</span>
+    <span class="opt-a-tag">ダッカ大学</span>
+    <span class="opt-a-tag">教育支援</span>
+    <span class="opt-a-tag">体験格差</span>
+    <span class="opt-a-tag">シンナー吸入</span>
+    <span class="opt-a-tag">心のエリート</span>
+    <span class="opt-a-tag">アリ地獄のような街</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ゲスト：渡辺大樹（わたなべ ひろき）氏の経歴</h2>
+  <ul class="opt-a-list">
+    <li><strong>1984年生まれ：</strong>宮城県出身、神奈川県育ち。学生時代は野球とヨットに打ち込む。</li>
+    <li><strong>活動の原点：</strong>2001年、タイのプーケットで開催されたヨット国際大会に出場。
+      <ul class="opt-a-sub-list">
+        <li>豪華なパーティー会場へ向かうバスの車窓から、スラムの少年と目が合う。</li>
+        <li><strong>「生まれた環境の違いだけで、なぜこれほどの差があるのか」</strong>という衝撃と憤りを感じ、問題解決を志す。</li>
+      </ul>
+    </li>
+    <li><strong>バングラデシュへ：</strong>2002年、大学卒業後に単身渡航。
+      <ul class="opt-a-sub-list">
+        <li>ダッカ大学でベンガル語を学びながら、現地の大学生と共にNGO<strong>「エクマットラ」</strong>を設立。</li>
+        <li>2004年にチルドレンホームを開始し、2018年には念願の「エクマットラアカデミー」を開校。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 バングラデシュ路上の厳しい現実</h2>
+  <p>経済成長の影で、格差が拡大し、路上で暮らす子供たちの状況は悪化している。</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>詳細・現状</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>ストリートチルドレン数</strong></td>
+        <td>2019年：約100万人 → 2024年：<strong>約340万人</strong>（ユニセフ調査）</td>
+      </tr>
+      <tr>
+        <td><strong>急増の背景</strong></td>
+        <td>コロナ禍による困窮。地方から都市（ダッカ）へ流入し、家族と離散するケース増。</td>
+      </tr>
+      <tr>
+        <td><strong>薬物汚染</strong></td>
+        <td>安価な<strong>シンナー（接着剤）</strong>の吸入が蔓延。空腹やトラウマを紛らわすために使用。</td>
+      </tr>
+      <tr>
+        <td><strong>児童労働</strong></td>
+        <td>レストラン、修理工場などで低賃金で搾取される。法的に保護されない「隠れた労働力」。</td>
+      </tr>
+      <tr>
+        <td><strong>行政の死角</strong></td>
+        <td>出生届がないため<strong>戸籍（市民権）を持たない</strong>子が多く、義務教育の統計からも漏れている。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 エクマットラの活動プロセス</h2>
+  <div class="diagram-container">
+    <svg width="100%" height="180" viewBox="0 0 600 180">
+      <!-- Nodes -->
+      <rect x="10" y="60" width="100" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="20" y="95">青空教室</text>
+      
+      <rect x="160" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="175" y="95">チルドレンホーム</text>
+      
+      <rect x="330" y="60" width="110" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="345" y="95">アカデミー</text>
+      
+      <rect x="490" y="60" width="100" height="60" rx="8" fill="rgba(245, 158, 11, 0.2)" stroke="#f59e0b" />
+      <text x="505" y="95">次世代リーダー</text>
+
+      <!-- Arrows -->
+      <path d="M 110 90 L 160 90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+      <path d="M 280 90 L 330 90" stroke="#60a5fa" stroke-width="2" />
+      <path d="M 440 90 L 490 90" stroke="#60a5fa" stroke-width="2" />
+      
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>青空教室：</strong>路上にブルーシートを広げて開始。最初は「つまんねー」と子供たちが逃げ出す失敗も。
+      <ul class="opt-a-sub-list">
+        <li>座学から、歌・踊り・演劇などの<strong>表現活動</strong>へシフトし、子供たちの心を掴む。</li>
+        <li>スピーチコンテストでの大喝采が、子供たちの自己肯定感を劇的に変えた。</li>
+      </ul>
+    </li>
+    <li><strong>チルドレンホーム：</strong>路上から引き離し、共同生活を通じて社会性を養う。
+      <ul class="opt-a-sub-list">
+        <li>渡辺氏自ら住み込み、料理や喧嘩の仲裁、学習指導を行う過酷な日々。</li>
+      </ul>
+    </li>
+    <li><strong>エクマットラアカデミー：</strong>「心のエリート」を育てる全寮制学校。
+      <ul class="opt-a-sub-list">
+        <li>単なる救済ではなく、<strong>「路上出身だからこそ持てる優しさや強さ」</strong>を活かしたリーダー育成を目指す。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 直面した壁と「無関心」への挑戦</h2>
+  <ul class="opt-a-list">
+    <li><strong>富裕層の無関心：</strong>現地のビルオーナーに支援を求めた際、「なぜ日本人のお前がバングラデシュ人の俺に金を求めるんだ。俺たちは貧しいんだ」と拒絶される。
+      <ul class="opt-a-sub-list">
+        <li>安価な労働力として子供たちを利用して成長した社会の責任を問うため、<strong>映画「アリ地獄のような街」</strong>を制作。</li>
+        <li>劇映画として公開し、現地の人々にショック療法的な啓蒙を行った。</li>
+      </ul>
+    </li>
+    <li><strong>親という阻害要因：</strong>子供を「収入源」としか見なさない親が、教育に反対するケースが多い。
+      <ul class="opt-a-sub-list">
+        <li>子供がキラキラと活動する姿（授業参観など）を見せることで、親の認識を「収入源」から「可能性」へと変えていく。</li>
+      </ul>
+    </li>
+    <li><strong>命がけの交渉：</strong>セックスワーカーの子供たちの支援をしようとした際、元締めや住民50人に取り囲まれ「二度と来るな」と脅されるも、根気強く通い続けて信頼を得た。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 成功の兆し：シモンとナスリンの物語</h2>
+  <ul class="opt-a-list">
+    <li><strong>第一世代の成長：</strong>かつて路上で保護された子供たちが、大学を卒業し、社会人となっている。</li>
+    <li><strong>シモン氏：</strong>元ストリートチルドレン。現在はエクマットラのスタッフとして、次の世代の子供たちをレスキューする活動に従事。</li>
+    <li><strong>ナスリン氏：</strong>同じく路上出身。シモン氏と大学卒業後に結婚。</li>
+    <li><strong>変化の証明：</strong>彼らの振る舞いや目つきが変わったことで、周囲の親たちも「教育で子供は変わるんだ」と確信するようになった。</li>
+  </ul>
+
+  <blockquote>
+    「路上にいたからこそなれるエリート。苦しみを知っているからこそ持てる優しさ、失うものがないからこその堂々としたパフォーマンス。彼らにはとてつもない可能性がある。」
+  </blockquote>
+
+</body>
+</html>
