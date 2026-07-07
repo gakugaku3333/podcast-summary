@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">#261 自分の肩書き、どう使ってますか？／ゲスト：室越龍之介さん（その2）</h1>
+  <p>
+    文化人類学者の室越龍之介さんを迎え、肩書きが持つ「社会的な仮面」と「個人の自意識」の葛藤を深掘りします。ビジネスと学問における肩書きの性質の違いや、集団への帰属意識、そして「ホームとフィールド」の関係性について、3人のパーソナリティが自身の経験を交えて対話します。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">肩書き</span>
+    <span class="opt-a-tag">文化人類学</span>
+    <span class="opt-a-tag">中二病</span>
+    <span class="opt-a-tag">教示的・通じてき</span>
+    <span class="opt-a-tag">マージナル（境界的）</span>
+    <span class="opt-a-tag">帰属意識</span>
+    <span class="opt-a-tag">小木沙耶香</span>
+    <span class="opt-a-tag">和田夏美</span>
+    <span class="opt-a-tag">ホームとフィールド</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 肩書きを構成する3つのベクトル</h2>
+  <p>ヤンヤン氏が提唱する、自分を名乗る際の3つの方向性についての整理。</p>
+  
+  <div class="diagram-container">
+    <svg width="100%" height="220" viewBox="0 0 500 220">
+      <!-- Circles -->
+      <circle cx="250" cy="80" r="70" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" />
+      <circle cx="180" cy="160" r="70" fill="rgba(96, 165, 250, 0.2)" stroke="#60a5fa" stroke-width="2" />
+      <circle cx="320" cy="160" r="70" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="2" />
+      <!-- Labels -->
+      <text x="250" y="75" text-anchor="middle" font-size="14" font-weight="bold">マーケット</text>
+      <text x="250" y="95" text-anchor="middle" font-size="12">分かりやすさ・信頼</text>
+      
+      <text x="140" y="165" text-anchor="middle" font-size="14" font-weight="bold">個人の自我</text>
+      <text x="140" y="185" text-anchor="middle" font-size="12">ありたい姿・願望</text>
+      
+      <text x="360" y="165" text-anchor="middle" font-size="14" font-weight="bold">関係性</text>
+      <text x="360" y="185" text-anchor="middle" font-size="12">あなたとの間柄</text>
+    </svg>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>マーケットの視点:</strong> 社会的な分かりやすさや信頼。例：「トヨタの社員」「弁護士」。思考停止できるほど強力な記号。</li>
+    <li><strong>個人の自我・欲求:</strong> 「私はこうありたい」という内面的な願望。分かりやすい肩書きを拒絶する「中二病」的な自意識もここに含まれる。</li>
+    <li><strong>関係性の視点:</strong> 目の前の相手との間でどうありたいか。文脈に応じて名乗りを変える動的な側面。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ビジネスと学問における「肩書き」の性質</h2>
+  <p>時間軸の捉え方によって、肩書きの使い方が異なるとヤンヤン氏は指摘する。</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>区分</th>
+        <th>性質</th>
+        <th>特徴</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>教示的（今ここ）</strong></td>
+        <td>ビジネス的</td>
+        <td>「今、何ができるか」という機能を重視。現場の混乱を避けるために分かりやすい肩書き（例：人類学者）を戦略的に使う。</td>
+      </tr>
+      <tr>
+        <td><strong>通じてき（系譜）</strong></td>
+        <td>人文学的</td>
+        <td>「誰から何を習ったか」という師弟関係や歴史的背景を重視。一人前でないという自意識から、安易に名乗ることを躊躇させる。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 人間をどう捉えるか：バイアスか価値か</h2>
+  <p>小木沙耶香氏の著書を引用し、学問的態度と肩書きの関連性を考察。</p>
+  <ul class="opt-a-list">
+    <li><strong>人間を「バイアスの源」と捉える（理系的）:</strong> 観察者の主観や偏見を排除し、客観性を追求する態度。</li>
+    <li><strong>人間を「価値の源」と捉える（文系的）:</strong> 特定の人間がその場にいたからこそ生まれた経験や解釈を研究の核とする態度。</li>
+    <li><strong>肩書きの機能とノイズ:</strong> 
+      <ul>
+        <li>セミナー等では「機能（専門家）」としての匿名的な肩書きで十分。</li>
+        <li>深い人間関係では、機能以外の「ノイズ（その人らしさ）」が重要になる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 肩書きを超えた自己紹介：「名前のない遊び」</h2>
+  <p>手話通訳者・和田夏美氏のアプローチに見る、真の自己の表出。</p>
+  <ul class="opt-a-list">
+    <li><strong>問いかけの魔法:</strong> 「子供の頃にしていた、名前のない遊びは何ですか？」と聞く。</li>
+    <li><strong>身体的記憶の呼び起こし:</strong> 遊びを語る時、人は身振り手振りを交え、社会的な仮面を外した「個人」の顔になる。</li>
+    <li><strong>非言語的な情報:</strong> 決まった正解がない経験を語ることで、所属や肩書きよりも鮮明に「その人らしさ」が浮かび上がる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 帰属意識とマージナル（境界的）な生存戦略</h2>
+  <p>3人のパーソナリティが語る、集団との距離感。</p>
+  <ul class="opt-a-list">
+    <li><strong>ヤンヤン氏の「相対化」:</strong> 
+      <ul>
+        <li>一つの集団に深く帰属したくない。常に複数の所属を持ち、互いに相対化させていたい。</li>
+        <li>「中心にいると死んでしまう」というセンサーがあり、意図的に距離を保つ。</li>
+      </ul>
+    </li>
+    <li><strong>渡邉（コータロー）氏の「コウモリ的自意識」:</strong> 
+      <ul>
+        <li>組織の創業メンバーであり中心人物に見えるが、内実としては「何かを代表している」感覚が希薄。</li>
+        <li>どこにいても自分は端っこにいる存在（マージナル）であるという認識が根本にある。</li>
+      </ul>
+    </li>
+    <li><strong>樋口氏の「仲間作りの苦手意識」:</strong> 
+      <ul>
+        <li>ホモサピエンスとして仲間を持ちたい欲求はあるが、特定の「門」に帰属することに違和感がある。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ホームとフィールドの喪失</h2>
+  <p>室越氏が経験した、文化人類学的な「居場所」の変容。</p>
+  
+  <ul class="opt-a-list">
+    <li><strong>人類学者の3つのパターン:</strong>
+      <ol>
+        <li>「ホーム（自国）」と「フィールド（調査地）」が明確に分かれる人。</li>
+        <li>どちらも「ホーム」になる人。</li>
+        <li>どちらも「フィールド」になってしまう人（室越氏のケース）。</li>
+      </ol>
+    </li>
+    <li><strong>室越氏の具体的エピソード:</strong>
+      <ul>
+        <li>キューバでの調査後、大分市役所に勤務。</li>
+        <li>キューバ社会は理解できた自負があったが、大分市役所では言葉（方言）も文化も分からず、解像度が著しく低下。</li>
+        <li>「日本社会を分かっていたつもりで何も分かっていなかった」という感覚に陥り、ホームを喪失した。</li>
+      </ul>
+    </li>
+    <li><strong>近代社会における可能性:</strong> 
+      <ul>
+        <li>肩書き（名乗り）と帰属意識（仲間意識）は分離可能。</li>
+        <li>資本主義的な近代社会だからこそ、ハンドルネームのみで繋がるような「アノニマスな共同体」が成立しうる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote>
+    「肩書きという役柄を演じているうちに、その役柄自体が自分を作り変えていくのではないか」
+  </blockquote>
+
+</body>
+</html>
