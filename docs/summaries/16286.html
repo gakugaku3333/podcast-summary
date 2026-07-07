@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">中国によるSLBM発射実験と国際社会の動向</h1>
+  <p>2026年7月8日放送。中国軍が原子力潜水艦から太平洋に向けて弾道ミサイルを発射したニュースを中心に、トルコで開催中のNATO首脳会議や、アジア太平洋地域における安全保障体制の課題について解説しています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">SLBM（潜水艦発射弾道ミサイル）</span>
+    <span class="opt-a-tag">中国軍</span>
+    <span class="opt-a-tag">NATO首脳会議</span>
+    <span class="opt-a-tag">高市首相</span>
+    <span class="opt-a-tag">第一列島線</span>
+    <span class="opt-a-tag">EEZ（排他的経済水域）</span>
+    <span class="opt-a-tag">核抑止力</span>
+    <span class="opt-a-tag">集団安全保障</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 中国によるミサイル発射実験の概要</h2>
+  <ul class="opt-a-list">
+    <li><strong>発射日時・内容:</strong> 2026年7月6日、原子力潜水艦から核兵器搭載可能な大型の<strong>SLBM（潜水艦発射弾道ミサイル）</strong>1発を発射。中国がSLBMの発射を公式に認めたのは今回が初。</li>
+    <li><strong>発射・着弾地点:</strong>
+      <ul>
+        <li>発射地点：中国最南部の<strong>海南島</strong>付近。</li>
+        <li>着弾地点：南太平洋の島国<strong>ツバル</strong>や<strong>ナウル</strong>の近海。</li>
+      </ul>
+    </li>
+    <li><strong>戦略的タイミング:</strong>
+      <ul>
+        <li>オーストラリアとフィジーの新たな同盟関係が証明された数時間後。</li>
+        <li>トルコでの<strong>NATO首脳会議</strong>直前という、太平洋地域への揺さぶりを狙ったタイミング。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+      <!-- Background -->
+      <rect width="600" height="250" fill="#1a1a3e" rx="8"/>
+      
+      <!-- Nodes -->
+      <rect x="50" y="150" width="100" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="100" y="175" text-anchor="middle" font-size="14">海南島付近</text>
+      
+      <rect x="250" y="50" width="100" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="300" y="75" text-anchor="middle" font-size="14">第一列島線</text>
+      
+      <rect x="450" y="150" width="100" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="500" y="175" text-anchor="middle" font-size="14">南太平洋</text>
+
+      <!-- Arrows -->
+      <path d="M 150 170 Q 300 120 450 170" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+      
+      <text x="300" y="130" text-anchor="middle" font-size="12" fill="#60a5fa">SLBM発射（射程の誇示）</text>
+      <text x="300" y="220" text-anchor="middle" font-size="13" fill="#e8e8f0">※潜水艦が東進すれば米国本土が射程圏内</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 実験が示す2つの軍事的脅威</h2>
+  <ul class="opt-a-list">
+    <li><strong>米国本土への到達能力:</strong> 海南島から南太平洋まで到達した事実は、潜水艦が太平洋を東へ移動すれば<strong>アメリカ本土を直接攻撃できる物理的能力</strong>があることを証明した。</li>
+    <li><strong>高い隠密性と報復能力:</strong>
+      <ul>
+        <li>潜水艦は海中を密かに移動するため、衛星やレーダーでの探知が困難。</li>
+        <li>発射地点の特定が難しく、事前の敵基地攻撃が無効化される。</li>
+        <li>地上基地が破壊された後でも海中から<strong>報復攻撃（第二撃能力）</strong>を行える核抑止力の要となる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 各国の反応と日本の抗議</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>国・機関</th>
+        <th>主な反応・主張</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>オーストラリア</strong></td>
+        <td>アルバニージー首相が「挑発的だ」と強く非難。</td>
+      </tr>
+      <tr>
+        <td><strong>ニュージーランド</strong></td>
+        <td>ピータース外務大臣が「深い懸念」を表明。</td>
+      </tr>
+      <tr>
+        <td><strong>ソロモン諸島</strong></td>
+        <td>「我々を脅すな」と抗議。中国大使に抗議書を提出。</td>
+      </tr>
+      <tr>
+        <td><strong>アメリカ</strong></td>
+        <td>国務省が声明を出す一方、トランプ大統領は沈黙（収録時点）。</td>
+      </tr>
+      <tr>
+        <td><strong>中国政府</strong></td>
+        <td>「通常の訓練であり国際法に則っている」「過剰解釈するな」と主張。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul class="opt-a-list">
+    <li><strong>日本の被害と不信感:</strong>
+      <ul>
+        <li>中国側は当初「宇宙ゴミが落下する」と虚偽の通告を行い、ミサイル実験への修正は<strong>発射のわずか1時間30分前</strong>だった。</li>
+        <li>落下候補地点には和歌山県<strong>潮岬の南方沖</strong>が含まれ、一部は日本の<strong>EEZ（排他的経済水域）</strong>内であったため、日本政府は厳重に抗議した。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 NATO首脳会議と防衛費の動向</h2>
+  <ul class="opt-a-list">
+    <li><strong>開催地:</strong> トルコのアンカラ（7月7日〜8日）。</li>
+    <li><strong>主要議題:</strong> ウクライナ支援の継続、および米国以外の加盟国による<strong>防衛費増額</strong>。</li>
+    <li><strong>防衛費目標:</strong> 2035年までに防衛安全保障関連支出を<strong>GDP比5%</strong>に引き上げることで合意済み（昨年のハーグ会議にて）。今回の会議ではその具体策が問われる。</li>
+    <li><strong>日本の対応:</strong> 高市首相は国会日程を理由に欠席。ただし「大西洋とインド太平洋の安全保障は不可分」との持論を持つ。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 地政学的考察と今後の課題</h2>
+  <ul class="opt-a-list">
+    <li><strong>日本の戦略的役割:</strong> 中国が潜水艦を太平洋に出すには、日本列島・台湾・フィリピンを結ぶ<strong>第一列島線</strong>を越える必要がある。海上自衛隊による警戒監視とデータ収集の重要性が増している。</li>
+    <li><strong>安全保障の枠組み不足:</strong>
+      <ul>
+        <li>アジア太平洋地域には、NATOのような<strong>多国間の包括的な集団安全保障体制</strong>が存在しない。</li>
+        <li>現在は日米、米韓などの二国間同盟をパズルのように組み合わせている状態。</li>
+        <li>今後は地域全体をカバーする包括的な体制構築を検討すべき時期に来ている。</li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+</html>
