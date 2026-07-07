@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">NATO首脳会議の論点：防衛費5％目標と欧州の苦悩</h1>
+  <p>2024年7月のNATO首脳会議を控え、筑波大学の東野篤子教授が、ウクライナ情勢を受けた欧州の防衛体制、アメリカとの負担分担、そして「防衛費GDP比5％」という極めて高い目標の現実味について解説します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">NATO（北大西洋条約機構）</span>
+    <span class="opt-a-tag">第5条（集団防衛）</span>
+    <span class="opt-a-tag">防衛費GDP比5％</span>
+    <span class="opt-a-tag">トランプ政権</span>
+    <span class="opt-a-tag">レディネス（準備体制）</span>
+    <span class="opt-a-tag">戦略的自立性</span>
+    <span class="opt-a-tag">東野篤子</span>
+    <span class="opt-a-tag">ルッテ事務総長</span>
+    <span class="opt-a-tag">ウクライナ加盟問題</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 NATOの基礎と「集団防衛」の仕組み</h2>
+  <ul class="opt-a-list">
+    <li><strong>設立の背景（1949年）</strong>：冷戦初期、ソ連の脅威から欧州を守るためにアメリカ主導で結成された軍事同盟。</li>
+    <li><strong>加盟国数</strong>：現在は<strong>32カ国</strong>。ウクライナ侵攻後、フィンランドとスウェーデンが加わった。</li>
+    <li><strong>北大西洋条約第5条（集団防衛）</strong>：加盟国への攻撃を全加盟国への攻撃とみなし、共同で反撃する義務。
+      <ul>
+        <li>「外に敵がいる」ことを前提とした強い義務を伴う体制。</li>
+        <li>「集団安全保障（国連など）」が敵を内部に取り込み対話で解決するのに対し、NATOは軍事的な対抗を主眼とする。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 防衛費「GDP比5％」という野心的な目標</h2>
+  <p>2023年のハーグ首脳会議で合意された、今後10年間で達成すべき極めて高い支出目標。</p>
+  
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 180">
+      <!-- 5% Total Box -->
+      <rect x="10" y="40" width="580" height="100" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="300" y="30" text-anchor="middle" font-weight="bold" font-size="16">防衛関連支出 合計 5.0% (GDP比)</text>
+      
+      <!-- 3.5% Box -->
+      <rect x="20" y="60" width="380" height="60" rx="5" fill="rgba(139, 92, 246, 0.3)" stroke="#8b5cf6"/>
+      <text x="210" y="95" text-anchor="middle" font-weight="bold">純粋な防衛費 3.5%</text>
+      
+      <!-- 1.5% Box -->
+      <rect x="410" y="60" width="170" height="60" rx="5" fill="rgba(96, 165, 250, 0.2)" stroke="#60a5fa"/>
+      <text x="495" y="95" text-anchor="middle" font-weight="bold">関連支出 1.5%</text>
+      <text x="495" y="145" text-anchor="middle" font-size="12">（サイバー、インフラ、偽情報対策等）</text>
+    </svg>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>2024年サミットの役割</strong>：この10年計画の「1年目の進捗チェック」を行う会議。</li>
+    <li><strong>アメリカの圧力</strong>：トランプ氏は「金を払わない国は守らない」と明言。歴代政権も不満を持っていたが、トランプ氏はそれを実行に移す姿勢を見せている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 加盟国間の温度差と国内事情</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>グループ</th>
+        <th>現状とスタンス</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>東方諸国（ポーランド、バルト三国）</strong></td>
+        <td>ロシアの脅威を間近に感じ、既に<strong>3.5%を突破</strong>している国が多い。</td>
+      </tr>
+      <tr>
+        <td><strong>スペイン</strong></td>
+        <td>現在2%以下。「2.2%あれば十分自衛できる」と主張し、5%目標に反発。トランプ氏から報復関税の示唆を受けた。</td>
+      </tr>
+      <tr>
+        <td><strong>イギリス</strong></td>
+        <td>2.7%（約17兆円）への増額を表明。しかし、政府の腰が重いとして防衛大臣が辞任するなど国内で混乱。</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="opt-a-list">
+    <li><strong>共通のジレンマ</strong>：物価高騰や景気低迷の中、福祉や社会保障を優先したい国民感情と、NATOの結束維持の間で板挟みになっている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 深刻な「レディネス（準備体制）」の欠如</h2>
+  <ul class="opt-a-list">
+    <li><strong>兵器の枯渇</strong>：ポーランドやチェコなどは旧ソ連型兵器をウクライナに供与したが、自国の新しい兵器による補充が追いついていない。</li>
+    <li><strong>生産体制の遅れ</strong>：
+      <ul>
+        <li>熟練した人材の不足。</li>
+        <li>工場の不足。</li>
+        <li>紅海危機などによるサプライチェーンの混乱（部品が入らない）。</li>
+      </ul>
+    </li>
+    <li><strong>ロシアの脅威シナリオ</strong>：ドイツのピストリウス国防相は、ロシアが<strong>2027年〜2030年頃</strong>にはNATO諸国を攻撃できる軍事能力を回復させると警告。</li>
+    <li><strong>領空侵犯への対応</strong>：エストニアやルーマニアでロシア製ドローンの侵入が増加。ウクライナなら即撃墜するが、NATO領内ではエスカレーションを恐れて即座に対応できないジレンマがある。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ウクライナのNATO加盟を阻む壁</h2>
+  <ul class="opt-a-list">
+    <li><strong>第5条のジレンマ</strong>：戦争中の国を加盟させれば、即座にNATO全体がロシアと全面戦争になるため、現状では不可能。</li>
+    <li><strong>全会一致の原則</strong>：加盟には全32カ国の賛成が必要。ハンガリーやドイツなどが内心では慎重姿勢を崩していない。</li>
+    <li><strong>ウクライナの主張</strong>：自国の軍事力は欧州小国より高く、安全保障に貢献できるとアピールしているが、現実は厳しい。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 対米関係と「欧州の柱」</h2>
+  <ul class="opt-a-list">
+    <li><strong>戦略的自立性</strong>：アメリカに「見捨てられない」ために、欧州だけで自立した防衛力を備えていること（欧州の柱）を見せる必要がある。</li>
+    <li><strong>ルッテ事務総長の「トランプ対策」</strong>：
+      <ul>
+        <li>トランプ氏を「史上最高の大統領」と持ち上げるなど、なりふり構わぬ懐柔策。</li>
+        <li>「トランプ氏のおかげで防衛費がこれだけ増えた」という右肩上がりの資料を用意し、アイゼンハワー大統領以上の功績だと称賛。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 日本への示唆</h2>
+  <ul class="opt-a-list">
+    <li><strong>同志国との連携</strong>：アメリカの不透明性が高まる中、価値観を共有する欧州諸国（NATO）との直接的な関係強化が不可欠。</li>
+    <li><strong>行動による証明</strong>：防衛装備品の移転制限緩和などを進めるのであれば、言葉だけでなく、NATO首脳会議などの場に積極的に関与し、行動で協力姿勢を示すべき。</li>
+  </ul>
+
+</body>
+</html>
