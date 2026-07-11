@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">日本一たのしい哲学ラジオ：西田幾多郎シリーズ 第1回</h1>
+  <p>
+    「日本最初の哲学者」と称される<strong>西田幾多郎</strong>を紐解く新シリーズの導入回。明治維新から第二次世界大戦終結直前までという激動の時代を生き抜いた彼の生涯、思想、そして現代において彼を学ぶ意義について、パーソナリティの品川氏が熱量を持って語ります。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">西田幾多郎</span>
+    <span class="opt-a-tag">京都学派</span>
+    <span class="opt-a-tag">善の研究</span>
+    <span class="opt-a-tag">純粋経験</span>
+    <span class="opt-a-tag">哲学の道</span>
+    <span class="opt-a-tag">明治維新</span>
+    <span class="opt-a-tag">禅</span>
+    <span class="opt-a-tag">浄土真宗</span>
+    <span class="opt-a-tag">自覚</span>
+    <span class="opt-a-tag">場所の論理</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 西田幾多郎とはどのような人物か</h2>
+  <ul class="opt-a-list">
+    <li><strong>日本を代表する哲学者</strong>：世界的な哲学史に名を残す、日本で最も有名な哲学者の一人。</li>
+    <li><strong>西洋と東洋の融合</strong>：明治以降に輸入された西洋哲学を咀嚼し、東洋的な直感や「禅」の思想と融合させた。</li>
+    <li><strong>京都大学（京都帝国大学）教授</strong>：京都学派の創始者。京都の観光名所「哲学の道」は、彼らが思索しながら歩いたことに由来する。</li>
+    <li><strong>哲学者としての姿勢</strong>：常識とは異なる世界像を直感的に捉え、それを一生かけて言語化しようと試み続けた人物。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 シリーズで注目すべき「日常語」の再定義</h2>
+  <p>西田哲学を学ぶと、日常的に使っている言葉が全く異なる特別な意味（西田的意味）を帯びて聞こえるようになる。以下のキーワードが今後のシリーズで重要となる。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>キーワード</th>
+        <th>西田哲学における重要性</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>純粋・経験</strong></td>
+        <td>主客未分の状態を示す「純粋経験」として登場。</td>
+      </tr>
+      <tr>
+        <td><strong>自由・働く</strong></td>
+        <td>単なる動作ではなく、存在の根源に関わる「行為」として語られる。</td>
+      </tr>
+      <tr>
+        <td><strong>自覚</strong></td>
+        <td>西田が晩年まで考え続けた、自己を映し出す重要な概念。</td>
+      </tr>
+      <tr>
+        <td><strong>場所</strong></td>
+        <td>「場所の論理」として知られる、西田哲学の独創的な到達点。</td>
+      </tr>
+      <tr>
+        <td><strong>絶対・矛盾</strong></td>
+        <td>「絶対矛盾的自己同一」という有名なフレーズに繋がる。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 時代背景：激動の76年間</h2>
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 120">
+      <!-- Timeline Line -->
+      <line x1="50" y1="60" x2="550" y2="60" stroke="#60a5fa" stroke-width="2" />
+      
+      <!-- Events -->
+      <circle cx="50" cy="60" r="5" fill="#8b5cf6" />
+      <text x="30" y="90" font-size="12">1870 誕生</text>
+      <text x="30" y="45" font-size="12" fill="#a78bfa">明治維新直後</text>
+
+      <circle cx="250" cy="60" r="5" fill="#8b5cf6" />
+      <text x="220" y="90" font-size="12">1904 日露戦争</text>
+
+      <circle cx="400" cy="60" r="5" fill="#8b5cf6" />
+      <text x="370" y="90" font-size="12">1914 第一次大戦</text>
+
+      <circle cx="550" cy="60" r="5" fill="#8b5cf6" />
+      <text x="520" y="90" font-size="12">1945 死去</text>
+      <text x="510" y="45" font-size="12" fill="#a78bfa">終戦直前</text>
+    </svg>
+  </div>
+  <ul class="opt-a-list">
+    <li><strong>生涯の要約</strong>：本人の言葉によれば「人生の前半は黒板を前に座り（学生）、後半は黒板を背にして立った（教師）。黒板の前で一回転しただけ」という極めてシンプルなもの。</li>
+    <li><strong>実際の内実</strong>：本人の言葉とは裏腹に、私生活では家族の死や経済的困窮など、凄まじい「流転」と「濁流」を経験している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 家族構成と幼少期のルーツ</h2>
+  <ul class="opt-a-list">
+    <li><strong>父・安則</strong>：教育熱心だが気性が荒く、事業（米相場など）に失敗して家を没落させた。西田の結婚生活に干渉し、無理やり離婚させるなどのエピソードも残る。</li>
+    <li><strong>母・とさ</strong>：誠実で勤勉、篤い仏教（浄土真宗）信者。西田が最も慕い、思想的にも影響を受けた人物。
+      <ul>
+        <li>5歳の西田に「蓮如上人の御文（おふみ）を読んだらおっぱいをあげる」と教え、西田はそれをスラスラ読んでいたという。</li>
+      </ul>
+    </li>
+    <li><strong>兄弟の悲劇</strong>：
+      <ul>
+        <li>最も親しかった姉を14歳の時にチフスで亡くす。</li>
+        <li>弟の兵次郎は日露戦争で戦死。</li>
+        <li>自身の子供たちも多くが先立つなど、常に「死」や「悲しみ」が身近にある人生だった。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 今後のシリーズ構成</h2>
+  <p>西田幾多郎の人生と思想を、以下の四部構成で展開していく予定。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>構成</th>
+        <th>テーマ</th>
+        <th>内容のイメージ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>第一部：流転（るてん）</strong></td>
+        <td>苦難の青年期</td>
+        <td>家族の不幸や学業での挫折、定まらない職。</td>
+      </tr>
+      <tr>
+        <td><strong>第二部：頭角（とうかく）</strong></td>
+        <td>思想の芽生え</td>
+        <td>『善の研究』の執筆と世間への登場。</td>
+      </tr>
+      <tr>
+        <td><strong>第三部：躍進（やくしん）</strong></td>
+        <td>京都学派の形成</td>
+        <td>独自の哲学体系を構築し、日本哲学の頂点へ。</td>
+      </tr>
+      <tr>
+        <td><strong>第四部：濁流（だくりゅう）</strong></td>
+        <td>晩年と戦争</td>
+        <td>戦争の足音と、極限状態での思索の深化。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <blockquote>
+    「西田の言っていることの9割は理解できないかもしれない。しかし、彼が見た世界の1%でも言葉を通じて重なり合えたとき、日常の景色が変わって見えるはずだ。」（品川）
+  </blockquote>
+
+</body>
+</html>
