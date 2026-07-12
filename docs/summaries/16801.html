@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">News Connect：ホルムズ海峡の緊張と2026年7月の世界情勢</h1>
+  <p>2026年7月12日配信。アメリカ建国250周年という歴史的節目を背景に、中東情勢の緊迫化、中国の軍事的示唆、宇宙探査の進展、そしてヒューマノイドロボットの未来について、野村貴文氏と塩野誠氏が多角的に分析します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">ホルムズ海峡</span>
+    <span class="opt-a-tag">アメリカ建国250周年</span>
+    <span class="opt-a-tag">はやぶさ2</span>
+    <span class="opt-a-tag">SLBM</span>
+    <span class="opt-a-tag">マリーヌ・ルペン</span>
+    <span class="opt-a-tag">ヒューマノイドロボット</span>
+    <span class="opt-a-tag">攻殻機動隊2026</span>
+    <span class="opt-a-tag">エネルギー安全保障</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ヒューマノイドロボットの存在意義と「憑依」するAI</h2>
+  <ul class="opt-a-list">
+    <li><strong>三菱自動車の参入：</strong>2026年7月9日、ヒューマノイドロボットの量産化に向けたニュースが発表された。</li>
+    <li><strong>人型の必要性：</strong>現在の社会インフラ（ドアノブ、階段など）が「人間用」に設計されているため、既存環境に適合（レトロフィット）させるには人型が効率的である。</li>
+    <li><strong>ロボットフレンドリーな環境：</strong>最初からロボット前提で街を作るなら、人型である必要はなく、通信でドアを開けるドローンなどの形態もあり得る。</li>
+    <li><strong>「憑依」という概念：</strong>特定のロボットの体を持つのではなく、車、家、オフィスなど、移動先のマシンに自分の馴染みのAIが次々と乗り移っていく未来像。</li>
+    <li><strong>プライバシーの懸念：</strong>家の中にロボットがいることは、常にクラウド経由で見られている可能性を孕む。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 アメリカ建国250周年：祝祭と分断の現在地</h2>
+  <ul class="opt-a-list">
+    <li><strong>歴史的節目：</strong>1776年の独立宣言から250年。トランプ大統領（2026年時点の設定）の下で「グレート・アメリカン・ステート・フェア」が開催。</li>
+    <li><strong>記録的熱波と気象：</strong>全米を熱波が直撃し、パレードや花火が中止・延期。ワシントンのイベントも一時中断。</li>
+    <li><strong>環境悪化：</strong>大規模な花火により、PM2.5濃度が急上昇し、最大級の大気汚染警報が発令される皮肉な事態に。</li>
+    <li><strong>政治的摩擦：</strong>トランプ氏の演説が選挙集会化しているとの批判や、インフレ下での巨額予算投入に対する厳しい視線。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 宇宙探査：はやぶさ2の驚異的な精密精度</h2>
+  <ul class="opt-a-list">
+    <li><strong>小惑星「鳥船」へのフライバイ：</strong>地球から1億キロ離れた地点で、高速移動しながらの観測に成功。</li>
+    <li><strong>極限の精度：</strong>秒速5.3kmで移動する中、<strong>誤差プラスマイナス1秒</strong>という驚異的なタイミングで撮影を実施。</li>
+    <li><strong>難易度の例え：</strong>JAXAによれば「北海道にある1円玉を沖縄から射抜く」ほどの困難さ。</li>
+    <li><strong>哲学的示唆：</strong>宇宙の深淵に触れることで、人類の存在意義や世界の広がりを再認識させるミッション。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 中国の軍事動向：初のSLBM発射公表</h2>
+  <ul class="opt-a-list">
+    <li><strong>SLBM（潜水艦発射弾道ミサイル）：</strong>中国軍が原子力潜水艦から太平洋に向けて模擬弾頭を発射したことを初めて認めた。</li>
+    <li><strong>戦略的意味：</strong>潜水艦は発見が困難なため、敵から先制攻撃を受けても生き残り、報復攻撃を行う<strong>「第二撃能力」</strong>を誇示。相互確証破壊による抑止力を狙う。</li>
+    <li><strong>着弾地点：</strong>南太平洋のツバルやナウル近海。アメリカ本土を射程に収める能力を証明。</li>
+    <li><strong>外交的駆け引き：</strong>発射1時間半前に日本や豪州に通告。アメリカ建国記念日に合わせた牽制の意図が透ける。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 フランス情勢：ルペン氏の大統領選出馬が現実味</h2>
+  <ul class="opt-a-list">
+    <li><strong>第2審判決：</strong>公金横領罪に問われていたマリーヌ・ルペン氏に対し、裁判所が被選挙権停止期間を大幅に短縮。</li>
+    <li><strong>2027年大統領選：</strong>これによりルペン氏の立候補が可能に。本人は出馬の意向を表明。</li>
+    <li><strong>世論の反応：</strong>フランス国民の約6割が出馬に否定的だが、既存政治への不満から一定の支持基盤（ポピュリズム）を維持。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ホルムズ海峡の危機：事実上の通行停止状態</h2>
+  <ul class="opt-a-list">
+    <li><strong>停戦の終焉：</strong>トランプ大統領が「停戦は終わった」と宣言。イランのインフラ90カ所へ大規模空爆を実施。</li>
+    <li><strong>通行量の激減：</strong>通常水準を大幅に下回り、1日わずか<strong>14隻（実態は2隻との声も）</strong>まで減少。</li>
+    <li><strong>保険の影響：</strong>保険会社がリスク高騰を理由に航行を制限。海運会社が物理的に通れない状況。</li>
+    <li><strong>日本のエネルギー安全保障：</strong>石油備蓄があるため直ちに肌感覚での危機はないが、チョークポイントの封鎖は日本の生命線に直結する。</li>
+  </ul>
+
+  <svg width="100%" viewBox="0 0 600 250" style="background: #1a1a3e; border-radius: 8px; margin: 20px 0;">
+    <!-- Nodes -->
+    <rect x="20" y="80" width="150" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="35" y="115" font-size="14">軍事衝突・空爆</text>
+    
+    <rect x="220" y="80" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="235" y="115" font-size="14">ホルムズ海峡封鎖</text>
+    
+    <rect x="430" y="30" width="150" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="445" y="65" font-size="14">原油供給の寸断</text>
+    
+    <rect x="430" y="130" width="150" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="445" y="165" font-size="14">日本：備蓄放出へ</text>
+
+    <!-- Arrows -->
+    <line x1="170" y1="110" x2="220" y2="110" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="380" y1="100" x2="430" y2="70" stroke="#60a5fa" stroke-width="2" />
+    <line x1="380" y1="120" x2="430" y2="150" stroke="#60a5fa" stroke-width="2" />
+    
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+      </marker>
+    </defs>
+  </svg>
+
+  <h2 class="opt-a-section-title">📌 DJコーナー：2026年の音楽トレンド</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>アーティスト</th>
+        <th>曲名</th>
+        <th>特徴・背景</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Charli XCX</strong></td>
+        <td>Wink Wink</td>
+        <td>クラブサウンドから一転、懐かしさを感じるガールズロックへ。歌詞は過激。</td>
+      </tr>
+      <tr>
+        <td><strong>Madonna & Sabrina Carpenter</strong></td>
+        <td>Bring Your Love</td>
+        <td>67歳と27歳の40歳差デュオ。80-90年代ディスコ風のレトロフューチャー。</td>
+      </tr>
+      <tr>
+        <td><strong>Origa (菅野よう子プロデュース)</strong></td>
+        <td>Inner Universe</td>
+        <td>「攻殻機動隊 S.A.C.」OP。ロシア語と英語が混ざるデジタルミュージックの傑作。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <blockquote>
+    「令和を振り返ったとき、2020年代は『これまで築いてきた国際秩序が崩壊した時代』と定義されるのかもしれない。新しい戦間期のような深淵さを感じる。」
+  </blockquote>
+
+</body>
+</html>
