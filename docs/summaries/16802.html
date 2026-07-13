@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ながらAIラジオ：2026年7月AIニュース・アップデートまとめ</h1>
+  <p>2026年7月第2週の激動のAIニュースを整理。ChatGPTの新モデル「Sol/Terra/Luna」の登場、Claude Fable 5のサブスク終了と活用法、SpaceXAIによるGrok 4.5の発表、そしてAI時代の知的生産術（Obsidian/Notion）について、公開収録と緊急追記の内容を構造化しました。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">ChatGPT Sol/Terra/Luna</span>
+    <span class="opt-a-tag">Claude Fable 5</span>
+    <span class="opt-a-tag">Grok 4.5</span>
+    <span class="opt-a-tag">SpaceXAI</span>
+    <span class="opt-a-tag">Sakana Translate</span>
+    <span class="opt-a-tag">Obsidian</span>
+    <span class="opt-a-tag">Notion</span>
+    <span class="opt-a-tag">GPT-Live</span>
+    <span class="opt-a-tag">ChatGPT Work</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ChatGPT 新モデル「Sol / Terra / Luna」登場</h2>
+  <ul class="opt-a-list">
+    <li><strong>GPT-5.6 系の新名称:</strong> これまでのナンバリングから、ClaudeのOpus/Sonnet/Haikuに対抗するような固有名詞が採用された。</li>
+    <li><strong>モデルの階層構造:</strong>
+      <table>
+        <thead>
+          <tr>
+            <th>モデル名</th>
+            <th>位置付け</th>
+            <th>特徴</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Sol (ソル)</strong></td>
+            <td>最上位モデル</td>
+            <td>Fable 5に匹敵する知能。小説執筆などのクリエイティブ、複雑な推論に強い。</td>
+          </tr>
+          <tr>
+            <td><strong>Terra (テラ)</strong></td>
+            <td>中位モデル</td>
+            <td>速度と精度のバランス型。日常的なタスクに最適。</td>
+          </tr>
+          <tr>
+            <td><strong>Luna (ルナ)</strong></td>
+            <td>軽量モデル</td>
+            <td>高速・安価。シンプルなタスクやAPI利用向け。</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li><strong>ChatGPT Work:</strong> 非エンジニア向けの「エージェント」機能。Google Drive連携が強力で、スライドやスプレッドシートの操作・整理に長けている。</li>
+    <li><strong>GPT-Live:</strong> 音声対話機能が進化。反応速度が劇的に向上し、相槌や割り込みへの対応が極めて自然（生々しい）になった。英語学習に最適。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Claude Fable 5 のサブスク終了と活用事例</h2>
+  <ul class="opt-a-list">
+    <li><strong>提供形態の変更:</strong> 月額20ドル/200ドルのサブスクリプション内での利用が終了し、以降は<strong>APIによる従量課金制</strong>へ移行。</li>
+    <li><strong>Fable 5 の強み:</strong>
+      <ul>
+        <li><strong>「目がいい」 (Vision機能):</strong> ぼやけた画像や複雑なスライド、スキャンされたPDFの読み取り能力が極めて高い。</li>
+        <li><strong>批判的思考:</strong> ユーザーのキャリアプランや作成物に対し、忖度のない鋭い（時に突き刺さる）フィードバックを返す。</li>
+        <li><strong>サブエージェント運用:</strong> 複雑なタスクを複数の子エージェントに振り分けて実行させる能力に長けている。</li>
+      </ul>
+    </li>
+    <li><strong>デメリット:</strong> 動作が遅く、コストが非常に高い。日常使いではなく「月に1度の顧問との面談」のようなスポット利用が推奨される。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 SpaceXAI (旧XAI) と Grok 4.5</h2>
+  <ul class="opt-a-list">
+    <li><strong>名称変更:</strong> XAIから<strong>SpaceXAI</strong>へ。SpaceXの計算資源とAI開発をより密接に統合。</li>
+    <li><strong>Grok 4.5 の特徴:</strong>
+      <ul>
+        <li><strong>圧倒的な低価格:</strong> 「水のように安い」と評されるコストパフォーマンス。</li>
+        <li><strong>Cursor買収の恩恵:</strong> 開発者向けエディタCursorを買収したことで、コード生成や開発支援能力が大幅に強化。</li>
+        <li><strong>リアルタイム性:</strong> X（旧Twitter）の最新トレンドや情報を踏まえた回答が可能。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <h3 style="margin-top:0; color:#a78bfa;">モデルの使い分けイメージ</h3>
+    <svg width="100%" viewBox="0 0 600 200">
+      <!-- Fable -->
+      <rect x="20" y="50" width="160" height="100" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="100" y="85" text-anchor="middle" font-weight="bold">Fable 5</text>
+      <text x="100" y="115" text-anchor="middle" font-size="12">「恋人」</text>
+      <text x="100" y="135" text-anchor="middle" font-size="11">高知能・高コスト・鋭い</text>
+
+      <!-- GPT Sol -->
+      <rect x="220" y="50" width="160" height="100" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="85" text-anchor="middle" font-weight="bold">GPT Sol</text>
+      <text x="300" y="115" text-anchor="middle" font-size="12">「同僚」</text>
+      <text x="300" y="135" text-anchor="middle" font-size="11">万能・安定・使いやすい</text>
+
+      <!-- Grok -->
+      <rect x="420" y="50" width="160" height="100" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="500" y="85" text-anchor="middle" font-weight="bold">Grok 4.5</text>
+      <text x="500" y="115" text-anchor="middle" font-size="12">「パシリ/部下」</text>
+      <text x="500" y="135" text-anchor="middle" font-size="11">爆速・激安・大量処理</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 魚AI (Sakana AI) の新展開</h2>
+  <ul class="opt-a-list">
+    <li><strong>魚トランスレート:</strong> 日本語特化の爆速翻訳ツール。</li>
+    <li><strong>新モデル「ナマズ (Namazu)」:</strong>
+      <ul>
+        <li>DeepSeek V3.1 Terminusなどをベースに日本語にファインチューニング。</li>
+        <li>カジュアル/敬語の使い分けや、翻訳理由の解説機能が充実。</li>
+        <li>ログイン不要・無料で利用可能（現時点）。</li>
+      </ul>
+    </li>
+    <li><strong>命名の課題:</strong> 魚の名前（フグ、ナマズ等）が増えすぎて、ユーザーが性能を直感的に理解しにくいという懸念。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 AI時代の知的生産術：構造化からの解放</h2>
+  <ul class="opt-a-list">
+    <li><strong>Obsidian 活用法 (うすたく流):</strong>
+      <ul>
+        <li>毎日1つの「デイリーノート」に、音声入力やメモですべての情報を放り込む。</li>
+        <li>夜間にAIが内容を読み取り、適切なフォルダやページ（人名、プロジェクト名等）へ自動で振り分ける。</li>
+      </ul>
+    </li>
+    <li><strong>Notion 活用法 (早川ゴミ流):</strong>
+      <ul>
+        <li>Discordから何でも適当に投げ込み、後からAIに整理させる。</li>
+      </ul>
+    </li>
+    <li><strong>本質的な変化:</strong> 「人間が構造化して書く」こと自体が無駄になりつつある。ラフに、大量に、背景まで含めてAIに喋りかける方が、結果的に質の高いアウトプットが得られる。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <h3 style="margin-top:0; color:#a78bfa;">次世代の知的生産フロー</h3>
+    <svg width="100%" viewBox="0 0 600 120">
+      <!-- Input -->
+      <rect x="10" y="30" width="150" height="60" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" />
+      <text x="85" y="65" text-anchor="middle">非構造な入力</text>
+      <text x="85" y="80" text-anchor="middle" font-size="10">(音声・殴り書き)</text>
+
+      <!-- Arrow -->
+      <path d="M170 60 L220 60" stroke="#60a5fa" stroke-width="2" fill="none" />
+      <polygon points="220,60 210,55 210,65" fill="#60a5fa" />
+
+      <!-- AI -->
+      <rect x="230" y="30" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="65" text-anchor="middle">AIによる自動整理</text>
+
+      <!-- Arrow -->
+      <path d="M380 60 L430 60" stroke="#60a5fa" stroke-width="2" fill="none" />
+      <polygon points="430,60 420,55 420,65" fill="#60a5fa" />
+
+      <!-- Output -->
+      <rect x="440" y="30" width="150" height="60" rx="8" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" />
+      <text x="515" y="65" text-anchor="middle">構造化データ</text>
+      <text x="515" y="80" text-anchor="middle" font-size="10">(DB・ナレッジベース)</text>
+    </svg>
+  </div>
+
+  <blockquote>
+    <strong>まとめ:</strong> AIモデルの戦国時代において、性能だけでなく「コスト」と「役割」に応じた使い分けが重要。人間は「構造化」という足枷を捨て、より自由なアウトプットをAIに委ねるフェーズに入っている。
+  </blockquote>
+
+</body>
+</html>
