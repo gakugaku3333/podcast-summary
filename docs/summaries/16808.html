@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .svg-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">VALTURE RADIO：ANAのルール変更と食への異常なこだわり</h1>
+  <p>投資家アスリートの田中啓氏が、ANAの国内線ルール変更を起点に、現代のサービス設計や自身の旅行哲学、そして「協調性を捨ててでも貫く」食へのこだわりについて語るエピソードです。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">ANA</span>
+    <span class="opt-a-tag">アンバンドリング</span>
+    <span class="opt-a-tag">一人旅</span>
+    <span class="opt-a-tag">マズローの欲求5段階説</span>
+    <span class="opt-a-tag">承認欲求</span>
+    <span class="opt-a-tag">スイーツブーム</span>
+    <span class="opt-a-tag">食感</span>
+    <span class="opt-a-tag">スーパーショートケーキ</span>
+    <span class="opt-a-tag">ルーズリーフ</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 航空業界の変革：ANAのルール変更と「アンバンドリング」</h2>
+  <ul class="opt-a-list">
+    <li><strong>ANA国内線のルール変更（5月19日〜）</strong>：安い運賃では事前の座席指定ができなくなるなど、LCCに近い仕組みを導入。</li>
+    <li><strong>背景にあるコスト増</strong>：燃料費、人件費、空港利用料、整備費など、あらゆる販管費が上昇している。</li>
+    <li><strong>利用者の多様化</strong>：ビジネス客中心から、レジャー客やインバウンド客へと拡大。一律の「込み込み価格」が時代に合わなくなっている。</li>
+    <li><strong>アンバンドリング（非セット化）の概念</strong>：
+      <table>
+        <thead>
+          <tr>
+            <th>項目</th>
+            <th>従来の「バンドリング」</th>
+            <th>これからの「アンバンドリング」</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>価格構成</td>
+            <td>座席指定・荷物・変更権が全て込み</td>
+            <td>基本運賃を下げ、必要なオプションを個別購入</td>
+          </tr>
+          <tr>
+            <td>ユーザー利点</td>
+            <td>何も考えなくて良いが、割高な場合も</td>
+            <td>不要なサービスを削り、安く乗る選択ができる</td>
+          </tr>
+          <tr>
+            <td>航空側の利点</td>
+            <td>一律の利益率</td>
+            <td>需要に応じた柔軟な価格設定（収益性の改善）</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li><strong>田中氏の視点</strong>：グローバルでは標準的な流れ。新しいルールに文句を言うより、素早く適応して使いこなす方が得策。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 田中啓の旅行哲学：予定調和を壊す「暮らすような旅」</h2>
+  <ul class="opt-a-list">
+    <li><strong>空港という場所への愛着</strong>：20代〜30代の頃は、用もないのに空港へ行き、離着陸を見てノスタルジーに浸っていた。</li>
+    <li><strong>空港の本屋での「ジャケ買い」</strong>：旅先で読む本は思い出と紐づくため、あえて現地で直感的に選ぶ。</li>
+    <li><strong>「確認作業」としての旅行からの脱却</strong>：
+      <ul>
+        <li>かつてはSNSやガイドブックで調べ尽くし、分刻みのスケジュールを組んでいた。</li>
+        <li>しかし、調べすぎると「実物を確認するだけ」になり、写真とのギャップにがっかりすることが多い。</li>
+        <li>現在は<strong>「ほぼ何も調べない」</strong>スタイル。現地の治安情報だけ確認し、あとは「なすがまま」に過ごす。</li>
+      </ul>
+    </li>
+    <li><strong>トラブルを歓迎する</strong>：予定不調和な出来事やハプニングこそが、後々まで残る記憶になる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 承認欲求との向き合い方</h2>
+  <ul class="opt-a-list">
+    <li><strong>マズローの欲求5段階説</strong>をベースに考察。
+      <div class="svg-container">
+        <svg width="100%" viewBox="0 0 400 200">
+          <!-- Triangle -->
+          <polygon points="200,20 350,180 50,180" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+          <!-- Lines -->
+          <line x1="165" y1="60" x2="235" y2="60" stroke="#8b5cf6" stroke-dasharray="4"/>
+          <line x1="130" y1="100" x2="270" y2="100" stroke="#8b5cf6" stroke-dasharray="4"/>
+          <line x1="95" y1="140" x2="305" y2="140" stroke="#8b5cf6" stroke-dasharray="4"/>
+          <!-- Text -->
+          <text x="200" y="50" text-anchor="middle" font-size="12">自己実現</text>
+          <text x="200" y="90" text-anchor="middle" font-size="12" font-weight="bold" fill="#a78bfa">承認欲求</text>
+          <text x="200" y="130" text-anchor="middle" font-size="12">社会的欲求</text>
+          <text x="200" y="170" text-anchor="middle" font-size="12">安全・生理的欲求</text>
+        </svg>
+      </div>
+    </li>
+    <li><strong>外発的承認</strong>：他者からの評価（名声、地位）。ラジオでの発信も「誰かに届けたい」という微かな承認欲求が含まれる。</li>
+    <li><strong>内発的承認（重要）</strong>：自分で自分を認めること。自己有能感や自尊心。
+      <ul>
+        <li>田中氏は「毎朝のルーティンをこなす自分」を認めることで、自信を構築している。</li>
+      </ul>
+    </li>
+    <li><strong>SNSの批判への対処</strong>：
+      <blockquote>「SNSでの『承認欲求お疲れ』といった攻撃的なコメントは、いわば便所の落書き。通り魔だと思って無視すればいい」</blockquote>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 食への異常なこだわりと「協調性の欠如」</h2>
+  <ul class="opt-a-list">
+    <li><strong>魚介類への極端な好み</strong>：
+      <ul>
+        <li>エビ、カニ、オイスター、ロブスターの<strong>「身」に興味がない</strong>。</li>
+        <li>「ダシ」は好きだが、高級店でロブスターを出されてもテンションが上がらない。</li>
+        <li>天ぷらも「野菜だけでいい」タイプ。</li>
+      </ul>
+    </li>
+    <li><strong>一人飯の徹底</strong>：
+      <ul>
+        <li>韓国旅行で全員が「ケジャン（カニ）」を食べようとしても、自分だけ離脱してサムギョプサルを食べに行く。</li>
+        <li>限られた旅の食事回数を、興味のないものに費やしたくない。適当な嘘（現地の友人に会う等）をついてでも別行動をとる。</li>
+      </ul>
+    </li>
+    <li><strong>スイーツの変遷と「食感」のループ</strong>：
+      <ul>
+        <li>流行は「柔らかい」と「硬い・もちもち」の間を行き来している。</li>
+        <li><strong>変遷例</strong>：ティラミス（ふわふわ）→ ナタデココ（コリコリ）→ タピオカ（もちもち）→ カヌレ（弾力）→ モッチュリン（最新トレンド）。</li>
+        <li>田中氏は圧倒的に<strong>「噛み応え」重視</strong>。スープカレーもサラサラよりドロドロ派。</li>
+      </ul>
+    </li>
+    <li><strong>極端な食べ方</strong>：
+      <ul>
+        <li>一度ハマると毎日同じものを食べ続け、ある日突然「一生分の上限」を超えて二度と食べられなくなる。</li>
+        <li><strong>犠牲になった菓子</strong>：ロッテの「トッポ」「サシャ」。</li>
+      </ul>
+    </li>
+    <li><strong>苦手な甘味</strong>：
+      <ul>
+        <li>和菓子全般（豆、栗、かぼちゃを甘く煮たものが許せない）。</li>
+        <li>フルーツとケーキの合体（フルーツタルトはフルーツだけ先に食べる）。</li>
+        <li><strong>ニューオータニ「スーパーショートケーキ」</strong>：1ピース<strong>5,940円</strong>。一度食べたが「別々でいいな」と再確認。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 懐かしの文房具トーク</h2>
+  <ul class="opt-a-list">
+    <li><strong>ルーズリーフの魔力</strong>：使い始めると「大人になった感じ」がする。リングの数や位置へのこだわり。</li>
+    <li><strong>プラスチックのケース</strong>：教科書やノートを入れる薄い箱を持ち歩き、ステッカー（ステューシー、ヒステリックグラマー等）を貼ってアイデンティティを主張していた。</li>
+  </ul>
+
+</body>
+</html>
