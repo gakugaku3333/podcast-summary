@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">エヌビディアと日本企業の連携強化：新会社「ノエトラ」と物理AIの展望</h1>
+  <p>
+    本エピソードでは、エヌビディアのジェンスン・ファンCEOの来日と日本企業との大規模提携、韓国SKハイニクスの米国上場、南シナ海やロシアのスパイ活動といった地政学リスクなど、1週間の重要ニュースを専門的な視点で深掘りしています。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">NVIDIA</span>
+    <span class="opt-a-tag">SKハイニクス</span>
+    <span class="opt-a-tag">ノエトラ (Noetra)</span>
+    <span class="opt-a-tag">物理AI</span>
+    <span class="opt-a-tag">HBM</span>
+    <span class="opt-a-tag">南シナ海</span>
+    <span class="opt-a-tag">スパイ防止法</span>
+    <span class="opt-a-tag">ホルムズ海峡</span>
+    <span class="opt-a-tag">ジェンスン・ファン</span>
+    <span class="opt-a-tag">濱口竜介</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 オープニング・トピックス</h2>
+  <ul class="opt-a-list">
+    <li><strong>Apple Podcast 2026年上半期ベストポッドキャスト</strong>に「ニュースコネクト」が選出。4年続く長寿番組としての評価。</li>
+    <li><strong>映画「急に具合が悪くなる」</strong>の紹介：
+      <ul>
+        <li>濱口竜介監督作品（「ドライブ・マイ・カー」等）。</li>
+        <li>フランス人女性と日本人女性の魂の交流を描く3時間の意欲作。</li>
+        <li>キーワードは<strong>「人間を人間として尊重すること」</strong>。資本主義や老い、友情といった多層的なテーマを含む。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 月曜：SKハイニクスの米国上場と半導体市場</h2>
+  <ul class="opt-a-list">
+    <li><strong>米国ナスダック市場にADR上場</strong>：初値ベースの時価総額は約194兆円（世界12位前後）。</li>
+    <li><strong>HBM（高帯域幅メモリー）</strong>で圧倒的シェア：NVIDIAのGPU高性能化に不可欠な部品。</li>
+    <li><strong>企業の歴史と強み</strong>：
+      <ul>
+        <li>1983年創業。2001年の経営破綻を経てSKグループ傘下へ。かつては東芝との技術提携もあった。</li>
+        <li><strong>フルパッケージ体制</strong>：研究、デバイス開発、回路設計、ファウンドリ、パッケージングまで自社で完結。</li>
+        <li>D-RAM（電源オフで消える）とNANDフラッシュ（電源オフでも残る）の両方を製造。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 火曜：南シナ海を巡る14カ国の共同声明</h2>
+  <ul class="opt-a-list">
+    <li><strong>中国の海洋進出に対抗</strong>：日本、フィリピン、アメリカなど14カ国が共同声明を発表。</li>
+    <li><strong>法的根拠の否定</strong>：2016年の仲裁裁判所判断（中国の主張に法的根拠なし）を再確認。</li>
+    <li><strong>中国側の反発</strong>：判決を「紙くず」と呼び、日本大使館公使を呼び出して「口出しする資格はない」と抗議。</li>
+    <li><strong>地政学的考察</strong>：
+      <ul>
+        <li>「力による現状変更」はロシアのウクライナ侵攻と同じ構図。</li>
+        <li><strong>サラミ戦術</strong>：少しずつ既成事実化を進め、他国の反応を試す手法。</li>
+        <li>日本は韓国との経済・安保連携を強化し、アジアにおける信頼のナラティブを構築する必要がある。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 水曜：日本におけるロシアのスパイ活動</h2>
+  <ul class="opt-a-list">
+    <li><strong>ニューヨーク・タイムズの報道</strong>：ウクライナ侵攻後、追放されたロシア人スパイ数十人が日本を拠点に活動。</li>
+    <li><strong>活動拠点と目的</strong>：
+      <ul>
+        <li>ロシア国営航空<strong>アエロフロート</strong>の事務所などが拠点。</li>
+        <li>軍事用ドローンやミサイルに転用可能な<strong>デュアルユース（軍民両用）</strong>の電子部品を調達。</li>
+      </ul>
+    </li>
+    <li><strong>日本の法制度の課題</strong>：
+      <ul>
+        <li>スパイ活動そのものを取り締まる法律が不十分。</li>
+        <li>現状は「外交官（GRU等）」としての身分がある場合、国外退去（ペルソナ・ノン・グラータ）処分にするのが限界。</li>
+        <li><strong>スパイ防止法</strong>の議論：基本的人権との兼ね合いを含め、公的根拠と権限の付与が論点。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 木曜：イラン情勢とホルムズ海峡の緊張</h2>
+  <ul class="opt-a-list">
+    <li><strong>暫定和平合意の事実上の崩壊</strong>：米国とイランの応酬により、原油販売許可が停止。</li>
+    <li><strong>ホルムズ海峡の封鎖</strong>：イラン側が「不可侵の権利」として管理を主張。</li>
+    <li><strong>トランプ氏の通行料計画</strong>：貨物額の20％を手数料として徴収する案を発表したが、即座に撤回。</li>
+    <li><strong>イラン国内の窮状</strong>：インフレ率80％超と経済は深刻だが、体制は海峡というアセットを盾に強硬姿勢を維持。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 金曜：NVIDIAと日本企業の巨大連携「ノエトラ」</h2>
+  <ul class="opt-a-list">
+    <li><strong>ジェンスン・ファンCEO来日</strong>：日本政府・企業との「革ジャン・プロトコル」による蜜月。</li>
+    <li><strong>新会社「ノエトラ (Noetra)」の設立</strong>：
+      <ul>
+        <li>ソフトバンク、ソニー、NEC、ホンダなど44社が出資。</li>
+        <li>技術トップはPreferred Networksの<strong>岡野原大輔氏</strong>。</li>
+        <li>2027年4月までに、NVIDIAの最先端チップ<strong>「ルービン」</strong>を27,500個以上搭載したデータセンターを構築。</li>
+        <li>日本政府も約3,873億円の巨額支援を予定（事実上の国策プロジェクト）。</li>
+      </ul>
+    </li>
+    <li><strong>「物理AI (Physical AI)」へのシフト</strong>：
+      <ul>
+        <li>従来の産業ロボット（高速・正確・再現性）から、AIロボット（初めての環境でも自律判断）へ。</li>
+        <li><strong>「ゼロショット」</strong>：学習していない状況でも、形状や大きさを判断して動く能力。</li>
+        <li>課題：導入コストの高さ（人件費との比較）と、物理世界での良質なデータ収集。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <h3 style="margin-top:0; color:#a78bfa;">物理AIと従来の産業ロボットの比較</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>特徴</th>
+          <th>従来の産業ロボット</th>
+          <th>物理AI (次世代ロボット)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>得意動作</strong></td>
+          <td>高速・正確・同じ動作の反復</td>
+          <td>自律判断・柔軟な対応</td>
+        </tr>
+        <tr>
+          <td><strong>環境適応</strong></td>
+          <td>固定された環境が必要</td>
+          <td>初めての環境でも動ける(ゼロショット)</td>
+        </tr>
+        <tr>
+          <td><strong>主な用途</strong></td>
+          <td>大規模工場のライン</td>
+          <td>物流の仕分け、複雑な現場作業</td>
+        </tr>
+        <tr>
+          <td><strong>鍵となる要素</strong></td>
+          <td>精密なハードウェア制御</td>
+          <td>生成AI × センサーデータ(マルチモーダル)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 構造図：ノエトラを中心とした連携</h2>
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 300">
+      <!-- Central Node -->
+      <rect x="225" y="110" width="150" height="80" rx="8" fill="rgba(139, 92, 246, 0.3)" stroke="#8b5cf6" stroke-width="2" />
+      <text x="300" y="150" text-anchor="middle" font-weight="bold" font-size="16">新会社 ノエトラ</text>
+      <text x="300" y="170" text-anchor="middle" font-size="12">(Noetra)</text>
+
+      <!-- Partner Nodes -->
+      <rect x="50" y="20" width="120" height="50" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" />
+      <text x="110" y="50" text-anchor="middle">NVIDIA (Rubin)</text>
+
+      <rect x="430" y="20" width="120" height="50" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" />
+      <text x="490" y="50" text-anchor="middle">日本政府 (支援金)</text>
+
+      <rect x="50" y="230" width="120" height="50" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" />
+      <text x="110" y="260" text-anchor="middle">主要44社 (SB, Sony等)</text>
+
+      <rect x="430" y="230" width="120" height="50" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" />
+      <text x="490" y="260" text-anchor="middle">PFN 岡野原氏</text>
+
+      <!-- Arrows -->
+      <path d="M 170 70 L 225 115" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+      <path d="M 430 70 L 375 115" stroke="#60a5fa" stroke-width="2" fill="none" />
+      <path d="M 170 230 L 225 185" stroke="#60a5fa" stroke-width="2" fill="none" />
+      <path d="M 430 230 L 375 185" stroke="#60a5fa" stroke-width="2" fill="none" />
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 DJコーナー：今週の選曲（夏特集）</h2>
+  <ul class="opt-a-list">
+    <li><strong>indigo la End「夏夜のマジック」</strong>：川谷絵音氏率いるバンド。大人のメロウな雰囲気が漂う夏の定番曲。</li>
+    <li><strong>佐藤「通過する故郷（ふるさと）」</strong>：車窓から見た平穏な町と、まだ帰れない心情を描いた映像的な楽曲。</li>
+    <li><strong>湧久井さら「幽霊になっても美しい」</strong>：東京芸大出身のピアニスト・コンポーザー。インストからボーカルへの挑戦が光るスリリングな展開。</li>
+  </ul>
+
+  <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.8em; color: #888;">
+    番組名：News Connect あなたと経済をつなぐ5分間<br>
+    パーソナリティ：野村敬文 / ゲスト：塩野誠（経営共創基盤 CEO）
+  </div>
+
+</body>
+</html>
