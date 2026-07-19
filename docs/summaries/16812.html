@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">子育てのラジオ「Teacher Teacher」：将来の不安に押しつぶされそうな中学生への回答</h1>
+  <p>中学生から寄せられた「将来が不安で押しつぶされそう」という切実な悩みに対し、パーソナリティの<strong>はるか氏</strong>と<strong>ひとし氏</strong>が、自身の経験を交えながら「悩むことの価値」を語りかけるエピソードです。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">将来の不安</span>
+    <span class="opt-a-tag">中学生</span>
+    <span class="opt-a-tag">メタ認知</span>
+    <span class="opt-a-tag">人間らしさ</span>
+    <span class="opt-a-tag">共感力</span>
+    <span class="opt-a-tag">家入一真</span>
+    <span class="opt-a-tag">CAMPFIRE</span>
+    <span class="opt-a-tag">フリースクールコンコン</span>
+    <span class="opt-a-tag">自己肯定</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 相談内容と背景</h2>
+  <ul class="opt-a-list">
+    <li><strong>相談者：</strong>中学生のリスナー。</li>
+    <li><strong>悩み：</strong>「将来の不安が大きすぎて、押しつぶされそう」。</li>
+    <li><strong>事前のやり取り：</strong>番組側が個別に音声メッセージを先に送付。相談者からは「悩んだ先にあるものに気づけていなかった。いっぱい悩んでみます」という前向きな返信があった。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 パーソナリティ自身の「不安」と「過去」</h2>
+  <ul class="opt-a-list">
+    <li><strong>ひとし氏の現状：</strong>
+      <ul>
+        <li>30歳を過ぎてから「老い」や「身体能力の低下」を感じ、不安の種類が増えた。</li>
+        <li>仕事ができなくなる不安やお金の不安など、大人になっても不安は尽きない。</li>
+      </ul>
+    </li>
+    <li><strong>はるか氏の中高時代：</strong>
+      <ul>
+        <li><strong>中学時代：</strong>情報が少なく（ネットもコンビニもない環境）、将来を考える力がなかったため、逆に不安もなかった。</li>
+        <li><strong>高校時代：</strong>強豪バレー部のキャプテンとして挫折を経験。周囲との能力差に悩み、「車に跳ねられて（死なない程度に）休みたいたい」と願うほどの鬱状態を経験した。</li>
+        <li><strong>振り返り：</strong>当時はそれが「不安」だとメタ認知できていなかった。今の相談者が「押しつぶされそう」と自分の状態を客観視できていること自体がすごいこと。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 「不安」をポジティブに捉え直す視点</h2>
+  <ul class="opt-a-list">
+    <li><strong>未来を予測する力：</strong>不安を感じることは、人間特有の「未来を予測する能力」がある証拠である。</li>
+    <li><strong>危険察知能力：</strong>緊張や不安は、リスクを敏感に察知する力。それは自分を守るための大切な特性である。</li>
+    <li><strong>悩みの「色気」と「深み」：</strong>
+      <ul>
+        <li>悩み抜いた人から出る言葉には重みがあり、人間としての魅力（渋さ・色気）につながる。</li>
+        <li>例：CAMPFIREの家入一真氏。世間との違和感や悩みを抱えていたからこそ、クラウドファンディングという新しい価値を生み出せた。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Nodes -->
+      <rect x="10" y="60" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="80" y="95" text-anchor="middle" font-size="14" font-weight="bold">将来への不安</text>
+      
+      <rect x="230" y="60" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="300" y="95" text-anchor="middle" font-size="14" font-weight="bold">思考の深まり</text>
+      
+      <rect x="450" y="60" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="520" y="95" text-anchor="middle" font-size="14" font-weight="bold">優しさ・貢献</text>
+      
+      <!-- Arrows -->
+      <path d="M150 90 H230" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <path d="M370 90 H450" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      
+      <!-- Labels -->
+      <text x="190" y="80" text-anchor="middle" font-size="12" fill="#60a5fa">メタ認知</text>
+      <text x="410" y="80" text-anchor="middle" font-size="12" fill="#60a5fa">共感の醸成</text>
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 悩みがもたらす「優しさ」と「社会貢献」</h2>
+  <ul class="opt-a-list">
+    <li><strong>共感力の向上：</strong>自分が苦しんだ経験があるからこそ、他人の痛みに共感できるようになる。はるか氏も、挫折を経てチームメイトへの接し方が優しく変わった。</li>
+    <li><strong>実例：フリースクール「コンコン」のボランティア：</strong>
+      <ul>
+        <li>中学時代に不登校で悩み抜いた高校生が、「今の不登校の子たちの希望になりたい」とボランティアに来ている。</li>
+        <li><strong>結論：</strong>悩みは、誰かを助けるための「貢献感」の源泉になる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 相談者へのメッセージ</h2>
+  <ul class="opt-a-list">
+    <li><strong>存在の肯定：</strong>不安に押しつぶされそうな時は、無理に向き合い続けなくてもいい。まずは安心・安全に生きていてくれることが一番。</li>
+    <li><strong>多様な特性：</strong>悩む人もいれば、悩まずにハッピーを振りまく人もいる。どちらも社会に必要な存在。</li>
+    <li><strong>具体的なサポート：</strong>今回は「心の持ち方」の話をしたが、今後は「具体的な進路の選択肢」や「大人の事例紹介」など、実務的な相談にも乗る用意がある。</li>
+  </ul>
+
+  <blockquote>
+    「悩んでいる人はかっこいいし、渋いし、優しい。悩んでくれてありがとう。その悩みがいつか社会を良くする力になる。」
+  </blockquote>
+
+  <h2 class="opt-a-section-title">📌 番組からのお知らせ</h2>
+  <ul class="opt-a-list">
+    <li><strong>スポンサー募集：</strong>月額1,100円からのサポーターを募集中。収益はフリースクール「コンコン」の運営や、不登校の子どもたちの支援に充てられる。</li>
+    <li><strong>コミュニティ：</strong>登録者は限定のオンラインコミュニティに招待。</li>
+  </ul>
+
+</body>
+</html>
