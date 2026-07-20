@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ながらAIラジオ：2026年7月20日号 要約</h1>
+  <p>AIコンサルタントの<strong>うすたく氏</strong>とメルカリAI推進担当の<strong>早川ゴミ氏</strong>が、2026年7月第3週のAIニュースを解説。中国の超巨大モデルKimi k3の衝撃、GoogleのGemini Spark、OpenAI初のハードウェアCodex Microなど、実務に直結する最新トピックを網羅しています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">Kimi k3</span>
+    <span class="opt-a-tag">Moonshot AI</span>
+    <span class="opt-a-tag">Gemini Spark</span>
+    <span class="opt-a-tag">Gemini Notebook</span>
+    <span class="opt-a-tag">Codex Micro</span>
+    <span class="opt-a-tag">Work Louder</span>
+    <span class="opt-a-tag">GPT Work</span>
+    <span class="opt-a-tag">Claude Code</span>
+    <span class="opt-a-tag">2.8兆パラメータ</span>
+    <span class="opt-a-tag">ローカルLLM</span>
+    <span class="opt-a-tag">MCP</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 中国発の衝撃：Kimi k3の登場</h2>
+  <ul class="opt-a-list">
+    <li><strong>Moonshot AI（月之暗面）</strong>が発表した最新フラッグシップLLM。</li>
+    <li><strong>性能：</strong>あらゆるベンチマークでGPT-5.6（Fable）のわずか下に位置し、フロントエンド開発関連ではランキング1位を獲得。</li>
+    <li><strong>オープンソースの衝撃：</strong>Fable級のモデルがオープンウェイトで公開されることは業界的に大きなインパクト。</li>
+    <li><strong>巨大すぎるパラメータ：</strong><strong>2.8兆パラメータ</strong>という規格外のサイズ。
+      <ul>
+        <li>一般的な軽量モデル（Qwen 3.5Bなど）の約800倍。</li>
+        <li>現状のコンシューマー向けPCでローカル動作させるのは現実的ではない。</li>
+      </ul>
+    </li>
+    <li><strong>蒸留（Distillation）の疑い：</strong>既存の強力なモデルの出力を学習に使っているのではないかという議論も根強い。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Googleの逆襲：Gemini Sparkとリブランド</h2>
+  <ul class="opt-a-list">
+    <li><strong>Gemini Spark：</strong>Google I/Oから期待されていた本命機能がついに公開。</li>
+    <li><strong>Gemini Notebook：</strong>「NotebookLM」から名称変更。ブランドの統合が進む。</li>
+    <li><strong>Sparkの強み：</strong>Google Workspace（Gmail, Drive）との圧倒的な連携力。
+      <ul>
+        <li>過去のメールやドライブ内の資料を<strong>パーソナルなコンテキスト</strong>として高度に理解している。</li>
+        <li>例：特定のフォルダ名にしていなくても、過去のやり取りから「提出用のプロフィール写真」を自動で特定し提案する。</li>
+        <li>Gmailの下書き作成から送信まで、同一UI上で完結する操作性。</li>
+      </ul>
+    </li>
+    <li><strong>企業の導入メリット：</strong>セキュリティ面や既存インフラの観点から、GPTやClaudeよりも企業導入のハードルが低い「無難で強力な選択肢」。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 OpenAI初のハードウェア：Codex Micro</h2>
+  <ul class="opt-a-list">
+    <li><strong>Codex Micro：</strong>キーボードメーカー<strong>Work Louder</strong>と共同開発した左手デバイス。</li>
+    <li><strong>価格：</strong>約45,000円〜50,000円。</li>
+    <li><strong>機能：</strong>Codexの操作に特化。音声入力の起動やショートカット実行を物理ボタンで制御。</li>
+    <li><strong>OpenAI物販：</strong>バスケットボール（売り切れ）、ルービックキューブ、アパレル（"Research"ロゴ入りハーフジップ等）など、ハードウェア・グッズ展開を本格化。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 実務Tips：AIエージェントの「乗り換え」術</h2>
+  <p>早川ゴミ氏は、業務フローをClaude Codeから<strong>GPT Work</strong>へ移行中。その際の知見を共有。</p>
+  <ul class="opt-a-list">
+    <li><strong>GPT Workの利点：</strong>Googleドライブの扱いが非常にスムーズ。ブラウザ版・スマホ版で作業内容が同期される（PCアプリ版はローカル保存なので注意）。</li>
+    <li><strong>エージェントの引継ぎ：</strong>「次のエージェントへの引継ぎ資料を作って」と指示し、作成されたドキュメントを新しいツールに読み込ませることで、簡単に環境移行が可能。</li>
+    <li><strong>結論：</strong>各社機能が似通ってきているため、まずは<strong>1つのツールを徹底的に使い込む</strong>ことが重要。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📊 ローカルLLM実行のための推奨スペック</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>推奨スペック</th>
+        <th>理由</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>メモリ (RAM)</strong></td>
+        <td>24GB 〜 32GB以上</td>
+        <td>動かせるモデルの選択肢が劇的に増えるため。</td>
+      </tr>
+      <tr>
+        <td><strong>用途</strong></td>
+        <td>ローカルLLM</td>
+        <td>オフライン動作、プライバシー確保、APIコスト削減。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">🔄 AIエージェント引継ぎプロセス（図解）</h2>
+  <svg width="100%" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="600" height="150" fill="#1a1a3e" rx="8"/>
+    
+    <!-- ノード1 -->
+    <rect x="20" y="45" width="150" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="95" y="80" text-anchor="middle" font-size="14">現行エージェント</text>
+    <text x="95" y="100" text-anchor="middle" font-size="11" fill="#a78bfa">（業務実行中）</text>
+
+    <!-- 矢印1 -->
+    <path d="M170 75 L210 75" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    
+    <!-- ノード2 -->
+    <rect x="220" y="45" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="300" y="80" text-anchor="middle" font-size="14">引継ぎ資料の作成</text>
+    <text x="300" y="100" text-anchor="middle" font-size="11" fill="#a78bfa">（プロンプトで指示）</text>
+
+    <!-- 矢印2 -->
+    <path d="M380 75 L420 75" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- ノード3 -->
+    <rect x="430" y="45" width="150" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="505" y="80" text-anchor="middle" font-size="14">新エージェント</text>
+    <text x="505" y="100" text-anchor="middle" font-size="11" fill="#a78bfa">（即座に業務再開）</text>
+
+    <!-- 矢印の定義 -->
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+      </marker>
+    </defs>
+  </svg>
+
+  <h2 class="opt-a-section-title">📌 その他・雑談</h2>
+  <ul class="opt-a-list">
+    <li><strong>MCP（Model Context Protocol）：</strong>メルカリがMCPに対応するなど、外部ツールとの接続性が向上。今後は「教科書MCP」のような教育分野への応用も期待される。</li>
+    <li><strong>ライフスタイル：</strong>うすたく氏は多忙による睡眠不足と肩こりに悩み、「枕の重要性」を再認識。バスタオル枕で改善。</li>
+    <li><strong>告知：</strong>7月25日・26日にCodex、Claude Code、GPT Workの解説講座（リメイク版）を開催予定。</li>
+  </ul>
+
+</body>
+</html>
