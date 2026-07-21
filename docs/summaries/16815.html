@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">NY市長によるネタニヤフ首相拘束検討と、揺らぐアメリカの対イスラエル世論</h1>
+  <p>2026年7月21日配信のエピソード。ニューヨークのマムダニ市長がイスラエルのネタニヤフ首相に対する法的措置を示唆したニュースを中心に、アメリカ国内で急速に進む「イスラエル離れ」の現状と、トランプ政権下の複雑な外交情勢を整理します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">2026年ワールドカップ</span>
+    <span class="opt-a-tag">マムダニ市長</span>
+    <span class="opt-a-tag">ネタニヤフ首相</span>
+    <span class="opt-a-tag">国際刑事裁判所(ICC)</span>
+    <span class="opt-a-tag">パレスチナ共感</span>
+    <span class="opt-a-tag">トランプ大統領</span>
+    <span class="opt-a-tag">J.D.バンス副大統領</span>
+    <span class="opt-a-tag">イラン情勢</span>
+    <span class="opt-a-tag">ギャラップ調査</span>
+    <span class="opt-a-tag">ヒズボラ</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 2026年ワールドカップ閉幕と政治の影</h2>
+  <ul class="opt-a-list">
+    <li><strong>大会結果：</strong>決勝で<strong>スペイン</strong>がアルゼンチンを延長戦の末に下し、2度目の優勝を果たした。</li>
+    <li><strong>異例の演出：</strong>ニューヨーク・ニュージャージー・スタジアムで開催。ルールを逸脱した長時間のハーフタイムショーが導入されるなど、ビジネス色が強い大会となった。</li>
+    <li><strong>トランプ大統領の介入：</strong>
+      <ul>
+        <li>アメリカ代表選手への出場停止処分猶予に対し、大統領の介入疑惑が報じられた。</li>
+        <li>表彰式でトランプ氏が表彰台に留まり続け、政治的アピールを行ったことが物議を醸した。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ニューヨーク市長による「首相拘束」の検討</h2>
+  <ul class="opt-a-list">
+    <li><strong>マムダニ市長の発言：</strong>ニューヨークタイムズの動画インタビューにて、9月の国連総会で訪米する<strong>ネタニヤフ首相</strong>の拘束・逮捕が可能か、市の法務部門と検討中であると明かした。</li>
+    <li><strong>法的根拠：</strong>2020年に<strong>国際刑事裁判所（ICC）</strong>がネタニヤフ氏らに対して発布した逮捕状を根拠としている。</li>
+    <li><strong>市長のスタンス：</strong>マムダニ氏は民主社会主義を掲げる左派。「ネタニヤフ氏は戦争犯罪人である」と断じている。</li>
+    <li><strong>対立点：</strong>アメリカはICCに加盟していないため、一地方自治体の市長によるこの発言は大きな波紋を呼んでいる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 変容するアメリカ国内の世論</h2>
+  <p>伝統的にイスラエル支持が強かったアメリカ世論に、歴史的な変化が起きている。</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>調査機関（時期）</th>
+        <th>イスラエルへの共感</th>
+        <th>パレスチナへの共感</th>
+        <th>備考</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ギャラップ (2025年)</td>
+        <td>46%</td>
+        <td>33%</td>
+        <td>従来の傾向</td>
+      </tr>
+      <tr>
+        <td><strong>ギャラップ (2026年2月)</strong></td>
+        <td><strong>36%</strong></td>
+        <td><strong>41%</strong></td>
+        <td>初めてパレスチナが逆転</td>
+      </tr>
+      <tr>
+        <td>Pew Research (2026年7月)</td>
+        <td>低下傾向</td>
+        <td>変化なし</td>
+        <td>イスラエルのイメージのみが悪化</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul class="opt-a-list">
+    <li><strong>世代間の断絶：</strong>若い世代ほどパレスチナへの共感が高い。
+      <ul>
+        <li>共和党支持層の19〜29歳においても、イスラエル共感（42%）とパレスチナ共感（40%）が拮抗している。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 トランプ政権とイスラエルの不協和音</h2>
+  <ul class="opt-a-list">
+    <li><strong>トランプ大統領の不満：</strong>
+      <ul>
+        <li>ネタニヤフ首相を「地域協力の障害」と見なし始めているとの報道（エルサレム・ポスト）。</li>
+        <li>アメリカとイランの戦闘終結に向けた覚書に反し、レバノンで<strong>ヒズボラ</strong>への攻撃を続けるイスラエルに苛立ちを募らせている。</li>
+        <li>7月に予定されていた首脳会談は延期された。</li>
+      </ul>
+    </li>
+    <li><strong>J.D.バンス副大統領の批判：</strong>
+      <ul>
+        <li>ジョー・ローガンのポッドキャストにて、「イスラエル政府の一部がアメリカ世論を操作し、イランとの戦争を長引かせようとしている」と異例の非難を行った。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg viewBox="0 0 600 300" width="100%">
+      <!-- Nodes -->
+      <rect x="220" y="20" width="160" height="50" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="50" text-anchor="middle" font-weight="bold">トランプ政権 (米)</text>
+
+      <rect x="40" y="150" width="160" height="50" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="120" y="180" text-anchor="middle">NY市 (マムダニ市長)</text>
+
+      <rect x="400" y="150" width="160" height="50" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="480" y="180" text-anchor="middle">ネタニヤフ政権 (伊)</text>
+
+      <rect x="220" y="240" width="160" height="50" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#60a5fa" />
+      <text x="300" y="270" text-anchor="middle">イラン</text>
+
+      <!-- Arrows -->
+      <path d="M 300 70 L 300 230" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" fill="none" stroke-dasharray="5,5" />
+      <text x="310" y="130" font-size="12">戦闘終結の覚書</text>
+
+      <path d="M 400 175 L 200 175" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+      <text x="240" y="165" font-size="12" fill="#f59e0b">拘束を検討 (ICC根拠)</text>
+
+      <path d="M 400 160 L 340 70" stroke="#f87171" stroke-width="2" fill="none" />
+      <text x="380" y="110" font-size="12" fill="#f87171">関係のギクシャク</text>
+      
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 今後の注視ポイント</h2>
+  <ul class="opt-a-list">
+    <li><strong>中東の軍事的緊張：</strong>アメリカとイランの覚書から1ヶ月が経過したが、軍事的緊張は再び激化している。</li>
+    <li><strong>米イスラエル関係の変容：</strong>アメリカが「無条件支援」を見直す姿勢は、イランに対して「イスラエルの強硬策を必ずしも支持しない」というシグナルになる一方、イランの武力温存を許すリスクも孕む。</li>
+    <li><strong>重要な選挙日程：</strong>
+      <ul>
+        <li><strong>9月：</strong>イスラエル総選挙（ネタニヤフ政権は世論調査で野党にリードを許している）。</li>
+        <li><strong>11月：</strong>アメリカ中間選挙。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote>
+    アメリカは中東における「抑止力」と「全面衝突の回避」という、極めて難しいバランス調整を迫られている。
+  </blockquote>
+
+</body>
+</html>
