@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "○";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">超実践的幸福論 #2-20 「怒り」との向き合い方。原動力にするのはありかなしか？</h1>
+  <p>リスナーの「コーンパンさん」からのお便りをきっかけに、パーソナリティの妻本氏と泉氏が「怒り」という感情をどう捉え、幸福とどう結びつけているかを語り合います。怒りを原動力にすることの是非や、年齢による変化、具体的な怒りのエピソードについて深掘りします。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">怒りの原動力</span>
+    <span class="opt-a-tag">自己責任論</span>
+    <span class="opt-a-tag">アンフェアへの憤り</span>
+    <span class="opt-a-tag">メンタルモデル</span>
+    <span class="opt-a-tag">しなやかに生きる</span>
+    <span class="opt-a-tag">UI/UXの不備</span>
+    <span class="opt-a-tag">幸福度</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 怒りに対する基本的なスタンス</h2>
+  <ul class="opt-a-list">
+    <li><strong>自己責任として捉える（妻本氏）</strong>
+      <ul>
+        <li>何かが起こっても「すべて自分の責任」と考えることで、怒りが生まれにくくなる。</li>
+        <li>怒るよりも「どうすれば面白くなるか」「どう解決するか」というポジティブな方向に思考をシフトさせる。</li>
+      </ul>
+    </li>
+    <li><strong>アンフェアな構造に憤る（泉氏）</strong>
+      <ul>
+        <li>解約を妨げるための意図的なコールセンターの待ち時間など、<strong>「セコい」「倫理的にアウト」</strong>な設計に対しては強くムカつく。</li>
+        <li>政治家が選挙前だけ良いことを言い、実行しないような不誠実さに対しても怒りを感じる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 怒りは頑張る原動力になるか？</h2>
+  <ul class="opt-a-list">
+    <li><strong>若年層における有効性</strong>
+      <ul>
+        <li>20代の頃など、理不尽な上司や先輩を見返してやりたいという<strong>「何クソ」という気持ち</strong>は、踏ん張る力になることがある。</li>
+      </ul>
+    </li>
+    <li><strong>年齢とともに変化させるべき</strong>
+      <ul>
+        <li>年齢を重ねるにつれ、怒りを燃料にし続けるのは健全ではない。</li>
+        <li>怒りよりも別のポジティブな原動力にシフトしていく方が、幸福度は高まる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 200" preserveAspectRatio="xMidYMid meet">
+      <!-- Node 1 -->
+      <rect x="10" y="70" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="90" y="105" text-anchor="middle" font-size="14">怒りの発生</text>
+      
+      <!-- Arrow 1 -->
+      <path d="M170 100 L210 100" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      
+      <!-- Node 2 (Branch) -->
+      <rect x="220" y="20" width="160" height="60" rx="8" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="2"/>
+      <text x="300" y="45" text-anchor="middle" font-size="14">自己責任・解決思考</text>
+      <text x="300" y="65" text-anchor="middle" font-size="12" fill="#10b981">→ 幸福度維持</text>
+
+      <rect x="220" y="120" width="160" height="60" rx="8" fill="rgba(239, 68, 68, 0.1)" stroke="#ef4444" stroke-width="2"/>
+      <text x="300" y="145" text-anchor="middle" font-size="14">我慢・執着</text>
+      <text x="300" y="165" text-anchor="middle" font-size="12" fill="#ef4444">→ 幸福度低下</text>
+
+      <!-- Arrow 2 -->
+      <path d="M380 50 L420 50" stroke="#60a5fa" stroke-width="2" fill="none"/>
+      <path d="M380 150 L420 150" stroke="#60a5fa" stroke-width="2" fill="none"/>
+      
+      <!-- Final Node -->
+      <rect x="430" y="70" width="160" height="60" rx="8" fill="rgba(96, 165, 250, 0.2)" stroke="#60a5fa" stroke-width="2"/>
+      <text x="510" y="105" text-anchor="middle" font-size="14">しなやかな生き方</text>
+
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 怒りの種類と対処法</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>怒りの種類</th>
+        <th>具体例</th>
+        <th>推奨される対処法</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>プチ怒り（非効率）</strong></td>
+        <td>悪いUI/UX、繋がらないコールセンター、飲食店のオペレーション</td>
+        <td>ハックして解決する、または無視して別のこと（Podcastを聴く等）に集中する。</td>
+      </tr>
+      <tr>
+        <td><strong>構造的・人道的な怒り</strong></td>
+        <td>差別、不正、アンフェアな取引</td>
+        <td>徹底的に戦う。放置すると幸福の基盤が損なわれるため。</td>
+      </tr>
+      <tr>
+        <td><strong>理不尽な人間関係</strong></td>
+        <td>聞く耳を持たない上司、価値観の合わない職場</td>
+        <td>我慢せず「しなやかに離れる」。給料が下がっても穏やかな環境を選ぶ。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 二人が最近（または過去に）怒ったエピソード</h2>
+  <ul class="opt-a-list">
+    <li><strong>妻本氏：剣道部での出来事</strong>
+      <ul>
+        <li>大学時代の最後の大会直前、気合が入るべき場面で<strong>「全く声を出さずに打ってきた後輩」</strong>に激怒した。</li>
+        <li>「どういうセンスしてるの？」と理解不能だったが、今は笑い話として整理されている。</li>
+      </ul>
+    </li>
+    <li><strong>妻本氏：ロシアでの不正入札</strong>
+      <ul>
+        <li>明らかにこちらが高い札を入れたのに、談合のような形で別のところに流れた。<strong>「アンフェア」</strong>な状況に対して強く憤りを感じた。</li>
+      </ul>
+    </li>
+    <li><strong>泉氏：ロシア駐在時の帰国拒否</strong>
+      <ul>
+        <li>実兄の結婚式のために帰国しようとした際、上司から「ロシア駐在中に帰国なんてありえない」とルールを無視して拒否された。</li>
+        <li>怒る前に「帰ります」とメールして強行突破し、解決させた。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 幸福のための結論</h2>
+  <ul class="opt-a-list">
+    <li><strong>我慢は美徳ではない</strong>
+      <ul>
+        <li>特に大人は、理不尽なことに我慢し続けるよりも、自分が正しいと思う行動を取るべき。</li>
+      </ul>
+    </li>
+    <li><strong>しなやかさと軽やかさ</strong>
+      <ul>
+        <li>執着して戦い続けるのではなく、価値観が合わない場所からは軽やかに離れることが幸福に直結する。</li>
+      </ul>
+    </li>
+    <li><strong>自分の人生に集中する</strong>
+      <ul>
+        <li>自分の人生にフルコミットしていれば、他者への細かい怒りは自然と減っていく。</li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+</html>
