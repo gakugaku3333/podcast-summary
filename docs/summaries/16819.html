@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .svg-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">気候変動による海面上昇の加速と日本の砂浜消失の危機</h1>
+  <p>
+    2026年7月20日放送の「News Connect」では、オランダの研究チームが発表した最新の論文を基に、世界の沿岸水位が想定を上回るスピードで上昇している現状と、それが日本を含む世界各地の海岸線や生活に及ぼす深刻な影響について解説しています。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">気候変動</span>
+    <span class="opt-a-tag">海面上昇</span>
+    <span class="opt-a-tag">Nature</span>
+    <span class="opt-a-tag">オランダ研究チーム</span>
+    <span class="opt-a-tag">ツバル</span>
+    <span class="opt-a-tag">砂浜消失</span>
+    <span class="opt-a-tag">茅ヶ崎海岸</span>
+    <span class="opt-a-tag">防災</span>
+    <span class="opt-a-tag">環境保護</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 最新研究が示す海面上昇の深刻な実態</h2>
+  <ul class="opt-a-list">
+    <li><strong>想定を上回る上昇幅：</strong> オランダの研究チームが科学誌「Nature」に発表した論文によると、沿岸部の海面は従来の想定よりも平均で<strong>約30センチ</strong>高いことが判明。</li>
+    <li><strong>地域的な偏り：</strong> 東南アジアや太平洋の一部地域では、最大で<strong>90センチ</strong>も高くなっている場所がある。</li>
+    <li><strong>国家存続の危機：</strong>
+      <ul>
+        <li>南太平洋の島国<strong>ツバル</strong>では、2100年までに国土の<strong>95%が水没</strong>すると予測されている。</li>
+        <li>すでに国民のオーストラリアへの移住が始まっており、今後「国家規模での移住」を余儀なくされる国が増える可能性がある。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="svg-container">
+    <svg width="100%" viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
+      <!-- Nodes -->
+      <rect x="10" y="60" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="90" y="90" text-anchor="middle" font-size="14">気候変動の加速</text>
+      <text x="90" y="110" text-anchor="middle" font-size="12">(Nature論文の指摘)</text>
+
+      <rect x="220" y="60" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="300" y="90" text-anchor="middle" font-size="14">海面水位の上昇</text>
+      <text x="300" y="110" text-anchor="middle" font-size="12">(平均+30cm / 最大+90cm)</text>
+
+      <rect x="430" y="60" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="510" y="90" text-anchor="middle" font-size="14">居住不能・国家移住</text>
+      <text x="510" y="110" text-anchor="middle" font-size="12">(ツバル等の島嶼国)</text>
+
+      <!-- Arrows -->
+      <path d="M 170 90 L 210 90" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <path d="M 380 90 L 420 90" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 日本における砂浜消失の現状と原因</h2>
+  <ul class="opt-a-list">
+    <li><strong>砂浜面積の激減：</strong> 日本では1950年から1990年までの間に、海岸の総面積が<strong>約4割減少</strong>した。</li>
+    <li><strong>複合的な要因：</strong>
+      <ul>
+        <li><strong>海面上昇：</strong> 気候変動による直接的な影響。</li>
+        <li><strong>ダムの設置：</strong> 上流にダムができることで、下流へ砂が流れにくくなった。</li>
+        <li><strong>川砂の採取：</strong> コンクリートの材料として川の砂を採取したことで、海岸に供給される砂が不足した。</li>
+      </ul>
+    </li>
+    <li><strong>地形的弱点：</strong> 日本の砂浜はなだらかな傾斜が多いため、わずかな海面上昇でも海岸線が大きく後退し、面積が減りやすい特性がある。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 砂浜消失がもたらす防災上のリスク</h2>
+  <ul class="opt-a-list">
+    <li><strong>天然の防波堤機能の喪失：</strong> 砂浜は波のエネルギーを吸収し、高潮や波浪の被害を食い止める役割を果たしている。</li>
+    <li><strong>インフラへの被害：</strong> 砂浜がなくなると、台風などの荒天時に波が直接道路や建物にぶつかるようになり、非常に危険。</li>
+    <li><strong>具体事例（茅ヶ崎海岸）：</strong> 神奈川県の茅ヶ崎海岸では砂浜の後退が進み、2019年の台風で<strong>海沿いの道路の一部が崩落</strong>する事故が発生している。</li>
+    <li><strong>今後の懸念：</strong> 台風が巨大化する傾向にある中、砂浜の減少はさらなる災害対策の強化を強いることになる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 世界の状況と日常生活での意識</h2>
+  <ul class="opt-a-list">
+    <li><strong>アメリカの事例：</strong> 1980年代に建てられた海辺のビーチコテージが、海面上昇の影響で倒壊したり海に飲まれたりする被害が出ている。最近では海辺ギリギリに建物を建てることは避けられるようになっている。</li>
+    <li><strong>海は繋がっている：</strong> 海面上昇は島嶼国だけの問題ではなく、日本を含む世界中の沿岸部に深刻な影響を及ぼす。</li>
+    <li><strong>個人でできる小さな積み重ね：</strong>
+      <ul>
+        <li>化石燃料の使用を控える。</li>
+        <li>無駄な買い物をしない。</li>
+        <li>レジ袋ではなくエコバッグを使用する。</li>
+        <li>ペットボトルではなく紙パックの飲料を選ぶ。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>詳細・数値</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>沿岸水位の上昇（平均）</strong></td>
+        <td>従来想定より約30cm高い</td>
+      </tr>
+      <tr>
+        <td><strong>沿岸水位の上昇（最大）</strong></td>
+        <td>東南アジア等で最大90cm高い</td>
+      </tr>
+      <tr>
+        <td><strong>日本の砂浜減少率</strong></td>
+        <td>1950年〜1990年で約40%減少</td>
+      </tr>
+      <tr>
+        <td><strong>ツバルの予測</strong></td>
+        <td>2100年までに国土の95%が水没</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <blockquote>
+    「砂が波のエネルギーを吸収してくれることで高潮の被害を食い止めてくれています。当たり前のことですが世界の海は繋がっています。大きな悲劇を生まないために、みんなで大切な地球を守っていけたらいいなと思っています。」
+  </blockquote>
+
+</body>
+</html>
