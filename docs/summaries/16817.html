@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">コテンラジオ：帝政ローマ編 第3回「三頭政治の崩壊とクレオパトラ包囲網」</h1>
+  <p>カエサル暗殺後の混乱を収めるべく結成された「第二次三頭政治」が、いかにしてオクタウィアヌス一強体制へと集約されていったかを解説。アントニウスとクレオパトラの連合に対し、オクタウィアヌスが仕掛けた高度な情報戦とプロパガンダの全貌が語られます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">第二次三頭政治</span>
+    <span class="opt-a-tag">オクタウィアヌス</span>
+    <span class="opt-a-tag">マルクス・アントニウス</span>
+    <span class="opt-a-tag">レピドゥス</span>
+    <span class="opt-a-tag">クレオパトラ7世</span>
+    <span class="opt-a-tag">アグリッパ</span>
+    <span class="opt-a-tag">マエケナス</span>
+    <span class="opt-a-tag">フィリッピの戦い</span>
+    <span class="opt-a-tag">アクティウムの海戦</span>
+    <span class="opt-a-tag">プロパガンダ</span>
+    <span class="opt-a-tag">パルティア遠征</span>
+    <span class="opt-a-tag">キケロ</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 第二次三頭政治の成立と粛清</h2>
+  <ul class="opt-a-list">
+    <li><strong>オフィシャルな政治協定</strong>：第一次（カエサルら）が秘密同盟だったのに対し、今回は元老院に認めさせた「法律に基づく権限」として成立。</li>
+    <li><strong>恐怖政治による基盤固め</strong>：反対勢力を排除するため、<strong>元老院議員300人、騎士階級2000人</strong>を殺害。
+      <ul>
+        <li>オクタウィアヌスの恩人であった<strong>キケロ</strong>も、アントニウスの要求により殺害を黙認された。</li>
+      </ul>
+    </li>
+    <li><strong>カエサルの神格化</strong>：自分たちを「神の子（または神の後継者）」と位置づけることで正当性を強化。</li>
+    <li><strong>暗殺者集団の討伐</strong>：ギリシャへ逃れたブルートゥス、カッシウスらを<strong>フィリッピの戦い</strong>で破り、カエサル派の勝利を確定させた。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 世界の分割とそれぞれの課題</h2>
+  <p>三者は広大なローマ領土を3つに分割して統治した。しかし、各エリアには特有の困難が待ち受けていた。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>担当者</th>
+        <th>支配地域</th>
+        <th>直面した課題</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>オクタウィアヌス</strong></td>
+        <td>イタリア、ガリア、イベリア（西部）</td>
+        <td>退役兵への土地分配。強制接収による反乱の鎮圧。</td>
+      </tr>
+      <tr>
+        <td><strong>アントニウス</strong></td>
+        <td>アナトリア、シリア、ギリシャ（東部）</td>
+        <td>宿敵<strong>パルティア</strong>との戦争。莫大な軍事資金の確保。</td>
+      </tr>
+      <tr>
+        <td><strong>レピドゥス</strong></td>
+        <td>北アフリカ（エジプト除く）</td>
+        <td>勢力が最も弱く、後にオクタウィアヌスに敗北し失脚。</td>
+      </tr>
+    </tbody>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 アントニウスの失策とクレオパトラとの提携</h2>
+  <ul class="opt-a-list">
+    <li><strong>パルティア遠征の失敗</strong>：アントニウスは軍事的威信を狙うも、補給部隊が壊滅。<strong>2万4000人の損失</strong>（半数以上が病死）を出し、名声が失墜。</li>
+    <li><strong>エジプトとの蜜月</strong>：資金源として最強の富を持つプトレマイオス朝（クレオパトラ）と結託。
+      <ul>
+        <li>クレオパトラ側も、王権維持のためにローマの有力者の後ろ盾を必要としていた。</li>
+        <li>二人の間には3人の子供が誕生。</li>
+      </ul>
+    </li>
+    <li><strong>統治スタイルの乖離</strong>：東方では「王の中の女王」としてクレオパトラを立てる王政的なガバナンスを選択。これがローマ市民の反感を買う材料となった。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 オクタウィアヌスの高度なプロパガンダ戦</h2>
+  <p>武力で劣るオクタウィアヌスは、徹底した「イメージ戦略」でアントニウスを追い詰めた。</p>
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 250">
+      <!-- Background Nodes -->
+      <rect x="10" y="50" width="180" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="100" y="85" text-anchor="middle" font-size="14">アントニウスの遺言状</text>
+      
+      <rect x="210" y="50" width="180" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="85" text-anchor="middle" font-size="14">クレオパトラへの領土割譲</text>
+
+      <rect x="410" y="50" width="180" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="500" y="85" text-anchor="middle" font-size="14">「ローマの敵」認定</text>
+
+      <!-- Arrows -->
+      <path d="M 190 80 L 210 80" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      <path d="M 390 80 L 410 80" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+
+      <!-- Result -->
+      <rect x="150" y="160" width="300" height="60" rx="8" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" />
+      <text x="300" y="195" text-anchor="middle" font-size="16" font-weight="bold">アクティウムの海戦での勝利</text>
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+  <ul class="opt-a-list">
+    <li><strong>遺言状の暴露</strong>：アントニウスが「ローマの領土をクレオパトラとの子に譲る」と記した遺言状を（真偽は不明だが）公開し、市民の怒りを煽った。</li>
+    <li><strong>「対エジプト」という構図</strong>：内乱ではなく「ローマ vs 外国（エジプト）」という構図にすり替え、クレオパトラを<strong>「国敵」</strong>として宣戦布告。</li>
+    <li><strong>アクティウムの海戦</strong>：戦況が不利になるとクレオパトラが逃亡し、アントニウスも後を追って崩壊。二人は自殺し、プトレマイオス朝は滅亡した。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 勝利の立役者：アグリッパとマエケナス</h2>
+  <p>オクタウィアヌス自身は軍事能力が低かったが、極めて優秀な部下を使いこなした。</p>
+  <ul class="opt-a-list">
+    <li><strong>アグリッパ（右腕・武官）</strong>：
+      <ul>
+        <li>軍事の天才。セクストス・ポンペイウスの鎮圧やアクティウムの海戦の勝利は彼の功績。</li>
+        <li>極めて忠実で、自らの手柄を誇らず常にオクタウィアヌスを立て続けた。</li>
+      </ul>
+    </li>
+    <li><strong>マエケナス（左腕・文官）</strong>：
+      <ul>
+        <li>政治・外交・文化面でのサポートを担当。</li>
+      </ul>
+    </li>
+    <li><strong>アントニウスとの比較</strong>：アントニウスの下には彼を凌駕するような優秀な部下がいなかった。自分より優秀な人間を側に置き、働かせる能力こそがオクタウィアヌスの真骨頂。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 オクタウィアヌスの二面性と「内乱の終結」</h2>
+  <ul class="opt-a-list">
+    <li><strong>公私の使い分け</strong>：
+      <ul>
+        <li><strong>プライベート</strong>：臆病な部下を笑って許すなど、温厚でユーモアがある。</li>
+        <li><strong>パブリック</strong>：政治的リスクに対しては冷酷。汚職をした書記の足を折る、カエサルの実子カエサリオンを「爆弾」として即座に殺害するなど。</li>
+      </ul>
+    </li>
+    <li><strong>内乱の一世紀の終わり</strong>：エジプトを属州化したことで、莫大な富と<strong>「世界の3分の1の小麦」</strong>を確保。これが後の「パンとサーカス」の原資となる。</li>
+    <li><strong>ヤヌス神殿の扉</strong>：平和な時にしか閉じられない神殿の扉が閉じられ、ローマに束の間の平和が訪れた。</li>
+  </ul>
+
+  <blockquote>
+    「あの男（オクタウィアヌス）は寝床に伏したまま空を凝視していた。アグリッパが敵を叩きのめすまで、まるで生きていないかのように。」
+    <br>— アントニウスによる、戦わないオクタウィアヌスへの皮肉
+  </blockquote>
+
+</body>
+</html>
