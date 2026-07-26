@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【番外編】人生で絶対に読むべき3冊『ファスト&スロー / 人びとの社会戦争 / 庭の話』</h1>
+  <p>読書コミュニティ「トイトコ」を運営する岩田氏と井上氏が、8月からの新講座に向けて厳選した「人生で読むべき3冊」を徹底解説するエピソード。井上氏の7週間にわたる入院生活からの復帰報告と共に、単なる要約に留まらない、編集・翻訳の視点を含めた深い読書体験が語られます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">ダニエル・カーネマン</span>
+    <span class="opt-a-tag">行動経済学</span>
+    <span class="opt-a-tag">システム1・システム2</span>
+    <span class="opt-a-tag">益田肇</span>
+    <span class="opt-a-tag">社会的可視化</span>
+    <span class="opt-a-tag">宇野常弘</span>
+    <span class="opt-a-tag">庭の話</span>
+    <span class="opt-a-tag">トイトコ</span>
+    <span class="opt-a-tag">村井章子</span>
+    <span class="opt-a-tag">バイアス</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 イントロダクション：井上氏の復帰と「トイトコ」の近況</h2>
+  <ul class="opt-a-list">
+    <li><strong>井上新平氏の7週間に及ぶ入院生活</strong>
+      <ul>
+        <li>慢性的なうつの治療のため、計画的に入院。命の危険があったわけではない。</li>
+        <li>「移動の自由がない」辛さはあったが、<strong>「自分のためだけに時間を使える」</strong>貴重な経験となった。</li>
+        <li>入院中に『カラマーゾフの兄弟』などの大著を読破。</li>
+        <li>退院後の新鮮な驚き：野菜の美味しさ、自由に外出できることへの感謝。</li>
+      </ul>
+    </li>
+    <li><strong>読書コミュニティ「トイトコ」の活動</strong>
+      <ul>
+        <li>8月中旬から新コースを立ち上げ。</li>
+        <li>選書基準：<strong>「一人では読み切れないが、読み切った時に喜びがある本」</strong>、<strong>「バリエーションの豊かさ」</strong>。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 1冊目：『ファスト&スロー』（ダニエル・カーネマン）</h2>
+  <ul class="opt-a-list">
+    <li><strong>著者の功績と本書の立ち位置</strong>
+      <ul>
+        <li>著者はノーベル経済学賞を受賞した心理学者。<strong>行動経済学</strong>の生みの親。</li>
+        <li>「人間は合理的な経済人である」という従来の前提を覆し、脳がいかにサボりたがり、楽をしたがるかを解明。</li>
+        <li>専門書と一般書の中間に位置し、妥協のない学術的知見が平易に書かれている。</li>
+      </ul>
+    </li>
+    <li><strong>中核概念：システム1とシステム2</strong>
+      <ul>
+        <li><strong>システム1（ファスト）</strong>：直感、即座の判断。脳は日常の意思決定の大部分をこちらで済ませようとする。</li>
+        <li><strong>システム2（スロー）</strong>：熟考、論理的思考。エネルギーを消費するため、脳は使用を避けがち。</li>
+        <li><strong>利用可能性バイアス</strong>：思い浮かびやすい情報だけで判断してしまう傾向。</li>
+      </ul>
+    </li>
+    <li><strong>翻訳の素晴らしさ（村井章子氏）</strong>
+      <ul>
+        <li>直訳ではなく、文脈を汲み取った<strong>「飛躍のある翻訳」</strong>。</li>
+        <li>日本語としての自然な表現力により、700ページ近い大著をストレスなく読ませる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 200">
+      <!-- System 1 -->
+      <rect x="50" y="50" width="220" height="100" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" />
+      <text x="160" y="85" font-size="16" font-weight="bold" text-anchor="middle">システム 1 (Fast)</text>
+      <text x="160" y="115" font-size="14" text-anchor="middle">直感・速い・無意識</text>
+      <text x="160" y="135" font-size="12" text-anchor="middle">（ランチの選択、即答）</text>
+
+      <!-- Arrow -->
+      <path d="M 280 100 L 320 100" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+
+      <!-- System 2 -->
+      <rect x="330" y="50" width="220" height="100" rx="8" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="2" />
+      <text x="440" y="85" font-size="16" font-weight="bold" text-anchor="middle">システム 2 (Slow)</text>
+      <text x="440" y="115" font-size="14" text-anchor="middle">熟考・遅い・論理</text>
+      <text x="440" y="135" font-size="12" text-anchor="middle">（複雑な計算、重要な決断）</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 2冊目：『人びとの社会戦争』（益田肇）</h2>
+  <ul class="opt-a-list">
+    <li><strong>歴史の「埋もれた声」を発掘するアプローチ</strong>
+      <ul>
+        <li>サブタイトル：<strong>「日本はなぜ戦争への道を歩んだのか」</strong>。</li>
+        <li>指導者や軍部の暴走だけでなく、<strong>「普通の人々」</strong>が当時何を考えていたかを、新聞への投書や個人の日記から丹念に調査。</li>
+      </ul>
+    </li>
+    <li><strong>衝撃的な事実：市民が戦争を後押しした</strong>
+      <ul>
+        <li>「メディアが煽った」のではなく、<strong>「弱腰なメディアに対して市民が不買運動を起こした」</strong>という側面。</li>
+        <li>軍部もまた「ここで決断しなければ市民が納得しない」という圧力に押されていた。</li>
+        <li>大正デモクラシーの華やかさに対する「日本人らしくない」という反動と分断。</li>
+      </ul>
+    </li>
+    <li><strong>現代への警鐘</strong>
+      <ul>
+        <li>登場する人々はエキセントリックな思想家ではなく、家族の幸せを願う<strong>「善良な市民」</strong>。</li>
+        <li>SNS社会における分断や同調圧力と酷似しており、現代でも起こりうる構造。</li>
+        <li>「トイトコ・ピックアップブック」として、未来の古典になり得る名著として推薦。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 3冊目：『庭の話』（宇野常弘）</h2>
+  <ul class="opt-a-list">
+    <li><strong>批評家・宇野常弘の集大成</strong>
+      <ul>
+        <li>2024年出版。これまでの著作（『遅いインターネット』等）を超える代表作との評価。</li>
+        <li>全14章、350ページにわたる壮大な論考。</li>
+      </ul>
+    </li>
+    <li><strong>「庭」というメタファー</strong>
+      <ul>
+        <li>SNSという<strong>「プラットフォーム」</strong>の限界と、閉鎖的になりがちな<strong>「コミュニティ（共同体）」</strong>の危うさ。</li>
+        <li>そのどちらでもない、自律的で健全な社会のあり方として<strong>「庭」</strong>という概念を提唱。</li>
+      </ul>
+    </li>
+    <li><strong>思考のダイナミズム</strong>
+      <ul>
+        <li>國分功一郎の「中動態」、吉本隆明の「共同幻想論」、マイノリティ支援の現場など、一見バラバラな具体例を繋ぎ合わせる編集者的センス。</li>
+        <li><strong>「具体と抽象の往復」</strong>が心地よく、一人の思想家と真剣勝負で対話するような読書体験。</li>
+        <li>一人で読むと読み飛ばしてしまう密度があるため、読書会で深めるのに最適な一冊。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 紹介書籍まとめ</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>タイトル</th>
+        <th>著者</th>
+        <th>主なテーマ・キーワード</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>ファスト&スロー</strong></td>
+        <td>ダニエル・カーネマン</td>
+        <td>行動経済学、認知バイアス、意思決定の仕組み</td>
+      </tr>
+      <tr>
+        <td><strong>人びとの社会戦争</strong></td>
+        <td>益田肇</td>
+        <td>戦前の社会心理、市民による戦争支持、社会の分断</td>
+      </tr>
+      <tr>
+        <td><strong>庭の話</strong></td>
+        <td>宇野常弘</td>
+        <td>プラットフォーム批判、庭（メタファー）、現代社会批評</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <blockquote style="margin-top: 2em;">
+    「本を読む大きな意味は、自分のバイアスに気づくこと。自分とは違う視点やフレームワークを学ぶことで、世界の見え方が変わる。」
+  </blockquote>
+
+</body>
+</html>
