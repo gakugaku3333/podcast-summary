@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【66-5】アウグストゥスの統治術：少数精鋭による巨大帝国の運営</h1>
+  <p>初代皇帝アウグストゥスが、共和制から帝政への移行期において、いかにして民衆の支持を固め、効率的な統治機構を構築したかを解説するエピソード。側近たちの活躍や、生涯唯一の大敗北、そして複雑を極めた後継者問題について詳しく語られます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">アウグストゥス</span>
+    <span class="opt-a-tag">アグリッパ</span>
+    <span class="opt-a-tag">マエケナス</span>
+    <span class="opt-a-tag">ティベリウス</span>
+    <span class="opt-a-tag">トイトブルクの森の戦い</span>
+    <span class="opt-a-tag">ケンスス（国勢調査）</span>
+    <span class="opt-a-tag">パトロヌス</span>
+    <span class="opt-a-tag">パンとサーカス</span>
+    <span class="opt-a-tag">小さい政府</span>
+    <span class="opt-a-tag">ユリア</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 民衆の生活改善と「パトロヌス」としての役割</h2>
+  <ul class="opt-a-list">
+    <li><strong>都市行政の整備</strong>：共和制時代にはなかった「統治者による住民生活へのコミット」を開始。
+      <ul>
+        <li>ローマ市内を14の行政管区に分割。</li>
+        <li><strong>都市守備隊</strong>の設置（治安維持・消防・宗教行為を担当）。</li>
+        <li><strong>穀物供給制度</strong>の確立と備蓄港の設置により、食糧不安を解消。</li>
+      </ul>
+    </li>
+    <li><strong>インフラ建設の原動力</strong>：
+      <ul>
+        <li><strong>私費による公共事業</strong>：皇帝がエジプトで得た莫大な富を投じ、劇場、神殿、広場、水道橋を建設。</li>
+        <li><strong>パトロヌスとクリエンテスの関係</strong>：皇帝（パトロン）が市民（クライアント）の面倒を見ることで、市民からの忠誠と支持を獲得する構造。</li>
+        <li>「レンガの街を引き継ぎ、大理石の街として残した」と自負するほどの変貌を遂げた。</li>
+      </ul>
+    </li>
+    <li><strong>意識改革</strong>：劇場の座席を身分ごとに厳密に指定。市民に「強大な帝国の一員であること」と「自分の立ち位置」を視覚的に自覚させた。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 驚異的な「小さい政府」：ローマ vs 中国</h2>
+  <p>ローマ帝国は、広大な領土を極めて少ない官僚数で統治していた。これは中国の王朝とは対照的な「自由放任主義」に近いスタイルであった。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>比較項目</th>
+        <th>ローマ帝国（アウグストゥス期）</th>
+        <th>中国（後漢王朝）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>政府の性質</strong></td>
+        <td><strong>極めて小さい政府</strong></td>
+        <td>巨大な官僚制（大きい政府）</td>
+      </tr>
+      <tr>
+        <td><strong>官僚の数</strong></td>
+        <td><strong>約250名</strong>（奴隷等を含めても約2000名）</td>
+        <td>約20万人</td>
+      </tr>
+      <tr>
+        <td><strong>統治スタイル</strong></td>
+        <td><strong>都市の自治</strong>を尊重。税と治安以外は任せる。</td>
+        <td>中央集権。帝国の隅々までシステムを及ぼす。</td>
+      </tr>
+      <tr>
+        <td><strong>介入のタイミング</strong></td>
+        <td>財政や裁判で致命的な問題が起きた時のみ。</td>
+        <td>日常的な管理・統制。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 統治を支えた二人の側近</h2>
+  <ul class="opt-a-list">
+    <li><strong>アグリッパ（文武両道の天才）</strong>：
+      <ul>
+        <li>軍事だけでなく、インフラ整備や<strong>ケンスス（国勢調査）</strong>の実施でも中心的な役割を果たす。</li>
+        <li>自らの私財も公共事業に投じるほど忠誠心が高かった。</li>
+      </ul>
+    </li>
+    <li><strong>マエケナス（内政・外交・広報のプロ）</strong>：
+      <ul>
+        <li>騎士身分に留まり、裏方としてアウグストゥスを支えた。</li>
+        <li><strong>プロパガンダの確立</strong>：ウェルギリウスやホラティウスといった詩人を支援し、文学を通じて世論を誘導した。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 生涯唯一の大敗北：トイトブルクの森の戦い</h2>
+  <ul class="opt-a-list">
+    <li><strong>事件の概要</strong>：紀元9年、将軍ワルス率いる3個軍団が、ゲルマン部族の奇襲により壊滅。</li>
+    <li><strong>衝撃の理由</strong>：
+      <ul>
+        <li>裏切った敵将アルミニウスは、ローマで育ったワルスの親友だった。</li>
+        <li>エルベ川まで国境を広げ、軍縮しようとしていた計画が完全に頓挫。</li>
+      </ul>
+    </li>
+    <li><strong>アウグストゥスの動揺</strong>：自制心の塊だった彼が、数ヶ月間ヒゲも剃らず「ワルスよ、私の軍団を返してくれ！」と叫びながら壁に頭を打ち付けたという。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 泥沼の後継者問題と最期</h2>
+  <p>アウグストゥスには実の息子がおらず、血縁による継承に執着したが、候補者が次々と早世する悲劇に見舞われた。</p>
+  <ul class="opt-a-list">
+    <li><strong>後継者候補の変遷</strong>：
+      <ul>
+        <li>甥マルケルス（19歳で病死）</li>
+        <li>盟友アグリッパ（娘ユリアと結婚させるも、アグリッパ本人が死去）</li>
+        <li>孫ガイウス＆ルキウス（ユリアとアグリッパの子。共に20代前半で死去）</li>
+      </ul>
+    </li>
+    <li><strong>最終的な決着</strong>：妻リウィアの連れ子である<strong>ティベリウス</strong>を養子とし、後継者に指名。
+      <ul>
+        <li>ティベリウスは愛する妻と無理やり離婚させられ、ユリアと結婚させられるなど、アウグストゥスの強引な縁組の犠牲者でもあった。</li>
+      </ul>
+    </li>
+    <li><strong>アウグストゥスの最期（紀元14年）</strong>：
+      <ul>
+        <li>75歳で死去。死の間際、友人に<strong>「この人生という喜劇で、私は自分の役を上手に演じたと思わないか？」</strong>と尋ねた。</li>
+        <li>「芝居がお気に召したら拍手を」という役者の決まり文句を残し、妻の腕の中で息を引き取った。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 200">
+      <!-- Nodes -->
+      <rect x="225" y="20" width="150" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="300" y="45" text-anchor="middle" font-weight="bold">皇帝アウグストゥス</text>
+      
+      <rect x="50" y="130" width="120" height="40" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" stroke-width="2"/>
+      <text x="110" y="155" text-anchor="middle">ローマ市民</text>
+      
+      <rect x="240" y="130" width="120" height="40" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" stroke-width="2"/>
+      <text x="300" y="155" text-anchor="middle">属州・都市</text>
+      
+      <rect x="430" y="130" width="120" height="40" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" stroke-width="2"/>
+      <text x="490" y="155" text-anchor="middle">後継者候補</text>
+
+      <!-- Arrows -->
+      <path d="M225 40 L110 130" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <path d="M300 60 L300 130" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <path d="M375 40 L490 130" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      
+      <text x="120" y="90" font-size="12" fill="#a78bfa">インフラ・娯楽提供</text>
+      <text x="310" y="100" font-size="12" fill="#a78bfa">自治の尊重</text>
+      <text x="450" y="90" font-size="12" fill="#a78bfa">政略結婚・養子</text>
+
+      <!-- Arrowhead definition -->
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.85em; color: #a78bfa; margin-top: 10px;">アウグストゥスの統治構造：パトロヌス関係と自治のバランス</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 結論：44年の歳月が作った「既成事実」</h2>
+  <ul class="opt-a-list">
+    <li>アウグストゥスが44年という長期間、権力の座にあり続けたことが帝政の定着に決定的な役割を果たした。</li>
+    <li>反対勢力も数十年経つうちに死に絶えるか、現状に慣れてしまい、彼が死ぬ頃には「共和制に戻す」という選択肢は現実味を失っていた。</li>
+    <li><strong>「向こう（元老院や市民）から言わせる」</strong>という極めて高度な政治手法と、執念深いまでの自制心によって、ローマ帝国200年の平和（パクス・ロマーナ）の基礎が築かれた。</li>
+  </ul>
+
+</body>
+</html>
