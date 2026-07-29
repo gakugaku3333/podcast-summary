@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ロシア・ウクライナ両国の攻撃激化による小麦価格高騰と物流網の混乱</h1>
+  <p>ロシアとウクライナが互いの穀物インフラや貨物船への攻撃を強めており、世界の小麦供給網が深刻な打撃を受けています。この軍事的な緊張に加え、気候変動や金融政策の影響が重なり、小麦の先物価格が約2年ぶりの高値を記録するなど、食料安全保障への懸念が急速に高まっています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">小麦先物価格</span>
+    <span class="opt-a-tag">黒海ルート</span>
+    <span class="opt-a-tag">オデッサ港</span>
+    <span class="opt-a-tag">穀物インフラ攻撃</span>
+    <span class="opt-a-tag">サプライチェーン</span>
+    <span class="opt-a-tag">1980年代農業危機</span>
+    <span class="opt-a-tag">FOMC</span>
+    <span class="opt-a-tag">消費者物価指数</span>
+    <span class="opt-a-tag">食料安全保障</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 穀物インフラおよび貨物船への攻撃状況</h2>
+  <ul class="opt-a-list">
+    <li><strong>ウクライナ側の被害:</strong> ミサイルやドローン攻撃により、黒海経由の穀物輸出能力が<strong>3分の1減少</strong>。
+      <ul>
+        <li>直近1ヶ月でオデッサ港周辺の船舶<strong>28隻が損傷</strong>。</li>
+        <li>死者21人、負傷者34人の人的被害が発生。</li>
+        <li>ギニアビサウ船籍の貨物船が攻撃を受け、10人が死亡。</li>
+      </ul>
+    </li>
+    <li><strong>ロシア側の被害:</strong> ウクライナによるドローン攻撃の報復を受け、ロシアの穀物輸出の約25%を担うアゾフ海の船舶やターミナルが標的に。</li>
+    <li><strong>物流の停滞:</strong> ロシアは代替ルート（北極海・バルト海）を模索しているが、<strong>コスト面で現実的ではない</strong>。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 160">
+      <!-- Nodes -->
+      <rect x="10" y="50" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="70" y="85" text-anchor="middle" font-size="14">インフラ攻撃</text>
+      
+      <line x1="130" y1="80" x2="160" y2="80" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+      
+      <rect x="160" y="50" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="220" y="85" text-anchor="middle" font-size="14">物流・輸出停滞</text>
+      
+      <line x1="280" y1="80" x2="310" y2="80" stroke="#60a5fa" stroke-width="2" />
+      
+      <rect x="310" y="50" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="370" y="85" text-anchor="middle" font-size="14">小麦価格高騰</text>
+      
+      <line x1="430" y1="80" x2="460" y2="80" stroke="#60a5fa" stroke-width="2" />
+      
+      <rect x="460" y="50" width="130" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="525" y="85" text-anchor="middle" font-size="14">家計・物価への影響</text>
+      
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 小麦市場の動向と価格高騰の要因</h2>
+  <ul class="opt-a-list">
+    <li><strong>価格の急騰:</strong> シカゴ小麦先物価格が<strong>1ブッシェル7ドル</strong>に到達。2024年5月以来の高値を記録。</li>
+    <li><strong>複合的な要因:</strong>
+      <ul>
+        <li><strong>軍事衝突:</strong> 世界の小麦輸出の<strong>28%</strong>を占めるロシア・ウクライナ両国の供給不安。</li>
+        <li><strong>天候不順:</strong> アメリカ国内における<strong>干ばつ</strong>の懸念。</li>
+        <li><strong>コスト増:</strong> 中東情勢の変動による肥料コストの上昇。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 農業部門が抱える構造的課題</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>ウクライナ</th>
+        <th>ロシア</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>輸出量の変化</strong></td>
+        <td>侵攻前（2020年）比で<strong>35%減少</strong></td>
+        <td>前シーズン比で<strong>2割減少</strong></td>
+      </tr>
+      <tr>
+        <td><strong>主な阻害要因</strong></td>
+        <td>地雷設置による作付け不能、人手不足</td>
+        <td>戦争の二次的影響、人手不足</td>
+      </tr>
+      <tr>
+        <td><strong>共通の課題</strong></td>
+        <td colspan="2">兵役による農業従事者の減少、輸出インフラの破壊</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 金融政策と「1980年代農業危機」の再来懸念</h2>
+  <ul class="opt-a-list">
+    <li><strong>歴史的背景:</strong> 1980年代のアメリカでは、インフレ抑制のための急激な利上げ（政策金利20%近く）により、農家が利払い負担増と農地価格暴落で深刻な危機に陥った。</li>
+    <li><strong>現在のリスク:</strong> FOMCによる利上げ観測が強まっており、金利が上昇すれば、小麦価格が高騰していても<strong>農家が簡単に増産に踏み切れない</strong>構造（利払い負担増）が生じる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 日本への影響と国内情勢</h2>
+  <ul class="opt-a-list">
+    <li><strong>輸入コストの増大:</strong> 小麦の多くを輸入に頼る日本にとって、国際価格の上昇は食料品の直接的な値上げ要因となる。</li>
+    <li><strong>物価動向:</strong> 消費者物価指数（総合）は前年同月比で<strong>1.7%上昇</strong>。</li>
+    <li><strong>国内米の状況:</strong> 昨年の不足から一転し、今年は価格の下落が指摘されるなど不安定な状況。</li>
+    <li><strong>今後の課題:</strong> 主食の値段は国民生活への影響が大きいため、政治による<strong>食料安全保障の徹底的な議論</strong>と説明が求められている。</li>
+  </ul>
+
+  <blockquote>
+    「小麦価格が高騰しているからといって、農家が簡単に増産に踏み切れるわけではない。金利上昇や人手不足といった構造的な問題が、世界の食料供給を縛っている。」
+  </blockquote>
+
+</body>
+</html>
