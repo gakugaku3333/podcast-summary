@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">深津貴之のGUILD TALK：北欧、暮らしの道具店のAIネイティブな組織作り</h1>
+  <p>株式会社クラシコム代表の青木耕平氏をゲストに迎え、創業20周年を控えた同社の組織運営、AI導入の現状、そして「ジャパンディ」をキーワードにしたグローバル戦略について、深津貴之氏が深く切り込みます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">株式会社クラシコム</span>
+    <span class="opt-a-tag">北欧、暮らしの道具店</span>
+    <span class="opt-a-tag">AIネイティブ</span>
+    <span class="opt-a-tag">リモートワーク</span>
+    <span class="opt-a-tag">オペレーションマネジメント</span>
+    <span class="opt-a-tag">D2C</span>
+    <span class="opt-a-tag">ジャパンディ (Japandi)</span>
+    <span class="opt-a-tag">GitHub</span>
+    <span class="opt-a-tag">マネジメントプレイブック</span>
+    <span class="opt-a-tag">デジタルツイン</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 組織の「OS」の変遷とAIへの適応</h2>
+  <p>青木氏は、会社の状態を把握するための「OS」が、物理的な環境からデジタルな履歴へと変化してきたと語ります。この変遷が、現在のAI活用における強力なアドバンテージとなっています。</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>フェーズ</th>
+        <th>観察対象</th>
+        <th>特徴</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>リアル時代</strong></td>
+        <td>物理的な人の様子</td>
+        <td>「どんよりしている」「元気がある」など、空気感で組織を把握。</td>
+      </tr>
+      <tr>
+        <td><strong>リモート時代</strong></td>
+        <td>Slack等のログ</td>
+        <td>コミュニケーションの履歴が可視化され、テキストで会社を見る。</td>
+      </tr>
+      <tr>
+        <td><strong>AI共生時代</strong></td>
+        <td>GitHub/MDファイル</td>
+        <td>意思決定の履歴やプロジェクトの更新履歴（コンテキスト）で会社を見る。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul class="opt-a-list">
+    <li><strong>リモートワークへの最適化がAI時代の鍵</strong>：人と集まらないと仕事ができない組織は、AIとの協業においても不利になる。リモート下で資料共有やログ作成を徹底していた組織ほど、AIへの移行がスムーズ。</li>
+    <li><strong>リアル会議でもログを残す</strong>：対面であってもZoomやMeetを立ち上げ、発話者ベースの履歴を残す習慣が重要。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 クラシコムの強み：仕組み化とクリエイティブの役割分担</h2>
+  <p>ブランドや世界観が注目されがちな「北欧、暮らしの道具店」ですが、その裏側には徹底したオペレーションマネジメントが存在します。</p>
+
+  <div class="diagram-container">
+    <svg width="100%" height="180" viewBox="0 0 500 180">
+      <!-- Node: Sato -->
+      <rect x="20" y="40" width="160" height="100" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="100" y="85" text-anchor="middle" font-weight="bold">佐藤氏 (妹)</text>
+      <text x="100" y="110" text-anchor="middle" font-size="12">クリエイション・動機</text>
+      <text x="100" y="125" text-anchor="middle" font-size="12">「歌う人」</text>
+
+      <!-- Arrow -->
+      <path d="M180 90 L320 90" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+
+      <!-- Node: Aoki -->
+      <rect x="320" y="40" width="160" height="100" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="400" y="85" text-anchor="middle" font-weight="bold">青木氏 (兄)</text>
+      <text x="400" y="110" text-anchor="middle" font-size="12">仕組み化・拡張</text>
+      <text x="400" y="125" text-anchor="middle" font-size="12">「マイク（増幅器）」</text>
+    </svg>
+    <p style="font-size: 0.85em; color: #a78bfa;">クリエイティブを効率的に拡張する「二輪」の体制</p>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>生産性の向上</strong>：直近3年間、人員をほぼ増やさずに売上を年率約20%成長させている。</li>
+    <li><strong>コア機能の内製化</strong>：商品開発、デザイン、テック、倉庫マネジメントなど、企画の根幹（ストックされる部分）は社内に持ち、変動的な部分は外部パートナーと「ワンチーム」で運営。</li>
+    <li><strong>自社開発の基幹システム</strong>：ECを中心とした独自の基幹システムを構築。現在はWMS（倉庫管理システム）の開発も進めており、D2C専用の効率的なシステムとして外販の可能性も視野に入れている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 グローバル戦略と「ジャパンディ」の可能性</h2>
+  <p>日本独自の文化をそのまま輸出するのではなく、外来文化を日本で「謎進化」させて戻す手法に勝機を見出しています。</p>
+
+  <ul class="opt-a-list">
+    <li><strong>ジャパンディ (Japandi)</strong>：スカンジナビア（北欧）とジャパンを掛け合わせたスタイル。ヨーロッパ等で既にジャンルとして確立されている。</li>
+    <li><strong>「謎進化」のリミックス文化</strong>：
+      <ul>
+        <li>中国のラーメン、インドのココイチのように、源流があるものを日本流にアレンジして返す方が受け入れられやすい。</li>
+        <li>「北欧、暮らしの道具店」も、北欧文化を日本で独自解釈・進化させたものであり、それを海外に戻すアプローチは有効。</li>
+      </ul>
+    </li>
+    <li><strong>コンテンツ先行の検証</strong>：
+      <ul>
+        <li>AIを活用して多言語化したコンテンツをInstagramで配信。</li>
+        <li>台湾（15万フォロワー）、US、韓国などで急速にファンを獲得。</li>
+        <li>各国で受けるコンテンツは共通しており、「東アジア文化圏」という大きな括りでワンナラティブな展開が可能。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 AIネイティブな組織運営の具体策</h2>
+  <p>非エンジニアが業務アプリを自作するフェーズから、AIが自律的にタスクを消化するフェーズへの移行を議論しています。</p>
+
+  <ul class="opt-a-list">
+    <li><strong>非エンジニアによる開発</strong>：Claude等の活用により、エンジニアリング背景のない社員がガードレール（セキュリティ等の制約）の中で業務アプリを量産している。</li>
+    <li><strong>「やりたいことリスト」の自動消化</strong>：
+      <ul>
+        <li>人間が直接AIと対話して待機するのではなく、GitHubのIssue等に「やりたいこと」を100〜1000個溜めておく。</li>
+        <li>AIエージェントが24時間体制で上から順番にタスクを消化していく運用。</li>
+      </ul>
+    </li>
+    <li><strong>マネジメントプレイブックの活用</strong>：
+      <ul>
+        <li>青木氏が作成した約10万字の文書。言葉の定義（「要求」と「要望」の違いなど）を厳密に規定。</li>
+        <li>これがAIにとっての「最高の手本」となり、SlackやGitHub上での曖昧なやり取りをAIが自動で修正・補完する基盤になる。</li>
+      </ul>
+    </li>
+    <li><strong>個人のログ（日記）の重要性</strong>：
+      <ul>
+        <li>過去のSNS投稿や日記を構造化してAIに読み込ませることで、その人の判断基準を再現する「デジタルツイン」的な活用が可能になる。</li>
+        <li>「本を書くより日記を書け、本はAIが作る」という考え方。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote style="margin-top: 2em;">
+    <strong>青木氏の言葉：</strong>「できるようになるために頑張るのではなく、もうできるんだということを知る。マトリックスの『早く動こうとするな、早いと知れ』という認識の変化が起きている。」
+  </blockquote>
+
+</body>
+</html>
