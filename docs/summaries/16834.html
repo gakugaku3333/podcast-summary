@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ながらAIラジオ：2026年8月3日エピソード整理</h1>
+  <p>
+    2026年夏の猛暑対策としての最新デバイスの紹介から、Claude 5 Opusの登場、AIモデルのコスト管理、自動運転車へのAI搭載、そしてSNSとの付き合い方まで、AIコンサルタントのうすたく氏とメルカリの早川ゴミ氏が幅広く語るエピソード。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">Claude 5 Opus</span>
+    <span class="opt-a-tag">Fable</span>
+    <span class="opt-a-tag">Grok</span>
+    <span class="opt-a-tag">Gemini</span>
+    <span class="opt-a-tag">Notion AI</span>
+    <span class="opt-a-tag">Tesla</span>
+    <span class="opt-a-tag">Waymo</span>
+    <span class="opt-a-tag">水冷服</span>
+    <span class="opt-a-tag">SNS断ち</span>
+    <span class="opt-a-tag">ドラゴンクエスト</span>
+    <span class="opt-a-tag">Link (Stripe)</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 夏の猛暑対策：水冷服（アイスマン）の導入</h2>
+  <ul class="opt-a-list">
+    <li><strong>水冷服（アイスマン）</strong>：早川ゴミ氏が購入した最新の冷却ウェア。冷たい水を体の表面に循環させて物理的に冷やす仕組み。</li>
+    <li><strong>空調服との違い</strong>：従来のファン付きウェア（空調服）よりも静音性が高く、冷却効率も高い。</li>
+    <li><strong>仕組み</strong>：凍らせたペットボトルや保冷剤を水タンクに入れ、モバイルバッテリーでポンプを回して冷水を循環させる。溶けたペットボトルの水は飲料として利用可能。</li>
+    <li><strong>コストと重量</strong>：最上位モデルで約22,000〜23,000円。フル装備で約2kg程度だが、着用すると重さはそれほど気にならない。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Claude 5 Opusの登場とモデルの使い分け</h2>
+  <ul class="opt-a-list">
+    <li><strong>Claude 5 Opus</strong>：最上位モデル「Fable（フェーブル）」の下位に位置する、使い勝手の良いモデル。</li>
+    <li><strong>パフォーマンス</strong>：Fableほどの高コストではないが、3Dゲームの制作が可能なほどクオリティが高い。</li>
+    <li><strong>高速モードの注意点</strong>：Opusで高速モードを有効にすると、サブスクリプションの枠内であっても<strong>重量課金（従量制）</strong>に切り替わる可能性があり、高額請求に注意が必要。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 200">
+      <!-- Background -->
+      <rect x="10" y="10" width="580" height="180" rx="8" fill="rgba(139, 92, 246, 0.05)" stroke="#8b5cf6" stroke-width="1"/>
+      
+      <!-- Nodes -->
+      <rect x="50" y="60" width="120" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="110" y="105" text-anchor="middle" font-size="14" font-weight="bold">Fable</text>
+      <text x="110" y="125" text-anchor="middle" font-size="12">超高性能・低速</text>
+
+      <rect x="240" y="60" width="120" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="300" y="105" text-anchor="middle" font-size="14" font-weight="bold">Opus</text>
+      <text x="300" y="125" text-anchor="middle" font-size="12">高性能・バランス</text>
+
+      <rect x="430" y="60" width="120" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="490" y="105" text-anchor="middle" font-size="14" font-weight="bold">Haiku等</text>
+      <text x="490" y="125" text-anchor="middle" font-size="12">高速・安価</text>
+
+      <!-- Arrows -->
+      <path d="M 170 100 L 230 100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <path d="M 360 100 L 420 100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.8em; color: #a78bfa;">用途に応じたモデル選択（オーケストレーション）の重要性</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 AIコスト管理の切実な現状</h2>
+  <ul class="opt-a-list">
+    <li><strong>チームプランの罠</strong>：Claudeのチームプランには個人版のような「20倍プラン」がなく、ヘビーユーザーが使うとすぐに上限に達し、追加課金が発生する。</li>
+    <li><strong>具体的なコスト</strong>：うすたく氏の会社では、7月の1ヶ月間で<strong>約2,000ドル（約30万円）</strong>の請求がClaude単体で発生した。</li>
+    <li><strong>「一人でバズーカを撃つな」</strong>：過剰なスペックのモデル（コンテキストを大量に消費する呪文）を無闇に使わないリテラシーが求められている。</li>
+    <li><strong>決済管理のコツ</strong>：
+      <ul>
+        <li><strong>Link (Stripe)</strong>：多くのAIツールが採用している決済手段。マイページからサブスクリプションの一覧確認や解約が容易。</li>
+        <li><strong>バーチャルカード</strong>：UPSIDERなどのサービスを使い、AI課金専用のカードを発行して管理する手法。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Notion AIの多機能化</h2>
+  <ul class="opt-a-list">
+    <li><strong>モデルのバイキング状態</strong>：Notion AIでは、Kimi K3、Grok、Claude 5 Opus、Fable、DeepSeek V4 Proなど、主要なモデルが横断的に利用可能。</li>
+    <li><strong>利点</strong>：個別に契約しなくても、同じプロンプトで複数のモデルを比較・試用する媒体として非常に優秀。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 自動運転とAIの統合</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>車両・サービス</th>
+        <th>搭載AI</th>
+        <th>状況・特徴</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Tesla</strong></td>
+        <td>Grok</td>
+        <td>日本でも順次アップデート。言葉遣いが荒いなどの報告もあるが、車内での対話が可能に。</td>
+      </tr>
+      <tr>
+        <td><strong>Waymo</strong></td>
+        <td>Gemini</td>
+        <td>Google傘下の自動運転車にGeminiが搭載。より高度な状況判断や対話が期待される。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 SNS断ちとアルゴリズムの課題</h2>
+  <ul class="opt-a-list">
+    <li><strong>SNS断ちの発見</strong>：うすたく氏が4日間SNSを停止。ドーパミン源が「日経新聞」や「読書」に移行し、知識の深掘りが可能になった。</li>
+    <li><strong>X（Twitter）のノイズ</strong>：アフィリエイト目的の捏造投稿（フェイクニュース）が拡散されやすい環境への懸念。
+      <ul>
+        <li>例：アスリートの盗撮被害を訴える記事を捏造し、対立を煽ってインプレッションを稼ぐ手法。</li>
+      </ul>
+    </li>
+    <li><strong>アカウントパワー</strong>：フォロワー数に関わらず、特定のアカウントがいいねをすることでインプレッションが数万単位で跳ね上がるアルゴリズムの存在。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ドラゴンクエスト × Gemini コラボレーション</h2>
+  <ul class="opt-a-list">
+    <li><strong>キャンペーン内容</strong>：渋谷・原宿等に設置されたドラクエフィギュアを撮影し、Geminiを使って魔法（マダンテ等）のエフェクトを合成する体験型企画。</li>
+    <li><strong>IPの進化</strong>：最近のドラクエは「ジェラートピケ」とのコラボなど、クリエイティブの質が向上しており、若い世代やAI技術との親和性が高まっている。</li>
+  </ul>
+
+  <blockquote style="margin-top: 2em;">
+    「AIを健康に使い続けるためには、物理的な冷却（水冷服）と精神的な冷却（SNS断ち）の両方が必要かもしれない。」
+  </blockquote>
+
+</body>
+</html>
