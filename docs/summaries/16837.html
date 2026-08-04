@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-sub-list {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-sub-list li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">円安是正のための日米協調介入と今後の展望</h1>
+  <p>2026年8月4日放送。28年ぶりとなる日米による「円買い」の協調介入が実施された背景と、トランプ政権の思惑、そして構造的な円安要因について解説するエピソードです。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">日米協調介入</span>
+    <span class="opt-a-tag">円安是正</span>
+    <span class="opt-a-tag">トランプ大統領</span>
+    <span class="opt-a-tag">ベッセント財務長官</span>
+    <span class="opt-a-tag">片山さつき財務大臣</span>
+    <span class="opt-a-tag">プラザ合意</span>
+    <span class="opt-a-tag">マール・アラーゴ合意</span>
+    <span class="opt-a-tag">デジタル赤字</span>
+    <span class="opt-a-tag">金利差</span>
+    <span class="opt-a-tag">エコノミークラス症候群</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 冒頭：熊本県の状況と注意喚起</h2>
+  <ul class="opt-a-list">
+    <li><strong>熊本県の現状</strong>：7月28日の最大震度7の地震から1週間。昨日は39.9度の猛暑を記録。</li>
+    <li><strong>熱中症対策</strong>：日中の屋外作業を控え、水分・塩分補給と休憩を徹底すること。</li>
+    <li><strong>エコノミークラス症候群</strong>：車中泊避難者への警告。足の静脈に血栓ができる危険があるため、足を高く置く、数時間に一度は外に出て歩くなどの対策が重要。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 日米協調介入の実施と詳細</h2>
+  <ul class="opt-a-list">
+    <li><strong>介入の発表</strong>：8月2日、日米両政府が外国為替市場で円安定化のための協調介入を実施したと発表。</li>
+    <li><strong>歴史的背景</strong>：
+      <ul class="opt-a-sub-list">
+        <li>両国の共同介入は<strong>15年ぶり</strong>（前回は2011年、東日本大震災後の円高是正のための円売り介入）。</li>
+        <li>「円買い」の協調介入としては<strong>1998年以来、28年ぶり</strong>。</li>
+      </ul>
+    </li>
+    <li><strong>事前の伏線</strong>：7月31日、ロイター通信が<strong>ベッセント財務長官</strong>のメモを公開。ToDoリストに「アメリカが50億ドル〜100億ドル規模の日本円を購入する」という具体的な提案が含まれていた。</li>
+    <li><strong>市場の反応</strong>：1ドル＝163円台から<strong>155円水準</strong>まで急速に円高が進行。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 日米両政府のスタンス</h2>
+  <ul class="opt-a-list">
+    <li><strong>日本側（片山さつき財務大臣）</strong>：今後さらなる協調介入を実施することも躊躇しないと表明。</li>
+    <li><strong>アメリカ側（トランプ大統領）</strong>：「日本は円安で苦しんでおり、助けを必要としていた」と述べ、日本の通貨支援を容認。</li>
+    <li><strong>トランプ政権の狙い</strong>：
+      <ul class="opt-a-sub-list">
+        <li>国内製造業の復活と貿易赤字削減のため、<strong>ドル安</strong>を志向。</li>
+        <li><strong>マール・アラーゴ合意</strong>：他国に通貨高を迫り、協調利下げを模索するトランプ流の多国間協定。</li>
+        <li>トランプ関税は相手国通貨を安く（ドル高に）する効果があるため、それを相殺するドル安誘導が必要。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 構造的な円安の要因</h2>
+  <p>介入が行われてもなお、円売り圧力が強い背景には以下の構造的問題がある。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>要因カテゴリー</th>
+        <th>具体的な内容</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>日米金利差</strong></td>
+        <td>米国の高金利維持（インフレ対策）に対し、日銀の利上げ幅が限定的。</td>
+      </tr>
+      <tr>
+        <td><strong>公的・個人投資</strong></td>
+        <td>年金基金等の公的資金による海外投資、個人の海外株式購入ブーム。</td>
+      </tr>
+      <tr>
+        <td><strong>経済構造</strong></td>
+        <td>慢性的な<strong>デジタル赤字</strong>、エネルギー価格高騰による支払い増。</td>
+      </tr>
+      <tr>
+        <td><strong>財政・信頼</strong></td>
+        <td>日本の財政赤字拡大懸念による円の価値低下。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 歴史の参照：プラザ合意との比較</h2>
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 220">
+      <!-- Plaza Accord -->
+      <rect x="10" y="10" width="260" height="180" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" stroke-width="1"/>
+      <text x="140" y="40" text-anchor="middle" font-weight="bold" font-size="16" fill="#a78bfa">1985年 プラザ合意</text>
+      <text x="30" y="80" font-size="14">・1ドル240円 → 1年で150円へ</text>
+      <text x="30" y="110" font-size="14">・背景：日本の輸出競争力が強すぎた</text>
+      <text x="30" y="140" font-size="14">・G5による大規模なドル売り</text>
+
+      <!-- Arrow -->
+      <path d="M 280 100 L 320 100" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+
+      <!-- Current -->
+      <rect x="330" y="10" width="260" height="180" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" stroke-width="1"/>
+      <text x="460" y="40" text-anchor="middle" font-weight="bold" font-size="16" fill="#a78bfa">2026年 今回の介入</text>
+      <text x="350" y="80" font-size="14">・追加介入の強い意志（日米）</text>
+      <text x="350" y="110" font-size="14">・課題：構造的な円需給不足</text>
+      <text x="350" y="140" font-size="14">・背景：輸出競争力ではなく金利差</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 今後の注目点とリスク</h2>
+  <ul class="opt-a-list">
+    <li><strong>「第二のプラザ合意」への期待と懸念</strong>：
+      <ul class="opt-a-sub-list">
+        <li>ベッセント財務長官はFRBの強力な後ろ盾も要求しており、連続的な介入の可能性がある。</li>
+        <li>一方で、1985年当時と異なり、今回は円が実力より安すぎるという輸出競争力の背景がない。</li>
+        <li>介入が限定的であれば、すぐに元の円安局面に戻るリスクがある。</li>
+      </ul>
+    </li>
+    <li><strong>政治家による発言の影響</strong>：
+      <ul class="opt-a-sub-list">
+        <li>高市首相が過去に「円安は克服だ」と肯定的に捉える発言をした例（後に修正）。</li>
+        <li>一国のリーダーのスタンスが市場に透けて見えると、投機筋に足元を見られるリスクがある。</li>
+      </ul>
+    </li>
+    <li><strong>結論</strong>：当局とマーケットの対話が今後どのように進むか、実生活への影響を含め注視が必要。</li>
+  </ul>
+
+</body>
+</html>
