@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">令和ロマンのご様子 シーズン22-1「ごBB」</h1>
+  <p>M-1グランプリ2023王者・令和ロマンによるポッドキャスト。今エピソードから「シーズン22」が幕を開け、心機一転のリニューアル（という名の通常運転）が行われました。日常の些細な疑問から、過去のシーズン変更の驚きの歴史、最新の仕事事情まで幅広く展開されます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">令和ロマン</span>
+    <span class="opt-a-tag">髙比良くるま</span>
+    <span class="opt-a-tag">松井ケムリ</span>
+    <span class="opt-a-tag">シーズン22</span>
+    <span class="opt-a-tag">丸山桂里奈</span>
+    <span class="opt-a-tag">チャットモンチー</span>
+    <span class="opt-a-tag">くるまの如し</span>
+    <span class="opt-a-tag">ダブルインパクト</span>
+    <span class="opt-a-tag">ポポポ</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 オープニング：これって思うの私だけ？</h2>
+  <ul class="opt-a-list">
+    <li><strong>トイレの張り紙への違和感</strong>
+      <ul>
+        <li>「従業員も使わせていただきます」という張り紙に対し、「従業員が使って怒る人なんていないのでは？」という疑問。</li>
+        <li>コンビニの「警察官立寄所」の看板についても、安心感を与えるためか、公務中の休憩への言い訳か議論。</li>
+      </ul>
+    </li>
+    <li><strong>商業施設やスーパーのトイレ事情</strong>
+      <ul>
+        <li>スーパーでトイレを借りる際、バックヤード（段ボール山積みの裏口）を案内される時の特別感と気まずさ。</li>
+        <li>飲食店で一度外に出て、ピカピカの長い廊下を歩いてビル内のトイレへ行く時に「酔いが冷める」感覚。</li>
+        <li>スターバックスなどで導入されている<strong>暗証番号制のトイレ</strong>。番号が書かれた紙を渡される時の「裏取引」のような感覚がくるまのお気に入り。</li>
+      </ul>
+    </li>
+    <li><strong>お風呂での過ごし方</strong>
+      <ul>
+        <li><strong>シュノーケル：</strong>お風呂で使うと熱くて潜っていられない（海水温上昇への警鐘というボケ）。</li>
+        <li><strong>お風呂バスケ：</strong>ケムリの自宅の風呂には吸盤式のゴールがある。1歳の子供用だが、ケムリは一人の時に<strong>スリーポイントシュート</strong>を決めまくっている。</li>
+        <li>NBAのチーム（クリッパーズ、レイカーズ）や八村塁選手を引き合いに出したバスケトーク。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 番組の構造と「ペット」の関係性</h2>
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 180">
+      <!-- パーソナリティ -->
+      <rect x="20" y="50" width="180" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="110" y="95" text-anchor="middle" font-weight="bold">令和ロマン</text>
+      
+      <!-- 矢印 -->
+      <path d="M210 90 L370 90" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <text x="290" y="80" text-anchor="middle" font-size="12">絶妙な距離感</text>
+
+      <!-- リスナー（ペット） -->
+      <rect x="380" y="50" width="180" height="80" rx="8" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="2"/>
+      <text x="470" y="95" text-anchor="middle" font-weight="bold">ペット (リスナー)</text>
+      <text x="470" y="115" text-anchor="middle" font-size="11">犬・猫・カメ・鳥など</text>
+
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+  <ul class="opt-a-list">
+    <li><strong>リスナーの呼称：</strong>この番組ではリスナーを<strong>「ペット」</strong>と呼ぶ。</li>
+    <li><strong>立ち位置：</strong>友達やお兄さん系ではなく、家族よりも一歩引いた「上から目線」や「横から見守る」動物のような距離感。</li>
+    <li><strong>歴史：</strong>2020年2月から開始。現在はStand.fm、YouTube、各ポッドキャストで配信中。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 歴代シーズンの変更理由（歴史）</h2>
+  <p>番組がなぜ「シーズン22」まで到達したのか、その迷走と責任の歴史が語られました。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>シーズン</th>
+        <th>変更の主な理由・きっかけ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>5-15</td>
+        <td>シーズン制の導入（ここから細分化が始まる）</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>スタッフの横澤に彼女ができたため</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>ユデロン（ワンピース考察者）をオープニングにするため</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>M-1敗者復活戦から心機一転するため</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>マネージャーのダブルブッキング事件の責任を取って</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>ABCお笑いグランプリから心機一転するため</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>ヤーレンズがゲストに来て格好付けすぎたため</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>10回読まれたペット（ゴールドセッター）が現れたため</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>M-1の審査員が爆増したため（？）</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>ケムリが一人になったため</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>くるまが合流したため</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>ケムリがペットネームを読み間違えた責任を取って</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>ケムリが「西木の君」と「カメラシック」を間違えた責任</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>プレモルコラボを盛り上げるため</td>
+      </tr>
+      <tr>
+        <td><strong>22</strong></td>
+        <td><strong>ケムリが「シェリー・メインは猫」と間違えた責任を取って</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 最近のトピックス：仕事とニュース</h2>
+  <ul class="opt-a-list">
+    <li><strong>サービス終了の報告：</strong>アバター通話アプリ<strong>「ポポポ」</strong>がサービス終了。令和ロマンがCMキャラクター等を務めていたが、よく分からないまま終わった。</li>
+    <li><strong>くるまのゲーム出演：</strong>PCゲーム<strong>「リリリスポーン」</strong>にくるまが出演。全身スキャンを撮影済み。
+      <ul>
+        <li>「キムタクが如く（ジャッジメントアイズ）」になぞらえて<strong>「くるまが如し」</strong>と自称。</li>
+      </ul>
+    </li>
+    <li><strong>賞レース情報：</strong>
+      <ul>
+        <li><strong>ダブルインパクト：</strong>たきおんが優勝。</li>
+        <li>収録時、くるまは日テレにいたが、ちょうど藤原社長や吉本芸人たちが集まっており「さすが吉本」と称え合った。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 コーナー：丸山香文（まるやまこうぶん）</h2>
+  <p>丸山桂里奈が共演者に渡す独特な手紙の文体を当てるクイズ。今回は「丸山桂里奈か、チャットモンチーの歌詞か」という難問が出題されました。</p>
+  <ul class="opt-a-list">
+    <li><strong>第1問：</strong>「本日もはや人間たちがいつも以上にキビキビ動き出し佇み雨に濡れ出してますしね」
+      <ul>
+        <li>答え：<strong>丸山桂里奈</strong>（狩野英孝への手紙）。くるまは不正解。</li>
+      </ul>
+    </li>
+    <li><strong>第2問：</strong>「もう外は暗く目を閉じたら何も見えません。ただし寒さと雨はそこにいますよ。紅生姜の切れ端です」
+      <ul>
+        <li>答え：<strong>丸山桂里奈</strong>（カンニング竹山への手紙）。くるま正解。</li>
+      </ul>
+    </li>
+    <li><strong>第3問：</strong>「機嫌をとる気もその気もさらさらないですがおかげ産球なんとか毛も生え大人になりました」
+      <ul>
+        <li>答え：<strong>ノット丸山（チャットモンチー）</strong>。くるま正解。</li>
+      </ul>
+    </li>
+    <li><strong>第4問：</strong>「つい昔ではなくついついあの日の何か襟足が元気づいてほぼ吸収するのはパンの日です」
+      <ul>
+        <li>答え：<strong>丸山桂里奈</strong>。くるま正解で3問連続正解達成。</li>
+      </ul>
+    </li>
+    <li><strong>エキストラ：</strong>「二本足で立つ地球の隅から…」
+      <ul>
+        <li>答え：<strong>チャットモンチー（花の夢）</strong>。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 エンディング・お知らせ</h2>
+  <ul class="opt-a-list">
+    <li><strong>グッズ在庫問題：</strong>ケムリが禁煙したにもかかわらず、グッズとして<strong>「灰皿」</strong>を大量に作ってしまい在庫が余っている。</li>
+    <li><strong>押し売り行脚：</strong>スタッフの横澤が北海道（長万部や網走のキャンパスなど）へ灰皿を売りに行っている。</li>
+    <li><strong>投稿募集：</strong>ネタやレターはStand.fmのレター機能からのみ受付。YouTubeやXのコメントは採用対象外。</li>
+  </ul>
+
+</body>
+</html>
