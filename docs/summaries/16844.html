@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "○";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 1em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ながらAIラジオ：2026年8月10日号</h1>
+  <p>Googleの歴史を築いた重要人物たちの離脱と新団体設立、Metaの新たなコーディングツール、そして進化を続ける動画生成AIの最新動向を解説。後半ではファインチューニングの体験談や、AI時代における「ものづくり」の教育的価値について語ります。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">Google</span>
+    <span class="opt-a-tag">Jeff Dean</span>
+    <span class="opt-a-tag">Discovery Loop</span>
+    <span class="opt-a-tag">Demis Hassabis</span>
+    <span class="opt-a-tag">Meta Muse Code</span>
+    <span class="opt-a-tag">SeeDance 2.5</span>
+    <span class="opt-a-tag">MiniMax H3</span>
+    <span class="opt-a-tag">Unsloth</span>
+    <span class="opt-a-tag">ファインチューニング</span>
+    <span class="opt-a-tag">タミヤ</span>
+    <span class="opt-a-tag">ミニ四駆</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 Google重要人物の離脱と「Discovery Loop」の誕生</h2>
+  <ul class="opt-a-list">
+    <li><strong>ジェフ・ディーン（Jeff Dean）</strong>氏を含む、Googleの伝説的エンジニア4名が離脱。
+      <ul>
+        <li>ジェフ・ディーン氏はGoogleに<strong>27年間勤務</strong>し、Google検索、Gmail、Google Ads、Geminiなどの基幹システムを構築した人物。</li>
+        <li>「ビルを建てた建築家」というより「大量のビルを効率的に建てる仕組みを作った人」と評される。</li>
+      </ul>
+    </li>
+    <li>新団体<strong>「Discovery Loop」</strong>を設立。
+      <ul>
+        <li>AIエージェントのループを高速で回し、科学技術の発展や研究の高速化を目指す。</li>
+        <li>営利企業ではなく「団体」としてのスタート。Googleも投資する見込み。</li>
+      </ul>
+    </li>
+    <li><strong>デミス・ハサビス（Demis Hassabis）</strong>氏の役割変更。
+      <ul>
+        <li>Google DeepMindの代表を退任し、<strong>会長職</strong>へ。</li>
+        <li>商業的なGeminiの開発から離れ、よりアカデミックな研究や創薬企業（Isomorphic Labs）に注力する意向。</li>
+      </ul>
+    </li>
+    <li><strong>人材流出の影響：</strong> OpenAIのイリヤ・サツケヴァー氏やAnthropicのダリオ・アモデイ氏など、現在のAI界のリーダーの多くが元Googleチーム出身であることが改めて注目されている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Meta版コーディングツール「Muse Code」登場</h2>
+  <ul class="opt-a-list">
+    <li>Metaからターミナルで動作するコーディングエージェント<strong>「Muse Code」</strong>がリリース。</li>
+    <li><strong>特徴と導入：</strong>
+      <ul>
+        <li>ターミナルにコマンドを1行入力するだけでインストール可能。</li>
+        <li>Metaのアカウント（Facebook/Instagram）とクレジットカード登録による認証が必要。</li>
+      </ul>
+    </li>
+    <li><strong>既存ツールとの比較：</strong>
+      <table>
+        <thead>
+          <tr>
+            <th>ツール名</th>
+            <th>提供元</th>
+            <th>特徴</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Muse Code</strong></td>
+            <td>Meta</td>
+            <td>ターミナル完結型。後発だがMetaエコシステムとの親和性。</td>
+          </tr>
+          <tr>
+            <td><strong>Claude Code</strong></td>
+            <td>Anthropic</td>
+            <td>高い推論能力。エンジニアの間で評価が高い。</td>
+          </tr>
+          <tr>
+            <td><strong>Codex (Cursor等)</strong></td>
+            <td>OpenAI系</td>
+            <td>普及率が高く、デスクトップアプリとして使いやすい。</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li><strong>結論：</strong> 一般ユーザーは無理に乗り換える必要はなく、まずは一つのツール（ChatGPT WorkやClaude Artifacts等）を使い込むことが重要。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 動画生成AIの進化：SeeDance 2.5 & MiniMax H3</h2>
+  <ul class="opt-a-list">
+    <li><strong>SeeDance 2.5：</strong>
+      <ul>
+        <li><strong>再現性の向上：</strong> 人物の顔の一致性が非常に高く、実写に近いクオリティ。</li>
+        <li><strong>利用方法：</strong> <strong>CapCut</strong>（ByteDance提供）に課金しているユーザーは、アプリ内クレジットを消費して手軽に利用可能。</li>
+      </ul>
+    </li>
+    <li><strong>MiniMax H3：</strong>
+      <ul>
+        <li><strong>ローカル動作：</strong> 高スペックPCやGoogle Colab（月額5,000円程度のProプラン推奨）で動作可能。</li>
+        <li><strong>制御性：</strong> カメラワークや演出の自由度が高い。</li>
+      </ul>
+    </li>
+    <li><strong>AI動画の現状：</strong> 「タコが深海でサングラスをかけて踊る」といった、一見本物に見えるが嘘である動画が拡散。情報の真偽を見極めるのが困難な時代に突入している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 実践：ファインチューニングの民主化</h2>
+  <ul class="opt-a-list">
+    <li><strong>Unsloth</strong>という軽量・高速な学習フレームワークにより、個人レベルでもファインチューニングが容易に。</li>
+    <li>早川ゴミ氏の体験：
+      <ul>
+        <li><strong>Gemma</strong>や<strong>Qwen</strong>などのモデルを使用。</li>
+        <li>ゲーミングPC環境で、1回の学習が<strong>15分程度</strong>で完了。</li>
+        <li>「特定の口調（ヨーダ等）」を学習させるなど、データの重み付けを調整することで挙動を変化させられる。</li>
+      </ul>
+    </li>
+    <li><strong>学び：</strong> 仕組みを知っている（Unsloth等のツールの存在を知っている）だけで、技術的なブレイクスルーのハードルが劇的に下がる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 教育とロボティクス：ミニ四駆は「義務教育」</h2>
+  <ul class="opt-a-list">
+    <li><strong>ロボットの3要素：</strong> センサー（認知）、知能（制御）、駆動（動作）。</li>
+    <li><strong>ミニ四駆の価値：</strong>
+      <ul>
+        <li>肉抜き（軽量化）、モーター選定、ローラーによるコース追従などは、ロボット工学の基礎そのもの。</li>
+        <li>タミヤのロボットキットは安価（2,000円〜）で、夏の自由研究に最適。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" height="180" viewBox="0 0 500 180">
+      <!-- Nodes -->
+      <rect x="20" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="80" y="95" text-anchor="middle" font-size="14">センサー</text>
+      <text x="80" y="115" text-anchor="middle" font-size="11">(認知・入力)</text>
+
+      <rect x="190" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="250" y="95" text-anchor="middle" font-size="14">知能・ロジック</text>
+      <text x="250" y="115" text-anchor="middle" font-size="11">(制御・AI)</text>
+
+      <rect x="360" y="60" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="420" y="95" text-anchor="middle" font-size="14">アクチュエータ</text>
+      <text x="420" y="115" text-anchor="middle" font-size="11">(駆動・出力)</text>
+
+      <!-- Arrows -->
+      <path d="M 140 90 L 180 90" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <path d="M 310 90 L 350 90" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.8em; color: #a78bfa;">ロボットの定義：ミニ四駆や電子工作はこのサイクルを学ぶ最短ルート</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 お知らせ：女子中学生向け電子工作ワークショップ</h2>
+  <ul class="opt-a-list">
+    <li><strong>開催時期：</strong> 8月末の土曜日。</li>
+    <li><strong>対象：</strong> 女子中学生限定。</li>
+    <li><strong>趣旨：</strong> ジェンダーバイアスにより機会を逃しがちな層へ、無料で体験の場を提供。</li>
+    <li><strong>今後の予定：</strong> シルバーウィークには全年齢向けのワークショップも開催予定。</li>
+  </ul>
+
+  <blockquote style="margin-top: 2em;">
+    AIと喧嘩して、仲直りして、いい感じのアウトプットを出す。その「使い込みの深さ」が、これからの時代に最も必要なスキルになる。
+  </blockquote>
+
+</body>
+</html>
