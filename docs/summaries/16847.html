@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">お金・結婚はほぼ無関係？幸せになるために本当に必要な「投資」</h1>
+  <p>公衆衛生学者・行動科学者のHana博士が、科学的根拠（エビデンス）に基づいた「幸せのメカニズム」を解説するシリーズの第1回。多くの人が幸福を左右すると信じている「環境」の影響力の低さと、自らコントロール可能な「活動」の重要性について語られています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">ポジティブ心理学</span>
+    <span class="opt-a-tag">マーティン・セリグマン</span>
+    <span class="opt-a-tag">幸せの方程式</span>
+    <span class="opt-a-tag">ハイフロー活動</span>
+    <span class="opt-a-tag">ローフロー活動</span>
+    <span class="opt-a-tag">幸せのパラドクス</span>
+    <span class="opt-a-tag">焦点化バイアス</span>
+    <span class="opt-a-tag">適応能力</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 幸せを科学する「ポジティブ心理学」</h2>
+  <ul class="opt-a-list">
+    <li><strong>従来の心理学との違い</strong>：これまでの心理学は「病気・悩み・トラウマ」などのネガティブな事象に焦点を当てていた。</li>
+    <li><strong>ポジティブ心理学の視点</strong>：1990年代頃から始まり、「生きがい・豊かさ・幸福」など、人生をより良くするプラスの側面に注目する学問。</li>
+    <li><strong>WHOの健康定義との関連</strong>：体の健康、心の健康、社会的な健康の3つが揃うことが重要であり、幸せは「心の健康」の大きな要素である。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 セリグマンの「幸せの方程式」</h2>
+  <p>持続的な幸福度を決定づける要素は、大きく3つに分類されます。</p>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 220">
+      <!-- 個人の資質 -->
+      <rect x="10" y="40" width="280" height="140" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" />
+      <text x="150" y="100" text-anchor="middle" font-weight="bold" font-size="18">個人の資質 (50%)</text>
+      <text x="150" y="130" text-anchor="middle" font-size="14">遺伝、性格、楽観性など</text>
+      <text x="150" y="155" text-anchor="middle" font-size="12">（変えにくい要素）</text>
+
+      <!-- 人生の状況 -->
+      <rect x="310" y="40" width="130" height="140" rx="8" fill="rgba(96, 165, 250, 0.2)" stroke="#60a5fa" stroke-width="2" />
+      <text x="375" y="100" text-anchor="middle" font-weight="bold" font-size="16">状況 (10-20%)</text>
+      <text x="375" y="130" text-anchor="middle" font-size="12">結婚・財産</text>
+      <text x="375" y="150" text-anchor="middle" font-size="12">仕事・健康</text>
+
+      <!-- 自発的活動 -->
+      <rect x="460" y="40" width="130" height="140" rx="8" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="2" />
+      <text x="525" y="100" text-anchor="middle" font-weight="bold" font-size="16">活動 (30-40%)</text>
+      <text x="525" y="130" text-anchor="middle" font-size="12">日々の行動</text>
+      <text x="525" y="150" text-anchor="middle" font-size="12">選択・習慣</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 なぜ「状況」の影響は意外と低いのか</h2>
+  <ul class="opt-a-list">
+    <li><strong>適応能力の高さ</strong>：人間はどんなに辛い状況（借金、病気、失恋など）でも、その状況に適合できてしまう特性を持っている。</li>
+    <li><strong>幸福ののっとり</strong>：結婚や収入などの「状況」は幸福度の10〜20%しか占めないが、人間はそれが100%であるかのように錯覚し、絶望してしまうことが多い。</li>
+    <li><strong>介入ポイント</strong>：遺伝（50%）は変えられず、状況（10-20%）もすぐには変えにくい。そのため、<strong>自分でコントロール可能な「活動（30-40%）」</strong>こそが、幸せになるための最大の介入ポイントとなる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ハイフロー活動 vs ローフロー活動</h2>
+  <p>2018年の論文「幸せのパラドクス」では、幸せになるために必要な「投資」の概念が示されています。</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>活動タイプ</th>
+        <th>特徴</th>
+        <th>具体例</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>ハイフロー活動</strong></td>
+        <td>高い投資（エネルギー、努力、時間）を必要とする能動的な活動。長期間の幸せをもたらす。</td>
+        <td>運動、料理、創作活動、日記、目的を持った読書や鑑賞。</td>
+      </tr>
+      <tr>
+        <td><strong>ローフロー活動</strong></td>
+        <td>受動的でエネルギーをほとんど使わない活動。手軽だが、後に虚無感が残りやすい。</td>
+        <td>ダラダラとSNSを見る、目的のないテレビ視聴、ネットサーフィン。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 幸せを阻む「焦点化（フォーカリズム）バイアス」</h2>
+  <ul class="opt-a-list">
+    <li><strong>バイアスの仕組み</strong>：特定の情報（手軽なローフロー活動）に焦点を当てると、それが判断基準になり、他の活動（ハイフロー活動）の価値を過小評価してしまう。</li>
+    <li><strong>認知の歪み</strong>：SNSをダラダラ見ることが習慣化すると、「運動や読書をしても幸せになれるとは思えない」「面倒なだけだ」と認知が歪んでしまう。</li>
+    <li><strong>対策</strong>：
+      <ul>
+        <li>「これは焦点化バイアスかもしれない」と自覚すること。</li>
+        <li>受動的な時間を、少しずつ能動的な時間（アクティブなコミットメント）に置き換える。</li>
+        <li>同じメディア視聴でも、「今日はこの作品を研究するために見る」といった<strong>目的意識（プロアクティブな姿勢）</strong>を持つことで、ハイフロー活動に昇華できる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 まとめ：幸せへの投資</h2>
+  <ul class="opt-a-list">
+    <li>幸せは「ぼーっとしていてもなれるもの」ではなく、<strong>エネルギーや時間の投資が必要</strong>である。</li>
+    <li>自分が自由に選べる40%の領域において、いかに「ハイフロー活動」を増やせるかが鍵。</li>
+    <li>一人で始めるのが難しい場合は、ハイフローな活動をしている仲間と一緒に取り組むことも有効。</li>
+  </ul>
+
+</body>
+</html>
