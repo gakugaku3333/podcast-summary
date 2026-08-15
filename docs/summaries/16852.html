@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">西田幾多郎 第6話：『善の研究』がもたらした衝撃と「いかに生きるか」の哲学</h1>
+  <p>西田幾多郎の主著『善の研究』の後半部（第3編・第4編）に焦点を当て、西田が提示した倫理観と宗教観を解説します。難解な「純粋経験」の概念が、いかにして個人の生き方や自由、そして当時の知識人たちへの熱狂的な感動へと繋がっていったのかを紐解きます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">善の研究</span>
+    <span class="opt-a-tag">主意説（活動説）</span>
+    <span class="opt-a-tag">自己実現</span>
+    <span class="opt-a-tag">根源的統一力</span>
+    <span class="opt-a-tag">自由の再定義</span>
+    <span class="opt-a-tag">宇宙的精神</span>
+    <span class="opt-a-tag">倉田百三</span>
+    <span class="opt-a-tag">三木清</span>
+    <span class="opt-a-tag">和辻哲郎</span>
+    <span class="opt-a-tag">京都学派</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 『善の研究』出版による社会的インパクト</h2>
+  <ul class="opt-a-list">
+    <li><strong>無名からの飛躍：</strong> 出版前は全くの無名だった西田だが、本書一冊で日本の思想界に「頭角」を現し、時の人となった。</li>
+    <li><strong>知識人たちの熱狂：</strong> 
+      <ul>
+        <li><strong>北条時敬：</strong> 西田の恩師。論文を移動中に読み、その凄さに即座に連絡を取った。</li>
+        <li><strong>文人・思想家：</strong> 志賀直哉、武者小路実篤（白樺派）、柳宗悦らが絶賛。</li>
+        <li><strong>次世代の哲学者：</strong> 和辻哲郎、三木清、九鬼周造など、後の日本哲学を担う人々が西田のもとに集まった。</li>
+      </ul>
+    </li>
+    <li><strong>倉田百三の感動：</strong> 著書『愛と認識との出発』の中で、「個人あって経験あるにあらず、経験あって個人あるのである」という一節に触れ、涙を流し「内部生活にとって天変地異であった」と回想している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 西田流の倫理学：いかに生きるべきか（第3編）</h2>
+  <p>西田は、古今東西の倫理学説を整理した上で、自身の立場を明確にしています。</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>分類</th>
+        <th>内容</th>
+        <th>西田の評価</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>他律的倫理学</strong></td>
+        <td>神の命令や権力など、外部の基準に従う。</td>
+        <td>「なぜ従うべきか」の根拠が弱いため否定。</td>
+      </tr>
+      <tr>
+        <td><strong>自律的倫理学</strong></td>
+        <td>自分自身の内面から湧き上がる基準に従う。</td>
+        <td><strong>肯定。</strong> 人間の中に基準を求めるべき。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul class="opt-a-list">
+    <li><strong>主意説（活動説）の採用：</strong> 知・情・意の中で<strong>「意志（意）」</strong>を最も重視する。内面的な根本的欲求を満たすことが人生の目的であるとした。</li>
+    <li><strong>善＝自己の発展完成：</strong> 西田にとっての「善」とは、本来の自己を実現すること。これはアリストテレスの「卓越性（アレテー）」の考えにも通じる。</li>
+    <li><strong>個と世界の合一：</strong> 「本来の自分」を追求することは、単なる自己中心的な行為ではない。個人の奥底にある<strong>「根源的統一力（宇宙のエネルギー）」</strong>が自分を通じて現れ出ることである。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" height="180" viewBox="0 0 500 180">
+      <!-- 宇宙的精神 -->
+      <rect x="50" y="20" width="400" height="40" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="250" y="45" text-anchor="middle" font-weight="bold">宇宙的精神（根源的統一力 / フォース）</text>
+      
+      <!-- 矢印 -->
+      <path d="M150 60 L100 110" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+      <path d="M250 60 L250 110" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+      <path d="M350 60 L400 110" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+      
+      <!-- 個別存在 -->
+      <rect x="40" y="120" width="120" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="100" y="145" text-anchor="middle">個人（西田）</text>
+      
+      <rect x="190" y="120" width="120" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="250" y="145" text-anchor="middle">個人（あなた）</text>
+      
+      <rect x="340" y="120" width="120" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6"/>
+      <text x="400" y="145" text-anchor="middle">自然（山・川）</text>
+
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.85em; color: #a78bfa; margin-top: 10px;">「個性を貫くこと」は「宇宙のエネルギーを体現すること」と等しい</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 西田幾多郎が考える「自由」の本質</h2>
+  <ul class="opt-a-list">
+    <li><strong>本性に従う自由：</strong> 西田の言う自由とは、社会的なルールを破ることではない。<strong>「自分の最も深い内面的性質（根源的統一力）」</strong>に従って動くことを指す。</li>
+    <li><strong>自然の比喩：</strong> 
+      <ul>
+        <li>空を飛ぶ鳥や、海を泳ぐ魚は、それぞれの「本性」を最大限に発揮している。その状態こそが「自由」である。</li>
+        <li>人間も、自分自身の内なる要求（純粋経験の奥底にある力）に従って生きる時、真に自由であり、それは「フロー状態」にも似た深い充実感をもたらす。</li>
+      </ul>
+    </li>
+    <li><strong>矛盾の受容：</strong> 「人は人、我は我なれ。とにかくに我行く道を我は行くなり」という歌を残している。他者と自分を区別して己を貫く姿勢と、万物と繋がっているという感覚を同時に持つのが西田哲学の特徴である。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 宗教観：自己の生命の根源的要求（第4編）</h2>
+  <ul class="opt-a-list">
+    <li><strong>道徳の延長：</strong> 宗教を道徳と切り離された別個のものとは考えず、自己の生命についての「最深にして最大の根源的要求」であるとした。</li>
+    <li><strong>人格神の否定：</strong> 西洋的な「外側にいる超越的な神」は想定していない。</li>
+    <li><strong>宇宙的精神の実験：</strong> 意識の根底で、自己を突き動かす「宇宙的精神」を自ら体験（実験）することを宗教の本質とした。</li>
+    <li><strong>東洋と西洋の融合：</strong> 禅（臨済宗）や浄土真宗（親鸞）の教えを背景に持ちつつ、西洋哲学の論理でこれらを体系化した。この「正面衝突」による思想構築は、人類史上稀に見る試みであった。</li>
+  </ul>
+
+  <blockquote>
+    「人は人 我は我なれ とにかくに 我行く道を 我は行くなり」<br>
+    <span style="font-size: 0.9em; opacity: 0.8;">—— 西田幾多郎（哲学の道に刻まれた歌）</span>
+  </blockquote>
+
+</body>
+</html>
