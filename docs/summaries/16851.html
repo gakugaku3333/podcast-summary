@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【土曜版 #90】次のプラットフォームはニュースレター、新たなメディア戦略</h1>
+  <p>ポッドキャスト「Off Topic」で知られる宮武徹郎氏をゲストに迎え、新メディア「Slow Times」の立ち上げ背景と、これからのメディア戦略について深掘りします。なぜ音声ではなくテキスト（ニュースレター）を選んだのか、そして「コンテンツ・セントリック・カンパニー」が目指す未来のビジネス構造について語られます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">宮武徹郎</span>
+    <span class="opt-a-tag">Slow Times</span>
+    <span class="opt-a-tag">Off Topic</span>
+    <span class="opt-a-tag">Substack</span>
+    <span class="opt-a-tag">ニュースレター</span>
+    <span class="opt-a-tag">コンテンツ・セントリック・カンパニー</span>
+    <span class="opt-a-tag">デジタルガレージ</span>
+    <span class="opt-a-tag">バブソン大学</span>
+    <span class="opt-a-tag">NBA</span>
+    <span class="opt-a-tag">Web3</span>
+    <span class="opt-a-tag">Diary of a CEO</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ゲスト：宮武徹郎氏のキャリアとルーツ</h2>
+  <ul class="opt-a-list">
+    <li><strong>基本プロフィール</strong>：1992年生まれ。アメリカのバブソン大学卒業。デジタルガレージの投資部門で北米スタートアップ投資に従事。</li>
+    <li><strong>言語背景</strong>：2歳〜5歳をアメリカで過ごし、帰国後もインターナショナルスクールに通ったため、<strong>第一言語は英語</strong>。ポッドキャストの台本も英語で書き、脳内で翻訳しながら話している。</li>
+    <li><strong>NBAでのインターン経験</strong>：ボストン・セルティックスで<strong>スカウトのインターン</strong>を経験。ヨーロッパの選手のハイライト動画を分析し、ドラフト候補の怪我の履歴やトレード材料のリサーチを担当。この経験が後の投資業務におけるリサーチ力に繋がっている。</li>
+    <li><strong>デジタルガレージ時代</strong>：新卒1年目で「SmartHR」などの投資支援に携わる。3年目からアメリカ担当となり、月2週間をアメリカ、月2週間を日本で過ごす二拠点生活を2〜3年継続。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 「Off Topic」の歩みと成功の転換点</h2>
+  <ul class="opt-a-list">
+    <li><strong>立ち上げ（2018年）</strong>：同僚の草野氏と開始。当初は数字を追わず、自分たちが楽しむサイドプロジェクトとしてスタート。初回は100再生で喜ぶレベルだった。</li>
+    <li><strong>3つの成長ポイント</strong>：
+      <ul>
+        <li><strong>ポッドキャストアワードのノミネート</strong>：2020年、Spotify Next Creator賞を受賞。</li>
+        <li><strong>SNSとテキストの活用</strong>：Twitterでの<strong>スレッド投稿</strong>（トロピカーナのリブランディング失敗事例など）がバズり、フォロワーが1,000人から5,000人へ急増。また、noteの内容をTechCrunch Japanへ寄稿したこともブーストとなった。</li>
+        <li><strong>Web3エピソードのヒット</strong>：2021年、Web1.0〜3.0を解説した回が異常にヒット。この回をきっかけに<strong>15人以上が起業</strong>するほどの影響を与えた。</li>
+      </ul>
+    </li>
+    <li><strong>解散の背景</strong>：2021年に会社化したが、将来的な拡大の方向性や役割分担において、お互いのハッピーを優先するために解散を決断。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 新メディア「Slow Times」とニュースレター戦略</h2>
+  <ul class="opt-a-list">
+    <li><strong>なぜニュースレター（Substack）なのか？</strong>：
+      <ul>
+        <li><strong>オーディエンスのオーナーシップ</strong>：メールアドレスを直接保持できるため、プラットフォームのアルゴリズムに左右されず、確実にフォロワーへ届けられる。</li>
+        <li><strong>ディスカバリーの課題解決</strong>：音声（1時間のポッドキャスト）は聴くハードルが高いが、テキストは数秒で内容の良し悪しを判断できる。</li>
+        <li><strong>レコメンド機能</strong>：Substack内のエコシステムで他のニュースレターと相互に紹介し合える機能が強力。</li>
+      </ul>
+    </li>
+    <li><strong>収益モデル</strong>：月額・年額のサブスクリプション。<strong>3〜4割のユーザーが年額払い</strong>を選択しており、安定したファンベースを構築。</li>
+    <li><strong>アメリカの潮流</strong>：マスメディアへの信頼が低下し、特定の分野に特化した<strong>エキスパート（個人）への信頼</strong>が移行。Substackで数億円規模を稼ぐクリエイターも出現している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 コンテンツ・セントリック・カンパニーの構想</h2>
+  <p>コンテンツを軸に信頼と認知を獲得し、そこから多角的なビジネスへ展開するモデル。</p>
+
+  <svg width="100%" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="600" height="300" fill="#1a1a3e" rx="12"/>
+    
+    <!-- Nodes -->
+    <rect x="200" y="110" width="200" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="300" y="145" text-anchor="middle" font-weight="bold">コア・コンテンツ</text>
+    <text x="300" y="162" text-anchor="middle" font-size="12">(Slow Times / Substack)</text>
+
+    <!-- Discovery -->
+    <rect x="50" y="20" width="150" height="50" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" stroke-width="1"/>
+    <text x="125" y="50" text-anchor="middle">SNS / 外部番組出演</text>
+
+    <rect x="400" y="20" width="150" height="50" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" stroke-width="1"/>
+    <text x="475" y="50" text-anchor="middle">グッズ / ショート動画</text>
+
+    <!-- Monetization -->
+    <rect x="50" y="220" width="150" height="50" rx="8" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="1"/>
+    <text x="125" y="250" text-anchor="middle">コンサルティング</text>
+
+    <rect x="225" y="220" width="150" height="50" rx="8" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="1"/>
+    <text x="300" y="250" text-anchor="middle">VCファンド</text>
+
+    <rect x="400" y="220" width="150" height="50" rx="8" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="1"/>
+    <text x="475" y="250" text-anchor="middle">ソフトウェア開発</text>
+
+    <!-- Arrows -->
+    <path d="M 125 70 L 250 110" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 475 70 L 350 110" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 300 170 L 125 220" stroke="#10b981" stroke-width="2" fill="none"/>
+    <path d="M 300 170 L 300 220" stroke="#10b981" stroke-width="2" fill="none"/>
+    <path d="M 300 170 L 475 220" stroke="#10b981" stroke-width="2" fill="none"/>
+
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+      </marker>
+    </defs>
+  </svg>
+
+  <h2 class="opt-a-section-title">📌 今後の展望とメディアの役割分担</h2>
+  <ul class="opt-a-list">
+    <li><strong>ディスカバリー（発見）用コンテンツ</strong>：SNS、外部ゲスト出演、ショート動画、グッズなど。これらは「知ってもらう」ためのタッチポイント。</li>
+    <li><strong>エンゲージメント（深掘り）用コンテンツ</strong>：ニュースレター（Substack）。前提知識を共有したコアなファンに向けた深いインサイトの提供。</li>
+    <li><strong>ベンチマーク</strong>：イギリスの<strong>「Diary of a CEO」</strong>。ポッドキャストから始まり、VC業務やクリエイター向けソフトウェア開発まで手掛ける成功例。</li>
+    <li><strong>日本独自の価値</strong>：アメリカのテック・ビジネス・カルチャーを、日本という特殊な視点から再解釈して届けることに優位性を見出す。</li>
+  </ul>
+
+  <blockquote>
+    「今の時代、コンテンツだけで勝負する時代ではない。いかに多くのタッチポイントを作り、信頼をプロダクトやサービスへ繋げていくかが重要。」
+  </blockquote>
+
+</body>
+</html>
