@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ながらAIラジオ：2026年8月17日号</h1>
+  <p>AIコンサルタントのうスタクト氏と早川ゴミ氏が、2026年8月中旬の最新AIニュースを解説。Grok 4.6の躍進、Geminiの高速アップデート、Pixel 11の登場、そしてAIエージェントの新しいUI体験について深く掘り下げます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">Grok 4.6</span>
+    <span class="opt-a-tag">GrokBot</span>
+    <span class="opt-a-tag">Gemini 3.7 Flash</span>
+    <span class="opt-a-tag">Google Pixel 11</span>
+    <span class="opt-a-tag">ChatGPT Luna</span>
+    <span class="opt-a-tag">Computer History</span>
+    <span class="opt-a-tag">Irodori TTS</span>
+    <span class="opt-a-tag">アンラーニング</span>
+    <span class="opt-a-tag">エージェント・オーケストレーション</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 近況：ロボット開発と「新参者」の生存戦略</h2>
+  <ul class="opt-a-list">
+    <li><strong>早川ゴミ氏の現状</strong>：現在6つのロボット関連プロジェクトの締め切りが重なり、ハンダ付けや配線作業に追われている。
+      <ul>
+        <li>AIは指示は出せるが、物理的な<strong>ハンダ付けや配線</strong>はまだ人間に残された仕事。</li>
+        <li>「Human as a Service」として、AIの指示通りに物理作業をこなす日々。</li>
+      </ul>
+    </li>
+    <li><strong>新しい界隈に入る3つのコツ</strong>：専門外のロボット業界でチャンスを掴むためのモットー。
+      <ul>
+        <li><strong>言われたことはやる</strong>：無茶なスケジュールでもまずは引き受ける。</li>
+        <li><strong>お勧めされたものは買う</strong>：道具や環境への投資を惜しまない。</li>
+        <li><strong>来いと言われたら行く</strong>：フットワーク軽く現場に顔を出す。</li>
+        <li><strong>腰を低く保つ</strong>：実績があっても「教えていただく」姿勢を崩さない。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Grok 4.6の登場と「GrokBot」の衝撃</h2>
+  <ul class="opt-a-list">
+    <li><strong>ベンチマークでの躍進</strong>：実務系タスク（Excel作成、レポート、分析資料等）を測るOpenAIの2025年公開テストで<strong>1位を獲得</strong>。
+      <ul>
+        <li>数学的な問題よりも、実社会の複雑なタスクに強い傾向。</li>
+        <li>X（旧Twitter）のリアルタイムデータへのアクセスと、Cursor買収後のモデル進化が背景にある。</li>
+      </ul>
+    </li>
+    <li><strong>新サービス「GrokBot」のUI/UX</strong>：
+      <ul>
+        <li><strong>メッセンジャー型UI</strong>：LINEやFacebook Messengerのように、メッセージに対してリアクション（いいね等）や返信が可能。</li>
+        <li><strong>エージェントの永続性</strong>：会話履歴ではなく「エージェント（役割）」が履歴に残る。過去に作ったマーケ担当Bot、開発担当Botを組み合わせてチームを作れる。</li>
+        <li><strong>画面共有機能</strong>：Botが裏側でブラウザを開いている様子をリアルタイムで確認できる「労働者」のような体験。</li>
+        <li><strong>自動ルーティング</strong>：簡単な返答には軽量モデル、複雑なものには上位モデルを勝手に使い分けるため、体感速度が非常に速い。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <svg width="100%" viewBox="0 0 600 250" style="background: #1a1a3e; border-radius: 12px; margin: 1em 0;">
+    <!-- User -->
+    <rect x="250" y="20" width="100" height="40" rx="8" fill="rgba(96, 165, 250, 0.2)" stroke="#60a5fa" />
+    <text x="300" y="45" text-anchor="middle" font-size="14">ユーザー</text>
+    
+    <!-- Arrows -->
+    <line x1="300" y1="60" x2="150" y2="120" stroke="#60a5fa" stroke-width="2" />
+    <line x1="300" y1="60" x2="300" y2="120" stroke="#60a5fa" stroke-width="2" />
+    <line x1="300" y1="60" x2="450" y2="120" stroke="#60a5fa" stroke-width="2" />
+
+    <!-- Agents -->
+    <rect x="100" y="120" width="100" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="150" y="145" text-anchor="middle" font-size="13">マーケBot</text>
+    <text x="150" y="165" text-anchor="middle" font-size="11" fill="#a78bfa">（SNS分析）</text>
+
+    <rect x="250" y="120" width="100" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="300" y="145" text-anchor="middle" font-size="13">開発Bot</text>
+    <text x="300" y="165" text-anchor="middle" font-size="11" fill="#a78bfa">（コード生成）</text>
+
+    <rect x="400" y="120" width="100" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="450" y="145" text-anchor="middle" font-size="13">リサーチBot</text>
+    <text x="450" y="165" text-anchor="middle" font-size="11" fill="#a78bfa">（ブラウジング）</text>
+
+    <text x="300" y="220" text-anchor="middle" font-size="14" fill="#10b981">エージェント・オーケストレーション構造</text>
+  </svg>
+
+  <h2 class="opt-a-section-title">📌 Gemini 3.7 FlashとGoogle Pixel 11</h2>
+  <ul class="opt-a-list">
+    <li><strong>Geminiの高速更新</strong>：3.6の登場からわずか3週間で3.7 Flashがリリース。
+      <ul>
+        <li>3.5 Proが未リリースのまま3.7が出るなど、バージョン管理が複雑化しておりユーザーには分かりにくい状況。</li>
+      </ul>
+    </li>
+    <li><strong>Google Pixel 11の進化</strong>：
+      <ul>
+        <li><strong>音声入力の強化</strong>：AIが音声を自動で箇条書きや整形して入力する機能が標準搭載。</li>
+        <li><strong>「一緒に映る」機能</strong>：撮影者と被写体を別々に撮って合成し、全員が揃った集合写真を作る機能が便利。</li>
+        <li><strong>価格の高騰</strong>：Pixel 11は<strong>136,800円〜</strong>。かつての「iPhoneより安いAndroid」という図式は崩壊している。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>Google Pixel 11</th>
+        <th>備考</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>価格</td>
+        <td>136,800円〜</td>
+        <td>スマホ全体の高騰化傾向</td>
+      </tr>
+      <tr>
+        <td>目玉機能</td>
+        <td>AI音声整形入力</td>
+        <td>既存の音声入力ツールを代替</td>
+      </tr>
+      <tr>
+        <td>カメラ</td>
+        <td>「一緒に映る」合成機能</td>
+        <td>旅行時の集合写真に最適</td>
+      </tr>
+      <tr>
+        <td>乗り換え障壁</td>
+        <td>Quick Share (旧AirDrop互換)</td>
+        <td>iOSからの移行が容易に</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 OpenAI：Computer HistoryとLuna無制限化</h2>
+  <ul class="opt-a-list">
+    <li><strong>Computer History機能</strong>：PCの画面操作をすべて記録し、ChatGPTが「あの時何を見ていたか」を把握・回答できる機能。
+      <ul>
+        <li>Windowsの「Recall」機能に近い体験が、ChatGPT経由で利用可能になる。</li>
+      </ul>
+    </li>
+    <li><strong>ChatGPT Lunaの無制限化</strong>：無料プランおよび低価格プラン（Go）でも、最新モデルLunaが無制限で利用可能に。
+      <ul>
+        <li>「課金しないとAIは使えない」時代から、無料でも十分な性能を享受できるフェーズへ。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 音声生成（TTS）と動画AIの未来</h2>
+  <ul class="opt-a-list">
+    <li><strong>色取りTTS（Irodori TTS）</strong>：日本発のオープンソース音声合成ツール。
+      <ul>
+        <li>うスタクト氏が自身の声をクローンしたところ、有料サービスより自然な仕上がりに。</li>
+        <li>日本語の表現力が非常に豊かだが、生成速度にはまだ課題がある。</li>
+      </ul>
+    </li>
+    <li><strong>ドーパミン・インフレ説</strong>：
+      <ul>
+        <li>AI動画のクオリティが上がり、現実と見分けがつかなくなっている。</li>
+        <li>「おばあちゃんが家をぶっ壊す」ような、現実ではリスクが高すぎてできない過激な映像がAIで量産される。</li>
+        <li>ネット上のコンテンツの刺激（ドーパミン）レベルがインフレし、人間のクリエイターの価値が再定義される。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote>
+    「今、10年ぶりくらいにAIが楽しい。ボジョレー・ヌーボー現象ではなく、本当に進化の速度が上がっている。」
+  </blockquote>
+
+</body>
+</html>
