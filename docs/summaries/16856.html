@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【66-9】豊かさのウラには誰かいる！奴隷が支えるローマの便利な暮らし</h1>
+  <p>帝政ローマ編の「おまけ回」として、当時の人々の日常生活を深掘りするエピソード。軍事的征服によって得た富がどのように社会に還元され、どのような格差やインフラ、文化を生んでいたのかを解説します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">インスライ（高層住宅）</span>
+    <span class="opt-a-tag">テルマエ（公衆浴場）</span>
+    <span class="opt-a-tag">パンとサーカス</span>
+    <span class="opt-a-tag">奴隷制度</span>
+    <span class="opt-a-tag">水道橋</span>
+    <span class="opt-a-tag">検討士（グラディエーター）</span>
+    <span class="opt-a-tag">セステルティウス</span>
+    <span class="opt-a-tag">コレギウム（ギルド）</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 社会構造と人口動態</h2>
+  <ul class="opt-a-list">
+    <li><strong>圧倒的な格差社会</strong>：
+      <ul>
+        <li>総人口：約5,000万〜7,000万人（漢帝国と同規模）。</li>
+        <li>富裕層：全体のわずか<strong>0.5%</strong>。</li>
+        <li>非富裕層：<strong>99.5%</strong>。その大半は自給自足に近い農民。</li>
+      </ul>
+    </li>
+    <li><strong>主要産業</strong>：農業（小麦、ブドウ、オリーブ）。現代のイタリア料理の基礎となる作物が当時から主流。</li>
+    <li><strong>ローマ・パッケージ</strong>：ローマが征服した都市（パリ、ロンドン、スペイン等）には、水道橋、浴場、競技場といった「ローマ的インフラ」がセットで建設された。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 驚異のインフラ：上下水道と浴場</h2>
+  <ul class="opt-a-list">
+    <li><strong>上水道の技術</strong>：紀元前312年には既に存在。動力を使わず、絶妙な傾斜だけで遠方の水源から新鮮な水を運搬。</li>
+    <li><strong>水のクオリティへの執着</strong>：
+      <ul>
+        <li>水源ごとに味を飲み分ける「利き水」のような文化があった。</li>
+        <li>水道汚染には<strong>1万セステルティウス</strong>の超高額罰金。</li>
+        <li>富裕層は自宅に噴水を引いており、パイプの太さに応じて水道料金を支払うシステム。</li>
+      </ul>
+    </li>
+    <li><strong>テルマエ（公衆浴場）</strong>：
+      <ul>
+        <li>単なる風呂ではなく、運動場、プール、庭園、図書室、食事室を備えた「スーパー銭湯」以上の複合娯楽施設。</li>
+        <li>衛生状態は必ずしも良くなく、油や垢、泥で水が濁っていたという記述もある。</li>
+      </ul>
+    </li>
+    <li><strong>下水道</strong>：テベレ川に汚物を流していたが、規模は不十分。しかし、18世紀のロンドンやパリよりも1世紀のローマの方が公衆衛生インフラは進んでいたとされる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 住宅事情：逆転の価値観「インスライ」</h2>
+  <div class="diagram-container">
+    <svg width="100%" height="200" viewBox="0 0 400 200">
+      <!-- 5階 -->
+      <rect x="50" y="20" width="300" height="30" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" rx="4"/>
+      <text x="200" y="40" text-anchor="middle" font-size="12">5階：最安・危険（火災・崩落）・ワンルーム</text>
+      <!-- 4階 -->
+      <rect x="50" y="50" width="300" height="30" fill="rgba(139, 92, 246, 0.15)" stroke="#8b5cf6" rx="4"/>
+      <text x="200" y="70" text-anchor="middle" font-size="12">4階：家賃安め</text>
+      <!-- 3階 -->
+      <rect x="50" y="80" width="300" height="30" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" rx="4"/>
+      <text x="200" y="100" text-anchor="middle" font-size="12">3階：中層階</text>
+      <!-- 2階 -->
+      <rect x="50" y="110" width="300" height="30" fill="rgba(139, 92, 246, 0.25)" stroke="#8b5cf6" rx="4"/>
+      <text x="200" y="130" text-anchor="middle" font-size="12">2階：広めのアパートメント</text>
+      <!-- 1階 -->
+      <rect x="50" y="140" width="300" height="40" fill="rgba(139, 92, 246, 0.4)" stroke="#8b5cf6" rx="4"/>
+      <text x="200" y="165" text-anchor="middle" font-size="14" font-weight="bold">1階：最高値・店舗・水へのアクセス良好</text>
+    </svg>
+  </div>
+  <ul class="opt-a-list">
+    <li><strong>高層集合住宅（インスライ）</strong>：人口100万人の過密都市ゆえに上に伸びた。現代のタワマンとは逆に、<strong>1階が最も高級</strong>。</li>
+    <li><strong>劣悪な上層階</strong>：エレベーターがないため水汲みが困難。火災や地震時の生存率が低いため、上に行くほど家賃が安い。</li>
+    <li><strong>マナー問題</strong>：窓からゴミや糞尿を投げ捨てる者が絶えず、アウグストゥスは建物の高さを20m以下に制限する法律を作った。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 奴隷制度：社会を支える「話す道具」</h2>
+  <ul class="opt-a-list">
+    <li><strong>奴隷の定義</strong>：農場の道具は3種類あるとされた。
+      <ul>
+        <li>口をきかないもの（農具）</li>
+        <li>少し口をきくもの（家畜）</li>
+        <li><strong>非常に口をきくもの（奴隷）</strong></li>
+      </ul>
+    </li>
+    <li><strong>所有数によるステータス</strong>：
+      <table>
+        <tr><th>階層</th><th>所有奴隷数の目安</th></tr>
+        <tr><td>一般市民</td><td>2〜3人（家事労働から解放されるレベル）</td></tr>
+        <tr><td>弁護士</td><td>最低8人（これ以下だと信頼されない）</td></tr>
+        <tr><td>元老院議員</td><td>平均500人</td></tr>
+        <tr><td>大富豪</td><td>1,000人以上</td></tr>
+        <tr><td>皇帝</td><td>万人単位</td></tr>
+      </table>
+    </li>
+    <li><strong>人権の欠如</strong>：奴隷は「動産」扱い。自由民が他人の奴隷を殺しても賠償金で済むが、奴隷が主人を殺せばその家の奴隷全員が処刑されるなどの過酷な連帯責任があった。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 食文化と宴席の狂気</h2>
+  <ul class="opt-a-list">
+    <li><strong>富裕層の珍味</strong>：クジャク、フラミンゴの舌、魚の内臓など、希少性を尊ぶグルメ文化。</li>
+    <li><strong>宴会のマナー</strong>：
+      <ul>
+        <li><strong>寝ながら食べる</strong>：クッションに肘をつき、横たわって食べるのが正装。</li>
+        <li><strong>吐いてまた食べる</strong>：満腹になってもさらに食べるため、鳥の羽を喉に突っ込んで意図的に吐き、食事を続けることが贅沢とされた。</li>
+        <li><strong>ゲップとおなら</strong>：ゲップは礼儀。クラウディウス帝はおならを許可する法律を検討したという逸話も。</li>
+      </ul>
+    </li>
+    <li><strong>一般市民の食</strong>：自宅に台所がないことが多く、外食（酒場やカフェ）が中心。サンドイッチのような軽食も存在した。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 パンとサーカス：民衆を操る娯楽</h2>
+  <ul class="opt-a-list">
+    <li><strong>娯楽の供給</strong>：皇帝の責務は「食料（パン）」と「娯楽（サーカス）」を与えること。
+      <ul>
+        <li>アウグストゥス時代：年間65日の祭日。</li>
+        <li>2世紀後半：年間130日以上。<strong>2日に1回は何らかの見せ物</strong>がある状態。</li>
+      </ul>
+    </li>
+    <li><strong>検討士（グラディエーター）</strong>：
+      <ul>
+        <li>起源は貴族の葬儀での「血の供養」。</li>
+        <li>敗者は観客の判断でその場で殺される殺人ショー。</li>
+        <li>非常に人気があり、強い検討士は女性にモテるスター的存在でもあった。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 労働観と行政</h2>
+  <ul class="opt-a-list">
+    <li><strong>短時間労働</strong>：皇帝や官僚の公務は、平時は<strong>午前中で終了</strong>するのが一般的。午後は入浴や昼寝、社交に充てられた。</li>
+    <li><strong>権限委譲</strong>：都市の自治が機能していたため、中央政府のリソースは驚くほど少なくて済んだ。</li>
+    <li><strong>職業アイデンティティ</strong>：肉体労働は蔑まれたが、自分の職業に誇りを持つ職人は多く、墓石に仕事道具を彫り込む文化があった。</li>
+    <li><strong>平均寿命</strong>：乳幼児死亡率が極めて高く、平均寿命は<strong>20〜25歳</strong>程度。1歳までに3分の1が死亡する過酷な環境。</li>
+  </ul>
+
+  <blockquote style="margin-top: 2em;">
+    「ローマの繁栄は、圧倒的な数の奴隷と、徹底したインフラ整備、そして民衆の欲望をコントロールする『パンとサーカス』によって維持されていた。」
+  </blockquote>
+
+</body>
+</html>
