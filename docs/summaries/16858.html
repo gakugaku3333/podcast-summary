@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">令和ロマンのご様子 シーズン22-3「ごっちゃカメレオン」</h1>
+  <p>M-1グランプリ2023王者・令和ロマン（髙比良くるま・松井ケムリ）によるポッドキャスト。夏の過ごし方から、リスナー発案のポルトガル遠征計画、そして恒例の「丸山公文」コーナーまで、脱線と妄想が入り混じるトークが展開されます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">チーム友達</span>
+    <span class="opt-a-tag">秋元康</span>
+    <span class="opt-a-tag">AKB48</span>
+    <span class="opt-a-tag">コンビニ渡り鳥</span>
+    <span class="opt-a-tag">ヌーノ・メンデス</span>
+    <span class="opt-a-tag">リスボンマラソン</span>
+    <span class="opt-a-tag">丸山桂里奈</span>
+    <span class="opt-a-tag">ポルノグラフィティ</span>
+    <span class="opt-a-tag">椎名林檎</span>
+    <span class="opt-a-tag">マグナム</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 言葉のニュアンス：チームの呼称問題</h2>
+  <ul class="opt-a-list">
+    <li><strong>「チーム○○」と「○○チーム」の違い</strong>
+      <ul>
+        <li><strong>チーム○○</strong>：一つの志のもとに集まった強い集団、プロフェッショナルな響きがある。</li>
+        <li><strong>○○チーム</strong>：運動会やバラエティ番組の振り分けのような、暫定的な集団の響き。</li>
+      </ul>
+    </li>
+    <li><strong>「チーム○○」の起源考察</strong>
+      <ul>
+        <li>昔は「嵐チーム」のように後ろにチームが付くのが一般的だった。</li>
+        <li><strong>AKB48</strong>の「チームA」「チームK」が、この呼称を格好いいものとして定着させたのではないかという仮説。</li>
+        <li>くるまの持論：<strong>「世の中の流行っているものは大体、秋元康（康）が裏で手掛けている」</strong>。</li>
+        <li>エピソードタイトルの<strong>「ごっちゃカメレオン」</strong>も、AKB48の曲名（「期待していない自分」的なニュアンス）に近いと分析。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" height="120" viewBox="0 0 400 120">
+      <!-- Node 1 -->
+      <rect x="10" y="30" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="70" y="65" text-anchor="middle" font-size="14">○○チーム</text>
+      <text x="70" y="110" text-anchor="middle" font-size="12" fill="#60a5fa">運動会・振り分け感</text>
+      
+      <!-- Arrow -->
+      <line x1="140" y1="60" x2="250" y2="60" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      <text x="195" y="50" text-anchor="middle" font-size="12">AKB48等の影響？</text>
+
+      <!-- Node 2 -->
+      <rect x="260" y="30" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="320" y="65" text-anchor="middle" font-size="14">チーム○○</text>
+      <text x="320" y="110" text-anchor="middle" font-size="12" fill="#60a5fa">強い集団・プロ感</text>
+
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ケムリの夏：コンビニ渡り鳥とダイエット</h2>
+  <ul class="opt-a-list">
+    <li><strong>コンビニ渡り鳥</strong>：暑さを凌ぐため、コンビニからコンビニへと涼みを求めて移動するケムリの行動。</li>
+    <li><strong>ブラックコーヒーの習慣</strong>：ダイエットを機にコンビニのブラックコーヒーを飲むようになった。空腹時にカフェインを摂るのが良いという知識に基づいている。</li>
+    <li><strong>ケムリ立ち寄り所</strong>：くるまの提案。コンビニに「警察官立ち寄り所」のようなステッカーを貼る、あるいは独自の決済手段<strong>「ケムリPay」</strong>を導入するという妄想。</li>
+    <li><strong>夏の思い出</strong>：二人ともバーベキューや夏フェスには久しく行っていない。
+      <ul>
+        <li>最後のBBQは数年前、コロナ前の葛西臨海公園（リロイ太郎ら芸人仲間と）。</li>
+        <li>くるまは<strong>「冬派」</strong>。夏は人から話を聞くだけでお腹いっぱいになるが、冬の鍋や雪景色は自分で体験したい。</li>
+        <li>くるま流の花火の楽しみ方：神宮外苑の花火を「音」で聴き、火薬の匂いを感じる（風流）。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ポルトガル遠征計画と「肉体のピーク」</h2>
+  <ul class="opt-a-list">
+    <li><strong>ヌーノ・メンデス召集案</strong>：リスナーからのメール。4年後のポルトガルイベントに、ケムリの代役としてPSG所属のポルトガル代表DFヌーノ・メンデスを呼ぶ提案。
+      <ul>
+        <li>ケムリの反応：<strong>「クリロナ（クリスティアーノ・ロナウド）が来ないなら行かない」</strong>と強気。</li>
+      </ul>
+    </li>
+    <li><strong>リスボンマラソン企画</strong>：10月のリスボンマラソンでケムリがフルマラソンを走り、ゴールでくるまとクリロナ、ヌーノ・メンデスが待っているというプラン。</li>
+    <li><strong>ケムリの肉体全盛期</strong>：現在31歳のケムリは、これまで運動をしてこなかった分、<strong>37歳（4年後）に肉体のピークが来る</strong>と予想。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 コーナー：丸山公文（丸山かノット丸山か）</h2>
+  <p>丸山桂里奈さんが書きそうな、独特な言語感覚の文章を当てるコーナー。今回は「チャットモンチー」「ポルノグラフィティ」「椎名林檎」の歌詞との混同が発生。</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>文章の断片</th>
+        <th>判定</th>
+        <th>正体・備考</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>「いつも横目ですごく見ながら それは確かに横目で その横を縦にしたいです」</td>
+        <td><strong>丸山</strong></td>
+        <td>「横を縦にする」という謎の概念。</td>
+      </tr>
+      <tr>
+        <td>「散々な日を散々なままで終わらせるのは難しいことです...だるまを眺めて」</td>
+        <td><strong>ノット丸山</strong></td>
+        <td>意味が通り過ぎている。</td>
+      </tr>
+      <tr>
+        <td>「見たい顔があるの 聞きたい声があるの...」</td>
+        <td><strong>ノット丸山</strong></td>
+        <td>チャットモンチー「ハナノユメ」の歌詞。</td>
+      </tr>
+      <tr>
+        <td>「押し差し振りの一歩先なので クルブチでつま先進む 赤と赤と」</td>
+        <td><strong>丸山</strong></td>
+        <td>「押し差し振り」という造語が丸山さんらしい。</td>
+      </tr>
+      <tr>
+        <td>「ダザイヨテニ 屋上に上がり この世などを憂いて見せる」</td>
+        <td><strong>ノット丸山</strong></td>
+        <td>ポルノグラフィティ「サウダージ」の歌詞パロディ。</td>
+      </tr>
+      <tr>
+        <td>「私は君のメロディーやその哲学や言葉すべてを守るためなら...」</td>
+        <td><strong>ノット丸山</strong></td>
+        <td>椎名林檎「幸福論」の歌詞。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 エンディング・新ギャグ案</h2>
+  <ul class="opt-a-list">
+    <li><strong>新ギャグ「マグナム」</strong>：うざいことを言われた時の返しとして「マグナム」と言う。
+      <ul>
+        <li>くるまの助言：ギャグは「謝罪系」か「シチュエーション系」をすべて覚えておくことが大事。</li>
+        <li>ケムリは今後、メディアの集合体で必ず一つカタカナ（マグナム等）を言うことを宣言。</li>
+      </ul>
+    </li>
+    <li><strong>告知事項</strong>：
+      <ul>
+        <li>「探偵！ナイトスクープ」「ニカゲーム」等の出演情報。</li>
+        <li>くるまと新一（お見送り芸人しんいち）の番組「Sシーマグミ」がAI実験中。音声が左右バラバラに聞こえる謎編集について言及。</li>
+        <li>ケムリ禁煙記念灰皿の在庫一掃キャンペーン実施中。</li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+</html>
