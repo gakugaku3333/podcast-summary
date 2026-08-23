@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">News Connect：ICC赤根氏への制裁と揺らぐ国際秩序の行方</h1>
+  <p>2026年8月23日配信の日曜版。トランプ政権下のアメリカが「自由世界の守り手」という役割から退きつつある現状を、ICC所長への制裁、中東情勢、米韓軍事演習の縮小といった今週の主要ニュースを横串に刺して解説します。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">ICC（国際刑事裁判所）</span>
+    <span class="opt-a-tag">赤根智子</span>
+    <span class="opt-a-tag">トランプ政権</span>
+    <span class="opt-a-tag">ガザ情勢</span>
+    <span class="opt-a-tag">米韓合同軍事演習</span>
+    <span class="opt-a-tag">ジェイソン・アーディ</span>
+    <span class="opt-a-tag">ベッセント財務長官</span>
+    <span class="opt-a-tag">法の支配</span>
+    <span class="opt-a-tag">ミドルパワー</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 今週の主要ニュース・サマリー</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>曜日</th>
+        <th>トピック</th>
+        <th>主な内容</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>月</td>
+        <td><strong>ジェイソン・アーディ氏の急逝</strong></td>
+        <td>ケンブリッジ大最年少黒人教授。東洋疑惑と保守派の攻撃の最中に41歳で死去。</td>
+      </tr>
+      <tr>
+        <td>火</td>
+        <td><strong>米韓軍事演習の縮小</strong></td>
+        <td>トランプ氏が規模縮小を指示。北朝鮮への配慮と費用削減が目的。</td>
+      </tr>
+      <tr>
+        <td>水</td>
+        <td><strong>中東情勢の膠着</strong></td>
+        <td>クシュナー氏がハマス・イスラエルと会談。ネタニヤフ氏は和平案を拒否。</td>
+      </tr>
+      <tr>
+        <td>木</td>
+        <td><strong>ICC赤根所長への制裁</strong></td>
+        <td>米政府が日本人初のICC所長を制裁対象に。国際法秩序への重大な脅威。</td>
+      </tr>
+      <tr>
+        <td>金</td>
+        <td><strong>米財務省の国債買い戻し</strong></td>
+        <td>長期金利抑制のため320億ドルの買い戻しを発表。市場への影響は限定的。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 【月曜】役割を背負わされたスターの悲劇</h2>
+  <ul class="opt-a-list">
+    <li><strong>ジェイソン・アーディ教授の背景</strong>：
+      <ul>
+        <li>自閉症と診断され、11歳まで話せず、18歳まで読み書きができなかった逆境からのサクセスストーリー。</li>
+        <li>イギリスの大学教授における<strong>黒人比率はわずか1%</strong>という希少な存在。</li>
+      </ul>
+    </li>
+    <li><strong>論争と死</strong>：
+      <ul>
+        <li>論文の東洋疑惑をきっかけに、保守派メディアや政治家から「行き過ぎたダイバーシティの産物」として激しい攻撃を受けた。</li>
+        <li>本人は意図的な東洋を否定。回顧録出版直前に41歳で亡くなる（事件性なし）。</li>
+      </ul>
+    </li>
+    <li><strong>考察</strong>：社会が投影した「役割」を背負わされることの重圧。本人の実像とは別に、象徴としてのスターが消費され、攻撃される現代の構造。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 【火曜・水曜】トランプ外交の焦りと同盟の亀裂</h2>
+  <ul class="opt-a-list">
+    <li><strong>米韓軍事演習の縮小</strong>：
+      <ul>
+        <li>トランプ氏が「費用がかかる」として縮小を指示。北朝鮮の金正恩氏への個人的な配慮も。</li>
+        <li><strong>韓国の不信感</strong>：アメリカの「核の傘」への疑念が強まり、韓国国内で独自の核保有論が浮上するリスク。</li>
+      </ul>
+    </li>
+    <li><strong>北朝鮮とロシアの接近</strong>：
+      <ul>
+        <li>道路整備やドローン技術の移転など、軍事的・経済的結びつきが急速に強化。</li>
+      </ul>
+    </li>
+    <li><strong>中東和平の行き詰まり</strong>：
+      <ul>
+        <li>ジャレット・クシュナー氏が仲介に動くも、ネタニヤフ首相はハマスの完全武装解除を譲らず和平案を拒否。</li>
+        <li>ガザでは<strong>7万人以上の死者</strong>（民間人含む）が出ており、アメリカはイスラエルをコントロールできていない。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 【木曜】ICC赤根所長への制裁と「法の支配」の危機</h2>
+  <ul class="opt-a-list">
+    <li><strong>異例の個人制裁</strong>：
+      <ul>
+        <li>ICC（国際刑事裁判所）の<strong>赤根智子所長</strong>らを経済制裁対象に指定。</li>
+        <li>制裁内容：米国内の資産凍結、入国禁止、ドル決済の制限（クレジットカードも使用不可になる恐れ）。</li>
+      </ul>
+    </li>
+    <li><strong>アメリカの主張</strong>：
+      <ul>
+        <li>非加盟国であるアメリカの国民を捜査・訴追することは「主権侵害」であると主張。</li>
+      </ul>
+    </li>
+    <li><strong>国際社会の反応</strong>：
+      <ul>
+        <li>オランダやEUはICCへの連帯を表明。</li>
+        <li>日本政府は「<strong>Very Unfortunate（大変残念）</strong>」と抑制された表現にとどまる。アメリカへの配慮と国際法遵守の板挟み。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <h3 style="text-align: center; color: #a78bfa; margin-top: 0;">図解：揺らぐ国際秩序の構造</h3>
+    <svg width="100%" viewBox="0 0 600 300">
+      <!-- US Center -->
+      <rect x="225" y="110" width="150" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" />
+      <text x="300" y="150" text-anchor="middle" font-weight="bold">米国（トランプ政権）</text>
+      <text x="300" y="170" text-anchor="middle" font-size="12">「自由世界の守り手」を離脱</text>
+
+      <!-- Arrows and Nodes -->
+      <!-- To ICC -->
+      <path d="M 300 110 L 300 50" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+      <rect x="225" y="10" width="150" height="40" rx="8" fill="rgba(245, 158, 11, 0.1)" stroke="#f59e0b" />
+      <text x="300" y="35" text-anchor="middle">ICC（法の支配）への圧力</text>
+
+      <!-- To East Asia -->
+      <path d="M 225 150 L 100 150" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+      <rect x="10" y="130" width="110" height="40" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" />
+      <text x="65" y="155" text-anchor="middle">同盟国（日韓）の不安</text>
+
+      <!-- To Middle East -->
+      <path d="M 375 150 L 500 150" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+      <rect x="480" y="130" width="110" height="40" rx="8" fill="rgba(96, 165, 250, 0.1)" stroke="#60a5fa" />
+      <text x="535" y="155" text-anchor="middle">中東の制御不能</text>
+
+      <!-- Bottom: Result -->
+      <text x="300" y="250" text-anchor="middle" font-size="16" fill="#f59e0b" font-weight="bold">「力の支配（弱肉強食）」への逆行懸念</text>
+
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 【金曜】金利がある世界への回帰</h2>
+  <ul class="opt-a-list">
+    <li><strong>ベッセント財務長官の動き</strong>：
+      <ul>
+        <li>長期国債を買い戻し、短期証券に切り替えることで長期金利を抑制しようと試みる。</li>
+        <li>背景には、住宅ローン金利上昇（7%台）による有権者の不満。</li>
+      </ul>
+    </li>
+    <li><strong>市場の現実</strong>：
+      <ul>
+        <li>AI企業（ビッグテック）への資金集中により、米国債が売られやすい構造。</li>
+        <li>「金利がある世界」が常態化し、企業の設備投資や住宅ローンに直接的なコスト増をもたらしている。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 結論：問われる日本の立ち位置</h2>
+  <blockquote style="font-style: normal;">
+    アメリカが自国の利益や個人的なレガシー作りを優先し、国際的な「法の支配」から降りようとする中、軍事力をアメリカに依存してきた日本や韓国は、自国の安全保障と国際秩序の維持をどう両立させるかという、戦後最大の難問に直面している。
+  </blockquote>
+
+  <h2 class="opt-a-section-title">🎵 DJコーナー：夏の終わりに聴きたい3曲</h2>
+  <ul class="opt-a-list">
+    <li><strong>ハルハ（H.A.R.H.A.） / 「夏の雷鳴」</strong>：おみこし後の汗を拭う時にぴったりの爽やかな新曲。</li>
+    <li><strong>I Don't Like Mondays. / 「キリがないですわ」</strong>：夜の街を歩くような大人なミッドテンポ。</li>
+    <li><strong>Hana Hope / 「サマータイムブルース」</strong>：古くて新しい、フォーク調の心地よいサウンド。</li>
+  </ul>
+
+</body>
+</html>
