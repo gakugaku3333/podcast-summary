@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">年収500万で幸せな人と1000万で不幸な人。「比較」が健康を壊すメカニズム</h1>
+  <p>このエピソードでは、私たちの幸福度を大きく左右する<strong>「他人との比較」</strong>が、心だけでなく身体の健康や死亡率にまでどのような影響を及ぼすかを、ハーバード大学の研究や行動科学の視点から解説しています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">社会的比較</span>
+    <span class="opt-a-tag">健康格差</span>
+    <span class="opt-a-tag">相対的剥奪</span>
+    <span class="opt-a-tag">死亡率</span>
+    <span class="opt-a-tag">高血圧</span>
+    <span class="opt-a-tag">上方比較</span>
+    <span class="opt-a-tag">下方比較</span>
+    <span class="opt-a-tag">ローカス・オブ・コントロール</span>
+    <span class="opt-a-tag">ハーバード大学</span>
+    <span class="opt-a-tag">レオン・フェスティンガー</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 衝撃の思考実験：年収と幸福の逆転現象</h2>
+  <p>ハーバード大学の川内教授が講義で用いる有名な質問を通して、幸福の正体を探ります。</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>条件</th>
+        <th>国A（相対的に高い）</th>
+        <th>国B（相対的に低い）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>自分の年収</strong></td>
+        <td>500万円</td>
+        <td>1,000万円</td>
+      </tr>
+      <tr>
+        <td><strong>周囲の年収</strong></td>
+        <td>250万円</td>
+        <td>2,500万円</td>
+      </tr>
+      <tr>
+        <td><strong>物価・生活費</strong></td>
+        <td>同一</td>
+        <td>同一</td>
+      </tr>
+      <tr>
+        <td><strong>心理的影響</strong></td>
+        <td><strong>「自分は持っている」</strong>と感じる</td>
+        <td><strong>「自分は持たざる者」</strong>と感じる</td>
+      </tr>
+      <tr>
+        <td><strong>健康への結論</strong></td>
+        <td>ストレスが少なく健康維持に有利</td>
+        <td>格差によるストレスで健康を害しやすい</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 「比較」が身体を蝕む科学的エビデンス</h2>
+  <ul class="opt-a-list">
+    <li><strong>死亡率の上昇：</strong> 自分と同等の属性（年齢・学歴等）の平均所得と自分の所得の「距離感」を測定した研究では、その距離が1区分増えるごとに<strong>死亡率が57%上昇</strong>した。</li>
+    <li><strong>生活習慣への影響：</strong> 周囲との格差を感じるほど、<strong>喫煙率、肥満率、精神科の受診率</strong>が上昇する傾向にある。</li>
+    <li><strong>即時的な身体反応：</strong> ハーバード大学の実験では、集団内で否定的な態度を取られ「自分の地位が低い」と感じさせられた女性たちは、即座に<strong>収縮期血圧が上昇</strong>した。</li>
+  </ul>
+
+  <svg width="100%" viewBox="0 0 600 220" style="background: #1a1a3e; border-radius: 8px; margin: 1em 0;">
+    <!-- Nodes -->
+    <rect x="20" y="80" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="90" y="115" text-anchor="middle" font-size="14">他人との比較</text>
+    
+    <rect x="220" y="80" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="290" y="115" text-anchor="middle" font-size="14">心理的ストレス</text>
+    
+    <rect x="420" y="40" width="160" height="140" rx="8" fill="rgba(245, 158, 11, 0.1)" stroke="#f59e0b" />
+    <text x="500" y="70" text-anchor="middle" font-size="13" font-weight="bold">健康被害の連鎖</text>
+    <text x="500" y="100" text-anchor="middle" font-size="12">・血圧上昇</text>
+    <text x="500" y="125" text-anchor="middle" font-size="12">・免疫機能低下</text>
+    <text x="500" y="150" text-anchor="middle" font-size="12">・死亡率 57%UP</text>
+
+    <!-- Arrows -->
+    <path d="M 160 110 L 210 110" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+    <path d="M 360 110 L 410 110" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+    
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+        <path d="M0,0 L10,5 L0,10 Z" fill="#60a5fa" />
+      </marker>
+    </defs>
+  </svg>
+
+  <h2 class="opt-a-section-title">📌 動物界にも存在する「地位と寿命」の関係</h2>
+  <ul class="opt-a-list">
+    <li><strong>サルの研究：</strong> 群れの中での地位が低いサルは、高いサルに比べて<strong>免疫機能が低い</strong>。</li>
+    <li><strong>リーダーの転落：</strong> 元々リーダーだったサルを意図的に地位の低い群れに移すと、十分な食料や医療があっても<strong>寿命が格段に短くなった</strong>。</li>
+    <li><strong>本能としての比較：</strong> 1954年に心理学者レオン・フェスティンガーが提唱した通り、人間には「自分を正確に評価したい」という<strong>本能的欲求</strong>があり、比較を完全にやめるのは難しい。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 メンタルを守る「比べ方」の技術</h2>
+  <p>比較が避けられないのであれば、その「方向」をコントロールすることが重要です。</p>
+  <ul class="opt-a-list">
+    <li><strong>上方比較（Upward Comparison）：</strong> 自分より優れた人と比べる。
+      <ul>
+        <li>メリット：モチベーション向上、向上心の源泉。</li>
+        <li>デメリット：自信喪失、絶望感、心身の不調リスク。</li>
+      </ul>
+    </li>
+    <li><strong>下方比較（Downward Comparison）：</strong> 自分より大変な状況の人と比べる。
+      <ul>
+        <li>メリット：自尊心の維持、幸福感の回復、<strong>風邪を引く率の低下</strong>。</li>
+        <li>活用場面：絶体絶命の時や、挽回のチャンスが少ないと感じる時の「防衛手段」。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 年齢別：後悔を和らげる「心の置き場所」</h2>
+  <p><strong>ローカス・オブ・コントロール（統制の所在）</strong>という概念を用い、年齢に応じた認知の切り替えを推奨しています。</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>対象</th>
+        <th>推奨される思考</th>
+        <th>理由</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>若い人</strong></td>
+        <td><strong>内的統制</strong>（自分の責任）</td>
+        <td>まだ挽回のチャンスがあるため、自責をエネルギーに変えて行動できる。</td>
+      </tr>
+      <tr>
+        <td><strong>高齢の人</strong></td>
+        <td><strong>外的統制</strong>（環境のせい）</td>
+        <td>挽回の機会が限られるため、「運が悪かった」「時代だった」と外に理由を求めることで心身を守る。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 具体的なアクションプラン</h2>
+  <ul class="opt-a-list">
+    <li><strong>環境の遮断：</strong> 比較の種となるSNS（インスタ、TikTok等）を消す、あるいはスマホから削除してPCのみで見るようにする。</li>
+    <li><strong>コミュニティの選択：</strong> 自分が不当に扱われる場所や、過度な競争を強いられる場所から物理的に離れる。</li>
+    <li><strong>偉人の事例に学ぶ：</strong> 
+      <ul>
+        <li><strong>伊能忠敬：</strong> 55歳から第2の人生で日本地図作成を開始。</li>
+        <li><strong>やなせたかし：</strong> アンパンマンのヒットは50代。</li>
+        <li><strong>カーネル・サンダース：</strong> ケンタッキー創業は60代。</li>
+      </ul>
+      「まだ挽回できる」という感覚を持つことが、上方比較の毒性を弱める。
+    </li>
+  </ul>
+
+  <blockquote>
+    <strong>「Compare is Despair（比較は絶望）」</strong><br>
+    比べることは人間の性（さが）だが、そのメカニズムを知り、時には「下方比較」や「外的統制」を戦略的に使って、自分の血圧と寿命を守りましょう。
+  </blockquote>
+
+</body>
+</html>
