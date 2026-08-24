@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ながらAIラジオ：2026年8月後半のAIニュースまとめ</h1>
+  <p>AIコンサルタントの<strong>うすたく</strong>氏と、メルカリAI推進担当の<strong>早川ゴミ</strong>氏による、2026年8月20日収録のAIニュース振り返りエピソード。OpenRouterの買収やGemini 3.7の感想、AIエージェントによる実務効率化など、インフラから活用術まで幅広くカバーしています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">OpenRouter</span>
+    <span class="opt-a-tag">Stripe</span>
+    <span class="opt-a-tag">ChatGPT Teens</span>
+    <span class="opt-a-tag">Gemini 3.7</span>
+    <span class="opt-a-tag">Manus</span>
+    <span class="opt-a-tag">Mori (AIデバイス)</span>
+    <span class="opt-a-tag">GPT-Work</span>
+    <span class="opt-a-tag">A2A (Agent to Agent)</span>
+    <span class="opt-a-tag">Cerebras</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 OpenRouterがStripeに買収</h2>
+  <ul class="opt-a-list">
+    <li><strong>OpenRouterの役割</strong>：一つのAPIキーで、ChatGPT、Claude、Gemini、Grokなど複数のLLMを統合して利用できるルーティングサービス。</li>
+    <li><strong>Stripeの狙い</strong>：決済インフラだけでなく、AIエージェントが自律的に決済を行うためのインフラ（仮想カード発行など）を強化する動き。</li>
+    <li><strong>開発者のメリット</strong>：複数のAIツールを組み合わせたプロダクト（ManusやNotion AI等）において、一括課金や利用状況の可視化が容易になる。</li>
+    <li><strong>ルーティングの未来</strong>：ユーザーがモデルを都度選ぶのではなく、AI側が最適なモデルを自動選択する「オーケストレーション」の流れが加速している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ChatGPT Teens（13〜17歳向け）の登場</h2>
+  <ul class="opt-a-list">
+    <li><strong>教育的アプローチ</strong>：宿題の答えを即座に出すのではなく、本人が考えながら学べるよう対話でサポートする機能を搭載。</li>
+    <li><strong>思考の重要性</strong>：AIが何でも即答してしまうことで、仕事や学習における「手触り感」や「実感」が失われる懸念についても議論。</li>
+    <li><strong>滑ってる感</strong>：AIによる出力がスムーズすぎて、自分の言葉として馴染まない感覚。登壇資料作成などでは、一部を自分で打ち込むプロセスが重要になる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Gemini 3.7 感想：圧倒的なスピード</h2>
+  <ul class="opt-a-list">
+    <li><strong>爆速の処理</strong>：Gemini 3.7 Flashは他モデルと比較して2〜3倍速く、思考のテンポを崩さない。</li>
+    <li><strong>検索能力の向上</strong>：以前のモデルで見られた「自分自身の最新情報を把握していない」問題が改善され、ウェブ検索を併用した回答が実用的になった。</li>
+    <li><strong>スピード至上主義</strong>：Fable（Claude）などの「じっくり考えるモデル」に慣れすぎたユーザーにとって、GeminiやCerebrasのような爆速モデルは新しい体験となる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Manusの独立とデータ移行の注意</h2>
+  <ul class="opt-a-list">
+    <li><strong>Meta合流の見送り</strong>：Metaへの合流が噂されていたが、結局独立を維持。</li>
+    <li><strong>重要：データ移行期限</strong>：<strong>2026年8月25日</strong>までにデータをエクスポートし、その後再インポートする必要がある。</li>
+    <li><strong>無料キャンペーン</strong>：移行に伴う施策として、8月25日まで完全無料で使い放題となっている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 AIガジェットと実務活用術</h2>
+  
+  <h3>新デバイス「Mori」の注目ポイント</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>特徴</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>充電</strong></td>
+        <td>USB Type-C対応。独自規格ではないため持ち運びが楽。</td>
+      </tr>
+      <tr>
+        <td><strong>データ転送</strong></td>
+        <td>自動転送。手動でエクスポートする手間が一切ない。</td>
+      </tr>
+      <tr>
+        <td><strong>活用法</strong></td>
+        <td>24時間の記録から「5行日記」を自動生成。機密情報を除いて公開可能。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>GPT-Workによる「AI秘書」の進化</h3>
+  <ul class="opt-a-list">
+    <li><strong>人間以上の緻密さ</strong>：PR投稿のハッシュタグ指定など、メールと添付ドキュメント間での表記揺れ（アンダーバーの有無など）を正確に指摘。</li>
+    <li><strong>記事の赤入れ</strong>：取材記事のトーンチェックにおいて、「知識過剰に見えるので表現を弱めるべき」といった高度なフィードバックが可能に。</li>
+    <li><strong>A2A（Agent to Agent）への期待</strong>：日程調整やハッシュタグの確認など、人間を介さずエージェント同士で完結させる世界の理想。</li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+      <!-- Nodes -->
+      <rect x="20" y="70" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="80" y="105" text-anchor="middle" font-size="14" font-weight="bold">ユーザー</text>
+
+      <rect x="220" y="70" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="290" y="105" text-anchor="middle" font-size="14" font-weight="bold">自社エージェント</text>
+
+      <rect x="440" y="70" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="510" y="105" text-anchor="middle" font-size="14" font-weight="bold">先方エージェント</text>
+
+      <!-- Arrows -->
+      <path d="M 140 100 L 210 100" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <path d="M 360 90 L 430 90" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <path d="M 430 110 L 360 110" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+      <text x="400" y="80" text-anchor="middle" font-size="12" fill="#60a5fa">A2A連携</text>
+      <text x="175" y="85" text-anchor="middle" font-size="12" fill="#60a5fa">指示</text>
+
+      <!-- Arrowhead definition -->
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="text-align: center; font-size: 0.85em; color: #60a5fa; margin-top: 10px;">
+      <strong>A2A (Agent to Agent) 構想</strong>：日程調整や詳細確認をエージェント同士で完結させる
+    </p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 その他・雑談</h2>
+  <ul class="opt-a-list">
+    <li><strong>行動力のハック</strong>：考える前に始める。準備期間を作らず衝動的に開始し、後に引けない状況を自ら作る（自分を操り人形にする感覚）。</li>
+    <li><strong>勉強会の重要性</strong>：AI情報の陳腐化は早いため、2週間スパンでの開催が理想。教えたい人は積極的に勉強会を主催すべき。</li>
+    <li><strong>告知</strong>：
+      <ul>
+        <li>うすたく氏：Claude/読書管理術（Obsidian活用）の講座を来週開催。</li>
+        <li>早川ゴミ氏：女子中学生向けワークショップ、および9月に一般向けワークショップを予定。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote>
+    「AIに任せられるのは気持ちいいが、すぐに返ってきすぎると仕事をした実感が薄れる。あえて長く考えさせるモデルに投げたくなるのは、パブロフの犬のような教育かもしれない。」
+  </blockquote>
+
+</body>
+</html>
