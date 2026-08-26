@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【金融版 #01】金（ゴールド）の動向と世界のパワーバランス</h1>
+  <p>
+    本エピソードでは、ステートストリート・グローバル・アドバイザーズのアーロン・チャン氏を迎え、近年歴史的な高値を更新し続ける「金（ゴールド）」の背景を深掘りします。地政学的リスク、中央銀行の戦略変化、そして「ドルの武器化」がもたらす世界のパワーバランスの変容について解説されています。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">ゴールド（金）</span>
+    <span class="opt-a-tag">地政学リスク</span>
+    <span class="opt-a-tag">中央銀行</span>
+    <span class="opt-a-tag">脱ドル（ドルの武器化）</span>
+    <span class="opt-a-tag">外貨準備</span>
+    <span class="opt-a-tag">インフレ</span>
+    <span class="opt-a-tag">ETF</span>
+    <span class="opt-a-tag">ステートストリート</span>
+    <span class="opt-a-tag">グローバルサウス</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 足元のゴールドマーケット動向</h2>
+  <ul class="opt-a-list">
+    <li><strong>歴史的な高騰:</strong> ロシア・ウクライナ戦争開始以降、3年連続で上昇。2023年にはドル建て・円建て共に<strong>60%以上のリターン</strong>を記録（1979年以来の大きな上昇）。</li>
+    <li><strong>短期的な変動要因:</strong> 地政学リスクの高まり、ドル弱含みのトレンド、米国の利下げ期待などが重なり、年初には一時2,600ドル近くまで上昇する加熱感が見られた。</li>
+    <li><strong>現在の逆風:</strong> 中東情勢（イラン等）による原油高・インフレ懸念から「利下げ期待」が「利上げ継続」の読みへ変化。金利を生まない金にとっては短期的な強い逆風となっている。</li>
+    <li><strong>投資家層の変化:</strong> 従来金に投資してこなかった層も、高いパフォーマンスを見て「取り残されないように」と参入するモメンタム投資が増加。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 中央銀行による「戦略的ゴールド買い」の加速</h2>
+  <p>世界の中央銀行が、外貨準備の構成を「ドルから金へ」と大きくシフトさせています。</p>
+  <ul class="opt-a-list">
+    <li><strong>購入量の急増:</strong> ウクライナ戦争前は年間500トン未満だった購入量が、2022年以降は<strong>年間1,000トンを超えるペース</strong>に倍増。</li>
+    <li><strong>外貨準備比率の変化:</strong>
+      <ul>
+        <li>ドルの比率：2000年の約60%から、現在は<strong>約41%</strong>まで低下。</li>
+        <li>金の比率：2000年の約15%から、現在は<strong>約28%</strong>まで上昇。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>区分</th>
+        <th>主な国々</th>
+        <th>ゴールドに対するスタンス</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>先進国</strong></td>
+        <td>G7諸国など</td>
+        <td>保有量を維持。価格が上がってもリバランス（売却）せず持ち続ける。</td>
+      </tr>
+      <tr>
+        <td><strong>新興国</strong></td>
+        <td>中国、トルコ、ポーランド、ロシア等</td>
+        <td>積極的に買い増し。2008年のリーマンショック以降、分散投資として加速。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 「ドルの武器化」と地政学的背景</h2>
+  <p>ゴールド需要の背景には、米国による経済制裁への警戒感があります。</p>
+  
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 200">
+      <!-- Nodes -->
+      <rect x="10" y="70" width="140" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="80" y="105" text-anchor="middle" font-size="14">ロシア資産凍結</text>
+      
+      <path d="M 150 100 L 200 100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+      
+      <rect x="210" y="70" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="290" y="105" text-anchor="middle" font-size="14">ドルの「武器化」を認識</text>
+      
+      <path d="M 370 100 L 420 100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+      
+      <rect x="430" y="70" width="160" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="510" y="105" text-anchor="middle" font-size="14">中立資産（金）へ分散</text>
+
+      <!-- Arrow Marker -->
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+          <path d="M0,0 L0,10 L10,5 Z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>制裁リスクの回避:</strong> ロシアのドル資産が凍結されたことで、他国（特にグローバルサウス）は「米国を敵に回すとドルが使えなくなる」リスクを強く意識。</li>
+    <li><strong>中立性の価値:</strong> 金は「誰の借金でもない（カウンターパーティリスクがない）」資産。自国で現物を保管すれば、他国による差し押さえが困難。</li>
+    <li><strong>流動性の証明:</strong> ロシアが戦争資金調達のために金を売却（主に中国へ）したり、トルコが通貨防衛のために金を活用したりと、有事の際の「使える資産」としての役割が再認識された。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 歴史的背景：通貨価値の希薄化</h2>
+  <ul class="opt-a-list">
+    <li><strong>リーマンショック（2008年）の影響:</strong> 米国等の大規模な量的緩和（お金をばらまく政策）により、通貨の価値が薄まる懸念が台頭。その逃避先として金が注目された。</li>
+    <li><strong>経済成長とインフレ:</strong> 長期的には経済成長に伴い通貨供給量が増える。そのスピードが経済成長を上回るとインフレが起き、相対的に「発行できない」金の価値が上がる。</li>
+    <li><strong>円安の影響:</strong> 日本においては、円の価値が下がる（円安）ことで、円建ての金価格が7年連続で上昇。通貨を円だけに集中させるリスクを回避する手段となっている。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 今後の展望と投資の考え方</h2>
+  <ul class="opt-a-list">
+    <li><strong>中央銀行の意識調査（ワールドゴールドカウンシル）:</strong>
+      <ul>
+        <li>今後5年で「金の準備を増やす」と回答した中央銀行：<strong>84%</strong>（前年70%台から上昇）。</li>
+        <li>今後5年で「ドルの比率が減る」と回答した中央銀行：<strong>74%</strong>。</li>
+      </ul>
+    </li>
+    <li><strong>二極化する世界:</strong> ドルを維持するチームと、ドル以外の決済システム（中国・ロシア等）を模索するチームに分かれ、金はその中立的な架け橋となる。</li>
+    <li><strong>個人投資家へのアドバイス:</strong>
+      <ul>
+        <li>現物購入は手数料（製造コスト等）が高く、特に少額だと割高になる。</li>
+        <li><strong>投資信託やETF（上場投資信託）</strong>を活用することで、少額から低コストで金価格に連動した運用が可能。NISAの成長投資枠に対応したものも多い。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote>
+    「金は利息を生まないが、誰の負債でもない。世界のパワーバランスが変化する中で、中央銀行も個人も『通貨の分散』として金の重要性を再認識している。」
+  </blockquote>
+
+</body>
+</html>
