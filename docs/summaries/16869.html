@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【66-12】戦争・疫病・内乱を背負った哲人皇帝マルクス・アウレリウス</h1>
+  <p>
+    五賢帝時代の最後を飾る皇帝<strong>マルクス・アウレリウス・アントニヌス</strong>の登場。
+    哲学を愛し、静かな生活を望みながらも、ローマ帝国史上最悪級の災厄（戦争、パンデミック、身内の死）が次々と襲いかかる過酷な知政を、ストア哲学の精神でいかに乗り越えたかを解説します。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">マルクス・アウレリウス・アントニヌス</span>
+    <span class="opt-a-tag">自省録</span>
+    <span class="opt-a-tag">ストア哲学</span>
+    <span class="opt-a-tag">アントニヌスの疫病</span>
+    <span class="opt-a-tag">マルコマンニ戦争</span>
+    <span class="opt-a-tag">共同統治（教知帝）</span>
+    <span class="opt-a-tag">ルキウス・ウェルス</span>
+    <span class="opt-a-tag">ガレノス</span>
+    <span class="opt-a-tag">シルクロード交易</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 哲人皇帝の誕生と異例の生い立ち</h2>
+  <ul class="opt-a-list">
+    <li><strong>複雑な名前の変遷</strong>：
+      <ul>
+        <li>誕生時はマルクス・アンニウス・ウェルス（「ウェルス」は真実・誠の意）。</li>
+        <li>養子縁組や親族の死、再婚を繰り返すたびに名前が変わり、最終的に「マルクス・アウレリウス・アントニヌス」となる。</li>
+      </ul>
+    </li>
+    <li><strong>超名家の出身</strong>：
+      <ul>
+        <li>父方の祖父はスペイン出身の大貴族で、皇帝以外では珍しく3回もコンスル（執政官）を務めた実力者。</li>
+        <li>叔母の夫が先代皇帝<strong>アントニヌス・ピウス</strong>という、絵に描いたようなエリート家系。</li>
+      </ul>
+    </li>
+    <li><strong>『自省録』というプライベートな記録</strong>：
+      <ul>
+        <li>公開前提ではなく、自分自身と対話するために書かれた文章が現代まで残っている。</li>
+        <li>「節度と不屈の心を父から学んだ」など、自身の内面や家族への思いが赤裸々に綴られている。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 哲学への傾倒とストイックな教育</h2>
+  <ul class="opt-a-list">
+    <li><strong>「厳かな幼児」</strong>：幼少期から哲学に強い興味を持ち、遊びよりも学びを優先する早熟な子供だった。</li>
+    <li><strong>ストア哲学の実践</strong>：
+      <ul>
+        <li>ギリシャ哲学者に憧れ、豪華な屋敷に住みながら<strong>粗末なマントをまとい地べたで寝る</strong>生活を送り、母親に泣いて止められるほどだった。</li>
+        <li>家庭教師から「呪いや迷信を信じない」「忙しいという言葉を連発しない」「病気の時でも機嫌よくいる」といったストイックな規律を叩き込まれる。</li>
+      </ul>
+    </li>
+    <li><strong>異例のスピード出世</strong>：
+      <ul>
+        <li>16歳で養子に迎えられ、18歳で財務官（クアエストル）、19歳でコンスル（執政官）に就任。</li>
+        <li>本人は権力欲がなく、むしろ皇帝になることに<strong>恐怖と重圧</strong>を感じていた。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ローマ史上初の「共同統治（教知帝）」</h2>
+  <ul class="opt-a-list">
+    <li><strong>二人の皇帝</strong>：義弟の<strong>ルキウス・ウェルス</strong>と共に帝位に就く。</li>
+    <li><strong>権力の分散</strong>：マルクスは哲学を重んじ、一人で全てを抱えることを望まなかったため、軍事や実務を分担する体制を歓迎した。</li>
+    <li><strong>実質的な序列</strong>：法的権限は対等だが、年齢や実績からマルクスが主導権を握る「共同代表」のような形式。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 襲いかかる「三重苦」：戦争・疫病・内乱</h2>
+  <p>平和だったアントニヌス・ピウス時代の「ツケ」が回ってきたかのように、マルクスの代で災厄が爆発する。</p>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 300">
+      <!-- 背景 -->
+      <rect width="600" height="300" fill="#1a1a3e" rx="8" />
+      
+      <!-- 中央：マルクス・アウレリウス -->
+      <rect x="225" y="120" width="150" height="60" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" rx="8" />
+      <text x="300" y="155" text-anchor="middle" font-size="16" font-weight="bold">哲人皇帝マルクス</text>
+
+      <!-- 災厄1：パルティア戦争 -->
+      <rect x="50" y="30" width="140" height="50" fill="rgba(239, 68, 68, 0.1)" stroke="#ef4444" stroke-width="1" rx="8" />
+      <text x="120" y="60" text-anchor="middle" font-size="14">パルティア戦争</text>
+      <path d="M190 65 L240 120" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+      <!-- 災厄2：アントニヌスの疫病 -->
+      <rect x="410" y="30" width="140" height="50" fill="rgba(239, 68, 68, 0.1)" stroke="#ef4444" stroke-width="1" rx="8" />
+      <text x="480" y="60" text-anchor="middle" font-size="14">アントニヌスの疫病</text>
+      <path d="M410 65 L360 120" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+      <!-- 災厄3：ゲルマン人侵入 -->
+      <rect x="50" y="220" width="140" height="50" fill="rgba(239, 68, 68, 0.1)" stroke="#ef4444" stroke-width="1" rx="8" />
+      <text x="120" y="250" text-anchor="middle" font-size="14">マルコマンニ戦争</text>
+      <path d="M190 235 L240 180" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+      <!-- 災厄4：家族・相棒の死 -->
+      <rect x="410" y="220" width="140" height="50" fill="rgba(239, 68, 68, 0.1)" stroke="#ef4444" stroke-width="1" rx="8" />
+      <text x="480" y="250" text-anchor="middle" font-size="14">相棒・妻子・子の死</text>
+      <path d="M410 235 L360 180" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+      <!-- 矢印定義 -->
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h3 class="opt-a-header">1. アントニヌスの疫病（パンデミック）</h3>
+  <ul class="opt-a-list">
+    <li><strong>正体</strong>：天然痘（またはペスト、チフス）と推測される。医学の祖<strong>ガレノス</strong>が記録を残している。</li>
+    <li><strong>被害</strong>：ローマ帝国の人口の10%〜33%（約600万人以上）が死亡したとされる空前の大惨事。</li>
+    <li><strong>世界的連動</strong>：同時期に中国（後漢）でも疫病が流行し、これが「黄巾の乱」や王朝衰退の引き金となった説がある。</li>
+  </ul>
+
+  <h3 class="opt-a-header">2. ゲルマン諸部族の猛攻（マルコマンニ戦争）</h3>
+  <ul class="opt-a-list">
+    <li><strong>多民族の同時侵入</strong>：マルコマンニ人、クアディ人、ロンバルド人、バンダル人など、数えきれないほどの部族が国境を越えて侵入。</li>
+    <li><strong>背景</strong>：平和な時代に力を蓄えていたことに加え、さらに北方のゴート人に押し出される形で南下してきた（民族大移動の前兆）。</li>
+    <li><strong>最前線の皇帝</strong>：軍人経験のなかったマルクスだが、知政の後半はほとんどを戦場で過ごすことになる。</li>
+  </ul>
+
+  <h3 class="opt-a-header">3. 経済危機と皇室財産の共売</h3>
+  <ul class="opt-a-list">
+    <li><strong>収入の激減</strong>：シルクロード交易（関税収入が国家予算の4〜5割）が、ユーラシア規模の動乱によりストップ。</li>
+    <li><strong>財政難への対応</strong>：戦費捻出のため、<strong>皇室の財宝や宝飾品をオークションにかけて売却</strong>し、民衆への負担を抑えようとした。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 悲劇の中での「超人的な精神性」</h2>
+  <ul class="opt-a-list">
+    <li><strong>相次ぐ家族の死</strong>：
+      <ul>
+        <li>14人の子供のうち、成人できたのはわずか6人。</li>
+        <li>共同統治者のルキウス・ウェルス、最愛の妻ファウスティナも戦地で先立つ。</li>
+      </ul>
+    </li>
+    <li><strong>自省録の言葉</strong>：
+      <blockquote>「子供を失うことがありませんように、と祈るのではなく、失うことを恐れないように、と自分に言い聞かせよ」</blockquote>
+      悲しみに飲み込まれそうな自分を、理性（ストア哲学）で必死に繋ぎ止めていた。
+    </li>
+    <li><strong>カシウスの反乱と慈悲</strong>：
+      <ul>
+        <li>シリア総督カシウスが「皇帝死亡」の誤報を信じて反乱を起こすが、マルクスは彼を憎まず、むしろ「慈悲をかける機会を奪われた（カシウスが部下に殺されたこと）」を悲しんだ。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 まとめ：なぜ彼は「賢帝」なのか</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>マルクス・アウレリウスの実態</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>本人の希望</strong></td>
+        <td>静かに哲学を研究し、文学に浸りたい。</td>
+      </tr>
+      <tr>
+        <td><strong>現実の職務</strong></td>
+        <td>絶え間ない戦争の指揮、疫病対策、財政再建。</td>
+      </tr>
+      <tr>
+        <td><strong>身体状況</strong></td>
+        <td>虚弱体質（肺結核、胃潰瘍、偏頭痛）。</td>
+      </tr>
+      <tr>
+        <td><strong>評価の理由</strong></td>
+        <td>最悪の環境下で自暴自棄（ネロ化）せず、義務を全うし続けた点。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p style="text-align: center; margin-top: 30px; color: #a78bfa; font-weight: bold;">
+    次回：『自省録』の内容とストア哲学の深掘り、そして五賢帝時代の終焉へ。
+  </p>
+
+</body>
+</html>
