@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">News Connect：アメリカの対イラン二次制裁とグローバル経済の動向</h1>
+  <p>2026年8月30日配信のエピソード。アメリカによるカナダへの追加関税、中国の人型ロボット技術の躍進、サウジアラビア資金によるフランスでのドラゴンボール・テーマパーク建設、そしてイランに対する強力な「二次制裁」など、一週間の重要ニュースを塩野誠氏と共に深掘りします。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">OpenWork</span>
+    <span class="opt-a-tag">コンサル業界</span>
+    <span class="opt-a-tag">トランプ政権</span>
+    <span class="opt-a-tag">1930年関税法338条</span>
+    <span class="opt-a-tag">人型ロボット</span>
+    <span class="opt-a-tag">第15次五カ年計画</span>
+    <span class="opt-a-tag">ドラゴンボールIP</span>
+    <span class="opt-a-tag">二次制裁</span>
+    <span class="opt-a-tag">気候変動</span>
+    <span class="opt-a-tag">渋谷系</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 オープニング：コンサル業界の口コミと実態</h2>
+  <ul class="opt-a-list">
+    <li><strong>PIVOT「インダストリーマップ」</strong>への出演：コンサル業界特集にて、OpenWorkの大沢社長らとパネルディスカッションを実施。</li>
+    <li><strong>口コミデータの価値</strong>：ポジティブ・ネガティブの分析やランキングは、従来の「就職偏差値（根拠不明なもの）」よりも信頼性が高い。</li>
+    <li><strong>スタートアップの課題</strong>：社員数が少ないため、過去の「ブラック時代」の口コミが数件あるだけで全体の評価が歪んでしまうリスクがある。</li>
+    <li><strong>東大生のコンサル志向</strong>：過熱する人気に対し、AIの台頭を含めた3〜5年後のキャリアの持続性を考える必要がある。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 月曜：アメリカ・カナダ間の貿易摩擦</h2>
+  <ul class="opt-a-list">
+    <li><strong>50%の追加関税発動</strong>：トランプ政権がカナダからの輸入品に対し強硬措置。乳製品市場の開放や自動車貿易の優遇を迫る狙い。</li>
+    <li><strong>1930年関税法338条</strong>：大統領が「不当かつ差別的」と判断した場合に一方的に課せる強力な権限を行使。</li>
+    <li><strong>サプライチェーンへの打撃</strong>：北米で統合されていた鉄鋼、アルミニウム、自動車部品、農産物の流れに大きな亀裂。</li>
+    <li><strong>カナダの報復</strong>：約900品目に対して報復関税を検討。ハチミツや魚介類なども対象に含まれる。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 火曜：中国の人型ロボット技術の急速な進化</h2>
+  <ul class="opt-a-list">
+    <li><strong>100m走で世界記録更新</strong>：中国製ロボット「天候ウルトラ」が9.39秒を記録。ウサイン・ボルトの記録（9.58秒）を上回る。</li>
+    <li><strong>国家戦略としての推進</strong>：第15次五カ年計画でAIロボットを未来産業に指定。2026年末までに1万台の商業利用を目指す。</li>
+    <li><strong>サプライチェーンの独占</strong>：ロボットに不可欠な<strong>磁石</strong>などの部品供給網を中国がほぼ独占。</li>
+    <li><strong>相互依存の現状</strong>：中国なしでは作れないが、中国だけでも（日米のチップや精密部品なしでは）高性能なものは作れないという複雑な構造。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 水曜：フランスに「ドラゴンボール」テーマパーク建設</h2>
+  <ul class="opt-a-list">
+    <li><strong>サウジアラビアによる巨額投資</strong>：総事業費60億ユーロ（約1兆1000億円）。パリ近郊に建設予定。</li>
+    <li><strong>IP（知的財産）の経済圏</strong>：ドラゴンボールという強力なIPを核に、ホテル、レストラン、雇用（22,000人）を創出する「目的地」ビジネス。</li>
+    <li><strong>サウジの戦略</strong>：石油依存からの脱却を目指し、世界的なIPに投資して「未来にお金を生むガチョウ」を確保する狙い。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 木曜：イランに対する「二次制裁」の衝撃</h2>
+  <p>アメリカが実施した「二次制裁」の仕組みを以下の図で示します。</p>
+
+  <svg width="100%" viewBox="0 0 600 220" style="background: #1a1a3e; border-radius: 8px; margin: 1em 0;">
+    <!-- Nodes -->
+    <rect x="20" y="70" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="80" y="105" text-anchor="middle" font-size="14" font-weight="bold">アメリカ</text>
+
+    <rect x="240" y="70" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="300" y="105" text-anchor="middle" font-size="14" font-weight="bold">第三国・企業</text>
+    <text x="300" y="122" text-anchor="middle" font-size="11">(中国・香港等)</text>
+
+    <rect x="460" y="70" width="120" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+    <text x="520" y="105" text-anchor="middle" font-size="14" font-weight="bold">イラン</text>
+
+    <!-- Arrows -->
+    <line x1="140" y1="100" x2="230" y2="100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+    <line x1="360" y1="100" x2="450" y2="100" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+
+    <!-- Labels -->
+    <text x="185" y="85" text-anchor="middle" font-size="12" fill="#60a5fa">制裁の圧力</text>
+    <text x="405" y="85" text-anchor="middle" font-size="12" fill="#60a5fa">取引の禁止</text>
+    <text x="300" y="160" text-anchor="middle" font-size="12" fill="#f59e0b">従わない場合は米金融システムから排除</text>
+
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+      </marker>
+    </defs>
+  </svg>
+
+  <ul class="opt-a-list">
+    <li><strong>二次制裁（セカンダリー・サンクション）</strong>：イランと取引を行う第三国の企業も制裁対象とする。米国の金融システム（ドル決済、クレジットカード等）から排除される。</li>
+    <li><strong>対象分野</strong>：デジタル資産（仮想通貨）、テクノロジー、金、航空、海運の5分野。</li>
+    <li><strong>経済的追放作戦</strong>：ベッセント財務長官の言葉。イラン産原油の9割を輸入する中国を強く牽制。</li>
+    <li><strong>中国の反発</strong>：「国際法に基づかない一方的な制裁」と批判。来月の米中首脳会談への影響が懸念される。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 金曜：ネパール・中国国境での大規模洪水</h2>
+  <ul class="opt-a-list">
+    <li><strong>氷河湖決壊洪水（GLOF）</strong>：温暖化により溶けないはずの氷河が溶け、自然のダムが形成・決壊。巨大な鉄砲水が発生。</li>
+    <li><strong>甚大な被害</strong>：死者約270人、行方不明1400人以上。日本人5名も行方不明者に含まれる。</li>
+    <li><strong>気候変動の現実</strong>：10〜15年前から警告されていた事態が、居住可能な地域を奪う形で顕在化している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 DJコーナー：リバイバルと渋谷系の系譜</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>アーティスト / プロジェクト</th>
+        <th>楽曲名</th>
+        <th>トピックス</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Sweet Robots Against The Machine</strong></td>
+        <td>Duck Time (DAKI TIME)</td>
+        <td>テイト・オア、砂原義則、バカリズムのユニット。ボーカルは夏帆。8年前のAIによるMVが特徴。</td>
+      </tr>
+      <tr>
+        <td><strong>フリッパーズ・ギター</strong></td>
+        <td>サマービューティー 1990</td>
+        <td>小山田圭吾、小沢賢治らが在籍した渋谷系の象徴的バンド。</td>
+      </tr>
+      <tr>
+        <td><strong>HALCALI (ハルカリ)</strong></td>
+        <td>お疲れ様</td>
+        <td>2003年の曲が昨年TikTok経由で米国・旧共産圏で大バズり。再生回数47億回を記録。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <blockquote>
+    「お金は無色透明。強いIP（ドラゴンボール）があれば、世界中から巨額の資金を集めて新しい価値を生み出せる。一方で、そのお金の流れを止める制裁は、国家を完全に締め上げる力を持つ。」
+  </blockquote>
+
+</body>
+</html>
