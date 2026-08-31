@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【66-13】皇帝だってメンタルケア！『自省録』に込めた心の処方箋</h1>
+  <p>
+    五賢帝最後の皇帝<strong>マルクス・アウレリウス</strong>が、過酷な戦場での日々の中で自らを律するために書き綴った手記<strong>『自省録』</strong>を深掘りします。
+    彼が傾倒した<strong>ストア派哲学</strong>の教えと、完璧な皇帝としてではなく「悩み、葛藤する一人の人間」としての生々しい内面を整理します。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">マルクス・アウレリウス</span>
+    <span class="opt-a-tag">自省録</span>
+    <span class="opt-a-tag">ストア派哲学</span>
+    <span class="opt-a-tag">マルコマンニ戦争</span>
+    <span class="opt-a-tag">ロゴス</span>
+    <span class="opt-a-tag">アパティア（不動心）</span>
+    <span class="opt-a-tag">コスモポリタン</span>
+    <span class="opt-a-tag">ペルソナ</span>
+    <span class="opt-a-tag">ガレノス</span>
+    <span class="opt-a-tag">アヘン</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 『自省録』の成立背景と性質</h2>
+  <ul class="opt-a-list">
+    <li><strong>執筆環境：</strong> 晩年の約20年間、絶え間なく続いた<strong>マルコマンニ戦争</strong>の陣中で書かれた。</li>
+    <li><strong>執筆の目的：</strong> 誰かに見せるためではなく、自分自身を励まし、律するための<strong>個人的なメモ（主記）</strong>。
+      <ul>
+        <li>体系的な教訓ではなく、その時々の思索や引用、自分への叱咤激励が脈絡なく綴られている。</li>
+        <li>自分を「お前」と呼び、自問自答するスタイルが特徴。</li>
+      </ul>
+    </li>
+    <li><strong>使用言語：</strong> ローマ人でありながら<strong>ギリシャ語</strong>で執筆。
+      <ul>
+        <li>当時の哲学用語がギリシャ語に豊富だったため。</li>
+        <li>あるいは、周囲の人間に容易に読まれないようにするためとも推測される。</li>
+      </ul>
+    </li>
+    <li><strong>後世への影響：</strong> フリードリヒ大王など、同じように重責を担い苦悩した指導者たちに愛読されてきた。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 ストア派哲学の基本概念</h2>
+  <p>マルクスの思考のベースにある「ストア派」の考え方を整理します。</p>
+  <ul class="opt-a-list">
+    <li><strong>徳（アレテー）こそが幸福の鍵：</strong> 自精神、勇気、正義、知恵を重視する。</li>
+    <li><strong>ロゴス（宇宙の理）：</strong> 宇宙は一定の秩序で動いており、人間もその一部であるという考え。
+      <ul>
+        <li>神々（あるいは宇宙）が全体にとって最善の秩序を決めていると信じる。</li>
+        <li>自分にとって不条理な出来事も、宇宙全体の大きな流れ（宿命）の一部として受け入れる。</li>
+      </ul>
+    </li>
+    <li><strong>アパティア（不動心）：</strong> 感情（パトス）に振り回されず、理性を保つ状態。</li>
+    <li><strong>コスモポリタン（世界市民）：</strong> 宇宙と同じ法則を共有する人間は、国を問わず皆同胞であるという視点。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 人格の4つの階層（ペルソナ）</h2>
+  <p>ストア派では、人間が持つ「人格」を以下の4つに分類して分析しました。</p>
+  
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 220">
+      <!-- Persona 1 -->
+      <rect x="10" y="10" width="130" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="75" y="45" text-anchor="middle" font-size="14" font-weight="bold">普遍的</text>
+      <text x="75" y="65" text-anchor="middle" font-size="12">人間共通の性質</text>
+      
+      <!-- Persona 2 -->
+      <rect x="155" y="10" width="130" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="220" y="45" text-anchor="middle" font-size="14" font-weight="bold">個別的</text>
+      <text x="220" y="65" text-anchor="middle" font-size="12">個性・身体的特徴</text>
+      
+      <!-- Persona 3 -->
+      <rect x="300" y="10" width="130" height="80" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="365" y="45" text-anchor="middle" font-size="14" font-weight="bold">偶然的</text>
+      <text x="365" y="65" text-anchor="middle" font-size="12">地位・財産・運</text>
+      
+      <!-- Persona 4 -->
+      <rect x="445" y="10" width="145" height="80" rx="8" fill="rgba(139, 92, 246, 0.4)" stroke="#10b981" stroke-width="2"/>
+      <text x="517" y="45" text-anchor="middle" font-size="14" font-weight="bold">選択的</text>
+      <text x="517" y="65" text-anchor="middle" font-size="12">自らの意志・選択</text>
+
+      <!-- Connection line -->
+      <path d="M 10 130 H 590" stroke="#60a5fa" stroke-width="2" stroke-dasharray="4"/>
+      <text x="300" y="160" text-anchor="middle" font-size="14" fill="#60a5fa">「選択的ペルソナ」にのみ集中することが幸福への道</text>
+      <text x="300" y="185" text-anchor="middle" font-size="12">（変えられない運命を嘆かず、自分の受け取り方を選ぶ）</text>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 『自省録』にみるマルクスの葛藤と「心の処方箋」</h2>
+  <ul class="opt-a-list">
+    <li><strong>「できない自分」への叱咤：</strong>
+      <ul>
+        <li>彼は決して「最初から立派な人」だったわけではない。<strong>怒りっぽく、朝起きるのが辛く、仕事が嫌になる</strong>自分を、理性で必死に抑え込もうとしていた。</li>
+      </ul>
+    </li>
+    <li><strong>対人関係のストレス：</strong>
+      <blockquote>「私は今日もおせっかいで恩知らずの、傲慢な、偽善的な、妬み深い人間と出会うだろう」</blockquote>
+      <ul>
+        <li>周囲の人間への嫌悪感を隠さず書きつつも、「彼らも無知ゆえに過ちを犯しているだけであり、同じ理性を共有する同胞として許さねばならない」と自分に言い聞かせている。</li>
+      </ul>
+    </li>
+    <li><strong>皇帝としての孤独：</strong>
+      <ul>
+        <li>「皇帝化（権力に染まること）」を極端に恐れ、自分の内面にある「ささやかな土地（理性）」に隠れ住むことを理想とした。</li>
+      </ul>
+    </li>
+    <li><strong>死と現在への視点：</strong>
+      <ul>
+        <li>死は「自然の営み」であり、滝が流れるのと同じ。恐れる必要はない。</li>
+        <li>人間が失えるのは<strong>「現在」</strong>という一瞬だけであり、過去や未来を失うことはできない。だから今この瞬間に集中せよと説く。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 哲人皇帝の壮絶な最期</h2>
+  <ul class="opt-a-list">
+    <li><strong>心身の衰弱：</strong> 長年の前線生活、過労、不眠、偏頭痛に悩まされていた。
+      <ul>
+        <li>名医<strong>ガレノス</strong>から処方された<strong>アヘン</strong>を服用しながら執務をこなしていた。</li>
+        <li>美食のローマ文化の中で、一日一食という極めて小食な生活を貫いた。</li>
+      </ul>
+    </li>
+    <li><strong>最期の言葉：</strong> 58歳で病没（現在のウィーン近郊）。
+      <blockquote>「登る太陽の元へ行け、既に私は沈みつつある故」</blockquote>
+    </li>
+    <li><strong>後継者コンモドゥス：</strong>
+      <ul>
+        <li>マルクスが死ぬまで戦い続けたマルコマンニ戦争を、息子コンモドゥスは即位後すぐに講和して切り上げ、ローマへ帰還した。</li>
+        <li>この対照的な姿勢が、五賢帝時代の終焉を象徴することになる。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 まとめ：マルクス・アウレリウスの偉大さ</h2>
+  <table>
+    <tr>
+      <th>項目</th>
+      <th>内容</th>
+    </tr>
+    <tr>
+      <td><strong>人間性</strong></td>
+      <td>非常にストイックで、自己批判的。弱さを自覚し、それを理性で克服しようとし続けた。</td>
+    </tr>
+    <tr>
+      <td><strong>統治姿勢</strong></td>
+      <td>私欲がなく、帝国の安寧のために自己を犠牲にして前線に留まり続けた。</td>
+    </tr>
+    <tr>
+      <td><strong>思想的到達点</strong></td>
+      <td>仏教の「悟り」やキリスト教の「隣人愛」にも通じる、普遍的な精神の境地に達していた。</td>
+    </tr>
+    <tr>
+      <td><strong>歴史的評価</strong></td>
+      <td>「執着を捨てろ」と言った彼の言葉が、1800年経った今も世界中で読み継がれているという皮肉な逆説。</td>
+    </tr>
+  </table>
+
+</body>
+</html>
