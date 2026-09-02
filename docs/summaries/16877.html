@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ヒューマノイド最前線 #021 整理資料</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">#021 | 2026年9月号 ヒューマノイド最新ニュース</h1>
+  <p>
+    株式会社プレイロボティクスの高地氏と横山氏が、2024年8月後半から9月にかけてのヒューマノイドロボット業界の最新動向を解説。自社の新プロジェクトから、北京で開催された世界大会、海外企業の技術的進展、そして法規制の課題まで、多岐にわたるトピックを整理しています。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">株式会社プレイロボティクス</span>
+    <span class="opt-a-tag">Unitree G1</span>
+    <span class="opt-a-tag">株式会社格一</span>
+    <span class="opt-a-tag">リバースピッチ</span>
+    <span class="opt-a-tag">世界ヒューマノイドロボット運動会</span>
+    <span class="opt-a-tag">Figure</span>
+    <span class="opt-a-tag">安藤ハザマ</span>
+    <span class="opt-a-tag">Xiaomi</span>
+    <span class="opt-a-tag">フィジカルAI</span>
+    <span class="opt-a-tag">ATOM</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 プレイロボティクスの最新動向</h2>
+  <ul class="opt-a-list">
+    <li><strong>ヒューマノイドが「新卒採用」として入社</strong>
+      <ul>
+        <li><strong>導入先：</strong>株式会社格一（3つのグループ会社）</li>
+        <li><strong>機体：</strong>Unitree G1</li>
+        <li><strong>氏名：</strong>宮沢野亜（みやざわ のあ）さん</li>
+        <li><strong>形態：</strong>2025年4月の入社式に他の新入社員と共に出席予定。</li>
+        <li><strong>目的：</strong>「新卒は最初は仕事ができない」という前提に立ち、2〜3年かけて業務を覚えさせる。同時に、教える側の社員を「フィジカルAIエンジニア」として育成する。</li>
+      </ul>
+    </li>
+    <li><strong>リバースピッチ型ハッカソンの開催</strong>
+      <ul>
+        <li><strong>パートナー：</strong>富士通、GMO AI &amp; ROBOTICS</li>
+        <li><strong>手法：</strong>大企業（東急不動産、エバラ製作所）が課題を提示し、エンジニアが解決策を提案する「リバースピッチ」形式。</li>
+        <li><strong>支援：</strong>GMOがUnitree G1（約700万円）を2台提供し、富士通のコミュニティ「VvV（Vis）」でエンジニアが無料で触れる環境を構築。</li>
+      </ul>
+    </li>
+    <li><strong>低価格コンシューマー向けロボットの開発</strong>
+      <ul>
+        <li>首から下げて持ち運べるような、個人向けの低価格ロボットが完成間近。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 120">
+      <!-- Nodes -->
+      <rect x="10" y="35" width="140" height="50" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="80" y="65" text-anchor="middle" font-size="14">大企業が課題提示</text>
+      
+      <line x1="150" y1="60" x2="210" y2="60" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      
+      <rect x="220" y="35" width="160" height="50" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="300" y="65" text-anchor="middle" font-size="14">エンジニアが開発</text>
+      
+      <line x1="380" y1="60" x2="440" y2="60" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      
+      <rect x="450" y="35" width="140" height="50" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="520" y="65" text-anchor="middle" font-size="14">実課題の解決</text>
+
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="text-align: center; font-size: 0.8em; color: #a78bfa;">リバースピッチの仕組み：ニーズ先行型の開発フロー</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 世界ヒューマノイドロボット運動会（北京）</h2>
+  <ul class="opt-a-list">
+    <li><strong>大会規模：</strong>5日間の開催、16カ国、666チーム、2056台のロボットが参加。</li>
+    <li><strong>衝撃の記録：</strong>小型ヒューマノイドが100m走などで<strong>ウサイン・ボルトを超える速度</strong>を記録。</li>
+    <li><strong>独自の走行フォーム：</strong>強化学習の結果、人間とは異なる「腕を横に振る」独特の走り方（進撃の巨人の奇行種のような動き）を獲得。</li>
+    <li><strong>意義：</strong>
+      <ul>
+        <li>人間の発想（ローカルな最適解）を超えた「真の最適解」をAIが見つけ出した事例。</li>
+        <li>「速さ」という分かりやすい指標で一般層への認知と市場拡大に貢献。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 技術的ブレイクスルー：複雑な動作の実現</h2>
+  <ul class="opt-a-list">
+    <li><strong>Figure（米）：はしご登りの成功</strong>
+      <ul>
+        <li>2足歩行の制御に加え、両手両足の4点で体重を支え、重心を移動させる高度な制御を実装。</li>
+        <li>工場や電柱などの既存インフラでの作業可能性を広げた。</li>
+      </ul>
+    </li>
+    <li><strong>安藤ハザマ × 神戸高専：重機操作</strong>
+      <ul>
+        <li>Unitree G1に油圧ショベルを操作させる共同研究。</li>
+        <li>専用の自動運転重機を作るのではなく、<strong>「既存の重機にロボットを乗せて操作させる」</strong>アプローチ。</li>
+        <li>物流トラックの運転など、既存資産をそのまま活用できる可能性。</li>
+      </ul>
+    </li>
+    <li><strong>Xiaomi（中）：4ヶ月の工場インターン</strong>
+      <ul>
+        <li>ナット締め作業の精度が<strong>90.2%から98%へ向上</strong>。</li>
+        <li>「導入して終わり」ではなく、現場で学習し成長するプロセスを証明。</li>
+        <li>1台が学んだ知見を全機体にコピーできる「多重影分身」的なスケーラビリティが強み。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 社会実装の壁：航空機への持ち込み禁止</h2>
+  <p>アメリカの主要航空4社（アメリカン、ユナイテッド、デルタ、サウスウェスト）がヒューマノイドの客室内持ち込みを禁止。背景には以下の課題がある：</p>
+  <table>
+    <thead>
+      <tr>
+        <th>課題項目</th>
+        <th>詳細</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>バッテリー容量</strong></td>
+        <td>160Wを超える大型バッテリーは発火時の対応が困難。</td>
+      </tr>
+      <tr>
+        <td><strong>法的区分</strong></td>
+        <td>「精神的サポート動物」などの既存カテゴリーに該当しない。</td>
+      </tr>
+      <tr>
+        <td><strong>社会の受容性</strong></td>
+        <td>実際に隣の席に乗せようとするユーザーが現れ、ルール整備が急務となった。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 日本国内の注目ニュース</h2>
+  <ul class="opt-a-list">
+    <li><strong>ATOMの大型資金調達：</strong>シードラウンドで約30億円を調達。</li>
+    <li><strong>日本精工（NSK）との提携：</strong>国産部品にこだわったヒューマノイド開発を推進。</li>
+    <li><strong>戦略的意義：</strong>中国がコストとシェアで圧倒する中、日本の精密技術と安全性、機能性を武器に「国産ヒューマノイド」の勝ち筋を模索。</li>
+  </ul>
+
+  <blockquote>
+    <strong>まとめ：</strong> ヒューマノイドはもはや「未来の話」ではなく、新卒採用や工場インターン、重機操作といった「具体的な現場」での試行錯誤が始まるフェーズに突入している。
+  </blockquote>
+
+</body>
+</html>
