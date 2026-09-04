@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">【西田幾多郎9】世界を見る視点を反転させる「場所の理論」</h1>
+  <p>西田幾多郎が「善の研究」から約20年の歳月を経て到達した、西田哲学の代名詞とも言える<strong>「場所」</strong>の概念について解説する回です。西洋哲学の伝統的な論理を反転させ、自己と世界を包み込む「場」の視点から捉え直す、思想の大きな転換点が語られます。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">西田幾多郎</span>
+    <span class="opt-a-tag">場所の論理</span>
+    <span class="opt-a-tag">術語の論理</span>
+    <span class="opt-a-tag">アリストテレス</span>
+    <span class="opt-a-tag">主語の論理</span>
+    <span class="opt-a-tag">働くものから見るものへ</span>
+    <span class="opt-a-tag">真正の自己</span>
+    <span class="opt-a-tag">絶対無</span>
+    <span class="opt-a-tag">主客未分</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 西田哲学のターニングポイント「場所」</h2>
+  <ul class="opt-a-list">
+    <li><strong>到達時期：</strong> 京都大学在籍のラスト数年（1926年〜1927年頃）。41歳で京大に入り、退官間際の50代後半で行き着いた。</li>
+    <li><strong>重要論文：</strong> 「働くものから見るものへ」。この論文以降、彼の思想は「西田哲学」として世界的に認知されるようになる。</li>
+    <li><strong>西田自身の言葉：</strong> 「場所の考えに至ったことで、ようやく自分の考えを論理化する端緒を得た」と語っており、自身の思想を体系化する上での決定的な鍵となった。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 なぜ「自覚」だけでは不十分だったのか</h2>
+  <p>前回のキーワード「自覚（自己が自己を見る）」には、西田にとってまだ解決すべき課題が残っていた。</p>
+  <ul class="opt-a-list">
+    <li><strong>主観主義（心理主義）の懸念：</strong> 「自己が自己を見る」という表現は、個人の心の中だけの出来事のように聞こえてしまい、客観的な哲学としての広がりが弱かった。</li>
+    <li><strong>主客の分離：</strong> 「自己が（主語）」「自己を（目的語）」と分けることで、西田が最も嫌った「主語と客語の分離」が微妙に残ってしまっていた。</li>
+    <li><strong>解決策としての表現：</strong> 「自己が<strong>自己において</strong>自己を見る」。この「〜において」という部分が「場所」を指している。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 西洋と東洋の論理的対比：主語 vs 術語</h2>
+  <p>西田は、西洋哲学の祖であるアリストテレスの論理を「反転」させることで、独自の「場所の論理」を構築した。</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>比較項目</th>
+        <th>アリストテレス（西洋）</th>
+        <th>西田幾多郎（東洋・場所）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>論理の名称</strong></td>
+        <td>主語の論理</td>
+        <td>術語の論理</td>
+      </tr>
+      <tr>
+        <td><strong>着目点</strong></td>
+        <td><strong>基体（個物）</strong>：変わらない「もの」</td>
+        <td><strong>場所（一般者）</strong>：包み込む「場」</td>
+      </tr>
+      <tr>
+        <td><strong>視点</strong></td>
+        <td>個物が属性（性質）を持っている</td>
+        <td>個物は大きな術語の中に包まれている</td>
+      </tr>
+      <tr>
+        <td><strong>例</strong></td>
+        <td>「この鳥」が主役。性質は後付け。</td>
+        <td>「鶏である」「生物である」という場が主役。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 「術語の論理」による包含構造</h2>
+  <p>個別の事象を、より大きな概念（術語）が包み込んでいくプロセスを「場所」と捉える。</p>
+
+  <div class="diagram-container">
+    <svg width="100%" height="200" viewBox="0 0 500 200">
+      <!-- 外側の円（生物） -->
+      <circle cx="250" cy="100" r="90" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" stroke-width="2" />
+      <text x="250" y="30" text-anchor="middle" font-size="14">生物（より大きな場所）</text>
+      
+      <!-- 中間の円（鶏） -->
+      <circle cx="250" cy="110" r="60" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2" />
+      <text x="250" y="70" text-anchor="middle" font-size="14">鶏（術語の場所）</text>
+      
+      <!-- 内側の円（この鳥） -->
+      <circle cx="250" cy="125" r="30" fill="rgba(96, 165, 250, 0.3)" stroke="#60a5fa" stroke-width="2" />
+      <text x="250" y="130" text-anchor="middle" font-size="14" font-weight="bold">この鳥</text>
+      <text x="250" y="145" text-anchor="middle" font-size="12">（個物）</text>
+    </svg>
+    <p style="font-size: 0.85em; color: #a78bfa;">図：個物がより一般的な術語（場所）に包まれていく構造</p>
+  </div>
+
+  <ul class="opt-a-list">
+    <li><strong>包摂の連鎖：</strong> 「この鳥」は「鶏」という場所にあり、「鶏」は「動物」という場所にあり、「動物」は「生物」という場所にある。</li>
+    <li><strong>究極の場所：</strong> この包摂を極限まで突き詰めると、すべてを包み込む<strong>「絶対無の場所」</strong>に行き着く。</li>
+    <li><strong>視点の反転：</strong> 自分がカメラを持って世界を見ているのではなく、すべてを包み込む「ドーム（場所）」の中に自分が存在し、そこで現象が起きていると考える。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 「場所」の二段階の理解</h2>
+  <p>番組内で整理された、場所概念を理解するための2つのステップ。</p>
+  <ul class="opt-a-list">
+    <li><strong>レベル1：私という場所（自覚の場）</strong>
+      <ul>
+        <li>自分の喜びや悲しみ、経験が投影される「スクリーン」や「シアター」のようなもの。</li>
+        <li>「私」とは、心や肉体そのものではなく、それらが現れる「場」自体である。</li>
+      </ul>
+    </li>
+    <li><strong>レベル2：世界とつながる場所（絶対無の場所）</strong>
+      <ul>
+        <li>術語を広げていくと、私という場所と他者という場所は、根底で一つの大きな場所に繋がっている。</li>
+        <li>これにより、個人の主観を超えて、他者、社会、歴史、そして宇宙全体との繋がりを論理的に説明できるようになった。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote>
+    「事故（自己）は事故の中に事故を写すのである。事故の事故の内容を写す鏡はまた事故自身でなければならん」<br>
+    ── 西田幾多郎（番組内での引用）
+  </blockquote>
+
+  <h2 class="opt-a-section-title">📌 まとめ：場所の理論がもたらしたもの</h2>
+  <ul class="opt-a-list">
+    <li><strong>主客合一の論理化：</strong> 「見るもの」と「見られるもの」が分かれる前の、根源的な「場」を定義した。</li>
+    <li><strong>自己の根拠：</strong> 自分がどこに「置いてある（所属している）」のかという基盤を意識させる。</li>
+    <li><strong>世界への広がり：</strong> 単なる個人の内面哲学から、世界や歴史を語るための壮大なフレームワークへと進化した。</li>
+  </ul>
+
+</body>
+</html>
