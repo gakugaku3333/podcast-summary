@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1em 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">ながらAIラジオ：2026年9月4日エピソード</h1>
+  <p>AIコンサルタントのうすたく氏と、メルカリAI推進担当の早川五味氏が、激動の1週間を振り返る。GPT-6 Astra、Fable 5.1、Gemini 3.8といった主要モデルの同時期アップデートに加え、ナイジェリアや深センへの渡航、AIによる開発体験の変化について語る。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">GPT-6 Astra</span>
+    <span class="opt-a-tag">Fable 5.1</span>
+    <span class="opt-a-tag">Gemini 3.8</span>
+    <span class="opt-a-tag">Hugging Face買収</span>
+    <span class="opt-a-tag">3D生成</span>
+    <span class="opt-a-tag">AGI</span>
+    <span class="opt-a-tag">ナイジェリア</span>
+    <span class="opt-a-tag">深セン</span>
+    <span class="opt-a-tag">Vibe Coding</span>
+    <span class="opt-a-tag">せいろ蒸し</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 GPT-6 Astra：3D生成とAGIへの接近</h2>
+  <ul class="opt-a-list">
+    <li><strong>リリースの概要</strong>：一部ユーザーに先行展開中。数日以内にPlus、Pro、Business、Enterpriseユーザーへ提供予定。</li>
+    <li><strong>3D生成能力の飛躍</strong>：
+      <ul>
+        <li>複数枚の写真から高精度な<strong>3Dモデル（Blender対応）</strong>を生成可能。</li>
+        <li>シムシティやフォールガイズのような有名ゲームのクローンを生成できるレベルのクオリティ。</li>
+      </ul>
+    </li>
+    <li><strong>AGI（汎用人工知能）説</strong>：ベンチマークや実用感から「これまでで最もAGIに近い」との評価が相次いでいる。</li>
+    <li><strong>ネーミングの変遷</strong>：
+      <ul>
+        <li>OpenAIは宇宙系のコードネームを採用。SOL（太陽）、Terra（大地）、Luna（月）に続き、<strong>Astra（星々）</strong>が登場。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" height="120" viewBox="0 0 600 120">
+      <!-- Nodes -->
+      <rect x="10" y="40" width="120" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="70" y="65" text-anchor="middle" font-size="14">SOL (太陽)</text>
+      
+      <path d="M 130 60 L 160 60" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" />
+      
+      <rect x="160" y="40" width="120" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="220" y="65" text-anchor="middle" font-size="14">Terra (大地)</text>
+      
+      <path d="M 280 60 L 310 60" stroke="#60a5fa" stroke-width="2" />
+      
+      <rect x="310" y="40" width="120" height="40" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" />
+      <text x="370" y="65" text-anchor="middle" font-size="14">Luna (月)</text>
+      
+      <path d="M 430 60 L 460 60" stroke="#60a5fa" stroke-width="2" />
+      
+      <rect x="460" y="30" width="130" height="60" rx="8" fill="rgba(139, 92, 246, 0.4)" stroke="#8b5cf6" stroke-width="3" />
+      <text x="525" y="65" text-anchor="middle" font-size="16" font-weight="bold">Astra (星々)</text>
+      
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+    <p style="font-size: 0.8em; color: #a78bfa;">OpenAI モデル命名規則の宇宙的進化</p>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 Fable 5.1 と「Vibe Coding」の加速</h2>
+  <ul class="opt-a-list">
+    <li><strong>Fable 5.1の進化</strong>：
+      <ul>
+        <li>大量のタスク（10件程度の機能改善など）を一度に依頼しても、自律的に完遂する能力が向上。</li>
+        <li>一発で直らなそうなバグの修正精度が上がっている。</li>
+      </ul>
+    </li>
+    <li><strong>開発スタイルの変化</strong>：
+      <ul>
+        <li><strong>Vibe Coding</strong>：厳密な設計より、AIとの対話でアプリを組み上げる手法が一般化。</li>
+        <li>TikTok等で、AI生成動画やAI生成音楽（Suno等）を組み合わせた個人開発アプリの広告が増加。</li>
+      </ul>
+    </li>
+    <li><strong>サブスクリプションの整理</strong>：
+      <ul>
+        <li>Cursor UltraからProへのダウングレードなど、各社モデルの性能均衡により「無駄な課金」を見直すフェーズへ。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 Gemini 3.8：高速性能と「熊・鮭」への寄り添い</h2>
+  <ul class="opt-a-list">
+    <li><strong>モデル構成</strong>：3.8 Flashが主力。高速かつ安価で、日本語性能も非常に高い。</li>
+    <li><strong>課題：検索機能の不安定さ</strong>：
+      <ul>
+        <li>「検索して教えて」と指示しても、既存知識で回答（ハルシネーション）してしまう傾向がある。</li>
+        <li>Google検索の「AIサマリー」は非常に高精度だが、Geminiアプリ版への統合が不十分。</li>
+      </ul>
+    </li>
+    <li><strong>多様性への対応（？）</strong>：
+      <ul>
+        <li>「私は熊です」「私は鮭です」といったロールプレイに対し、冬眠の準備や産卵ルートの案内など、異常に親切で詳細な回答を行う（通称：熊ファースト）。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>モデル名</th>
+        <th>主な特徴・強み</th>
+        <th>現在の課題</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>GPT-6 Astra</strong></td>
+        <td>圧倒的な3D生成能力、ゲーム制作</td>
+        <td>一般開放が順次展開中</td>
+      </tr>
+      <tr>
+        <td><strong>Fable 5.1</strong></td>
+        <td>自律的な大量タスク処理、バグ修正</td>
+        <td>モデルの安定感に波がある</td>
+      </tr>
+      <tr>
+        <td><strong>Gemini 3.8</strong></td>
+        <td>爆速、低コスト、日本語性能</td>
+        <td>アプリ版のウェブ検索連携が弱い</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 フィジカルAIとグローバル動向</h2>
+  <ul class="opt-a-list">
+    <li><strong>うすたく氏：ナイジェリアへ</strong>：
+      <ul>
+        <li>友人が設立した<strong>フィジカルAI工場</strong>の見学。</li>
+        <li>「稼ぐこと＝社会貢献（食料やインフラ不足の解消）」が直結している環境への関心。</li>
+      </ul>
+    </li>
+    <li><strong>早川五味氏：深センへ</strong>：
+      <ul>
+        <li>ロボット産業の視察。ドローン配達（美団/Meituan等）の実装状況を確認予定。</li>
+      </ul>
+    </li>
+    <li><strong>WEBサイトのAI対応</strong>：
+      <ul>
+        <li>AIが情報を読み取りやすい「For AI」用テキストページの設置が重要（Cloudflareの事例など）。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 健康と自炊：AGI時代を生き抜く身体</h2>
+  <ul class="opt-a-list">
+    <li><strong>せいろ蒸しの推奨</strong>：
+      <ul>
+        <li>早川氏が推奨するミニマル自炊。野菜や肉を重ねて蒸すだけで栄養を逃さず、油も落ちる。</li>
+        <li>メンテナンスも意外と簡単で、ズボラな人にも向いている。</li>
+      </ul>
+    </li>
+    <li><strong>一汁一菜</strong>：
+      <ul>
+        <li>土井善晴氏の提唱するスタイル。具沢山の味噌汁とご飯だけで十分という考え方。</li>
+      </ul>
+    </li>
+    <li><strong>運動</strong>：
+      <ul>
+        <li>うすたく氏はホノルルマラソンに挑戦予定。AIに没頭するあまりの運動不足・首肩の凝りへの対策。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote style="margin-top: 2em;">
+    「AGIに到達し、シンギュラリティが来るまで健康でいよう」
+  </blockquote>
+
+</body>
+</html>
