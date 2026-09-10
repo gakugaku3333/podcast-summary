@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 1em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">#022 Pepperを手がけたプロが語る、フィジカルAI時代に求められる人材と学習とは</h1>
+  <p>
+    元ソフトバンクロボティクスで<strong>Pepper</strong>の事業に深く携わった<strong>山本力弥さん</strong>をゲストに迎え、フィジカルAI（物理世界で動くAI）の最新動向と、日本が今後取るべき戦略、そして求められる人材像について深掘りするエピソードです。
+  </p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">山本力弥</span>
+    <span class="opt-a-tag">RobotMateHub</span>
+    <span class="opt-a-tag">Pepper</span>
+    <span class="opt-a-tag">フィジカルAI</span>
+    <span class="opt-a-tag">ヒューマノイド</span>
+    <span class="opt-a-tag">中国ロボット市場</span>
+    <span class="opt-a-tag">データファクトリー</span>
+    <span class="opt-a-tag">FDE (Forward Deployment Engineer)</span>
+    <span class="opt-a-tag">ロボットカーニバル</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 ゲスト：山本力弥氏の経歴と活動</h2>
+  <ul class="opt-a-list">
+    <li><strong>キャリア背景</strong>：エンジニアではなくビジネス側（コンサルタント）出身。事業会社でロボットビジネスに約10年従事。</li>
+    <li><strong>Pepperとの関わり</strong>：誰もが知る白い受付ロボット「Pepper」の事業に深く関わっていた。</li>
+    <li><strong>RobotMateHubの設立</strong>：約9ヶ月前に立ち上げたコミュニティ。フィジカルAIを学びたいビジネスマン、エンジニア、デザイナーが集まる場を提供。</li>
+    <li><strong>活動目的</strong>：ハード・ソフト・安全性・ビジネスなど多岐にわたるスキルが必要なフィジカルAI領域において、体系的な学びと交流の場を作る。</li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 世界の最新動向：中国と東南アジア</h2>
+  <ul class="opt-a-list">
+    <li><strong>中国（北京）の現状</strong>：
+      <ul>
+        <li>ハードウェアの<strong>コモディティ化</strong>が急速に進行。</li>
+        <li>100〜200社が参加するカンファレンスでは、2足歩行・4足歩行・車輪型・配膳ロボットの「4点セット」をどの会社も自社プロダクトとして展示している。</li>
+        <li>焦点はハードから「質の高い現場データの収集」と「再現性の高いデプロイメント」へシフトしている。</li>
+      </ul>
+    </li>
+    <li><strong>東南アジア（タイ・ベトナム）の可能性</strong>：
+      <ul>
+        <li><strong>データファクトリー</strong>としての位置づけ。日本の製造業が多く進出しており、最先端のオートメーションと現場データが存在する。</li>
+        <li>米中デカップリングの影響を受けにくいフラットな立場として、世界にデータを輸出する拠点になり得る。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 220">
+      <!-- China -->
+      <rect x="20" y="40" width="250" height="140" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" />
+      <text x="145" y="30" text-anchor="middle" font-weight="bold" fill="#a78bfa">中国の現状</text>
+      <text x="40" y="75" font-size="14">・ハードウェアのコモディティ化</text>
+      <text x="40" y="105" font-size="14">・全社がヒューマノイドを所有</text>
+      <text x="40" y="135" font-size="14">・データ収集の効率化へシフト</text>
+      
+      <!-- Arrow -->
+      <path d="M280 110 L320 110" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowhead)" />
+      
+      <!-- Japan/SEA -->
+      <rect x="330" y="40" width="250" height="140" rx="8" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" />
+      <text x="455" y="30" text-anchor="middle" font-weight="bold" fill="#10b981">日本・東南アジアの勝機</text>
+      <text x="350" y="75" font-size="14">・現場の「泥臭い」データの活用</text>
+      <text x="350" y="105" font-size="14">・既存インフラへの適合技術</text>
+      <text x="350" y="135" font-size="14">・データファクトリーとしての輸出</text>
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 日本の課題とフィジカルAIの社会実装</h2>
+  <ul class="opt-a-list">
+    <li><strong>ROI（投資対効果）の壁</strong>：
+      <ul>
+        <li>中小企業の現場は属人性が高く、現在のロボット性能ではそのまま代替するのが難しい。</li>
+        <li>大手（Amazon等）は専用ロボットアームで最適化されており、ヒューマノイドである必要性が低い。</li>
+        <li>現状、日本では「実作業の代替」よりも<strong>「社内エンジニアの育成・教育」</strong>としての導入ニーズが先行している。</li>
+      </ul>
+    </li>
+    <li><strong>現場主義の重要性</strong>：
+      <ul>
+        <li>ソフトウェアエンジニアもリモートワークだけでなく、<strong>「泥臭い現場」</strong>（配線や工場のライン）に足を運ぶべき。</li>
+        <li>製造業のデータはセキュアな環境に閉じているため、自ら取りに行く姿勢が不可欠。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 求められる人材像：ジェネラリストとFDE</h2>
+  <p>フィジカルAI時代には、従来の「ハード」「ソフト」という区分けではない新しい職能が求められています。</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>職種・概念</th>
+        <th>特徴と役割</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>ジェネラリスト</strong></td>
+        <td>黎明期において、ハード・ソフト・安全・ビジネスを一気通貫で理解し、プロジェクトを牽引する人材。</td>
+      </tr>
+      <tr>
+        <td><strong>FDE</strong></td>
+        <td><strong>Forward Deployment Engineer</strong>。現場に入り込み、顧客と対話しながらクイックにAI実装や業務改善を行うエンジニア。</td>
+      </tr>
+      <tr>
+        <td><strong>適合のプロ</strong></td>
+        <td>海外製の優れたハードを、日本の複雑な現場インフラに適合（フィッティング）させる能力。日本人の得意領域。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 エンタメ領域での展開：ロボットカーニバル</h2>
+  <ul class="opt-a-list">
+    <li><strong>プロジェクト概要</strong>：インフルエンサーのクリえみ氏らと共に、生成AIを活用したロボットアニメーションのコンテストを開催。</li>
+    <li><strong>コンセプト</strong>：大友克洋氏の「ロボットカーニバル」をオマージュ。</li>
+    <li><strong>目的</strong>：日本ならではの「人とロボットの関係性」を文化的な側面から発信し、新しいロボットの姿を模索する。</li>
+    <li><strong>スケジュール</strong>：直近でキックオフイベントを実施し、秋口に発表会を予定。</li>
+  </ul>
+
+  <blockquote>
+    「フィジカルAIの勝負は、現場のデータをいかに効率的に取り、再現性高くロボットにデプロイできるかのサイクルにある。日本は現場を知るエンジニアを育成することが急務だ。」
+  </blockquote>
+
+</body>
+</html>
