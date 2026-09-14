@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+      background: #0f0f2a;
+      color: #e8e8f0;
+      line-height: 1.7;
+      padding: 20px;
+      margin: 0;
+      font-size: 15px;
+    }
+    .opt-a-header { color: #a78bfa; font-size: 1.3em; margin-bottom: 0.5em; }
+    .opt-a-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .opt-a-tag {
+      background: rgba(96, 165, 250, 0.15);
+      color: #60a5fa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 500;
+    }
+    .opt-a-section-title {
+      color: #e8e8f0;
+      font-size: 1.05em;
+      padding: 8px 14px;
+      background: rgba(139, 92, 246, 0.15);
+      border-left: 4px solid #8b5cf6;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5em 0 0.6em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .opt-a-list { list-style: none; padding: 0; }
+    .opt-a-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .opt-a-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    .opt-a-list ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+    .opt-a-list ul li::before {
+      content: "・";
+      color: #60a5fa;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    th {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    blockquote {
+      border-left: 4px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      margin: 1em 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #d4d4e8;
+    }
+    svg text { fill: #e8e8f0; font-family: -apple-system, sans-serif; }
+    .diagram-container {
+      background: #1a1a3e;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="opt-a-header">健康経営と生産性の新常識【運動編05】ゲスト：甲斐裕子先生</h1>
+  <p>明治安田厚生事業団体力医学研究所の甲斐裕子先生を迎え、職場における「座りすぎ防止」と「運動支援」が企業にもたらす経済的メリットや、具体的な導入手法について解説するエピソードです。個人の意志に頼らず、環境と制度で健康を支える「健康経営」の最前線が語られています。</p>
+
+  <div class="opt-a-tags">
+    <span class="opt-a-tag">健康経営</span>
+    <span class="opt-a-tag">生産性向上</span>
+    <span class="opt-a-tag">ROI（投資収益率）</span>
+    <span class="opt-a-tag">プレゼンティズム</span>
+    <span class="opt-a-tag">アブセンティズム</span>
+    <span class="opt-a-tag">人的資本経営</span>
+    <span class="opt-a-tag">VILPA</span>
+    <span class="opt-a-tag">エクササイズスナック</span>
+    <span class="opt-a-tag">労働安全衛生法</span>
+    <span class="opt-a-tag">ホワイト500</span>
+    <span class="opt-a-tag">スポーツエールカンパニー</span>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 職場での運動支援がもたらす圧倒的な効果</h2>
+  <ul class="opt-a-list">
+    <li><strong>運動実施率の向上</strong>：職場からアプリや制度などのサポートを受けている人は、受けていない人に比べて<strong>運動習慣がある確率が45%高い</strong>。</li>
+    <li><strong>働く世代の現状</strong>：日本の運動習慣者は男性約20%、女性約15〜16%と非常に低い。個人のリテラシー教育だけでなく、職場の環境支援が不可欠。</li>
+    <li><strong>健康経営のパラダイムシフト</strong>：
+      <ul>
+        <li>かつては「福利厚生」の一部であり、不況時に真っ先に削減される対象だった。</li>
+        <li>現在は「人的資本経営」の一環として、<strong>経営課題</strong>として捉えられている。</li>
+        <li>優秀な人材の採用・定着（リテンション）に直結する戦略的な投資となっている。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 健康経営の投資対効果（ROI）</h2>
+  <p>国際的な研究データを基にした、従業員の健康づくりへの投資と便益の比較です。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>項目</th>
+        <th>内容・数値</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>投資額（コスト）</strong></td>
+        <td>従業員1人あたり年間 <strong>約6万円</strong></td>
+      </tr>
+      <tr>
+        <td><strong>経済的便益</strong></td>
+        <td>医療費削減・生産性向上など <strong>約19万円</strong></td>
+      </tr>
+      <tr>
+        <td><strong>ROI（投資収益率）</strong></td>
+        <td><strong>3.6</strong>（1円の投資で3.6円の価値を生む）</td>
+      </tr>
+      <tr>
+        <td><strong>定着意欲</strong></td>
+        <td>運動支援がある企業では、働き続けたい意欲が <strong>24%向上</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="opt-a-section-title">📌 成功する健康経営の2大要素</h2>
+  <ul class="opt-a-list">
+    <li><strong>トップダウンとボトムアップの融合</strong>：
+      <ul>
+        <li>経営トップが「健康経営をやる」と強くコミットすること。</li>
+        <li>従業員の声を丁寧に拾い、ニーズに合った施策（アプリ、ジム、時短など）を導入すること。</li>
+      </ul>
+    </li>
+    <li><strong>「レイ・ティーチャー」の活用</strong>：
+      <ul>
+        <li>社内の運動経験者や関心の高い従業員をリーダーとして任命する。</li>
+        <li>顔なじみの同僚が教えることで、コミュニティとしての結束力が高まり、継続率が向上する。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="diagram-container">
+    <svg width="100%" viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+      <!-- Nodes -->
+      <rect x="20" y="80" width="150" height="60" rx="8" fill="rgba(139, 92, 246, 0.2)" stroke="#8b5cf6" stroke-width="2"/>
+      <text x="95" y="115" text-anchor="middle" font-size="14" font-weight="bold">職場の運動支援</text>
+      
+      <rect x="220" y="20" width="160" height="50" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#60a5fa" stroke-width="1"/>
+      <text x="300" y="50" text-anchor="middle" font-size="13">身体・メンタル健康</text>
+      
+      <rect x="220" y="90" width="160" height="50" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#60a5fa" stroke-width="1"/>
+      <text x="300" y="120" text-anchor="middle" font-size="13">社内コミュニケーション</text>
+      
+      <rect x="220" y="160" width="160" height="50" rx="8" fill="rgba(139, 92, 246, 0.1)" stroke="#60a5fa" stroke-width="1"/>
+      <text x="300" y="190" text-anchor="middle" font-size="13">労働災害の防止</text>
+      
+      <rect x="430" y="80" width="150" height="60" rx="8" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="2"/>
+      <text x="505" y="115" text-anchor="middle" font-size="14" font-weight="bold">企業価値の向上</text>
+
+      <!-- Arrows -->
+      <path d="M 170 110 L 210 50" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <path d="M 170 110 L 210 115" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <path d="M 170 110 L 210 180" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      
+      <path d="M 380 50 L 430 100" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <path d="M 380 115 L 420 115" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <path d="M 380 185 L 430 130" stroke="#60a5fa" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa" />
+        </marker>
+      </defs>
+    </svg>
+  </div>
+
+  <h2 class="opt-a-section-title">📌 実践的な導入アイデア</h2>
+  <ul class="opt-a-list">
+    <li><strong>立ち会議（スタンディング・ミーティング）</strong>：
+      <ul>
+        <li>心理的ハードルが低く、社長の許可なしでも部署単位で始められる。</li>
+        <li><strong>メリット</strong>：発言が活発になる、上下関係がフラットになる、会議時間が短縮される。</li>
+      </ul>
+    </li>
+    <li><strong>昇降式デスク（スタンディングデスク）</strong>：
+      <ul>
+        <li>「立っていると集中できない」という懸念は、研究データ上では否定されている（生産性は下がらない）。</li>
+        <li>在宅勤務なら、既存の机に乗せるタイプや、段ボール・本を積み上げるだけでも代用可能。</li>
+      </ul>
+    </li>
+    <li><strong>エクササイズスナック（VILPA）</strong>：
+      <ul>
+        <li><strong>VILPA</strong>：日常生活の中での短時間かつ強めの身体活動。</li>
+        <li>1回1分程度の強めの運動（階段1段飛ばし、その場スクワットなど）を細切れに行う。</li>
+        <li>死亡リスクやがんリスクを約20%下げる効果がある。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="opt-a-section-title">📌 中小企業の強みと法改正の動向</h2>
+  <ul class="opt-a-list">
+    <li><strong>中小企業の逆転劇</strong>：
+      <ul>
+        <li>大企業ほど健康経営が進んでいるが、中小企業は「経営者の決断一つで動きが早い」という強みがある。</li>
+        <li>外部の支援（自治体の認証制度や生命保険会社のアウトリーチ）をきっかけに導入する企業が急増中。</li>
+        <li><strong>事例</strong>：島根県の増園業。倉庫を自分たちでジムに改装し、腰痛改善と採用力強化（応募100倍）を実現。</li>
+      </ul>
+    </li>
+    <li><strong>2024年4月の法改正（労働安全衛生法）</strong>：
+      <ul>
+        <li><strong>高年齢労働者の労働災害防止</strong>が企業の努力義務化。</li>
+        <li>背景：機械に巻き込まれる事故は減ったが、転倒や腰痛などの「行動災害」が増加している。</li>
+        <li>若いうちからの体力チェックや身体機能の維持増進が求められるようになった。</li>
+      </ul>
+    </li>
+  </ul>
+
+  <blockquote>
+    「健康経営は単なる福利厚生ではなく、人を大切にし、パフォーマンスを最大化するための経営戦略。中小企業こそ、その機動力で大きな成果を出せる可能性がある。」
+  </blockquote>
+
+</body>
+</html>
