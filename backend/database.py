@@ -132,6 +132,16 @@ def get_episode_by_id(episode_id: int) -> dict | None:
         return dict(row) if row else None
 
 
+def get_episode_by_apple_id(apple_episode_id: int) -> dict | None:
+    """Apple Podcasts側のエピソードIDでエピソードを取得"""
+    with get_connection() as conn:
+        row = conn.execute(
+            "SELECT * FROM episodes WHERE apple_episode_id = ?",
+            (apple_episode_id,),
+        ).fetchone()
+        return dict(row) if row else None
+
+
 def get_episode_count() -> dict:
     """ステータス別エピソード数を取得"""
     with get_connection() as conn:

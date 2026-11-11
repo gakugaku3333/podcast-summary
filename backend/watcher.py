@@ -1,7 +1,8 @@
-"""Apple Podcasts DB 監視モジュール
+"""Apple Podcasts DB 参照モジュール
 
-macOSのApple Podcasts SQLiteデータベースを監視し、
-新しく再生されたエピソードを検出する。
+macOSのApple Podcasts SQLiteデータベースを読み取り、
+最近再生したエピソードの一覧取得と、ユーザーが指定した
+エピソードのキャプチャ（アプリDBへの登録）を行う。
 """
 
 import logging
@@ -11,7 +12,7 @@ import tempfile
 from datetime import datetime, timedelta
 from pathlib import Path
 
-from config import APPLE_PODCASTS_DB
+from config import APPLE_PODCASTS_DB, RECENT_HOURS
 import database
 
 logger = logging.getLogger(__name__)
@@ -126,40 +127,75 @@ def fetch_recently_played_episodes(
         conn.close()
 
 
-def check_and_register_new_episodes() -> list[dict]:
-    """新しく再生されたエピソードをチェックし、アプリDBに登録
+def get_recent_episodes_with_status(
+    since_hours: int = RECENT_HOURS,
+) -> list[dict]:
+    """最近再生した回の一覧を、アプリDBでの登録状況付きで返す
+
+    キャプチャ候補の表示用。この関数は登録を行わない。
+    """
+    episodes = fetch_recently_played_episodes(since_hours=since_hours)
+    for ep in episodes:
+        existing = database.get_episode_by_apple_id(ep["apple_episode_id"])
+        ep["registered"] = existing is not None
+        ep["db_id"] = existing["id"] if existing else None
+        ep["status"] = existing["status"] if existing else None
+    return episodes
+
+
+def capture_episode(apple_episode_id: int | None = None) -> dict | None:
+    """指定されたエピソード1件だけをアプリDBに登録する
+
+    Args:
+        apple_episode_id: Apple Podcasts 側のエピソードID。
+            None の場合は「直近に再生した回」（＝今聴いている回）を対象にする。
 
     Returns:
-        新しく登録されたエピソードのリスト
+        登録した（または既存の）エピソード情報。候補が見つからなければ None。
     """
-    recently_played = fetch_recently_played_episodes(since_hours=48)
-    new_episodes = []
+    recently_played = fetch_recently_played_episodes(since_hours=RECENT_HOURS)
+    if not recently_played:
+        return None
 
-    for ep in recently_played:
-        # 音声URLの決定: ローカルキャッシュ > エンクロージャURL > RSSから取得
-        audio_url = ep.get("asset_url") or ep.get("enclosure_url")
-
-        inserted_id = database.insert_episode(
-            apple_episode_id=ep["apple_episode_id"],
-            podcast_title=ep["podcast_title"],
-            episode_title=ep["episode_title"],
-            feed_url=ep.get("feed_url"),
-            audio_url=audio_url,
-            duration=ep.get("duration"),
-            played_at=ep["played_at"],
-        )
-
-        if inserted_id is not None:
-            logger.info(
-                "新しいエピソードを登録: [%s] %s",
-                ep["podcast_title"],
-                ep["episode_title"],
-            )
-            new_episodes.append({**ep, "id": inserted_id})
-
-    if new_episodes:
-        logger.info("%d 件の新しいエピソードを検出", len(new_episodes))
+    if apple_episode_id is None:
+        # ZLASTDATEPLAYED 降順なので先頭が「今聴いている回」
+        target = recently_played[0]
     else:
-        logger.debug("新しいエピソードは見つかりません")
+        target = next(
+            (
+                ep
+                for ep in recently_played
+                if ep["apple_episode_id"] == apple_episode_id
+            ),
+            None,
+        )
+        if target is None:
+            return None
 
-    return new_episodes
+    existing = database.get_episode_by_apple_id(target["apple_episode_id"])
+    if existing:
+        # エラーで止まっていた回の再指定はリトライとして扱う
+        if existing["status"] == "error":
+            database.update_episode_status(existing["id"], "pending")
+            existing["status"] = "pending"
+        return {**target, "id": existing["id"], "db_status": existing["status"]}
+
+    # 音声URLの決定: ローカルキャッシュ > エンクロージャURL > RSSから取得
+    audio_url = target.get("asset_url") or target.get("enclosure_url")
+
+    inserted_id = database.insert_episode(
+        apple_episode_id=target["apple_episode_id"],
+        podcast_title=target["podcast_title"],
+        episode_title=target["episode_title"],
+        feed_url=target.get("feed_url"),
+        audio_url=audio_url,
+        duration=target.get("duration"),
+        played_at=target["played_at"],
+    )
+
+    logger.info(
+        "エピソードをキャプチャ: [%s] %s",
+        target["podcast_title"],
+        target["episode_title"],
+    )
+    return {**target, "id": inserted_id, "db_status": "pending"}

@@ -30,17 +30,18 @@
                 Podcast 解説
             </h1>
             <div class="header-actions">
-                <!-- 監視モードボタン -->
-                <button id="btn-monitor" class="icon-btn tooltip" aria-label="監視開始">
+                <!-- 要約する回を選ぶボタン -->
+                <button id="btn-capture" class="icon-btn tooltip" aria-label="要約する回を選ぶ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
                     </svg>
-                    <span class="tooltip-text">2時間監視</span>
+                    <span class="tooltip-text">回を選んで要約</span>
                 </button>
-                <!-- 既存のスキャンボタン -->
-                <button id="btn-scan" class="icon-btn tooltip" aria-label="手動スキャン">
+                <!-- 更新ボタン -->
+                <button id="btn-scan" class="icon-btn tooltip" aria-label="更新">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
@@ -87,7 +88,7 @@
             <div id="empty-state" class="empty-state hidden">
                 <span class="empty-icon">🎙️</span>
                 <p>まだエピソードがありません</p>
-                <p class="empty-hint">Apple Podcastsで何か聴いてみましょう</p>
+                <p class="empty-hint">右上の＋ボタンから、要約したい回を選んでください</p>
             </div>
         </section>
     </main>
@@ -122,6 +123,38 @@
                 </div>
                 <div id="tab-transcript" class="tab-content">
                     <div id="modal-transcript" class="transcript-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- キャプチャ（回選択）ピッカー -->
+    <div id="picker-overlay" class="modal-overlay hidden">
+        <div class="modal">
+            <div class="modal-header">
+                <button id="btn-picker-close" class="modal-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5" />
+                        <polyline points="12 19 5 12 12 5" />
+                    </svg>
+                    <span>戻る</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title">要約する回を選ぶ</h2>
+                <p class="picker-hint">最近再生したエピソードから、要約したい回をタップしてください</p>
+                <button id="btn-capture-current" class="capture-current-btn">
+                    ▶ 今聴いている回を要約する
+                </button>
+                <div id="picker-list" class="episodes-list"></div>
+                <div id="picker-loading" class="loading hidden">
+                    <div class="spinner"></div>
+                    <span>読み込み中...</span>
+                </div>
+                <div id="picker-empty" class="empty-state hidden">
+                    <span class="empty-icon">🎧</span>
+                    <p>最近再生したエピソードがありません</p>
+                    <p class="empty-hint">再生履歴の同期に数分かかることがあります</p>
                 </div>
             </div>
         </div>

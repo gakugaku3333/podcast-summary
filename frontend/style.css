@@ -681,3 +681,39 @@ body {
     display: block;
     margin-bottom: 12px;
 }
+/* --- キャプチャピッカー --- */
+.picker-hint {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 8px 0 16px;
+}
+
+.capture-current-btn {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.capture-current-btn:active {
+    transform: scale(0.97);
+    opacity: 0.85;
+}
+
+.picker-card {
+    cursor: pointer;
+}
+
+.badge-capture {
+    background: rgba(99, 102, 241, 0.18);
+    color: #a5b4fc;
+}

@@ -8,7 +8,13 @@ const POLL_INTERVAL = 30_000; // 30秒ごとに更新
 // --- DOM要素 ---
 const dom = {
     btnScan: document.getElementById('btn-scan'),
-    btnMonitor: document.getElementById('btn-monitor'),
+    btnCapture: document.getElementById('btn-capture'),
+    pickerOverlay: document.getElementById('picker-overlay'),
+    pickerClose: document.getElementById('btn-picker-close'),
+    pickerList: document.getElementById('picker-list'),
+    pickerLoading: document.getElementById('picker-loading'),
+    pickerEmpty: document.getElementById('picker-empty'),
+    btnCaptureCurrent: document.getElementById('btn-capture-current'),
     statusIndicator: document.getElementById('status-indicator'),
     statusBar: document.getElementById('status-bar'),
     statusText: document.getElementById('status-text'),
@@ -55,17 +61,21 @@ async function fetchEpisodes() {
 async function fetchStatus() {
     const data = await api('/api/status');
     state.isProcessing = data.processing;
-    state.isMonitoring = data.is_monitoring;
     state.counts = data.counts;
     return data;
 }
 
-async function triggerScan() {
-    return api('/api/scan', { method: 'POST' });
+async function fetchRecent() {
+    return api('/api/recent');
 }
 
-async function triggerProcess() {
-    return api('/api/process', { method: 'POST' });
+async function captureEpisode(appleEpisodeId = null) {
+    return api('/api/capture', {
+        method: 'POST',
+        body: JSON.stringify(
+            appleEpisodeId != null ? { apple_episode_id: appleEpisodeId } : {}
+        ),
+    });
 }
 
 // --- レンダリング ---
@@ -88,19 +98,7 @@ function renderStatusIndicator() {
         dom.statusIndicator.classList.add('processing');
         dom.statusIndicator.title = '処理中';
         dom.statusText.textContent = '処理中';
-    } else if (state.counts && state.isMonitoring !== undefined) {
-        // 新しいAPIレスポンスの形
-        if (state.isMonitoring) {
-            dom.statusIndicator.classList.add('active');
-            dom.statusIndicator.title = '監視中';
-            dom.statusText.textContent = '監視中';
-        } else {
-            dom.statusIndicator.classList.add('inactive');
-            dom.statusIndicator.title = '待機中';
-            dom.statusText.textContent = '待機中';
-        }
     } else {
-        // 古いAPIのフォールバック
         dom.statusIndicator.classList.add('inactive');
         dom.statusIndicator.title = '待機中';
         dom.statusText.textContent = '待機中';
@@ -300,38 +298,90 @@ function showStatus(message) {
     }, 4000);
 }
 
+// --- キャプチャピッカー ---
+function openPicker() {
+    dom.pickerOverlay.classList.remove('hidden');
+    requestAnimationFrame(() => {
+        dom.pickerOverlay.classList.add('visible');
+    });
+    document.body.style.overflow = 'hidden';
+    loadRecentEpisodes();
+}
+
+function closePicker() {
+    dom.pickerOverlay.classList.remove('visible');
+    setTimeout(() => {
+        dom.pickerOverlay.classList.add('hidden');
+        document.body.style.overflow = '';
+    }, 350);
+}
+
+async function loadRecentEpisodes() {
+    dom.pickerList.innerHTML = '';
+    dom.pickerEmpty.classList.add('hidden');
+    dom.pickerLoading.classList.remove('hidden');
+
+    try {
+        const data = await fetchRecent();
+        dom.pickerLoading.classList.add('hidden');
+
+        if (!data.episodes || data.episodes.length === 0) {
+            dom.pickerEmpty.classList.remove('hidden');
+            return;
+        }
+
+        dom.pickerList.innerHTML = data.episodes.map(ep => `
+            <article class="episode-card picker-card ${ep.registered ? 'status-' + ep.status : ''}"
+                     data-apple-id="${ep.apple_episode_id}">
+                <div class="episode-podcast">${escapeHtml(ep.podcast_title)}</div>
+                <div class="episode-title">${escapeHtml(ep.episode_title)}</div>
+                <div class="episode-meta">
+                    <span class="episode-date">${formatDate(ep.played_at)}${ep.duration ? ' · ' + formatDuration(ep.duration) : ''}</span>
+                    ${ep.registered
+                        ? `<span class="episode-badge badge-${ep.status}">${STATUS_LABELS[ep.status] || ep.status}</span>`
+                        : '<span class="episode-badge badge-capture">タップで要約</span>'}
+                </div>
+            </article>
+        `).join('');
+
+        dom.pickerList.querySelectorAll('.picker-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const appleId = parseInt(card.dataset.appleId);
+                doCapture(appleId);
+            });
+        });
+    } catch (e) {
+        dom.pickerLoading.classList.add('hidden');
+        dom.pickerEmpty.classList.remove('hidden');
+        console.error(e);
+    }
+}
+
+async function doCapture(appleEpisodeId = null) {
+    try {
+        const result = await captureEpisode(appleEpisodeId);
+        closePicker();
+        showStatus(result.message);
+        await refresh();
+    } catch (e) {
+        showStatus('キャプチャに失敗しました');
+        console.error(e);
+    }
+}
+
 // --- イベントリスナー ---
 dom.btnScan.addEventListener('click', async () => {
     dom.btnScan.classList.add('spinning');
     try {
-        const result = await triggerScan();
-        showStatus(`${result.new_episodes} 件の新しいエピソードを検出`);
-        if (result.new_episodes > 0) {
-            await triggerProcess();
-        }
         await refresh();
-    } catch (e) {
-        showStatus('スキャンに失敗しました');
-        console.error(e);
     } finally {
         dom.btnScan.classList.remove('spinning');
     }
 });
 
-// 監視モードイベント
-dom.btnMonitor.addEventListener('click', async () => {
-    dom.btnMonitor.classList.add('spinning'); // 一時的なフィードバック
-    try {
-        const result = await api('/api/monitor', { method: 'POST' });
-        showStatus(result.message);
-        await refresh();
-    } catch (e) {
-        showStatus('監視モードの起動に失敗しました');
-        console.error(e);
-    } finally {
-        setTimeout(() => dom.btnMonitor.classList.remove('spinning'), 1000);
-    }
-});
+dom.btnCapture.addEventListener('click', openPicker);
+dom.pickerClose.addEventListener('click', closePicker);
+dom.btnCaptureCurrent.addEventListener('click', () => doCapture(null));
 
 dom.modalClose.addEventListener('click', closeModal);
 
@@ -354,6 +404,16 @@ dom.modalOverlay.addEventListener('touchstart', e => {
 dom.modalOverlay.addEventListener('touchend', e => {
     const diff = e.changedTouches[0].clientX - touchStartX;
     if (diff > 80) closeModal(); // 右スワイプで閉じる
+}, { passive: true });
+
+// スワイプで戻る（ピッカー）
+let pickerTouchStartX = 0;
+dom.pickerOverlay.addEventListener('touchstart', e => {
+    pickerTouchStartX = e.touches[0].clientX;
+}, { passive: true });
+dom.pickerOverlay.addEventListener('touchend', e => {
+    const diff = e.changedTouches[0].clientX - pickerTouchStartX;
+    if (diff > 80) closePicker();
 }, { passive: true });
 
 // --- 更新ループ ---

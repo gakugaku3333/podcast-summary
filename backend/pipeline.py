@@ -1,14 +1,13 @@
 """エピソード処理パイプライン
 
-新エピソードの検出→ダウンロード→文字起こし→要約→通知→Git push
-の一連の処理フローと、時限式モニタリングの制御を担う。
+ユーザーがキャプチャしたエピソードの
+ダウンロード→文字起こし→要約→通知→Git push を担う。
 """
 
 import logging
 import os
 import subprocess
 import threading
-import time
 
 import database
 import downloader
@@ -16,29 +15,18 @@ import notifier
 import summarizer
 import transcriber
 import watcher
-from config import (
-    MONITOR_DURATION_SECONDS,
-    PROJECT_ROOT,
-    SUMMARIES_DIR,
-    WATCH_INTERVAL_SECONDS,
-)
+from config import PROJECT_ROOT, SUMMARIES_DIR
 
 logger = logging.getLogger(__name__)
 
 # --- 状態管理 ---
 _processing_lock = threading.Lock()
 _is_processing = False
-_monitor_end_time = 0.0  # UNIX timestamp
 
 
 def is_processing() -> bool:
     """パイプラインが処理中かどうか"""
     return _is_processing
-
-
-def is_monitoring() -> bool:
-    """時限モニタリングがアクティブかどうか"""
-    return _monitor_end_time > time.time()
 
 
 # --- Git 連携 ---
@@ -163,7 +151,7 @@ def _process_single_episode(episode: dict) -> None:
 # --- パイプライン実行 ---
 
 def run_pipeline() -> int:
-    """処理パイプラインを実行
+    """未処理（pending）のエピソードを順に処理する
 
     Returns:
         処理したエピソード数
@@ -177,8 +165,6 @@ def run_pipeline() -> int:
     with _processing_lock:
         _is_processing = True
         try:
-            watcher.check_and_register_new_episodes()
-
             pending = database.get_pending_episodes()
             if not pending:
                 return 0
@@ -205,48 +191,23 @@ def trigger_async() -> bool:
     return True
 
 
-# --- 時限モニタリング ---
+# --- オンデマンドキャプチャ ---
 
-def _monitor_loop() -> None:
-    """時限式で定期的にパイプラインを実行するループ"""
-    global _monitor_end_time
+def capture_and_process(apple_episode_id: int | None = None) -> dict | None:
+    """エピソード1件をキャプチャして非同期処理を開始する
 
-    logger.info("🕒 時限式モニタリングループを開始しました")
-
-    while time.time() < _monitor_end_time:
-        try:
-            run_pipeline()
-        except Exception as e:
-            logger.error("パイプラインエラー: %s", e)
-
-        remaining = _monitor_end_time - time.time()
-        if remaining <= 0:
-            break
-
-        sleep_time = min(WATCH_INTERVAL_SECONDS, remaining)
-        logger.info(
-            "💤 次のチェックまで %d 秒待機 (監視残り: %d分)",
-            sleep_time, int(remaining / 60),
-        )
-        time.sleep(sleep_time)
-
-    logger.info("🛑 モニタリング期間（2時間）が終了しました。待機状態に戻ります")
-    _monitor_end_time = 0.0
-
-
-def start_monitor() -> bool:
-    """時限モニタリングを開始/延長する
+    Args:
+        apple_episode_id: 対象のApple エピソードID。None なら直近再生中の回。
 
     Returns:
-        True: 新規開始, False: 延長
+        キャプチャしたエピソード情報（見つからなければ None）
     """
-    global _monitor_end_time
+    captured = watcher.capture_episode(apple_episode_id)
+    if captured is None:
+        return None
 
-    newly_started = not is_monitoring()
-    _monitor_end_time = time.time() + MONITOR_DURATION_SECONDS
+    # 既に処理済み（done）の回は再処理しない
+    if captured.get("db_status") == "pending":
+        trigger_async()
 
-    if newly_started:
-        thread = threading.Thread(target=_monitor_loop, daemon=True)
-        thread.start()
-
-    return newly_started
+    return captured

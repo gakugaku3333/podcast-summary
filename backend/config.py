@@ -37,9 +37,9 @@ DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL", "")
 SERVER_HOST = "::"
 SERVER_PORT = 8000
 
-# --- 監視設定 ---
-WATCH_INTERVAL_SECONDS = 300       # チェック間隔（秒）
-MONITOR_DURATION_SECONDS = 7200    # モニタリング期間（秒）= 2時間
+# --- キャプチャ設定 ---
+RECENT_HOURS = 24                  # 「最近再生した回」一覧に表示する期間（時間）
+
 
 # --- ディレクトリ初期化 ---
 DATA_DIR.mkdir(parents=True, exist_ok=True)

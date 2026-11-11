@@ -71,3 +71,44 @@
 - [ ] エラーエピソードの自動リトライ機能（`status='error'` を翌日 `pending` に戻す）
 - [ ] フロントエンドのエラーハンドリング強化
 - [ ] 複数エピソードの並列処理（`transcriber.py` がサブプロセス化済みなので実装しやすい）
+
+---
+
+## 📋 現在進行中のタスク
+
+### フェーズ10: オンデマンドキャプチャ方式への転換 (2026-07-09)
+
+「再生した回を全部自動処理」から「聴いている最中にスマホで指定した回だけ処理」へ変更。
+
+- [x] `watcher.py` — 自動一括登録（`check_and_register_new_episodes`）を廃止し、
+  `get_recent_episodes_with_status()`（一覧取得のみ・登録なし）と
+  `capture_episode(apple_episode_id)`（1件だけ登録、None なら直近再生中の回）に置き換え
+- [x] `database.py` — `get_episode_by_apple_id()` を追加
+- [x] `pipeline.py` — 2時間監視ループ（`_monitor_loop` / `start_monitor`）を削除。
+  `run_pipeline` はスキャンせず pending のみ処理。`capture_and_process()` を追加。
+  エラー状態の回を再キャプチャすると pending に戻してリトライ
+- [x] `main.py` — `GET /api/recent`（最近再生した回の一覧）と `POST /api/capture`
+  （body なし＝今聴いている回、`{"apple_episode_id": N}`＝指定回）を追加。
+  `/api/scan` と `/api/monitor` は削除
+- [x] `config.py` — `WATCH_INTERVAL_SECONDS` / `MONITOR_DURATION_SECONDS` /
+  `WATCH_SINCE_HOURS` を削除し `RECENT_HOURS = 24` に統合
+- [x] フロントエンド — 監視ボタンを「回を選んで要約」ピッカーに置き換え。
+  「▶ 今聴いている回を要約する」ボタン＋最近再生した回のリスト（タップでキャプチャ）
+- [x] launchd サービスの再起動による新コード反映と動作確認
+  （`/api/recent` 0.2秒で3件返却、`/api/capture` で「今聴いている回」を正しく特定、
+  要約済みの回は再処理せず「要約済みです」を返すことを実機確認）
+- [x] `/api/recent` `/api/capture` を sync ハンドラに変更（Apple Podcasts DB の
+  コピーがブロックしてもイベントループ全体が固まらないように）
+- [ ] **iPhone ショートカットの更新（ユーザー作業）**: 呼び先を
+  `POST /api/monitor` → `POST /api/capture`（body なし）に変更する。
+  タップすると「今聴いている回」だけが処理される
+
+### フェーズ9: launchd 設定の修正と自動実行の復旧 (2026-05-20)
+- [x] `backend/config.py` — `WATCH_SINCE_HOURS = 24` の設定追加
+- [x] `backend/watcher.py` — 監視対象期間に `WATCH_SINCE_HOURS` を適用
+- [x] launchd ジョブのアンロード (`launchctl unload`)
+- [x] 正しい plist ファイルのコピー (`com.podcast-summary.plist` -> `~/Library/LaunchAgents/`)
+- [x] launchd ジョブの再ロード (`launchctl load`)
+- [x] 稼働状況・プロセスの動作確認 (ログ確認、ポート8000のリスン確認)
+
+

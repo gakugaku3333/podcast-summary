@@ -74,25 +74,27 @@ def transcribe_audio(audio_path: Path) -> str | None:
             args=(str(audio_path), MLX_MODEL, WHISPER_LANGUAGE, result_queue),
         )
         process.start()
-        process.join()  # 完了まで待機
+
+        # get() を join() より先に呼ぶ。逆順だとパイプバッファが溢れてデッドロックする。
+        try:
+            result = result_queue.get(timeout=3600)
+        except Exception:
+            process.terminate()
+            process.join(timeout=10)
+            logger.error("文字起こしサブプロセスからの結果取得がタイムアウトしました")
+            return None
+        finally:
+            result_queue.close()
+            result_queue.cancel_join_thread()
+
+        process.join(timeout=60)
 
         # プロセスの終了状態を確認
-        if process.exitcode != 0:
+        if process.exitcode is not None and process.exitcode != 0:
             logger.error(
                 "文字起こしサブプロセスが異常終了しました (exit code: %d)",
                 process.exitcode,
             )
-            return None
-
-        if result_queue.empty():
-            logger.error("文字起こしサブプロセスから結果を取得できませんでした")
-            return None
-
-        result = result_queue.get_nowait()
-
-        # Queue を明示的に閉じる
-        result_queue.close()
-        result_queue.join_thread()
 
         if result["error"]:
             logger.error("文字起こしエラー: %s — %s", audio_path.name, result["error"])

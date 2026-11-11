@@ -15,12 +15,8 @@ from fastapi.staticfiles import StaticFiles
 
 import database
 import pipeline
-from config import (
-    MONITOR_DURATION_SECONDS,
-    SERVER_HOST,
-    SERVER_PORT,
-    WATCH_INTERVAL_SECONDS,
-)
+import watcher
+from config import RECENT_HOURS, SERVER_HOST, SERVER_PORT
 
 # --- ロギング設定 ---
 logging.basicConfig(
@@ -104,51 +100,75 @@ async def get_episode_summary_html(episode_id: int):
     return HTMLResponse(content=html)
 
 
-@app.post("/api/scan")
-async def trigger_scan():
-    """手動でスキャンをトリガー"""
-    import watcher
-    new_episodes = watcher.check_and_register_new_episodes()
+@app.get("/api/recent")
+def list_recent_played(hours: int = RECENT_HOURS):
+    """最近再生したエピソード一覧（キャプチャ候補）を取得
+
+    Apple Podcasts DB を読むだけで、登録は行わない。
+    """
+    try:
+        episodes = watcher.get_recent_episodes_with_status(since_hours=hours)
+    except FileNotFoundError as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    return {"episodes": episodes}
+
+
+@app.post("/api/capture")
+def capture_episode(payload: dict | None = None):
+    """エピソード1件をキャプチャして処理を開始する
+
+    - body なし（または apple_episode_id なし）: 直近に再生した回＝「今聴いている回」
+    - body に apple_episode_id あり: その回
+
+    iPhone ショートカットからは body なしの POST でワンタップ利用できる。
+    """
+    apple_episode_id = (payload or {}).get("apple_episode_id")
+
+    captured = pipeline.capture_and_process(apple_episode_id)
+    if captured is None:
+        raise HTTPException(
+            status_code=404,
+            detail="対象のエピソードが見つかりません（最近再生した回がないか、同期待ちの可能性があります）",
+        )
+
+    status = captured.get("db_status")
+    if status == "done":
+        msg = f"「{captured['episode_title']}」は要約済みです"
+    elif status == "pending":
+        msg = f"「{captured['episode_title']}」の要約を開始しました"
+    else:
+        msg = f"「{captured['episode_title']}」は現在処理中です"
+
     return {
-        "message": f"{len(new_episodes)} 件の新しいエピソードを検出",
-        "new_episodes": len(new_episodes),
+        "message": msg,
+        "episode": {
+            "id": captured["id"],
+            "apple_episode_id": captured["apple_episode_id"],
+            "podcast_title": captured["podcast_title"],
+            "episode_title": captured["episode_title"],
+            "status": status,
+        },
     }
 
 
 @app.post("/api/process")
 async def trigger_process():
-    """手動で処理パイプラインを1回だけトリガー（単発）"""
+    """未処理（pending）エピソードの処理を手動でトリガー"""
     if not pipeline.trigger_async():
         return {"message": "処理中です。しばらくお待ちください。", "processing": True}
-    return {"message": "1回限りの処理を開始しました", "processing": True}
-
-
-@app.post("/api/monitor")
-async def start_monitoring():
-    """時限モニタリングを開始する（iPhone自動化トリガー用）"""
-    newly_started = pipeline.start_monitor()
-    msg = "2時間のモニタリングを開始しました" if newly_started else "モニタリングの残り時間を2時間に延長しました"
-    return {
-        "message": msg,
-        "monitor_active": True,
-        "duration_minutes": MONITOR_DURATION_SECONDS // 60,
-    }
+    return {"message": "処理を開始しました", "processing": True}
 
 
 @app.get("/api/status")
 async def get_status():
     """システムステータスを取得"""
     counts = database.get_episode_count()
-    monitoring = pipeline.is_monitoring()
     processing = pipeline.is_processing()
-    sub_status = "監視中" if monitoring else "待機中"
 
     return {
         "processing": processing,
-        "is_monitoring": monitoring,
-        "status_text": "処理中" if processing else sub_status,
+        "status_text": "処理中" if processing else "待機中",
         "counts": counts,
-        "watch_interval": WATCH_INTERVAL_SECONDS,
     }
 
 
