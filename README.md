@@ -2,6 +2,9 @@
 
 Apple Podcasts で再生したエピソードを**自動で文字起こし・要約**し、GitHub Pages 経由でどこからでも閲覧可能にするアプリ。
 
+> **⏸ 休止中（2026-11-11〜）** 仕組みの参考用にコードだけ残している。音声（`data/audio/`）・ログ・`backend/venv/` は容量確保のため削除済み。`data/app.db`（過去の文字起こし・要約）は残してある。
+> 再開手順: ① `cd backend && python3 -m venv venv && venv/bin/pip install -r requirements.txt` ② `disabled/com.podcast-summary.plist` を `~/Library/LaunchAgents/` に戻して `launchctl load`（plist の node/python パスが今の環境で実在するか先に確認）。
+
 ## 🌟 新機能: GitHub Pages 連携
 要約された HTML が自動的に GitHub の `docs/summaries/` フォルダへプッシュされます。
 これにより、**外出先（別の Wi-Fi や 4G/5G）**からでも Discord のリンクをクリックするだけで要約が読めるようになりました！
@@ -10,15 +13,16 @@ Apple Podcasts で再生したエピソードを**自動で文字起こし・要
 
 ## 🚀 使い方
 
-### 1. iPhone からのトリガー
-- iPhone のショートカットで以下の URL を `POST` 実行（Podcasts アプリを開いたときなど）。
-- **推奨 URL**: `http://ooishiayuminoMac-mini.local:8000/api/monitor`
-- これにより 2時間の自動監視が始まり、再生されたエピソードを順次処理します。
+### 1. iPhone からのトリガー（オンデマンドキャプチャ）
+- iPhone のショートカットで以下の URL を `POST` 実行（body なし）。
+- **URL**: `http://ooishiayuminoMac-mini.local:8000/api/capture`
+- 「今聴いている回」（＝直近に再生した回）だけをキャプチャして文字起こし・要約を開始します。
+- 特定の回を指定したい場合は body に `{"apple_episode_id": <ID>}` を渡す（通常は不要）。
 
 ### 2. 手動操作 (Web UI)
 - Safari 等で `http://ooishiayuminoMac-mini.local:8000` にアクセス。
-- **「更新」ボタン**: Apple Podcasts DB を再スキャン。
-- **「2時間監視」ボタン**: 監視モードを強制起動。
+- **「＋」ボタン**: 最近再生した回の一覧から要約したい回を選ぶ、または「今聴いている回を要約する」をワンタップ。
+- **「更新」ボタン**: 画面を再読み込み。
 
 ## ⚙️ セットアップ & 運用
 
